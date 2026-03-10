@@ -1,0 +1,18 @@
+{
+  "dev" : [
+    {
+      "VERSION" : "current",
+      "VERSION_COMPENDIUM" : ""
+    }
+  ],
+  "rel" : [
+    {
+      "VERSION" : "4",
+      "VERSION_COMPENDIUM" : "current"
+    },
+    {
+      "VERSION" : "3",
+      "VERSION_COMPENDIUM" : "current"
+    }
+  ]
+}
