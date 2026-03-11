@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_clipboard_copy.rst:2
+msgid "fish_clipboard_copy - copy text to the system's clipboard"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:7
+msgid ""
+"fish_clipboard_copy\n"
+"\n"
+"foo | fish_clipboard_copy"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:14
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:16
+msgid ""
+"The ``fish_clipboard_copy`` function copies text to the system clipboard."
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:18
+msgid ""
+"If stdin is not a terminal (see :doc:`isatty <isatty>`), it will read all "
+"input from there and copy it. If it is, it will use the current commandline, "
+"or the current selection if there is one."
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:20
+msgid "It is bound to :kbd:`ctrl-x` by default."
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:22
+msgid ""
+"``fish_clipboard_copy`` works by calling a system-specific backend. If it "
+"doesn't appear to work you may need to install yours."
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:24
+msgid "Currently supported are:"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:26
+msgid "``pbcopy``"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:27
+msgid "``wl-copy`` using wayland"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:28
+msgid "``xsel`` and ``xclip`` for X11"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:29
+msgid "``clip.exe`` on Windows."
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:30
+msgid ""
+"The :ref:`OSC 52 clipboard sequence <term-compat-osc-52>`, which your "
+"terminal might support"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:33
+msgid "See also"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_copy.rst:35
+msgid ":doc:`fish_clipboard_paste` which does the inverse."
+msgstr ""

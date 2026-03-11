@@ -1,0 +1,319 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/ulimit.rst:2
+msgid "ulimit - set or get resource usage limits"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:7
+msgid "ulimit [OPTIONS] [LIMIT]"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:13
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:15
+msgid ""
+"``ulimit`` sets or outputs the resource usage limits of the shell and any "
+"processes spawned by it. If a new limit value is omitted, the current value "
+"of the limit of the resource is printed; otherwise, the specified limit is "
+"set to the new value."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:17
+msgid ""
+"Use one of the following switches to specify which resource limit to set or "
+"report:"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:19
+msgid "**-b** or **--socket-buffers**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:20
+msgid "The maximum size of socket buffers."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:22
+msgid "**-c** or **--core-size**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:23
+msgid ""
+"The maximum size of core files created. By setting this limit to zero, core "
+"dumps can be disabled."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:25
+msgid "**-d** or **--data-size**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:26
+msgid "The maximum size of a process' data segment."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:28
+msgid "**-e** or **--nice**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:29
+msgid ""
+"Controls the maximum nice value; on Linux, this value is subtracted from 20 "
+"to give the effective value."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:31
+msgid "**-f** or **--file-size**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:32
+msgid "The maximum size of files created by a process."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:34
+msgid "**-i** or **--pending-signals**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:35
+msgid "The maximum number of signals that may be queued."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:37
+msgid "**-l** or **--lock-size**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:38
+msgid "The maximum size that may be locked into memory."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:40
+msgid "**-m** or **--resident-set-size**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:41
+msgid "The maximum resident set size."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:43
+msgid "**-n** or **--file-descriptor-count**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:44
+msgid "The maximum number of open file descriptors."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:46
+msgid "**-q** or **--queue-size**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:47
+msgid "The maximum size of data in POSIX message queues."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:49
+msgid "**-r** or **--realtime-priority**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:50
+msgid "The maximum realtime scheduling priority."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:52
+msgid "**-s** or **--stack-size**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:53
+msgid "The maximum stack size."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:55
+msgid "**-t** or **--cpu-time**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:56
+msgid "The maximum amount of CPU time in seconds."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:58
+msgid "**-u** or **--process-count**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:59
+msgid "The maximum number of processes available to the current user."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:61
+msgid "**-w** or **--swap-size**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:62
+msgid "The maximum swap space available to the current user."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:64
+msgid "**-v** or **--virtual-memory-size**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:65
+msgid "The maximum amount of virtual memory available to the shell."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:67
+msgid "**-y** or **--realtime-maxtime**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:68
+msgid "The maximum contiguous realtime CPU time in microseconds."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:70
+msgid "**-K** or **--kernel-queues**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:71
+msgid "The maximum number of kqueues (kernel queues) for the current user."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:73
+msgid "**-P** or **--ptys**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:74
+msgid "The maximum number of pseudo-terminals for the current user."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:76
+msgid "**-T** or **--threads**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:77
+msgid "The maximum number of simultaneous threads for the current user."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:79
+msgid ""
+"Note that not all these limits are available in all operating systems; "
+"consult the documentation for ``setrlimit`` in your operating system."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:81
+msgid ""
+"The value of limit can be a number in the unit specified for the resource or "
+"one of the special values ``hard``, ``soft``, or ``unlimited``, which stand "
+"for the current hard limit, the current soft limit, and no limit, "
+"respectively."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:83
+msgid ""
+"If limit is given, it is the new value of the specified resource. If no "
+"option is given, then **-f** is assumed. Values are in kilobytes, except for "
+"**-t**, which is in seconds and **-n** and **-u**, which are unscaled "
+"values. The exit status is 0 unless an invalid option or argument is "
+"supplied, or an error occurs while setting a new limit."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:85
+msgid ""
+"``ulimit`` also accepts the following options that determine what type of "
+"limit to set:"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:87
+msgid "**-H** or **--hard**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:88
+msgid "Sets hard resource limit."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:90
+msgid "**-S** or **--soft**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:91
+msgid "Sets soft resource limit."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:93
+msgid ""
+"A hard limit can only be decreased. Once it is set it cannot be increased; a "
+"soft limit may be increased up to the value of the hard limit. If neither **-"
+"H** nor **-S** is specified, both the soft and hard limits are updated when "
+"assigning a new limit value, and the soft limit is used when reporting the "
+"current value."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:95
+msgid "The following additional options are also understood by ``ulimit``:"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:97
+msgid "**-a** or **--all**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:98
+msgid "Prints all current limits."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:100
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:101
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:103
+msgid ""
+"The ``fish`` implementation of ``ulimit`` should behave identically to the "
+"implementation in bash, except for these differences:"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:105
+msgid "Fish ``ulimit`` supports GNU-style long options for all switches."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:107
+msgid ""
+"Fish ``ulimit`` does not support the **-p** option for getting the pipe "
+"size. The bash implementation consists of a compile-time check that "
+"empirically guesses this number by writing to a pipe and waiting for "
+"SIGPIPE. Fish does not do this because this method of determining pipe size "
+"is unreliable. Depending on bash version, there may also be further "
+"additional limits to set in bash that do not exist in fish."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:109
+msgid ""
+"Fish ``ulimit`` does not support getting or setting multiple limits in one "
+"command, except reporting all values using the **-a** switch."
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:113
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/ulimit.rst:115
+msgid "``ulimit -Hs 64`` sets the hard stack size limit to 64 kB."
+msgstr ""

@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/string-trim.rst:2
+msgid "string-trim - remove trailing whitespace"
+msgstr ""
+
+#: ../../../cmds/string-trim.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/string-trim.rst:9
+msgid ""
+"string trim [-l | --left] [-r | --right] [(-c | --chars) CHARS]\n"
+"            [-q | --quiet] [STRING ...]"
+msgstr ""
+
+#: ../../../cmds/string-trim.rst:17
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/string-trim.rst:21
+msgid ""
+"``string trim`` removes leading and trailing whitespace from each *STRING*. "
+"If **-l** or **--left** is given, only leading whitespace is removed. If **-"
+"r** or **--right** is given, only trailing whitespace is trimmed."
+msgstr ""
+
+#: ../../../cmds/string-trim.rst:23
+msgid ""
+"The **-c** or **--chars** switch causes the set of characters in *CHARS* to "
+"be removed instead of whitespace. This is a set of characters, not a string "
+"- if you pass ``-c foo``, it will remove any \"f\" or \"o\", not just "
+"\"foo\" as a whole."
+msgstr ""
+
+#: ../../../cmds/string-trim.rst:25
+msgid "Exit status: 0 if at least one character was trimmed, or 1 otherwise."
+msgstr ""
+
+#: ../../../cmds/string-trim.rst:30
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/string-trim.rst:36
+msgid ""
+">_ string trim ' abc  '\n"
+"abc\n"
+"\n"
+">_ string trim --right --chars=yz xyzzy zany\n"
+"x\n"
+"zan"
+msgstr ""

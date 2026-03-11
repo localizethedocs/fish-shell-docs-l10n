@@ -1,0 +1,399 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/read.rst:2
+msgid "read - read line of input into variables"
+msgstr ""
+
+#: ../../../cmds/read.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/read.rst:7
+msgid "read [OPTIONS] [VARIABLE ...]"
+msgstr ""
+
+#: ../../../cmds/read.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/read.rst:16
+msgid ""
+"NOTE: This page documents the fish builtin ``read``. To see the "
+"documentation on any non-fish versions, use ``command man read``."
+msgstr ""
+
+#: ../../../cmds/read.rst:19
+msgid ""
+"``read`` reads from standard input and stores the result in shell variables. "
+"In an alternative mode, it can also print to its own standard output, for "
+"example for use in command substitutions."
+msgstr ""
+
+#: ../../../cmds/read.rst:21
+msgid ""
+"By default, ``read`` reads a single line and splits it into variables on "
+"spaces or tabs. Alternatively, a null character or a maximum number of "
+"characters can be used to terminate the input, and other delimiters can be "
+"given."
+msgstr ""
+
+#: ../../../cmds/read.rst:23
+msgid ""
+"Unlike other shells, there is no default variable (such as :envvar:`REPLY`) "
+"for storing the result - instead, it is printed on standard output."
+msgstr ""
+
+#: ../../../cmds/read.rst:25
+msgid ""
+"When ``read`` reaches the end-of-file (EOF) instead of the terminator, the "
+"exit status is set to 1. Otherwise, it is set to 0."
+msgstr ""
+
+#: ../../../cmds/read.rst:28
+msgid ""
+"If ``read`` sets a variable and you don't specify a scope, it will use the "
+"same rules that :doc:`set` does - if the variable exists, it will use it (in "
+"the lowest scope). If it doesn't, it will use an unexported function-scoped "
+"variable."
+msgstr ""
+
+#: ../../../cmds/read.rst:30
+msgid ""
+"The following options, like the corresponding ones in :doc:`set`, control "
+"variable scope or attributes:"
+msgstr ""
+
+#: ../../../cmds/read.rst:32
+msgid "**-U** or **--universal**"
+msgstr ""
+
+#: ../../../cmds/read.rst:33
+msgid ""
+"Sets a universal variable. The variable will be immediately available to all "
+"the user's ``fish`` instances on the machine, and will be persisted across "
+"restarts of the shell."
+msgstr ""
+
+#: ../../../cmds/read.rst:36
+msgid "**-f** or **--function**"
+msgstr ""
+
+#: ../../../cmds/read.rst:37
+msgid ""
+"Sets a variable scoped to the executing function. It is erased when the "
+"function ends."
+msgstr ""
+
+#: ../../../cmds/read.rst:40
+msgid "**-l** or **--local**"
+msgstr ""
+
+#: ../../../cmds/read.rst:41
+msgid ""
+"Sets a locally-scoped variable in this block. It is erased when the block "
+"ends. Outside of a block, this is the same as **--function**."
+msgstr ""
+
+#: ../../../cmds/read.rst:45
+msgid "**-g** or **--global**"
+msgstr ""
+
+#: ../../../cmds/read.rst:46
+msgid ""
+"Sets a globally-scoped variable. Global variables are available to all "
+"functions running in the same shell. They can be modified or erased."
+msgstr ""
+
+#: ../../../cmds/read.rst:50
+msgid "**-u** or **--unexport**"
+msgstr ""
+
+#: ../../../cmds/read.rst:51
+msgid ""
+"Prevents the variables from being exported to child processes (default "
+"behaviour)."
+msgstr ""
+
+#: ../../../cmds/read.rst:53
+msgid "**-x** or **--export**"
+msgstr ""
+
+#: ../../../cmds/read.rst:54
+msgid "Exports the variables to child processes."
+msgstr ""
+
+#: ../../../cmds/read.rst:56
+msgid "The following options control the interactive mode:"
+msgstr ""
+
+#: ../../../cmds/read.rst:58
+msgid "**-c** *CMD* or **--command** *CMD*"
+msgstr ""
+
+#: ../../../cmds/read.rst:59
+msgid ""
+"Sets the initial string in the interactive mode command buffer to *CMD*."
+msgstr ""
+
+#: ../../../cmds/read.rst:61
+msgid "**-s** or **--silent**"
+msgstr ""
+
+#: ../../../cmds/read.rst:62
+msgid ""
+"Masks characters written to the terminal, replacing them with asterisks. "
+"This is useful for reading things like passwords or other sensitive "
+"information."
+msgstr ""
+
+#: ../../../cmds/read.rst:64
+msgid "**-p** or **--prompt** *PROMPT_CMD*"
+msgstr ""
+
+#: ../../../cmds/read.rst:65
+msgid ""
+"Uses the output of the shell command *PROMPT_CMD* as the prompt for the "
+"interactive mode. The default prompt command is ``set_color green; echo -n "
+"read; set_color normal; echo -n \"> \"``"
+msgstr ""
+
+#: ../../../cmds/read.rst:67
+msgid "**-P** or **--prompt-str** *PROMPT_STR*"
+msgstr ""
+
+#: ../../../cmds/read.rst:68
+msgid "Uses the literal *PROMPT_STR* as the prompt for the interactive mode."
+msgstr ""
+
+#: ../../../cmds/read.rst:70
+msgid "**-R** or **--right-prompt** *RIGHT_PROMPT_CMD*"
+msgstr ""
+
+#: ../../../cmds/read.rst:71
+msgid ""
+"Uses the output of the shell command *RIGHT_PROMPT_CMD* as the right prompt "
+"for the interactive mode. There is no default right prompt command."
+msgstr ""
+
+#: ../../../cmds/read.rst:73
+msgid "**-S** or **--shell**"
+msgstr ""
+
+#: ../../../cmds/read.rst:74
+msgid ""
+"Enables syntax highlighting, tab completions and command termination "
+"suitable for entering shellscript code in the interactive mode. NOTE: Prior "
+"to fish 3.0, the short opt for **--shell** was **-s**, but it has been "
+"changed for compatibility with bash's **-s** short opt for **--silent**."
+msgstr ""
+
+#: ../../../cmds/read.rst:76
+msgid "The following options control how much is read and how it is stored:"
+msgstr ""
+
+#: ../../../cmds/read.rst:78
+msgid "**-d** or **--delimiter** *DELIMITER*"
+msgstr ""
+
+#: ../../../cmds/read.rst:79
+msgid ""
+"Splits on *DELIMITER*. *DELIMITER* will be used as an entire string to split "
+"on, not a set of characters."
+msgstr ""
+
+#: ../../../cmds/read.rst:81
+msgid "**-n** or **--nchars** *NCHARS*"
+msgstr ""
+
+#: ../../../cmds/read.rst:82
+msgid ""
+"Makes ``read`` return after reading *NCHARS* characters or the end of the "
+"line, whichever comes first."
+msgstr ""
+
+#: ../../../cmds/read.rst:84
+msgid "**-t**, **--tokenize** or **--tokenize-raw**"
+msgstr ""
+
+#: ../../../cmds/read.rst:85
+msgid ""
+"Causes read to split the input into variables by the shell's tokenization "
+"rules. This means it will honor quotes and escaping. This option is of "
+"course incompatible with other options to control splitting like **--"
+"delimiter** and does not honor :envvar:`IFS` (like fish's tokenizer). The **-"
+"t** -or **--tokenize** variants perform quote removal, so e.g. ``a\\ b`` is "
+"stored as ``a b``. However variables and command substitutions are not "
+"expanded."
+msgstr ""
+
+#: ../../../cmds/read.rst:91
+msgid "**-a** or **--list**"
+msgstr ""
+
+#: ../../../cmds/read.rst:92
+msgid ""
+"Stores the result as a list in a single variable. This option is also "
+"available as **--array** for backwards compatibility."
+msgstr ""
+
+#: ../../../cmds/read.rst:94
+msgid "**-z** or **--null**"
+msgstr ""
+
+#: ../../../cmds/read.rst:95
+msgid ""
+"Marks the end of the line with the NUL character, instead of newline. This "
+"also disables interactive mode."
+msgstr ""
+
+#: ../../../cmds/read.rst:97
+msgid "**-L** or **--line**"
+msgstr ""
+
+#: ../../../cmds/read.rst:98
+msgid ""
+"Reads each line into successive variables, and stops after each variable has "
+"been filled. This cannot be combined with the ``--delimiter`` option."
+msgstr ""
+
+#: ../../../cmds/read.rst:100
+msgid ""
+"Without the ``--line`` option, ``read`` reads a single line of input from "
+"standard input, breaks it into tokens, and then assigns one token to each "
+"variable specified in *VARIABLES*. If there are more tokens than variables, "
+"the complete remainder is assigned to the last variable."
+msgstr ""
+
+#: ../../../cmds/read.rst:102
+msgid ""
+"If no option to determine how to split like ``--delimiter``, ``--line`` or "
+"``--tokenize`` is given, the variable ``IFS`` is used as a list of "
+"characters to split on. Relying on the use of ``IFS`` is deprecated and this "
+"behaviour will be removed in future versions. The default value of ``IFS`` "
+"contains space, tab and newline characters. As a special case, if ``IFS`` is "
+"set to the empty string, each character of the input is considered a "
+"separate token."
+msgstr ""
+
+#: ../../../cmds/read.rst:104
+msgid ""
+"With the ``--line`` option, ``read`` reads a line of input from standard "
+"input into each provided variable, stopping when each variable has been "
+"filled. The line is not tokenized."
+msgstr ""
+
+#: ../../../cmds/read.rst:106
+msgid ""
+"If no variable names are provided, ``read`` enters a special case that "
+"provides redirection from standard input to standard output, useful for "
+"command substitution. For instance, the fish shell command below can be used "
+"to read a password from the console instead of hardcoding it in the command "
+"itself, which prevents it from showing up in fish's history::"
+msgstr ""
+
+#: ../../../cmds/read.rst:108
+msgid "mysql -uuser -p(read)"
+msgstr ""
+
+#: ../../../cmds/read.rst:110
+msgid ""
+"When running in this mode, ``read`` does not split the input in any way and "
+"text is redirected to standard output without any further processing or "
+"manipulation."
+msgstr ""
+
+#: ../../../cmds/read.rst:112
+msgid ""
+"If ``-l`` or ``--list`` is provided, only one variable name is allowed and "
+"the tokens are stored as a list in this variable."
+msgstr ""
+
+#: ../../../cmds/read.rst:114
+msgid ""
+"In order to protect the shell from consuming too many system resources, "
+"``read`` will only consume a maximum of 100 MiB (104857600 bytes); if the "
+"terminator is not reached before this limit then *VARIABLE* is set to empty "
+"and the exit status is set to 122. This limit can be altered with the :"
+"envvar:`fish_read_limit` variable. If set to 0 (zero), the limit is removed."
+msgstr ""
+
+#: ../../../cmds/read.rst:120
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/read.rst:122
+msgid "``read`` has a few separate uses."
+msgstr ""
+
+#: ../../../cmds/read.rst:124
+msgid ""
+"The following code stores the value 'hello' in the shell variable :envvar:"
+"`foo`."
+msgstr ""
+
+#: ../../../cmds/read.rst:128
+msgid "echo hello | read foo"
+msgstr ""
+
+#: ../../../cmds/read.rst:130
+msgid ""
+"The :doc:`while <while>` command is a neat way to handle command output line-"
+"by-line::"
+msgstr ""
+
+#: ../../../cmds/read.rst:132
+msgid ""
+"printf '%s\\n' line1 line2 line3 line4 | while read -l foo\n"
+"                  echo \"This is another line: $foo\"\n"
+"              end"
+msgstr ""
+
+#: ../../../cmds/read.rst:136
+msgid "Delimiters given via \"-d\" are taken as one string::"
+msgstr ""
+
+#: ../../../cmds/read.rst:138
+msgid ""
+"echo a==b==c | read -d == -l a b c\n"
+"echo $a # a\n"
+"echo $b # b\n"
+"echo $c # c"
+msgstr ""
+
+#: ../../../cmds/read.rst:143
+msgid ""
+"``--tokenize`` honors quotes and escaping like the shell's argument passing::"
+msgstr ""
+
+#: ../../../cmds/read.rst:145
+msgid ""
+"echo 'a\\ b' | read -t first second\n"
+"echo $first # outputs \"a b\", $second is empty\n"
+"\n"
+"echo 'a\"foo bar\"b (command echo wurst)*\" \"{a,b}' | read -lt -l a b c\n"
+"echo $a # outputs 'afoo barb' (without the quotes)\n"
+"echo $b # outputs '(command echo wurst)* {a,b}' (without the quotes)\n"
+"echo $c # nothing"
+msgstr ""
+
+#: ../../../cmds/read.rst:153
+msgid ""
+"For an example on interactive use, see :ref:`Querying for user input <user-"
+"input>`."
+msgstr ""
