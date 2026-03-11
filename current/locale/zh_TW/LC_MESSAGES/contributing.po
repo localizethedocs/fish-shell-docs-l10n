@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:16
 msgid "Mailing List"
-msgstr ""
+msgstr "郵件列表"
 
 #: ../../../../CONTRIBUTING.rst:18
 msgid ""

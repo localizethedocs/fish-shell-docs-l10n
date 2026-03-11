@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/string-upper.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/string-upper.rst:9
 msgid "string upper [-q | --quiet] [STRING ...]"

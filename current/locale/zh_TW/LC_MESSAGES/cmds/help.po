@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/help.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/help.rst:7
 msgid "help [SECTION]"
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../../cmds/help.rst:26
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/help.rst:28
 msgid "``help fg`` shows the documentation for the :doc:`fg <fg>` builtin."

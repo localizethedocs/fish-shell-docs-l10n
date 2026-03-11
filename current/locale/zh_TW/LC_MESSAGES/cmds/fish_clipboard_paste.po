@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/fish_clipboard_paste.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/fish_clipboard_paste.rst:7
 msgid ""

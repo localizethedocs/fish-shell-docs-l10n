@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/not.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/not.rst:7
 msgid ""
@@ -51,7 +51,7 @@ msgstr ""
 
 #: ../../../cmds/not.rst:23
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/not.rst:25
 msgid ""

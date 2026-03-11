@@ -25,7 +25,7 @@ msgstr ""
 
 #: ../../../cmds/fish_right_prompt.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/fish_right_prompt.rst:9
 msgid ""
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../../cmds/fish_right_prompt.rst:25
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/fish_right_prompt.rst:27
 msgid "A simple right prompt:"

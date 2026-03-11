@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/realpath.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/realpath.rst:7
 msgid "realpath [OPTIONS] PATH"

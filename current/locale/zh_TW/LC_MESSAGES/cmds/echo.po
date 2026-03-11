@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/echo.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/echo.rst:7
 msgid "echo [OPTIONS] [STRING]"
@@ -143,7 +143,7 @@ msgstr ""
 
 #: ../../../cmds/echo.rst:67
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/echo.rst:71
 msgid ""

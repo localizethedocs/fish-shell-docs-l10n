@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/exec.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/exec.rst:7
 msgid "exec COMMAND"
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../../cmds/exec.rst:24
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/exec.rst:26
 msgid ""

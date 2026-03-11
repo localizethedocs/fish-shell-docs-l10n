@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/fish_greeting.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/fish_greeting.rst:7
 msgid "fish_greeting"
@@ -62,7 +62,7 @@ msgstr ""
 
 #: ../../../cmds/fish_greeting.rst:28
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/fish_greeting.rst:30
 msgid "To just empty the text, with the default greeting function::"

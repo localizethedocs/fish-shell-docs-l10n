@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/functions.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/functions.rst:7
 msgid ""

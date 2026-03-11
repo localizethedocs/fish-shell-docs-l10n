@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/source.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/source.rst:7
 msgid ""
@@ -88,7 +88,7 @@ msgstr ""
 
 #: ../../../cmds/source.rst:33
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/source.rst:39
 msgid ""
