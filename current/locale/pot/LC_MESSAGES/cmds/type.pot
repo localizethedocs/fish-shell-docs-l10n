@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/type.rst:2
+msgid "type - locate a command and describe its type"
+msgstr ""
+
+#: ../../../cmds/type.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/type.rst:7
+msgid "type [OPTIONS] NAME [...]"
+msgstr ""
+
+#: ../../../cmds/type.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/type.rst:16
+msgid ""
+"NOTE: This page documents the fish builtin ``type``. To see the "
+"documentation on any non-fish versions, use ``command man type``."
+msgstr ""
+
+#: ../../../cmds/type.rst:19
+msgid ""
+"With no options, :command:`type` indicates how each *NAME* would be "
+"interpreted if used as a command name."
+msgstr ""
+
+#: ../../../cmds/type.rst:21
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/type.rst:23
+msgid "**-a** or **--all**"
+msgstr ""
+
+#: ../../../cmds/type.rst:24
+msgid "Prints all of possible definitions of the specified names."
+msgstr ""
+
+#: ../../../cmds/type.rst:26
+msgid "**-s** or **--short**"
+msgstr ""
+
+#: ../../../cmds/type.rst:27
+msgid ""
+"Don't print function definitions when used with no options or with **-a**/"
+"**--all**."
+msgstr ""
+
+#: ../../../cmds/type.rst:29
+msgid "**-f** or **--no-functions**"
+msgstr ""
+
+#: ../../../cmds/type.rst:30
+msgid "Suppresses function lookup."
+msgstr ""
+
+#: ../../../cmds/type.rst:32
+msgid "**-t** or **--type**"
+msgstr ""
+
+#: ../../../cmds/type.rst:33
+msgid ""
+"Prints ``function``, ``builtin``, or ``file`` if *NAME* is a shell function, "
+"builtin, or disk file, respectively."
+msgstr ""
+
+#: ../../../cmds/type.rst:35
+msgid "**-p** or **--path**"
+msgstr ""
+
+#: ../../../cmds/type.rst:36
+msgid ""
+"Prints the path to *NAME* if *NAME* resolves to an executable file in :"
+"envvar:`PATH`, the path to the script containing the definition of the "
+"function *NAME* if *NAME* resolves to a function loaded from a file on disk "
+"(i.e. not interactively defined at the prompt), or nothing otherwise."
+msgstr ""
+
+#: ../../../cmds/type.rst:38
+msgid "**-P** or **--force-path**"
+msgstr ""
+
+#: ../../../cmds/type.rst:39
+msgid ""
+"Returns the path to the executable file *NAME*, presuming *NAME* is found in "
+"the :envvar:`PATH` environment variable, or nothing otherwise. **--force-"
+"path** explicitly resolves only the path to executable files in  :envvar:"
+"`PATH`, regardless of whether *NAME* is shadowed by a function or builtin "
+"with the same name."
+msgstr ""
+
+#: ../../../cmds/type.rst:41
+msgid "**-q** or **--query**"
+msgstr ""
+
+#: ../../../cmds/type.rst:42
+msgid ""
+"Suppresses all output; this is useful when testing the exit status. For "
+"compatibility with old fish versions this is also **--quiet**."
+msgstr ""
+
+#: ../../../cmds/type.rst:44
+msgid "**--color** *WHEN*"
+msgstr ""
+
+#: ../../../cmds/type.rst:45
+msgid ""
+"Controls when to use syntax highlighting colors when printing function "
+"definitions. *WHEN* can be ``auto`` (the default, colorize if the output :"
+"doc:`is a terminal <isatty>`), ``always``, or ``never``."
+msgstr ""
+
+#: ../../../cmds/type.rst:48
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/type.rst:49
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/type.rst:51
+msgid ""
+"The **-q**, **-p**, **-t** and **-P** flags (and their long flag aliases) "
+"are mutually exclusive. Only one can be specified at a time."
+msgstr ""
+
+#: ../../../cmds/type.rst:53
+msgid ""
+"``type`` returns 0 if at least one entry was found, 1 otherwise, and 2 for "
+"invalid options or option combinations."
+msgstr ""
+
+#: ../../../cmds/type.rst:56
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/type.rst:60
+msgid ""
+">_ type fg\n"
+"fg is a builtin"
+msgstr ""

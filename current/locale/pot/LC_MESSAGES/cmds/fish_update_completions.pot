@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_update_completions.rst:2
+msgid "fish_update_completions - update completions using manual pages"
+msgstr ""
+
+#: ../../../cmds/fish_update_completions.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_update_completions.rst:7
+msgid "fish_update_completions"
+msgstr ""
+
+#: ../../../cmds/fish_update_completions.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_update_completions.rst:14
+msgid ""
+"``fish_update_completions`` parses manual pages installed on the system, and "
+"attempts to create completion files in the ``fish`` configuration directory."
+msgstr ""
+
+#: ../../../cmds/fish_update_completions.rst:16
+msgid "This does not overwrite custom completions."
+msgstr ""
+
+#: ../../../cmds/fish_update_completions.rst:18
+msgid "There are no parameters for ``fish_update_completions``."
+msgstr ""

@@ -1,0 +1,53 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/true.rst:2
+msgid "true - return a successful result"
+msgstr ""
+
+#: ../../../cmds/true.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/true.rst:7
+msgid "true"
+msgstr ""
+
+#: ../../../cmds/true.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/true.rst:14
+msgid "``true`` sets the exit status to 0."
+msgstr ""
+
+#: ../../../cmds/true.rst:16
+msgid "**:** (a single colon) is an alias for the ``true`` command."
+msgstr ""
+
+#: ../../../cmds/true.rst:19
+msgid "See Also"
+msgstr ""
+
+#: ../../../cmds/true.rst:21
+msgid ":doc:`false <false>` command"
+msgstr ""
+
+#: ../../../cmds/true.rst:22
+msgid ":ref:`$status <variables-status>` variable"
+msgstr ""

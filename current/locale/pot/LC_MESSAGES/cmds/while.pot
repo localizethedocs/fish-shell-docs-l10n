@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/while.rst:2
+msgid "while - perform a set of commands multiple times"
+msgstr ""
+
+#: ../../../cmds/while.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/while.rst:7
+msgid "while CONDITION; COMMANDS; end"
+msgstr ""
+
+#: ../../../cmds/while.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/while.rst:14
+msgid ""
+"**while** repeatedly executes ``CONDITION``, and if the exit status is 0, "
+"then executes ``COMMANDS``."
+msgstr ""
+
+#: ../../../cmds/while.rst:16
+msgid ""
+"The exit status of the **while** loop is the exit status of the last "
+"iteration of the ``COMMANDS`` executed, or 0 if none were executed. (This "
+"matches other shells and is POSIX-compatible.)"
+msgstr ""
+
+#: ../../../cmds/while.rst:18
+msgid ""
+"You can use :doc:`and <and>` or :doc:`or <or>` for complex conditions. Even "
+"more complex control can be achieved with ``while true`` containing a :doc:"
+"`break <break>`."
+msgstr ""
+
+#: ../../../cmds/while.rst:20
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/while.rst:23
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/while.rst:27
+msgid ""
+"while test -f foo.txt; or test -f bar.txt ; echo file exists; sleep 10; end\n"
+"# outputs 'file exists' at 10 second intervals,\n"
+"# as long as the file foo.txt or bar.txt exists."
+msgstr ""

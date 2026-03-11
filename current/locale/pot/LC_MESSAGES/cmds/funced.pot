@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/funced.rst:2
+msgid "funced - edit a function interactively"
+msgstr ""
+
+#: ../../../cmds/funced.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/funced.rst:7
+msgid "funced [OPTIONS] NAME"
+msgstr ""
+
+#: ../../../cmds/funced.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/funced.rst:14
+msgid ""
+"``funced`` provides an interface to edit the definition of the function "
+"*NAME*."
+msgstr ""
+
+#: ../../../cmds/funced.rst:16
+msgid ""
+"If the ``$VISUAL`` environment variable is set, it will be used as the "
+"program to edit the function. If ``$VISUAL`` is unset but ``$EDITOR`` is "
+"set, that will be used. Otherwise, a built-in editor will be used. Note that "
+"to enter a literal newline using the built-in editor you should press :kbd:"
+"`alt-enter`. Pressing :kbd:`enter` signals that you are done editing the "
+"function. This does not apply to an external editor like emacs or vim."
+msgstr ""
+
+#: ../../../cmds/funced.rst:18
+msgid ""
+"``funced`` will try to edit the original file that a function is defined in, "
+"which might include variable definitions or helper functions as well. If "
+"changes cannot be saved to the original file, a copy will be created in the "
+"user's function directory."
+msgstr ""
+
+#: ../../../cmds/funced.rst:20
+msgid ""
+"If there is no function called *NAME*, a new function will be created with "
+"the specified name."
+msgstr ""
+
+#: ../../../cmds/funced.rst:22
+msgid "**-e command** or **--editor command**"
+msgstr ""
+
+#: ../../../cmds/funced.rst:23
+msgid ""
+"Open the function body inside the text editor given by the command (for "
+"example, **-e vi**). The special command ``fish`` will use the built-in "
+"editor (same as specifying **-i**)."
+msgstr ""
+
+#: ../../../cmds/funced.rst:25
+msgid "**-i** or **--interactive**"
+msgstr ""
+
+#: ../../../cmds/funced.rst:26
+msgid ""
+"Force opening the function body in the built-in editor even if ``$VISUAL`` "
+"or ``$EDITOR`` is defined."
+msgstr ""
+
+#: ../../../cmds/funced.rst:28
+msgid "**-s** or **--save**"
+msgstr ""
+
+#: ../../../cmds/funced.rst:29
+msgid "Automatically save the function after successfully editing it."
+msgstr ""
+
+#: ../../../cmds/funced.rst:31
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/funced.rst:32
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/funced.rst:35
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/funced.rst:37
+msgid "Say you want to modify your prompt."
+msgstr ""
+
+#: ../../../cmds/funced.rst:39
+msgid "Run::"
+msgstr ""
+
+#: ../../../cmds/funced.rst:41
+msgid ">_ funced fish_prompt"
+msgstr ""
+
+#: ../../../cmds/funced.rst:43
+msgid ""
+"This will open up your editor, allowing you to modify the function. When "
+"you're done, save and quit. Fish will reload the function, so you should see "
+"the changes right away."
+msgstr ""
+
+#: ../../../cmds/funced.rst:45
+msgid "When you're done, use::"
+msgstr ""
+
+#: ../../../cmds/funced.rst:47
+msgid ">_ funcsave fish_prompt"
+msgstr ""
+
+#: ../../../cmds/funced.rst:49
+msgid ""
+"For more, see :doc:`funcsave <funcsave>`. To view a function's current "
+"definition, use :doc:`functions <functions>` or :doc:`type <type>`."
+msgstr ""

@@ -1,0 +1,245 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_config.rst:2
+msgid "fish_config - start the web-based configuration interface"
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:7
+msgid ""
+"fish_config [browse]\n"
+"fish_config prompt (choose | list | save | show)\n"
+"fish_config theme\n"
+"fish_config theme choose THEME [ --color-theme=(dark | light) ]\n"
+"fish_config theme demo\n"
+"fish_config theme dump\n"
+"fish_config theme list\n"
+"fish_config theme show [THEME...]"
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:19
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:21
+msgid "``fish_config`` is used to configure fish."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:23
+msgid ""
+"Without arguments or with the ``browse`` command it starts the web-based "
+"configuration interface. The web interface allows you to view your "
+"functions, variables and history, and to make changes to your prompt and "
+"color configuration. It starts a local web server and opens a browser "
+"window. When you are finished, close the browser window and press the Enter "
+"key to terminate the configuration session."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:25
+msgid ""
+"If the ``BROWSER`` environment variable is set, it will be used as the name "
+"of the web browser to open instead of the system default."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:27
+msgid ""
+"With the ``prompt`` command ``fish_config`` can be used to view and choose a "
+"prompt from fish's sample prompts inside the terminal directly."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:29
+msgid "Available subcommands for the ``prompt`` command:"
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:31
+msgid "``choose`` loads a sample prompt in the current session."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:32
+msgid "``list`` lists the names of the available sample prompts."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:33
+msgid ""
+"``save`` saves the current prompt to a file (via :doc:`funcsave <funcsave>`)."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:34
+msgid "``show`` shows what the given sample prompts (or all) would look like."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:36
+msgid ""
+"With the ``theme`` command ``fish_config`` can be used to view and choose a "
+"theme (meaning a color scheme) inside the terminal."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:38
+msgid "Available subcommands for the ``theme`` command:"
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:40
+msgid ""
+"``choose`` loads a theme in the current session. If the theme has light and "
+"dark variants (see below), the one matching :envvar:"
+"`fish_terminal_color_theme` will be applied (also whenever that variable "
+"changes). To override :envvar:`fish_terminal_color_theme`, pass the ``--"
+"color-theme`` argument."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:43
+msgid "``demo`` displays some sample text in the current theme."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:44
+msgid "``dump`` prints the current theme in a loadable format."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:45
+msgid "``list`` lists the names of the available themes."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:46
+msgid "``show`` shows what the given themes (or all) would look like."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:47
+msgid ""
+"*(not recommended)* ``save`` saves the given theme to :ref:`universal "
+"variables <variables-universal>`. A theme set this way will not update as :"
+"envvar:`fish_terminal_color_theme` changes."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:50
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:55
+msgid "Theme Files"
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:57
+msgid ""
+"``fish_config theme`` and the theme selector in the web config tool load "
+"their themes from theme files. These are stored in the fish configuration "
+"directory, typically ``~/.config/fish/themes``, with a .theme ending."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:59
+msgid "You can add your own theme by adding a file in that directory."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:61
+msgid "To get started quickly::"
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:63
+msgid "fish_config theme dump > ~/.config/fish/themes/my.theme"
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:65
+msgid "which will save your current theme in .theme format."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:67
+msgid "The format looks like this:"
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:73
+msgid ""
+"# name: 'My Theme'\n"
+"\n"
+"[light]\n"
+"# preferred_background: ffffff\n"
+"fish_color_normal 000000\n"
+"fish_color_autosuggestion 7f7f7f\n"
+"fish_color_command 0000ee\n"
+"\n"
+"[dark]\n"
+"# preferred_background: 000000\n"
+"fish_color_normal ffffff\n"
+"fish_color_autosuggestion 7f7f7f\n"
+"fish_color_command 5c5cff\n"
+"\n"
+"[unknown]\n"
+"fish_color_normal normal\n"
+"fish_color_autosuggestion brblack\n"
+"fish_color_cancel -r\n"
+"fish_color_command normal"
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:93
+msgid "The comments provide name and background color to the web config tool."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:95
+msgid ""
+"Themes can have three variants, one for light mode, one for dark mode, and "
+"one for terminals that don't :ref:`report colors <term-compat-query-"
+"background-color>` (where :envvar:`fish_terminal_color_theme` is set to "
+"``unknown``)."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:100
+msgid ""
+"The other lines are just like ``set variable value``, except that no "
+"expansions are allowed. Quotes are, but aren't necessary."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:104
+msgid ""
+"Other than that, .theme files can contain any variable with a name that "
+"matches the regular expression ``'^fish_(?:pager_)?color_.*$'`` - starts "
+"with ``fish_``, an optional ``pager_``, then ``color_`` and then anything."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:107
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:109
+msgid ""
+"``fish_config`` or ``fish_config browse`` opens a new web browser window and "
+"allows you to configure certain fish settings."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:111
+msgid "``fish_config prompt show`` demos the available sample prompts."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:113
+msgid ""
+"``fish_config prompt choose disco`` makes the disco prompt the prompt for "
+"the current session. This can also be used in :ref:`config.fish "
+"<configuration>` to set the prompt."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:115
+msgid ""
+"``fish_config prompt save`` saves the current prompt to an :ref:`autoloaded "
+"<syntax-function-autoloading>` file."
+msgstr ""
+
+#: ../../../cmds/fish_config.rst:117
+msgid ""
+"``fish_config prompt save default`` chooses the default prompt and saves it."
+msgstr ""
