@@ -13,22 +13,22 @@
     },
     "zh_CN" : 
     {
-      "branch" : "",
+      "branch" : "master",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-03-10 09:56:05 +0800",
+        "hash" : "dbb6ae6cf53948edd90f78e0dc1e88f7e331579e",
+        "title" : "Update changelog"
       }
     },
     "zh_TW" : 
     {
-      "branch" : "",
+      "branch" : "master",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-03-10 09:56:05 +0800",
+        "hash" : "dbb6ae6cf53948edd90f78e0dc1e88f7e331579e",
+        "title" : "Update changelog"
       }
     }
   },

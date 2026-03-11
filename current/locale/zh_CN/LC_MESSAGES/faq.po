@@ -1,0 +1,804 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../faq.rst:2
+msgid "Frequently asked questions"
+msgstr ""
+
+#: ../../../faq.rst:5
+msgid "What is the equivalent to this thing from bash (or other shells)?"
+msgstr ""
+
+#: ../../../faq.rst:7
+msgid "See :doc:`Fish for bash users <fish_for_bash_users>`"
+msgstr ""
+
+#: ../../../faq.rst:10
+msgid "How do I set or clear an environment variable?"
+msgstr ""
+
+#: ../../../faq.rst:11
+msgid "Use the :doc:`set <cmds/set>` command::"
+msgstr ""
+
+#: ../../../faq.rst:13
+msgid ""
+"set -x key value # typically set -gx key value\n"
+"set -e key"
+msgstr ""
+
+#: ../../../faq.rst:16
+msgid ""
+"Since fish 3.1 you can set an environment variable for one command using the "
+"``key=value some command`` syntax, like in other shells.  The two lines "
+"below behave identically - unlike other shells, fish will output ``value`` "
+"both times::"
+msgstr ""
+
+#: ../../../faq.rst:18
+msgid ""
+"key=value echo $key\n"
+"begin; set -lx key value; echo $key; end"
+msgstr ""
+
+#: ../../../faq.rst:21
+msgid ""
+"Note that \"exported\" is not a :ref:`scope <variables-scope>`, but an "
+"additional bit of state. A variable can be global and exported or local and "
+"exported or even universal and exported. Typically it makes sense to make an "
+"exported variable global."
+msgstr ""
+
+#: ../../../faq.rst:24
+msgid "How do I check whether a variable is defined?"
+msgstr ""
+
+#: ../../../faq.rst:26
+msgid ""
+"Use ``set -q var``.  For example, ``if set -q var; echo variable defined; "
+"end``.  To check multiple variables you can combine with ``and`` and ``or`` "
+"like so::"
+msgstr ""
+
+#: ../../../faq.rst:28
+msgid ""
+"if set -q var1; or set -q var2\n"
+"    echo either variable defined\n"
+"end"
+msgstr ""
+
+#: ../../../faq.rst:32
+msgid ""
+"Keep in mind that a defined variable could also be empty, either by having "
+"no elements (if set like ``set var``) or only empty elements (if set like "
+"``set var \"\"``). Read on for how to deal with those."
+msgstr ""
+
+#: ../../../faq.rst:36
+msgid "How do I check whether a variable is not empty?"
+msgstr ""
+
+#: ../../../faq.rst:38
+msgid ""
+"Use ``string length -q -- $var``.  For example, ``if string length -q -- "
+"$var; echo not empty; end``.  Note that ``string length`` will interpret a "
+"list of multiple variables as a disjunction (meaning any/or)::"
+msgstr ""
+
+#: ../../../faq.rst:40
+msgid ""
+"if string length -q -- $var1 $var2 $var3\n"
+"    echo at least one of these variables is not empty\n"
+"end"
+msgstr ""
+
+#: ../../../faq.rst:44
+msgid ""
+"Alternatively, use ``test -n \"$var\"``, but remember that **the variable "
+"must be double-quoted**.  For example, ``if test -n \"$var\"; echo not "
+"empty; end``. The ``test`` command provides its own and (-a) and or (-o)::"
+msgstr ""
+
+#: ../../../faq.rst:46
+msgid ""
+"if test -n \"$var1\" -o -n \"$var2\" -o -n \"$var3\"\n"
+"    echo at least one of these variables is not empty\n"
+"end"
+msgstr ""
+
+#: ../../../faq.rst:51
+msgid ""
+"If you want to know if a variable has *no elements*, use ``set -q var[1]``."
+msgstr ""
+
+#: ../../../faq.rst:55
+msgid "Why doesn't ``set -Ux`` (exported universal variables) seem to work?"
+msgstr ""
+
+#: ../../../faq.rst:56
+msgid "A global variable of the same name already exists."
+msgstr ""
+
+#: ../../../faq.rst:58
+msgid ""
+"Environment variables such as ``EDITOR`` or ``TZ`` can be set universally "
+"using ``set -Ux``.  However, if there is an environment variable already set "
+"before fish starts (such as by login scripts or system administrators), it "
+"is imported into fish as a global variable. The :ref:`variable scopes "
+"<variables-scope>` are searched from the \"inside out\", which means that "
+"local variables are checked first, followed by global variables, and finally "
+"universal variables."
+msgstr ""
+
+#: ../../../faq.rst:64
+msgid ""
+"This means that the global value takes precedence over the universal value."
+msgstr ""
+
+#: ../../../faq.rst:66
+msgid ""
+"To avoid this problem, consider changing the setting which fish inherits. If "
+"this is not possible, add a statement to your :ref:`configuration file "
+"<configuration>` (usually ``~/.config/fish/config.fish``)::"
+msgstr ""
+
+#: ../../../faq.rst:70
+msgid "set -gx EDITOR vim"
+msgstr ""
+
+#: ../../../faq.rst:73
+msgid ""
+"How do I run a command every login? What's fish's equivalent to .bashrc or ."
+"profile?"
+msgstr ""
+
+#: ../../../faq.rst:74
+msgid ""
+"Edit the file ``~/.config/fish/config.fish`` [#]_, creating it if it does "
+"not exist (Note the leading period)."
+msgstr ""
+
+#: ../../../faq.rst:76
+msgid ""
+"Unlike .bashrc and .profile, this file is always read, even in non-"
+"interactive or login shells."
+msgstr ""
+
+#: ../../../faq.rst:78
+msgid ""
+"To do something only in interactive shells, check ``status is-interactive`` "
+"like::"
+msgstr ""
+
+#: ../../../faq.rst:80
+msgid ""
+"if status is-interactive\n"
+"    # use the coolbeans theme\n"
+"    fish_config theme choose coolbeans\n"
+"end"
+msgstr ""
+
+#: ../../../faq.rst:85
+msgid ""
+"The \"~/.config\" part of this can be set via $XDG_CONFIG_HOME, that's just "
+"the default."
+msgstr ""
+
+#: ../../../faq.rst:88
+msgid "How do I set my prompt?"
+msgstr ""
+
+#: ../../../faq.rst:89
+msgid ""
+"The prompt is the output of the ``fish_prompt`` function. Put it in ``~/."
+"config/fish/functions/fish_prompt.fish``. For example, a simple prompt is::"
+msgstr ""
+
+#: ../../../faq.rst:91
+msgid ""
+"function fish_prompt\n"
+"    set_color $fish_color_cwd\n"
+"    echo -n (prompt_pwd)\n"
+"    set_color normal\n"
+"    echo -n ' > '\n"
+"end"
+msgstr ""
+
+#: ../../../faq.rst:99
+msgid ""
+"You can also use the Web configuration tool, :doc:`fish_config <cmds/"
+"fish_config>`, to preview and choose from a gallery of sample prompts."
+msgstr ""
+
+#: ../../../faq.rst:101
+msgid "Or you can use fish_config from the commandline::"
+msgstr ""
+
+#: ../../../faq.rst:103
+msgid ""
+"> fish_config prompt show\n"
+"# displays all the prompts fish ships with\n"
+"> fish_config prompt choose disco\n"
+"# loads the disco prompt in the current shell\n"
+"> fish_config prompt save\n"
+"# makes the change permanent"
+msgstr ""
+
+#: ../../../faq.rst:110
+msgid ""
+"If you want to modify your existing prompt, you can use :doc:`funced <cmds/"
+"funced>` and :doc:`funcsave <cmds/funcsave>` like::"
+msgstr ""
+
+#: ../../../faq.rst:112
+msgid ""
+">_ funced fish_prompt\n"
+"# This opens up your editor (set in $EDITOR).\n"
+"# Modify the function,\n"
+"# save the file and repeat to your liking.\n"
+"# Once you are happy with it:\n"
+">_ funcsave fish_prompt"
+msgstr ""
+
+#: ../../../faq.rst:119
+msgid ""
+"This also applies to :doc:`fish_right_prompt <cmds/fish_right_prompt>` and :"
+"doc:`fish_mode_prompt <cmds/fish_mode_prompt>`."
+msgstr ""
+
+#: ../../../faq.rst:122
+msgid "Why does my prompt show a ``[I]``?"
+msgstr ""
+
+#: ../../../faq.rst:124
+msgid ""
+"That's the :doc:`fish_mode_prompt <cmds/fish_mode_prompt>`. It is displayed "
+"by default when you've activated vi mode using ``fish_vi_key_bindings``."
+msgstr ""
+
+#: ../../../faq.rst:126
+msgid ""
+"If you haven't activated vi mode on purpose, you might have installed a "
+"third-party theme or plugin that does it."
+msgstr ""
+
+#: ../../../faq.rst:128
+msgid ""
+"If you want to change or disable this display, modify the "
+"``fish_mode_prompt`` function, for instance via :doc:`funced <cmds/funced>`."
+msgstr ""
+
+#: ../../../faq.rst:131
+msgid "How do I customize my syntax highlighting colors?"
+msgstr ""
+
+#: ../../../faq.rst:132
+msgid ""
+"Use the web configuration tool started by :doc:`fish_config <cmds/"
+"fish_config>`, or alter the :ref:`fish_color family of environment variables "
+"<variables-color>`, or use the :doc:`fish_config theme <cmds/fish_config>` "
+"subcommand, like::"
+msgstr ""
+
+#: ../../../faq.rst:136
+msgid ""
+"> fish_config theme show\n"
+"# to demonstrate all the colorschemes\n"
+"> fish_config theme choose coolbeans\n"
+"# to load the \"coolbeans\" theme"
+msgstr ""
+
+#: ../../../faq.rst:142
+msgid "How do I change the greeting message?"
+msgstr ""
+
+#: ../../../faq.rst:143
+msgid ""
+"Change the value of the variable ``fish_greeting`` or create a :doc:"
+"`fish_greeting <cmds/fish_greeting>` function. For example, to remove the "
+"greeting use::"
+msgstr ""
+
+#: ../../../faq.rst:145
+msgid "set -U fish_greeting"
+msgstr ""
+
+#: ../../../faq.rst:147
+msgid "Or if you prefer not to use a universal variable, use::"
+msgstr ""
+
+#: ../../../faq.rst:149
+msgid "set -g fish_greeting"
+msgstr ""
+
+#: ../../../faq.rst:151
+msgid "in :ref:`config.fish <configuration>`."
+msgstr ""
+
+#: ../../../faq.rst:154
+msgid "How do I run a command from history?"
+msgstr ""
+
+#: ../../../faq.rst:155
+msgid ""
+"Type some part of the command, and then hit the :kbd:`up` (``↑``) or :kbd:"
+"`down` (``↓``) arrow keys to navigate through history matches, or press :kbd:"
+"`ctrl-r` to open the history in a searchable pager. In this pager you can "
+"press :kbd:`ctrl-r` or :kbd:`ctrl-s` to move to older or younger history "
+"respectively."
+msgstr ""
+
+#: ../../../faq.rst:157
+msgid ""
+"Additional default key bindings include :kbd:`ctrl-p` (up) and :kbd:`ctrl-n` "
+"(down). See :ref:`Searchable command history <history-search>` for more "
+"information."
+msgstr ""
+
+#: ../../../faq.rst:160
+msgid "Why doesn't history substitution (\"!$\" etc.) work?"
+msgstr ""
+
+#: ../../../faq.rst:161
+msgid ""
+"Because history substitution is an awkward interface that was invented "
+"before interactive line editing was even possible. Instead of adding this "
+"pseudo-syntax, fish opts for nice history searching and recall features.  "
+"Switching requires a small change of habits: if you want to modify an old "
+"line/word, first recall it, then edit."
+msgstr ""
+
+#: ../../../faq.rst:163
+msgid ""
+"As a special case, most of the time history substitution is used as ``sudo !!"
+"``. In that case press :kbd:`alt-s`, and it will recall your last "
+"commandline with ``sudo`` prefixed (or toggle a ``sudo`` prefix on the "
+"current commandline if there is anything)."
+msgstr ""
+
+#: ../../../faq.rst:165
+msgid "In general, fish's history recall works like this:"
+msgstr ""
+
+#: ../../../faq.rst:167
+msgid ""
+"Like other shells, the Up arrow, ``up`` recalls whole lines, starting from "
+"the last executed line. So instead of typing ``!!``, you would hit the up-"
+"arrow."
+msgstr ""
+
+#: ../../../faq.rst:169
+msgid ""
+"If the line you want is far back in the history, type any part of the line "
+"and then press Up one or more times.  This will filter the recalled lines to "
+"ones that include this text, and you will get to the line you want much "
+"faster.  This replaces \"!vi\", \"!?bar.c\" and the like. If you want to see "
+"more context, you can press ``ctrl-r`` to open the history in the pager."
+msgstr ""
+
+#: ../../../faq.rst:171
+msgid ""
+"``alt-up`` recalls individual arguments, starting from the last argument in "
+"the last executed line. This can be used instead of \"!$\"."
+msgstr ""
+
+#: ../../../faq.rst:173
+msgid ""
+"See :ref:`documentation <editor>` for more details about line editing in "
+"fish."
+msgstr ""
+
+#: ../../../faq.rst:175
+msgid ""
+"That being said, you can use :ref:`abbreviations` to implement history "
+"substitution. Here's ``!!`` only::"
+msgstr ""
+
+#: ../../../faq.rst:177
+msgid ""
+"function last_history_item; echo $history[1]; end\n"
+"abbr -a !! --position anywhere --function last_history_item"
+msgstr ""
+
+#: ../../../faq.rst:180
+msgid ""
+"Run this and ``!!`` will be replaced with the last history entry, anywhere "
+"on the commandline. Put it into :ref:`config.fish <configuration>` to keep "
+"it."
+msgstr ""
+
+#: ../../../faq.rst:183
+msgid "How do I run a subcommand? The backtick doesn't work!"
+msgstr ""
+
+#: ../../../faq.rst:184
+msgid "``fish`` uses parentheses for subcommands. For example::"
+msgstr ""
+
+#: ../../../faq.rst:186
+msgid ""
+"for i in (ls)\n"
+"    echo $i\n"
+"end"
+msgstr ""
+
+#: ../../../faq.rst:190
+msgid ""
+"It also supports the familiar ``$()`` syntax, even in quotes. Backticks are "
+"not supported because they are discouraged even in POSIX shells. They nest "
+"poorly and are hard to tell from single quotes (``''``)."
+msgstr ""
+
+#: ../../../faq.rst:193
+msgid "My command (pkg-config) gives its output as a single long string?"
+msgstr ""
+
+#: ../../../faq.rst:194
+msgid ""
+"Unlike other shells, fish splits command substitutions only on newlines, not "
+"spaces or tabs or the characters in $IFS."
+msgstr ""
+
+#: ../../../faq.rst:196
+msgid "That means if you run"
+msgstr ""
+
+#: ../../../faq.rst:200
+msgid "count (printf '%s ' a b c)"
+msgstr ""
+
+#: ../../../faq.rst:203
+msgid ""
+"It will print ``1``, because the \"a b c \" is used in one piece. But if you "
+"do"
+msgstr ""
+
+#: ../../../faq.rst:207
+msgid "count (printf '%s\\n' a b c)"
+msgstr ""
+
+#: ../../../faq.rst:209
+msgid ""
+"it will print ``3``, because it gave ``count`` the arguments \"a\", \"b\" "
+"and \"c\" separately."
+msgstr ""
+
+#: ../../../faq.rst:211
+msgid ""
+"In the overwhelming majority of cases, splitting on spaces is unwanted, so "
+"this is an improvement. This is why you hear about problems with filenames "
+"with spaces, after all."
+msgstr ""
+
+#: ../../../faq.rst:213
+msgid ""
+"However sometimes, especially with ``pkg-config`` and related tools, "
+"splitting on spaces is needed."
+msgstr ""
+
+#: ../../../faq.rst:215
+msgid "In these cases use ``string split -n \" \"`` like::"
+msgstr ""
+
+#: ../../../faq.rst:217
+msgid ""
+"g++ example_01.cpp (pkg-config --cflags --libs gtk+-2.0 | string split -n \" "
+"\")"
+msgstr ""
+
+#: ../../../faq.rst:219
+msgid "The ``-n`` is so empty elements are removed like POSIX shells would do."
+msgstr ""
+
+#: ../../../faq.rst:222
+msgid "How do I get the exit status of a command?"
+msgstr ""
+
+#: ../../../faq.rst:223
+msgid ""
+"Use the ``$status`` variable. This replaces the ``$?`` variable used in "
+"other shells."
+msgstr ""
+
+#: ../../../faq.rst:227
+msgid ""
+"somecommand\n"
+"if test $status -eq 7\n"
+"    echo \"That's my lucky number!\"\n"
+"end"
+msgstr ""
+
+#: ../../../faq.rst:233
+msgid ""
+"If you are only interested in success or failure, you can run the command "
+"directly as the if-condition::"
+msgstr ""
+
+#: ../../../faq.rst:235
+msgid ""
+"if somecommand\n"
+"    echo \"Command succeeded\"\n"
+"else\n"
+"    echo \"Command failed\"\n"
+"end"
+msgstr ""
+
+#: ../../../faq.rst:242
+msgid ""
+"Or if you just want to do one command in case the first succeeded or failed, "
+"use ``and`` or ``or``::"
+msgstr ""
+
+#: ../../../faq.rst:244
+msgid ""
+"somecommand\n"
+"or someothercommand"
+msgstr ""
+
+#: ../../../faq.rst:247
+msgid ""
+"See the :ref:`Conditions <syntax-conditional>` and the documentation for :"
+"doc:`test <cmds/test>` and :doc:`if <cmds/if>` for more information."
+msgstr ""
+
+#: ../../../faq.rst:250
+msgid "My command prints \"No matches for wildcard\" but works in bash"
+msgstr ""
+
+#: ../../../faq.rst:252
+msgid ""
+"In short: :ref:`quote <quotes>` or :ref:`escape <escapes>` the wildcard::"
+msgstr ""
+
+#: ../../../faq.rst:254
+msgid "scp user@ip:/dir/\"string-*\""
+msgstr ""
+
+#: ../../../faq.rst:256
+msgid ""
+"When fish sees an unquoted ``*``, it performs :ref:`wildcard expansion "
+"<expand-wildcard>`. That means it tries to match filenames to the given "
+"string."
+msgstr ""
+
+#: ../../../faq.rst:258
+msgid ""
+"If the wildcard doesn't match any files, fish prints an error instead of "
+"running the command::"
+msgstr ""
+
+#: ../../../faq.rst:260
+msgid ""
+"> echo *this*does*not*exist\n"
+"fish: No matches for wildcard '*this*does*not*exist'. See `help expand`.\n"
+"echo *this*does*not*exist\n"
+"     ^"
+msgstr ""
+
+#: ../../../faq.rst:265
+msgid ""
+"Now, bash also tries to match files in this case, but when it doesn't find a "
+"match, it passes along the literal wildcard string instead."
+msgstr ""
+
+#: ../../../faq.rst:267
+msgid "That means that commands like the above"
+msgstr ""
+
+#: ../../../faq.rst:269
+msgid "scp user@ip:/dir/string-*"
+msgstr ""
+
+#: ../../../faq.rst:273
+msgid "or"
+msgstr ""
+
+#: ../../../faq.rst:275
+msgid "apt install postgres-*"
+msgstr ""
+
+#: ../../../faq.rst:279
+msgid ""
+"appear to work, because most of the time the string doesn't match and so it "
+"passes along the ``string-*``, which is then interpreted by the receiving "
+"program."
+msgstr ""
+
+#: ../../../faq.rst:281
+msgid ""
+"But it also means that these commands can stop working at any moment once a "
+"matching file is encountered (because it has been created or the command is "
+"executed in a different working directory), and to deal with that bash needs "
+"workarounds like"
+msgstr ""
+
+#: ../../../faq.rst:283
+msgid ""
+"for f in ./*.mpg; do\n"
+"      # We need to test if the file really exists because\n"
+"      # the wildcard might have failed to match.\n"
+"      test -f \"$f\" || continue\n"
+"      mympgviewer \"$f\"\n"
+"done"
+msgstr ""
+
+#: ../../../faq.rst:292
+msgid "(from http://mywiki.wooledge.org/BashFAQ/004)"
+msgstr ""
+
+#: ../../../faq.rst:294
+msgid ""
+"For these reasons, fish does not do this, and instead expects asterisks to "
+"be quoted or escaped if they aren't supposed to be expanded."
+msgstr ""
+
+#: ../../../faq.rst:296
+msgid "This is similar to bash's \"failglob\" option."
+msgstr ""
+
+#: ../../../faq.rst:299
+msgid "Why won't SSH/SCP/rsync connect properly when fish is my login shell?"
+msgstr ""
+
+#: ../../../faq.rst:301
+msgid ""
+"This problem may show up as messages like \"``Received message too long``\", "
+"\"``open terminal failed: not a terminal``\", \"``Bad packet length``\", or "
+"\"``Connection refused``\" with strange output in "
+"``ssh_exchange_identification`` messages in the debug log."
+msgstr ""
+
+#: ../../../faq.rst:305
+msgid ""
+"This usually happens because fish reads the :ref:`user configuration file "
+"<configuration>` (``~/.config/fish/config.fish``) *always*, whether it's in "
+"an interactive or login or non-interactive or non-login shell."
+msgstr ""
+
+#: ../../../faq.rst:308
+msgid ""
+"This simplifies matters, but it also means when config.fish generates "
+"output, it will do that even in non-interactive shells like the one ssh/scp/"
+"rsync start when they connect."
+msgstr ""
+
+#: ../../../faq.rst:310
+msgid ""
+"Anything in config.fish that produces output should be guarded with ``status "
+"is-interactive`` (or ``status is-login`` if you prefer)::"
+msgstr ""
+
+#: ../../../faq.rst:313
+msgid ""
+"if status is-interactive\n"
+"  ...\n"
+"end"
+msgstr ""
+
+#: ../../../faq.rst:317
+msgid ""
+"The same applies for example when you start ``tmux`` in config.fish without "
+"guards, which will cause a message like ``sessions should be nested with "
+"care, unset $TMUX to force``."
+msgstr ""
+
+#: ../../../faq.rst:322
+msgid ""
+"I'm getting weird graphical glitches (a staircase effect, ghost characters, "
+"cursor in the wrong position,...)?"
+msgstr ""
+
+#: ../../../faq.rst:323
+msgid ""
+"In a terminal, the application running inside it and the terminal itself "
+"need to agree on the width of characters in order to handle cursor movement."
+msgstr ""
+
+#: ../../../faq.rst:325
+msgid ""
+"This is more important to fish than other shells because features like "
+"syntax highlighting and autosuggestions are implemented by moving the cursor."
+msgstr ""
+
+#: ../../../faq.rst:327
+msgid ""
+"Sometimes, there is disagreement on the width. There are numerous causes and "
+"fixes for this:"
+msgstr ""
+
+#: ../../../faq.rst:329
+msgid ""
+"It is possible the character is too new for your system to know - in this "
+"case you need to refrain from using it."
+msgstr ""
+
+#: ../../../faq.rst:330
+msgid ""
+"Fish or your terminal might not know about the character or handle it wrong "
+"- in this case fish or your terminal needs to be fixed, or you need to "
+"update to a fixed version."
+msgstr ""
+
+#: ../../../faq.rst:331
+msgid ""
+"The character has an \"ambiguous\" width and fish thinks that means a width "
+"of X while your terminal thinks it's Y. In this case you either need to "
+"change your terminal's configuration or set $fish_ambiguous_width to the "
+"correct value."
+msgstr ""
+
+#: ../../../faq.rst:332
+msgid ""
+"The character is an emoji and the host system only supports Unicode 8, while "
+"you are running the terminal on a system that uses Unicode >= 9. In this "
+"case set $fish_emoji_width to 2."
+msgstr ""
+
+#: ../../../faq.rst:334
+msgid "This also means that a few things are unsupportable:"
+msgstr ""
+
+#: ../../../faq.rst:336
+msgid ""
+"Non-monospace fonts - there is *no way* for fish to figure out what width a "
+"specific character has as it has no influence on the terminal's font "
+"rendering."
+msgstr ""
+
+#: ../../../faq.rst:337
+msgid ""
+"Different widths for multiple ambiguous width characters - there is no way "
+"for fish to know which width you assign to each character."
+msgstr ""
+
+#: ../../../faq.rst:342
+msgid "fish does not work in a specific terminal"
+msgstr ""
+
+#: ../../../faq.rst:344
+msgid ""
+"The terminal might not meet all of :doc:`fish's requirements <terminal-"
+"compatibility>`. Please report this to your terminal's and to fish's issue "
+"tracker."
+msgstr ""
+
+#: ../../../faq.rst:350
+msgid "Uninstalling fish"
+msgstr ""
+
+#: ../../../faq.rst:351
+msgid ""
+"If you want to uninstall fish, first make sure fish is not set as your "
+"shell. Run ``chsh -s /bin/bash`` if you are not sure."
+msgstr ""
+
+#: ../../../faq.rst:353
+msgid ""
+"If you installed it with a package manager, use that package manager's "
+"uninstall function. If you built fish yourself, assuming you installed it "
+"to /usr/local, do this::"
+msgstr ""
+
+#: ../../../faq.rst:355
+msgid ""
+"rm -Rf /usr/local/etc/fish /usr/local/share/fish ~/.config/fish\n"
+"rm /usr/local/share/man/man1/fish*.1\n"
+"cd /usr/local/bin\n"
+"rm -f fish fish_indent"
+msgstr ""

@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_right_prompt.rst:2
+msgid ""
+"fish_right_prompt - define the appearance of the right-side command line "
+"prompt"
+msgstr ""
+
+#: ../../../cmds/fish_right_prompt.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_right_prompt.rst:9
+msgid ""
+"function fish_right_prompt\n"
+"    ...\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_right_prompt.rst:15
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_right_prompt.rst:17
+msgid ""
+"``fish_right_prompt`` is similar to ``fish_prompt``, except that it appears "
+"on the right side of the terminal window."
+msgstr ""
+
+#: ../../../cmds/fish_right_prompt.rst:19
+msgid "Multiple lines are not supported in ``fish_right_prompt``."
+msgstr ""
+
+#: ../../../cmds/fish_right_prompt.rst:21
+msgid ""
+"If :envvar:`fish_transient_prompt` is set to 1, ``fish_right_prompt --final-"
+"rendering`` is run before executing the commandline."
+msgstr ""
+
+#: ../../../cmds/fish_right_prompt.rst:25
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/fish_right_prompt.rst:27
+msgid "A simple right prompt:"
+msgstr ""
+
+#: ../../../cmds/fish_right_prompt.rst:33
+msgid ""
+"function fish_right_prompt -d \"Write out the right prompt\"\n"
+"    date '+%m/%d/%y'\n"
+"end"
+msgstr ""

@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/emit.rst:2
+msgid "emit - emit a generic event"
+msgstr ""
+
+#: ../../../cmds/emit.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/emit.rst:7
+msgid "emit EVENT_NAME [ARGUMENTS ...]"
+msgstr ""
+
+#: ../../../cmds/emit.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/emit.rst:14
+msgid ""
+"``emit`` emits, or fires, an event. Events are delivered to, or caught by, "
+"special functions called :ref:`event handlers <event>`. The arguments are "
+"passed to the event handlers as function arguments."
+msgstr ""
+
+#: ../../../cmds/emit.rst:16
+msgid "The **--help** or **-h** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/emit.rst:19
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/emit.rst:21
+msgid ""
+"The following code first defines an event handler for the generic event "
+"named 'test_event', and then emits an event of that type."
+msgstr ""
+
+#: ../../../cmds/emit.rst:27
+msgid ""
+"function event_test --on-event test_event\n"
+"    echo event test: $argv\n"
+"end\n"
+"\n"
+"emit test_event something"
+msgstr ""
+
+#: ../../../cmds/emit.rst:36
+msgid "Notes"
+msgstr ""
+
+#: ../../../cmds/emit.rst:38
+msgid ""
+"Note that events are only sent to the current fish process as there is no "
+"way to send events from one fish process to another."
+msgstr ""

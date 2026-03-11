@@ -1,0 +1,415 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/status.rst:2
+msgid "status - query fish runtime information"
+msgstr ""
+
+#: ../../../cmds/status.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/status.rst:7
+msgid ""
+"status\n"
+"status is-login\n"
+"status is-interactive\n"
+"status is-interactive-read\n"
+"status is-block\n"
+"status is-breakpoint\n"
+"status is-command-substitution\n"
+"status is-no-job-control\n"
+"status is-full-job-control\n"
+"status is-interactive-job-control\n"
+"status current-command\n"
+"status current-commandline\n"
+"status filename\n"
+"status basename\n"
+"status dirname\n"
+"status fish-path\n"
+"status function\n"
+"status line-number\n"
+"status stack-trace\n"
+"status job-control CONTROL_TYPE\n"
+"status features\n"
+"status test-feature FEATURE\n"
+"status build-info\n"
+"status get-file FILE\n"
+"status list-files [PATH ...]\n"
+"status terminal\n"
+"status test-terminal-feature FEATURE\n"
+"status language [list-available|set [LANGUAGE ...]|unset]"
+msgstr ""
+
+#: ../../../cmds/status.rst:39
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/status.rst:41
+msgid ""
+"With no arguments, ``status`` displays a summary of the current login and "
+"job control status of the shell."
+msgstr ""
+
+#: ../../../cmds/status.rst:43
+msgid "The following operations (subcommands) are available:"
+msgstr ""
+
+#: ../../../cmds/status.rst:45
+msgid "**is-command-substitution**, **-c** or **--is-command-substitution**"
+msgstr ""
+
+#: ../../../cmds/status.rst:46
+msgid "Returns 0 if fish is currently executing a command substitution."
+msgstr ""
+
+#: ../../../cmds/status.rst:48
+msgid "**is-block**, **-b** or **--is-block**"
+msgstr ""
+
+#: ../../../cmds/status.rst:49
+msgid "Returns 0 if fish is currently executing a block of code."
+msgstr ""
+
+#: ../../../cmds/status.rst:51
+msgid "**is-breakpoint**"
+msgstr ""
+
+#: ../../../cmds/status.rst:52
+msgid ""
+"Returns 0 if fish is currently showing a prompt in the context of a :doc:"
+"`breakpoint <breakpoint>` command. See also the :doc:`fish_breakpoint_prompt "
+"<fish_breakpoint_prompt>` function."
+msgstr ""
+
+#: ../../../cmds/status.rst:54
+msgid "**is-interactive**, **-i** or **--is-interactive**"
+msgstr ""
+
+#: ../../../cmds/status.rst:55
+msgid "Returns 0 if fish is interactive - that is, connected to a keyboard."
+msgstr ""
+
+#: ../../../cmds/status.rst:57
+msgid "**is-interactive-read** or **--is-interactive-read**"
+msgstr ""
+
+#: ../../../cmds/status.rst:58
+msgid ""
+"Returns 0 if fish is running an interactive :doc:`read <read>` builtin which "
+"is connected to a keyboard."
+msgstr ""
+
+#: ../../../cmds/status.rst:60
+msgid "**is-login**, **-l** or **--is-login**"
+msgstr ""
+
+#: ../../../cmds/status.rst:61
+msgid ""
+"Returns 0 if fish is a login shell - that is, if fish should perform login "
+"tasks such as setting up :envvar:`PATH`."
+msgstr ""
+
+#: ../../../cmds/status.rst:63
+msgid "**is-full-job-control** or **--is-full-job-control**"
+msgstr ""
+
+#: ../../../cmds/status.rst:64
+msgid "Returns 0 if full job control is enabled."
+msgstr ""
+
+#: ../../../cmds/status.rst:66
+msgid "**is-interactive-job-control** or **--is-interactive-job-control**"
+msgstr ""
+
+#: ../../../cmds/status.rst:67
+msgid "Returns 0 if interactive job control is enabled."
+msgstr ""
+
+#: ../../../cmds/status.rst:69
+msgid "**is-no-job-control** or **--is-no-job-control**"
+msgstr ""
+
+#: ../../../cmds/status.rst:70
+msgid "Returns 0 if no job control is enabled."
+msgstr ""
+
+#: ../../../cmds/status.rst:72
+msgid "**current-command**"
+msgstr ""
+
+#: ../../../cmds/status.rst:73
+msgid ""
+"Prints the name of the currently-running function or command, like the "
+"deprecated :envvar:`_` variable."
+msgstr ""
+
+#: ../../../cmds/status.rst:75
+msgid "**current-commandline**"
+msgstr ""
+
+#: ../../../cmds/status.rst:76
+msgid ""
+"Prints the entirety of the currently-running commandline, inclusive of all "
+"jobs and operators."
+msgstr ""
+
+#: ../../../cmds/status.rst:78
+msgid "**filename**, **current-filename**, **-f** or **--current-filename**"
+msgstr ""
+
+#: ../../../cmds/status.rst:79
+msgid ""
+"Prints the filename of the currently-running script. If the current script "
+"was called via a symlink, this will return the symlink. If the current "
+"script was received by piping into :doc:`source <source>`, then this will "
+"return ``-``."
+msgstr ""
+
+#: ../../../cmds/status.rst:81
+msgid "**basename**"
+msgstr ""
+
+#: ../../../cmds/status.rst:82
+msgid ""
+"Prints just the filename of the running script, without any path components "
+"before."
+msgstr ""
+
+#: ../../../cmds/status.rst:84
+msgid "**dirname**"
+msgstr ""
+
+#: ../../../cmds/status.rst:85
+msgid ""
+"Prints just the path to the running script, without the actual filename "
+"itself. This can be relative to :envvar:`PWD` (including just \".\"), "
+"depending on how the script was called. This is the same as passing the "
+"filename to ``dirname(3)``. It's useful if you want to use other files in "
+"the current script's directory or similar."
+msgstr ""
+
+#: ../../../cmds/status.rst:87
+msgid "**fish-path**"
+msgstr ""
+
+#: ../../../cmds/status.rst:88
+msgid ""
+"Prints the absolute path to the currently executing instance of fish. This "
+"is a best-effort attempt and the exact output is down to what the platform "
+"gives fish. In some cases you might only get \"fish\"."
+msgstr ""
+
+#: ../../../cmds/status.rst:90
+msgid "**function** or **current-function**"
+msgstr ""
+
+#: ../../../cmds/status.rst:91
+msgid ""
+"Prints the name of the currently called function if able, when missing "
+"displays \"Not a function\" (or equivalent translated string)."
+msgstr ""
+
+#: ../../../cmds/status.rst:93
+msgid ""
+"**line-number**, **current-line-number**, **-n** or **--current-line-number**"
+msgstr ""
+
+#: ../../../cmds/status.rst:94
+msgid "Prints the line number of the currently running script."
+msgstr ""
+
+#: ../../../cmds/status.rst:96
+msgid ""
+"**stack-trace**, **print-stack-trace**, **-t** or **--print-stack-trace**"
+msgstr ""
+
+#: ../../../cmds/status.rst:97
+msgid "Prints a stack trace of all function calls on the call stack."
+msgstr ""
+
+#: ../../../cmds/status.rst:99
+msgid "**job-control**, **-j** or **--job-control** *CONTROL_TYPE*"
+msgstr ""
+
+#: ../../../cmds/status.rst:100
+msgid ""
+"Sets the job control type to *CONTROL_TYPE*, which can be **none**, "
+"**full**, or **interactive**."
+msgstr ""
+
+#: ../../../cmds/status.rst:102
+msgid "**features**"
+msgstr ""
+
+#: ../../../cmds/status.rst:103
+msgid "Lists all available :ref:`feature flags <featureflags>`."
+msgstr ""
+
+#: ../../../cmds/status.rst:105
+msgid "**test-feature** *FEATURE*"
+msgstr ""
+
+#: ../../../cmds/status.rst:106
+msgid ""
+"Returns 0 when FEATURE is enabled, 1 if it is disabled, and 2 if it is not "
+"recognized."
+msgstr ""
+
+#: ../../../cmds/status.rst:108
+msgid "**build-info**"
+msgstr ""
+
+#: ../../../cmds/status.rst:109
+msgid ""
+"This prints information on how fish was build - which architecture, which "
+"build system or profile was used, etc. This is mainly useful for debugging."
+msgstr ""
+
+#: ../../../cmds/status.rst:114
+msgid "**get-file** *FILE*"
+msgstr ""
+
+#: ../../../cmds/status.rst:115 ../../../cmds/status.rst:122
+msgid ""
+"NOTE: this subcommand is mainly intended for fish's internal use; let us "
+"know if you want to use it elsewhere."
+msgstr ""
+
+#: ../../../cmds/status.rst:117
+msgid ""
+"This prints a file embedded in the fish binary at compile time. This "
+"includes the default set of functions and completions, as well as the man "
+"pages and themes. Which files are included depends on build settings. "
+"Returns 0 if the file was included, 1 otherwise."
+msgstr ""
+
+#: ../../../cmds/status.rst:121
+msgid "**list-files** *FILE...*"
+msgstr ""
+
+#: ../../../cmds/status.rst:124
+msgid ""
+"This lists the files embedded in the fish binary at compile time. Only files "
+"where the path starts with the optional *FILE* argument are shown. Returns 0 "
+"if something was printed, 1 otherwise."
+msgstr ""
+
+#: ../../../cmds/status.rst:129
+msgid "**terminal**"
+msgstr ""
+
+#: ../../../cmds/status.rst:130
+msgid ""
+"Prints the name and version of the terminal fish is running inside (for "
+"example as reported via :ref:`XTVERSION <term-compat-xtversion>`). This is "
+"not available during early startup but only starting from when the first "
+"interactive prompt is shown, possibly via builtin :doc:`read <read>`, so "
+"before the first ``fish_prompt`` or ``fish_read`` :ref:`event <event>`."
+msgstr ""
+
+#: ../../../cmds/status.rst:136
+msgid "**terminal-os**"
+msgstr ""
+
+#: ../../../cmds/status.rst:137
+msgid ""
+"Prints the name of the operating system (OS) the terminal is running on, as "
+"reported via :ref:`XTGETTCAP query-os-name <term-compat-xtgettcap>`. Like :"
+"ref:`status terminal <status-terminal>`, this only works once the first "
+"interactive prompt is shown. Returns 1 if the OS name is not available."
+msgstr ""
+
+#: ../../../cmds/status.rst:143
+msgid "**test-terminal-feature** *FEATURE*"
+msgstr ""
+
+#: ../../../cmds/status.rst:144
+msgid ""
+"Returns 0 when the terminal was :ref:`detected <term-compat-xtgettcap>` to "
+"support the given feature. Like :ref:`status terminal <status-terminal>`, "
+"this only works once the first interactive prompt is shown."
+msgstr ""
+
+#: ../../../cmds/status.rst:147
+msgid ""
+"Currently the only available *FEATURE* is :ref:`scroll-content-up <term-"
+"compat-indn>`. An error will be printed when passed an unrecognized feature."
+msgstr ""
+
+#: ../../../cmds/status.rst:152
+msgid "**language**"
+msgstr ""
+
+#: ../../../cmds/status.rst:153
+msgid ""
+"Show or modify message localization settings. When invoked without "
+"arguments, the current language settings are shown."
+msgstr ""
+
+#: ../../../cmds/status.rst:156
+msgid "Available subcommands:"
+msgstr ""
+
+#: ../../../cmds/status.rst:158
+msgid ""
+"**list-available** prints the language names for which fish has "
+"translations. These names can be used with the **set** subcommand."
+msgstr ""
+
+#: ../../../cmds/status.rst:162
+msgid ""
+"**set** sets the language precedence for fish's messages. Overrides language "
+"settings configured via :ref:`environment variables <variables-locale>`, but "
+"only applies to fish itself, not to any child processes. Takes a list of "
+"language names from the set shown by the **list-available** subcommand. For "
+"some languages, fish's translation catalogs are incomplete, meaning not all "
+"messages can be shown in these languages. Therefore, we allow specifying a "
+"list here, with translations taken from the first specified language which "
+"has a translation available for a message. For example, after running "
+"``status language set pt_BR fr``, all messages which have a translation into "
+"Brazilian Portuguese will be shown in that language. The remaining messages "
+"will be shown in French, if a French translation is available. If none of "
+"the specified languages have a translation available for a message, the "
+"message will be shown in English."
+msgstr ""
+
+#: ../../../cmds/status.rst:172
+msgid ""
+"**unset** undoes the effects of the **set** subcommand. Language settings "
+"will be taken from environment variables again."
+msgstr ""
+
+#: ../../../cmds/status.rst:177
+msgid "Notes"
+msgstr ""
+
+#: ../../../cmds/status.rst:179
+msgid ""
+"For backwards compatibility most subcommands can also be specified as a long "
+"or short option. For example, rather than ``status is-login`` you can type "
+"``status --is-login``. The flag forms are deprecated and may be removed in a "
+"future release."
+msgstr ""
+
+#: ../../../cmds/status.rst:181
+msgid ""
+"You can only specify one subcommand per invocation even if you use the flag "
+"form of the subcommand."
+msgstr ""

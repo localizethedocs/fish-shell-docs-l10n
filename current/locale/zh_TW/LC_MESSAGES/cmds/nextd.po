@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/nextd.rst:2
+msgid "nextd - move forward through directory history"
+msgstr ""
+
+#: ../../../cmds/nextd.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/nextd.rst:7
+msgid "nextd [-l | --list] [POS]"
+msgstr ""
+
+#: ../../../cmds/nextd.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/nextd.rst:14
+msgid ""
+"``nextd`` moves forwards *POS* positions in the :ref:`history of visited "
+"directories <directory-history>`; if the end of the history has been hit, a "
+"warning is printed."
+msgstr ""
+
+#: ../../../cmds/nextd.rst:16
+msgid ""
+"If the **-l** or **--list** option is specified, the current directory "
+"history is also displayed."
+msgstr ""
+
+#: ../../../cmds/nextd.rst:18
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/nextd.rst:20
+msgid ""
+"Note that the ``cd`` command limits directory history to the 25 most "
+"recently visited directories. The history is stored in the :envvar:`dirprev` "
+"and :envvar:`dirnext` variables which this command manipulates."
+msgstr ""
+
+#: ../../../cmds/nextd.rst:23
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/nextd.rst:27
+msgid ""
+"cd /usr/src\n"
+"# Working directory is now /usr/src\n"
+"\n"
+"cd /usr/src/fish-shell\n"
+"# Working directory is now /usr/src/fish-shell\n"
+"\n"
+"prevd\n"
+"# Working directory is now /usr/src\n"
+"\n"
+"nextd\n"
+"# Working directory is now /usr/src/fish-shell"
+msgstr ""
+
+#: ../../../cmds/nextd.rst:40
+msgid "See Also"
+msgstr ""
+
+#: ../../../cmds/nextd.rst:42
+msgid ""
+"the :doc:`cdh <cdh>` command to display a prompt to quickly navigate the "
+"history"
+msgstr ""
+
+#: ../../../cmds/nextd.rst:43
+msgid "the :doc:`dirh <dirh>` command to print the directory history"
+msgstr ""
+
+#: ../../../cmds/nextd.rst:44
+msgid "the :doc:`prevd <prevd>` command to move backward"
+msgstr ""

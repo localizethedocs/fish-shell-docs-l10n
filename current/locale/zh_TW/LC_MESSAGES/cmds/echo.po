@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/echo.rst:2
+msgid "echo - display a line of text"
+msgstr ""
+
+#: ../../../cmds/echo.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/echo.rst:7
+msgid "echo [OPTIONS] [STRING]"
+msgstr ""
+
+#: ../../../cmds/echo.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/echo.rst:16
+msgid ""
+"NOTE: This page documents the fish builtin ``echo``. To see the "
+"documentation on any non-fish versions, use ``command man echo``."
+msgstr ""
+
+#: ../../../cmds/echo.rst:19
+msgid "``echo`` displays *STRING* of text."
+msgstr ""
+
+#: ../../../cmds/echo.rst:21
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/echo.rst:23
+msgid "**-n**"
+msgstr ""
+
+#: ../../../cmds/echo.rst:24
+msgid "Do not output a newline."
+msgstr ""
+
+#: ../../../cmds/echo.rst:26
+msgid "**-s**"
+msgstr ""
+
+#: ../../../cmds/echo.rst:27
+msgid "Do not separate arguments with spaces."
+msgstr ""
+
+#: ../../../cmds/echo.rst:29
+msgid "**-E**"
+msgstr ""
+
+#: ../../../cmds/echo.rst:30
+msgid "Disable interpretation of backslash escapes (default)."
+msgstr ""
+
+#: ../../../cmds/echo.rst:32
+msgid "**-e**"
+msgstr ""
+
+#: ../../../cmds/echo.rst:33
+msgid "Enable interpretation of backslash escapes."
+msgstr ""
+
+#: ../../../cmds/echo.rst:35
+msgid ""
+"Unlike other shells, this echo accepts ``--`` to signal the end of the "
+"options."
+msgstr ""
+
+#: ../../../cmds/echo.rst:38
+msgid "Escape Sequences"
+msgstr ""
+
+#: ../../../cmds/echo.rst:40
+msgid "If ``-e`` is used, the following sequences are recognized:"
+msgstr ""
+
+#: ../../../cmds/echo.rst:42
+msgid "``\\`` backslash"
+msgstr ""
+
+#: ../../../cmds/echo.rst:44
+msgid "``\\a`` alert (BEL)"
+msgstr ""
+
+#: ../../../cmds/echo.rst:46
+msgid "``\\b`` backspace"
+msgstr ""
+
+#: ../../../cmds/echo.rst:48
+msgid "``\\c`` produce no further output"
+msgstr ""
+
+#: ../../../cmds/echo.rst:50
+msgid "``\\e`` escape"
+msgstr ""
+
+#: ../../../cmds/echo.rst:52
+msgid "``\\f`` form feed"
+msgstr ""
+
+#: ../../../cmds/echo.rst:54
+msgid "``\\n`` new line"
+msgstr ""
+
+#: ../../../cmds/echo.rst:56
+msgid "``\\r`` carriage return"
+msgstr ""
+
+#: ../../../cmds/echo.rst:58
+msgid "``\\t`` horizontal tab"
+msgstr ""
+
+#: ../../../cmds/echo.rst:60
+msgid "``\\v`` vertical tab"
+msgstr ""
+
+#: ../../../cmds/echo.rst:62
+msgid "``\\0NNN`` byte with octal value NNN (1 to 3 digits)"
+msgstr ""
+
+#: ../../../cmds/echo.rst:64
+msgid "``\\xHH`` byte with hexadecimal value HH (1 to 2 digits)"
+msgstr ""
+
+#: ../../../cmds/echo.rst:67
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/echo.rst:71
+msgid ""
+"> echo 'Hello World'\n"
+"Hello World\n"
+"\n"
+"> echo -e 'Top\\nBottom'\n"
+"Top\n"
+"Bottom\n"
+"\n"
+"> echo -- -n\n"
+"-n"
+msgstr ""
+
+#: ../../../cmds/echo.rst:82
+msgid "See Also"
+msgstr ""
+
+#: ../../../cmds/echo.rst:84
+msgid ""
+"the :doc:`printf <printf>` command, for more control over output formatting"
+msgstr ""

@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/end.rst:2
+msgid "end - end a block of commands"
+msgstr ""
+
+#: ../../../cmds/end.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/end.rst:7
+msgid ""
+"begin\n"
+"    [COMMANDS ...]\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/end.rst:13
+msgid ""
+"function NAME [OPTIONS]; COMMANDS ...; end\n"
+"if CONDITION; COMMANDS_TRUE ...; [else; COMMANDS_FALSE ...;] end\n"
+"switch VALUE; [case [WILDCARD ...]; [COMMANDS ...]; ...] end\n"
+"while CONDITION; COMMANDS ...; end\n"
+"for VARNAME in [VALUES ...]; COMMANDS ...; end"
+msgstr ""
+
+#: ../../../cmds/end.rst:22
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/end.rst:24
+msgid ""
+"The **end** keyword ends a block of commands started by one of the following "
+"commands:"
+msgstr ""
+
+#: ../../../cmds/end.rst:26
+msgid ":doc:`begin <begin>` to start a block of commands"
+msgstr ""
+
+#: ../../../cmds/end.rst:27
+msgid ":doc:`function <function>` to define a function"
+msgstr ""
+
+#: ../../../cmds/end.rst:28
+msgid ""
+":doc:`if <if>`, :doc:`switch <switch>` to conditionally execute commands"
+msgstr ""
+
+#: ../../../cmds/end.rst:29
+msgid ""
+":doc:`while <while>`, :doc:`for <for>` to perform commands multiple times"
+msgstr ""
+
+#: ../../../cmds/end.rst:31
+msgid ""
+"The **end** keyword does not change the current exit status. Instead, the "
+"status after it will be the status returned by the most recent command."
+msgstr ""

@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/string-split0.rst:2
+msgid "string-split0 - split on zero bytes"
+msgstr ""
+
+#: ../../../cmds/string-split.rst:3
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/string-split.rst:7
+msgid ""
+"string split [(-f | --fields) FIELDS [-a | --allow-empty]] [(-m | --max) "
+"MAX] [-n | --no-empty]\n"
+"             [-q | --quiet] [-r | --right] SEP [STRING ...]\n"
+"string split0 [(-f | --fields) FIELDS [-a | --allow-empty]] [(-m | --max) "
+"MAX] [-n | --no-empty]\n"
+"              [-q | --quiet] [-r | --right] [STRING ...]"
+msgstr ""
+
+#: ../../../cmds/string-split.rst:17
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/string-split.rst:21
+msgid ""
+"``string split`` splits each *STRING* on the separator *SEP*, which can be "
+"an empty string. If **-m** or **--max** is specified, at most MAX splits are "
+"done on each *STRING*. If **-r** or **--right** is given, splitting is "
+"performed right-to-left. This is only useful in combination with **-m** or "
+"**--max**. With **-n** or **--no-empty**, empty results are excluded from "
+"consideration (e.g. ``hello\\n\\nworld`` would expand to two strings and not "
+"three). Exit status: 0 if at least one split was performed, or 1 otherwise."
+msgstr ""
+
+#: ../../../cmds/string-split.rst:23
+msgid ""
+"Use **-f** or **--fields** to print out specific fields. FIELDS is a comma-"
+"separated string of field numbers and/or spans. Each field is one-indexed, "
+"and will be printed on separate lines. If a given field does not exist, then "
+"the command exits with status 1 and does not print anything, unless **--"
+"allow-empty** is used."
+msgstr ""
+
+#: ../../../cmds/string-split.rst:25
+msgid "See also the **--delimiter** option of the :doc:`read <read>` command."
+msgstr ""
+
+#: ../../../cmds/string-split.rst:27
+msgid ""
+"``string split0`` splits each *STRING* on the zero byte (NUL). Options are "
+"the same as ``string split`` except that no separator is given."
+msgstr ""
+
+#: ../../../cmds/string-split.rst:29
+msgid ""
+"``split0`` has the important property that its output is not further split "
+"when used in a command substitution, allowing for the command substitution "
+"to produce elements containing newlines. This is most useful when used with "
+"Unix tools that produce zero bytes, such as ``find -print0`` or ``sort -z``. "
+"See split0 examples below."
+msgstr ""
+
+#: ../../../cmds/string-split.rst:31
+msgid ""
+"Be aware that commandline arguments cannot include NULs, so you likely want "
+"to pass to ``string split0`` via a pipe, not a command substitution."
+msgstr ""
+
+#: ../../../cmds/string-split.rst:36
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/string-split.rst:42
+msgid ""
+">_ string split . example.com\n"
+"example\n"
+"com\n"
+"\n"
+">_ string split -r -m1 / /usr/local/bin/fish\n"
+"/usr/local/bin\n"
+"fish\n"
+"\n"
+">_ string split '' abc\n"
+"a\n"
+"b\n"
+"c\n"
+"\n"
+">_ string split --allow-empty -f1,3-4,5 '' abcd\n"
+"a\n"
+"c\n"
+"d"
+msgstr ""
+
+#: ../../../cmds/string-split.rst:62
+msgid "NUL Delimited Examples"
+msgstr ""
+
+#: ../../../cmds/string-split.rst:66
+msgid ""
+">_ # Count files in a directory, without being confused by newlines.\n"
+">_ # Note: Don't use `string split0 (find . -print0)`, because arguments "
+"cannot include NUL.\n"
+">_ count (find . -print0 | string split0)\n"
+"42\n"
+"\n"
+">_ # Sort a list of elements which may contain newlines\n"
+">_ set foo beta alpha\\ngamma\n"
+">_ set foo (string join0 $foo | sort -z | string split0)\n"
+">_ string escape $foo[1]\n"
+"alpha\\ngamma"
+msgstr ""

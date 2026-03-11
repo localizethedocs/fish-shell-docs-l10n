@@ -1,0 +1,474 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/complete.rst:2
+msgid "complete - edit command-specific tab-completions"
+msgstr ""
+
+#: ../../../cmds/complete.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/complete.rst:7
+msgid ""
+"complete ((-c | --command) | (-p | --path)) COMMAND [OPTIONS] [--color "
+"WHEN]\n"
+"complete (-C | --do-complete) [--escape] STRING"
+msgstr ""
+
+#: ../../../cmds/complete.rst:13
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/complete.rst:15
+msgid "``complete`` defines, removes or lists completions for a command."
+msgstr ""
+
+#: ../../../cmds/complete.rst:17
+msgid ""
+"For an introduction to writing your own completions, see :doc:`Writing your "
+"own completions <../completions>` in the fish manual."
+msgstr ""
+
+#: ../../../cmds/complete.rst:20
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/complete.rst:22
+msgid "**-c** or **--command** *COMMAND*"
+msgstr ""
+
+#: ../../../cmds/complete.rst:23
+msgid ""
+"Specifies that *COMMAND* is the name of the command. If there is no **-c** "
+"or **-p**, one non-option argument will be used as the command."
+msgstr ""
+
+#: ../../../cmds/complete.rst:25
+msgid "**-p** or **--path** *COMMAND*"
+msgstr ""
+
+#: ../../../cmds/complete.rst:26
+msgid ""
+"Specifies that *COMMAND* is the absolute path of the command (optionally "
+"containing wildcards)."
+msgstr ""
+
+#: ../../../cmds/complete.rst:28
+msgid "**-e** or **--erase**"
+msgstr ""
+
+#: ../../../cmds/complete.rst:29
+msgid "Deletes the specified completion."
+msgstr ""
+
+#: ../../../cmds/complete.rst:31
+msgid "**-s** or **--short-option** *SHORT_OPTION*"
+msgstr ""
+
+#: ../../../cmds/complete.rst:32
+msgid "Adds a short option to the completions list."
+msgstr ""
+
+#: ../../../cmds/complete.rst:34
+msgid "**-l** or **--long-option** *LONG_OPTION*"
+msgstr ""
+
+#: ../../../cmds/complete.rst:35
+msgid "Adds a GNU-style long option to the completions list."
+msgstr ""
+
+#: ../../../cmds/complete.rst:37
+msgid "**-o** or **--old-option** *OPTION*"
+msgstr ""
+
+#: ../../../cmds/complete.rst:38
+msgid "Adds an old-style short or long option (see below for details)."
+msgstr ""
+
+#: ../../../cmds/complete.rst:40
+msgid "**-a** or **--arguments** *ARGUMENTS*"
+msgstr ""
+
+#: ../../../cmds/complete.rst:41
+msgid "Adds the specified option arguments to the completions list."
+msgstr ""
+
+#: ../../../cmds/complete.rst:43
+msgid "**-k** or **--keep-order**"
+msgstr ""
+
+#: ../../../cmds/complete.rst:44
+msgid ""
+"Keeps the order of *ARGUMENTS* instead of sorting alphabetically. Multiple "
+"``complete`` calls with **-k** result in arguments of the later ones "
+"displayed first."
+msgstr ""
+
+#: ../../../cmds/complete.rst:46
+msgid "**-f** or **--no-files**"
+msgstr ""
+
+#: ../../../cmds/complete.rst:47
+msgid "This completion may not be followed by a filename."
+msgstr ""
+
+#: ../../../cmds/complete.rst:49
+msgid "**-F** or **--force-files**"
+msgstr ""
+
+#: ../../../cmds/complete.rst:50
+msgid ""
+"This completion may be followed by a filename, even if another applicable "
+"``complete`` specified **--no-files**."
+msgstr ""
+
+#: ../../../cmds/complete.rst:52
+msgid "**-r** or **--require-parameter**"
+msgstr ""
+
+#: ../../../cmds/complete.rst:53
+msgid ""
+"This completion must have an option argument, i.e. may not be followed by "
+"another option. This means that the next argument is the argument to the "
+"option. If this is *not* given, the option argument must be attached like ``-"
+"xFoo`` or ``--color=auto``."
+msgstr ""
+
+#: ../../../cmds/complete.rst:57
+msgid "**-x** or **--exclusive**"
+msgstr ""
+
+#: ../../../cmds/complete.rst:58
+msgid "Short for **-r** and **-f**."
+msgstr ""
+
+#: ../../../cmds/complete.rst:60
+msgid "**-d** or **--description** *DESCRIPTION*"
+msgstr ""
+
+#: ../../../cmds/complete.rst:61
+msgid ""
+"Add a description for this completion, to be shown in the completion pager."
+msgstr ""
+
+#: ../../../cmds/complete.rst:63
+msgid "**-w** or **--wraps** *WRAPPED_COMMAND*"
+msgstr ""
+
+#: ../../../cmds/complete.rst:64
+msgid ""
+"Causes the specified command to inherit completions from *WRAPPED_COMMAND*. "
+"This is used for \"this command completes like that other command\" kinds of "
+"relationships. See below for details."
+msgstr ""
+
+#: ../../../cmds/complete.rst:68
+msgid "**-n** or **--condition** *CONDITION*"
+msgstr ""
+
+#: ../../../cmds/complete.rst:69
+msgid ""
+"This completion should only be used if the *CONDITION* (a shell command) "
+"returns 0. This makes it possible to specify completions that should only be "
+"used in some cases. If multiple conditions are specified, fish will try them "
+"in the order they are specified until one fails or all succeeded."
+msgstr ""
+
+#: ../../../cmds/complete.rst:71
+msgid "**-C** or **--do-complete** *STRING*"
+msgstr ""
+
+#: ../../../cmds/complete.rst:72
+msgid ""
+"Makes ``complete`` try to find all possible completions for the specified "
+"string. If there is no *STRING*, the current commandline is used instead."
+msgstr ""
+
+#: ../../../cmds/complete.rst:74
+msgid "**--escape**"
+msgstr ""
+
+#: ../../../cmds/complete.rst:75
+msgid "When used with ``-C``, escape special characters in completions."
+msgstr ""
+
+#: ../../../cmds/complete.rst:77
+msgid "**--color** *WHEN*"
+msgstr ""
+
+#: ../../../cmds/complete.rst:78
+msgid ""
+"Controls when to use syntax highlighting colors when printing completions. "
+"*WHEN* can be ``auto`` (the default, colorize if the output :doc:`is a "
+"terminal <isatty>`), ``always``, or ``never``."
+msgstr ""
+
+#: ../../../cmds/complete.rst:81
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/complete.rst:82
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/complete.rst:84
+msgid ""
+"Command-specific tab-completions in ``fish`` are based on the notion of "
+"options and arguments. An option is a parameter which begins with a hyphen, "
+"such as ``-h``, ``-help`` or ``--help``. Arguments are parameters that do "
+"not begin with a hyphen. Fish recognizes three styles of options, the same "
+"styles as the GNU getopt library. These styles are:"
+msgstr ""
+
+#: ../../../cmds/complete.rst:86
+msgid ""
+"Short options, like ``-a``. Short options are a single character long, are "
+"preceded by a single hyphen and can be grouped together (like ``-la``, which "
+"is equivalent to ``-l -a``). Option arguments may be specified by appending "
+"the option with the value (``-w32``), or, if ``--require-parameter`` is "
+"given, in the following parameter (``-w 32``)."
+msgstr ""
+
+#: ../../../cmds/complete.rst:88
+msgid ""
+"Old-style options, long like ``-Wall`` or ``-name`` or even short like ``-"
+"a``. Old-style options can be more than one character long, are preceded by "
+"a single hyphen and may not be grouped together. Option arguments are "
+"specified by default following a space (``-foo null``) or after ``=`` (``-"
+"foo=null``)."
+msgstr ""
+
+#: ../../../cmds/complete.rst:90
+msgid ""
+"GNU-style long options, like ``--colors``. GNU-style long options can be "
+"more than one character long, are preceded by two hyphens, and can't be "
+"grouped together. Option arguments may be specified after a ``=`` (``--"
+"quoting-style=shell``), or, if ``--require-parameter`` is given, in the "
+"following parameter (``--quoting-style shell``)."
+msgstr ""
+
+#: ../../../cmds/complete.rst:92
+msgid ""
+"Multiple commands and paths can be given in one call to define the same "
+"completions for multiple commands."
+msgstr ""
+
+#: ../../../cmds/complete.rst:94
+msgid ""
+"Multiple command switches and wrapped commands can also be given to define "
+"multiple completions in one call."
+msgstr ""
+
+#: ../../../cmds/complete.rst:96
+msgid ""
+"Invoking ``complete`` multiple times for the same command adds the new "
+"definitions on top of any existing completions defined for the command."
+msgstr ""
+
+#: ../../../cmds/complete.rst:98
+msgid ""
+"When ``-a`` or ``--arguments`` is specified in conjunction with long, short, "
+"or old-style options, the specified arguments are only completed as "
+"arguments for any of the specified options. If ``-a`` or ``--arguments`` is "
+"specified without any long, short, or old-style options, the specified "
+"arguments are used when completing non-option arguments to the command "
+"(except when completing an option argument that was specified with ``-r`` or "
+"``--require-parameter``)."
+msgstr ""
+
+#: ../../../cmds/complete.rst:100
+msgid ""
+"Command substitutions found in ``ARGUMENTS`` should return a newline-"
+"separated list of arguments, and each argument may optionally have a tab "
+"character followed by the argument description. Description given this way "
+"override a description given with ``-d`` or ``--description``."
+msgstr ""
+
+#: ../../../cmds/complete.rst:102
+msgid ""
+"Descriptions given with ``--description`` are also used to group options "
+"given with ``-s``, ``-o`` or ``-l``. Options with the same (non-empty) "
+"description will be listed as one candidate, and one of them will be picked. "
+"If the description is empty or no description was given this is skipped."
+msgstr ""
+
+#: ../../../cmds/complete.rst:104
+msgid ""
+"The ``-w`` or ``--wraps`` options causes the specified command to inherit "
+"completions from another command, \"wrapping\" the other command. The "
+"wrapping command can also have additional completions. A command can wrap "
+"multiple commands, and wrapping is transitive: if A wraps B, and B wraps C, "
+"then A automatically inherits all of C's completions. Wrapping can be "
+"removed using the ``-e`` or ``--erase`` options. Wrapping only works for "
+"completions specified with ``-c`` or ``--command`` and are ignored when "
+"specifying completions with ``-p`` or ``--path``."
+msgstr ""
+
+#: ../../../cmds/complete.rst:106
+msgid ""
+"When erasing completions, it is possible to either erase all completions for "
+"a specific command by specifying ``complete -c COMMAND -e``, or by "
+"specifying a specific completion option to delete."
+msgstr ""
+
+#: ../../../cmds/complete.rst:108
+msgid ""
+"When ``complete`` is called without anything that would define or erase "
+"completions (options, arguments, wrapping, ...), it shows matching "
+"completions instead. So ``complete`` without any arguments shows all loaded "
+"completions, ``complete -c foo`` shows all loaded completions for ``foo``. "
+"Since completions are :ref:`autoloaded <syntax-function-autoloading>`, you "
+"will have to trigger them first."
+msgstr ""
+
+#: ../../../cmds/complete.rst:113
+msgid "Cygwin / MSYS2 / Windows"
+msgstr ""
+
+#: ../../../cmds/complete.rst:115
+msgid ""
+"On Windows, binary executables have a ``.exe`` extension, but this extension "
+"is not required when calling an application (and if the name is not "
+"ambiguous, i.e. there isn't also a script called ``myprog`` in the same "
+"directory as ``myprog.exe``)."
+msgstr ""
+
+#: ../../../cmds/complete.rst:117
+msgid ""
+"To unify completions between Windows and other OSes, on Cygwin/MSYS2/"
+"Windows, *COMMAND* does not require the ``.exe`` extension. Completions for "
+"``myprog`` will also be used for ``myprog.exe`` if there are no ambiguities, "
+"i.e. if there are no completions for ``myprog.exe`` specifically. However, "
+"completions for ``myprog.exe`` will only be used when also using the ``."
+"exe`` extension on the command line."
+msgstr ""
+
+#: ../../../cmds/complete.rst:121
+msgid "In other words:"
+msgstr ""
+
+#: ../../../cmds/complete.rst:125
+msgid "complete -c myprog.exe ...  #1"
+msgstr ""
+
+#: ../../../cmds/complete.rst:127
+msgid "will only work for ``myprog.exe``"
+msgstr ""
+
+#: ../../../cmds/complete.rst:131
+msgid "complete -c myprog ...  #2"
+msgstr ""
+
+#: ../../../cmds/complete.rst:133
+msgid ""
+"can work for both ``myprog`` and ``myprog.exe``. But if both completions "
+"exist, #2 will only be used for ``myprog`` while ``myprog.exe`` will use #1."
+msgstr ""
+
+#: ../../../cmds/complete.rst:136
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/complete.rst:138
+msgid ""
+"The short-style option ``-o`` for the ``gcc`` command needs a file argument:"
+msgstr ""
+
+#: ../../../cmds/complete.rst:142
+msgid "complete -c gcc -s o -r"
+msgstr ""
+
+#: ../../../cmds/complete.rst:145
+msgid ""
+"The short-style option ``-d`` for the ``grep`` command requires one of "
+"``read``, ``skip`` or ``recurse``:"
+msgstr ""
+
+#: ../../../cmds/complete.rst:149
+msgid "complete -c grep -s d -x -a \"read skip recurse\""
+msgstr ""
+
+#: ../../../cmds/complete.rst:152
+msgid ""
+"The ``su`` command takes any username as an argument. Usernames are given as "
+"the first colon-separated field in the file /etc/passwd. This can be "
+"specified as:"
+msgstr ""
+
+#: ../../../cmds/complete.rst:156
+msgid ""
+"complete -x -c su -d \"Username\" -a \"(cat /etc/passwd | cut -d : -f 1)\""
+msgstr ""
+
+#: ../../../cmds/complete.rst:159
+msgid ""
+"The ``rpm`` command has several different modes. If the ``-e`` or ``--"
+"erase`` flag has been specified, ``rpm`` should delete one or more packages, "
+"in which case several switches related to deleting packages are valid, like "
+"the ``nodeps`` switch."
+msgstr ""
+
+#: ../../../cmds/complete.rst:161
+msgid "This can be written as:"
+msgstr ""
+
+#: ../../../cmds/complete.rst:165
+msgid ""
+"complete -c rpm -n \"__fish_contains_opt -s e erase\" -l nodeps -d \"Don't "
+"check dependencies\""
+msgstr ""
+
+#: ../../../cmds/complete.rst:168
+msgid ""
+"where ``__fish_contains_opt`` is a function that checks the command line "
+"buffer for the presence of a specified set of options."
+msgstr ""
+
+#: ../../../cmds/complete.rst:170
+msgid "To implement an alias, use the ``-w`` or ``--wraps`` option:"
+msgstr ""
+
+#: ../../../cmds/complete.rst:176
+msgid "complete -c hub -w git"
+msgstr ""
+
+#: ../../../cmds/complete.rst:179
+msgid ""
+"Now hub inherits all of the completions from git. Note this can also be "
+"specified in a function declaration (``function thing -w otherthing``)."
+msgstr ""
+
+#: ../../../cmds/complete.rst:183
+msgid "complete -c git"
+msgstr ""
+
+#: ../../../cmds/complete.rst:185
+msgid "Shows all completions for ``git``."
+msgstr ""
+
+#: ../../../cmds/complete.rst:187
+msgid ""
+"Any command ``foo`` that doesn't support grouping multiple short options in "
+"one string (not supporting ``-xf`` as short for ``-x -f``) or a short option "
+"and its value in one string (not supporting ``-d9`` instead of ``-d 9``) "
+"should be specified as a single-character old-style option instead of as a "
+"short-style option; for example, ``complete -c foo -o s; complete -c foo -o "
+"v`` would never suggest ``foo -ov`` but rather ``foo -o -v``."
+msgstr ""

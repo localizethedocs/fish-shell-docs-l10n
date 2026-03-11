@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_prompt.rst:2
+msgid "fish_prompt - define the appearance of the command line prompt"
+msgstr ""
+
+#: ../../../cmds/fish_prompt.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_prompt.rst:7
+msgid "fish_prompt"
+msgstr ""
+
+#: ../../../cmds/fish_prompt.rst:13
+msgid ""
+"function fish_prompt\n"
+"    ...\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_prompt.rst:19
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_prompt.rst:21
+msgid ""
+"The ``fish_prompt`` function is executed when the prompt is to be shown, and "
+"the output is used as a prompt."
+msgstr ""
+
+#: ../../../cmds/fish_prompt.rst:23
+msgid ""
+"The exit status of commands within ``fish_prompt`` will not modify the value "
+"of :ref:`$status <variables-status>` outside of the ``fish_prompt`` function."
+msgstr ""
+
+#: ../../../cmds/fish_prompt.rst:25
+msgid ""
+"If :envvar:`fish_transient_prompt` is set to 1, ``fish_prompt --final-"
+"rendering`` is run before executing the commandline."
+msgstr ""
+
+#: ../../../cmds/fish_prompt.rst:27
+msgid ""
+"``fish`` ships with a number of example prompts that can be chosen with the "
+"``fish_config`` command."
+msgstr ""
+
+#: ../../../cmds/fish_prompt.rst:31
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/fish_prompt.rst:33
+msgid "A simple prompt:"
+msgstr ""
+
+#: ../../../cmds/fish_prompt.rst:39
+msgid ""
+"function fish_prompt -d \"Write out the prompt\"\n"
+"    # This shows up as USER@HOST /home/user/ >, with the directory colored\n"
+"    # $USER and $hostname are set by fish, so you can just use them\n"
+"    # instead of using `whoami` and `hostname`\n"
+"    printf '%s@%s %s%s%s > ' $USER $hostname \\\n"
+"        (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)\n"
+"end"
+msgstr ""

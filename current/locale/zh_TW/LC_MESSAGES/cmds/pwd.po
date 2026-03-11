@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/pwd.rst:2
+msgid "pwd - output the current working directory"
+msgstr ""
+
+#: ../../../cmds/pwd.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/pwd.rst:7
+msgid ""
+"pwd [-P | --physical]\n"
+"pwd [-L | --logical]"
+msgstr ""
+
+#: ../../../cmds/pwd.rst:14
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/pwd.rst:18
+msgid ""
+"NOTE: This page documents the fish builtin ``pwd``. To see the documentation "
+"on any non-fish versions, use ``command man pwd``."
+msgstr ""
+
+#: ../../../cmds/pwd.rst:21
+msgid "``pwd`` outputs (prints) the current working directory."
+msgstr ""
+
+#: ../../../cmds/pwd.rst:23
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/pwd.rst:25
+msgid "**-L** or **--logical**"
+msgstr ""
+
+#: ../../../cmds/pwd.rst:26
+msgid ""
+"Output the logical working directory, without resolving symlinks (default "
+"behavior)."
+msgstr ""
+
+#: ../../../cmds/pwd.rst:28
+msgid "**-P** or **--physical**"
+msgstr ""
+
+#: ../../../cmds/pwd.rst:29
+msgid "Output the physical working directory, with symlinks resolved."
+msgstr ""
+
+#: ../../../cmds/pwd.rst:31
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/pwd.rst:32
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/pwd.rst:35
+msgid "See Also"
+msgstr ""
+
+#: ../../../cmds/pwd.rst:37
+msgid ""
+"Navigate directories using the :ref:`directory history <directory-history>` "
+"or the :ref:`directory stack <directory-stack>`"
+msgstr ""

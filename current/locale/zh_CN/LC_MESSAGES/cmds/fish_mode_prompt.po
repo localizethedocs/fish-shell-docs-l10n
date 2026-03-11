@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_mode_prompt.rst:2
+msgid "fish_mode_prompt - define the appearance of the mode indicator"
+msgstr ""
+
+#: ../../../cmds/fish_mode_prompt.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_mode_prompt.rst:7
+msgid "fish_mode_prompt"
+msgstr ""
+
+#: ../../../cmds/fish_mode_prompt.rst:13
+msgid ""
+"function fish_mode_prompt\n"
+"     echo -n \"$fish_bind_mode \"\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_mode_prompt.rst:19
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_mode_prompt.rst:21
+msgid ""
+"The ``fish_mode_prompt`` function outputs the mode indicator for use in vi "
+"mode."
+msgstr ""
+
+#: ../../../cmds/fish_mode_prompt.rst:23
+msgid ""
+"The default ``fish_mode_prompt`` function will output indicators about the "
+"current vi editor mode displayed to the left of the regular prompt. Define "
+"your own function to customize the appearance of the mode indicator. The "
+"``$fish_bind_mode`` variable can be used to determine the current mode. It "
+"will be one of ``default``, ``insert``, ``replace_one``, ``replace``, "
+"``visual``, or ``operator``."
+msgstr ""
+
+#: ../../../cmds/fish_mode_prompt.rst:25
+msgid ""
+"You can also define an empty ``fish_mode_prompt`` function to remove the vi "
+"mode indicators::"
+msgstr ""
+
+#: ../../../cmds/fish_mode_prompt.rst:27
+msgid ""
+"function fish_mode_prompt; end\n"
+"funcsave fish_mode_prompt"
+msgstr ""
+
+#: ../../../cmds/fish_mode_prompt.rst:30
+msgid ""
+"``fish_mode_prompt`` will be executed when the vi mode changes. If it "
+"produces any output, it is displayed and used. If it does not, the other "
+"prompt functions (:doc:`fish_prompt <fish_prompt>` and :doc:"
+"`fish_right_prompt <fish_right_prompt>`) will be executed as well in case "
+"they contain a mode display."
+msgstr ""
+
+#: ../../../cmds/fish_mode_prompt.rst:32
+msgid ""
+"If :envvar:`fish_transient_prompt` is set to 1, ``fish_mode_prompt --final-"
+"rendering`` is run before executing the commandline."
+msgstr ""
+
+#: ../../../cmds/fish_mode_prompt.rst:35
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/fish_mode_prompt.rst:41
+msgid ""
+"function fish_mode_prompt\n"
+"  switch $fish_bind_mode\n"
+"    case default\n"
+"      set_color --bold red\n"
+"      echo 'N'\n"
+"    case insert\n"
+"      set_color --bold green\n"
+"      echo 'I'\n"
+"    case replace_one\n"
+"      set_color --bold green\n"
+"      echo 'R'\n"
+"    case replace\n"
+"      set_color --bold bryellow\n"
+"      echo 'R'\n"
+"    case visual\n"
+"      set_color --bold brmagenta\n"
+"      echo 'V'\n"
+"    case operator f F t T\n"
+"      set_color --bold cyan\n"
+"      echo 'N'\n"
+"    case '*'\n"
+"      set_color --bold red\n"
+"      echo '?'\n"
+"  end\n"
+"  set_color normal\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_mode_prompt.rst:69
+msgid "Outputting multiple lines is not supported in ``fish_mode_prompt``."
+msgstr ""

@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_status_to_signal.rst:2
+msgid "fish_status_to_signal - convert exit codes to human-friendly signals"
+msgstr ""
+
+#: ../../../cmds/fish_status_to_signal.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_status_to_signal.rst:7
+msgid "fish_status_to_signal NUM"
+msgstr ""
+
+#: ../../../cmds/fish_status_to_signal.rst:13
+msgid ""
+"function fish_prompt\n"
+"    echo -n (fish_status_to_signal $pipestatus | string join '|') "
+"(prompt_pwd) '$ '\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_status_to_signal.rst:18
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_status_to_signal.rst:20
+msgid ""
+"``fish_status_to_signal`` converts exit codes to their corresponding human-"
+"friendly signals if one exists. This is likely to be useful for prompts in "
+"conjunction with the ``$status`` and ``$pipestatus`` variables."
+msgstr ""
+
+#: ../../../cmds/fish_status_to_signal.rst:24
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/fish_status_to_signal.rst:28
+msgid ""
+">_ sleep 5\n"
+"^C⏎\n"
+">_ fish_status_to_signal $status\n"
+"SIGINT"
+msgstr ""
