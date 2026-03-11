@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/command.rst:4
+msgid "command - run a program"
+msgstr ""
+
+#: ../../../cmds/command.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/command.rst:9
+msgid "command [OPTIONS] [COMMANDNAME [ARG ...]]"
+msgstr ""
+
+#: ../../../cmds/command.rst:14
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/command.rst:16
+msgid ""
+"**command** forces the shell to execute the program *COMMANDNAME* and ignore "
+"any functions or builtins with the same name."
+msgstr ""
+
+#: ../../../cmds/command.rst:18
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/command.rst:20
+msgid "**-a** or **--all**"
+msgstr ""
+
+#: ../../../cmds/command.rst:21
+msgid "Prints all *COMMAND* found in :envvar:`PATH`, in the order found."
+msgstr ""
+
+#: ../../../cmds/command.rst:23
+msgid "**-q** or **--query**"
+msgstr ""
+
+#: ../../../cmds/command.rst:24
+msgid ""
+"Silence output and print nothing, setting only exit status. Implies **--"
+"search**. For compatibility, this is also **--quiet** (deprecated)."
+msgstr ""
+
+#: ../../../cmds/command.rst:28
+msgid "**-v** (or **-s** or **--search**)"
+msgstr ""
+
+#: ../../../cmds/command.rst:29
+msgid ""
+"Prints the external command that would be executed, or prints nothing if no "
+"file with the specified name could be found in :envvar:`PATH`."
+msgstr ""
+
+#: ../../../cmds/command.rst:31
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/command.rst:32
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/command.rst:34
+msgid ""
+"With the **-v** option, ``command`` treats every argument as a separate "
+"command to look up and sets the exit status to 0 if any of the specified "
+"commands were found, or 127 if no commands could be found. **--quiet** used "
+"with **-v** prevents commands being printed, like ``type -q``."
+msgstr ""
+
+#: ../../../cmds/command.rst:37
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/command.rst:39
+msgid ""
+"``command ls`` executes the ``ls`` program, even if an ``ls`` function also "
+"exists."
+msgstr ""
+
+#: ../../../cmds/command.rst:40
+msgid "``command -s ls`` prints the path to the ``ls`` program."
+msgstr ""
+
+#: ../../../cmds/command.rst:41
+msgid ""
+"``command -q git; and command git log`` runs ``git log`` only if ``git`` "
+"exists."
+msgstr ""

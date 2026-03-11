@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/disown.rst:4
+msgid "disown - remove a process from the list of jobs"
+msgstr ""
+
+#: ../../../cmds/disown.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/disown.rst:9
+msgid "disown [PID ...]"
+msgstr ""
+
+#: ../../../cmds/disown.rst:14
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/disown.rst:16
+msgid ""
+"``disown`` removes the specified :ref:`job <syntax-job-control>` from the "
+"list of jobs. The job itself continues to exist, but fish does not keep "
+"track of it any longer."
+msgstr ""
+
+#: ../../../cmds/disown.rst:18
+msgid ""
+"Jobs in the list of jobs are sent a hang-up signal when fish terminates, "
+"which usually causes the job to terminate; ``disown`` allows these processes "
+"to continue regardless."
+msgstr ""
+
+#: ../../../cmds/disown.rst:20
+msgid ""
+"If no process is specified, the most recently-used job is removed (like :doc:"
+"`bg <bg>` and :doc:`fg <fg>`).  If one or more PIDs are specified, jobs with "
+"the specified process IDs are removed from the job list. Invalid jobs are "
+"ignored and a warning is printed."
+msgstr ""
+
+#: ../../../cmds/disown.rst:22
+msgid ""
+"If a job is stopped, it is sent a signal to continue running, and a warning "
+"is printed. It is not possible to use the :doc:`bg <bg>` builtin to continue "
+"a job once it has been disowned."
+msgstr ""
+
+#: ../../../cmds/disown.rst:24
+msgid ""
+"``disown`` returns 0 if all specified jobs were disowned successfully, and 1 "
+"if any problems were encountered."
+msgstr ""
+
+#: ../../../cmds/disown.rst:26
+msgid "The **--help** or **-h** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/disown.rst:29
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/disown.rst:31
+msgid ""
+"``firefox &; disown`` will start the Firefox web browser in the background "
+"and remove it from the job list, meaning it will not be closed when the fish "
+"process is closed."
+msgstr ""
+
+#: ../../../cmds/disown.rst:33
+msgid ""
+"``disown (jobs -p)`` removes all :doc:`jobs <jobs>` from the job list "
+"without terminating them."
+msgstr ""

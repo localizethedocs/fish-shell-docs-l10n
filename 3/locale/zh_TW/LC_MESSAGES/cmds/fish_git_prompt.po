@@ -1,0 +1,443 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_git_prompt.rst:4
+msgid "fish_git_prompt - output git information for use in a prompt"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:9
+msgid "fish_git_prompt"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:15
+msgid ""
+"function fish_prompt\n"
+"     printf '%s' $PWD (fish_git_prompt) ' $ '\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:21
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:23
+msgid ""
+"The ``fish_git_prompt`` function displays information about the current git "
+"repository, if any."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:25
+msgid "`Git <https://git-scm.com>`_ must be installed."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:27
+msgid ""
+"There are numerous customization options, which can be controlled with git "
+"options or fish variables. git options, where available, take precedence "
+"over the fish variable with the same function. git options can be set on a "
+"per-repository or global basis. git options can be set with the ``git "
+"config`` command, while fish variables can be set as usual with the :doc:"
+"`set <set>` command."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:29
+msgid ""
+"Boolean options (those which enable or disable something) understand \"1\", "
+"\"yes\" or \"true\" to mean true and every other value to mean false."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:31
+msgid ""
+"``$__fish_git_prompt_show_informative_status`` or the git option ``bash."
+"showInformativeStatus`` can be set to 1, true or yes to enable the "
+"\"informative\" display, which will show a large amount of information - the "
+"number of dirty files, unpushed/unpulled commits, and more. In large "
+"repositories, this can take a lot of time, so you may wish to disable it in "
+"these repositories with  ``git config --local bash.showInformativeStatus "
+"false``. It also changes the characters the prompt uses to less plain ones "
+"(``✚`` instead of ``*`` for the dirty state for example) , and if you are "
+"only interested in that, set ``$__fish_git_prompt_use_informative_chars`` "
+"instead."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:34
+msgid ""
+"Because counting untracked files requires a lot of time, the number of "
+"untracked files is only shown if enabled via "
+"``$__fish_git_prompt_showuntrackedfiles`` or the git option ``bash."
+"showUntrackedFiles``."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:36
+msgid ""
+"``$__fish_git_prompt_showdirtystate`` or the git option ``bash."
+"showDirtyState`` can be set to 1, true or yes to show if the repository is "
+"\"dirty\", i.e. has uncommitted changes."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:38
+msgid ""
+"``$__fish_git_prompt_showuntrackedfiles`` or the git option ``bash."
+"showUntrackedFiles`` can be set to 1, true or yes to show if the repository "
+"has untracked files (that aren't ignored)."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:40
+msgid ""
+"``$__fish_git_prompt_showupstream`` can be set to a list of values to "
+"determine how changes between HEAD and upstream are shown:"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:42
+msgid "``auto``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:43
+msgid "summarize the difference between HEAD and its upstream"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:44
+msgid "``verbose``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:45
+msgid "show number of commits ahead/behind (+/-) upstream"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:46
+msgid "``name``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:47
+msgid "if verbose, then also show the upstream abbrev name"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:48
+msgid "``informative``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:49
+msgid ""
+"similar to verbose, but shows nothing when equal - this is the default if "
+"informative status is enabled."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:50
+msgid "``git``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:51
+msgid "always compare HEAD to @{upstream}"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:52
+msgid "``svn``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:53
+msgid "always compare HEAD to your SVN upstream"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:54
+msgid "``none``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:55
+msgid "disables (useful with informative status)"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:57
+msgid ""
+"``$__fish_git_prompt_showstashstate`` can be set to 1, true or yes to "
+"display the state of the stash."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:59
+msgid ""
+"``$__fish_git_prompt_shorten_branch_len`` can be set to the number of "
+"characters that the branch name will be shortened to."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:61
+msgid ""
+"``$__fish_git_prompt_describe_style`` can be set to one of the following "
+"styles to describe the current HEAD:"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:63
+msgid "``contains``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:64
+msgid "relative to newer annotated tag, such as ``(v1.6.3.2~35)``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:65
+msgid "``branch``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:66
+msgid "relative to newer tag or branch, such as ``(master~4)``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:67
+msgid "``describe``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:68
+msgid "relative to older annotated tag, such as ``(v1.6.3.1-13-gdd42c2f)``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:69
+msgid "``default``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:70
+msgid "an exactly matching tag (``(develop)``)"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:72
+msgid ""
+"If none of these apply, the commit SHA shortened to 8 characters is used."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:74
+msgid ""
+"``$__fish_git_prompt_showcolorhints`` can be set to 1, true or yes to enable "
+"coloring for the branch name and status symbols."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:76
+msgid ""
+"A number of variables set characters and color used as indicators. Many of "
+"these have a different default if used with informative status enabled, or "
+"``$__fish_git_prompt_use_informative_chars`` set. The usual default is given "
+"first, then the informative default (if it is different). If no default for "
+"the colors is given, they default to ``$__fish_git_prompt_color``."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:78
+msgid ""
+"``$__fish_git_prompt_char_stateseparator`` (' ', ``|``) - the character to "
+"be used between the state characters"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:79
+msgid "``$__fish_git_prompt_color`` (no default)"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:80
+msgid "``$__fish_git_prompt_color_prefix`` - the color of the ``(`` prefix"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:81
+msgid "``$__fish_git_prompt_color_suffix`` - the color of the ``)`` suffix"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:82
+msgid ""
+"``$__fish_git_prompt_color_bare`` - the color to use for a bare repository - "
+"one without a working tree"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:83
+msgid ""
+"``$__fish_git_prompt_color_merging`` - the color when a merge/rebase/revert/"
+"bisect or cherry-pick is in progress"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:85
+msgid ""
+"``$__fish_git_prompt_char_cleanstate`` (✔ in informative mode) - the "
+"character to be used when nothing else applies"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:86
+msgid "``$__fish_git_prompt_color_cleanstate`` (no default)"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:88
+msgid "Variables used with ``showdirtystate``:"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:90
+msgid ""
+"``$__fish_git_prompt_char_dirtystate`` (`*`, ✚) - the number of \"dirty\" "
+"changes, i.e. unstaged files with changes"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:91
+msgid ""
+"``$__fish_git_prompt_char_invalidstate`` (#, ✖) - the number of \"unmerged\" "
+"changes, e.g. additional changes to already added files"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:92
+msgid ""
+"``$__fish_git_prompt_char_stagedstate`` (+, ●) - the number of staged files "
+"without additional changes"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:93
+msgid ""
+"``$__fish_git_prompt_color_dirtystate`` (red with showcolorhints, same as "
+"color_flags otherwise)"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:94
+msgid "``$__fish_git_prompt_color_invalidstate``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:95
+msgid ""
+"``$__fish_git_prompt_color_stagedstate`` (green with showcolorhints, "
+"color_flags otherwise)"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:97
+msgid "Variables used with ``showstashstate``:"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:99
+msgid "``$__fish_git_prompt_char_stashstate`` (``$``, ⚑)"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:100
+msgid "``$__fish_git_prompt_color_stashstate`` (same as color_flags)"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:102
+msgid "Variables used with ``showuntrackedfiles``:"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:104
+msgid ""
+"``$__fish_git_prompt_char_untrackedfiles`` (%, …) - the symbol for untracked "
+"files"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:105
+msgid "``$__fish_git_prompt_color_untrackedfiles`` (same as color_flags)"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:107
+msgid ""
+"Variables used with ``showupstream`` (also implied by informative status):"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:109
+msgid ""
+"``$__fish_git_prompt_char_upstream_ahead`` (>, ↑) - the character for the "
+"commits this repository is ahead of upstream"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:110
+msgid ""
+"``$__fish_git_prompt_char_upstream_behind`` (<, ↓) - the character for the "
+"commits this repository is behind upstream"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:111
+msgid ""
+"``$__fish_git_prompt_char_upstream_diverged`` (<>) - the symbol if this "
+"repository is both ahead and behind upstream"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:112
+msgid ""
+"``$__fish_git_prompt_char_upstream_equal`` (=) - the symbol if this repo is "
+"equal to upstream"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:113
+msgid "``$__fish_git_prompt_char_upstream_prefix`` ('')"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:114
+msgid "``$__fish_git_prompt_color_upstream``"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:116
+msgid "Colors used with ``showcolorhints``:"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:118
+msgid ""
+"``$__fish_git_prompt_color_branch`` (green) - the color of the branch if "
+"nothing else applies"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:119
+msgid ""
+"``$__fish_git_prompt_color_branch_detached`` (red) the color of the branch "
+"if it's detached (e.g. a commit is checked out)"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:120
+msgid ""
+"``$__fish_git_prompt_color_branch_dirty`` (no default) the color of the "
+"branch if it's dirty and not detached"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:121
+msgid ""
+"``$__fish_git_prompt_color_branch_staged`` (no default) the color of the "
+"branch if it just has something staged and is otherwise clean"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:122
+msgid ""
+"``$__fish_git_prompt_color_flags`` (--bold blue) - the default color for "
+"dirty/staged/stashed/untracked state"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:124
+msgid ""
+"Note that all colors can also have a corresponding ``_done`` color. For "
+"example, the contents of ``$__fish_git_prompt_color_upstream_done`` is "
+"printed right _after_ the upstream."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:126
+msgid ""
+"See also :doc:`fish_vcs_prompt <fish_vcs_prompt>`, which will call all "
+"supported version control prompt functions, including git, Mercurial and "
+"Subversion."
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:129
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:131
+msgid "A simple prompt that displays git info::"
+msgstr ""
+
+#: ../../../cmds/fish_git_prompt.rst:133
+msgid ""
+"function fish_prompt\n"
+"    # ...\n"
+"    set -g __fish_git_prompt_showupstream auto\n"
+"    printf '%s %s$' $PWD (fish_git_prompt)\n"
+"end"
+msgstr ""

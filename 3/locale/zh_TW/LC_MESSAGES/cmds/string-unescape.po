@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/string-unescape.rst:2
+msgid "string-unescape - expand escape sequences"
+msgstr ""
+
+#: ../../../cmds/string-escape.rst:3
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/string-escape.rst:7
+msgid ""
+"string escape [-n | --no-quoted] [--style=] [STRING ...]\n"
+"string unescape [--style=] [STRING ...]"
+msgstr ""
+
+#: ../../../cmds/string-escape.rst:15
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/string-escape.rst:19
+msgid ""
+"``string escape`` escapes each *STRING* in one of three ways. The first is "
+"**--style=script**. This is the default. It alters the string such that it "
+"can be passed back to ``eval`` to produce the original argument again. By "
+"default, all special characters are escaped, and quotes are used to simplify "
+"the output when possible. If **-n** or **--no-quoted** is given, the "
+"simplifying quoted format is not used. Exit status: 0 if at least one string "
+"was escaped, or 1 otherwise."
+msgstr ""
+
+#: ../../../cmds/string-escape.rst:21
+msgid ""
+"**--style=var** ensures the string can be used as a variable name by hex "
+"encoding any non-alphanumeric characters. The string is first converted to "
+"UTF-8 before being encoded."
+msgstr ""
+
+#: ../../../cmds/string-escape.rst:23
+msgid ""
+"**--style=url** ensures the string can be used as a URL by hex encoding any "
+"character which is not legal in a URL. The string is first converted to "
+"UTF-8 before being encoded."
+msgstr ""
+
+#: ../../../cmds/string-escape.rst:25
+msgid ""
+"**--style=regex** escapes an input string for literal matching within a "
+"regex expression. The string is first converted to UTF-8 before being "
+"encoded."
+msgstr ""
+
+#: ../../../cmds/string-escape.rst:27
+msgid ""
+"``string unescape`` performs the inverse of the ``string escape`` command. "
+"If the string to be unescaped is not properly formatted it is ignored. For "
+"example, doing ``string unescape --style=var (string escape --style=var "
+"$str)`` will return the original string. There is no support for unescaping "
+"**--style=regex**."
+msgstr ""
+
+#: ../../../cmds/string-escape.rst:32
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/string-escape.rst:38
+msgid ""
+">_ echo \\x07 | string escape\n"
+"\\cg\n"
+"\n"
+">_ string escape --style=var 'a1 b2'\\u6161\n"
+"a1_20_b2_E6_85_A1_"
+msgstr ""

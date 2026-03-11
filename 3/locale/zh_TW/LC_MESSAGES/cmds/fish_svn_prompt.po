@@ -1,0 +1,239 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_svn_prompt.rst:4
+msgid "fish_svn_prompt - output Subversion information for use in a prompt"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:9
+msgid "fish_svn_prompt"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:15
+msgid ""
+"function fish_prompt\n"
+"     printf '%s' $PWD (fish_svn_prompt) ' $ '\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:20
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:22
+msgid ""
+"The fish_svn_prompt function displays information about the current "
+"Subversion repository, if any."
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:24
+msgid ""
+"`Subversion <https://subversion.apache.org/>`_ (``svn``) must be installed."
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:26
+msgid ""
+"There are numerous customization options, which can be controlled with fish "
+"variables."
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:28
+msgid ":envvar:`__fish_svn_prompt_color_revision`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:29
+msgid "the colour of the revision number to display in the prompt"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:30
+msgid ":envvar:`__fish_svn_prompt_char_separator`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:31
+msgid "the separator between status characters"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:33
+msgid ""
+"A number of variables control the symbol (\"display\") and color (\"color\") "
+"for the different status indicators:"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:35
+msgid ":envvar:`__fish_svn_prompt_char_added_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:36
+msgid ":envvar:`__fish_svn_prompt_char_added_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:37
+msgid ":envvar:`__fish_svn_prompt_char_conflicted_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:38
+msgid ":envvar:`__fish_svn_prompt_char_conflicted_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:39
+msgid ":envvar:`__fish_svn_prompt_char_deleted_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:40
+msgid ":envvar:`__fish_svn_prompt_char_deleted_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:41
+msgid ":envvar:`__fish_svn_prompt_char_ignored_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:42
+msgid ":envvar:`__fish_svn_prompt_char_ignored_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:43
+msgid ":envvar:`__fish_svn_prompt_char_modified_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:44
+msgid ":envvar:`__fish_svn_prompt_char_modified_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:45
+msgid ":envvar:`__fish_svn_prompt_char_replaced_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:46
+msgid ":envvar:`__fish_svn_prompt_char_replaced_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:47
+msgid ":envvar:`__fish_svn_prompt_char_unversioned_external_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:48
+msgid ":envvar:`__fish_svn_prompt_char_unversioned_external_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:49
+msgid ":envvar:`__fish_svn_prompt_char_unversioned_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:50
+msgid ":envvar:`__fish_svn_prompt_char_unversioned_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:51
+msgid ":envvar:`__fish_svn_prompt_char_missing_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:52
+msgid ":envvar:`__fish_svn_prompt_char_missing_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:53
+msgid ":envvar:`__fish_svn_prompt_char_versioned_obstructed_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:54
+msgid ":envvar:`__fish_svn_prompt_char_versioned_obstructed_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:55
+msgid ":envvar:`__fish_svn_prompt_char_locked_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:56
+msgid ":envvar:`__fish_svn_prompt_char_locked_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:57
+msgid ":envvar:`__fish_svn_prompt_char_scheduled_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:58
+msgid ":envvar:`__fish_svn_prompt_char_scheduled_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:59
+msgid ":envvar:`__fish_svn_prompt_char_switched_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:60
+msgid ":envvar:`__fish_svn_prompt_char_switched_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:61
+msgid ":envvar:`__fish_svn_prompt_char_token_present_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:62
+msgid ":envvar:`__fish_svn_prompt_char_token_present_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:63
+msgid ":envvar:`__fish_svn_prompt_char_token_other_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:64
+msgid ":envvar:`__fish_svn_prompt_char_token_other_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:65
+msgid ":envvar:`__fish_svn_prompt_char_token_stolen_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:66
+msgid ":envvar:`__fish_svn_prompt_char_token_stolen_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:67
+msgid ":envvar:`__fish_svn_prompt_char_token_broken_display`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:68
+msgid ":envvar:`__fish_svn_prompt_char_token_broken_color`"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:70
+msgid ""
+"See also :doc:`fish_vcs_prompt <fish_vcs_prompt>`, which will call all "
+"supported version control prompt functions, including git, Mercurial and "
+"Subversion."
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:73
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:75
+msgid "A simple prompt that displays svn info::"
+msgstr ""
+
+#: ../../../cmds/fish_svn_prompt.rst:77
+msgid ""
+"function fish_prompt\n"
+"    ...\n"
+"    printf '%s %s$' $PWD (fish_svn_prompt)\n"
+"end"
+msgstr ""

@@ -1,0 +1,639 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/argparse.rst:4
+msgid "argparse - parse options passed to a fish script or function"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:9
+msgid "argparse [OPTIONS] OPTION_SPEC ... -- [ARG ...]"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:15
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:17
+msgid ""
+"This command makes it easy for fish scripts and functions to handle "
+"arguments. You pass arguments that define the known options, followed by a "
+"literal **--**, then the arguments to be parsed (which might also include a "
+"literal **--**). ``argparse`` then sets variables to indicate the passed "
+"options with their values, and sets ``$argv`` to the remaining arguments. "
+"See the :ref:`usage <cmd-argparse-usage>` section below."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:19
+msgid ""
+"Each option specification (``OPTION_SPEC``) is written in the :ref:`domain "
+"specific language <cmd-argparse-option-specification>` described below. All "
+"OPTION_SPECs must appear after any argparse flags and before the ``--`` that "
+"separates them from the arguments to be parsed."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:21
+msgid ""
+"Each option that is seen in the ARG list will result in variables named "
+"``_flag_X``, where **X** is the short flag letter and the long flag name (if "
+"they are defined). For example a **--help** option could cause argparse to "
+"define one variable called ``_flag_h`` and another called ``_flag_help``."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:23
+msgid ""
+"The variables will be set with local scope (i.e., as if the script had done "
+"``set -l _flag_X``). If the flag is a boolean (that is, it just is passed or "
+"not, it doesn't have a value) the values are the short and long flags seen. "
+"If the option is not a boolean the values will be zero or more values "
+"corresponding to the values collected when the ARG list is processed. If the "
+"flag was not seen the flag variable will not be set."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:26
+msgid "Options"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:28
+msgid ""
+"The following ``argparse`` options are available. They must appear before "
+"all *OPTION_SPEC*\\ s:"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:30
+msgid "**-n** or **--name**"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:31
+msgid ""
+"The command name for use in error messages. By default the current function "
+"name will be used, or ``argparse`` if run outside of a function."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:33
+msgid "**-x** or **--exclusive** *OPTIONS*"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:34
+msgid ""
+"A comma separated list of options that are mutually exclusive. You can use "
+"this more than once to define multiple sets of mutually exclusive options. "
+"You give either the short or long version of each option, and you still need "
+"to otherwise define the options."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:37
+msgid "**-N** or **--min-args** *NUMBER*"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:38
+msgid ""
+"The minimum number of acceptable non-option arguments. The default is zero."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:40
+msgid "**-X** or **--max-args** *NUMBER*"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:41
+msgid ""
+"The maximum number of acceptable non-option arguments. The default is "
+"infinity."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:43
+msgid "**-i** or **--ignore-unknown**"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:44
+msgid ""
+"Ignores unknown options, keeping them and their arguments in $argv instead."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:46
+msgid "**-s** or **--stop-nonopt**"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:47
+msgid ""
+"Causes scanning the arguments to stop as soon as the first non-option "
+"argument is seen. Among other things, this is useful to implement "
+"subcommands that have their own options."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:49
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:50
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:55
+msgid "Usage"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:57
+msgid ""
+"To use this command, pass the option specifications (**OPTION_SPEC**), a "
+"mandatory **--**, and then the arguments to be parsed."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:59
+msgid "A simple example::"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:61
+msgid ""
+"argparse --name=my_function 'h/help' 'n/name=' -- $argv\n"
+"or return"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:64
+msgid ""
+"If ``$argv`` is empty then there is nothing to parse and ``argparse`` "
+"returns zero to indicate success. If ``$argv`` is not empty then it is "
+"checked for flags ``-h``, ``--help``, ``-n`` and ``--name``. If they are "
+"found they are removed from the arguments and local variables called "
+"``_flag_OPTION`` are set so the script can determine which options were "
+"seen. If ``$argv`` doesn't have any errors, like a missing mandatory value "
+"for an option, then ``argparse`` exits with a status of zero. Otherwise it "
+"writes appropriate error messages to stderr and exits with a status of one."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:66
+msgid ""
+"The ``or return`` means that the function returns ``argparse``'s status if "
+"it failed, so if it goes on ``argparse`` succeeded."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:68
+msgid ""
+"The ``--`` argument is required. You do not have to include any option "
+"specifications or arguments after the ``--`` but you must include the ``--"
+"``. For example, this is acceptable::"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:70
+msgid ""
+"set -l argv foo\n"
+"argparse 'h/help' 'n/name' -- $argv\n"
+"argparse --min-args=1 -- $argv"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:74
+msgid "But this is not::"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:76
+msgid ""
+"set -l argv\n"
+"argparse 'h/help' 'n/name' $argv"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:79
+msgid ""
+"The first ``--`` seen is what allows the ``argparse`` command to reliably "
+"separate the option specifications and options to ``argparse`` itself (like "
+"``--ignore-unknown``) from the command arguments, so it is required."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:84
+msgid "Option Specifications"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:86
+msgid "Each option specification consists of:"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:88
+msgid ""
+"An optional alphanumeric short flag character, followed by a ``/`` if the "
+"short flag can be used by someone invoking your command or, for backwards "
+"compatibility, a ``-`` if it should not be exposed as a valid short flag (in "
+"which case it will also not be exposed as a flag variable)."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:90
+msgid ""
+"An optional long flag name, which if not present the short flag can be used, "
+"and if that is also not present, an error is reported"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:92
+msgid ""
+"Nothing if the flag is a boolean that takes no argument or is an integer "
+"flag, or"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:94
+msgid ""
+"**=** if it requires a value and only the last instance of the flag is "
+"saved, or"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:96
+msgid ""
+"**=?** if it takes an optional value and only the last instance of the flag "
+"is saved, or"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:98
+msgid "**=+** if it requires a value and each instance of the flag is saved."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:100
+msgid ""
+"Optionally a ``!`` followed by fish script to validate the value. Typically "
+"this will be a function to run. If the exit status is zero the value for the "
+"flag is valid. If non-zero the value is invalid. Any error messages should "
+"be written to stdout (not stderr). See the section on :ref:`Flag Value "
+"Validation <flag-value-validation>` for more information."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:102
+msgid ""
+"See the :doc:`fish_opt <fish_opt>` command for a friendlier but more verbose "
+"way to create option specifications."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:104
+msgid ""
+"If a flag is not seen when parsing the arguments then the corresponding "
+"_flag_X var(s) will not be set."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:107
+msgid "Integer flag"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:109
+msgid ""
+"Sometimes commands take numbers directly as options, like ``foo -55``. To "
+"allow this one option spec can have the ``#`` modifier so that any integer "
+"will be understood as this flag, and the last number will be given as its "
+"value (as if ``=`` was used)."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:111
+msgid ""
+"The ``#`` must follow the short flag letter (if any), and other modifiers "
+"like ``=`` are not allowed, except for ``-`` (for backwards compatibility)::"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:113
+msgid "m#maximum"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:115
+msgid ""
+"This does not read numbers given as ``+NNN``, only those that look like "
+"flags - ``-NNN``."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:118
+msgid "Note: Optional arguments"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:120
+msgid ""
+"An option defined with ``=?`` can take optional arguments. Optional "
+"arguments have to be *directly attached* to the option they belong to."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:122
+msgid ""
+"That means the argument will only be used for the option if you use it like::"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:124
+msgid ""
+"cmd --flag=value\n"
+"# or\n"
+"cmd  -fvalue"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:128
+msgid "but not if used like::"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:130
+msgid ""
+"cmd --flag value\n"
+"# \"value\" here will be used as a positional argument\n"
+"# and \"--flag\" won't have an argument."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:134
+msgid ""
+"If this weren't the case, using an option without an optional argument would "
+"be difficult if you also wanted to use positional arguments."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:136
+msgid "For example::"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:138
+msgid ""
+"grep --color auto\n"
+"# Here \"auto\" will be used as the search string,\n"
+"# \"color\" will not have an argument and will fall back to the default,\n"
+"# which also *happens to be* auto.\n"
+"grep --color always\n"
+"# Here grep will still only use color \"auto\"matically\n"
+"# and search for the string \"always\"."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:146
+msgid ""
+"This isn't specific to argparse but common to all things using ``getopt(3)`` "
+"(if they have optional arguments at all). That ``grep`` example is how GNU "
+"grep actually behaves."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:151
+msgid "Flag Value Validation"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:153
+msgid ""
+"Sometimes you need to validate the option values. For example, that it is a "
+"valid integer within a specific range, or an ip address, or something "
+"entirely different. You can always do this after ``argparse`` returns but "
+"you can also request that ``argparse`` perform the validation by executing "
+"arbitrary fish script. To do so simply append an ``!`` (exclamation-mark) "
+"then the fish script to be run. When that code is executed three vars will "
+"be defined:"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:155
+msgid ""
+"``_argparse_cmd`` will be set to the value of the value of the ``argparse --"
+"name`` value."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:157
+msgid ""
+"``_flag_name`` will be set to the short or long flag that being processed."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:159
+msgid ""
+"``_flag_value`` will be set to the value associated with the flag being "
+"processed."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:161
+msgid "These variables are passed to the function as local exported variables."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:163
+msgid ""
+"The script should write any error messages to stdout, not stderr. It should "
+"return a status of zero if the flag value is valid otherwise a non-zero "
+"status to indicate it is invalid."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:165
+msgid ""
+"Fish ships with a ``_validate_int`` function that accepts a ``--min`` and "
+"``--max`` flag. Let's say your command accepts a ``-m`` or ``--max`` flag "
+"and the minimum allowable value is zero and the maximum is 5. You would "
+"define the option like this: ``m/max=!_validate_int --min 0 --max 5``. The "
+"default if you just call ``_validate_int`` without those flags is to simply "
+"check that the value is a valid integer with no limits on the min or max "
+"value allowed."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:167
+msgid "Here are some examples of flag validations::"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:169
+msgid ""
+"# validate that a path is a directory\n"
+"argparse 'p/path=!test -d \"$_flag_value\"' -- --path $__fish_config_dir\n"
+"# validate that a function does not exist\n"
+"argparse 'f/func=!not functions -q \"$_flag_value\"' -- -f alias\n"
+"# validate that a string matches a regex\n"
+"argparse 'c/color=!string match -rq \\'^#?[0-9a-fA-F]{6}$\\' "
+"\"$_flag_value\"' -- -c 'c0ffee'\n"
+"# validate with a validator function\n"
+"argparse 'n/num=!_validate_int --min 0 --max 99' -- --num 42"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:179
+msgid "Example OPTION_SPECs"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:181
+msgid "Some *OPTION_SPEC* examples:"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:183
+msgid ""
+"``h/help`` means that both ``-h`` and ``--help`` are valid. The flag is a "
+"boolean and can be used more than once. If either flag is used then "
+"``_flag_h`` and ``_flag_help`` will be set to however either flag was seen, "
+"as many times as it was seen. So it could be set to ``-h``, ``-h`` and ``--"
+"help``, and ``count $_flag_h`` would yield \"3\"."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:185
+msgid ""
+"``help`` means that only ``--help`` is valid. The flag is a boolean and can "
+"be used more than once. If it is used then ``_flag_help`` will be set as "
+"above. Also ``h-help`` (with an arbitrary short letter) for backwards "
+"compatibility."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:187
+msgid ""
+"``longonly=`` is a flag ``--longonly`` that requires an option, there is no "
+"short flag or even short flag variable."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:189
+msgid ""
+"``n/name=`` means that both ``-n`` and ``--name`` are valid. It requires a "
+"value and can be used at most once. If the flag is seen then ``_flag_n`` and "
+"``_flag_name`` will be set with the single mandatory value associated with "
+"the flag."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:191
+msgid ""
+"``n/name=?`` means that both ``-n`` and ``--name`` are valid. It accepts an "
+"optional value and can be used at most once. If the flag is seen then "
+"``_flag_n`` and ``_flag_name`` will be set with the value associated with "
+"the flag if one was provided else it will be set with no values."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:193
+msgid ""
+"``name=+`` means that only ``--name`` is valid. It requires a value and can "
+"be used more than once. If the flag is seen then ``_flag_name`` will be set "
+"with the values associated with each occurrence."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:195
+msgid ""
+"``x`` means that only ``-x`` is valid. It is a boolean that can be used more "
+"than once. If it is seen then ``_flag_x`` will be set as above."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:197
+msgid ""
+"``x=``, ``x=?``, and ``x=+`` are similar to the n/name examples above but "
+"there is no long flag alternative to the short flag ``-x``."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:199
+msgid ""
+"``#max`` (or ``#-max``) means that flags matching the regex \"^--?\\\\d+$\" "
+"are valid. When seen they are assigned to the variable ``_flag_max``. This "
+"allows any valid positive or negative integer to be specified by prefixing "
+"it with a single \"-\". Many commands support this idiom. For example ``head "
+"-3 /a/file`` to emit only the first three lines of /a/file."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:201
+msgid ""
+"``n#max`` means that flags matching the regex \"^--?\\\\d+$\" are valid. "
+"When seen they are assigned to the variables ``_flag_n`` and ``_flag_max``. "
+"This allows any valid positive or negative integer to be specified by "
+"prefixing it with a single \"-\". Many commands support this idiom. For "
+"example ``head -3 /a/file`` to emit only the first three lines of /a/file. "
+"You can also specify the value using either flag: ``-n NNN`` or ``--max "
+"NNN`` in this example."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:203
+msgid ""
+"``#longonly`` causes the last integer option to be stored in "
+"``_flag_longonly``."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:205
+msgid ""
+"After parsing the arguments the ``argv`` variable is set with local scope to "
+"any values not already consumed during flag processing. If there are no "
+"unbound values the variable is set but ``count $argv`` will be zero."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:207
+msgid ""
+"If an error occurs during argparse processing it will exit with a non-zero "
+"status and print error messages to stderr."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:210
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:212
+msgid "A simple use::"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:214
+msgid ""
+"argparse h/help -- $argv\n"
+"or return\n"
+"\n"
+"if set -q _flag_help\n"
+"    # TODO: Print help here\n"
+"    return 0\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:222
+msgid ""
+"This just wants one option - ``-h`` / ``--help``. Any other option is an "
+"error. If it is given it prints help and exits."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:224
+msgid "How :doc:`fish_add_path` parses its args::"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:226
+msgid ""
+"argparse -x g,U -x P,U -x a,p g/global U/universal P/path p/prepend a/append "
+"h/help m/move v/verbose n/dry-run -- $argv"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:228
+msgid ""
+"There are a variety of boolean flags, all with long and short versions. A "
+"few of these cannot be used together, and that is what the ``-x`` flag is "
+"used for. ``-x g,U`` means that ``--global`` and ``--universal`` or their "
+"short equivalents conflict, and if they are used together you get an error. "
+"In this case you only need to give the short or long flag, not the full "
+"option specification."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:232
+msgid ""
+"After this it figures out which variable it should operate on according to "
+"the ``--path`` flag::"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:234
+msgid ""
+"set -l var fish_user_paths\n"
+"set -q _flag_path\n"
+"and set var PATH"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:241
+msgid "Limitations"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:243
+msgid ""
+"One limitation with **--ignore-unknown** is that, if an unknown option is "
+"given in a group with known options, the entire group will be kept in $argv. "
+"``argparse`` will not do any permutations here."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:245
+msgid "For instance::"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:247
+msgid ""
+"argparse --ignore-unknown h -- -ho\n"
+"echo $_flag_h # is -h, because -h was given\n"
+"echo $argv # is still -ho"
+msgstr ""
+
+#: ../../../cmds/argparse.rst:251
+msgid "This limitation may be lifted in future."
+msgstr ""
+
+#: ../../../cmds/argparse.rst:253
+msgid ""
+"Additionally, it can only parse known options up to the first unknown option "
+"in the group - the unknown option could take options, so it isn't clear what "
+"any character after an unknown option means."
+msgstr ""
