@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/funcsave.rst:4
+msgid ""
+"funcsave - save the definition of a function to the user's autoload directory"
+msgstr ""
+
+#: ../../../cmds/funcsave.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/funcsave.rst:9
+msgid ""
+"funcsave FUNCTION_NAME\n"
+"funcsave [-q | --quiet] [(-d | --directory) DIR] FUNCTION_NAME"
+msgstr ""
+
+#: ../../../cmds/funcsave.rst:16
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/funcsave.rst:18
+msgid ""
+"``funcsave`` saves a function to a file in the fish configuration directory. "
+"This function will be :ref:`automatically loaded <syntax-function-"
+"autoloading>` by current and future fish sessions. This can be useful to "
+"commit functions created interactively for permanent use."
+msgstr ""
+
+#: ../../../cmds/funcsave.rst:20
+msgid ""
+"If you have erased a function using :doc:`functions <functions>`'s ``--"
+"erase`` option, ``funcsave`` will remove the saved function definition."
+msgstr ""
+
+#: ../../../cmds/funcsave.rst:22
+msgid ""
+"Because fish loads functions on-demand, saved functions cannot serve as :ref:"
+"`event handlers <event>` until they are run or otherwise sourced. To "
+"activate an event handler for every new shell, add the function to the :ref:"
+"`configuration file <configuration>` instead of using ``funcsave``."
+msgstr ""
+
+#: ../../../cmds/funcsave.rst:24
+msgid ""
+"This is often used after :doc:`funced <funced>`, which opens the function in "
+"``$EDITOR`` or ``$VISUAL`` and loads it into the current session afterwards."
+msgstr ""

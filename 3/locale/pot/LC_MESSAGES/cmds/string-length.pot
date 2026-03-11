@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/string-length.rst:4
+msgid "string-length - print string lengths"
+msgstr ""
+
+#: ../../../cmds/string-length.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/string-length.rst:11
+msgid "string length [-q | --quiet] [-V | --visible] [STRING ...]"
+msgstr ""
+
+#: ../../../cmds/string-length.rst:18
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/string-length.rst:22
+msgid ""
+"``string length`` reports the length of each string argument in characters. "
+"Exit status: 0 if at least one non-empty *STRING* was given, or 1 otherwise."
+msgstr ""
+
+#: ../../../cmds/string-length.rst:24
+msgid ""
+"With **-V** or **--visible**, it uses the visible width of the arguments. "
+"That means it will discount escape sequences fish knows about, account for "
+"$fish_emoji_width and $fish_ambiguous_width. It will also count each line "
+"(separated by ``\\n``) on its own, and with a carriage return (``\\r``) "
+"count only the widest stretch on a line. The intent is to measure the number "
+"of columns the *STRING* would occupy in the current terminal."
+msgstr ""
+
+#: ../../../cmds/string-length.rst:29
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/string-length.rst:35
+msgid ""
+">_ string length 'hello, world'\n"
+"12\n"
+"\n"
+">_ set str foo\n"
+">_ string length -q $str; echo $status\n"
+"0\n"
+"# Equivalent to test -n \"$str\"\n"
+"\n"
+">_ string length --visible (set_color red)foobar\n"
+"# the set_color is discounted, so this is the width of \"foobar\"\n"
+"6\n"
+"\n"
+">_ string length --visible 🐟🐟🐟🐟\n"
+"# depending on $fish_emoji_width, this is either 4 or 8\n"
+"# in new terminals it should be\n"
+"8\n"
+"\n"
+">_ string length --visible abcdef\\r123\n"
+"# this displays as \"123def\", so the width is 6\n"
+"6\n"
+"\n"
+">_ string length --visible a\\nbc\n"
+"# counts \"a\" and \"bc\" as separate lines, so it prints width for each\n"
+"1\n"
+"2"
+msgstr ""

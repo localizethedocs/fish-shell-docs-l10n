@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/wait.rst:4
+msgid "wait - wait for jobs to complete"
+msgstr ""
+
+#: ../../../cmds/wait.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/wait.rst:9
+msgid "wait [-n | --any] [PID | PROCESS_NAME] ..."
+msgstr ""
+
+#: ../../../cmds/wait.rst:14
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/wait.rst:16
+msgid "``wait`` waits for child jobs to complete."
+msgstr ""
+
+#: ../../../cmds/wait.rst:18
+msgid ""
+"If a *PID* is specified, the command waits for the job that the process with "
+"that process ID belongs to."
+msgstr ""
+
+#: ../../../cmds/wait.rst:20
+msgid ""
+"If a *PROCESS_NAME* is specified, the command waits for the jobs that the "
+"matched processes belong to."
+msgstr ""
+
+#: ../../../cmds/wait.rst:22
+msgid ""
+"If neither a pid nor a process name is specified, the command waits for all "
+"background jobs."
+msgstr ""
+
+#: ../../../cmds/wait.rst:24
+msgid ""
+"If the **-n** or **--any** flag is provided, the command returns as soon as "
+"the first job completes. If it is not provided, it returns after all jobs "
+"complete."
+msgstr ""
+
+#: ../../../cmds/wait.rst:26
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/wait.rst:29
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/wait.rst:33
+msgid ""
+"sleep 10 &\n"
+"wait $last_pid"
+msgstr ""
+
+#: ../../../cmds/wait.rst:36
+msgid "spawns ``sleep`` in the background, and then waits until it finishes."
+msgstr ""
+
+#: ../../../cmds/wait.rst:41
+msgid ""
+"for i in (seq 1 5); sleep 10 &; end\n"
+"wait"
+msgstr ""
+
+#: ../../../cmds/wait.rst:44
+msgid ""
+"spawns five jobs in the background, and then waits until all of them "
+"finishes."
+msgstr ""
+
+#: ../../../cmds/wait.rst:49
+msgid ""
+"for i in (seq 1 5); sleep 10 &; end\n"
+"hoge &\n"
+"wait sleep"
+msgstr ""
+
+#: ../../../cmds/wait.rst:53
+msgid ""
+"spawns five jobs and ``hoge`` in the background, and then waits until all "
+"``sleep``\\s finish, and doesn't wait for ``hoge`` finishing."
+msgstr ""

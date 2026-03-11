@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/realpath.rst:5
+msgid "realpath - convert a path to an absolute path without symlinks"
+msgstr ""
+
+#: ../../../cmds/realpath.rst:8
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/realpath.rst:10
+msgid "realpath [OPTIONS] PATH"
+msgstr ""
+
+#: ../../../cmds/realpath.rst:15
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/realpath.rst:19
+msgid ""
+"NOTE: This page documents the fish builtin ``realpath``. To see the "
+"documentation on the ``realpath`` command you might have, use ``command man "
+"realpath``."
+msgstr ""
+
+#: ../../../cmds/realpath.rst:23
+msgid ""
+":program:`realpath` follows all symbolic links encountered for the provided :"
+"envvar:`PATH`, printing the absolute path resolved. :doc:`fish <fish>` "
+"provides a :command:`realpath`-alike builtin intended to enrich systems "
+"where no such command is installed by default."
+msgstr ""
+
+#: ../../../cmds/realpath.rst:25
+msgid ""
+"If a :command:`realpath` command exists, that will be preferred. ``builtin "
+"realpath`` will explicitly use the fish implementation of :command:"
+"`realpath`."
+msgstr ""
+
+#: ../../../cmds/realpath.rst:28
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/realpath.rst:30
+msgid "**-s** or **--no-symlinks**"
+msgstr ""
+
+#: ../../../cmds/realpath.rst:31
+msgid ""
+"Don't resolve symlinks, only make paths absolute, squash multiple slashes "
+"and remove trailing slashes."
+msgstr ""
+
+#: ../../../cmds/realpath.rst:33
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/realpath.rst:34
+msgid "Displays help about using this command."
+msgstr ""
