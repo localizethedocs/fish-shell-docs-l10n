@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_key_reader.rst:4
+msgid "fish_key_reader - explore what characters keyboard keys send"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:9
+msgid "fish_key_reader [OPTIONS]"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:14
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:16
+msgid ""
+":program:`fish_key_reader` is used to explain how you would bind a certain "
+"key sequence. By default, it prints the :doc:`bind <bind>` command for one "
+"key sequence read interactively over standard input."
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:18
+msgid ""
+"If the character sequence matches a special key name (see ``bind --key-"
+"names``),  both ``bind CHARS ...`` and ``bind -k KEYNAME ...`` usage will be "
+"shown. In verbose mode (enabled by passing ``--verbose``), additional "
+"details about the characters received, such as the delay between chars, are "
+"written to standard error."
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:20
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:22
+msgid "**-c** or **--continuous**"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:23
+msgid ""
+"Begins a session where multiple key sequences can be inspected. By default "
+"the program exits after capturing a single key sequence."
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:25
+msgid "**-V** or **--verbose**"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:26
+msgid ""
+"Tells fish_key_reader to output timing information and explain the sequence "
+"in more detail."
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:28
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:29
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:31
+msgid "**-v** or **--version**"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:32
+msgid "Displays the current :program:`fish` version and then exits."
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:35
+msgid "Usage Notes"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:37
+msgid ""
+"In verbose mode, the delay in milliseconds since the previous character was "
+"received is included in the diagnostic information written to standard "
+"error. This information may be useful to determine the optimal "
+"``fish_escape_delay_ms`` setting or learn the amount of lag introduced by "
+"tools like ``ssh``, ``mosh`` or ``tmux``."
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:39
+msgid ""
+"``fish_key_reader`` intentionally disables handling of many signals. To "
+"terminate ``fish_key_reader`` in ``--continuous`` mode do:"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:41
+msgid "press :kbd:`Control`\\ +\\ :kbd:`C` twice, or"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:42
+msgid "press :kbd:`Control`\\ +\\ :kbd:`D` twice, or"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:43
+msgid "type ``exit``, or"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:44
+msgid "type ``quit``"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:47
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:51
+msgid ""
+"> fish_key_reader\n"
+"Press a key:\n"
+"# press up-arrow\n"
+"bind \\e\\[A 'do something'\n"
+"\n"
+"> fish_key_reader --verbose\n"
+"Press a key:\n"
+"# press alt+enter\n"
+"           hex:   1B  char: \\e\n"
+"(  0.027 ms)  hex:    D  char: \\cM  (or \\r)\n"
+"bind \\e\\r 'do something'"
+msgstr ""

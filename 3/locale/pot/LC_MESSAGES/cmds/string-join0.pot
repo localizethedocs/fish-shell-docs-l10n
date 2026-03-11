@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/string-join0.rst:2
+msgid "string-join0 - join strings with zero bytes"
+msgstr ""
+
+#: ../../../cmds/string-join.rst:3
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/string-join.rst:7
+msgid ""
+"string join [-q | --quiet] SEP [STRING ...]\n"
+"string join0 [-q | --quiet] [STRING ...]"
+msgstr ""
+
+#: ../../../cmds/string-join.rst:15
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/string-join.rst:19
+msgid ""
+"``string join`` joins its *STRING* arguments into a single string separated "
+"by *SEP*, which can be an empty string. Exit status: 0 if at least one join "
+"was performed, or 1 otherwise. If ``-n`` or ``--no-empty`` is specified, "
+"empty strings are excluded from consideration (e.g. ``string join -n + a b "
+"\"\" c`` would expand to ``a+b+c`` not ``a+b++c``)."
+msgstr ""
+
+#: ../../../cmds/string-join.rst:21
+msgid ""
+"``string join0`` joins its *STRING* arguments into a single string separated "
+"by the zero byte (NUL), and adds a trailing NUL. This is most useful in "
+"conjunction with tools that accept NUL-delimited input, such as ``sort -z``. "
+"Exit status: 0 if at least one join was performed, or 1 otherwise."
+msgstr ""
+
+#: ../../../cmds/string-join.rst:23
+msgid ""
+"Because Unix uses NUL as the string terminator, passing the output of "
+"``string join0`` as an *argument* to a command (via a :ref:`command "
+"substitution <expand-command-substitution>`) won't actually work. Fish will "
+"pass the correct bytes along, but the command won't be able to tell where "
+"the argument ends. This is a limitation of Unix' argument passing."
+msgstr ""
+
+#: ../../../cmds/string-join.rst:28
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/string-join.rst:34
+msgid ""
+">_ seq 3 | string join ...\n"
+"1...2...3\n"
+"\n"
+"# Give a list of NUL-separated filenames to du (this is a GNU extension)\n"
+">_ string join0 file1 file2 file\\nwith\\nmultiple\\nlines | du --files0-"
+"from=-\n"
+"\n"
+"# Just put the strings together without a separator\n"
+">_ string join '' a b c\n"
+"abc"
+msgstr ""

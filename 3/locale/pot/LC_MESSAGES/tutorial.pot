@@ -1,0 +1,1415 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../tutorial.rst:6
+msgid "Tutorial"
+msgstr ""
+
+#: ../../../tutorial.rst:9
+msgid "Why fish?"
+msgstr ""
+
+#: ../../../tutorial.rst:11
+msgid ""
+"Fish is a fully-equipped command line shell (like bash or zsh) that is smart "
+"and user-friendly. Fish supports powerful features like syntax highlighting, "
+"autosuggestions, and tab completions that just work, with nothing to learn "
+"or configure."
+msgstr ""
+
+#: ../../../tutorial.rst:13
+msgid ""
+"If you want to make your command line more productive, more useful, and more "
+"fun, without learning a bunch of arcane syntax and configuration options, "
+"then fish might be just what you're looking for!"
+msgstr ""
+
+#: ../../../tutorial.rst:17
+msgid "Getting started"
+msgstr ""
+
+#: ../../../tutorial.rst:19
+msgid ""
+"Once installed, just type in ``fish`` into your current shell to try it out!"
+msgstr ""
+
+#: ../../../tutorial.rst:21
+msgid ""
+"You will be greeted by the standard fish prompt, which means you are all set "
+"up and can start using fish::"
+msgstr ""
+
+#: ../../../tutorial.rst:24
+msgid ""
+"> fish\n"
+"Welcome to fish, the friendly interactive shell\n"
+"Type help for instructions on how to use fish\n"
+"you@hostname ~>"
+msgstr ""
+
+#: ../../../tutorial.rst:30
+msgid ""
+"This prompt that you see above is the fish default prompt: it shows your "
+"username, hostname, and working directory. - to change this prompt see :ref:"
+"`how to change your prompt <prompt>` - to switch to fish permanently see :"
+"ref:`Default Shell <default-shell>`."
+msgstr ""
+
+#: ../../../tutorial.rst:34
+msgid "From now on, we'll pretend your prompt is just a ``>`` to save space."
+msgstr ""
+
+#: ../../../tutorial.rst:38
+msgid "Learning fish"
+msgstr ""
+
+#: ../../../tutorial.rst:40
+msgid ""
+"This tutorial assumes a basic understanding of command line shells and Unix "
+"commands, and that you have a working copy of fish."
+msgstr ""
+
+#: ../../../tutorial.rst:42
+msgid ""
+"If you have a strong understanding of other shells, and want to know what "
+"fish does differently, search for the magic phrase *unlike other shells*, "
+"which is used to call out important differences."
+msgstr ""
+
+#: ../../../tutorial.rst:44
+msgid ""
+"Or, if you want a quick overview over the differences to other shells like "
+"Bash, see :ref:`Fish For Bash Users <fish_for_bash_users>`."
+msgstr ""
+
+#: ../../../tutorial.rst:46
+msgid ""
+"For the full, detailed description of how to use fish interactively, see :"
+"ref:`Interactive Use <interactive>`."
+msgstr ""
+
+#: ../../../tutorial.rst:48
+msgid ""
+"For a comprehensive description of fish's scripting language, see :ref:`The "
+"Fish Language<language>`."
+msgstr ""
+
+#: ../../../tutorial.rst:51
+msgid "Running Commands"
+msgstr ""
+
+#: ../../../tutorial.rst:53
+msgid ""
+"Fish runs commands like other shells: you type a command, followed by its "
+"arguments. Spaces are separators::"
+msgstr ""
+
+#: ../../../tutorial.rst:55
+msgid ""
+"> echo hello world\n"
+"hello world"
+msgstr ""
+
+#: ../../../tutorial.rst:59
+msgid ""
+"This runs the command ``echo`` with the arguments ``hello`` and ``world``. "
+"In this case that's the same as one argument ``hello world``, but in many "
+"cases it's not. If you need to pass an argument that includes a space, you "
+"can :ref:`escape <escapes>` with a backslash, or :ref:`quote <quotes>` it "
+"using single or double quotes::"
+msgstr ""
+
+#: ../../../tutorial.rst:61
+msgid ""
+"> mkdir My\\ Files\n"
+"# Makes a directory called \"My Files\", with a space in the name\n"
+"> cp ~/Some\\ File 'My Files'\n"
+"# Copies a file called \"Some File\" in the home directory to \"My Files\"\n"
+"> ls \"My Files\"\n"
+"Some File"
+msgstr ""
+
+#: ../../../tutorial.rst:70
+msgid "Getting Help"
+msgstr ""
+
+#: ../../../tutorial.rst:72
+msgid ""
+"Run ``help`` to open fish's help in a web browser, and ``man`` with the page "
+"(like ``fish-language``) to open it in a man page. You can also ask for help "
+"with a specific command, for example, ``help set`` to open in a web browser, "
+"or ``man set`` to see it in the terminal."
+msgstr ""
+
+#: ../../../tutorial.rst:76
+msgid ""
+"> man set\n"
+"set - handle shell variables\n"
+"  Synopsis..."
+msgstr ""
+
+#: ../../../tutorial.rst:80
+msgid "To open this section, use ``help getting-help``."
+msgstr ""
+
+#: ../../../tutorial.rst:82
+msgid ""
+"Fish works by running commands, which are often also installed on your "
+"computer. Usually these commands also provide help in the man system, so you "
+"can get help for them there. Try ``man ls`` to get help on your computer's "
+"``ls`` command."
+msgstr ""
+
+#: ../../../tutorial.rst:85
+msgid "Syntax Highlighting"
+msgstr ""
+
+#: ../../../tutorial.rst:94
+msgid ""
+"You'll quickly notice that fish performs syntax highlighting as you type. "
+"Invalid commands are colored red by default:"
+msgstr ""
+
+#: ../../../tutorial.rst:99
+msgid ":prompt:`>` :red:`/bin/mkd`"
+msgstr ""
+
+#: ../../../tutorial.rst:101
+msgid ""
+"A command may be invalid because it does not exist, or refers to a file that "
+"you cannot execute. When the command becomes valid, it is shown in a "
+"different color::"
+msgstr ""
+
+#: ../../../tutorial.rst:103
+msgid "> /bin/mkdir"
+msgstr ""
+
+#: ../../../tutorial.rst:106
+msgid "Valid file paths are underlined as you type them:"
+msgstr ""
+
+#: ../../../tutorial.rst:111
+msgid ":prompt:`>` :command:`cat` :param-valid-path:`~/somefi`"
+msgstr ""
+
+#: ../../../tutorial.rst:114
+msgid ""
+"This tells you that there exists a file that starts with ``somefi``, which "
+"is useful feedback as you type."
+msgstr ""
+
+#: ../../../tutorial.rst:116
+msgid ""
+"These colors, and many more, can be changed by running ``fish_config``, or "
+"by modifying :ref:`color variables <variables-color>` directly."
+msgstr ""
+
+#: ../../../tutorial.rst:118
+msgid "For example, if you want to disable (almost) all coloring::"
+msgstr ""
+
+#: ../../../tutorial.rst:120
+msgid "fish_config theme choose none"
+msgstr ""
+
+#: ../../../tutorial.rst:122
+msgid "This picks the \"none\" theme. To see all themes::"
+msgstr ""
+
+#: ../../../tutorial.rst:124
+msgid "fish_config theme show"
+msgstr ""
+
+#: ../../../tutorial.rst:126
+msgid ""
+"Just running ``fish_config`` will open up a browser interface that allows "
+"you to pick from the available themes."
+msgstr ""
+
+#: ../../../tutorial.rst:129
+msgid "Wildcards"
+msgstr ""
+
+#: ../../../tutorial.rst:131
+msgid "Fish supports the familiar wildcard ``*``. To list all JPEG files::"
+msgstr ""
+
+#: ../../../tutorial.rst:133
+msgid ""
+"> ls *.jpg\n"
+"lena.jpg\n"
+"meena.jpg\n"
+"santa maria.jpg"
+msgstr ""
+
+#: ../../../tutorial.rst:139
+msgid "You can include multiple wildcards::"
+msgstr ""
+
+#: ../../../tutorial.rst:141
+msgid ""
+"> ls l*.p*\n"
+"lena.png\n"
+"lesson.pdf"
+msgstr ""
+
+#: ../../../tutorial.rst:146
+msgid "The recursive wildcard ``**`` searches directories recursively::"
+msgstr ""
+
+#: ../../../tutorial.rst:148
+msgid ""
+"> ls /var/**.log\n"
+"/var/log/system.log\n"
+"/var/run/sntp.log"
+msgstr ""
+
+#: ../../../tutorial.rst:153
+msgid ""
+"If that directory traversal is taking a long time, you can :kbd:`Control`\\ +"
+"\\ :kbd:`C` out of it."
+msgstr ""
+
+#: ../../../tutorial.rst:155
+msgid "For more, see :ref:`Wildcards <expand-wildcard>`."
+msgstr ""
+
+#: ../../../tutorial.rst:158
+msgid "Pipes and Redirections"
+msgstr ""
+
+#: ../../../tutorial.rst:160
+msgid "You can pipe between commands with the usual vertical bar::"
+msgstr ""
+
+#: ../../../tutorial.rst:162
+msgid ""
+"> echo hello world | wc\n"
+"      1       2      12"
+msgstr ""
+
+#: ../../../tutorial.rst:165
+msgid ""
+"stdin and stdout can be redirected via the familiar ``<`` and ``>``. stderr "
+"is redirected with a ``2>``."
+msgstr ""
+
+#: ../../../tutorial.rst:169
+msgid "> grep fish < /etc/shells > ~/output.txt 2> ~/errors.txt"
+msgstr ""
+
+#: ../../../tutorial.rst:171
+msgid "To redirect stdout and stderr into one file, you can use ``&>``::"
+msgstr ""
+
+#: ../../../tutorial.rst:173
+msgid "> make &> make_output.txt"
+msgstr ""
+
+#: ../../../tutorial.rst:175
+msgid ""
+"For more, see :ref:`Input and output redirections <redirects>` and :ref:"
+"`Pipes <pipes>`."
+msgstr ""
+
+#: ../../../tutorial.rst:178
+msgid "Autosuggestions"
+msgstr ""
+
+#: ../../../tutorial.rst:180
+msgid ""
+"As you type fish will suggest commands to the right of the cursor, in gray. "
+"For example:"
+msgstr ""
+
+#: ../../../tutorial.rst:185
+msgid ":prompt:`>` :red:`/bin/h`:gray:`ostname`"
+msgstr ""
+
+#: ../../../tutorial.rst:188
+msgid "It knows about paths and options:"
+msgstr ""
+
+#: ../../../tutorial.rst:193
+msgid ":prompt:`>` :command:`grep` :param:`--i`:gray:`gnore-case`"
+msgstr ""
+
+#: ../../../tutorial.rst:196
+msgid ""
+"And history too. Type a command once, and you can re-summon it by just "
+"typing a few letters:"
+msgstr ""
+
+#: ../../../tutorial.rst:201
+msgid ""
+":prompt:`>` :red:`r`:gray:`sync -avze ssh . myname@somelonghost.com:/some/"
+"long/path/doo/dee/doo/dee/doo`"
+msgstr ""
+
+#: ../../../tutorial.rst:204
+msgid ""
+"To accept the autosuggestion, hit :kbd:`→` (right arrow) or :kbd:`Control`\\ "
+"+\\ :kbd:`F`. To accept a single word of the autosuggestion, :kbd:`Alt`\\ +"
+"\\ :kbd:`→` (right arrow). If the autosuggestion is not what you want, just "
+"ignore it."
+msgstr ""
+
+#: ../../../tutorial.rst:206
+msgid ""
+"If you don't like autosuggestions, you can disable them by setting "
+"``$fish_autosuggestion_enabled`` to 0::"
+msgstr ""
+
+#: ../../../tutorial.rst:208
+msgid "set -g fish_autosuggestion_enabled 0"
+msgstr ""
+
+#: ../../../tutorial.rst:211
+msgid "Tab Completions"
+msgstr ""
+
+#: ../../../tutorial.rst:213
+msgid "A rich set of tab completions work \"out of the box\"."
+msgstr ""
+
+#: ../../../tutorial.rst:215
+msgid ""
+"Press :kbd:`Tab` and fish will attempt to complete the command, argument, or "
+"path:"
+msgstr ""
+
+#: ../../../tutorial.rst:220
+msgid ":prompt:`>` :red:`/pri`:kbd:`Tab` => :command:`/private/`"
+msgstr ""
+
+#: ../../../tutorial.rst:223
+msgid "If there's more than one possibility, it will list them:"
+msgstr ""
+
+#: ../../../tutorial.rst:228
+msgid ""
+":prompt:`>` :red:`~/stuff/s`:kbd:`Tab`\n"
+"~/stuff/script.sh  :gray:`(command)`  ~/stuff/sources/  :gray:`(directory)`"
+msgstr ""
+
+#: ../../../tutorial.rst:232
+msgid ""
+"Hit tab again to cycle through the possibilities. The part in parentheses "
+"there (that \"command\" and \"directory\") is the completion description. "
+"It's just a short hint to explain what kind of argument it is."
+msgstr ""
+
+#: ../../../tutorial.rst:234
+msgid "fish can also complete many commands, like git branches:"
+msgstr ""
+
+#: ../../../tutorial.rst:239
+msgid ""
+":prompt:`>` :command:`git` :param:`merge pr`:kbd:`Tab` => :command:`git` :"
+"param:`merge prompt_designer`\n"
+":prompt:`>` :command:`git` :param:`checkout b`:kbd:`Tab`\n"
+"builtin_list_io_merge :gray:`(Branch)`  builtin_set_color :gray:`(Branch)` "
+"busted_events :gray:`(Tag)`"
+msgstr ""
+
+#: ../../../tutorial.rst:243
+msgid "Try hitting tab and see what fish can do!"
+msgstr ""
+
+#: ../../../tutorial.rst:246
+msgid "Variables"
+msgstr ""
+
+#: ../../../tutorial.rst:248
+msgid ""
+"Like other shells, a dollar sign followed by a variable name is replaced "
+"with the value of that variable::"
+msgstr ""
+
+#: ../../../tutorial.rst:250
+msgid ""
+"> echo My home directory is $HOME\n"
+"My home directory is /home/tutorial"
+msgstr ""
+
+#: ../../../tutorial.rst:253
+msgid ""
+"This is known as variable substitution, and it also happens in double "
+"quotes, but not single quotes::"
+msgstr ""
+
+#: ../../../tutorial.rst:255
+msgid ""
+"> echo \"My current directory is $PWD\"\n"
+"My current directory is /home/tutorial\n"
+"> echo 'My current directory is $PWD'\n"
+"My current directory is $PWD"
+msgstr ""
+
+#: ../../../tutorial.rst:260
+msgid ""
+"Unlike other shells, fish has an ordinary command to set variables: ``set``, "
+"which takes a variable name, and then its value."
+msgstr ""
+
+#: ../../../tutorial.rst:264
+msgid ""
+"> set name 'Mister Noodle'\n"
+"> echo $name\n"
+"Mister Noodle"
+msgstr ""
+
+#: ../../../tutorial.rst:269
+msgid ""
+"(Notice the quotes: without them, ``Mister`` and ``Noodle`` would have been "
+"separate arguments, and ``$name`` would have been made into a list of two "
+"elements.)"
+msgstr ""
+
+#: ../../../tutorial.rst:271
+msgid ""
+"Unlike other shells, variables are not further split after substitution::"
+msgstr ""
+
+#: ../../../tutorial.rst:273
+msgid ""
+"> mkdir $name\n"
+"> ls\n"
+"Mister Noodle"
+msgstr ""
+
+#: ../../../tutorial.rst:277
+msgid ""
+"In bash, this would have created two directories \"Mister\" and \"Noodle\". "
+"In fish, it created only one: the variable had the value \"Mister Noodle\", "
+"so that is the argument that was passed to ``mkdir``, spaces and all."
+msgstr ""
+
+#: ../../../tutorial.rst:279
+msgid "You can erase (or \"delete\") a variable with ``-e`` or ``--erase``"
+msgstr ""
+
+#: ../../../tutorial.rst:283
+msgid ""
+"> set -e MyVariable\n"
+"> env | grep MyVariable\n"
+"(no output)"
+msgstr ""
+
+#: ../../../tutorial.rst:287
+msgid "For more, see :ref:`Variable expansion <expand-variable>`."
+msgstr ""
+
+#: ../../../tutorial.rst:292
+msgid "Exports (Shell Variables)"
+msgstr ""
+
+#: ../../../tutorial.rst:294
+msgid ""
+"Sometimes you need to have a variable available to an external command, "
+"often as a setting. For example many programs like ``git`` or ``man`` read "
+"the ``$PAGER`` variable to figure out your preferred pager (the program that "
+"lets you scroll text). Other variables used like this include ``$BROWSER``, "
+"``$LANG`` (to configure your language) and ``$PATH``. You'll note these are "
+"written in ALLCAPS, but that's just a convention."
+msgstr ""
+
+#: ../../../tutorial.rst:296
+msgid ""
+"To give a variable to an external command, it needs to be \"exported\". This "
+"is done with a flag to ``set``, either ``--export`` or just ``-x``."
+msgstr ""
+
+#: ../../../tutorial.rst:300
+msgid ""
+"> set -x MyVariable SomeValue\n"
+"> env | grep MyVariable\n"
+"MyVariable=SomeValue"
+msgstr ""
+
+#: ../../../tutorial.rst:304
+msgid "It can also be unexported with ``--unexport`` or ``-u``."
+msgstr ""
+
+#: ../../../tutorial.rst:306
+msgid ""
+"This works the other way around as well! If fish is started by something "
+"else, it inherits that parents exported variables. So if your terminal "
+"emulator starts fish, and it exports ``$LANG`` set to ``en_US.UTF-8``, fish "
+"will receive that setting. And whatever started your terminal emulator also "
+"gave *it* some variables that it will then pass on unless it specifically "
+"decides not to. This is how fish usually receives the values for things like "
+"``$LANG``, ``$PATH`` and ``$TERM``, without you having to specify them again."
+msgstr ""
+
+#: ../../../tutorial.rst:308
+msgid ""
+"Exported variables can be local or global or universal - \"exported\" is not "
+"a :ref:`scope <variables-scope>`! Usually you'd make them global via ``set -"
+"gx MyVariable SomeValue``."
+msgstr ""
+
+#: ../../../tutorial.rst:310
+msgid "For more, see :ref:`Exporting variables <variables-export>`."
+msgstr ""
+
+#: ../../../tutorial.rst:315
+msgid "Lists"
+msgstr ""
+
+#: ../../../tutorial.rst:317
+msgid ""
+"The ``set`` command above used quotes to ensure that ``Mister Noodle`` was "
+"one argument. If it had been two arguments, then ``name`` would have been a "
+"list of length 2.  In fact, all variables in fish are really lists, that can "
+"contain any number of values, or none at all."
+msgstr ""
+
+#: ../../../tutorial.rst:319
+msgid ""
+"Some variables, like ``$PWD``, only have one value. By convention, we talk "
+"about that variable's value, but we really mean its first (and only) value."
+msgstr ""
+
+#: ../../../tutorial.rst:321
+msgid ""
+"Other variables, like ``$PATH``, really do have multiple values. During "
+"variable expansion, the variable expands to become multiple arguments::"
+msgstr ""
+
+#: ../../../tutorial.rst:323
+msgid ""
+"> echo $PATH\n"
+"/usr/bin /bin /usr/sbin /sbin /usr/local/bin"
+msgstr ""
+
+#: ../../../tutorial.rst:326
+msgid ""
+"Variables whose name ends in \"PATH\" are automatically split on colons to "
+"become lists. They are joined using colons when exported to subcommands. "
+"This is for compatibility with other tools, which expect $PATH to use "
+"colons. You can also explicitly add this quirk to a variable with ``set --"
+"path``, or remove it with ``set --unpath``."
+msgstr ""
+
+#: ../../../tutorial.rst:328
+msgid ""
+"Lists cannot contain other lists: there is no recursion.  A variable is a "
+"list of strings, full stop."
+msgstr ""
+
+#: ../../../tutorial.rst:330
+msgid "Get the length of a list with ``count``::"
+msgstr ""
+
+#: ../../../tutorial.rst:332
+msgid ""
+"> count $PATH\n"
+"5"
+msgstr ""
+
+#: ../../../tutorial.rst:335
+msgid ""
+"You can append (or prepend) to a list by setting the list to itself, with "
+"some additional arguments. Here we append /usr/local/bin to $PATH::"
+msgstr ""
+
+#: ../../../tutorial.rst:337
+msgid "> set PATH $PATH /usr/local/bin"
+msgstr ""
+
+#: ../../../tutorial.rst:339
+msgid ""
+"You can access individual elements with square brackets. Indexing starts at "
+"1 from the beginning, and -1 from the end::"
+msgstr ""
+
+#: ../../../tutorial.rst:341
+msgid ""
+"> echo $PATH\n"
+"/usr/bin /bin /usr/sbin /sbin /usr/local/bin\n"
+"> echo $PATH[1]\n"
+"/usr/bin\n"
+"> echo $PATH[-1]\n"
+"/usr/local/bin"
+msgstr ""
+
+#: ../../../tutorial.rst:348
+msgid "You can also access ranges of elements, known as \"slices\":"
+msgstr ""
+
+#: ../../../tutorial.rst:352
+msgid ""
+"> echo $PATH[1..2]\n"
+"/usr/bin /bin\n"
+"> echo $PATH[-1..2]\n"
+"/usr/local/bin /sbin /usr/sbin /bin"
+msgstr ""
+
+#: ../../../tutorial.rst:357
+msgid "You can iterate over a list (or a slice) with a for loop::"
+msgstr ""
+
+#: ../../../tutorial.rst:359
+msgid ""
+"for val in $PATH\n"
+"  echo \"entry: $val\"\n"
+"end\n"
+"# Will print:\n"
+"# entry: /usr/bin/\n"
+"# entry: /bin\n"
+"# entry: /usr/sbin\n"
+"# entry: /sbin\n"
+"# entry: /usr/local/bin"
+msgstr ""
+
+#: ../../../tutorial.rst:369
+msgid ""
+"Lists adjacent to other lists or strings are expanded as :ref:`cartesian "
+"products <cartesian-product>` unless quoted (see :ref:`Variable expansion "
+"<expand-variable>`)::"
+msgstr ""
+
+#: ../../../tutorial.rst:371
+msgid ""
+"> set a 1 2 3\n"
+"> set 1 a b c\n"
+"> echo $a$1\n"
+"1a 2a 3a 1b 2b 3b 1c 2c 3c\n"
+"> echo $a\" banana\"\n"
+"1 banana 2 banana 3 banana\n"
+"> echo \"$a banana\"\n"
+"1 2 3 banana"
+msgstr ""
+
+#: ../../../tutorial.rst:380
+msgid "This is similar to :ref:`Brace expansion <expand-brace>`."
+msgstr ""
+
+#: ../../../tutorial.rst:382
+msgid "For more, see :ref:`Lists <variables-lists>`."
+msgstr ""
+
+#: ../../../tutorial.rst:386
+msgid "Command Substitutions"
+msgstr ""
+
+#: ../../../tutorial.rst:388
+msgid ""
+"Command substitutions use the output of one command as an argument to "
+"another. Unlike other shells, fish does not use backticks `` for command "
+"substitutions. Instead, it uses parentheses with or without a dollar::"
+msgstr ""
+
+#: ../../../tutorial.rst:390
+msgid ""
+"> echo In (pwd), running $(uname)\n"
+"In /home/tutorial, running FreeBSD"
+msgstr ""
+
+#: ../../../tutorial.rst:393
+msgid "A common idiom is to capture the output of a command in a variable::"
+msgstr ""
+
+#: ../../../tutorial.rst:395
+msgid ""
+"> set os (uname)\n"
+"> echo $os\n"
+"Linux"
+msgstr ""
+
+#: ../../../tutorial.rst:399
+msgid ""
+"Command substitutions without a dollar are not expanded within quotes, so "
+"the version with a dollar is simpler::"
+msgstr ""
+
+#: ../../../tutorial.rst:401
+msgid ""
+"> touch \"testing_$(date +%s).txt\"\n"
+"> ls *.txt\n"
+"testing_1360099791.txt"
+msgstr ""
+
+#: ../../../tutorial.rst:405
+msgid ""
+"Unlike other shells, fish does not split command substitutions on any "
+"whitespace (like spaces or tabs), only newlines. Usually this is a big help "
+"because unix commands operate on a line-by-line basis. Sometimes it can be "
+"an issue with commands like ``pkg-config`` that print what is meant to be "
+"multiple arguments on a single line. To split it on spaces too, use ``string "
+"split``."
+msgstr ""
+
+#: ../../../tutorial.rst:409
+msgid ""
+"> printf '%s\\n' (pkg-config --libs gio-2.0)\n"
+"-lgio-2.0 -lgobject-2.0 -lglib-2.0\n"
+"> printf '%s\\n' (pkg-config --libs gio-2.0 | string split -n \" \")\n"
+"-lgio-2.0\n"
+"-lgobject-2.0\n"
+"-lglib-2.0"
+msgstr ""
+
+#: ../../../tutorial.rst:416
+msgid ""
+"If you need a command substitutions output as one argument, without any "
+"splits, use quoted command substitution::"
+msgstr ""
+
+#: ../../../tutorial.rst:418
+msgid ""
+"> echo \"first line\n"
+"second line\" > myfile\n"
+"> set myfile \"$(cat myfile)\"\n"
+"> printf '|%s|' $myfile\n"
+"|first line\n"
+"second line|"
+msgstr ""
+
+#: ../../../tutorial.rst:425
+msgid ""
+"For more, see :ref:`Command substitution <expand-command-substitution>`."
+msgstr ""
+
+#: ../../../tutorial.rst:430
+msgid "Separating Commands (Semicolon)"
+msgstr ""
+
+#: ../../../tutorial.rst:432
+msgid ""
+"Like other shells, fish allows multiple commands either on separate lines or "
+"the same line."
+msgstr ""
+
+#: ../../../tutorial.rst:434
+msgid ""
+"To write them on the same line, use the semicolon (\";\"). That means the "
+"following two examples are equivalent::"
+msgstr ""
+
+#: ../../../tutorial.rst:436
+msgid ""
+"echo fish; echo chips\n"
+"\n"
+"# or\n"
+"echo fish\n"
+"echo chips"
+msgstr ""
+
+#: ../../../tutorial.rst:442
+msgid ""
+"This is useful interactively to enter multiple commands. In a script it's "
+"easier to read if the commands are on separate lines."
+msgstr ""
+
+#: ../../../tutorial.rst:445
+msgid "Exit Status"
+msgstr ""
+
+#: ../../../tutorial.rst:447
+msgid ""
+"When a command exits, it returns a status code as a non-negative integer "
+"(that's a whole number >= 0)."
+msgstr ""
+
+#: ../../../tutorial.rst:449
+msgid ""
+"Unlike other shells, fish stores the exit status of the last command in "
+"``$status`` instead of ``$?``."
+msgstr ""
+
+#: ../../../tutorial.rst:453
+msgid ""
+"> false\n"
+"> echo $status\n"
+"1"
+msgstr ""
+
+#: ../../../tutorial.rst:457
+msgid ""
+"This indicates how the command fared - 0 usually means success, while the "
+"others signify kinds of failure. For instance fish's ``set --query`` returns "
+"the number of variables it queried that weren't set - ``set --query PATH`` "
+"usually returns 0, ``set --query arglbargl boogagoogoo`` usually returns 2."
+msgstr ""
+
+#: ../../../tutorial.rst:459
+msgid ""
+"There is also a ``$pipestatus`` list variable for the exit statuses [#]_ of "
+"processes in a pipe."
+msgstr ""
+
+#: ../../../tutorial.rst:461
+msgid "For more, see :ref:`The status variable <variables-status>`."
+msgstr ""
+
+#: ../../../tutorial.rst:463
+msgid ""
+"or \"stati\" if you prefer, or \"statūs\" if you've time-travelled from "
+"ancient Rome or work as a latin teacher"
+msgstr ""
+
+#: ../../../tutorial.rst:468
+msgid "Combiners (And, Or, Not)"
+msgstr ""
+
+#: ../../../tutorial.rst:470
+msgid ""
+"fish supports the familiar ``&&`` and ``||`` to combine commands, and ``!`` "
+"to negate them::"
+msgstr ""
+
+#: ../../../tutorial.rst:472
+msgid "> ./configure && make && sudo make install"
+msgstr ""
+
+#: ../../../tutorial.rst:474
+msgid ""
+"Here, ``make`` is only executed if ``./configure`` succeeds (returns 0), and "
+"``sudo make install`` is only executed if both ``./configure`` and ``make`` "
+"succeed."
+msgstr ""
+
+#: ../../../tutorial.rst:476
+msgid ""
+"fish also supports :doc:`and <cmds/and>`, :doc:`or <cmds/or>`, and :doc:`not "
+"<cmds/not>`. The first two are job modifiers and have lower precedence. "
+"Example usage::"
+msgstr ""
+
+#: ../../../tutorial.rst:478
+msgid ""
+"> cp file1 file1_bak && cp file2 file2_bak; and echo \"Backup successful\"; "
+"or echo \"Backup failed\"\n"
+"Backup failed"
+msgstr ""
+
+#: ../../../tutorial.rst:482
+msgid ""
+"As mentioned in :ref:`the section on the semicolon <tut-semicolon>`, this "
+"can also be written in multiple lines, like so::"
+msgstr ""
+
+#: ../../../tutorial.rst:484
+msgid ""
+"cp file1 file1_bak && cp file2 file2_bak\n"
+"and echo \"Backup successful\"\n"
+"or echo \"Backup failed\""
+msgstr ""
+
+#: ../../../tutorial.rst:491
+msgid "Conditionals (If, Else, Switch)"
+msgstr ""
+
+#: ../../../tutorial.rst:493
+msgid ""
+"Use :doc:`if <cmds/if>` and :doc:`else <cmds/else>` to conditionally execute "
+"code, based on the exit status of a command."
+msgstr ""
+
+#: ../../../tutorial.rst:497
+msgid ""
+"if grep fish /etc/shells\n"
+"    echo Found fish\n"
+"else if grep bash /etc/shells\n"
+"    echo Found bash\n"
+"else\n"
+"    echo Got nothing\n"
+"end"
+msgstr ""
+
+#: ../../../tutorial.rst:505
+msgid ""
+"To compare strings or numbers or check file properties (whether a file "
+"exists or is writeable and such), use :doc:`test <cmds/test>`, like"
+msgstr ""
+
+#: ../../../tutorial.rst:509
+msgid ""
+"if test \"$fish\" = \"flounder\"\n"
+"    echo FLOUNDER\n"
+"end\n"
+"\n"
+"# or\n"
+"\n"
+"if test \"$number\" -gt 5\n"
+"    echo $number is greater than five\n"
+"else\n"
+"    echo $number is five or less\n"
+"end\n"
+"\n"
+"# or\n"
+"\n"
+"# This test is true if the path /etc/hosts exists\n"
+"# - it could be a file or directory or symlink (or possibly something "
+"else).\n"
+"if test -e /etc/hosts\n"
+"    echo We most likely have a hosts file\n"
+"else\n"
+"    echo We do not have a hosts file\n"
+"end"
+msgstr ""
+
+#: ../../../tutorial.rst:531
+msgid ""
+":ref:`Combiners <tut-combiners>` can also be used to make more complex "
+"conditions, like"
+msgstr ""
+
+#: ../../../tutorial.rst:535
+msgid ""
+"if command -sq fish; and grep fish /etc/shells\n"
+"    echo fish is installed and configured\n"
+"end"
+msgstr ""
+
+#: ../../../tutorial.rst:539
+msgid ""
+"For even more complex conditions, use :doc:`begin <cmds/begin>` and :doc:"
+"`end <cmds/end>` to group parts of them."
+msgstr ""
+
+#: ../../../tutorial.rst:541
+msgid "There is also a :doc:`switch <cmds/switch>` command::"
+msgstr ""
+
+#: ../../../tutorial.rst:543
+msgid ""
+"switch (uname)\n"
+"case Linux\n"
+"    echo Hi Tux!\n"
+"case Darwin\n"
+"    echo Hi Hexley!\n"
+"case FreeBSD NetBSD DragonFly\n"
+"    echo Hi Beastie!\n"
+"case '*'\n"
+"    echo Hi, stranger!\n"
+"end"
+msgstr ""
+
+#: ../../../tutorial.rst:554
+msgid ""
+"As you see, :doc:`case <cmds/case>` does not fall through, and can accept "
+"multiple arguments or (quoted) wildcards."
+msgstr ""
+
+#: ../../../tutorial.rst:556
+msgid "For more, see :ref:`Conditions <syntax-conditional>`."
+msgstr ""
+
+#: ../../../tutorial.rst:559
+msgid "Functions"
+msgstr ""
+
+#: ../../../tutorial.rst:561
+msgid ""
+"A fish function is a list of commands, which may optionally take arguments. "
+"Unlike other shells, arguments are not passed in \"numbered variables\" like "
+"``$1``, but instead in a single list ``$argv``. To create a function, use "
+"the :doc:`function <cmds/function>` builtin::"
+msgstr ""
+
+#: ../../../tutorial.rst:563
+msgid ""
+"function say_hello\n"
+"    echo Hello $argv\n"
+"end\n"
+"say_hello\n"
+"# prints: Hello\n"
+"say_hello everybody!\n"
+"# prints: Hello everybody!"
+msgstr ""
+
+#: ../../../tutorial.rst:571
+msgid ""
+"Unlike other shells, fish does not have aliases or special prompt syntax. "
+"Functions take their place. [#]_"
+msgstr ""
+
+#: ../../../tutorial.rst:573
+msgid ""
+"You can list the names of all functions with the :doc:`functions <cmds/"
+"functions>` builtin (note the plural!). fish starts out with a number of "
+"functions::"
+msgstr ""
+
+#: ../../../tutorial.rst:575
+msgid ""
+"> functions\n"
+"N_, abbr, alias, bg, cd, cdh, contains_seq, dirh, dirs, disown, down-or-"
+"search, edit_command_buffer, export, fg, fish_add_path, "
+"fish_breakpoint_prompt, fish_clipboard_copy, fish_clipboard_paste, "
+"fish_config, fish_default_key_bindings, fish_default_mode_prompt, "
+"fish_git_prompt, fish_hg_prompt, fish_hybrid_key_bindings, fish_indent, "
+"fish_is_root_user, fish_job_summary, fish_key_reader, fish_md5, "
+"fish_mode_prompt, fish_npm_helper, fish_opt, fish_print_git_action, "
+"fish_print_hg_root, fish_prompt, fish_sigtrap_handler, fish_svn_prompt, "
+"fish_title, fish_update_completions, fish_vcs_prompt, fish_vi_cursor, "
+"fish_vi_key_bindings, funced, funcsave, grep, help, history, hostname, "
+"isatty, kill, la, ll, ls, man, nextd, open, popd, prevd, prompt_hostname, "
+"prompt_pwd, psub, pushd, realpath, seq, setenv, suspend, trap, type, umask, "
+"up-or-search, vared, wait"
+msgstr ""
+
+#: ../../../tutorial.rst:578
+msgid ""
+"You can see the source for any function by passing its name to "
+"``functions``::"
+msgstr ""
+
+#: ../../../tutorial.rst:580
+msgid ""
+"> functions ls\n"
+"function ls --description 'List contents of directory'\n"
+"    command ls -G $argv\n"
+"end"
+msgstr ""
+
+#: ../../../tutorial.rst:585
+msgid "For more, see :ref:`Functions <syntax-function>`."
+msgstr ""
+
+#: ../../../tutorial.rst:587
+msgid ""
+"There is a function called :doc:`alias <cmds/alias>`, but it's just a "
+"shortcut to make functions. fish also provides :ref:`abbreviations "
+"<abbreviations>`, through the :ref:`abbr <cmd-abbr>` command."
+msgstr ""
+
+#: ../../../tutorial.rst:590
+msgid "Loops"
+msgstr ""
+
+#: ../../../tutorial.rst:592
+msgid "While loops::"
+msgstr ""
+
+#: ../../../tutorial.rst:594
+msgid ""
+"while true\n"
+"    echo \"Loop forever\"\n"
+"end\n"
+"# Prints:\n"
+"# Loop forever\n"
+"# Loop forever\n"
+"# Loop forever\n"
+"# yes, this really will loop forever. Unless you abort it with ctrl-c."
+msgstr ""
+
+#: ../../../tutorial.rst:603
+msgid ""
+"For loops can be used to iterate over a list. For example, a list of files::"
+msgstr ""
+
+#: ../../../tutorial.rst:605
+msgid ""
+"for file in *.txt\n"
+"    cp $file $file.bak\n"
+"end"
+msgstr ""
+
+#: ../../../tutorial.rst:609
+msgid "Iterating over a list of numbers can be done with ``seq``::"
+msgstr ""
+
+#: ../../../tutorial.rst:611
+msgid ""
+"for x in (seq 5)\n"
+"    touch file_$x.txt\n"
+"end"
+msgstr ""
+
+#: ../../../tutorial.rst:615
+msgid "For more, see :ref:`Loops and blocks <syntax-loops-and-blocks>`."
+msgstr ""
+
+#: ../../../tutorial.rst:618
+msgid "Prompt"
+msgstr ""
+
+#: ../../../tutorial.rst:622
+msgid ""
+"Unlike other shells, there is no prompt variable like ``PS1``. To display "
+"your prompt, fish executes the :doc:`fish_prompt <cmds/fish_prompt>` "
+"function and uses its output as the prompt. And if it exists, fish also "
+"executes the :doc:`fish_right_prompt <cmds/fish_right_prompt>` function and "
+"uses its output as the right prompt."
+msgstr ""
+
+#: ../../../tutorial.rst:624
+msgid "You can define your own prompt from the command line:"
+msgstr ""
+
+#: ../../../tutorial.rst:629
+msgid ""
+"> function fish_prompt; echo \"New Prompt % \"; end\n"
+"New Prompt % _"
+msgstr ""
+
+#: ../../../tutorial.rst:633
+msgid ""
+"Then, if you are happy with it, you can save it to disk by typing ``funcsave "
+"fish_prompt``. This saves the prompt in ``~/.config/fish/functions/"
+"fish_prompt.fish``. (Or, if you want, you can create that file manually from "
+"the start.)"
+msgstr ""
+
+#: ../../../tutorial.rst:635
+msgid ""
+"Multiple lines are OK. Colors can be set via :doc:`set_color <cmds/"
+"set_color>`, passing it named ANSI colors, or hex RGB values::"
+msgstr ""
+
+#: ../../../tutorial.rst:637
+msgid ""
+"function fish_prompt\n"
+"    set_color purple\n"
+"    date \"+%m/%d/%y\"\n"
+"    set_color F00\n"
+"    echo (pwd) '>' (set_color normal)\n"
+"end"
+msgstr ""
+
+#: ../../../tutorial.rst:645
+msgid "This prompt would look like:"
+msgstr ""
+
+#: ../../../tutorial.rst:650
+msgid ""
+":purple:`02/06/13`\n"
+":red:`/home/tutorial >` _"
+msgstr ""
+
+#: ../../../tutorial.rst:654
+msgid ""
+"You can choose among some sample prompts by running ``fish_config`` for a "
+"web UI or ``fish_config prompt`` for a simpler version inside your terminal."
+msgstr ""
+
+#: ../../../tutorial.rst:657
+msgid "$PATH"
+msgstr ""
+
+#: ../../../tutorial.rst:659
+msgid ""
+"``$PATH`` is an environment variable containing the directories that fish "
+"searches for commands. Unlike other shells, $PATH is a :ref:`list <tut-"
+"lists>`, not a colon-delimited string."
+msgstr ""
+
+#: ../../../tutorial.rst:661
+msgid ""
+"Fish takes care to set ``$PATH`` to a default, but typically it is just "
+"inherited from fish's parent process and is set to a value that makes sense "
+"for the system - see :ref:`Exports <tut-exports>`."
+msgstr ""
+
+#: ../../../tutorial.rst:663
+msgid "To prepend /usr/local/bin and /usr/sbin to ``$PATH``, you can write::"
+msgstr ""
+
+#: ../../../tutorial.rst:665
+msgid "> set PATH /usr/local/bin /usr/sbin $PATH"
+msgstr ""
+
+#: ../../../tutorial.rst:668
+msgid "To remove /usr/local/bin from ``$PATH``, you can write::"
+msgstr ""
+
+#: ../../../tutorial.rst:670
+msgid "> set PATH (string match -v /usr/local/bin $PATH)"
+msgstr ""
+
+#: ../../../tutorial.rst:672
+msgid ""
+"For compatibility with other shells and external commands, $PATH is a :ref:"
+"`path variable<variables-path>`, and so will be joined with colons (not "
+"spaces) when you quote it::"
+msgstr ""
+
+#: ../../../tutorial.rst:674
+msgid ""
+"> echo \"$PATH\"\n"
+"/usr/local/sbin:/usr/local/bin:/usr/bin"
+msgstr ""
+
+#: ../../../tutorial.rst:677
+msgid ""
+"and it will be exported like that, and when fish starts it splits the $PATH "
+"it receives into a list on colon."
+msgstr ""
+
+#: ../../../tutorial.rst:679
+msgid ""
+"You can do so directly in ``config.fish``, like you might do in other shells "
+"with ``.profile``. See :ref:`this example <path_example>`."
+msgstr ""
+
+#: ../../../tutorial.rst:681
+msgid ""
+"A faster way is to use the :doc:`fish_add_path <cmds/fish_add_path>` "
+"function, which adds given directories to the path if they aren't already "
+"included. It does this by modifying the ``$fish_user_paths`` :ref:`universal "
+"variable <tut-universal>`, which is automatically prepended to ``$PATH``. "
+"For example, to permanently add ``/usr/local/bin`` to your ``$PATH``, you "
+"could write::"
+msgstr ""
+
+#: ../../../tutorial.rst:683
+msgid "> fish_add_path /usr/local/bin"
+msgstr ""
+
+#: ../../../tutorial.rst:686
+msgid ""
+"The advantage is that you don't have to go mucking around in files: just run "
+"this once at the command line, and it will affect the current session and "
+"all future instances too. You can also add this line to :ref:`config.fish "
+"<tut-config>`, as it only adds the component if necessary."
+msgstr ""
+
+#: ../../../tutorial.rst:688
+msgid ""
+"Or you can modify $fish_user_paths yourself, but you should be careful *not* "
+"to append to it unconditionally in config.fish, or it will grow longer and "
+"longer."
+msgstr ""
+
+#: ../../../tutorial.rst:693
+msgid "Startup (Where's .bashrc?)"
+msgstr ""
+
+#: ../../../tutorial.rst:695
+msgid ""
+"Fish starts by executing commands in ``~/.config/fish/config.fish``. You can "
+"create it if it does not exist."
+msgstr ""
+
+#: ../../../tutorial.rst:697
+msgid ""
+"It is possible to directly create functions and variables in ``config.fish`` "
+"file, using the commands shown above. For example:"
+msgstr ""
+
+#: ../../../tutorial.rst:703
+msgid ""
+"> cat ~/.config/fish/config.fish\n"
+"\n"
+"set -x PATH $PATH /sbin/\n"
+"\n"
+"function ll\n"
+"    ls -lh $argv\n"
+"end"
+msgstr ""
+
+#: ../../../tutorial.rst:712
+msgid ""
+"However, it is more common and efficient to use  autoloading functions and "
+"universal variables."
+msgstr ""
+
+#: ../../../tutorial.rst:714
+msgid ""
+"If you want to organize your configuration, fish also reads commands in ."
+"fish files in ``~/.config/fish/conf.d/``. See :ref:`Configuration Files "
+"<configuration>` for the details."
+msgstr ""
+
+#: ../../../tutorial.rst:717
+msgid "Autoloading Functions"
+msgstr ""
+
+#: ../../../tutorial.rst:719
+msgid ""
+"When fish encounters a command, it attempts to autoload a function for that "
+"command, by looking for a file with the name of that command in ``~/.config/"
+"fish/functions/``."
+msgstr ""
+
+#: ../../../tutorial.rst:721
+msgid ""
+"For example, if you wanted to have a function ``ll``, you would add a text "
+"file ``ll.fish`` to ``~/.config/fish/functions``::"
+msgstr ""
+
+#: ../../../tutorial.rst:723
+msgid ""
+"> cat ~/.config/fish/functions/ll.fish\n"
+"function ll\n"
+"    ls -lh $argv\n"
+"end"
+msgstr ""
+
+#: ../../../tutorial.rst:729
+msgid "This is the preferred way to define your prompt as well::"
+msgstr ""
+
+#: ../../../tutorial.rst:731
+msgid ""
+"> cat ~/.config/fish/functions/fish_prompt.fish\n"
+"function fish_prompt\n"
+"    echo (pwd) \"> \"\n"
+"end"
+msgstr ""
+
+#: ../../../tutorial.rst:737
+msgid ""
+"See the documentation for :doc:`funced <cmds/funced>` and :doc:`funcsave "
+"<cmds/funcsave>` for ways to create these files automatically, and :ref:"
+"`$fish_function_path <syntax-function-autoloading>` to control their "
+"location."
+msgstr ""
+
+#: ../../../tutorial.rst:742
+msgid "Universal Variables"
+msgstr ""
+
+#: ../../../tutorial.rst:744
+msgid ""
+"A universal variable is a variable whose value is shared across all "
+"instances of fish, now and in the future – even after a reboot. You can make "
+"a variable universal with ``set -U``::"
+msgstr ""
+
+#: ../../../tutorial.rst:746
+msgid "> set -U EDITOR vim"
+msgstr ""
+
+#: ../../../tutorial.rst:749
+msgid "Now in another shell::"
+msgstr ""
+
+#: ../../../tutorial.rst:751
+msgid ""
+"> echo $EDITOR\n"
+"vim"
+msgstr ""
+
+#: ../../../tutorial.rst:756
+msgid "Ready for more?"
+msgstr ""
+
+#: ../../../tutorial.rst:758
+msgid ""
+"If you want to learn more about fish, there is :ref:`lots of detailed "
+"documentation <intro>`, the `official gitter channel <https://gitter.im/fish-"
+"shell/fish-shell>`__, an `official mailing list <https://lists.sourceforge."
+"net/lists/listinfo/fish-users>`__, and the `github page <https://github.com/"
+"fish-shell/fish-shell/>`__."
+msgstr ""

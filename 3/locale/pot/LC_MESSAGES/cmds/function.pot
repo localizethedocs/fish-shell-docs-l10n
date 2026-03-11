@@ -1,0 +1,278 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/function.rst:4
+msgid "function - create a function"
+msgstr ""
+
+#: ../../../cmds/function.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/function.rst:9
+msgid "function NAME [OPTIONS]; BODY; end"
+msgstr ""
+
+#: ../../../cmds/function.rst:15
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/function.rst:17
+msgid "``function`` creates a new function *NAME* with the body *BODY*."
+msgstr ""
+
+#: ../../../cmds/function.rst:19
+msgid ""
+"A function is a list of commands that will be executed when the name of the "
+"function is given as a command."
+msgstr ""
+
+#: ../../../cmds/function.rst:21
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/function.rst:23
+msgid "**-a** *NAMES* or **--argument-names** *NAMES*"
+msgstr ""
+
+#: ../../../cmds/function.rst:24
+msgid ""
+"Assigns the value of successive command-line arguments to the names given in "
+"*NAMES*. These are the same arguments given in :envvar:`argv`, and are still "
+"available there. See also :ref:`Argument Handling <variables-argv>`."
+msgstr ""
+
+#: ../../../cmds/function.rst:26
+msgid "**-d** *DESCRIPTION* or **--description** *DESCRIPTION*"
+msgstr ""
+
+#: ../../../cmds/function.rst:27
+msgid ""
+"A description of what the function does, suitable as a completion "
+"description."
+msgstr ""
+
+#: ../../../cmds/function.rst:29
+msgid "**-w** *WRAPPED_COMMAND* or **--wraps** *WRAPPED_COMMAND*"
+msgstr ""
+
+#: ../../../cmds/function.rst:30
+msgid ""
+"Inherit completions from the given *WRAPPED_COMMAND*. See the documentation "
+"for :doc:`complete <complete>` for more information."
+msgstr ""
+
+#: ../../../cmds/function.rst:32
+msgid "**-e** *EVENT_NAME* or **--on-event** *EVENT_NAME*"
+msgstr ""
+
+#: ../../../cmds/function.rst:33
+msgid ""
+"Run this function when the specified named event is emitted. Fish internally "
+"generates named events, for example, when showing the prompt. Custom events "
+"can be emitted using the :doc:`emit <emit>` command."
+msgstr ""
+
+#: ../../../cmds/function.rst:35
+msgid "**-v** *VARIABLE_NAME* or **--on-variable** *VARIABLE_NAME*"
+msgstr ""
+
+#: ../../../cmds/function.rst:36
+msgid ""
+"Run this function when the variable *VARIABLE_NAME* changes value. Note "
+"that :program:`fish` makes no guarantees on any particular timing or even "
+"that the function will be run for every single ``set``. Rather it will be "
+"run when the variable has been set at least once, possibly skipping some "
+"values or being run when the variable has been set to the same value (except "
+"for universal variables set in other shells - only changes in the value will "
+"be picked up for those)."
+msgstr ""
+
+#: ../../../cmds/function.rst:38
+msgid "**-j** *PID* or **--on-job-exit** *PID*"
+msgstr ""
+
+#: ../../../cmds/function.rst:39
+msgid ""
+"Run this function when the job containing a child process with the given "
+"process identifier *PID* exits. Instead of a PID, the string 'caller' can be "
+"specified. This is only allowed when in a command substitution, and will "
+"result in the handler being triggered by the exit of the job which created "
+"this command substitution."
+msgstr ""
+
+#: ../../../cmds/function.rst:41
+msgid "**-p** *PID* or **--on-process-exit** *PID*"
+msgstr ""
+
+#: ../../../cmds/function.rst:42
+msgid ""
+"Run this function when the fish child process with process ID PID exits. "
+"Instead of a PID, for backward compatibility, \"``%self``\" can be specified "
+"as an alias for ``$fish_pid``, and the function will be run when the current "
+"fish instance exits."
+msgstr ""
+
+#: ../../../cmds/function.rst:44
+msgid "**-s** *SIGSPEC* or **--on-signal** *SIGSPEC*"
+msgstr ""
+
+#: ../../../cmds/function.rst:45
+msgid ""
+"Run this function when the signal ``SIGSPEC`` is delivered. ``SIGSPEC`` can "
+"be a signal number, or the signal name, such as ``SIGHUP`` (or just "
+"``HUP``). Note that the signal must have been delivered to :program:`fish`; "
+"for example, :kbd:`Ctrl-C` sends ``SIGINT`` to the foreground process group, "
+"which will not be :program:`fish` if you are running another command at the "
+"time. Observing a signal will prevent fish from exiting in response to that "
+"signal."
+msgstr ""
+
+#: ../../../cmds/function.rst:47
+msgid "**-S** or **--no-scope-shadowing**"
+msgstr ""
+
+#: ../../../cmds/function.rst:48
+msgid ""
+"Allows the function to access the variables of calling functions. Normally, "
+"any variables inside the function that have the same name as variables from "
+"the calling function are \"shadowed\", and their contents are independent of "
+"the calling function."
+msgstr ""
+
+#: ../../../cmds/function.rst:50
+msgid ""
+"It's important to note that this does not capture referenced variables or "
+"the scope at the time of function declaration! At this time, fish does not "
+"have any concept of closures, and variable lifetimes are never extended. In "
+"other words, by using **--no-scope-shadowing** the scope of the function "
+"each time it is run is shared with the scope it was *called* from rather "
+"than the scope it was *defined* in."
+msgstr ""
+
+#: ../../../cmds/function.rst:52
+msgid "**-V** or **--inherit-variable NAME**"
+msgstr ""
+
+#: ../../../cmds/function.rst:53
+msgid ""
+"Snapshots the value of the variable ``NAME`` and defines a local variable "
+"with that same name and value when the function is defined. This is similar "
+"to a closure in other languages like Python but a bit different. Note the "
+"word \"snapshot\" in the first sentence. If you change the value of the "
+"variable after defining the function, even if you do so in the same scope "
+"(typically another function) the new value will not be used by the function "
+"you just created using this option. See the ``function notify`` example "
+"below for how this might be used."
+msgstr ""
+
+#: ../../../cmds/function.rst:55
+msgid ""
+"The event handler switches (``on-event``, ``on-variable``, ``on-job-exit``, "
+"``on-process-exit`` and ``on-signal``) cause a function to run automatically "
+"at specific events. New named events for ``--on-event`` can be fired using "
+"the :doc:`emit <emit>` builtin. Fish already generates a few events, see :"
+"ref:`event` for more."
+msgstr ""
+
+#: ../../../cmds/function.rst:57
+msgid ""
+"Functions may not be named the same as a reserved keyword. These are "
+"elements of fish syntax or builtin commands which are essential for the "
+"operations of the shell. Current reserved words are ``[``, ``_``, ``and``, "
+"``argparse``, ``begin``, ``break``, ``builtin``, ``case``, ``command``, "
+"``continue``, ``else``, ``end``, ``eval``, ``exec``, ``for``, ``function``, "
+"``if``, ``not``, ``or``, ``read``, ``return``, ``set``, ``status``, "
+"``string``, ``switch``, ``test``, ``time``, and ``while``."
+msgstr ""
+
+#: ../../../cmds/function.rst:60
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/function.rst:66
+msgid ""
+"function ll\n"
+"    ls -l $argv\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/function.rst:71
+msgid ""
+"will run the ``ls`` command, using the ``-l`` option, while passing on any "
+"additional files and switches to ``ls``."
+msgstr ""
+
+#: ../../../cmds/function.rst:77
+msgid ""
+"function mkdir -d \"Create a directory and set CWD\"\n"
+"    command mkdir $argv\n"
+"    if test $status = 0\n"
+"        switch $argv[(count $argv)]\n"
+"            case '-*'\n"
+"\n"
+"            case '*'\n"
+"                cd $argv[(count $argv)]\n"
+"                return\n"
+"        end\n"
+"    end\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/function.rst:91
+msgid ""
+"This will run the ``mkdir`` command, and if it is successful, change the "
+"current working directory to the one just created."
+msgstr ""
+
+#: ../../../cmds/function.rst:97
+msgid ""
+"function notify\n"
+"    set -l job (jobs -l -g)\n"
+"    or begin; echo \"There are no jobs\" >&2; return 1; end\n"
+"\n"
+"    function _notify_job_$job --on-job-exit $job --inherit-variable job\n"
+"        echo -n \\a # beep\n"
+"        functions -e _notify_job_$job\n"
+"    end\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/function.rst:108
+msgid "This will beep when the most recent job completes."
+msgstr ""
+
+#: ../../../cmds/function.rst:112
+msgid "Notes"
+msgstr ""
+
+#: ../../../cmds/function.rst:114
+msgid ""
+"Events are only received from the current fish process as there is no way to "
+"send events from one fish process to another."
+msgstr ""
+
+#: ../../../cmds/function.rst:117
+msgid "See more"
+msgstr ""
+
+#: ../../../cmds/function.rst:119
+msgid ""
+"For more explanation of how functions fit into fish, see :ref:`Functions "
+"<syntax-function>`."
+msgstr ""

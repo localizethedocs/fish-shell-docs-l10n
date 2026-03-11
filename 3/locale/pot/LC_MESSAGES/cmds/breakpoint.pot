@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/breakpoint.rst:4
+msgid "breakpoint - launch debug mode"
+msgstr ""
+
+#: ../../../cmds/breakpoint.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/breakpoint.rst:9
+msgid "breakpoint"
+msgstr ""
+
+#: ../../../cmds/breakpoint.rst:14
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/breakpoint.rst:16
+msgid ""
+"``breakpoint`` is used to halt a running script and launch an interactive "
+"debugging prompt."
+msgstr ""
+
+#: ../../../cmds/breakpoint.rst:18
+msgid ""
+"For more details, see :ref:`Debugging fish scripts <debugging>` in the "
+"``fish`` manual."
+msgstr ""
+
+#: ../../../cmds/breakpoint.rst:20
+msgid "There are no parameters for ``breakpoint``."
+msgstr ""
