@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../commands.rst:4
 msgid "Commands"
-msgstr ""
+msgstr "命令"
 
 #: ../../../commands.rst:6
 msgid "This is a list of all the commands fish ships with."
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../commands.rst:11
 msgid "Keywords"
-msgstr ""
+msgstr "關鍵字"
 
 #: ../../../commands.rst:13
 msgid "Core language keywords that make up the syntax, like"

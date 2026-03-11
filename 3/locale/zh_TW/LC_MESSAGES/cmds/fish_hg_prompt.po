@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/fish_hg_prompt.rst:7
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/fish_hg_prompt.rst:9
 msgid "fish_hg_prompt"
@@ -148,7 +148,7 @@ msgstr ""
 
 #: ../../../cmds/fish_hg_prompt.rst:57
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/fish_hg_prompt.rst:59
 msgid "A simple prompt that displays hg info::"

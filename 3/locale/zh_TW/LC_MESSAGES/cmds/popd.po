@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/popd.rst:7
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/popd.rst:9
 msgid "popd"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../../cmds/popd.rst:21
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/popd.rst:25
 msgid ""

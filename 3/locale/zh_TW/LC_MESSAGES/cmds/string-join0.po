@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/string-join.rst:3
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/string-join.rst:7
 msgid ""

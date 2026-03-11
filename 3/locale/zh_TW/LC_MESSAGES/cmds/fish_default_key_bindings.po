@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/fish_default_key_bindings.rst:7
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/fish_default_key_bindings.rst:9
 #: ../../../cmds/fish_default_key_bindings.rst:27

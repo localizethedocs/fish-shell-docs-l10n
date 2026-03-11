@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/fg.rst:7
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/fg.rst:9
 msgid "fg [PID]"
@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../cmds/fg.rst:27
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/fg.rst:29
 msgid "``fg`` will put the last job in the foreground."

@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/math.rst:7
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/math.rst:9
 msgid "math [(-s | --scale) N] [(-b | --base) BASE] EXPRESSION ..."

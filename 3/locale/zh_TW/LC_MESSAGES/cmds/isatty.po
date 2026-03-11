@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/isatty.rst:7
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/isatty.rst:9
 msgid "isatty [FILE_DESCRIPTOR]"

@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/fish_prompt.rst:7
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/fish_prompt.rst:9
 msgid "fish_prompt"
@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../../../cmds/fish_prompt.rst:31
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/fish_prompt.rst:33
 msgid "A simple prompt:"

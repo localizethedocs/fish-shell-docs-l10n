@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/fish_update_completions.rst:7
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/fish_update_completions.rst:9
 msgid "fish_update_completions"

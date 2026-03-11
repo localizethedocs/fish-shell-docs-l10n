@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/exit.rst:8
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/exit.rst:10
 msgid "exit [CODE]"

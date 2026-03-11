@@ -25,7 +25,7 @@ msgstr ""
 
 #: ../../../cmds/fish_vcs_prompt.rst:7
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/fish_vcs_prompt.rst:9
 msgid "fish_vcs_prompt"
@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../../cmds/fish_vcs_prompt.rst:37
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/fish_vcs_prompt.rst:39
 msgid "A simple prompt that displays all known VCS info::"

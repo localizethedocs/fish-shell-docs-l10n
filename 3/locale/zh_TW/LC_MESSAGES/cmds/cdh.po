@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/cdh.rst:7
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/cdh.rst:9
 msgid "cdh [DIRECTORY]"

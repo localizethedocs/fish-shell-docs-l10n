@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/argparse.rst:7
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/argparse.rst:9
 msgid "argparse [OPTIONS] OPTION_SPEC ... -- [ARG ...]"

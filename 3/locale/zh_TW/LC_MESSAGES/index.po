@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../index.rst:5
 msgid "Introduction"
-msgstr ""
+msgstr "介紹"
 
 #: ../../../index.rst:7
 msgid ""
@@ -98,7 +98,7 @@ msgstr ""
 
 #: ../../../index.rst:35 ../../../index.rst:40
 msgid "Installation"
-msgstr ""
+msgstr "安裝"
 
 #: ../../../index.rst:37
 msgid ""
@@ -120,7 +120,7 @@ msgstr ""
 
 #: ../../../index.rst:47
 msgid "Starting and Exiting"
-msgstr ""
+msgstr "啟動與退出"
 
 #: ../../../index.rst:49
 msgid ""
@@ -146,7 +146,7 @@ msgstr ""
 
 #: ../../../index.rst:62
 msgid "Default Shell"
-msgstr ""
+msgstr "預設外殼"
 
 #: ../../../index.rst:64
 msgid ""
@@ -207,7 +207,7 @@ msgstr ""
 
 #: ../../../index.rst:87
 msgid "Uninstalling"
-msgstr ""
+msgstr "解除安裝"
 
 #: ../../../index.rst:89
 msgid ""
@@ -286,7 +286,7 @@ msgstr ""
 
 #: ../../../index.rst:117
 msgid "Configuration"
-msgstr ""
+msgstr "組態"
 
 #: ../../../index.rst:119
 msgid ""
@@ -356,10 +356,13 @@ msgid ""
 "    echo fish is now exiting\n"
 "end"
 msgstr ""
+"function on_exit --on-event fish_exit\n"
+"    echo fish is now exiting\n"
+"end"
 
 #: ../../../index.rst:149
 msgid "Resources"
-msgstr ""
+msgstr "資源"
 
 #: ../../../index.rst:151
 msgid "The `GitHub page <https://github.com/fish-shell/fish-shell/>`_"
@@ -383,4 +386,4 @@ msgstr ""
 
 #: ../../../index.rst:162
 msgid "Other help pages"
-msgstr ""
+msgstr "其他幫助頁面"

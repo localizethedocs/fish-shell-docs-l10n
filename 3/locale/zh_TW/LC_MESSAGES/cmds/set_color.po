@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/set_color.rst:7
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/set_color.rst:9
 msgid "set_color [OPTIONS] VALUE"

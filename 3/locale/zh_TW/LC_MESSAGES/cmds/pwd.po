@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/pwd.rst:7
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/pwd.rst:9
 msgid ""
