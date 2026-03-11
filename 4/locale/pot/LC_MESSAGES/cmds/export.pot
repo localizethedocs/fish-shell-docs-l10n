@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/export.rst:2
+msgid "export - compatibility function for exporting variables"
+msgstr ""
+
+#: ../../../cmds/export.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/export.rst:7
+msgid ""
+"export\n"
+"export NAME=VALUE"
+msgstr ""
+
+#: ../../../cmds/export.rst:14
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/export.rst:16
+msgid ""
+"``export`` is a function included for compatibility with POSIX shells. In "
+"general, the :doc:`set <set>` builtin should be used instead."
+msgstr ""
+
+#: ../../../cmds/export.rst:19
+msgid ""
+"When called without arguments, ``export`` prints a list of currently-"
+"exported variables, like ``set -x``."
+msgstr ""
+
+#: ../../../cmds/export.rst:22
+msgid ""
+"When called with a ``NAME=VALUE`` pair, the variable ``NAME`` is set to "
+"``VALUE`` in the global scope, and exported as an environment variable to "
+"other commands."
+msgstr ""
+
+#: ../../../cmds/export.rst:25
+msgid "There are no options available."
+msgstr ""
+
+#: ../../../cmds/export.rst:28
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/export.rst:30
+msgid "The following commands have an identical effect."
+msgstr ""
+
+#: ../../../cmds/export.rst:34
+msgid ""
+"set -gx PAGER bat\n"
+"export PAGER=bat"
+msgstr ""
+
+#: ../../../cmds/export.rst:37
+msgid ""
+"Note: If you want to add to e.g. ``$PATH``, you need to be careful to :ref:"
+"`combine the list <cartesian-product>`. Quote it, like so::"
+msgstr ""
+
+#: ../../../cmds/export.rst:39
+msgid "export PATH=\"$PATH:/opt/bin\""
+msgstr ""
+
+#: ../../../cmds/export.rst:41
+msgid "Or just use ``set``, which avoids this::"
+msgstr ""
+
+#: ../../../cmds/export.rst:43
+msgid "set -gx PATH $PATH /opt/bin"
+msgstr ""
+
+#: ../../../cmds/export.rst:46
+msgid "See more"
+msgstr ""
+
+#: ../../../cmds/export.rst:48
+msgid "The :doc:`set <set>` command."
+msgstr ""

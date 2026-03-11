@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/trap.rst:2
+msgid "trap - perform an action when the shell receives a signal"
+msgstr ""
+
+#: ../../../cmds/trap.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/trap.rst:7
+msgid "trap [OPTIONS] [[ARG] REASON ... ]"
+msgstr ""
+
+#: ../../../cmds/trap.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/trap.rst:16
+msgid ""
+"NOTE: This page documents the fish builtin ``trap``. To see the "
+"documentation on any non-fish versions, use ``command man trap``."
+msgstr ""
+
+#: ../../../cmds/trap.rst:19
+msgid ""
+"``trap`` is a wrapper around the fish event delivery framework. It exists "
+"for backwards compatibility with POSIX shells. For other uses, it is "
+"recommended to define an :ref:`event handler <event>`."
+msgstr ""
+
+#: ../../../cmds/trap.rst:21
+msgid "The following parameters are available:"
+msgstr ""
+
+#: ../../../cmds/trap.rst:23
+msgid "*ARG*"
+msgstr ""
+
+#: ../../../cmds/trap.rst:24
+msgid "Command to be executed on signal delivery."
+msgstr ""
+
+#: ../../../cmds/trap.rst:26
+msgid "*REASON*"
+msgstr ""
+
+#: ../../../cmds/trap.rst:27
+msgid ""
+"Name of the event to trap. For example, a signal like ``INT`` or ``SIGINT``, "
+"or the special symbol ``EXIT``."
+msgstr ""
+
+#: ../../../cmds/trap.rst:29
+msgid "**-l** or **--list-signals**"
+msgstr ""
+
+#: ../../../cmds/trap.rst:30
+msgid "Prints a list of signal names."
+msgstr ""
+
+#: ../../../cmds/trap.rst:32
+msgid "**-p** or **--print**"
+msgstr ""
+
+#: ../../../cmds/trap.rst:33
+msgid "Prints all defined signal handlers."
+msgstr ""
+
+#: ../../../cmds/trap.rst:35
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/trap.rst:36
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/trap.rst:38
+msgid ""
+"If *ARG* and *REASON* are both specified, *ARG* is the command to be "
+"executed when the event specified by *REASON* occurs (e.g., the signal is "
+"delivered)."
+msgstr ""
+
+#: ../../../cmds/trap.rst:40
+msgid ""
+"If *ARG* is absent (and there is a single *REASON*) or ``-``, each specified "
+"signal is reset to its original disposition (the value it had upon entrance "
+"to the shell).  If *ARG* is the null string the signal specified by each "
+"*REASON* is ignored by the shell and by the commands it invokes."
+msgstr ""
+
+#: ../../../cmds/trap.rst:42
+msgid ""
+"If *ARG* is not present and **-p** has been supplied, then the trap commands "
+"associated with each *REASON* are displayed. If no arguments are supplied or "
+"if only **-p** is given, ``trap`` prints the list of commands associated "
+"with each signal."
+msgstr ""
+
+#: ../../../cmds/trap.rst:44
+msgid ""
+"Signal names are case insensitive and the ``SIG`` prefix is optional. "
+"Trapping a signal will prevent fish from exiting in response to that signal."
+msgstr ""
+
+#: ../../../cmds/trap.rst:46
+msgid ""
+"The exit status is 1 if any *REASON* is invalid; otherwise trap returns 0."
+msgstr ""
+
+#: ../../../cmds/trap.rst:49
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/trap.rst:55
+msgid ""
+"trap \"status --print-stack-trace\" SIGUSR1\n"
+"# Prints a stack trace each time the SIGUSR1 signal is sent to the shell."
+msgstr ""

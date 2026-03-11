@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/popd.rst:2
+msgid "popd - move through directory stack"
+msgstr ""
+
+#: ../../../cmds/popd.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/popd.rst:7
+msgid "popd"
+msgstr ""
+
+#: ../../../cmds/popd.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/popd.rst:14
+msgid ""
+"``popd`` removes the top directory from the :ref:`directory stack <directory-"
+"stack>` and changes the working directory to the new top directory. Use :doc:"
+"`pushd <pushd>` to add directories to the stack."
+msgstr ""
+
+#: ../../../cmds/popd.rst:16
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/popd.rst:19
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/popd.rst:23
+msgid ""
+"pushd /usr/src\n"
+"# Working directory is now /usr/src\n"
+"# Directory stack contains /usr/src\n"
+"\n"
+"pushd /usr/src/fish-shell\n"
+"# Working directory is now /usr/src/fish-shell\n"
+"# Directory stack contains /usr/src /usr/src/fish-shell\n"
+"\n"
+"popd\n"
+"# Working directory is now /usr/src\n"
+"# Directory stack contains /usr/src"
+msgstr ""
+
+#: ../../../cmds/popd.rst:36
+msgid "See Also"
+msgstr ""
+
+#: ../../../cmds/popd.rst:38
+msgid "the :doc:`dirs <dirs>` command to print the directory stack"
+msgstr ""
+
+#: ../../../cmds/popd.rst:39
+msgid ""
+"the :doc:`cdh <cdh>` command which provides a more intuitive way to navigate "
+"to recently visited directories."
+msgstr ""

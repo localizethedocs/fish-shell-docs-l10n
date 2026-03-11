@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/break.rst:2
+msgid "break - stop the current inner loop"
+msgstr ""
+
+#: ../../../cmds/break.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/break.rst:7
+msgid ""
+"LOOP_CONSTRUCT\n"
+"   [COMMANDS ...]\n"
+"   break\n"
+"   [COMMANDS ...]\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/break.rst:16
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/break.rst:18
+msgid ""
+"``break`` halts a currently running loop (*LOOP_CONSTRUCT*), such as a :doc:"
+"`for <for>` or :doc:`while <while>` loop. It is usually added inside of a "
+"conditional block such as an :doc:`if <if>` block."
+msgstr ""
+
+#: ../../../cmds/break.rst:20
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/break.rst:23
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/break.rst:24
+msgid ""
+"The following code searches all .c files for \"smurf\", and halts at the "
+"first occurrence."
+msgstr ""
+
+#: ../../../cmds/break.rst:28
+msgid ""
+"for i in *.c\n"
+"    if grep smurf $i\n"
+"        echo Smurfs are present in $i\n"
+"        break\n"
+"    end\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/break.rst:36
+msgid "See Also"
+msgstr ""
+
+#: ../../../cmds/break.rst:38
+msgid ""
+"the :doc:`continue <continue>` command, to skip the remainder of the current "
+"iteration of the current inner loop"
+msgstr ""
