@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_vi_key_bindings.rst:2
+msgid "fish_vi_key_bindings - set vi key bindings for fish"
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:7
+msgid ""
+"fish_vi_key_bindings\n"
+"fish_vi_key_bindings [--no-erase] [INIT_MODE]"
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:13
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:15
+msgid "``fish_vi_key_bindings`` sets the vi key bindings for ``fish`` shell."
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:17
+msgid ""
+"If a valid *INIT_MODE* is provided (insert, default, visual), then that mode "
+"will become the default . If no *INIT_MODE* is given, the mode defaults to "
+"insert mode."
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:20
+msgid "The following parameters are available:"
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:22
+msgid "**--no-erase**"
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:23
+msgid "Does not clear previous set bindings"
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:25
+msgid "Further information on how to use :ref:`vi mode <vi-mode>`."
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:28
+msgid "Differences from Vim"
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:30
+msgid ""
+"Fish's vi mode aims to be familiar to vim users, but there are some "
+"differences:"
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:32
+msgid "**Word character handling**"
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:33
+msgid ""
+"In vim, underscore (``_``) is treated as a keyword character by default, so "
+"word motions like ``w``, ``b``, and ``e`` treat ``foo_bar`` as a single "
+"word. In fish, underscore is treated as punctuation, so word motions stop at "
+"underscores. For example, pressing ``w`` on ``foo_bar`` in fish stops at the "
+"``_``, while in vim it would jump past the entire identifier."
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:35
+msgid "**The** ``cw`` **command**"
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:36
+msgid ""
+"In vim, ``cw`` has special behavior: when the cursor is on a non-space "
+"character, it behaves like ``ce`` (change to end of word), but when the "
+"cursor is on a space, it behaves like ``dwi`` (delete word then insert)."
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:38
+msgid ""
+"In fish, ``cw`` always behaves like ``dwi`` - it deletes to the start of the "
+"next word (including trailing whitespace), then enters insert mode. To get "
+"vim's ``cw`` behavior in fish, use ``ce`` instead."
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:41
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:43
+msgid "To start using vi key bindings::"
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:45
+msgid "fish_vi_key_bindings"
+msgstr ""
+
+#: ../../../cmds/fish_vi_key_bindings.rst:47
+msgid ""
+"or ``set -g fish_key_bindings fish_vi_key_bindings`` in :ref:`config.fish "
+"<configuration>`."
+msgstr ""

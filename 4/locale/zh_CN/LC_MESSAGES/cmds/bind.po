@@ -1,0 +1,1480 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/bind.rst:2
+msgid "bind - handle fish key bindings"
+msgstr ""
+
+#: ../../../cmds/bind.rst:4
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/bind.rst:6
+msgid ""
+"bind [(-M | --mode) MODE] [(-m | --sets-mode) NEW_MODE] [--preset | --user] "
+"[-s | --silent] KEYS COMMAND ...\n"
+"bind [(-M | --mode) MODE] [--preset] [--user] [--color WHEN] [KEYS]\n"
+"bind [-a | --all] [--preset] [--user] [--color WHEN]\n"
+"bind (-f | --function-names)\n"
+"bind (-K | --key-names)\n"
+"bind (-L | --list-modes)\n"
+"bind (-e | --erase) [(-M | --mode) MODE] [--preset] [--user] [-a | --all] | "
+"KEYS ..."
+msgstr ""
+
+#: ../../../cmds/bind.rst:17
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/bind.rst:19
+msgid "``bind`` manages key bindings."
+msgstr ""
+
+#: ../../../cmds/bind.rst:21
+msgid ""
+"If both ``KEYS`` and ``COMMAND`` are given, ``bind`` adds (or replaces) a "
+"binding in ``MODE``. If only ``KEYS`` is given, ``bind`` lists any existing "
+"bindings for those keys in ``MODE`` or in all modes. If no ``KEYS`` argument "
+"is provided, ``bind`` lists all bindings in ``MODE`` or in all modes."
+msgstr ""
+
+#: ../../../cmds/bind.rst:25
+msgid ""
+"``KEYS`` is a comma-separated list of key names. Modifier keys can be "
+"specified by prefixing a key name with a combination of ``ctrl-``, ``alt-``, "
+"``shift-`` and ``super-`` (i.e. the \"windows\" or \"command\" key). For "
+"example, pressing :kbd:`w` while holding the Alt modifier is written as "
+"``alt-w``. Key names are case-sensitive; for example ``alt-W`` is the same "
+"as ``alt-shift-w``. ``ctrl-x,ctrl-e`` would mean pressing :kbd:`ctrl-x` "
+"followed by :kbd:`ctrl-e`."
+msgstr ""
+
+#: ../../../cmds/bind.rst:31
+msgid ""
+"Some keys have names, usually because they don't have an obvious printable "
+"character representation. They are:"
+msgstr ""
+
+#: ../../../cmds/bind.rst:34
+msgid "the arrow keys ``up``, ``down``, ``left`` and ``right``,"
+msgstr ""
+
+#: ../../../cmds/bind.rst:35
+msgid "``backspace``,"
+msgstr ""
+
+#: ../../../cmds/bind.rst:36
+msgid "``comma`` (``,``),"
+msgstr ""
+
+#: ../../../cmds/bind.rst:37
+msgid "``delete``,"
+msgstr ""
+
+#: ../../../cmds/bind.rst:38
+msgid "``end``,"
+msgstr ""
+
+#: ../../../cmds/bind.rst:39
+msgid "``enter``,"
+msgstr ""
+
+#: ../../../cmds/bind.rst:40
+msgid "``escape``,"
+msgstr ""
+
+#: ../../../cmds/bind.rst:41
+msgid "``f1`` through ``f12``."
+msgstr ""
+
+#: ../../../cmds/bind.rst:42
+msgid "``home``,"
+msgstr ""
+
+#: ../../../cmds/bind.rst:43
+msgid "``insert``,"
+msgstr ""
+
+#: ../../../cmds/bind.rst:44
+msgid "``menu``,"
+msgstr ""
+
+#: ../../../cmds/bind.rst:45
+msgid "``minus`` (``-``),"
+msgstr ""
+
+#: ../../../cmds/bind.rst:46
+msgid "``pageup``,"
+msgstr ""
+
+#: ../../../cmds/bind.rst:47
+msgid "``pagedown``,"
+msgstr ""
+
+#: ../../../cmds/bind.rst:48
+msgid "``printscreen``,"
+msgstr ""
+
+#: ../../../cmds/bind.rst:49
+msgid "``space`` and"
+msgstr ""
+
+#: ../../../cmds/bind.rst:50
+msgid "``tab``,"
+msgstr ""
+
+#: ../../../cmds/bind.rst:52
+msgid "These names are case-sensitive."
+msgstr ""
+
+#: ../../../cmds/bind.rst:54
+msgid ""
+"An empty value (``''``) for ``KEYS`` designates the generic binding that "
+"will be used if nothing else matches. For most bind modes, it makes sense to "
+"bind this to the ``self-insert`` function (i.e. ``bind '' self-insert``). "
+"This will insert any keystrokes that have no bindings otherwise. Non-"
+"printable characters are ignored by the editor, so this will not result in "
+"control sequences being inserted."
+msgstr ""
+
+#: ../../../cmds/bind.rst:56
+msgid ""
+"To find the name of a key combination you can use :doc:`fish_key_reader "
+"<fish_key_reader>`."
+msgstr ""
+
+#: ../../../cmds/bind.rst:58
+msgid ""
+"``COMMAND`` can be any fish command, but it can also be one of a set of "
+"special input functions. These include functions for moving the cursor, "
+"operating on the kill-ring, performing tab completion, etc. Use ``bind --"
+"function-names`` or :ref:`see below <special-input-functions>` for a list of "
+"these input functions."
+msgstr ""
+
+#: ../../../cmds/bind.rst:61
+msgid ""
+"If a script changes the commandline, it should finish by calling the "
+"``repaint`` special input function."
+msgstr ""
+
+#: ../../../cmds/bind.rst:63
+msgid ""
+"Key bindings may use \"modes\", which mimics vi's modal input behavior. The "
+"default mode is \"default\" (in vi-mode, that's vi's \"normal\" mode). Every "
+"key binding applies to a single mode; you can specify which one with ``-M "
+"MODE``. If the key binding should change the mode, you can specify the new "
+"mode with ``-m NEW_MODE``. The mode can be viewed and changed via the "
+"``$fish_bind_mode`` variable. If you want to change the mode from inside a "
+"fish function, use ``set fish_bind_mode MODE``."
+msgstr ""
+
+#: ../../../cmds/bind.rst:65
+msgid ""
+"To save custom key bindings, put the ``bind`` statements into :ref:`config."
+"fish <configuration>`. Alternatively, fish also automatically executes a "
+"function called ``fish_user_key_bindings`` if it exists."
+msgstr ""
+
+#: ../../../cmds/bind.rst:68
+msgid "Options"
+msgstr ""
+
+#: ../../../cmds/bind.rst:69
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/bind.rst:71
+msgid "**-f** or **--function-names**"
+msgstr ""
+
+#: ../../../cmds/bind.rst:72
+msgid "Display a list of available input functions"
+msgstr ""
+
+#: ../../../cmds/bind.rst:74
+msgid "**-K** or **--key-names**"
+msgstr ""
+
+#: ../../../cmds/bind.rst:75
+msgid "Display a list of available named keys such as ``backspace``."
+msgstr ""
+
+#: ../../../cmds/bind.rst:77
+msgid "**-L** or **--list-modes**"
+msgstr ""
+
+#: ../../../cmds/bind.rst:78
+msgid "Display a list of defined bind modes"
+msgstr ""
+
+#: ../../../cmds/bind.rst:80
+msgid "**-M MODE** or **--mode** *MODE*"
+msgstr ""
+
+#: ../../../cmds/bind.rst:81
+msgid ""
+"Specify a bind mode that the bind is used in. Defaults to \"default\". If "
+"you use :ref:`vi bindings <vi-mode>`, that's the *command* mode, what vi "
+"calls \"normal\" mode."
+msgstr ""
+
+#: ../../../cmds/bind.rst:85
+msgid "**-m NEW_MODE** or **--sets-mode** *NEW_MODE*"
+msgstr ""
+
+#: ../../../cmds/bind.rst:86
+msgid "Change the current mode to *NEW_MODE* after this binding is executed"
+msgstr ""
+
+#: ../../../cmds/bind.rst:88
+msgid "**-e** or **--erase**"
+msgstr ""
+
+#: ../../../cmds/bind.rst:89
+msgid ""
+"Erase the binding with the given sequence and mode instead of defining a new "
+"one. Multiple sequences can be specified with this flag. Specifying **-a** "
+"or **--all** with **-M** or **--mode** erases all binds in the given mode "
+"regardless of sequence. Specifying **-a** or **--all** without **-M** or **--"
+"mode** erases all binds in all modes regardless of sequence."
+msgstr ""
+
+#: ../../../cmds/bind.rst:94
+msgid "**-a** or **--all**"
+msgstr ""
+
+#: ../../../cmds/bind.rst:95
+msgid "See **--erase**"
+msgstr ""
+
+#: ../../../cmds/bind.rst:97
+msgid "**--preset** and **--user**"
+msgstr ""
+
+#: ../../../cmds/bind.rst:98
+msgid ""
+"Specify if bind should operate on user or preset bindings. User bindings "
+"take precedence over preset bindings when fish looks up mappings. By "
+"default, all ``bind`` invocations work on the \"user\" level except for "
+"listing, which will show both levels. All invocations except for inserting "
+"new bindings can operate on both levels at the same time (if both **--"
+"preset** and **--user** are given). **--preset** should only be used in full "
+"binding sets (like when working on ``fish_vi_key_bindings``)."
+msgstr ""
+
+#: ../../../cmds/bind.rst:104
+msgid "**-s** or **--silent**"
+msgstr ""
+
+#: ../../../cmds/bind.rst:105
+msgid "Silences error message for unbound sequences."
+msgstr ""
+
+#: ../../../cmds/bind.rst:107
+msgid "**--color** *WHEN*"
+msgstr ""
+
+#: ../../../cmds/bind.rst:108
+msgid ""
+"Controls when to use syntax highlighting colors when listing bindings. "
+"*WHEN* can be ``auto`` (the default, colorize if the output :doc:`is a "
+"terminal <isatty>`), ``always``, or ``never``."
+msgstr ""
+
+#: ../../../cmds/bind.rst:111
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/bind.rst:112
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/bind.rst:117
+msgid "Special input functions"
+msgstr ""
+
+#: ../../../cmds/bind.rst:118
+msgid "The following special input functions are available:"
+msgstr ""
+
+#: ../../../cmds/bind.rst:120
+msgid "``and``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:121
+msgid ""
+"only execute the next function if the previous succeeded (note: only some "
+"functions report success)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:123
+msgid "``accept-autosuggestion``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:124
+msgid ""
+"accept the current autosuggestion. Returns false when there was nothing to "
+"accept."
+msgstr ""
+
+#: ../../../cmds/bind.rst:126
+msgid "``backward-char``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:127
+msgid ""
+"move one character to the left. If the completion pager is active, select "
+"the previous completion instead."
+msgstr ""
+
+#: ../../../cmds/bind.rst:130
+msgid "``backward-char-passive``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:131
+msgid ""
+"move one character to the left, but do not trigger any non-movement-related "
+"operations. If the cursor is at the start of the commandline, does nothing. "
+"Does not change the selected item in the completion pager UI when shown."
+msgstr ""
+
+#: ../../../cmds/bind.rst:134
+msgid "``backward-token``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:135
+msgid "move one argument to the left"
+msgstr ""
+
+#: ../../../cmds/bind.rst:137
+msgid "``backward-delete-char``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:138
+msgid "deletes one character of input to the left of the cursor"
+msgstr ""
+
+#: ../../../cmds/bind.rst:140
+msgid "``backward-kill-token``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:141
+msgid "move the argument to the left of the cursor to the killring"
+msgstr ""
+
+#: ../../../cmds/bind.rst:143
+msgid "``backward-kill-line``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:144
+msgid ""
+"move everything from the beginning of the line to the cursor to the killring"
+msgstr ""
+
+#: ../../../cmds/bind.rst:148
+msgid "``backward-kill-path-component``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:149
+msgid ""
+"move one path component to the left of the cursor to the killring. A path "
+"component is everything likely to belong to a path component, i.e. not any "
+"of the following: `/={,}'\\\":@ |;<>&`, plus newlines and tabs."
+msgstr ""
+
+#: ../../../cmds/bind.rst:151
+msgid "``backward-kill-word``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:152
+msgid ""
+"move the word to the left of the cursor to the killring, until the start of "
+"the current word (like vim's ``db``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:154
+msgid "``backward-kill-bigword``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:155
+msgid ""
+"move the whitespace-delimited word to the left of the cursor to the "
+"killring, until the start of the current word (like vim's ``dB``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:157
+msgid "``backward-path-component``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:158
+msgid ""
+"move one :ref:`path component <cmd-bind-backward-kill-path-component>` to "
+"the left"
+msgstr ""
+
+#: ../../../cmds/bind.rst:160
+msgid "``backward-word``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:161
+msgid ""
+"move one word to the left, stopping at the start of the previous word (like "
+"vim's ``b``, or Emacs' ``M-b`` but differs slightly in word division rules)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:163
+msgid "``backward-bigword``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:164
+msgid ""
+"move one whitespace-delimited word to the left, stopping at the start of the "
+"previous word (like vim's ``B``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:166
+msgid "``backward-word-end``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:167
+msgid "move to the end of the previous word (like vim's ``ge``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:169
+msgid "``backward-bigword-end``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:170
+msgid ""
+"move to the end of the previous whitespace-delimited word (like vim's ``gE``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:172
+msgid "``beginning-of-buffer``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:173
+msgid "moves to the beginning of the buffer, i.e. the start of the first line"
+msgstr ""
+
+#: ../../../cmds/bind.rst:175
+msgid "``beginning-of-history``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:176
+msgid "move to the beginning of the history"
+msgstr ""
+
+#: ../../../cmds/bind.rst:178
+msgid "``beginning-of-line``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:179
+msgid "move to the beginning of the line"
+msgstr ""
+
+#: ../../../cmds/bind.rst:181
+msgid "``begin-selection``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:182
+msgid "start selecting text"
+msgstr ""
+
+#: ../../../cmds/bind.rst:184
+msgid "``cancel``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:185
+msgid ""
+"close the pager if it is open, or undo the most recent completion if one was "
+"just inserted"
+msgstr ""
+
+#: ../../../cmds/bind.rst:187
+msgid "``cancel-commandline``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:188
+msgid ""
+"cancel the current commandline and replace it with a new empty one, leaving "
+"the old one in place with a marker to show that it was cancelled"
+msgstr ""
+
+#: ../../../cmds/bind.rst:190
+msgid "``capitalize-word``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:191
+msgid "make the current word begin with a capital letter"
+msgstr ""
+
+#: ../../../cmds/bind.rst:193
+msgid "``clear-commandline``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:194
+msgid "empty the entire commandline"
+msgstr ""
+
+#: ../../../cmds/bind.rst:196
+msgid "``clear-screen``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:197
+msgid "clears the screen and redraws the prompt."
+msgstr ""
+
+#: ../../../cmds/bind.rst:201
+msgid "``scrollback-push``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:202
+msgid ""
+"pushes earlier output to the terminal scrollback, positioning the prompt at "
+"the top. This requires the terminal to implement the ECMA-48 :ref:`SCROLL UP "
+"<term-compat-indn>` command and :ref:`cursor position reporting <term-compat-"
+"cursor-position-report>`."
+msgstr ""
+
+#: ../../../cmds/bind.rst:205
+msgid "``complete``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:206
+msgid "guess the remainder of the current token"
+msgstr ""
+
+#: ../../../cmds/bind.rst:208
+msgid "``complete-and-search``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:209
+msgid ""
+"invoke the searchable pager on completion options (for convenience, this "
+"also moves backwards in the completion pager)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:211
+msgid "``delete-char``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:212
+msgid "delete one character to the right of the cursor"
+msgstr ""
+
+#: ../../../cmds/bind.rst:214
+msgid "``delete-or-exit``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:215
+msgid ""
+"delete one character to the right of the cursor, or exit the shell if the "
+"commandline is empty"
+msgstr ""
+
+#: ../../../cmds/bind.rst:217
+msgid "``down-line``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:218
+msgid "move down one line"
+msgstr ""
+
+#: ../../../cmds/bind.rst:220
+msgid "``downcase-word``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:221
+msgid "make the current word lowercase"
+msgstr ""
+
+#: ../../../cmds/bind.rst:223
+msgid "``end-of-buffer``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:224
+msgid ""
+"moves to the end of the buffer, i.e. the end of the last line; or if already "
+"at the end of the commandline, accept the current autosuggestion."
+msgstr ""
+
+#: ../../../cmds/bind.rst:227
+msgid "``end-of-history``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:228
+msgid "move to the end of the history"
+msgstr ""
+
+#: ../../../cmds/bind.rst:230
+msgid "``end-of-line``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:231
+msgid "move to the end of the line"
+msgstr ""
+
+#: ../../../cmds/bind.rst:233
+msgid "``end-selection``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:234
+msgid "end selecting text"
+msgstr ""
+
+#: ../../../cmds/bind.rst:236
+msgid "``expand-abbr``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:237
+msgid "expands any abbreviation currently under the cursor"
+msgstr ""
+
+#: ../../../cmds/bind.rst:239
+msgid "``execute``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:240
+msgid "run the current commandline"
+msgstr ""
+
+#: ../../../cmds/bind.rst:242
+msgid "``exit``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:243
+msgid "exit the shell"
+msgstr ""
+
+#: ../../../cmds/bind.rst:245
+msgid "``forward-token``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:246
+msgid "move one argument to the right"
+msgstr ""
+
+#: ../../../cmds/bind.rst:248
+msgid "``forward-char``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:249
+msgid ""
+"move one character to the right; or if at the end of the commandline, accept "
+"the current autosuggestion. If the completion pager is active, select the "
+"next completion instead."
+msgstr ""
+
+#: ../../../cmds/bind.rst:252
+msgid "``forward-char-passive``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:253
+msgid ""
+"move one character to the right, but do not trigger any non-movement-related "
+"operations. If the cursor is at the end of the commandline, does not accept "
+"the current autosuggestion (if any). Does not change the selected item in "
+"the completion pager, if shown."
+msgstr ""
+
+#: ../../../cmds/bind.rst:257
+msgid "``forward-path-component``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:258
+msgid ""
+"move one :ref:`path component <cmd-bind-backward-kill-path-component>` to "
+"the right; or if at the end of the commandline, accept a path component from "
+"the current autosuggestion."
+msgstr ""
+
+#: ../../../cmds/bind.rst:260
+msgid "``forward-single-char``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:261
+msgid ""
+"move one character to the right; or if at the end of the commandline, accept "
+"a single char from the current autosuggestion."
+msgstr ""
+
+#: ../../../cmds/bind.rst:265
+msgid "``forward-word``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:266
+msgid ""
+"move one word to the right, stopping after the end of the current word; or "
+"if at the end of the commandline, accept one word from the current "
+"autosuggestion."
+msgstr ""
+
+#: ../../../cmds/bind.rst:269
+msgid "``forward-word-vi``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:270
+msgid ""
+"like :ref:`forward-word <cmd-bind-forward-word>`, but stops at the start of "
+"the next word (like vim's ``w``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:272
+msgid "``forward-word-end``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:273
+msgid ""
+"like :ref:`forward-word <cmd-bind-forward-word>`, but stops at the end of "
+"the next word (like vim's ``e``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:277
+msgid "``forward-bigword``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:278
+msgid ""
+"move one whitespace-delimited word to the right, stopping after the end of "
+"the current word; or if at the end of the commandline, accept one word from "
+"the current autosuggestion."
+msgstr ""
+
+#: ../../../cmds/bind.rst:280
+msgid "``forward-bigword-vi``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:281
+msgid ""
+"like :ref:`forward-bigword <cmd-bind-forward-bigword>`, but stops at the "
+"start of the next word (like vim's ``W``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:283
+msgid "``forward-bigword-end``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:284
+msgid ""
+"like :ref:`forward-bigword <cmd-bind-forward-bigword>`, but stops at the end "
+"of the next word (like vim's ``E``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:286
+msgid "``history-pager``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:287
+msgid ""
+"invoke the searchable pager on history (incremental search); or if the "
+"history pager is already active, search further backwards in time."
+msgstr ""
+
+#: ../../../cmds/bind.rst:289
+msgid "``history-delete``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:290
+msgid ""
+"permanently delete the current history item, either from the history pager "
+"or from an active up-arrow history search"
+msgstr ""
+
+#: ../../../cmds/bind.rst:292
+msgid "``history-search-backward``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:293
+msgid "search the history for the previous match"
+msgstr ""
+
+#: ../../../cmds/bind.rst:295
+msgid "``history-search-forward``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:296
+msgid "search the history for the next match"
+msgstr ""
+
+#: ../../../cmds/bind.rst:298
+msgid "``history-prefix-search-backward``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:299
+msgid "search the history for the previous prefix match"
+msgstr ""
+
+#: ../../../cmds/bind.rst:301
+msgid "``history-prefix-search-forward``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:302
+msgid "search the history for the next prefix match"
+msgstr ""
+
+#: ../../../cmds/bind.rst:304
+msgid "``history-token-search-backward``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:305
+msgid "search the history for the previous matching argument"
+msgstr ""
+
+#: ../../../cmds/bind.rst:307
+msgid "``history-token-search-forward``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:308
+msgid "search the history for the next matching argument"
+msgstr ""
+
+#: ../../../cmds/bind.rst:310
+msgid "``history-last-token-search-backward``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:311
+msgid "search the history for the previous matching last argument"
+msgstr ""
+
+#: ../../../cmds/bind.rst:313
+msgid "``history-last-token-search-forward``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:314
+msgid "search the history for the next matching last argument"
+msgstr ""
+
+#: ../../../cmds/bind.rst:316
+msgid "``forward-jump`` and ``backward-jump``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:317
+msgid ""
+"read another character and jump to its next occurrence after/before the "
+"cursor"
+msgstr ""
+
+#: ../../../cmds/bind.rst:319
+msgid "``forward-jump-till`` and ``backward-jump-till``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:320
+msgid "jump to right *before* the next occurrence"
+msgstr ""
+
+#: ../../../cmds/bind.rst:322
+msgid "``repeat-jump`` and ``repeat-jump-reverse``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:323
+msgid "redo the last jump in the same/opposite direction"
+msgstr ""
+
+#: ../../../cmds/bind.rst:325
+msgid "``jump-to-matching-bracket``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:326
+msgid ""
+"jump to matching bracket if the character under the cursor is bracket; "
+"otherwise, jump to the next occurrence of *any right* bracket after the "
+"cursor. The following brackets are considered: ``([{}])``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:330
+msgid "``jump-till-matching-bracket``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:331
+msgid ""
+"the same as ``jump-to-matching-bracket`` but offset cursor to the right for "
+"left bracket, and offset cursor to the left for right bracket. The offset is "
+"applied for both the position we jump from and position we jump to. In other "
+"words, the cursor will continuously jump inside the brackets but won't reach "
+"them by 1 character. The input function is useful to emulate ``ib`` vi text "
+"object. The following brackets are considered: ``([{}])``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:337
+msgid "``kill-token``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:338
+msgid "move the next argument to the killring"
+msgstr ""
+
+#: ../../../cmds/bind.rst:340
+msgid "``kill-line``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:341
+msgid "move everything from the cursor to the end of the line to the killring"
+msgstr ""
+
+#: ../../../cmds/bind.rst:343
+msgid "``kill-path-component``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:344
+msgid ""
+"move one :ref:`path component <cmd-bind-backward-kill-path-component>` to "
+"the killring."
+msgstr ""
+
+#: ../../../cmds/bind.rst:346
+msgid "``kill-selection``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:347
+msgid "move the selected text to the killring"
+msgstr ""
+
+#: ../../../cmds/bind.rst:349
+msgid "``kill-whole-line``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:350
+msgid ""
+"move the line (including the following newline) to the killring. If the line "
+"is the last line, its preceding newline is also removed"
+msgstr ""
+
+#: ../../../cmds/bind.rst:352
+msgid "``kill-inner-line``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:353
+msgid "move the line (without the following newline) to the killring"
+msgstr ""
+
+#: ../../../cmds/bind.rst:355
+msgid "``kill-word``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:356
+msgid ""
+"move the next word to the killring, stopping after the end of the killed word"
+msgstr ""
+
+#: ../../../cmds/bind.rst:358
+msgid "``kill-word-vi``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:359
+msgid ""
+"move the next word to the killring, stopping at the start of the next word "
+"(like vim's ``dw``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:361
+msgid "``kill-bigword``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:362
+msgid ""
+"move the next whitespace-delimited word to the killring, stopping after the "
+"end of the current word"
+msgstr ""
+
+#: ../../../cmds/bind.rst:364
+msgid "``kill-bigword-vi``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:365
+msgid ""
+"move the next whitespace-delimited word to the killring, stopping at the "
+"start of the next word (like vim's ``dW``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:367
+msgid "``kill-inner-word``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:368
+msgid "delete the word under the cursor (like vim's ``diw``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:370
+msgid "``kill-inner-bigword``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:371
+msgid ""
+"delete the whitespace-delimited word under the cursor (like vim's ``diW``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:373
+msgid "``kill-a-word``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:374
+msgid ""
+"delete the word under the cursor plus surrounding whitespace (like vim's "
+"``daw``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:376
+msgid "``kill-a-bigword``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:377
+msgid ""
+"delete the whitespace-delimited word under the cursor plus surrounding "
+"whitespace (like vim's ``daW``)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:379
+msgid "``nextd-or-forward-word``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:380
+msgid ""
+"if the commandline is empty, then move forward in the directory history, "
+"otherwise move one word to the right; or if at the end of the commandline, "
+"accept one word from the current autosuggestion."
+msgstr ""
+
+#: ../../../cmds/bind.rst:383
+msgid "``or``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:384
+msgid ""
+"only execute the next function if the previous did not succeed (note: only "
+"some functions report failure)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:386
+msgid "``pager-toggle-search``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:387
+msgid ""
+"toggles the search field if the completions pager is visible; or if used "
+"after ``history-pager``, search forwards in time."
+msgstr ""
+
+#: ../../../cmds/bind.rst:389
+msgid "``prevd-or-backward-word``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:390
+msgid ""
+"if the commandline is empty, then move backward in the directory history, "
+"otherwise move one word to the left"
+msgstr ""
+
+#: ../../../cmds/bind.rst:392
+msgid "``repaint``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:393
+msgid ""
+"reexecutes the prompt functions and redraws the prompt (also ``force-"
+"repaint`` for backwards-compatibility)"
+msgstr ""
+
+#: ../../../cmds/bind.rst:395
+msgid "``repaint-mode``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:396
+msgid ""
+"reexecutes the :doc:`fish_mode_prompt <fish_mode_prompt>` and redraws the "
+"prompt. This is useful for vi mode. If no ``fish_mode_prompt`` exists or it "
+"prints nothing, it acts like a normal repaint."
+msgstr ""
+
+#: ../../../cmds/bind.rst:398
+msgid "``self-insert``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:399
+msgid "inserts the matching sequence into the command line"
+msgstr ""
+
+#: ../../../cmds/bind.rst:401
+msgid "``self-insert-notfirst``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:402
+msgid ""
+"inserts the matching sequence into the command line, unless the cursor is at "
+"the beginning"
+msgstr ""
+
+#: ../../../cmds/bind.rst:404
+msgid "``get-key``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:405
+msgid ""
+"sets :envvar:`fish_key` to the key that was pressed to trigger this binding. "
+"Example use::"
+msgstr ""
+
+#: ../../../cmds/bind.rst:407
+msgid ""
+"for i in (seq 0 9)\n"
+"    bind $i get-key 'commandline -i \"#$fish_key\"' 'set -eg fish_key'\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/bind.rst:411
+msgid "``suppress-autosuggestion``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:412
+msgid ""
+"remove the current autosuggestion. Returns true if there was a suggestion to "
+"remove."
+msgstr ""
+
+#: ../../../cmds/bind.rst:414
+msgid "``swap-selection-start-stop``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:415
+msgid ""
+"go to the other end of the highlighted text without changing the selection"
+msgstr ""
+
+#: ../../../cmds/bind.rst:417
+msgid "``transpose-chars``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:418
+msgid "transpose two characters to the left of the cursor"
+msgstr ""
+
+#: ../../../cmds/bind.rst:420
+msgid "``transpose-words``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:421
+msgid "transpose two words to the left of the cursor"
+msgstr ""
+
+#: ../../../cmds/bind.rst:423
+msgid "``togglecase-char``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:424
+msgid "toggle the capitalisation (case) of the character under the cursor"
+msgstr ""
+
+#: ../../../cmds/bind.rst:426
+msgid "``togglecase-selection``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:427
+msgid "toggle the capitalisation (case) of the selection"
+msgstr ""
+
+#: ../../../cmds/bind.rst:429
+msgid "``insert-line-under``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:430
+msgid "add a new line under the current line"
+msgstr ""
+
+#: ../../../cmds/bind.rst:432
+msgid "``insert-line-over``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:433
+msgid "add a new line over the current line"
+msgstr ""
+
+#: ../../../cmds/bind.rst:435
+msgid "``up-line``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:436
+msgid "move up one line"
+msgstr ""
+
+#: ../../../cmds/bind.rst:438
+msgid "``undo`` and ``redo``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:439
+msgid "revert or redo the most recent edits on the command line"
+msgstr ""
+
+#: ../../../cmds/bind.rst:441
+msgid "``upcase-word``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:442
+msgid "make the current word uppercase"
+msgstr ""
+
+#: ../../../cmds/bind.rst:444
+msgid "``yank``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:445
+msgid "insert the latest entry of the killring into the buffer"
+msgstr ""
+
+#: ../../../cmds/bind.rst:447
+msgid "``yank-pop``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:448
+msgid "rotate to the previous entry of the killring"
+msgstr ""
+
+#: ../../../cmds/bind.rst:451
+msgid "Additional functions"
+msgstr ""
+
+#: ../../../cmds/bind.rst:452
+msgid ""
+"The following functions are included as normal functions, but are "
+"particularly useful for input editing:"
+msgstr ""
+
+#: ../../../cmds/bind.rst:454
+msgid "``up-or-search`` and ``down-or-search``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:455
+msgid ""
+"move the cursor or search the history depending on the cursor position and "
+"current mode"
+msgstr ""
+
+#: ../../../cmds/bind.rst:457
+msgid "``edit_command_buffer``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:458
+msgid ""
+"open the visual editor (controlled by the :envvar:`VISUAL` or :envvar:"
+"`EDITOR` environment variables) with the current command-line contents"
+msgstr ""
+
+#: ../../../cmds/bind.rst:460
+msgid "``fish_clipboard_copy``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:461
+msgid "copy the current selection to the system clipboard"
+msgstr ""
+
+#: ../../../cmds/bind.rst:463
+msgid "``fish_clipboard_paste``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:464
+msgid "paste the current selection from the system clipboard before the cursor"
+msgstr ""
+
+#: ../../../cmds/bind.rst:466
+msgid "``fish_commandline_append``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:467
+msgid ""
+"append the argument to the command-line. If the command-line already ends "
+"with the argument, this removes the suffix instead. Starts with the last "
+"command from history if the command-line is empty."
+msgstr ""
+
+#: ../../../cmds/bind.rst:469
+msgid "``fish_commandline_prepend``"
+msgstr ""
+
+#: ../../../cmds/bind.rst:470
+msgid ""
+"prepend the argument to the command-line. If the command-line already starts "
+"with the argument, this removes the prefix instead. Starts with the last "
+"command from history if the command-line is empty."
+msgstr ""
+
+#: ../../../cmds/bind.rst:473
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/bind.rst:475
+msgid "Exit the shell when :kbd:`ctrl-d` is pressed::"
+msgstr ""
+
+#: ../../../cmds/bind.rst:477
+msgid "bind ctrl-d 'exit'"
+msgstr ""
+
+#: ../../../cmds/bind.rst:479
+msgid "Perform a history search when :kbd:`pageup` is pressed::"
+msgstr ""
+
+#: ../../../cmds/bind.rst:481
+msgid "bind pageup history-search-backward"
+msgstr ""
+
+#: ../../../cmds/bind.rst:483
+msgid ""
+"Turn on :ref:`vi key bindings <vi-mode>` and rebind :kbd:`ctrl-c` to clear "
+"the input line::"
+msgstr ""
+
+#: ../../../cmds/bind.rst:485
+msgid ""
+"set -g fish_key_bindings fish_vi_key_bindings\n"
+"bind -M insert ctrl-c kill-whole-line repaint"
+msgstr ""
+
+#: ../../../cmds/bind.rst:488
+msgid ""
+"Launch ``git diff`` and repaint the commandline afterwards when :kbd:`ctrl-"
+"g` is pressed::"
+msgstr ""
+
+#: ../../../cmds/bind.rst:490
+msgid "bind ctrl-g 'git diff' repaint"
+msgstr ""
+
+#: ../../../cmds/bind.rst:492
+msgid ""
+"Swap :kbd:`tab` and :kbd:`shift-tab`, making tab focus the search field. But "
+"if the search field is already active, keep the behavior (:kbd:`tab` cycles "
+"forward, :kbd:`shift-tab` backward).::"
+msgstr ""
+
+#: ../../../cmds/bind.rst:495
+msgid ""
+"bind tab '\n"
+"    if commandline --search-field >/dev/null\n"
+"        commandline -f complete\n"
+"    else\n"
+"        commandline -f complete-and-search\n"
+"    end\n"
+"'\n"
+"bind shift-tab '\n"
+"    if commandline --search-field >/dev/null\n"
+"        commandline -f complete-and-search\n"
+"    else\n"
+"        commandline -f complete\n"
+"    end\n"
+"'"
+msgstr ""
+
+#: ../../../cmds/bind.rst:513
+msgid "Terminal Limitations"
+msgstr ""
+
+#: ../../../cmds/bind.rst:515
+msgid ""
+"Unix terminals, like the ones fish operates in, are at heart 70s technology. "
+"They have some limitations that applications running inside them can't "
+"workaround."
+msgstr ""
+
+#: ../../../cmds/bind.rst:517
+msgid ""
+"For instance, historically the control key modifies a character by setting "
+"the top three bits to 0. This means:"
+msgstr ""
+
+#: ../../../cmds/bind.rst:519
+msgid ""
+"Many characters + control are indistinguishable from other keys: :kbd:`ctrl-"
+"i` *is* :kbd:`tab`, :kbd:`ctrl-j` *is* newline (``\\n``)."
+msgstr ""
+
+#: ../../../cmds/bind.rst:520
+msgid ""
+"Control and shift don't work simultaneously - :kbd:`ctrl-X` is the same as :"
+"kbd:`ctrl-x`."
+msgstr ""
+
+#: ../../../cmds/bind.rst:522
+msgid ""
+"Other keys don't have a direct encoding, and are sent as escape sequences. "
+"For example :kbd:`right` (``→``) usually sends ``\\e\\[C``."
+msgstr ""
+
+#: ../../../cmds/bind.rst:524
+msgid ""
+"Some modern terminals support newer encodings for keys, that allow "
+"distinguishing more characters and modifiers, and fish enables as many of "
+"these as it can, automatically."
+msgstr ""
+
+#: ../../../cmds/bind.rst:526
+msgid ""
+"When in doubt, run :doc:`fish_key_reader`. If that tells you that pressing :"
+"kbd:`ctrl-i` sends tab, your terminal does not support these better "
+"encodings, and so fish is limited to what it sends."
+msgstr ""
+
+#: ../../../cmds/bind.rst:531
+msgid "Key timeout"
+msgstr ""
+
+#: ../../../cmds/bind.rst:533
+msgid ""
+"When you've bound a sequence of multiple characters, there is always the "
+"possibility that fish has only seen a part of it, and then it needs to "
+"disambiguate between the full sequence and part of it."
+msgstr ""
+
+#: ../../../cmds/bind.rst:535
+msgid "For example::"
+msgstr ""
+
+#: ../../../cmds/bind.rst:537
+msgid ""
+"bind j,k 'commandline -i foo'\n"
+"# or `bind jk`"
+msgstr ""
+
+#: ../../../cmds/bind.rst:540
+msgid ""
+"will bind the sequence ``jk`` to insert \"foo\" into the commandline. When "
+"you've only pressed \"j\", fish doesn't know if it should insert the "
+"\"j\" (because of the default self-insert), or wait for the \"k\"."
+msgstr ""
+
+#: ../../../cmds/bind.rst:542
+msgid ""
+"You can enable a timeout for this, by setting the :envvar:"
+"`fish_sequence_key_delay_ms` variable to the timeout in milliseconds. If the "
+"timeout elapses, fish will no longer wait for the sequence to be completed, "
+"and do what it can with the characters it already has."
+msgstr ""
+
+#: ../../../cmds/bind.rst:544
+msgid ""
+"The escape key is a special case, because it can be used standalone as a "
+"real key or as part of a longer escape sequence, like function or arrow "
+"keys. Holding alt and something else also typically sends escape, for "
+"example holding alt+a will send an escape character and then an \"a\". So "
+"the escape character has its own timeout configured with :envvar:"
+"`fish_escape_delay_ms`."
+msgstr ""
+
+#: ../../../cmds/bind.rst:546
+msgid "See also :ref:`Key sequences <interactive-key-sequences>`."
+msgstr ""

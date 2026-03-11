@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/_.rst:2
+msgid "_ - call fish's translations"
+msgstr ""
+
+#: ../../../cmds/_.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/_.rst:7
+msgid "_ STRING"
+msgstr ""
+
+#: ../../../cmds/_.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/_.rst:14
+msgid "``_`` translates its arguments into the current language, if possible."
+msgstr ""
+
+#: ../../../cmds/_.rst:16
+msgid ""
+"This only works with messages which are translated as part of fish's own "
+"sources, so using it as part of your own fish scripts which are not "
+"upstreamed into the fish repo will not work unless the exact same message "
+"also exists upstream."
+msgstr ""
+
+#: ../../../cmds/_.rst:18
+msgid ""
+"It requires fish to be built with gettext support. If that support is "
+"disabled or there is no translation it will echo the argument back."
+msgstr ""
+
+#: ../../../cmds/_.rst:20
+msgid ""
+"The language depends on the current locale, set with :envvar:`LANG`, :envvar:"
+"`LC_MESSAGES`, :envvar:`LC_ALL`, and :envvar:`LANGUAGE`. These variables do "
+"not have to be exported for fish to use them, and fish's variable scopes are "
+"supported. If other programs launched via fish should respect these locale "
+"variables they have to be exported to make them available outside of fish."
+msgstr ""
+
+#: ../../../cmds/_.rst:24
+msgid ""
+"For :envvar:`LANGUAGE` you can use a list, or use colons to separate "
+"multiple languages."
+msgstr ""
+
+#: ../../../cmds/_.rst:26
+msgid ""
+"If the :ref:`status language set <status-language>` command was used, its "
+"arguments specify the language precedence, and the environment variables are "
+"ignored."
+msgstr ""
+
+#: ../../../cmds/_.rst:29
+msgid "Options"
+msgstr ""
+
+#: ../../../cmds/_.rst:31
+msgid "``_`` takes no options."
+msgstr ""
+
+#: ../../../cmds/_.rst:34
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/_.rst:36
+msgid "Use German translations::"
+msgstr ""
+
+#: ../../../cmds/_.rst:38
+msgid ""
+"> set LANG de_DE.UTF-8\n"
+"> _ file\n"
+"Datei"
+msgstr ""
+
+#: ../../../cmds/_.rst:42
+msgid ""
+"Specify a precedence of languages (only works with :envvar:`LANGUAGE`)::"
+msgstr ""
+
+#: ../../../cmds/_.rst:44
+msgid ""
+"> set LANGUAGE pt de\n"
+"> _ file  # This message has a Portuguese translation.\n"
+"arquivo\n"
+"> _ \"Invalid arguments\"  # This message does not have a Portuguese "
+"translation, but a German one.\n"
+"Ungültige Argumente\n"
+"> _ untranslatable  # No translation in Portuguese, nor in German.\n"
+"untranslatable"
+msgstr ""
+
+#: ../../../cmds/_.rst:52
+msgid ""
+"Note that the specific examples may change if translations are added/"
+"modified."
+msgstr ""

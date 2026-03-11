@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_should_add_to_history.rst:2
+msgid ""
+"fish_should_add_to_history - decide whether a command should be added to the "
+"history"
+msgstr ""
+
+#: ../../../cmds/fish_should_add_to_history.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_should_add_to_history.rst:7
+msgid "fish_should_add_to_history"
+msgstr ""
+
+#: ../../../cmds/fish_should_add_to_history.rst:13
+msgid ""
+"function fish_should_add_to_history\n"
+"    ...\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_should_add_to_history.rst:19
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_should_add_to_history.rst:21
+msgid ""
+"The ``fish_should_add_to_history`` function is executed before fish adds a "
+"command to history, and its return status decides whether that is done."
+msgstr ""
+
+#: ../../../cmds/fish_should_add_to_history.rst:23
+msgid ""
+"If it returns 0, the command is stored in history, when it returns anything "
+"else, it is not. In the latter case the command can still be recalled for "
+"one command."
+msgstr ""
+
+#: ../../../cmds/fish_should_add_to_history.rst:25
+msgid ""
+"The first argument to ``fish_should_add_to_history`` is the commandline. "
+"History is added *before* a command is run, so e.g. :envvar:`status` can't "
+"be checked. This is so commands that don't finish like :doc:`exec` and long-"
+"running commands are available in new sessions immediately."
+msgstr ""
+
+#: ../../../cmds/fish_should_add_to_history.rst:27
+msgid ""
+"If ``fish_should_add_to_history`` doesn't exist, fish will save a command to "
+"history unless it starts with a space. If it does exist, this function takes "
+"over all of the duties, so commands starting with space are saved unless "
+"``fish_should_add_to_history`` says otherwise."
+msgstr ""
+
+#: ../../../cmds/fish_should_add_to_history.rst:30
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/fish_should_add_to_history.rst:32
+msgid "A simple example:"
+msgstr ""
+
+#: ../../../cmds/fish_should_add_to_history.rst:36
+msgid ""
+"function fish_should_add_to_history\n"
+"    for cmd in vault mysql ls\n"
+"         string match -qr \"^$cmd\" -- $argv; and return 1\n"
+"    end\n"
+"    return 0\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_should_add_to_history.rst:43
+msgid ""
+"This refuses to store any immediate \"vault\", \"mysql\" or \"ls\" calls. "
+"Commands starting with space would be stored."
+msgstr ""
+
+#: ../../../cmds/fish_should_add_to_history.rst:47
+msgid ""
+"function fish_should_add_to_history\n"
+"    # I don't want `git pull`s in my history when I'm in a specific "
+"repository\n"
+"    if string match -qr '^git pull' -- \"$argv\"\n"
+"    and string match -qr \"^/home/me/my-secret-project/\" -- (pwd -P)\n"
+"        return 1\n"
+"    end\n"
+"\n"
+"    return 0\n"
+"end"
+msgstr ""

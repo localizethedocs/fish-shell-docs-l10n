@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_title.rst:2
+msgid "fish_title - define the terminal's title"
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:2
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:4
+msgid ""
+"fish_title\n"
+"fish_tab_title"
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:11
+msgid ""
+"function fish_title\n"
+"    ...\n"
+"end\n"
+"\n"
+"\n"
+"function fish_tab_title\n"
+"    ...\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:22
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:24
+msgid ""
+"The ``fish_title`` function is executed before and after a new command is "
+"executed or put into the foreground and the output is used as a titlebar "
+"message."
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:26
+msgid ""
+"The first argument to ``fish_title`` contains the most recently executed "
+"foreground command as a string, if any."
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:28
+msgid ""
+"This requires that your terminal supports :ref:`programmable titles <term-"
+"compat-osc-0>` and the feature is turned on."
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:30
+msgid "To disable setting the title, use an empty function (see below)."
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:32
+msgid ""
+"To set the terminal tab title to something other than the terminal window "
+"title, define the ``fish_tab_title`` function, which works like "
+"``fish_title`` but overrides that one."
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:36
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:38
+msgid "A simple title::"
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:40
+msgid ""
+"function fish_title\n"
+"    set -q argv[1]; or set argv fish\n"
+"    # Looks like ~/d/fish: git log\n"
+"    # or /e/apt: fish\n"
+"    echo (fish_prompt_pwd_dir_length=1 prompt_pwd): $argv;\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:47
+msgid "Do not change the title::"
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:49
+msgid ""
+"function fish_title\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:52
+msgid "Change the tab title only::"
+msgstr ""
+
+#: ../../../cmds/fish_title.inc.rst:54
+msgid ""
+"function fish_tab_title\n"
+"    echo fish $fish_pid\n"
+"end"
+msgstr ""

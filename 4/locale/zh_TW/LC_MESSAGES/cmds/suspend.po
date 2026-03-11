@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/suspend.rst:2
+msgid "suspend - suspend the current shell"
+msgstr ""
+
+#: ../../../cmds/suspend.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/suspend.rst:7
+msgid "suspend [--force]"
+msgstr ""
+
+#: ../../../cmds/suspend.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/suspend.rst:14
+msgid ""
+"``suspend`` suspends execution of the current shell by sending it a SIGTSTP "
+"signal, returning to the controlling process. It can be resumed later by "
+"sending it a SIGCONT.  In order to prevent suspending a shell that doesn't "
+"have a controlling process, it will not suspend the shell if it is a login "
+"shell. This requirement is bypassed if the **--force** option is given or "
+"the shell is not interactive."
+msgstr ""

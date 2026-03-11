@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/umask.rst:2
+msgid "umask - set or get the file creation mode mask"
+msgstr ""
+
+#: ../../../cmds/umask.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/umask.rst:7
+msgid "umask [OPTIONS] [MASK]"
+msgstr ""
+
+#: ../../../cmds/umask.rst:13
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/umask.rst:17
+msgid ""
+"NOTE: This page documents the fish builtin ``umask``. To see the "
+"documentation on any non-fish versions, use ``command man umask``."
+msgstr ""
+
+#: ../../../cmds/umask.rst:20
+msgid ""
+"``umask`` displays and manipulates the \"umask\", or file creation mode "
+"mask, which is used to restrict the default access to files."
+msgstr ""
+
+#: ../../../cmds/umask.rst:22
+msgid ""
+"The umask may be expressed either as an octal number, which represents the "
+"rights that will be removed by default, or symbolically, which represents "
+"the only rights that will be granted by default."
+msgstr ""
+
+#: ../../../cmds/umask.rst:24
+msgid ""
+"Access rights are explained in the manual page for the ``chmod(1)`` program."
+msgstr ""
+
+#: ../../../cmds/umask.rst:26
+msgid ""
+"With no parameters, the current file creation mode mask is printed as an "
+"octal number."
+msgstr ""
+
+#: ../../../cmds/umask.rst:28
+msgid "**-S** or **--symbolic**"
+msgstr ""
+
+#: ../../../cmds/umask.rst:29
+msgid "Prints the umask in symbolic form instead of octal form."
+msgstr ""
+
+#: ../../../cmds/umask.rst:31
+msgid "**-p** or **--as-command**"
+msgstr ""
+
+#: ../../../cmds/umask.rst:32
+msgid "Outputs the umask in a form that may be reused as input."
+msgstr ""
+
+#: ../../../cmds/umask.rst:34
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/umask.rst:35
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/umask.rst:37
+msgid ""
+"If a numeric mask is specified as a parameter, the current shell's umask "
+"will be set to that value, and the rights specified by that mask will be "
+"removed from new files and directories by default."
+msgstr ""
+
+#: ../../../cmds/umask.rst:39
+msgid ""
+"If a symbolic mask is specified, the desired permission bits, and not the "
+"inverse, should be specified. A symbolic mask is a comma separated list of "
+"rights. Each right consists of three parts:"
+msgstr ""
+
+#: ../../../cmds/umask.rst:41
+msgid ""
+"The first part specifies to whom this set of right applies, and can be one "
+"of ``u``, ``g``, ``o`` or ``a``, where ``u`` specifies the user who owns the "
+"file, ``g`` specifies the group owner of the file, ``o`` specific other "
+"users rights and ``a`` specifies all three should be changed."
+msgstr ""
+
+#: ../../../cmds/umask.rst:43
+msgid ""
+"The second part of a right specifies the mode, and can be one of ``=``, "
+"``+`` or ``-``, where ``=`` specifies that the rights should be set to the "
+"new value, ``+`` specifies that the specified right should be added to those "
+"previously specified and ``-`` specifies that the specified rights should be "
+"removed from those previously specified."
+msgstr ""
+
+#: ../../../cmds/umask.rst:45
+msgid ""
+"The third part of a right specifies what rights should be changed and can be "
+"any combination of ``r``, ``w`` and ``x``, representing read, write and "
+"execute rights."
+msgstr ""
+
+#: ../../../cmds/umask.rst:47
+msgid ""
+"If the first and second parts are skipped, they are assumed to be ``a`` and "
+"``=``, respectively. As an example, ``r,u+w`` means all users should have "
+"read access and the file owner should also have write access."
+msgstr ""
+
+#: ../../../cmds/umask.rst:49
+msgid "Note that symbolic masks currently do not work as intended."
+msgstr ""
+
+#: ../../../cmds/umask.rst:53
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/umask.rst:55
+msgid ""
+"``umask 177`` or ``umask u=rw`` sets the file creation mask to read and "
+"write for the owner and no permissions at all for any other users."
+msgstr ""

@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/open.rst:2
+msgid "open - open file in its default application"
+msgstr ""
+
+#: ../../../cmds/open.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/open.rst:7
+msgid "open FILES ..."
+msgstr ""
+
+#: ../../../cmds/open.rst:13
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/open.rst:15
+msgid ""
+"``open`` opens a file in its default application, using the appropriate tool "
+"for the operating system. On GNU/Linux, this requires the common but "
+"optional ``xdg-open`` utility, from the ``xdg-utils`` package."
+msgstr ""
+
+#: ../../../cmds/open.rst:17
+msgid ""
+"Note that this function will not be used if a command by this name exists "
+"(which is the case on macOS or Haiku)."
+msgstr ""
+
+#: ../../../cmds/open.rst:21
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/open.rst:23
+msgid ""
+"``open *.txt`` opens all the text files in the current directory using your "
+"system's default text editor."
+msgstr ""

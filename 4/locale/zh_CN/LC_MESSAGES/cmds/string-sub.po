@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/string-sub.rst:2
+msgid "string-sub - extract substrings"
+msgstr ""
+
+#: ../../../cmds/string-sub.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/string-sub.rst:9
+msgid ""
+"string sub [(-s | --start) START] [(-e | --end) END] [(-l | --length) "
+"LENGTH]\n"
+"           [-q | --quiet] [STRING ...]"
+msgstr ""
+
+#: ../../../cmds/string-sub.rst:17
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/string-sub.rst:21
+msgid ""
+"``string sub`` prints a substring of each string argument. The start/end of "
+"the substring can be specified with **-s**/**-e** or **--start**/**--end** "
+"followed by a 1-based index value. Positive index values are relative to the "
+"start of the string and negative index values are relative to the end of the "
+"string. The default start value is 1. The length of the substring can be "
+"specified with **-l** or **--length**. If the length or end is not "
+"specified, the substring continues to the end of each STRING. Exit status: 0 "
+"if at least one substring operation was performed, 1 otherwise. **--length** "
+"is mutually exclusive with **--end**."
+msgstr ""
+
+#: ../../../cmds/string-sub.rst:26
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/string-sub.rst:32
+msgid ""
+">_ string sub --length 2 abcde\n"
+"ab\n"
+"\n"
+">_ string sub -s 2 -l 2 abcde\n"
+"bc\n"
+"\n"
+">_ string sub --start=-2 abcde\n"
+"de\n"
+"\n"
+">_ string sub --end=3 abcde\n"
+"abc\n"
+"\n"
+">_ string sub -e -1 abcde\n"
+"abcd\n"
+"\n"
+">_ string sub -s 2 -e -1 abcde\n"
+"bcd\n"
+"\n"
+">_ string sub -s -3 -e -2 abcde\n"
+"c"
+msgstr ""

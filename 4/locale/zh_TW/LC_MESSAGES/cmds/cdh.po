@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/cdh.rst:2
+msgid "cdh - change to a recently visited directory"
+msgstr ""
+
+#: ../../../cmds/cdh.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/cdh.rst:7
+msgid "cdh [DIRECTORY]"
+msgstr ""
+
+#: ../../../cmds/cdh.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/cdh.rst:14
+msgid ""
+"``cdh`` with no arguments presents a list of :ref:`recently visited "
+"directories <directory-history>`. You can then select one of the entries by "
+"letter or number. You can also press :kbd:`tab` to use the completion pager "
+"to select an item from the list. If you give it a single argument it is "
+"equivalent to ``cd DIRECTORY``."
+msgstr ""
+
+#: ../../../cmds/cdh.rst:19
+msgid ""
+"Note that the ``cd`` command limits directory history to the 25 most "
+"recently visited directories. The history is stored in the :envvar:`dirprev` "
+"and :envvar:`dirnext` variables, which this command manipulates. If you make "
+"those universal variables, your ``cd`` history is shared among all fish "
+"instances."
+msgstr ""
+
+#: ../../../cmds/cdh.rst:24
+msgid "See Also"
+msgstr ""
+
+#: ../../../cmds/cdh.rst:26
+msgid "the :doc:`dirh <dirh>` command to print the directory history"
+msgstr ""
+
+#: ../../../cmds/cdh.rst:27
+msgid "the :doc:`prevd <prevd>` command to move backward"
+msgstr ""
+
+#: ../../../cmds/cdh.rst:28
+msgid "the :doc:`nextd <nextd>` command to move forward"
+msgstr ""

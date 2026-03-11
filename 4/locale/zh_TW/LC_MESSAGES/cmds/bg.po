@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/bg.rst:2
+msgid "bg - send jobs to background"
+msgstr ""
+
+#: ../../../cmds/bg.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/bg.rst:7
+msgid "bg [PID ...]"
+msgstr ""
+
+#: ../../../cmds/bg.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/bg.rst:14
+msgid ""
+"``bg`` sends :ref:`jobs <syntax-job-control>` to the background, resuming "
+"them if they are stopped."
+msgstr ""
+
+#: ../../../cmds/bg.rst:16
+msgid ""
+"A background job is executed simultaneously with fish, and does not have "
+"access to the keyboard. If no job is specified, the last job to be used is "
+"put in the background. If ``PID`` is specified, the jobs containing the "
+"specified process IDs are put in the background."
+msgstr ""
+
+#: ../../../cmds/bg.rst:18
+msgid ""
+"A PID of the format ``%n``, where n is an integer, will be interpreted as "
+"the PID of job number n. Job numbers can be seen in the output of :doc:`jobs "
+"<jobs>`."
+msgstr ""
+
+#: ../../../cmds/bg.rst:20
+msgid ""
+"When at least one of the arguments isn't a valid job specifier, ``bg`` will "
+"print an error without backgrounding anything."
+msgstr ""
+
+#: ../../../cmds/bg.rst:22
+msgid ""
+"When all arguments are valid job specifiers, ``bg`` will background all "
+"matching jobs that exist."
+msgstr ""
+
+#: ../../../cmds/bg.rst:24
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/bg.rst:27
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/bg.rst:29
+msgid ""
+"The typical use is to run something, stop it with ctrl-z, and then continue "
+"it in the background with bg::"
+msgstr ""
+
+#: ../../../cmds/bg.rst:31
+msgid ""
+"> find / -name \"*.js\" >/tmp/jsfiles 2>/dev/null # oh no, this takes too "
+"long, let's press Ctrl-z!\n"
+"fish: Job 1, 'find / -name \"*.js\" >/tmp/jsfil…' has stopped\n"
+"> bg\n"
+"Send job 1 'find / -name \"*.js\" >/tmp/jsfiles 2>/dev/null' to background\n"
+"> # I can continue using this shell!\n"
+"> # Eventually:\n"
+"fish: Job 1, 'find / -name \"*.js\" >/tmp/jsfil…' has ended"
+msgstr ""
+
+#: ../../../cmds/bg.rst:39
+msgid ""
+"``bg 123 456 789`` will background the jobs that contain processes 123, 456 "
+"and 789."
+msgstr ""
+
+#: ../../../cmds/bg.rst:41
+msgid ""
+"If only 123 and 789 exist, it will still background them and print an error "
+"about 456."
+msgstr ""
+
+#: ../../../cmds/bg.rst:43
+msgid ""
+"``bg 123 banana`` or ``bg banana 123`` will complain that \"banana\" is not "
+"a valid process ID."
+msgstr ""
+
+#: ../../../cmds/bg.rst:45
+msgid "``bg %2`` will background job 2."
+msgstr ""

@@ -1,0 +1,221 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_add_path.rst:2
+msgid "fish_add_path - add to the path"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:7
+msgid ""
+"fish_add_path path ...\n"
+"fish_add_path [(-g | --global) | (-U | --universal) | (-P | --path)] [(-m | "
+"--move)] [(-a | --append) | (-p | --prepend)] [(-v | --verbose) | (-n | --"
+"dry-run)] PATHS ..."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:14
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:16
+msgid ""
+":program:`fish_add_path` is a simple way to add more directories to fish's :"
+"envvar:`PATH`. It does this by adding the directories either to :envvar:"
+"`fish_user_paths` or directly to :envvar:`PATH` (if the ``--path`` switch is "
+"given)."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:18
+msgid ""
+"It is (by default) safe to use :program:`fish_add_path` in config.fish, or "
+"it can be used once, interactively, and the paths will stay in future "
+"because of :ref:`universal variables <variables-universal>`. This is a \"do "
+"what I mean\" style command - it tries to do the right thing by default, and "
+"follow your lead on what you have already set up (e.g. by using a global :"
+"envvar:`fish_user_paths` if you have that already). If you need more "
+"control, consider modifying the variable yourself."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:20
+msgid ""
+"Directories are normalized with :doc:`realpath <realpath>`. Trailing slashes "
+"are ignored and relative paths are made absolute (but symlinks are not "
+"resolved). If a directory is already included, it is not added again and "
+"stays in the same place unless the ``--move`` switch is given."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:22
+msgid ""
+"Directories are added in the order they are given, and they are prepended to "
+"the path unless ``--append`` is given. If $fish_user_paths is used, that "
+"means they are last in $fish_user_paths, which is itself prepended to :"
+"envvar:`PATH`, so they still stay ahead of the system paths. If the ``--"
+"path`` option is used, the paths are appended/prepended to :envvar:`PATH` "
+"directly, so this doesn't happen."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:24
+msgid ""
+"With ``--path``, because :envvar:`PATH` must be a global variable instead of "
+"a universal one, the changes won't persist, so those calls need to be stored "
+"in :ref:`config.fish <configuration>`. This also applies to :envvar:"
+"`fish_user_paths` if you make it global (for instance by passing ``--"
+"global``)."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:26
+msgid ""
+"If no directory is new, the variable (:envvar:`fish_user_paths` or :envvar:"
+"`PATH`) is not set again or otherwise modified, so variable handlers are not "
+"triggered."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:28
+msgid ""
+"If an argument is not an existing directory, ``fish_add_path`` ignores it."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:31
+msgid "Options"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:33
+msgid "**-a** or **--append**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:34
+msgid "Add directories to the *end* of the variable."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:36
+msgid "**-p** or **--prepend**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:37
+msgid "Add directories to the *front* of the variable (this is the default)."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:39
+msgid "**-g** or **--global**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:40
+msgid "Use a global :envvar:`fish_user_paths`."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:42
+msgid "**-U** or **--universal**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:43
+msgid ""
+"Use a universal :envvar:`fish_user_paths` - this is the default if it "
+"doesn't already exist."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:45
+msgid "**-P** or **--path**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:46
+msgid "Manipulate :envvar:`PATH` directly."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:48
+msgid "**-m** or **--move**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:49
+msgid ""
+"Move already-included directories to the place they would be added - by "
+"default they would be left in place and not added again."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:51
+msgid "**-v** or **--verbose**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:52
+msgid ""
+"Print the :doc:`set <set>` command used, and some more warnings, like when a "
+"path is skipped because it doesn't exist or is not a directory. Verbose mode "
+"is automatically enabled when fish_add_path is used interactively and the "
+"output goes to the terminal."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:55
+msgid "**-n** or **--dry-run**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:56
+msgid "Print the ``set`` command that would be used without executing it."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:58
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:59
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:61
+msgid ""
+"If ``--move`` is used, it may of course lead to the path swapping order, so "
+"you should be careful doing that in config.fish."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:65
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:70
+msgid ""
+"# I just installed mycoolthing and need to add it to the path to use it.\n"
+"# It is at /opt/mycoolthing/bin/mycoolthing,\n"
+"# so let's add the directory: /opt/mycoolthing/bin.\n"
+"> fish_add_path /opt/mycoolthing/bin\n"
+"\n"
+"# I want my ~/.local/bin to be checked first,\n"
+"# even if it was already added.\n"
+"> fish_add_path -m ~/.local/bin\n"
+"\n"
+"# I prefer using a global fish_user_paths\n"
+"# This isn't saved automatically, I need to add this to config.fish\n"
+"# if I want it to stay.\n"
+"> fish_add_path -g ~/.local/bin ~/.otherbin /usr/local/sbin\n"
+"\n"
+"# I want to append to the entire $PATH because this directory contains "
+"fallbacks\n"
+"# This needs --path/-P because otherwise it appends to $fish_user_paths,\n"
+"# which is added to the front of $PATH.\n"
+"> fish_add_path --append --path /opt/fallback/bin\n"
+"\n"
+"# I want to add the bin/ directory of my current $PWD (say /home/nemo/)\n"
+"# -v/--verbose shows what fish_add_path did.\n"
+"> fish_add_path -v bin/\n"
+"set fish_user_paths /home/nemo/bin /usr/bin /home/nemo/.local/bin\n"
+"\n"
+"# I have installed ruby via homebrew\n"
+"> fish_add_path /usr/local/opt/ruby/bin"
+msgstr ""
