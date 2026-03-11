@@ -1,0 +1,47 @@
+{
+  "po" : 
+  {
+    "en_US" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    },
+    "zh_CN" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    },
+    "zh_TW" : 
+    {
+      "branch" : "",
+      "commit" : 
+      {
+        "date" : "",
+        "hash" : "",
+        "title" : ""
+      }
+    }
+  },
+  "pot" : 
+  {
+    "branch" : "master",
+    "commit" : 
+    {
+      "date" : "2026-03-10 09:56:05 +0800",
+      "hash" : "dbb6ae6cf53948edd90f78e0dc1e88f7e331579e",
+      "title" : "Update changelog"
+    }
+  },
+  "type" : "branch",
+  "version" : "current"
+}

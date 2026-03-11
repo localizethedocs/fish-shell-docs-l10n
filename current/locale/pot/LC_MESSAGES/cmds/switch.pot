@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/switch.rst:2
+msgid "switch - conditionally execute a block of commands"
+msgstr ""
+
+#: ../../../cmds/switch.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/switch.rst:7
+msgid "switch VALUE; [case [GLOB ...]; [COMMANDS ...]; ...] end"
+msgstr ""
+
+#: ../../../cmds/switch.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/switch.rst:14
+msgid ""
+"``switch`` performs one of several blocks of commands, depending on whether "
+"a specified value equals one of several globbed values. ``case`` is used "
+"together with the ``switch`` statement in order to determine which block "
+"should be executed."
+msgstr ""
+
+#: ../../../cmds/switch.rst:16
+msgid ""
+"Each ``case`` command is given one or more parameters. The first ``case`` "
+"command with a parameter that matches the string specified in the switch "
+"command will be evaluated. ``case`` parameters may contain globs. These need "
+"to be escaped or quoted in order to avoid regular glob expansion using "
+"filenames."
+msgstr ""
+
+#: ../../../cmds/switch.rst:18
+msgid ""
+"Note that fish does not fall through on case statements. Only the first "
+"matching case is executed."
+msgstr ""
+
+#: ../../../cmds/switch.rst:20
+msgid ""
+"Note that :doc:`break <break>` cannot be used to exit a case/switch block "
+"early like in other languages. It can only be used in loops."
+msgstr ""
+
+#: ../../../cmds/switch.rst:22
+msgid ""
+"Note that command substitutions in a case statement will be evaluated even "
+"if its body is not taken. All substitutions, including command "
+"substitutions, must be performed before the value can be compared against "
+"the parameter."
+msgstr ""
+
+#: ../../../cmds/switch.rst:26
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/switch.rst:28
+msgid ""
+"If the variable ``$animal`` contains the name of an animal, the following "
+"code would attempt to classify it:"
+msgstr ""
+
+#: ../../../cmds/switch.rst:32
+msgid ""
+"switch $animal\n"
+"    case cat\n"
+"        echo evil\n"
+"    case wolf dog human moose dolphin whale\n"
+"        echo mammal\n"
+"    case duck goose albatross\n"
+"        echo bird\n"
+"    case shark trout stingray\n"
+"        echo fish\n"
+"    case '*'\n"
+"        echo I have no idea what a $animal is\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/switch.rst:46
+msgid ""
+"If the above code was run with ``$animal`` set to ``whale``, the output "
+"would be ``mammal``."
+msgstr ""

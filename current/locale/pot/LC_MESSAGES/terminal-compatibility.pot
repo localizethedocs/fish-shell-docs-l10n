@@ -1,0 +1,876 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../terminal-compatibility.rst:2
+msgid "Terminal Compatibility"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:4
+msgid ""
+"fish writes various control sequences to the terminal. Some must be "
+"implemented to enable basic functionality, while others enable optional "
+"features and may be ignored by the terminal."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:8
+msgid ""
+"The terminal must be able to parse Control Sequence Introducer (CSI) "
+"commands, Operating System Commands (OSC) and :ref:`optionally <term-compat-"
+"dcs-gnu-screen>` Device Control Strings (DCS). These are defined by ECMA-48. "
+"If a valid CSI, OSC or DCS sequence does not represent a command implemented "
+"by the terminal, the terminal must ignore it. For historical reasons, OSC "
+"sequences may be terminated with ``\\x07`` instead of ``\\e\\\\``."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:13
+msgid ""
+"Control sequences are denoted in a fish-like syntax. Special characters "
+"other than ``\\`` are not escaped. Spaces are only added for readability and "
+"are not part of the sequence. Placeholders are written as ``Ps`` for a "
+"number or ``Pt`` for an arbitrary printable string."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:18
+msgid ""
+"**NOTE:** fish does not rely on your system's terminfo database. In this "
+"document, terminfo (TI) codes are included for reference only."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:22
+msgid "Required Commands"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:28
+#: ../../../terminal-compatibility.rst:85
+msgid "Sequence"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:29
+#: ../../../terminal-compatibility.rst:86
+msgid "TI"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:30
+#: ../../../terminal-compatibility.rst:87
+msgid "Description"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:31
+msgid "``\\r``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:32
+#: ../../../terminal-compatibility.rst:70
+#: ../../../terminal-compatibility.rst:73
+#: ../../../terminal-compatibility.rst:175
+#: ../../../terminal-compatibility.rst:180
+#: ../../../terminal-compatibility.rst:200
+#: ../../../terminal-compatibility.rst:207
+#: ../../../terminal-compatibility.rst:210
+#: ../../../terminal-compatibility.rst:213
+#: ../../../terminal-compatibility.rst:216
+#: ../../../terminal-compatibility.rst:254
+msgid "n/a"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:33
+msgid "Move cursor to the beginning of the line"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:34
+msgid "``\\n``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:35
+msgid "cud1"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:36
+msgid "Move cursor down one line."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:37
+msgid "``\\e[ Ps A``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:38
+msgid "cuu"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:39
+msgid "Move cursor up Ps columns, or one column if no parameter."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:40
+msgid "``\\e[ Ps C``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:41
+msgid "cuf"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:42
+msgid "Move cursor to the right Ps columns, or one column if no parameter."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:43
+msgid "``\\x08``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:44
+msgid "cub1"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:45
+msgid "Move cursor one column to the left."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:46
+msgid "``\\e[ Ps D``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:47
+msgid "cub"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:48
+msgid "Move cursor to the left Ps times."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:49
+msgid "``\\e[H``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:50
+msgid "cup"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:51
+msgid "Set cursor position (no parameters means: move to row 1, column 1)."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:52
+msgid "``\\e[K``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:53
+msgid "el"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:54
+msgid "Clear to end of line."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:55
+msgid "``\\e[J``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:56
+msgid "ed"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:57
+msgid "Clear to the end of screen."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:58
+msgid "``\\e[2J``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:59
+msgid "clear"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:60
+msgid "Clear the screen."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:63
+msgid "``\\e[0c``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:65
+msgid ""
+"Request Primary Device Attribute. The terminal must respond with a CSI "
+"command that starts with the ``?`` parameter byte (so a sequence starting "
+"with ``\\e[?``) and has ``c`` as final byte."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:68
+msgid ""
+"Failure to implement this will cause a brief pause at startup followed by a "
+"warning. For the time being, both can be turned off by turning off the "
+"``query-terminal`` :ref:`feature flag <featureflags>`."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:71
+msgid "am"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:72
+msgid "Soft wrap text at screen width."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:74
+msgid "xenl"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:75
+msgid ""
+"Printing to the last column does not move the cursor to the next line. "
+"Verify this by running ``printf %0\"$COLUMNS\"d 0; sleep 3``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:79
+msgid "Optional Commands"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:88
+msgid "``\\t``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:89
+msgid "it"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:90
+msgid ""
+"Move the cursor to the next tab stop (à 8 columns). This is mainly relevant "
+"if your prompt includes tabs."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:93
+msgid "``\\e[m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:94
+msgid "sgr0"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:95
+msgid ""
+"Turn off bold/dim/italic/underline/strikethrough/reverse attribute modes and "
+"select default colors."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:96
+msgid "``\\e[1m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:97
+msgid "bold"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:98
+msgid "Enter bold mode."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:99
+msgid "``\\e[2m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:100
+msgid "dim"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:101
+msgid "Enter dim mode."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:102
+msgid "``\\e[3m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:103
+msgid "sitm"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:104
+msgid "Enter italic mode."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:105
+msgid "``\\e[4m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:106
+msgid "smul"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:107
+msgid "Enter underline mode."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:108
+msgid "``\\e[4:2m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:109
+#: ../../../terminal-compatibility.rst:112
+#: ../../../terminal-compatibility.rst:115
+#: ../../../terminal-compatibility.rst:118
+#: ../../../terminal-compatibility.rst:142
+#: ../../../terminal-compatibility.rst:162
+#: ../../../terminal-compatibility.rst:165
+msgid "Su"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:110
+msgid "Enter double underline mode."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:111
+msgid "``\\e[4:3m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:113
+msgid "Enter curly underline mode."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:114
+msgid "``\\e[4:4m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:116
+msgid "Enter dotted underline mode."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:117
+msgid "``\\e[4:5m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:119
+msgid "Enter dashed underline mode."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:120
+msgid "``\\e[7m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:121
+msgid "rev"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:122
+msgid "Enter reverse video mode (swap foreground and background colors)."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:123
+msgid "``\\e[9m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:124
+msgid "smxx"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:125
+msgid "Enter strikethrough mode"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:126
+msgid "``\\e[23m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:127
+msgid "ritm"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:128
+msgid "Exit italic mode."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:129
+msgid "``\\e[24m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:130
+msgid "rmul"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:131
+msgid "Exit underline mode."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:132
+msgid "``\\e[29m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:133
+msgid "rmxx"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:134
+msgid "Exit strikethrough mode."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:135
+msgid "``\\e[38;5; Ps m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:136
+msgid "setaf"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:137
+msgid "Select foreground color Ps from the 256-color-palette."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:138
+msgid "``\\e[48;5; Ps m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:139
+msgid "setab"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:140
+msgid "Select background color Ps from the 256-color-palette."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:141
+msgid "``\\e[58:5: Ps m`` (note: colons not semicolons)"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:143
+msgid "Select underline color Ps from the 256-color-palette."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:144
+msgid "``\\e[ Ps m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:145
+msgid "setaf setab"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:147
+msgid ""
+"Select foreground/background color. This uses a color in the aforementioned "
+"256-color-palette, based on the range that contains the parameter: 30-37 "
+"maps to foreground 0-7, 40-47 maps to background 0-7, 90-97 maps to "
+"foreground 8-15 and 100-107 maps to background 8-15."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:152
+msgid "``\\e[38;2; Ps ; Ps ; Ps m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:154
+msgid "Select foreground color from 24-bit RGB colors."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:155
+msgid "``\\e[48;2; Ps ; Ps ; Ps m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:157
+msgid "Select background color from 24-bit RGB colors."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:158
+msgid "``\\e[49m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:160
+msgid "Reset background color to the terminal's default."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:161
+msgid "``\\e[58:2:: Ps : Ps : Ps m`` (note: colons not semicolons)"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:163
+msgid "Select underline color from 24-bit RGB colors."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:164
+msgid "``\\e[59m``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:166
+msgid "Reset underline color to the default (follow the foreground color)."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:169
+msgid "``\\e[ Ps S``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:170
+msgid "indn"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:171
+msgid ""
+"Scroll up the content (not the viewport) Ps lines (called ``SCROLL UP`` / "
+"``SU`` by ECMA-48 and \"scroll forward\" by terminfo). When fish detects "
+"support for this feature, :ref:`status test-terminal-features scroll-content-"
+"up <status-test-terminal-features>` will return 0, which enables the :kbd:"
+"`ctrl-l` binding to use the :ref:`scrollback-push <special-input-functions-"
+"scrollback-push>` special input function."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:174
+msgid "``\\e[= Ps u``, ``\\e[? Ps u``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:176
+msgid "Enable the kitty keyboard protocol."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:179
+msgid "``\\e[6n``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:181
+msgid ""
+"Request cursor position report. The response must be of the form ``\\e[ Ps ; "
+"Ps R`` where the first parameter is the row number and the second parameter "
+"is the column number. Both start at 1."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:187
+msgid ""
+"This is used for truncating multiline autosuggestions at the screen's bottom "
+"edge, by the :ref:`scrollback-push <special-input-functions-scrollback-"
+"push>` special input function, and inside terminals that implement the OSC "
+"133 :ref:`click_events <term-compat-osc-133>` feature."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:190
+msgid "``\\e[ \\x20 q``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:191
+msgid "Se"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:192
+msgid ""
+"Reset cursor style to the terminal's default. This is not used as of today "
+"but may be in future."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:194
+msgid "``\\e[ Ps \\x20 q``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:195
+msgid "Ss"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:196
+msgid ""
+"Set cursor style (DECSCUSR); Ps is 2, 4 or 6 for block, underscore or line "
+"shape."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:199
+msgid "``\\e[ Ps q``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:201
+msgid ""
+"Request terminal name and version (XTVERSION). This is only used for "
+"temporary workarounds for incompatible terminals."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:203
+msgid "``\\e[?25h``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:204
+msgid "cvvis"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:205
+msgid "Enable cursor visibility (DECTCEM)."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:206
+msgid "``\\e[?1004h``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:208
+msgid "Enable focus reporting."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:209
+msgid "``\\e[?1004l``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:211
+msgid "Disable focus reporting."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:212
+msgid "``\\e[?1049h``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:214
+msgid "Enable alternate screen buffer."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:215
+msgid "``\\e[?1049l``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:217
+msgid "Disable alternate screen buffer."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:218
+msgid "``\\e[?2004h``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:220
+msgid "Enable bracketed paste."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:221
+msgid "``\\e[?2004l``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:223
+msgid "Disable bracketed paste."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:224
+msgid "``\\e[?2031h``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:226
+msgid ""
+"Enable unsolicited `color theme reporting <https://contour-terminal.org/vt-"
+"extensions/color-palette-update-notifications/>`_. When enabled, the "
+"terminal should send ``\\e[?997;1n`` or ``\\e[?997;2n`` whenever its color "
+"theme has changed. This prompts fish to query for :ref:`background color "
+"<term-compat-query-background-color>`."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:229
+msgid "``\\e[?2031l``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:231
+msgid "Disable unsolicited color theme reporting."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:234
+msgid "``\\e]0; Pt \\e\\\\``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:235
+#: ../../../terminal-compatibility.rst:238
+msgid "ts"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:236
+msgid ""
+"Set terminal window title (OSC 0). Used in :doc:`fish_title <cmds/"
+"fish_title>`."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:237
+msgid "``\\e]2; Pt \\e\\\\``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:239
+msgid ""
+"Set terminal tab title (OSC 1). Used in :doc:`fish_tab_title <cmds/"
+"fish_tab_title>`."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:240
+msgid "``\\e]7;file:// Pt / Pt \\e\\\\``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:242
+msgid ""
+"Report working directory (OSC 7). Since the terminal may be running on a "
+"different system than a (remote) shell, the hostname (first parameter) will "
+"*not* be ``localhost``."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:247
+msgid "``\\e]8;; Pt \\e\\\\``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:249
+msgid ""
+"Create a `hyperlink (OSC 8) <https://gist.github.com/egmontkob/"
+"eb114294efbcd5adb1944c9f3cb5feda>`_. This is used in fish's man pages."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:253
+msgid "``\\e]11;?\\e\\\\``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:255
+msgid "Query background color."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:257
+msgid ""
+"A valid response would be of the form ``\\e]11;rgb: Pt / Pt / Pt \\e\\\\`` "
+"or ``\\e]11;rgba: Pt / Pt / Pt / Pt\\e\\\\`` where the first three "
+"parameters consist of one to four hex digits each, representing red, blue "
+"and green components."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:260
+msgid ""
+"This is used to populate :envvar:`fish_terminal_color_theme`, which is used "
+"to select a :ref:`theme variant <fish-config-theme-files>` optimized for the "
+"terminal's color theme."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:264
+msgid "``\\e]52;c; Pt \\e\\\\``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:266
+msgid ""
+"Copy to clipboard (OSC 52). Used by :doc:`fish_clipboard_copy <cmds/"
+"fish_clipboard_copy>`."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:269
+msgid "``\\e]133;A; click_events=1\\e\\\\``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:271
+msgid ""
+"Mark prompt start (OSC 133), with kitty's ``click_events`` extension. The "
+"``click_events`` extension enables mouse clicks to move the cursor or select "
+"pager items, assuming that :ref:`cursor position reporting <term-compat-"
+"cursor-position-report>` is available."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:274
+msgid "``\\e]133;B\\e\\\\``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:276
+msgid "Mark prompt end (OSC 133)."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:277
+msgid "``\\e]133;C; cmdline_url= Pt \\e\\\\``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:279
+msgid ""
+"Mark command start (OSC 133), with kitty's ``cmdline_url`` extension whose "
+"parameter is the URL-encoded command line."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:280
+msgid "``\\e]133;D; Ps \\e\\\\``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:282
+msgid "Mark command end (OSC 133);  Ps is the exit status."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:285
+msgid "``\\eP+q Pt \\e\\\\``"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:287
+msgid ""
+"Request terminfo capability (XTGETTCAP). The parameter is the capability's "
+"hex-encoded terminfo code."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:290
+msgid ""
+"The response must be of the form ``\\eP1+q Pt \\e\\\\`` (\"boolean\") or "
+"``\\eP1+q Pt = Pt \\e\\\\`` (\"string\"). In either variant, the first "
+"parameter must be the same as the request parameter."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:294
+msgid "fish queries the following string capabilities:"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:296
+msgid ":ref:`indn <term-compat-indn>`"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:298
+msgid "The response's second parameter is ignored."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:299
+msgid "``query-os-name`` (for :ref:`status terminal-os <status-terminal-os>`)"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:301
+msgid ""
+"Terminals running on Unix should respond with the hex encoding of ``$(uname -"
+"s)`` as second parameter."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:306
+msgid "DCS commands and GNU screen"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:308
+msgid ""
+"DCS parsing is optional because fish temporarily switches to the alternate "
+"screen before printing any DCS commands. However, since GNU screen neither "
+"allows turning on the alternate screen buffer by default, nor treats DCS "
+"commands in a compatible way, fish's initial prompt may be garbled by a DCS "
+"payload like ``+q696e646e``. For the time being, fish works around this by "
+"checking for presence of the :envvar:`STY` environment variable. If that "
+"doesn't work for some reason, you can add this to your ``~/.screenrc``:"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:315
+msgid "altscreen on"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:319
+msgid "Or add this to your ``config.fish``::"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:321
+msgid ""
+"function GNU-screen-workaround --on-event fish_prompt\n"
+"    commandline -f repaint\n"
+"    functions --erase GNU-screen-workaround\n"
+"end"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:329
+msgid "Unicode Codepoints"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:331
+msgid "By default, fish outputs the following non-ASCII characters::"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:333
+msgid "× ► ¶ ⏎ • ● … μ – ’ ‘ “ ” ← → ↑ ↓"
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:335
+msgid ""
+"as well as control pictures (U+2400 through U+241F), and locale-specific "
+"ones in :ref:`translated strings <variables-locale>`."
+msgstr ""

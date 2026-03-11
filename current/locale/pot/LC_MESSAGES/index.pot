@@ -1,0 +1,388 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../index.rst:5
+msgid "Introduction"
+msgstr ""
+
+#: ../../../index.rst:7
+msgid ""
+"This is the documentation for :command:`fish`, the **f**\\ riendly **i**\\ "
+"nteractive **sh**\\ ell."
+msgstr ""
+
+#: ../../../index.rst:9
+msgid ""
+"A shell is a program that helps you operate your computer by starting other "
+"programs. fish offers a command-line interface focused on usability and "
+"interactive use."
+msgstr ""
+
+#: ../../../index.rst:11
+msgid "Some of the special features of fish are:"
+msgstr ""
+
+#: ../../../index.rst:13
+msgid ""
+"**Extensive UI**: :ref:`Syntax highlighting <syntax-highlighting>`, :ref:"
+"`autosuggestions`, :ref:`tab completion <tab-completion>` and selection "
+"lists that can be navigated and filtered."
+msgstr ""
+
+#: ../../../index.rst:15
+msgid ""
+"**No configuration needed**: fish is designed to be ready to use "
+"immediately, without requiring extensive configuration."
+msgstr ""
+
+#: ../../../index.rst:17
+msgid ""
+"**Easy scripting**: New :ref:`functions <syntax-function>` can be added on "
+"the fly. The syntax is easy to learn and use."
+msgstr ""
+
+#: ../../../index.rst:19
+msgid ""
+"This page explains how to install and set up fish and where to get more "
+"information."
+msgstr ""
+
+#: ../../../index.rst:22
+msgid "Where to go?"
+msgstr ""
+
+#: ../../../index.rst:24
+msgid ""
+"If this is your first time using fish, see the :doc:`tutorial <tutorial>`."
+msgstr ""
+
+#: ../../../index.rst:26
+msgid ""
+"If you are already familiar with other shells like bash and want to see the "
+"scripting differences, see :doc:`Fish For Bash Users <fish_for_bash_users>`."
+msgstr ""
+
+#: ../../../index.rst:28
+msgid ""
+"For an overview of fish's scripting language, see :doc:`The Fish Language "
+"<language>`. If it would be useful in a script file, it's here."
+msgstr ""
+
+#: ../../../index.rst:30
+msgid ""
+"For information on using fish interactively, see :doc:`Interactive use "
+"<interactive>`. If it's about key presses, syntax highlighting or anything "
+"else that needs an interactive terminal session, look here."
+msgstr ""
+
+#: ../../../index.rst:32
+msgid ""
+"If you need to install fish first, read on, the rest of this document will "
+"tell you how to get, install and configure fish."
+msgstr ""
+
+#: ../../../index.rst:35
+msgid "Setup"
+msgstr ""
+
+#: ../../../index.rst:37
+msgid ""
+"This section describes how to install, uninstall, start, and exit :command:"
+"`fish`. It also explains how to make fish the default shell."
+msgstr ""
+
+#: ../../../index.rst:40
+msgid "Installation"
+msgstr ""
+
+#: ../../../index.rst:42
+msgid ""
+"Up-to-date instructions for installing the latest version of fish are on the "
+"`fish homepage <https://fishshell.com/>`_."
+msgstr ""
+
+#: ../../../index.rst:44
+msgid ""
+"To install the development version of fish, see the instructions on the "
+"`project's GitHub page <https://github.com/fish-shell/fish-shell>`_."
+msgstr ""
+
+#: ../../../index.rst:47
+msgid "Starting and Exiting"
+msgstr ""
+
+#: ../../../index.rst:49
+msgid ""
+"Once fish has been installed, open a terminal. If fish is not the default "
+"shell:"
+msgstr ""
+
+#: ../../../index.rst:51
+msgid "Type :command:`fish` to start a shell::"
+msgstr ""
+
+#: ../../../index.rst:53
+msgid "> fish"
+msgstr ""
+
+#: ../../../index.rst:55
+msgid "Type :command:`exit` to end the session::"
+msgstr ""
+
+#: ../../../index.rst:57
+msgid "> exit"
+msgstr ""
+
+#: ../../../index.rst:60
+msgid "Default Shell"
+msgstr ""
+
+#: ../../../index.rst:62
+msgid ""
+"There are multiple ways to switch to fish (or any other shell) as your "
+"default."
+msgstr ""
+
+#: ../../../index.rst:64
+msgid ""
+"The simplest method is to set your terminal emulator (e.g. GNOME Terminal, "
+"Apple's Terminal.app, or Konsole) to start fish directly. See its "
+"configuration and set the program to start to ``/usr/local/bin/fish`` (the "
+"exact path depends on how you installed fish)."
+msgstr ""
+
+#: ../../../index.rst:66
+msgid ""
+"Alternatively, you can set fish as your login shell so that it will be "
+"started by all terminal logins, including SSH."
+msgstr ""
+
+#: ../../../index.rst:70
+msgid ""
+"Setting fish as your login shell may cause issues, such as an incorrect :"
+"envvar:`PATH`. Some operating systems, including a number of Linux "
+"distributions, require the login shell to be Bourne-compatible and to read "
+"configuration from ``/etc/profile``. fish may not be suitable as a login "
+"shell on these systems."
+msgstr ""
+
+#: ../../../index.rst:72
+msgid "To change your login shell to fish:"
+msgstr ""
+
+#: ../../../index.rst:74
+msgid "Add the shell to ``/etc/shells`` with::"
+msgstr ""
+
+#: ../../../index.rst:76
+msgid "> command -v fish | sudo tee -a /etc/shells"
+msgstr ""
+
+#: ../../../index.rst:78
+msgid "Change your default shell with::"
+msgstr ""
+
+#: ../../../index.rst:80
+msgid "> chsh -s \"$(command -v fish)\""
+msgstr ""
+
+#: ../../../index.rst:82
+msgid ""
+"To change it back to another shell, substitute ``fish`` with ``bash``, "
+"``tcsh`` or ``zsh`` as appropriate in the above command."
+msgstr ""
+
+#: ../../../index.rst:85
+msgid "Uninstalling"
+msgstr ""
+
+#: ../../../index.rst:87
+msgid ""
+"For uninstalling fish: see :ref:`FAQ: Uninstalling fish <faq-uninstalling>`."
+msgstr ""
+
+#: ../../../index.rst:90
+msgid "Shebang Line"
+msgstr ""
+
+#: ../../../index.rst:92
+msgid ""
+"Because shell scripts are written in many different languages, they need to "
+"carry information about which interpreter should be used to execute them. "
+"For this, they are expected to have a first line, the shebang line, which "
+"names the interpreter executable."
+msgstr ""
+
+#: ../../../index.rst:94
+msgid ""
+"A script written in :command:`bash` would need a first line like this: ::"
+msgstr ""
+
+#: ../../../index.rst:97
+msgid "#!/bin/bash"
+msgstr ""
+
+#: ../../../index.rst:99
+msgid ""
+"When the shell tells the kernel to execute the file, it will use the "
+"interpreter ``/bin/bash``."
+msgstr ""
+
+#: ../../../index.rst:101
+msgid ""
+"For a script written in another language, just replace ``/bin/bash`` with "
+"the interpreter for that language. For example: ``/usr/bin/python`` for a "
+"python script, or ``/usr/local/bin/fish`` for a fish script, if that is "
+"where you have them installed."
+msgstr ""
+
+#: ../../../index.rst:103
+msgid ""
+"If you want to share your script with others, you might want to use :command:"
+"`env` to allow for the interpreter to be installed in other locations. For "
+"example::"
+msgstr ""
+
+#: ../../../index.rst:105
+msgid ""
+"#!/usr/bin/env fish\n"
+"echo Hello from fish $version"
+msgstr ""
+
+#: ../../../index.rst:108
+msgid ""
+"This will call ``env``, which then goes through :envvar:`PATH` to find a "
+"program called \"fish\". This makes it work, whether fish is installed in "
+"(for example) ``/usr/local/bin/fish``, ``/usr/bin/fish``, or ``~/.local/bin/"
+"fish``, as long as that directory is in :envvar:`PATH`."
+msgstr ""
+
+#: ../../../index.rst:110
+msgid ""
+"The shebang line is only used when scripts are executed without specifying "
+"the interpreter. For functions inside fish or when executing a script with "
+"``fish /path/to/script``, a shebang is not required (but it doesn't hurt!)."
+msgstr ""
+
+#: ../../../index.rst:112
+msgid ""
+"When executing files without an interpreter, fish, like other shells, tries "
+"your system shell, typically ``/bin/sh``. This is needed because some "
+"scripts are shipped without a shebang line."
+msgstr ""
+
+#: ../../../index.rst:115
+msgid "Configuration"
+msgstr ""
+
+#: ../../../index.rst:117
+msgid ""
+"To store configuration write it to a file called ``~/.config/fish/config."
+"fish``."
+msgstr ""
+
+#: ../../../index.rst:119
+msgid ""
+"``.fish`` scripts in ``~/.config/fish/conf.d/`` are also automatically "
+"executed before ``config.fish``."
+msgstr ""
+
+#: ../../../index.rst:121
+msgid ""
+"These files are read on the startup of every shell, whether interactive and/"
+"or if they're login shells. Use ``status --is-interactive`` and ``status --"
+"is-login`` to do things only in interactive/login shells, respectively."
+msgstr ""
+
+#: ../../../index.rst:123
+msgid ""
+"This is the short version; for a full explanation, like for sysadmins or "
+"integration for developers of other software, see :ref:`Configuration files "
+"<configuration>`."
+msgstr ""
+
+#: ../../../index.rst:125
+msgid ""
+"If you want to see what you changed over fish's defaults, see :doc:"
+"`fish_delta <cmds/fish_delta>`."
+msgstr ""
+
+#: ../../../index.rst:128
+msgid "Examples:"
+msgstr ""
+
+#: ../../../index.rst:130
+msgid ""
+"To add ``~/linux/bin`` to PATH variable when using a login shell, add this "
+"to ``~/.config/fish/config.fish`` file::"
+msgstr ""
+
+#: ../../../index.rst:132
+msgid ""
+"if status --is-login\n"
+"    set -gx PATH $PATH ~/linux/bin\n"
+"end"
+msgstr ""
+
+#: ../../../index.rst:136
+msgid ""
+"This is just an example; using :doc:`fish_add_path <cmds/fish_add_path>` e."
+"g. ``fish_add_path ~/linux/bin`` which only adds the path if it isn't "
+"included yet is easier."
+msgstr ""
+
+#: ../../../index.rst:138
+msgid ""
+"To run commands on exit, use an :ref:`event handler <event>` that is "
+"triggered by the exit of the shell::"
+msgstr ""
+
+#: ../../../index.rst:140
+msgid ""
+"function on_exit --on-event fish_exit\n"
+"    echo fish is now exiting\n"
+"end"
+msgstr ""
+
+#: ../../../index.rst:147
+msgid "Resources"
+msgstr ""
+
+#: ../../../index.rst:149
+msgid "The `GitHub page <https://github.com/fish-shell/fish-shell/>`_"
+msgstr ""
+
+#: ../../../index.rst:151
+msgid ""
+"The official `Matrix room <https://matrix.to/#/#fish-shell:matrix.org>`_"
+msgstr ""
+
+#: ../../../index.rst:153
+msgid ""
+"The official mailing list at `fish-users@lists.sourceforge.net <https://"
+"lists.sourceforge.net/lists/listinfo/fish-users>`_"
+msgstr ""
+
+#: ../../../index.rst:155
+msgid ""
+"If you have an improvement for fish, you can submit it via the GitHub page."
+msgstr ""
+
+#: ../../../index.rst:158
+msgid "Other help pages"
+msgstr ""

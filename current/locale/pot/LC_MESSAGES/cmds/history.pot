@@ -1,0 +1,331 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/history.rst:2
+msgid "history - show and manipulate command history"
+msgstr ""
+
+#: ../../../cmds/history.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/history.rst:7
+msgid ""
+"history [search] [--show-time] [--case-sensitive]\n"
+"                 [--exact | --prefix | --contains] [--max N] [--null] [--"
+"reverse]\n"
+"                 [SEARCH_STRING ...]\n"
+"history delete [--case-sensitive]\n"
+"               [--exact | --prefix | --contains] SEARCH_STRING ...\n"
+"history merge\n"
+"history save\n"
+"history clear\n"
+"history clear-session\n"
+"history append COMMAND ..."
+msgstr ""
+
+#: ../../../cmds/history.rst:21
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/history.rst:23
+msgid ""
+"``history`` is used to search, delete, and otherwise manipulate the :ref:"
+"`history of interactive commands <history-search>`."
+msgstr ""
+
+#: ../../../cmds/history.rst:25
+msgid "The following operations (sub-commands) are available:"
+msgstr ""
+
+#: ../../../cmds/history.rst:27
+msgid "**search**"
+msgstr ""
+
+#: ../../../cmds/history.rst:28
+msgid ""
+"Returns history items matching the search string. If no search string is "
+"provided it returns all history items. This is the default operation if no "
+"other operation is specified. You only have to explicitly say ``history "
+"search`` if you wish to search for one of the subcommands. The ``--"
+"contains`` search option will be used if you don't specify a different "
+"search option. Entries are ordered newest to oldest unless you use the ``--"
+"reverse`` flag. If stdout is attached to a tty the output will be piped "
+"through your pager by the history function. The history builtin writes the "
+"results to stdout."
+msgstr ""
+
+#: ../../../cmds/history.rst:30
+msgid "**delete**"
+msgstr ""
+
+#: ../../../cmds/history.rst:31
+msgid ""
+"Deletes history items. The ``--contains`` search option will be used if you "
+"don't specify a different search option. If you don't specify ``--exact`` a "
+"prompt will be displayed before any items are deleted asking you which "
+"entries are to be deleted. You can enter the word \"all\" to delete all "
+"matching entries. You can enter a single ID (the number in square brackets) "
+"to delete just that single entry. You can enter more than one ID, or an ID "
+"range separated by a space to delete multiple entries. Press [enter] to not "
+"delete anything. Note that the interactive delete behavior is a feature of "
+"the history function. The history builtin only supports ``--exact --case-"
+"sensitive`` deletion."
+msgstr ""
+
+#: ../../../cmds/history.rst:33
+msgid "**merge**"
+msgstr ""
+
+#: ../../../cmds/history.rst:34
+msgid ""
+"Immediately incorporates history changes from other sessions. Ordinarily "
+"``fish`` ignores history changes from sessions started after the current "
+"one. This command applies those changes immediately."
+msgstr ""
+
+#: ../../../cmds/history.rst:36
+msgid "**save**"
+msgstr ""
+
+#: ../../../cmds/history.rst:37
+msgid ""
+"Immediately writes all changes to the history file. The shell automatically "
+"saves the history file; this option is provided for internal use and should "
+"not normally need to be used by the user."
+msgstr ""
+
+#: ../../../cmds/history.rst:39
+msgid "**clear**"
+msgstr ""
+
+#: ../../../cmds/history.rst:40
+msgid ""
+"Clears the history file. A prompt is displayed before the history is erased "
+"asking you to confirm you really want to clear all history unless ``builtin "
+"history`` is used."
+msgstr ""
+
+#: ../../../cmds/history.rst:42
+msgid "**clear-session**"
+msgstr ""
+
+#: ../../../cmds/history.rst:43
+msgid ""
+"Clears the history file from all activity of the current session. Note: If "
+"``history merge`` or ``builtin history merge`` is run in a session, only the "
+"history after this will be erased."
+msgstr ""
+
+#: ../../../cmds/history.rst:45
+msgid "**append**"
+msgstr ""
+
+#: ../../../cmds/history.rst:46
+msgid "Appends commands to the history without needing to execute them."
+msgstr ""
+
+#: ../../../cmds/history.rst:48
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/history.rst:50
+msgid ""
+"These flags can appear before or immediately after one of the sub-commands "
+"listed above."
+msgstr ""
+
+#: ../../../cmds/history.rst:52
+msgid "**-C** or **--case-sensitive**"
+msgstr ""
+
+#: ../../../cmds/history.rst:53
+msgid "Does a case-sensitive search. The default is case-insensitive."
+msgstr ""
+
+#: ../../../cmds/history.rst:55
+msgid "**-c** or **--contains**"
+msgstr ""
+
+#: ../../../cmds/history.rst:56
+msgid ""
+"Searches items in the history that contain the specified text string. This "
+"is the default for the **--search** flag. This is not currently supported by "
+"the **delete** subcommand."
+msgstr ""
+
+#: ../../../cmds/history.rst:58
+msgid "**-e** or **--exact**"
+msgstr ""
+
+#: ../../../cmds/history.rst:59
+msgid ""
+"Searches or deletes items in the history that exactly match the specified "
+"text string. This is the default for the **delete** subcommand. Note that "
+"the match is case-insensitive by default. If you really want an exact match, "
+"including letter case, you must use the **-C** or **--case-sensitive** flag."
+msgstr ""
+
+#: ../../../cmds/history.rst:61
+msgid "**-p** or **--prefix**"
+msgstr ""
+
+#: ../../../cmds/history.rst:62
+msgid ""
+"Searches items in the history that begin with the specified text string. "
+"This is not currently supported by the **delete** subcommand."
+msgstr ""
+
+#: ../../../cmds/history.rst:66
+msgid "**-t** or **--show-time**"
+msgstr ""
+
+#: ../../../cmds/history.rst:67
+msgid ""
+"Prepends each history entry with the date and time the entry was recorded. "
+"By default it uses the strftime format ``# %c%n``. You can specify another "
+"format; e.g., ``--show-time=\"%Y-%m-%d %H:%M:%S \"`` or ``--show-"
+"time=\"%a%I%p\"``. The short option, **-t**, doesn't accept a strftime "
+"format string; it only uses the default format. Any strftime format is "
+"allowed, including ``%s`` to get the raw UNIX seconds since the epoch."
+msgstr ""
+
+#: ../../../cmds/history.rst:69
+msgid "**-z** or **--null**"
+msgstr ""
+
+#: ../../../cmds/history.rst:70
+msgid ""
+"Causes history entries written by the search operations to be terminated by "
+"a NUL character rather than a newline. This allows the output to be "
+"processed by ``read -z`` to correctly handle multiline history entries."
+msgstr ""
+
+#: ../../../cmds/history.rst:72
+msgid "**-**\\*NUMBER* **-n** *NUMBER* or **--max** *NUMBER*"
+msgstr ""
+
+#: ../../../cmds/history.rst:73
+msgid ""
+"Limits the matched history items to the first *NUMBER* matching entries. "
+"This is only valid for ``history search``."
+msgstr ""
+
+#: ../../../cmds/history.rst:75
+msgid "**-R** or **--reverse**"
+msgstr ""
+
+#: ../../../cmds/history.rst:76
+msgid ""
+"Causes the history search results to be ordered oldest to newest. Which is "
+"the order used by most shells. The default is newest to oldest."
+msgstr ""
+
+#: ../../../cmds/history.rst:78
+msgid "**--color** *WHEN*"
+msgstr ""
+
+#: ../../../cmds/history.rst:79
+msgid ""
+"Controls when to use syntax highlighting colors for the history entries. "
+"*WHEN* can be ``auto`` (the default, colorize if the output :doc:`is a "
+"terminal <isatty>`), ``always``, or ``never``."
+msgstr ""
+
+#: ../../../cmds/history.rst:82
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/history.rst:83
+msgid "Displays help for this command."
+msgstr ""
+
+#: ../../../cmds/history.rst:86
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/history.rst:92
+msgid ""
+"history clear\n"
+"# Deletes all history items\n"
+"\n"
+"history search --contains \"foo\"\n"
+"# Outputs a list of all previous commands containing the string \"foo\".\n"
+"\n"
+"history delete --prefix \"foo\"\n"
+"# Interactively deletes commands which start with \"foo\" from the history.\n"
+"# You can select more than one entry by entering their IDs separated by a "
+"space."
+msgstr ""
+
+#: ../../../cmds/history.rst:104
+msgid "Customizing the name of the history file"
+msgstr ""
+
+#: ../../../cmds/history.rst:106
+msgid ""
+"By default interactive commands are logged to ``$XDG_DATA_HOME/fish/"
+"fish_history`` (typically ``~/.local/share/fish/fish_history``)."
+msgstr ""
+
+#: ../../../cmds/history.rst:108
+msgid ""
+"You can set the ``fish_history`` variable to another name for the current "
+"shell session. The default value (when the variable is unset) is ``fish`` "
+"which corresponds to ``$XDG_DATA_HOME/fish/fish_history``. If you set it to "
+"e.g. ``fun``, the history would be written to ``$XDG_DATA_HOME/fish/"
+"fun_history``. An empty string means history will not be stored at all. This "
+"is similar to the private session features in web browsers."
+msgstr ""
+
+#: ../../../cmds/history.rst:110
+msgid ""
+"You can change ``fish_history`` at any time (by using ``set -x fish_history "
+"\"session_name\"``) and it will take effect right away. If you set it to "
+"``\"default\"``, it will use the default session name (which is "
+"``\"fish\"``)."
+msgstr ""
+
+#: ../../../cmds/history.rst:112
+msgid ""
+"Other shells such as bash and zsh use a variable named ``HISTFILE`` for a "
+"similar purpose. Fish uses a different name to avoid conflicts and signal "
+"that the behavior is different (session name instead of a file path). Also, "
+"if you set the var to anything other than ``fish`` or ``default`` it will "
+"inhibit importing the bash history. That's because the most common use case "
+"for this feature is to avoid leaking private or sensitive history when "
+"giving a presentation."
+msgstr ""
+
+#: ../../../cmds/history.rst:115
+msgid "Notes"
+msgstr ""
+
+#: ../../../cmds/history.rst:117
+msgid ""
+"If you specify both **--prefix** and **--contains** the last flag seen is "
+"used."
+msgstr ""
+
+#: ../../../cmds/history.rst:119
+msgid ""
+"Note that for backwards compatibility each subcommand can also be specified "
+"as a long option. For example, rather than ``history search`` you can type "
+"``history --search``. Those long options are deprecated and will be removed "
+"in a future release."
+msgstr ""

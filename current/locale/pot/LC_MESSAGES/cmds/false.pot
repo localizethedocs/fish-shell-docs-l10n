@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/false.rst:2
+msgid "false - return an unsuccessful result"
+msgstr ""
+
+#: ../../../cmds/false.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/false.rst:7
+msgid "false"
+msgstr ""
+
+#: ../../../cmds/false.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/false.rst:14
+msgid "``false`` sets the exit status to 1."
+msgstr ""
+
+#: ../../../cmds/false.rst:17
+msgid "See Also"
+msgstr ""
+
+#: ../../../cmds/false.rst:19
+msgid ":doc:`true <true>` command"
+msgstr ""
+
+#: ../../../cmds/false.rst:20
+msgid ":ref:`$status <variables-status>` variable"
+msgstr ""

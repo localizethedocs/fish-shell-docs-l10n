@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/string-join0.rst:2
+msgid "string-join0 - join strings with zero bytes"
+msgstr ""
+
+#: ../../../cmds/string-join.rst:3
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/string-join.rst:7
+msgid ""
+"string join [-q | --quiet] [-n | --no-empty] [--] SEP [STRING ...]\n"
+"string join0 [-q | --quiet] [-n | --no-empty] [--] [STRING ...]"
+msgstr ""
+
+#: ../../../cmds/string-join.rst:15
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/string-join.rst:19
+msgid ""
+"Joins its *STRING* arguments into a single string separated by *SEP* (for "
+"``string join``) or by the zero byte (NUL) (for ``string join0``). Exit "
+"status: 0 if at least one join was performed, or 1 otherwise."
+msgstr ""
+
+#: ../../../cmds/string-join.rst:23
+msgid "**-n**, **--no-empty**"
+msgstr ""
+
+#: ../../../cmds/string-join.rst:24
+msgid ""
+"Exclude empty strings from consideration (e.g. ``string join -n + a b \"\" "
+"c`` would expand to ``a+b+c`` not ``a+b++c``)."
+msgstr ""
+
+#: ../../../cmds/string-join.rst:26
+msgid "**-q**, **--quiet**"
+msgstr ""
+
+#: ../../../cmds/string-join.rst:27
+msgid "Do not print the strings, only set the exit status as described above."
+msgstr ""
+
+#: ../../../cmds/string-join.rst:29
+msgid ""
+"**WARNING**: Insert a  ``--`` before positional arguments to prevent them "
+"from being interpreted as flags. Otherwise, any strings starting with ``-`` "
+"will be treated as flag arguments, meaning they will most likely result in "
+"the command failing. This is also true if you specify a variable which "
+"expands to such a string instead of a literal string. If you don't need to "
+"append flag arguments at the end of the command, just always use ``--`` to "
+"avoid unwelcome surprises."
+msgstr ""
+
+#: ../../../cmds/string-join.rst:36
+msgid ""
+"``string join0`` adds a trailing NUL. This is most useful in conjunction "
+"with tools that accept NUL-delimited input, such as ``sort -z``."
+msgstr ""
+
+#: ../../../cmds/string-join.rst:38
+msgid ""
+"Because Unix uses NUL as the string terminator, passing the output of "
+"``string join0`` as an *argument* to a command (via a :ref:`command "
+"substitution <expand-command-substitution>`) won't actually work. Fish will "
+"pass the correct bytes along, but the command won't be able to tell where "
+"the argument ends. This is a limitation of Unix' argument passing."
+msgstr ""
+
+#: ../../../cmds/string-join.rst:45
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/string-join.rst:51
+msgid ""
+">_ seq 3 | string join ...\n"
+"1...2...3\n"
+"\n"
+"# Give a list of NUL-separated filenames to du (this is a GNU extension)\n"
+">_ string join0 file1 file2 file\\nwith\\nmultiple\\nlines | du --files0-"
+"from=-\n"
+"\n"
+"# Just put the strings together without a separator\n"
+">_ string join '' a b c\n"
+"abc\n"
+"\n"
+">_ set -l markdown_list '- first' '- second' '- third'\n"
+"# Strings with leading hyphens (also in variable expansions) are interpreted "
+"as flag arguments by default.\n"
+">_ string join \\n $markdown_list\n"
+"string join: - first: unknown option\n"
+"# Use '--' to prevent this.\n"
+">_ string join -- \\n $markdown_list\n"
+"- first\n"
+"- second\n"
+"- third"
+msgstr ""
