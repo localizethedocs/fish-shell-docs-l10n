@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../../cmds/funcsave.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/funcsave.rst:7
 msgid ""

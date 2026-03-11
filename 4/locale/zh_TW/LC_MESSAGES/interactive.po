@@ -172,7 +172,7 @@ msgstr ""
 
 #: ../../../interactive.rst:62
 msgid "Syntax highlighting"
-msgstr ""
+msgstr "語法標明"
 
 #: ../../../interactive.rst:64
 msgid ""

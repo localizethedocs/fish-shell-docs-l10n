@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/string.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/string.rst:7
 msgid ""
@@ -244,6 +244,8 @@ msgid ""
 "string join [-q | --quiet] [-n | --no-empty] [--] SEP [STRING ...]\n"
 "string join0 [-q | --quiet] [-n | --no-empty] [--] [STRING ...]"
 msgstr ""
+"string join [-q | --quiet] [-n | --no-empty] [--] SEP [STRING ...]\n"
+"string join0 [-q | --quiet] [-n | --no-empty] [--] [STRING ...]"
 
 #: ../../../cmds/string-join.rst:3
 msgid ""

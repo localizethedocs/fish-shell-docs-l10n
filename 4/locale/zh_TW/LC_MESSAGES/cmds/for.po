@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/for.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/for.rst:7
 msgid "for VARNAME in [VALUES ...]; COMMANDS ...; end"
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../../cmds/for.rst:21
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/for.rst:25
 msgid ""

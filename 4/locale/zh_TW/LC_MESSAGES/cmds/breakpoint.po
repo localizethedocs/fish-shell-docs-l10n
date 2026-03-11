@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/breakpoint.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/breakpoint.rst:7
 msgid "breakpoint"

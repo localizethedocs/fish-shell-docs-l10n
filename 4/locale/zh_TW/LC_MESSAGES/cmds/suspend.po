@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/suspend.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/suspend.rst:7
 msgid "suspend [--force]"

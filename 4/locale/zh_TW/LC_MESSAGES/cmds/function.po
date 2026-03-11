@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/function.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/function.rst:7
 msgid "function NAME [OPTIONS]; BODY; end"
@@ -210,7 +210,7 @@ msgstr ""
 
 #: ../../../cmds/function.rst:64
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/function.rst:68
 msgid ""

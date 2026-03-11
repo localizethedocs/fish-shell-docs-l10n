@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/time.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/time.rst:7
 msgid "time COMMAND"
@@ -129,7 +129,7 @@ msgstr ""
 
 #: ../../../cmds/time.rst:51
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/time.rst:53
 msgid "(for obvious reasons exact results will vary on your system)"

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../index.rst:5
 msgid "Introduction"
-msgstr ""
+msgstr "介紹"
 
 #: ../../../index.rst:7
 msgid ""
@@ -109,7 +109,7 @@ msgstr ""
 
 #: ../../../index.rst:40
 msgid "Installation"
-msgstr ""
+msgstr "安裝"
 
 #: ../../../index.rst:42
 msgid ""
@@ -125,7 +125,7 @@ msgstr ""
 
 #: ../../../index.rst:47
 msgid "Starting and Exiting"
-msgstr ""
+msgstr "啟動與退出"
 
 #: ../../../index.rst:49
 msgid ""
@@ -151,7 +151,7 @@ msgstr ""
 
 #: ../../../index.rst:60
 msgid "Default Shell"
-msgstr ""
+msgstr "預設外殼"
 
 #: ../../../index.rst:62
 msgid ""
@@ -192,7 +192,7 @@ msgstr ""
 
 #: ../../../index.rst:76
 msgid "> command -v fish | sudo tee -a /etc/shells"
-msgstr ""
+msgstr "> command -v fish | sudo tee -a /etc/shells"
 
 #: ../../../index.rst:78
 msgid "Change your default shell with::"
@@ -200,7 +200,7 @@ msgstr ""
 
 #: ../../../index.rst:80
 msgid "> chsh -s \"$(command -v fish)\""
-msgstr ""
+msgstr "> chsh -s \"$(command -v fish)\""
 
 #: ../../../index.rst:82
 msgid ""
@@ -210,7 +210,7 @@ msgstr ""
 
 #: ../../../index.rst:85
 msgid "Uninstalling"
-msgstr ""
+msgstr "解除安裝"
 
 #: ../../../index.rst:87
 msgid ""
@@ -289,7 +289,7 @@ msgstr ""
 
 #: ../../../index.rst:115
 msgid "Configuration"
-msgstr ""
+msgstr "組態"
 
 #: ../../../index.rst:117
 msgid ""
@@ -359,10 +359,13 @@ msgid ""
 "    echo fish is now exiting\n"
 "end"
 msgstr ""
+"function on_exit --on-event fish_exit\n"
+"    echo fish is now exiting\n"
+"end"
 
 #: ../../../index.rst:147
 msgid "Resources"
-msgstr ""
+msgstr "資源"
 
 #: ../../../index.rst:149
 msgid "The `GitHub page <https://github.com/fish-shell/fish-shell/>`_"
@@ -386,4 +389,4 @@ msgstr ""
 
 #: ../../../index.rst:158
 msgid "Other help pages"
-msgstr ""
+msgstr "其他幫助頁面"

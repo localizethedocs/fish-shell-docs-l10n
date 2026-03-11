@@ -25,7 +25,7 @@ msgstr ""
 
 #: ../../../cmds/continue.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/continue.rst:7
 msgid "LOOP_CONSTRUCT; [COMMANDS ...;] continue; [COMMANDS ...;] end"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../cmds/continue.rst:19
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/continue.rst:21
 msgid ""

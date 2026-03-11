@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/fish_indent.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/fish_indent.rst:7
 msgid "fish_indent [OPTIONS] [FILE ...]"

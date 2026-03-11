@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/_.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/_.rst:7
 msgid "_ STRING"

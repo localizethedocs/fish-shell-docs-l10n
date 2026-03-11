@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../design.rst:2
 msgid "Design"
-msgstr ""
+msgstr "設計"
 
 #: ../../../design.rst:4
 msgid ""

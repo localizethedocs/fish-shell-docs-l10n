@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../cmds/string-escape.rst:5
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../../cmds/string-escape.rst:9
 msgid ""
