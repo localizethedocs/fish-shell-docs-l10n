@@ -68,7 +68,7 @@ msgstr ""
 
 #: ../../../interactive.rst:22
 msgid "Autosuggestions"
-msgstr ""
+msgstr "自動建議"
 
 #: ../../../interactive.rst:24
 msgid ""
@@ -259,7 +259,7 @@ msgstr ""
 
 #: ../../../interactive.rst:104
 msgid "Syntax highlighting variables"
-msgstr ""
+msgstr "語法標明變數"
 
 #: ../../../interactive.rst:106
 msgid ""
@@ -287,7 +287,7 @@ msgstr ""
 
 #: ../../../interactive.rst:127 ../../../interactive.rst:184
 msgid "Variable"
-msgstr ""
+msgstr "變數"
 
 #: ../../../interactive.rst:127 ../../../interactive.rst:184
 msgid "Meaning"
@@ -508,7 +508,7 @@ msgstr ""
 
 #: ../../../interactive.rst:206
 msgid "Abbreviations"
-msgstr ""
+msgstr "縮寫"
 
 #: ../../../interactive.rst:208
 msgid ""

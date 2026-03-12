@@ -27,7 +27,7 @@ msgstr "概要"
 
 #: ../../../cmds/fish_git_prompt.rst:7
 msgid "fish_git_prompt [FORMAT]"
-msgstr ""
+msgstr "fish_git_prompt [FORMAT]"
 
 #: ../../../cmds/fish_git_prompt.rst:13
 msgid ""
@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../../../cmds/fish_git_prompt.rst:23
 msgid "`Git <https://git-scm.com>`_ must be installed."
-msgstr ""
+msgstr "必須安裝 `Git <https://git-scm.com>`_。"
 
 #: ../../../cmds/fish_git_prompt.rst:25
 msgid ""
@@ -93,6 +93,9 @@ msgid ""
 "``$__fish_git_prompt_showuntrackedfiles`` or the git option ``bash."
 "showUntrackedFiles``."
 msgstr ""
+"由於計算未追蹤檔案需要耗費大量時間，因此只有在透過 "
+"``$__fish_git_prompt_showuntrackedfiles`` 或 git 選項 ``bash."
+"showUntrackedFiles`` 啟用時，才會顯示未追蹤檔案的數量。"
 
 #: ../../../cmds/fish_git_prompt.rst:36
 msgid ""
@@ -124,11 +127,11 @@ msgstr ""
 
 #: ../../../cmds/fish_git_prompt.rst:44
 msgid "``verbose``"
-msgstr ""
+msgstr "``verbose``"
 
 #: ../../../cmds/fish_git_prompt.rst:45
 msgid "show number of commits ahead/behind (+/-) upstream"
-msgstr ""
+msgstr "顯示領先/落後（+/-）上游的送交數量"
 
 #: ../../../cmds/fish_git_prompt.rst:46
 msgid "``name``"
@@ -177,12 +180,16 @@ msgid ""
 "``$__fish_git_prompt_showstashstate`` can be set to 1, true or yes to "
 "display the state of the stash."
 msgstr ""
+"可以將 ``$__fish_git_prompt_showstashstate`` 設定為 1、true 或 yes，來顯示暫"
+"存的狀態。"
 
 #: ../../../cmds/fish_git_prompt.rst:59
 msgid ""
 "``$__fish_git_prompt_shorten_branch_len`` can be set to the number of "
 "characters that the branch name will be shortened to."
 msgstr ""
+"可以將 ``$__fish_git_prompt_shorten_branch_len`` 設定為分支名稱縮短後的字元"
+"數。"
 
 #: ../../../cmds/fish_git_prompt.rst:61
 msgid ""
@@ -250,7 +257,7 @@ msgstr ""
 
 #: ../../../cmds/fish_git_prompt.rst:79
 msgid "``$__fish_git_prompt_color`` (no default)"
-msgstr ""
+msgstr "``$__fish_git_prompt_color``（無預設值）"
 
 #: ../../../cmds/fish_git_prompt.rst:80
 msgid "``$__fish_git_prompt_color_prefix`` - the color of the ``(`` prefix"
@@ -280,7 +287,7 @@ msgstr ""
 
 #: ../../../cmds/fish_git_prompt.rst:86
 msgid "``$__fish_git_prompt_color_cleanstate`` (no default)"
-msgstr ""
+msgstr "``$__fish_git_prompt_color_cleanstate``（無預設值）"
 
 #: ../../../cmds/fish_git_prompt.rst:88
 msgid "Variables used with ``showdirtystate``:"

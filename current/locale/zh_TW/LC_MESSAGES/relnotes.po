@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../relnotes.rst:2
 msgid "Release notes"
-msgstr ""
+msgstr "發行備註"
 
 #: ../../../../CHANGELOG.rst:2
 msgid "fish ?.?.? (released ???)"

@@ -250,7 +250,7 @@ msgstr ""
 
 #: ../../../cmds/fish.rst:103
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/fish.rst:105
 msgid "To just start fish::"

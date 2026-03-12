@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../prompt.rst:2
 msgid "Writing your own prompt"
-msgstr ""
+msgstr "編寫你自己的提示"
 
 #: ../../../prompt.rst:7
 msgid ""

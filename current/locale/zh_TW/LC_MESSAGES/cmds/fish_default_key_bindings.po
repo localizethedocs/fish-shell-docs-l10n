@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../cmds/fish_default_key_bindings.rst:21
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/fish_default_key_bindings.rst:23
 msgid "To start using emacs key bindings::"

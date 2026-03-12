@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../../../cmds/continue.rst:36
 msgid "See Also"
-msgstr ""
+msgstr "另請參見"
 
 #: ../../../cmds/continue.rst:38
 msgid "the :doc:`break <break>` command, to stop the current inner loop"

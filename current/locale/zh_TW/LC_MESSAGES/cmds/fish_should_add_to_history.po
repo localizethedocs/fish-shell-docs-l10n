@@ -29,7 +29,7 @@ msgstr "概要"
 
 #: ../../../cmds/fish_should_add_to_history.rst:7
 msgid "fish_should_add_to_history"
-msgstr ""
+msgstr "fish_should_add_to_history"
 
 #: ../../../cmds/fish_should_add_to_history.rst:13
 msgid ""
@@ -37,6 +37,9 @@ msgid ""
 "    ...\n"
 "end"
 msgstr ""
+"function fish_should_add_to_history\n"
+"    ...\n"
+"end"
 
 #: ../../../cmds/fish_should_add_to_history.rst:19
 msgid "Description"

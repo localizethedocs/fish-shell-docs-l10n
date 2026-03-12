@@ -86,7 +86,7 @@ msgstr ""
 
 #: ../../../cmds/fish_clipboard_copy.rst:33
 msgid "See also"
-msgstr ""
+msgstr "另請參見"
 
 #: ../../../cmds/fish_clipboard_copy.rst:35
 msgid ":doc:`fish_clipboard_paste` which does the inverse."

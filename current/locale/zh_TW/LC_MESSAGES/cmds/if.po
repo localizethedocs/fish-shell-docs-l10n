@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../../cmds/if.rst:52
 msgid "See also"
-msgstr ""
+msgstr "另請參見"
 
 #: ../../../cmds/if.rst:54
 msgid "``if`` is only as useful as the command used as the condition."

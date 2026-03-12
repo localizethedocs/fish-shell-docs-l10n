@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../../../cmds/or.rst:32
 msgid "See Also"
-msgstr ""
+msgstr "另請參見"
 
 #: ../../../cmds/or.rst:34
 msgid ":doc:`and <and>` command"

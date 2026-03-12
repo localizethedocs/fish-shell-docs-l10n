@@ -77,7 +77,7 @@ msgstr ""
 
 #: ../../../cmds/pwd.rst:35
 msgid "See Also"
-msgstr ""
+msgstr "另請參見"
 
 #: ../../../cmds/pwd.rst:37
 msgid ""

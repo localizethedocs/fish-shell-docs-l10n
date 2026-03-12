@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../language.rst:2
 msgid "The fish language"
-msgstr ""
+msgstr "fish 語言"
 
 #: ../../../language.rst:4
 msgid "This document is a comprehensive overview of fish's scripting language."
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../language.rst:11
 msgid "Syntax overview"
-msgstr ""
+msgstr "語法概覽"
 
 #: ../../../language.rst:13
 msgid ""
@@ -48,6 +48,8 @@ msgid ""
 ":doc:`echo <cmds/echo>` command writes its arguments to the screen. In this "
 "example the output is ``hello world``."
 msgstr ""
+":doc:`echo <cmds/echo>` 命令會將其參數寫入螢幕。在此範例中，輸出結果為 "
+"``hello world``。"
 
 #: ../../../language.rst:19
 msgid ""
@@ -72,11 +74,11 @@ msgstr ""
 
 #: ../../../language.rst:25
 msgid ":doc:`cd <cmds/cd>`: Change the current directory"
-msgstr ""
+msgstr ":doc:`cd <cmds/cd>`：變更當前目錄"
 
 #: ../../../language.rst:26
 msgid "``ls``: List files and directories"
-msgstr ""
+msgstr "``ls``：列出檔案與目錄"
 
 #: ../../../language.rst:27
 msgid ""
@@ -86,11 +88,11 @@ msgstr ""
 
 #: ../../../language.rst:28
 msgid "``mv``: Move (rename) files"
-msgstr ""
+msgstr "``mv``：移動（重新命名）檔案"
 
 #: ../../../language.rst:29
 msgid "``cp``: Copy files"
-msgstr ""
+msgstr "``cp``：複製檔案"
 
 #: ../../../language.rst:30
 msgid ""
@@ -100,7 +102,7 @@ msgstr ""
 
 #: ../../../language.rst:31
 msgid "``less``: Display the contents of files"
-msgstr ""
+msgstr "``less``：顯示檔案內容"
 
 #: ../../../language.rst:33
 msgid ""
@@ -152,6 +154,8 @@ msgid ""
 "**Argument**: A parameter given to a command. In ``echo foo``, the \"foo\" "
 "is an argument."
 msgstr ""
+"**引數（Argument）**：傳遞給命令的參數。在 ``echo foo`` 中，「foo」就是一個引"
+"數。"
 
 #: ../../../language.rst:48
 msgid ""
@@ -169,6 +173,10 @@ msgid ""
 "\"echo\" is a builtin command, in ``command echo foo`` the \"echo\" is an "
 "external command, provided by a file like /bin/echo."
 msgstr ""
+"**命令（Command）**：外殼（shell）可以執行的程式，更具體地說，是指外殼在另一"
+"個進程（process）中執行的外部程式。外部命令是以執行檔的形式存在於您的系統中。"
+"在 ``echo foo`` 中，「echo」是一個內建命令；而在 ``command echo foo`` 中，"
+"「echo」則是一個外部命令，由如 /bin/echo 之類的檔案所提供。"
 
 #: ../../../language.rst:52
 msgid ""
@@ -302,7 +310,7 @@ msgstr ""
 
 #: ../../../language.rst:103
 msgid "``\\n`` represents a newline character."
-msgstr ""
+msgstr "``\\n``：代表換行字元。"
 
 #: ../../../language.rst:104
 msgid "``\\r`` represents the carriage return character."
@@ -372,7 +380,7 @@ msgstr ""
 
 #: ../../../language.rst:119
 msgid "echo 'hello world'"
-msgstr ""
+msgstr "echo 'hello world'"
 
 #: ../../../language.rst:121
 msgid ""
@@ -401,7 +409,7 @@ msgstr ""
 
 #: ../../../language.rst:130
 msgid "``\\*`` escapes the star character."
-msgstr ""
+msgstr "``\\*`` 跳脫星號字元。"
 
 #: ../../../language.rst:131
 msgid ""
@@ -455,11 +463,11 @@ msgstr ""
 
 #: ../../../language.rst:143
 msgid "``\\|`` escapes the vertical bar character."
-msgstr ""
+msgstr "``\\|`` 跳脫垂直線字元。"
 
 #: ../../../language.rst:144
 msgid "``\\;`` escapes the semicolon character."
-msgstr ""
+msgstr "``\\*`` 跳脫分號字元。"
 
 #: ../../../language.rst:145
 msgid "``\\\"`` escapes the quote character."
@@ -684,7 +692,7 @@ msgstr ""
 
 #: ../../../language.rst:234
 msgid "make fish 2>| less"
-msgstr ""
+msgstr "make fish 2>| less"
 
 #: ../../../language.rst:236
 msgid ""
@@ -844,6 +852,9 @@ msgid ""
 "    ls -l $argv\n"
 "end"
 msgstr ""
+"function ll\n"
+"    ls -l $argv\n"
+"end"
 
 #: ../../../language.rst:312
 msgid ""
@@ -910,7 +921,7 @@ msgstr ""
 
 #: ../../../language.rst:341
 msgid "Defining aliases"
-msgstr ""
+msgstr "定義別名"
 
 #: ../../../language.rst:343
 msgid ""
@@ -1076,7 +1087,7 @@ msgstr ""
 
 #: ../../../language.rst:393
 msgid "Comments"
-msgstr ""
+msgstr "註釋"
 
 #: ../../../language.rst:395
 msgid ""

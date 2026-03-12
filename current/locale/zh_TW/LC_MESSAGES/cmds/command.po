@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../cmds/command.rst:2
 msgid "command - run a program"
-msgstr ""
+msgstr "command - run a program"
 
 #: ../../../cmds/command.rst:5
 msgid "Synopsis"
@@ -91,23 +91,25 @@ msgstr ""
 
 #: ../../../cmds/command.rst:40
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/command.rst:42
 msgid ""
 "``command ls`` executes the ``ls`` program, even if an ``ls`` function also "
 "exists."
-msgstr ""
+msgstr "``command ls`` 為執行 ``ls`` 程式，即使同時存在名為 ``ls`` 的函式。"
 
 #: ../../../cmds/command.rst:43
 msgid "``command -s ls`` prints the path to the ``ls`` program."
-msgstr ""
+msgstr "``command -s ls`` 會印出 ``ls`` 程式的路徑。"
 
 #: ../../../cmds/command.rst:44
 msgid ""
 "``command -q git; and command git log`` runs ``git log`` only if ``git`` "
 "exists."
 msgstr ""
+"``command -q git; and command git log`` 只有在 ``git`` 存在時才會執行 ``git "
+"log``。"
 
 #: ../../../cmds/command.rst:45
 msgid ""

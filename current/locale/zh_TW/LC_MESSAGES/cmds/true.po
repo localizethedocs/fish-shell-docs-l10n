@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../../cmds/true.rst:19
 msgid "See Also"
-msgstr ""
+msgstr "另請參見"
 
 #: ../../../cmds/true.rst:21
 msgid ":doc:`false <false>` command"

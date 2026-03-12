@@ -539,7 +539,7 @@ msgstr ""
 
 #: ../../../cmds/math.rst:190
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/math.rst:192
 msgid "``math 1+1`` outputs 2."
