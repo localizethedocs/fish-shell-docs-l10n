@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../cmds/end.rst:4
 msgid "end - end a block of commands"
-msgstr ""
+msgstr "end - 結束命令區塊"
 
 #: ../../../cmds/end.rst:7
 msgid "Synopsis"
@@ -31,6 +31,9 @@ msgid ""
 "    [COMMANDS ...]\n"
 "end"
 msgstr ""
+"begin\n"
+"    [COMMANDS ...]\n"
+"end"
 
 #: ../../../cmds/end.rst:15
 msgid ""
@@ -74,3 +77,5 @@ msgid ""
 "The **end** keyword does not change the current exit status. Instead, the "
 "status after it will be the status returned by the most recent command."
 msgstr ""
+"**end** 關鍵字不會改變目前的結束狀態。相反地，之後的狀態將會是最近一個命令所"
+"回傳的狀態。"

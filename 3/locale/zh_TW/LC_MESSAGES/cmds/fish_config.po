@@ -139,6 +139,8 @@ msgid ""
 "``fish_config`` or ``fish_config browse`` opens a new web browser window and "
 "allows you to configure certain fish settings."
 msgstr ""
+"``fish_config`` 或 ``fish_config browse`` 會開啟新的網頁瀏覽器視窗，讓您可以"
+"組態特定的 fish 選項。"
 
 #: ../../../cmds/fish_config.rst:53
 msgid "``fish_config prompt show`` demos the available sample prompts."

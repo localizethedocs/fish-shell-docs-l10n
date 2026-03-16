@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../completions.rst:4
 msgid "Writing your own completions"
-msgstr ""
+msgstr "編寫你自己的補全"
 
 #: ../../../completions.rst:6
 msgid ""

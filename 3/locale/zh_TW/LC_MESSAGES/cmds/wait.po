@@ -27,7 +27,7 @@ msgstr "概要"
 
 #: ../../../cmds/wait.rst:9
 msgid "wait [-n | --any] [PID | PROCESS_NAME] ..."
-msgstr ""
+msgstr "wait [-n | --any] [PID | PROCESS_NAME] ..."
 
 #: ../../../cmds/wait.rst:14
 msgid "Description"
@@ -75,6 +75,8 @@ msgid ""
 "sleep 10 &\n"
 "wait $last_pid"
 msgstr ""
+"sleep 10 &\n"
+"wait $last_pid"
 
 #: ../../../cmds/wait.rst:36
 msgid "spawns ``sleep`` in the background, and then waits until it finishes."
@@ -85,6 +87,8 @@ msgid ""
 "for i in (seq 1 5); sleep 10 &; end\n"
 "wait"
 msgstr ""
+"for i in (seq 1 5); sleep 10 &; end\n"
+"wait"
 
 #: ../../../cmds/wait.rst:44
 msgid ""

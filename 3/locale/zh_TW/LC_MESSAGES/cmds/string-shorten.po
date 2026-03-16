@@ -97,7 +97,7 @@ msgstr ""
 
 #: ../../../cmds/string-shorten.rst:42
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/string-shorten.rst:48
 msgid ""
@@ -141,7 +141,7 @@ msgstr ""
 
 #: ../../../cmds/string-shorten.rst:85
 msgid "See Also"
-msgstr ""
+msgstr "另請參見"
 
 #: ../../../cmds/string-shorten.rst:87
 msgid ""

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../faq.rst:2
 msgid "Frequently asked questions"
-msgstr ""
+msgstr "常見問題"
 
 #: ../../../faq.rst:5
 msgid "What is the equivalent to this thing from bash (or other shells)?"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../faq.rst:10
 msgid "How do I set or clear an environment variable?"
-msgstr ""
+msgstr "我要如何設定或清除環境變數？"
 
 #: ../../../faq.rst:11
 msgid "Use the :doc:`set <cmds/set>` command::"
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../../faq.rst:24
 msgid "How do I check whether a variable is defined?"
-msgstr ""
+msgstr "我要如何檢查變數是否已定義？"
 
 #: ../../../faq.rst:26
 msgid ""
@@ -92,7 +92,7 @@ msgstr ""
 
 #: ../../../faq.rst:36
 msgid "How do I check whether a variable is not empty?"
-msgstr ""
+msgstr "我要如何檢查變數是否不為空？"
 
 #: ../../../faq.rst:38
 msgid ""
@@ -129,7 +129,7 @@ msgstr ""
 
 #: ../../../faq.rst:55
 msgid "Why doesn't ``set -Ux`` (exported universal variables) seem to work?"
-msgstr ""
+msgstr "為什麼 ``set -Ux``（匯出的通用變數）似乎不起作用？"
 
 #: ../../../faq.rst:56
 msgid "A global variable of the same name already exists."

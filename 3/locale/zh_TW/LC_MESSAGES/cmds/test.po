@@ -404,7 +404,7 @@ msgstr ""
 
 #: ../../../cmds/test.rst:162
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/test.rst:164
 msgid "If the ``/tmp`` directory exists, copy the ``/etc/motd`` file to it:"

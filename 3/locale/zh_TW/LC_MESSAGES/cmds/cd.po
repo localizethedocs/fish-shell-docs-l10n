@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../../cmds/cd.rst:34
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/cd.rst:38
 msgid ""
@@ -96,7 +96,7 @@ msgstr ""
 
 #: ../../../cmds/cd.rst:45
 msgid "See Also"
-msgstr ""
+msgstr "另請參見"
 
 #: ../../../cmds/cd.rst:47
 msgid ""

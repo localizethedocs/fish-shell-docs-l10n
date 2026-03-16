@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../cmds/prompt_hostname.rst:19
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/prompt_hostname.rst:23
 msgid ""

@@ -154,7 +154,7 @@ msgstr ""
 
 #: ../../../cmds/echo.rst:79
 msgid "See Also"
-msgstr ""
+msgstr "另請參見"
 
 #: ../../../cmds/echo.rst:81
 msgid ""

@@ -65,7 +65,7 @@ msgstr ""
 
 #: ../../../cmds/dirs.rst:29
 msgid "See Also"
-msgstr ""
+msgstr "另請參見"
 
 #: ../../../cmds/dirs.rst:31
 msgid ""

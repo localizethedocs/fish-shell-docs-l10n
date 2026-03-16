@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../../../cmds/isatty.rst:25
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/isatty.rst:27
 msgid ""

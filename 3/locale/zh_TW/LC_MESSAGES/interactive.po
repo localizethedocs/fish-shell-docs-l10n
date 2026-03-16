@@ -68,7 +68,7 @@ msgstr ""
 
 #: ../../../interactive.rst:24
 msgid "Autosuggestions"
-msgstr ""
+msgstr "自動建議"
 
 #: ../../../interactive.rst:26
 msgid ""
@@ -184,11 +184,11 @@ msgstr ""
 
 #: ../../../interactive.rst:68
 msgid "Detected errors include:"
-msgstr ""
+msgstr "偵測到的錯誤包括："
 
 #: ../../../interactive.rst:70
 msgid "Non-existing commands."
-msgstr ""
+msgstr "不存在的命令。"
 
 #: ../../../interactive.rst:71
 msgid "Reading from or appending to a non-existing file."
@@ -234,7 +234,7 @@ msgstr ""
 
 #: ../../../interactive.rst:90
 msgid "Syntax highlighting variables"
-msgstr ""
+msgstr "語法標明變數"
 
 #: ../../../interactive.rst:92
 msgid ""
@@ -262,7 +262,7 @@ msgstr ""
 
 #: ../../../interactive.rst:103 ../../../interactive.rst:161
 msgid "Variable"
-msgstr ""
+msgstr "變數"
 
 #: ../../../interactive.rst:103 ../../../interactive.rst:161
 msgid "Meaning"
@@ -482,7 +482,7 @@ msgstr ""
 
 #: ../../../interactive.rst:183
 msgid "Abbreviations"
-msgstr ""
+msgstr "縮寫"
 
 #: ../../../interactive.rst:185
 msgid ""
@@ -1654,7 +1654,7 @@ msgstr ""
 
 #: ../../../interactive.rst:670
 msgid "Directory stack"
-msgstr ""
+msgstr "目錄堆疊"
 
 #: ../../../interactive.rst:672
 msgid ""

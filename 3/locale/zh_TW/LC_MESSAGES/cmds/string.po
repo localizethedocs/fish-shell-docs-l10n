@@ -145,7 +145,7 @@ msgstr ""
 #: ../../../cmds/string.rst:196 ../../../cmds/string.rst:232
 #: ../../../cmds/string.rst:250 ../../../cmds/string.rst:268
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/string-collect.rst:5
 msgid ""

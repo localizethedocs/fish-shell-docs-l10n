@@ -516,7 +516,7 @@ msgstr ""
 
 #: ../../../cmds/math.rst:183
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/math.rst:185
 msgid "``math 1+1`` outputs 2."

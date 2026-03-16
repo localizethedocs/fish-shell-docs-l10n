@@ -27,7 +27,7 @@ msgstr "概要"
 
 #: ../../../cmds/funced.rst:9
 msgid "funced [OPTIONS] NAME"
-msgstr ""
+msgstr "funced [OPTIONS] NAME"
 
 #: ../../../cmds/funced.rst:14
 msgid "Description"

@@ -33,6 +33,8 @@ msgid ""
 "programs. fish offers a command-line interface focused on usability and "
 "interactive use."
 msgstr ""
+"外殼（Shell）是一種透過啟動其他程式來協助您操作電腦的程式。fish 提供了一個專"
+"注於易用性與互動式體驗的命令行介面。"
 
 #: ../../../index.rst:11
 msgid "Some of the special features of fish are:"
@@ -167,6 +169,8 @@ msgid ""
 "Alternatively, you can set fish as your login shell so that it will be "
 "started by all terminal logins, including SSH."
 msgstr ""
+"或者，您可以將 fish 設定為您的登入外殼，這樣所有的終端機登入（包括 SSH）都會"
+"啟動它。"
 
 #: ../../../index.rst:72
 msgid ""
@@ -179,7 +183,7 @@ msgstr ""
 
 #: ../../../index.rst:74
 msgid "To change your login shell to fish:"
-msgstr ""
+msgstr "若要變更您的登入外殼："
 
 #: ../../../index.rst:76
 msgid "Add the shell to ``/etc/shells`` with::"

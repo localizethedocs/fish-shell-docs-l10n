@@ -68,7 +68,7 @@ msgstr ""
 
 #: ../../../cmds/string-pad.rst:34
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/string-pad.rst:40
 msgid ""
@@ -86,7 +86,7 @@ msgstr ""
 
 #: ../../../cmds/string-pad.rst:54
 msgid "See Also"
-msgstr ""
+msgstr "另請參見"
 
 #: ../../../cmds/string-pad.rst:56
 msgid ""

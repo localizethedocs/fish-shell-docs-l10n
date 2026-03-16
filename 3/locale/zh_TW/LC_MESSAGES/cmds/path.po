@@ -147,7 +147,7 @@ msgstr ""
 #: ../../../cmds/path.rst:291 ../../../cmds/path.rst:325
 #: ../../../cmds/path.rst:356 ../../../cmds/path.rst:405
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/path.rst:69
 msgid ""

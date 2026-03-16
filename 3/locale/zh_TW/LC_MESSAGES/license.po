@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../license.rst:2
 msgid "License"
-msgstr ""
+msgstr "授權條款"
 
 #: ../../../license.rst:5
 msgid "License for fish"

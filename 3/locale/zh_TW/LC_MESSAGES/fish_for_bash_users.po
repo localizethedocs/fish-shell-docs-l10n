@@ -66,7 +66,7 @@ msgstr ""
 
 #: ../../../fish_for_bash_users.rst:24
 msgid "Variables"
-msgstr ""
+msgstr "變數"
 
 #: ../../../fish_for_bash_users.rst:26
 msgid ""
@@ -151,6 +151,10 @@ msgid ""
 "foo bar\n"
 "banana"
 msgstr ""
+"> set var \"foo bar\" banana\n"
+"> printf %s\\n $var\n"
+"foo bar\n"
+"banana"
 
 #: ../../../fish_for_bash_users.rst:73
 msgid "Specific elements of a list can be selected::"
@@ -158,7 +162,7 @@ msgstr ""
 
 #: ../../../fish_for_bash_users.rst:75
 msgid "echo $list[5..7]"
-msgstr ""
+msgstr "echo $list[5..7]"
 
 #: ../../../fish_for_bash_users.rst:77
 msgid ""
@@ -272,7 +276,7 @@ msgstr ""
 
 #: ../../../fish_for_bash_users.rst:133
 msgid "String manipulation"
-msgstr ""
+msgstr "字串操縱"
 
 #: ../../../fish_for_bash_users.rst:135
 msgid ""
@@ -452,7 +456,7 @@ msgstr ""
 
 #: ../../../fish_for_bash_users.rst:224
 msgid "Quotes are followed across newlines."
-msgstr ""
+msgstr "引號可以跨行使用。"
 
 #: ../../../fish_for_bash_users.rst:226
 msgid "What \"heredocs\" do is:"
@@ -477,7 +481,7 @@ msgstr ""
 
 #: ../../../fish_for_bash_users.rst:234
 msgid "echo \"foo\" | cat"
-msgstr ""
+msgstr "echo \"foo\" | cat"
 
 #: ../../../fish_for_bash_users.rst:236
 msgid "is mostly the same as"
@@ -489,6 +493,9 @@ msgid ""
 "foo\n"
 "EOF"
 msgstr ""
+"cat <<EOF\n"
+"foo\n"
+"EOF"
 
 #: ../../../fish_for_bash_users.rst:244
 msgid ""
@@ -569,7 +576,7 @@ msgstr ""
 
 #: ../../../fish_for_bash_users.rst:280
 msgid "math $i + 1"
-msgstr ""
+msgstr "math $i + 1"
 
 #: ../../../fish_for_bash_users.rst:282
 msgid "Unlike bash's arithmetic, it can handle floating point numbers::"
@@ -601,7 +608,7 @@ msgstr ""
 
 #: ../../../fish_for_bash_users.rst:294
 msgid "> math '(5 + 2) * 4'"
-msgstr ""
+msgstr "> math '(5 + 2) * 4'"
 
 #: ../../../fish_for_bash_users.rst:296
 msgid ""
@@ -648,6 +655,14 @@ msgid ""
 "    (set_color yellow) $prompt_symbol (set_color normal)\n"
 "end"
 msgstr ""
+"function fish_prompt\n"
+"    set -l prompt_symbol '$'\n"
+"    fish_is_root_user; and set prompt_symbol '#'\n"
+"\n"
+"    echo -s (prompt_hostname) \\\n"
+"    (set_color blue) (prompt_pwd) \\\n"
+"    (set_color yellow) $prompt_symbol (set_color normal)\n"
+"end"
 
 #: ../../../fish_for_bash_users.rst:321
 msgid "This shows a few differences:"
@@ -765,7 +780,7 @@ msgstr ""
 
 #: ../../../fish_for_bash_users.rst:396
 msgid "Subshells"
-msgstr ""
+msgstr "子外殼"
 
 #: ../../../fish_for_bash_users.rst:398
 msgid ""
@@ -842,7 +857,7 @@ msgstr ""
 
 #: ../../../fish_for_bash_users.rst:438
 msgid "Builtins and other commands"
-msgstr ""
+msgstr "內建與其他命令"
 
 #: ../../../fish_for_bash_users.rst:440
 msgid ""
