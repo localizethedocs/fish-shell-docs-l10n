@@ -183,11 +183,11 @@ msgstr ""
 
 #: ../../../interactive.rst:66
 msgid "Detected errors include:"
-msgstr ""
+msgstr "偵測到的錯誤包括："
 
 #: ../../../interactive.rst:68
 msgid "Non-existing commands."
-msgstr ""
+msgstr "不存在的命令。"
 
 #: ../../../interactive.rst:69
 msgid "Reading from or appending to a non-existing file."
@@ -1769,7 +1769,7 @@ msgstr ""
 
 #: ../../../interactive.rst:732
 msgid "Directory stack"
-msgstr ""
+msgstr "目錄堆疊"
 
 #: ../../../interactive.rst:734
 msgid ""
