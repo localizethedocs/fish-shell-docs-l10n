@@ -384,7 +384,7 @@ msgstr ""
 
 #: ../../../cmds/complete.rst:136
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/complete.rst:138
 msgid ""

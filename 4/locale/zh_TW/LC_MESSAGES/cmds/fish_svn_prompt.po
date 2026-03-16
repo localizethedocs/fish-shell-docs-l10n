@@ -81,71 +81,71 @@ msgstr ""
 
 #: ../../../cmds/fish_svn_prompt.rst:33
 msgid ":envvar:`__fish_svn_prompt_char_added_display`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_added_display`"
 
 #: ../../../cmds/fish_svn_prompt.rst:34
 msgid ":envvar:`__fish_svn_prompt_char_added_color`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_added_color`"
 
 #: ../../../cmds/fish_svn_prompt.rst:35
 msgid ":envvar:`__fish_svn_prompt_char_conflicted_display`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_conflicted_display`"
 
 #: ../../../cmds/fish_svn_prompt.rst:36
 msgid ":envvar:`__fish_svn_prompt_char_conflicted_color`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_conflicted_color`"
 
 #: ../../../cmds/fish_svn_prompt.rst:37
 msgid ":envvar:`__fish_svn_prompt_char_deleted_display`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_deleted_display`"
 
 #: ../../../cmds/fish_svn_prompt.rst:38
 msgid ":envvar:`__fish_svn_prompt_char_deleted_color`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_deleted_color`"
 
 #: ../../../cmds/fish_svn_prompt.rst:39
 msgid ":envvar:`__fish_svn_prompt_char_ignored_display`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_ignored_display`"
 
 #: ../../../cmds/fish_svn_prompt.rst:40
 msgid ":envvar:`__fish_svn_prompt_char_ignored_color`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_ignored_color`"
 
 #: ../../../cmds/fish_svn_prompt.rst:41
 msgid ":envvar:`__fish_svn_prompt_char_modified_display`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_modified_display`"
 
 #: ../../../cmds/fish_svn_prompt.rst:42
 msgid ":envvar:`__fish_svn_prompt_char_modified_color`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_modified_color`"
 
 #: ../../../cmds/fish_svn_prompt.rst:43
 msgid ":envvar:`__fish_svn_prompt_char_replaced_display`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_replaced_display`"
 
 #: ../../../cmds/fish_svn_prompt.rst:44
 msgid ":envvar:`__fish_svn_prompt_char_replaced_color`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_replaced_color`"
 
 #: ../../../cmds/fish_svn_prompt.rst:45
 msgid ":envvar:`__fish_svn_prompt_char_unversioned_external_display`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_unversioned_external_display`"
 
 #: ../../../cmds/fish_svn_prompt.rst:46
 msgid ":envvar:`__fish_svn_prompt_char_unversioned_external_color`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_unversioned_external_color`"
 
 #: ../../../cmds/fish_svn_prompt.rst:47
 msgid ":envvar:`__fish_svn_prompt_char_unversioned_display`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_unversioned_display`"
 
 #: ../../../cmds/fish_svn_prompt.rst:48
 msgid ":envvar:`__fish_svn_prompt_char_unversioned_color`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_unversioned_color`"
 
 #: ../../../cmds/fish_svn_prompt.rst:49
 msgid ":envvar:`__fish_svn_prompt_char_missing_display`"
-msgstr ""
+msgstr ":envvar:`__fish_svn_prompt_char_missing_display`"
 
 #: ../../../cmds/fish_svn_prompt.rst:50
 msgid ":envvar:`__fish_svn_prompt_char_missing_color`"

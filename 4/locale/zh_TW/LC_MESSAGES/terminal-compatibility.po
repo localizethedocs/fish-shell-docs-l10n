@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../terminal-compatibility.rst:2
 msgid "Terminal Compatibility"
-msgstr ""
+msgstr "終端機相容性"
 
 #: ../../../terminal-compatibility.rst:4
 msgid ""

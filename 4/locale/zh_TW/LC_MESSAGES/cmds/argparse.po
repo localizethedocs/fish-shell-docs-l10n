@@ -748,7 +748,7 @@ msgstr ""
 
 #: ../../../cmds/argparse.rst:275
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/argparse.rst:277
 msgid "A simple use::"

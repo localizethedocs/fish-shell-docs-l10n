@@ -253,7 +253,7 @@ msgstr ""
 
 #: ../../../cmds/printf.rst:97
 msgid "See Also"
-msgstr ""
+msgstr "另請參見"
 
 #: ../../../cmds/printf.rst:99
 msgid "the :doc:`echo <echo>` command, for simpler output"

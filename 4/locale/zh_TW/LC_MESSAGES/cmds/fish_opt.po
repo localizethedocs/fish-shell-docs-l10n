@@ -31,6 +31,9 @@ msgid ""
 "OPTIONS ... ]\n"
 "fish_opt --help"
 msgstr ""
+"fish_opt [-s ALPHANUM] [-l LONG-NAME] [-ormd] [--long-only] [-v COMMAND "
+"OPTIONS ... ]\n"
+"fish_opt --help"
 
 #: ../../../cmds/fish_opt.rst:13
 msgid "Description"
@@ -155,7 +158,7 @@ msgstr ""
 
 #: ../../../cmds/fish_opt.rst:48
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/fish_opt.rst:50
 msgid "Define a single option specification for the boolean help flag:"

@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../../cmds/string-trim.rst:30
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/string-trim.rst:36
 msgid ""

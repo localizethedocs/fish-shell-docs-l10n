@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../../../cmds/string-join.rst:45
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/string-join.rst:51
 msgid ""

@@ -226,7 +226,7 @@ msgstr ""
 
 #: ../../../cmds/set_color.rst:84
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: ../../../cmds/set_color.rst:89
 msgid ""

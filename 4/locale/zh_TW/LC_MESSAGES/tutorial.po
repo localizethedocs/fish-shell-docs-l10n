@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../tutorial.rst:4
 msgid "Tutorial"
-msgstr ""
+msgstr "教學"
 
 #: ../../../tutorial.rst:7
 msgid "Why fish?"
@@ -177,7 +177,7 @@ msgstr ""
 
 #: ../../../tutorial.rst:81
 msgid "Syntax Highlighting"
-msgstr ""
+msgstr "語法標明"
 
 #: ../../../tutorial.rst:90
 msgid ""
@@ -244,7 +244,7 @@ msgstr ""
 
 #: ../../../tutorial.rst:125
 msgid "Autosuggestions"
-msgstr ""
+msgstr "自動建議"
 
 #: ../../../tutorial.rst:127
 msgid ""
@@ -347,7 +347,7 @@ msgstr ""
 
 #: ../../../tutorial.rst:193
 msgid "Variables"
-msgstr ""
+msgstr "變數"
 
 #: ../../../tutorial.rst:195
 msgid ""
@@ -1208,7 +1208,7 @@ msgstr ""
 
 #: ../../../tutorial.rst:649
 msgid "See also :doc:`Writing your own prompt <prompt>`."
-msgstr ""
+msgstr "另請參見\\ :doc:`編寫你自己的提示 <prompt>`。"
 
 #: ../../../tutorial.rst:651
 msgid ""

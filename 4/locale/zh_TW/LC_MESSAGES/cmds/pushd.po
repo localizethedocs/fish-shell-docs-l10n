@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../cmds/pushd.rst:2
 msgid "pushd - push directory to directory stack"
-msgstr ""
+msgstr "pushd - 將目錄推送到目錄堆疊"
 
 #: ../../../cmds/pushd.rst:5
 msgid "Synopsis"
@@ -27,7 +27,7 @@ msgstr "概要"
 
 #: ../../../cmds/pushd.rst:7
 msgid "pushd DIRECTORY"
-msgstr ""
+msgstr "pushd DIRECTORY"
 
 #: ../../../cmds/pushd.rst:12
 msgid "Description"
@@ -84,7 +84,7 @@ msgstr ""
 
 #: ../../../cmds/pushd.rst:48
 msgid "See Also"
-msgstr ""
+msgstr "另請參見"
 
 #: ../../../cmds/pushd.rst:50
 msgid "the :doc:`dirs <dirs>` command to print the directory stack"

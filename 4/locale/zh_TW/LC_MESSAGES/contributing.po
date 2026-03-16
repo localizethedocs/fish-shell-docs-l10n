@@ -85,7 +85,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:36
 msgid "Rust - when in doubt, try rustup"
-msgstr ""
+msgstr "Rust - 當有疑問時，試試 rustup"
 
 #: ../../../../CONTRIBUTING.rst:37
 msgid "CMake"
@@ -265,7 +265,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:112
 msgid "cargo xtask html-docs"
-msgstr ""
+msgstr "cargo xtask html-docs"
 
 #: ../../../../CONTRIBUTING.rst:114
 msgid "will output to ``target/fish-docs/html`` or, if you use CMake::"
@@ -273,7 +273,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:116
 msgid "cmake --build build -t sphinx-docs"
-msgstr ""
+msgstr "cmake --build build -t sphinx-docs"
 
 #: ../../../../CONTRIBUTING.rst:118
 msgid ""
@@ -283,11 +283,11 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:120
 msgid "sphinx-build -j auto -b html doc_src/ /tmp/fish-doc/"
-msgstr ""
+msgstr "sphinx-build -j auto -b html doc_src/ /tmp/fish-doc/"
 
 #: ../../../../CONTRIBUTING.rst:122
 msgid "will output HTML docs to ``/tmp/fish-doc``."
-msgstr ""
+msgstr "會將 HTML 文件輸出至 ``/tmp/fish-doc``。"
 
 #: ../../../../CONTRIBUTING.rst:124
 msgid ""
@@ -327,7 +327,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:144
 msgid "Fish Script Style Guide"
-msgstr ""
+msgstr "Fish 腳本風格指南"
 
 #: ../../../../CONTRIBUTING.rst:146
 msgid ""
@@ -408,7 +408,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:199
 msgid "Testing"
-msgstr ""
+msgstr "測試"
 
 #: ../../../../CONTRIBUTING.rst:201
 msgid ""
@@ -483,7 +483,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:234
 msgid "Local testing"
-msgstr ""
+msgstr "本機測試"
 
 #: ../../../../CONTRIBUTING.rst:236
 msgid "The tests can be run on your local system::"
@@ -514,7 +514,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:251
 msgid "cargo xtask check"
-msgstr ""
+msgstr "cargo xtask check"
 
 #: ../../../../CONTRIBUTING.rst:254
 msgid "Contributing Translations"
@@ -573,7 +573,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:288
 msgid "cargo build --features=localize-messages"
-msgstr ""
+msgstr "cargo build --features=localize-messages"
 
 #: ../../../../CONTRIBUTING.rst:290
 msgid "Use environment variables to tell fish which language to use, e.g.::"
@@ -581,7 +581,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:292
 msgid "LANG=pt_BR.utf8 fish"
-msgstr ""
+msgstr "LANG=pt_BR.utf8 fish"
 
 #: ../../../../CONTRIBUTING.rst:294
 msgid "or within the running fish shell::"
@@ -589,7 +589,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:296
 msgid "set LANG pt_BR.utf8"
-msgstr ""
+msgstr "set LANG pt_BR.utf8"
 
 #: ../../../../CONTRIBUTING.rst:298
 msgid ""
@@ -602,7 +602,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:304
 msgid "set LANGUAGE pt_BR de_DE"
-msgstr ""
+msgstr "set LANGUAGE pt_BR de_DE"
 
 #: ../../../../CONTRIBUTING.rst:306
 msgid ""
@@ -612,7 +612,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:310
 msgid "Modifying existing translations"
-msgstr ""
+msgstr "修改現有的翻譯"
 
 #: ../../../../CONTRIBUTING.rst:312
 msgid ""
@@ -629,7 +629,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:319
 msgid "Editing PO files"
-msgstr ""
+msgstr "編輯 PO 檔案"
 
 #: ../../../../CONTRIBUTING.rst:321
 msgid ""

@@ -117,11 +117,11 @@ msgstr ""
 
 #: ../../../cmds/fish_config.rst:45
 msgid "``list`` lists the names of the available themes."
-msgstr ""
+msgstr "``list`` 會列出可用主題的名稱。"
 
 #: ../../../cmds/fish_config.rst:46
 msgid "``show`` shows what the given themes (or all) would look like."
-msgstr ""
+msgstr "``show`` 會顯示指定主題（或所有主題）的外觀。"
 
 #: ../../../cmds/fish_config.rst:47
 msgid ""
@@ -136,7 +136,7 @@ msgstr ""
 
 #: ../../../cmds/fish_config.rst:55
 msgid "Theme Files"
-msgstr ""
+msgstr "主題檔案"
 
 #: ../../../cmds/fish_config.rst:57
 msgid ""
@@ -222,6 +222,8 @@ msgid ""
 "``fish_config`` or ``fish_config browse`` opens a new web browser window and "
 "allows you to configure certain fish settings."
 msgstr ""
+"``fish_config`` 或 ``fish_config browse`` 會開啟新的網頁瀏覽器視窗，讓您可以"
+"組態特定的 fish 選項。"
 
 #: ../../../cmds/fish_config.rst:111
 msgid "``fish_config prompt show`` demos the available sample prompts."
