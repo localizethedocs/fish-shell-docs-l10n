@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/function.rst:13
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/function.rst:15
 msgid "``function`` creates a new function *NAME* with the body *BODY*."

@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/string-lower.rst:16
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/string-lower.rst:20
 msgid ""

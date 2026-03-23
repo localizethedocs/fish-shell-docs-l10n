@@ -43,7 +43,7 @@ msgstr ""
 
 #: ../../../cmds/fish_should_add_to_history.rst:19
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_should_add_to_history.rst:21
 msgid ""

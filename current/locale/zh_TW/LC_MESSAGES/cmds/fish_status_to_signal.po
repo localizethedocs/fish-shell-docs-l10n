@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../cmds/fish_status_to_signal.rst:18
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_status_to_signal.rst:20
 msgid ""

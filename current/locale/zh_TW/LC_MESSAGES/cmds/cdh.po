@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/cdh.rst:12
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/cdh.rst:14
 msgid ""

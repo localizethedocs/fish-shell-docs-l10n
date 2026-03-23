@@ -69,7 +69,7 @@ msgstr ""
 #: ../../../terminal-compatibility.rst:30
 #: ../../../terminal-compatibility.rst:87
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../terminal-compatibility.rst:31
 msgid "``\\r``"

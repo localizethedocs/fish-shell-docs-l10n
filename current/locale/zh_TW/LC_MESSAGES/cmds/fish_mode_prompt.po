@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../cmds/fish_mode_prompt.rst:2
 msgid "fish_mode_prompt - define the appearance of the mode indicator"
-msgstr ""
+msgstr "fish_mode_prompt - 定義模式指示器的外觀"
 
 #: ../../../cmds/fish_mode_prompt.rst:5
 msgid "Synopsis"
@@ -27,7 +27,7 @@ msgstr "概要"
 
 #: ../../../cmds/fish_mode_prompt.rst:7
 msgid "fish_mode_prompt"
-msgstr ""
+msgstr "fish_mode_prompt"
 
 #: ../../../cmds/fish_mode_prompt.rst:13
 msgid ""
@@ -35,10 +35,13 @@ msgid ""
 "     echo -n \"$fish_bind_mode \"\n"
 "end"
 msgstr ""
+"function fish_mode_prompt\n"
+"     echo -n \"$fish_bind_mode \"\n"
+"end"
 
 #: ../../../cmds/fish_mode_prompt.rst:19
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_mode_prompt.rst:21
 msgid ""
@@ -67,6 +70,8 @@ msgid ""
 "function fish_mode_prompt; end\n"
 "funcsave fish_mode_prompt"
 msgstr ""
+"function fish_mode_prompt; end\n"
+"funcsave fish_mode_prompt"
 
 #: ../../../cmds/fish_mode_prompt.rst:30
 msgid ""

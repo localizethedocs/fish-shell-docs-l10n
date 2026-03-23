@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../cmds/not.rst:2
 msgid "not - negate the exit status of a job"
-msgstr ""
+msgstr "not - 反轉工作的退出狀態"
 
 #: ../../../cmds/not.rst:5
 msgid "Synopsis"
@@ -30,10 +30,12 @@ msgid ""
 "not COMMAND [OPTIONS ...]\n"
 "! COMMAND [OPTIONS ...]"
 msgstr ""
+"not COMMAND [OPTIONS ...]\n"
+"! COMMAND [OPTIONS ...]"
 
 #: ../../../cmds/not.rst:14
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/not.rst:16
 msgid ""
@@ -43,7 +45,7 @@ msgstr ""
 
 #: ../../../cmds/not.rst:18
 msgid "Some other shells only support the ``!`` alias."
-msgstr ""
+msgstr "有些其他外殼僅支援 ``!`` 別名。"
 
 #: ../../../cmds/not.rst:20
 msgid "The **-h** or **--help** option displays help about using this command."

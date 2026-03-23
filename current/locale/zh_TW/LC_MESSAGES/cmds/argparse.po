@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/argparse.rst:13
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/argparse.rst:15
 msgid ""
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../../cmds/argparse.rst:24
 msgid "Options"
-msgstr ""
+msgstr "選項"
 
 #: ../../../cmds/argparse.rst:26
 msgid ""
@@ -272,7 +272,7 @@ msgstr ""
 
 #: ../../../cmds/argparse.rst:84
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/argparse.rst:89
 msgid "Usage"

@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../../cmds/fish_opt.rst:13
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_opt.rst:15
 msgid ""
@@ -154,7 +154,7 @@ msgstr ""
 
 #: ../../../cmds/fish_opt.rst:45
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/fish_opt.rst:48
 msgid "Examples"

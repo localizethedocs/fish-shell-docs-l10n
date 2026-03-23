@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../../cmds/end.rst:22
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/end.rst:24
 msgid ""

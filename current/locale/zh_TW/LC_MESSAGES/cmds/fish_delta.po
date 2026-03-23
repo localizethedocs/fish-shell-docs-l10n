@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../cmds/fish_delta.rst:15
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_delta.rst:17
 msgid ""
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../../../cmds/fish_delta.rst:28
 msgid "Options"
-msgstr ""
+msgstr "選項"
 
 #: ../../../cmds/fish_delta.rst:30
 msgid "The following options are available:"
@@ -206,7 +206,7 @@ msgstr ""
 
 #: ../../../cmds/fish_delta.rst:79
 msgid "fish_delta --no-completions fish_git_prompt"
-msgstr ""
+msgstr "fish_delta --no-completions fish_git_prompt"
 
 #: ../../../cmds/fish_delta.rst:81
 msgid "which will only compare files called \"fish_git_prompt.fish\"."

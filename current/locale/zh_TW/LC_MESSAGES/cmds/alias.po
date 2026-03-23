@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../cmds/alias.rst:15
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/alias.rst:19
 msgid ""
@@ -91,7 +91,7 @@ msgstr ""
 
 #: ../../../cmds/alias.rst:36
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/alias.rst:38
 msgid "**-s** or **--save**"

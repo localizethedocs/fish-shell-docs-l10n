@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../cmds/count.rst:14
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/count.rst:16
 msgid ""

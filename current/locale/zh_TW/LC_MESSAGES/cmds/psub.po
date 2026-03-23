@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../cmds/psub.rst:12
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/psub.rst:14
 msgid ""
@@ -89,7 +89,7 @@ msgstr ""
 
 #: ../../../cmds/psub.rst:28
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/psub.rst:31
 msgid "Example"

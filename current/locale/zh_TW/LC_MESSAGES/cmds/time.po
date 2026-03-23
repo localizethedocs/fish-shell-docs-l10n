@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/time.rst:12
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/time.rst:16
 msgid ""

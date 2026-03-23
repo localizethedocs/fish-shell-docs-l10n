@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/fish_indent.rst:13
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_indent.rst:15
 msgid ""
@@ -132,4 +132,4 @@ msgstr ""
 
 #: ../../../cmds/fish_indent.rst:47
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
