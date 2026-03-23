@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../../cmds/fish_title.inc.rst:22
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_title.inc.rst:24
 msgid ""

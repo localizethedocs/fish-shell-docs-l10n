@@ -31,7 +31,7 @@ msgstr "wait [-n | --any] [PID | PROCESS_NAME] ..."
 
 #: ../../../cmds/wait.rst:12
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/wait.rst:16
 msgid ""

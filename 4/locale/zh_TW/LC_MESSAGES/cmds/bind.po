@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../../cmds/bind.rst:17
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/bind.rst:19
 msgid "``bind`` manages key bindings."
@@ -194,7 +194,7 @@ msgstr ""
 
 #: ../../../cmds/bind.rst:68
 msgid "Options"
-msgstr ""
+msgstr "選項"
 
 #: ../../../cmds/bind.rst:69
 msgid "The following options are available:"
@@ -304,7 +304,7 @@ msgstr ""
 
 #: ../../../cmds/bind.rst:112
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/bind.rst:117
 msgid "Special input functions"

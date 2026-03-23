@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../../cmds/path.rst:29
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/path.rst:31
 msgid "``path`` performs operations on paths."

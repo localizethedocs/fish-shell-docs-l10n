@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/fish_key_reader.rst:12
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_key_reader.rst:14
 msgid ""
@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../../../cmds/fish_key_reader.rst:22
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/fish_key_reader.rst:24
 msgid "**-V** or **--verbose**"

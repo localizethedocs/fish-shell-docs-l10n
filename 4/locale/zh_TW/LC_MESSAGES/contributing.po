@@ -737,6 +737,8 @@ msgid ""
 "echo (_ hello)\n"
 "_ \"goodbye\""
 msgstr ""
+"echo (_ hello)\n"
+"_ \"goodbye\""
 
 #: ../../../../CONTRIBUTING.rst:376
 msgid "Above should be written like this instead:"
@@ -747,6 +749,8 @@ msgid ""
 "echo (_ \"hello\")\n"
 "echo (_ \"goodbye\")"
 msgstr ""
+"echo (_ \"hello\")\n"
+"echo (_ \"goodbye\")"
 
 #: ../../../../CONTRIBUTING.rst:383
 msgid ""

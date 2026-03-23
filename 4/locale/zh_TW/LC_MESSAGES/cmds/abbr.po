@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../../cmds/abbr.rst:18
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/abbr.rst:20
 msgid ""

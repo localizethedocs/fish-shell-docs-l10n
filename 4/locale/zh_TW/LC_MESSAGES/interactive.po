@@ -244,6 +244,9 @@ msgid ""
 "    fish_config theme choose $my_theme\n"
 "end"
 msgstr ""
+"function apply-my-theme --on-variable=my_theme\n"
+"    fish_config theme choose $my_theme\n"
+"end"
 
 #: ../../../interactive.rst:96
 msgid ""
@@ -518,7 +521,7 @@ msgstr ""
 
 #: ../../../interactive.rst:212
 msgid "abbr -a gco git checkout"
-msgstr ""
+msgstr "abbr -a gco git checkout"
 
 #: ../../../interactive.rst:214
 msgid ""
@@ -639,7 +642,7 @@ msgstr ""
 
 #: ../../../interactive.rst:258
 msgid "set -U fish_greeting"
-msgstr ""
+msgstr "set -U fish_greeting"
 
 #: ../../../interactive.rst:260
 msgid ""
@@ -717,7 +720,7 @@ msgstr ""
 
 #: ../../../interactive.rst:296
 msgid "Command line editor"
-msgstr ""
+msgstr "命令行編輯器"
 
 #: ../../../interactive.rst:298
 msgid ""
@@ -748,6 +751,14 @@ msgid ""
 "end\n"
 "set -g fish_key_bindings fish_hybrid_key_bindings"
 msgstr ""
+"function fish_hybrid_key_bindings --description \\\n"
+"\"Vi-style bindings that inherit emacs-style bindings in all modes\"\n"
+"    for mode in default insert visual\n"
+"        fish_default_key_bindings -M $mode\n"
+"    end\n"
+"    fish_vi_key_bindings --no-erase\n"
+"end\n"
+"set -g fish_key_bindings fish_hybrid_key_bindings"
 
 #: ../../../interactive.rst:312
 msgid ""
@@ -1290,7 +1301,7 @@ msgstr ""
 msgid ""
 ":kbd:`g,g` / :kbd:`G` moves the cursor to the beginning/end of the "
 "commandline, respectively."
-msgstr ""
+msgstr ":kbd:`g,g` / :kbd:`G` 分別將游標移動至命令行的開頭/結尾。"
 
 #: ../../../interactive.rst:527
 msgid ""
@@ -1312,7 +1323,7 @@ msgstr ""
 
 #: ../../../interactive.rst:538
 msgid "Insert mode"
-msgstr ""
+msgstr "插入模式"
 
 #: ../../../interactive.rst:540
 msgid ":kbd:`escape` enters :ref:`command mode <vi-mode-command>`."

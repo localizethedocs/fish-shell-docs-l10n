@@ -31,7 +31,7 @@ msgstr "funced [OPTIONS] NAME"
 
 #: ../../../cmds/funced.rst:12
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/funced.rst:14
 msgid ""
@@ -98,7 +98,7 @@ msgstr ""
 
 #: ../../../cmds/funced.rst:32
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/funced.rst:35
 msgid "Example"

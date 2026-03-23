@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../../cmds/functions.rst:16
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/functions.rst:18
 msgid "``functions`` prints or erases functions."
@@ -198,7 +198,7 @@ msgstr ""
 
 #: ../../../cmds/functions.rst:68
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/functions.rst:70
 msgid ""

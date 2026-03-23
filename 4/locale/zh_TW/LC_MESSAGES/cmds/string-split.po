@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../../cmds/string-split.rst:19
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/string-split.rst:23
 msgid ""

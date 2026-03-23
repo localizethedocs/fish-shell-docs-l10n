@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../cmds/fish.rst:2
 msgid "fish - the friendly interactive shell"
-msgstr ""
+msgstr "fish - 友善的互動式外殼"
 
 #: ../../../cmds/fish.rst:5
 msgid "Synopsis"
@@ -30,10 +30,12 @@ msgid ""
 "fish [OPTIONS] [FILE [ARG ...]]\n"
 "fish [OPTIONS] [-c COMMAND [ARG ...]]"
 msgstr ""
+"fish [OPTIONS] [FILE [ARG ...]]\n"
+"fish [OPTIONS] [-c COMMAND [ARG ...]]"
 
 #: ../../../cmds/fish.rst:13
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish.rst:15
 msgid ""
@@ -51,7 +53,7 @@ msgstr ""
 
 #: ../../../cmds/fish.rst:23
 msgid "**-c** or **--command=COMMAND**"
-msgstr ""
+msgstr "**-c** 或 **--command=COMMAND**"
 
 #: ../../../cmds/fish.rst:24
 msgid ""
@@ -81,7 +83,7 @@ msgstr ""
 
 #: ../../../cmds/fish.rst:34
 msgid "**-o** or **--debug-output=DEBUG_FILE**"
-msgstr ""
+msgstr "**-o** 或 **--debug-output=DEBUG_FILE**"
 
 #: ../../../cmds/fish.rst:35
 msgid ""
@@ -99,7 +101,7 @@ msgstr ""
 
 #: ../../../cmds/fish.rst:41
 msgid "**-l** or **--login**"
-msgstr ""
+msgstr "**-l** 或 **--login**"
 
 #: ../../../cmds/fish.rst:42
 msgid "Act as if invoked as a login shell."
@@ -111,7 +113,7 @@ msgstr ""
 
 #: ../../../cmds/fish.rst:45
 msgid "Do not read configuration files."
-msgstr ""
+msgstr "不要讀取組態檔。"
 
 #: ../../../cmds/fish.rst:47
 msgid "**-n** or **--no-execute**"
@@ -218,7 +220,7 @@ msgstr ""
 
 #: ../../../cmds/fish.rst:90
 msgid "> fish --debug='complete,*history*'"
-msgstr ""
+msgstr "> fish --debug='complete,*history*'"
 
 #: ../../../cmds/fish.rst:92
 msgid ""
@@ -266,7 +268,7 @@ msgstr ""
 
 #: ../../../cmds/fish.rst:111
 msgid "fish /path/to/script.fish"
-msgstr ""
+msgstr "fish /path/to/script.fish"
 
 #: ../../../cmds/fish.rst:113
 msgid "To run some commands with fish::"
@@ -274,7 +276,7 @@ msgstr ""
 
 #: ../../../cmds/fish.rst:115
 msgid "fish -c 'echo Hi there!'"
-msgstr ""
+msgstr "fish -c 'echo Hi there!'"
 
 #: ../../../cmds/fish.rst:117
 msgid "You can also pass arguments to those commands::"

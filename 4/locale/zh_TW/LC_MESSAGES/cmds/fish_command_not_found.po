@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../cmds/fish_command_not_found.rst:15
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_command_not_found.rst:17
 msgid ""

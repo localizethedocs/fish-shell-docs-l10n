@@ -38,14 +38,24 @@ msgid ""
 "set (-q | --query) [-Uflg] [-xu] [NAME][[INDEX]] ...]\n"
 "set (-S | --show) (-L | --long) [NAME ...]"
 msgstr ""
+"set\n"
+"set (-f | --function) (-l | --local) (-g | --global) (-U | --universal) [--"
+"no-event]\n"
+"set [-Uflg] NAME [VALUE ...]\n"
+"set [-Uflg] NAME[[INDEX ...]] [VALUE ...]\n"
+"set (-x | --export) (-u | --unexport) [-Uflg] NAME [VALUE ...]\n"
+"set (-a | --append) (-p | --prepend) [-Uflg] NAME VALUE ...\n"
+"set (-e | --erase) [-Uflg] [-xu] [NAME][[INDEX]] ...]\n"
+"set (-q | --query) [-Uflg] [-xu] [NAME][[INDEX]] ...]\n"
+"set (-S | --show) (-L | --long) [NAME ...]"
 
 #: ../../../cmds/set.rst:20
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/set.rst:22
 msgid "``set`` manipulates :ref:`shell variables <variables>`."
-msgstr ""
+msgstr "``set`` 會操縱\\ :ref:`外殼變數 <variables>`\\ 。"
 
 #: ../../../cmds/set.rst:24
 msgid ""
@@ -96,7 +106,7 @@ msgstr ""
 
 #: ../../../cmds/set.rst:43
 msgid "**-f** or **--function**"
-msgstr ""
+msgstr "**-f** 或 **--function**"
 
 #: ../../../cmds/set.rst:44
 msgid ""
@@ -267,7 +277,7 @@ msgstr ""
 
 #: ../../../cmds/set.rst:115
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/set.rst:117
 msgid ""
