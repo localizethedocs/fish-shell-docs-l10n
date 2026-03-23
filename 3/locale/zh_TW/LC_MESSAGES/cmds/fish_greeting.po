@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../../../cmds/fish_greeting.rst:21
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_greeting.rst:23
 msgid ""
@@ -70,7 +70,7 @@ msgstr ""
 
 #: ../../../cmds/fish_greeting.rst:34
 msgid "set -U fish_greeting"
-msgstr ""
+msgstr "set -U fish_greeting"
 
 #: ../../../cmds/fish_greeting.rst:36
 msgid "or ``set -g fish_greeting`` in :ref:`config.fish <configuration>`."

@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/begin.rst:14
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/begin.rst:16
 msgid "``begin`` is used to create a new block of code."

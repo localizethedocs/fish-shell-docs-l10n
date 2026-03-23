@@ -322,7 +322,7 @@ msgstr ""
 
 #: ../../../faq.rst:147
 msgid "set -U fish_greeting"
-msgstr ""
+msgstr "set -U fish_greeting"
 
 #: ../../../faq.rst:149
 msgid "Or if you prefer not to use a universal variable, use::"

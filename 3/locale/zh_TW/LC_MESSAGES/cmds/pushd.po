@@ -31,7 +31,7 @@ msgstr "pushd DIRECTORY"
 
 #: ../../../cmds/pushd.rst:14
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/pushd.rst:16
 msgid ""

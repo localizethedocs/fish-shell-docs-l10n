@@ -84,7 +84,7 @@ msgstr ""
 
 #: ../../../completions.rst:25
 msgid "complete -c myprog -s o -l output -ra \"yes no\""
-msgstr ""
+msgstr "complete -c myprog -s o -l output -ra \"yes no\""
 
 #: ../../../completions.rst:27
 msgid "which offers yes/no in these cases::"
@@ -121,6 +121,8 @@ msgid ""
 "complete -c myprog -f --condition '__fish_seen_subcommand_from "
 "somesubcommand'"
 msgstr ""
+"complete -c myprog -f --condition '__fish_seen_subcommand_from "
+"somesubcommand'"
 
 #: ../../../completions.rst:44
 msgid "or you can disable file completions globally for the command::"
@@ -128,7 +130,7 @@ msgstr ""
 
 #: ../../../completions.rst:46
 msgid "complete -c myprog -f"
-msgstr ""
+msgstr "complete -c myprog -f"
 
 #: ../../../completions.rst:48
 msgid ""

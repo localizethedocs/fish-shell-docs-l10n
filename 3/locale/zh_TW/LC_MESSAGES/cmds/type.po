@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/type.rst:14
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/type.rst:16
 msgid ""
@@ -120,7 +120,7 @@ msgstr ""
 
 #: ../../../cmds/type.rst:42
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/type.rst:44
 msgid ""

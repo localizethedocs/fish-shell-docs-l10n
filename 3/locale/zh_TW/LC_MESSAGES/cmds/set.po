@@ -38,11 +38,11 @@ msgstr ""
 
 #: ../../../cmds/set.rst:20
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/set.rst:22
 msgid "``set`` manipulates :ref:`shell variables <variables>`."
-msgstr ""
+msgstr "``set`` 會操縱\\ :ref:`外殼變數 <variables>`\\ 。"
 
 #: ../../../cmds/set.rst:24
 msgid ""
@@ -93,7 +93,7 @@ msgstr ""
 
 #: ../../../cmds/set.rst:43
 msgid "**-f** or **--function**"
-msgstr ""
+msgstr "**-f** 或 **--function**"
 
 #: ../../../cmds/set.rst:44
 msgid ""
@@ -250,7 +250,7 @@ msgstr ""
 
 #: ../../../cmds/set.rst:109
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/set.rst:111
 msgid ""

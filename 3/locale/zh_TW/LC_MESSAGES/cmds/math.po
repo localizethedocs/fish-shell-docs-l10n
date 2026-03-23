@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/math.rst:15
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/math.rst:17
 msgid ""
@@ -113,7 +113,7 @@ msgstr ""
 
 #: ../../../cmds/math.rst:53
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/math.rst:56
 msgid "Return Values"

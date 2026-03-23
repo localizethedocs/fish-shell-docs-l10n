@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../cmds/fg.rst:4
 msgid "fg - bring job to foreground"
-msgstr ""
+msgstr "fg - 將工作帶到前景"
 
 #: ../../../cmds/fg.rst:7
 msgid "Synopsis"
@@ -27,11 +27,11 @@ msgstr "概要"
 
 #: ../../../cmds/fg.rst:9
 msgid "fg [PID]"
-msgstr ""
+msgstr "fg [PID]"
 
 #: ../../../cmds/fg.rst:14
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fg.rst:16
 msgid ""
@@ -41,6 +41,10 @@ msgid ""
 "is put in the foreground. If ``PID`` is specified, the job containing a "
 "process with the specified process ID is put in the foreground."
 msgstr ""
+"**fg** 內建命令會將指定的\\ :ref:`工作 <syntax-job-control>`\\ 帶到前景，如果"
+"該工作已停止則會恢復執行。當前景工作執行時，fish 會暫停。若未指定任何工作，則"
+"會將最後使用的工作置於前景。若指定了 ``PID``，則會將包含指定進程 ID 的進程所"
+"屬的工作帶到前景。"
 
 #: ../../../cmds/fg.rst:21
 msgid ""
@@ -48,10 +52,12 @@ msgid ""
 "``fg``. A *PID* of the format **%1** will foreground job 1. Job numbers can "
 "be seen in the output of :doc:`jobs <jobs>`."
 msgstr ""
+"為了與其他外殼相容，``fg`` 支援工作展開語法。格式為 **%1** 的 PID 會將工作 1 "
+"帶到前景。工作編號可在 :doc:`jobs <jobs>` 命令的輸出中查看。"
 
 #: ../../../cmds/fg.rst:24
 msgid "The **--help** or **-h** option displays help about using this command."
-msgstr ""
+msgstr "**--help** 或 **-h** 選項會顯示關於此命令的幫助資訊。"
 
 #: ../../../cmds/fg.rst:27
 msgid "Example"
@@ -59,8 +65,8 @@ msgstr "範例"
 
 #: ../../../cmds/fg.rst:29
 msgid "``fg`` will put the last job in the foreground."
-msgstr ""
+msgstr "``fg`` 會將最後一個工作放到前景執行。"
 
 #: ../../../cmds/fg.rst:31
 msgid "``fg %3`` will put job 3 into the foreground."
-msgstr ""
+msgstr "``fg %3`` 會將工作 3 放到前景執行。"

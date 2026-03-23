@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../cmds/builtin.rst:16
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/builtin.rst:18
 msgid ""
@@ -70,7 +70,7 @@ msgstr ""
 
 #: ../../../cmds/builtin.rst:29
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/builtin.rst:32
 msgid "Example"

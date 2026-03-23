@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../cmds/fish_config.rst:16
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_config.rst:18
 msgid "``fish_config`` is used to configure fish."

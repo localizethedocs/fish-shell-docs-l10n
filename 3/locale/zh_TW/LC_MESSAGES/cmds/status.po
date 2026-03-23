@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../../cmds/status.rst:34
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/status.rst:36
 msgid ""

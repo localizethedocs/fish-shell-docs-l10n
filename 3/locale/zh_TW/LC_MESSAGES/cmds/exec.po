@@ -31,7 +31,7 @@ msgstr "exec COMMAND"
 
 #: ../../../cmds/exec.rst:14
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/exec.rst:16
 msgid ""

@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/prompt_pwd.rst:14
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/prompt_pwd.rst:16
 msgid ""
@@ -63,7 +63,7 @@ msgstr ""
 
 #: ../../../cmds/prompt_pwd.rst:25
 msgid "Options"
-msgstr ""
+msgstr "選項"
 
 #: ../../../cmds/prompt_pwd.rst:27
 msgid "**-d** or **--dir-length** *MAX*"
@@ -91,7 +91,7 @@ msgstr ""
 
 #: ../../../cmds/prompt_pwd.rst:34
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/prompt_pwd.rst:37
 msgid "Examples"

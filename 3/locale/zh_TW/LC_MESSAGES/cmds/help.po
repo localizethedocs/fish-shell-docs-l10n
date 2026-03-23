@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/help.rst:14
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/help.rst:16
 msgid "``help`` displays the fish help documentation."

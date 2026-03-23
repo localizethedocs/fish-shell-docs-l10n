@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../../cmds/break.rst:18
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/break.rst:20
 msgid ""

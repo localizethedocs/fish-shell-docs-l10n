@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../cmds/string-match.rst:19
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/string-match.rst:23
 msgid ""

@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../cmds/complete.rst:15
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/complete.rst:17
 msgid "``complete`` defines, removes or lists completions for a command."
@@ -202,7 +202,7 @@ msgstr ""
 
 #: ../../../cmds/complete.rst:73
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/complete.rst:75
 msgid ""

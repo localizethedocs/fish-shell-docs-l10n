@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../cmds/case.rst:17
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/case.rst:19
 msgid ""

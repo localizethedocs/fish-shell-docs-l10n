@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../cmds/fish_git_prompt.rst:4
 msgid "fish_git_prompt - output git information for use in a prompt"
-msgstr ""
+msgstr "fish_git_prompt - 用於提示字元中輸出 git 資訊"
 
 #: ../../../cmds/fish_git_prompt.rst:7
 msgid "Synopsis"
@@ -35,10 +35,13 @@ msgid ""
 "     printf '%s' $PWD (fish_git_prompt) ' $ '\n"
 "end"
 msgstr ""
+"function fish_prompt\n"
+"     printf '%s' $PWD (fish_git_prompt) ' $ '\n"
+"end"
 
 #: ../../../cmds/fish_git_prompt.rst:21
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_git_prompt.rst:23
 msgid ""
@@ -129,7 +132,7 @@ msgstr "顯示領先/落後（+/-）上游的送交數量"
 
 #: ../../../cmds/fish_git_prompt.rst:46
 msgid "``name``"
-msgstr ""
+msgstr "``name``"
 
 #: ../../../cmds/fish_git_prompt.rst:47
 msgid "if verbose, then also show the upstream abbrev name"
@@ -137,7 +140,7 @@ msgstr ""
 
 #: ../../../cmds/fish_git_prompt.rst:48
 msgid "``informative``"
-msgstr ""
+msgstr "``informative``"
 
 #: ../../../cmds/fish_git_prompt.rst:49
 msgid ""
@@ -147,23 +150,23 @@ msgstr ""
 
 #: ../../../cmds/fish_git_prompt.rst:50
 msgid "``git``"
-msgstr ""
+msgstr "``git``"
 
 #: ../../../cmds/fish_git_prompt.rst:51
 msgid "always compare HEAD to @{upstream}"
-msgstr ""
+msgstr "始終將 HEAD 與 @{upstream} 進行比較"
 
 #: ../../../cmds/fish_git_prompt.rst:52
 msgid "``svn``"
-msgstr ""
+msgstr "``svn``"
 
 #: ../../../cmds/fish_git_prompt.rst:53
 msgid "always compare HEAD to your SVN upstream"
-msgstr ""
+msgstr "始終將 HEAD 與您的 SVN 上游進行比較"
 
 #: ../../../cmds/fish_git_prompt.rst:54
 msgid "``none``"
-msgstr ""
+msgstr "``none``"
 
 #: ../../../cmds/fish_git_prompt.rst:55
 msgid "disables (useful with informative status)"
@@ -209,7 +212,7 @@ msgstr ""
 
 #: ../../../cmds/fish_git_prompt.rst:67
 msgid "``describe``"
-msgstr ""
+msgstr "``describe``"
 
 #: ../../../cmds/fish_git_prompt.rst:68
 msgid "relative to older annotated tag, such as ``(v1.6.3.1-13-gdd42c2f)``"
@@ -217,7 +220,7 @@ msgstr ""
 
 #: ../../../cmds/fish_git_prompt.rst:69
 msgid "``default``"
-msgstr ""
+msgstr "``default``"
 
 #: ../../../cmds/fish_git_prompt.rst:70
 msgid "an exactly matching tag (``(develop)``)"

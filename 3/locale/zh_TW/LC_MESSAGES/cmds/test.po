@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../cmds/test.rst:16
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/test.rst:20
 msgid ""

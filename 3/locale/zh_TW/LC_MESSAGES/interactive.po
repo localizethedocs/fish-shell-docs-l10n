@@ -492,7 +492,7 @@ msgstr ""
 
 #: ../../../interactive.rst:189
 msgid "abbr -a gco git checkout"
-msgstr ""
+msgstr "abbr -a gco git checkout"
 
 #: ../../../interactive.rst:191
 msgid ""
@@ -615,7 +615,7 @@ msgstr ""
 
 #: ../../../interactive.rst:241
 msgid "set -U fish_greeting"
-msgstr ""
+msgstr "set -U fish_greeting"
 
 #: ../../../interactive.rst:243
 msgid ""
@@ -672,7 +672,7 @@ msgstr ""
 
 #: ../../../interactive.rst:269
 msgid "Command line editor"
-msgstr ""
+msgstr "命令行編輯器"
 
 #: ../../../interactive.rst:271
 msgid ""
@@ -703,6 +703,14 @@ msgid ""
 "end\n"
 "set -g fish_key_bindings fish_hybrid_key_bindings"
 msgstr ""
+"function fish_hybrid_key_bindings --description \\\n"
+"\"Vi-style bindings that inherit emacs-style bindings in all modes\"\n"
+"    for mode in default insert visual\n"
+"        fish_default_key_bindings -M $mode\n"
+"    end\n"
+"    fish_vi_key_bindings --no-erase\n"
+"end\n"
+"set -g fish_key_bindings fish_hybrid_key_bindings"
 
 #: ../../../interactive.rst:285
 msgid ""
@@ -1231,7 +1239,7 @@ msgstr ""
 
 #: ../../../interactive.rst:488
 msgid "Insert mode"
-msgstr ""
+msgstr "插入模式"
 
 #: ../../../interactive.rst:490
 msgid ":kbd:`Escape` enters :ref:`command mode <vi-mode-command>`."

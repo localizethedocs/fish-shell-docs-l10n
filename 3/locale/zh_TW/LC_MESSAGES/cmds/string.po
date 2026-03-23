@@ -61,7 +61,7 @@ msgstr ""
 
 #: ../../../cmds/string.rst:41
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/string.rst:43
 msgid "``string`` performs operations on strings."

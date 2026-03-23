@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/dirs.rst:14
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/dirs.rst:16
 msgid ""
@@ -57,7 +57,7 @@ msgstr ""
 
 #: ../../../cmds/dirs.rst:24
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/dirs.rst:26
 msgid "``dirs`` does not accept any arguments."

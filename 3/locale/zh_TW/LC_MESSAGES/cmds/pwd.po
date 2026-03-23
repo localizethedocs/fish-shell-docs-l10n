@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../cmds/pwd.rst:16
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/pwd.rst:20
 msgid ""
@@ -73,7 +73,7 @@ msgstr ""
 
 #: ../../../cmds/pwd.rst:35
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/pwd.rst:38
 msgid "See Also"

@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../cmds/string-escape.rst:17
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/string-escape.rst:21
 msgid ""

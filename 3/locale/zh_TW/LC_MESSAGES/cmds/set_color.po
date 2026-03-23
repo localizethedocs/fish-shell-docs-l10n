@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/set_color.rst:14
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/set_color.rst:16
 msgid ""
@@ -151,7 +151,7 @@ msgstr ""
 
 #: ../../../cmds/set_color.rst:53
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/set_color.rst:55
 msgid ""

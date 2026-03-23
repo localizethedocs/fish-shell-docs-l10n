@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../cmds/not.rst:4
 msgid "not - negate the exit status of a job"
-msgstr ""
+msgstr "not - 反轉工作的退出狀態"
 
 #: ../../../cmds/not.rst:7
 msgid "Synopsis"
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/not.rst:15
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/not.rst:17
 msgid ""

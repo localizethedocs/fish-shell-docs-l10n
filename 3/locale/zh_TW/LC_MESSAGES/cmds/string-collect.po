@@ -32,7 +32,7 @@ msgstr ""
 
 #: ../../../cmds/string-collect.rst:16
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/string-collect.rst:20
 msgid ""

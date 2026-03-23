@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../cmds/string-join.rst:15
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/string-join.rst:19
 msgid ""

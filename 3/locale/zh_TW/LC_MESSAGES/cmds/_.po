@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/_.rst:14
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/_.rst:16
 msgid "``_`` translates its arguments into the current language, if possible."
@@ -57,7 +57,7 @@ msgstr ""
 
 #: ../../../cmds/_.rst:26
 msgid "Options"
-msgstr ""
+msgstr "選項"
 
 #: ../../../cmds/_.rst:28
 msgid "``_`` takes no options."

@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../cmds/fish_vi_key_bindings.rst:15
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_vi_key_bindings.rst:17
 msgid "``fish_vi_key_bindings`` sets the vi key bindings for ``fish`` shell."

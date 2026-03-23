@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../cmds/cd.rst:14
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/cd.rst:15
 msgid "``cd`` changes the current working directory."

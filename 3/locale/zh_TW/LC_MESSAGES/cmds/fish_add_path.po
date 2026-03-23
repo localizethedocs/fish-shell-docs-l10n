@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../cmds/fish_add_path.rst:5
 msgid "fish_add_path - add to the path"
-msgstr ""
+msgstr "fish_add_path - 增添路徑"
 
 #: ../../../cmds/fish_add_path.rst:8
 msgid "Synopsis"
@@ -32,10 +32,14 @@ msgid ""
 "--move)] [(-a | --append) | (-p | --prepend)] [(-v | --verbose) | (-n | --"
 "dry-run)] PATHS ..."
 msgstr ""
+"fish_add_path path ...\n"
+"fish_add_path [(-g | --global) | (-U | --universal) | (-P | --path)] [(-m | "
+"--move)] [(-a | --append) | (-p | --prepend)] [(-v | --verbose) | (-n | --"
+"dry-run)] PATHS ..."
 
 #: ../../../cmds/fish_add_path.rst:17
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_add_path.rst:19
 msgid ""
@@ -84,11 +88,11 @@ msgstr ""
 
 #: ../../../cmds/fish_add_path.rst:32
 msgid "Options"
-msgstr ""
+msgstr "選項"
 
 #: ../../../cmds/fish_add_path.rst:34
 msgid "**-a** or **--append**"
-msgstr ""
+msgstr "**-a** 或 **--append**"
 
 #: ../../../cmds/fish_add_path.rst:35
 msgid "Add components to the *end* of the variable."
@@ -160,7 +164,7 @@ msgstr ""
 
 #: ../../../cmds/fish_add_path.rst:59
 msgid "Displays help about using this command."
-msgstr ""
+msgstr "顯示此指令的幫助資訊。"
 
 #: ../../../cmds/fish_add_path.rst:61
 msgid ""

@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../../cmds/fish_right_prompt.rst:17
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../../cmds/fish_right_prompt.rst:19
 msgid ""
