@@ -60,6 +60,7 @@ msgstr ""
 msgid ""
 "Fish is available on GitHub, at https://github.com/fish-shell/fish-shell."
 msgstr ""
+"Fish 可以在 GitHub 上取得，網址為 https://github.com/fish-shell/fish-shell。"
 
 #: ../../../../CONTRIBUTING.rst:26
 msgid ""
@@ -69,19 +70,22 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:29
 msgid "git clone https://github.com/<USERNAME>/fish-shell.git"
-msgstr ""
+msgstr "git clone https://github.com/<USERNAME>/fish-shell.git"
 
 #: ../../../../CONTRIBUTING.rst:31
 msgid ""
 "This will create a copy of the fish repository in the directory fish-shell "
 "in your current working directory."
 msgstr ""
+"這將在您目前的工作目錄中，於 fish-shell 目錄內建立一份 fish 儲存庫的副本。"
 
 #: ../../../../CONTRIBUTING.rst:33
 msgid ""
 "Also, for most changes you want to run the tests and so you'd get a setup to "
 "compile fish. For that, you'll require:"
 msgstr ""
+"此外，對於大多數變更，您會希望執行測試，因此您需要設定編譯 fish 的環境。為"
+"此，您需要："
 
 #: ../../../../CONTRIBUTING.rst:36
 msgid "Rust - when in doubt, try rustup"
@@ -89,7 +93,7 @@ msgstr "Rust - 當有疑問時，試試 rustup"
 
 #: ../../../../CONTRIBUTING.rst:37
 msgid "CMake"
-msgstr ""
+msgstr "CMake"
 
 #: ../../../../CONTRIBUTING.rst:38
 msgid ""
@@ -250,7 +254,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:105
 msgid "Contributing documentation"
-msgstr ""
+msgstr "貢獻文件"
 
 #: ../../../../CONTRIBUTING.rst:107
 msgid ""
@@ -258,10 +262,12 @@ msgid ""
 "Text and built with Sphinx. The builtins and various functions shipped with "
 "fish are documented in ``doc_src/cmds/``."
 msgstr ""
+"文件儲存在 `doc_src/` 目錄中，採用 ReStructured Text 格式撰寫，並使用 Sphinx "
+"建置。fish 內建的命令與各項功能則記載於 `doc_src/cmds/` 目錄中。"
 
 #: ../../../../CONTRIBUTING.rst:110
 msgid "To build an HTML version of the docs locally, run::"
-msgstr ""
+msgstr "若要在本機建置 HTML 版本的文件，請執行：\\ ::"
 
 #: ../../../../CONTRIBUTING.rst:112
 msgid "cargo xtask html-docs"
