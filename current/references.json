@@ -16,9 +16,9 @@
       "branch" : "master",
       "commit" : 
       {
-        "date" : "2026-03-10 09:56:05 +0800",
-        "hash" : "dbb6ae6cf53948edd90f78e0dc1e88f7e331579e",
-        "title" : "Update changelog"
+        "date" : "2026-04-05 13:15:47 +0800",
+        "hash" : "f3f675b4ccdf72f68d0f539857cf08eb4205244e",
+        "title" : "Standardized error messages: constant names"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "master",
       "commit" : 
       {
-        "date" : "2026-03-10 09:56:05 +0800",
-        "hash" : "dbb6ae6cf53948edd90f78e0dc1e88f7e331579e",
-        "title" : "Update changelog"
+        "date" : "2026-04-05 13:15:47 +0800",
+        "hash" : "f3f675b4ccdf72f68d0f539857cf08eb4205244e",
+        "title" : "Standardized error messages: constant names"
       }
     }
   },

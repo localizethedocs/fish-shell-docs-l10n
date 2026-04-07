@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-11 03:47+0000\n"
+"POT-Creation-Date: 2026-04-06 09:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,25 +60,33 @@ msgstr ""
 
 #: ../../../cmds/fish_prompt.rst:27
 msgid ""
+"If :envvar:`SHELL_PROMPT_PREFIX` or :envvar:`SHELL_PROMPT_SUFFIX` are set, "
+"they are automatically prepended and appended to the left prompt. This "
+"applies to all prompts regardless of whether ``fish_prompt`` has been "
+"customized."
+msgstr ""
+
+#: ../../../cmds/fish_prompt.rst:29
+msgid ""
 "``fish`` ships with a number of example prompts that can be chosen with the "
 "``fish_config`` command."
 msgstr ""
 
-#: ../../../cmds/fish_prompt.rst:31
+#: ../../../cmds/fish_prompt.rst:33
 msgid "Example"
 msgstr "範例"
 
-#: ../../../cmds/fish_prompt.rst:33
+#: ../../../cmds/fish_prompt.rst:35
 msgid "A simple prompt:"
 msgstr ""
 
-#: ../../../cmds/fish_prompt.rst:39
+#: ../../../cmds/fish_prompt.rst:41
 msgid ""
 "function fish_prompt -d \"Write out the prompt\"\n"
 "    # This shows up as USER@HOST /home/user/ >, with the directory colored\n"
 "    # $USER and $hostname are set by fish, so you can just use them\n"
 "    # instead of using `whoami` and `hostname`\n"
 "    printf '%s@%s %s%s%s > ' $USER $hostname \\\n"
-"        (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)\n"
+"        (set_color $fish_color_cwd) (prompt_pwd) (set_color --reset)\n"
 "end"
 msgstr ""
