@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell 4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-11 04:06+0000\n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -77,14 +78,14 @@ msgstr ""
 #: ../../../terminal-compatibility.rst:32
 #: ../../../terminal-compatibility.rst:70
 #: ../../../terminal-compatibility.rst:73
-#: ../../../terminal-compatibility.rst:175
-#: ../../../terminal-compatibility.rst:180
-#: ../../../terminal-compatibility.rst:200
-#: ../../../terminal-compatibility.rst:207
+#: ../../../terminal-compatibility.rst:178
+#: ../../../terminal-compatibility.rst:183
+#: ../../../terminal-compatibility.rst:203
 #: ../../../terminal-compatibility.rst:210
 #: ../../../terminal-compatibility.rst:213
 #: ../../../terminal-compatibility.rst:216
-#: ../../../terminal-compatibility.rst:254
+#: ../../../terminal-compatibility.rst:219
+#: ../../../terminal-compatibility.rst:257
 msgid "n/a"
 msgstr ""
 
@@ -325,8 +326,8 @@ msgstr ""
 #: ../../../terminal-compatibility.rst:115
 #: ../../../terminal-compatibility.rst:118
 #: ../../../terminal-compatibility.rst:142
-#: ../../../terminal-compatibility.rst:162
 #: ../../../terminal-compatibility.rst:165
+#: ../../../terminal-compatibility.rst:168
 msgid "Su"
 msgstr ""
 
@@ -483,38 +484,46 @@ msgid "Select background color from 24-bit RGB colors."
 msgstr ""
 
 #: ../../../terminal-compatibility.rst:158
-msgid "``\\e[49m``"
+msgid "``\\e[39m``"
 msgstr ""
 
 #: ../../../terminal-compatibility.rst:160
-msgid "Reset background color to the terminal's default."
+msgid "Reset foreground color to the terminal's default."
 msgstr ""
 
 #: ../../../terminal-compatibility.rst:161
-msgid "``\\e[58:2:: Ps : Ps : Ps m`` (note: colons not semicolons)"
+msgid "``\\e[49m``"
 msgstr ""
 
 #: ../../../terminal-compatibility.rst:163
-msgid "Select underline color from 24-bit RGB colors."
+msgid "Reset background color to the terminal's default."
 msgstr ""
 
 #: ../../../terminal-compatibility.rst:164
-msgid "``\\e[59m``"
+msgid "``\\e[58:2:: Ps : Ps : Ps m`` (note: colons not semicolons)"
 msgstr ""
 
 #: ../../../terminal-compatibility.rst:166
-msgid "Reset underline color to the default (follow the foreground color)."
+msgid "Select underline color from 24-bit RGB colors."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:167
+msgid "``\\e[59m``"
 msgstr ""
 
 #: ../../../terminal-compatibility.rst:169
+msgid "Reset underline color to the default (follow the foreground color)."
+msgstr ""
+
+#: ../../../terminal-compatibility.rst:172
 msgid "``\\e[ Ps S``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:170
+#: ../../../terminal-compatibility.rst:173
 msgid "indn"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:171
+#: ../../../terminal-compatibility.rst:174
 msgid ""
 "Scroll up the content (not the viewport) Ps lines (called ``SCROLL UP`` / "
 "``SU`` by ECMA-48 and \"scroll forward\" by terminfo). When fish detects "
@@ -524,26 +533,26 @@ msgid ""
 "scrollback-push>` special input function."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:174
+#: ../../../terminal-compatibility.rst:177
 msgid "``\\e[= Ps u``, ``\\e[? Ps u``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:176
+#: ../../../terminal-compatibility.rst:179
 msgid "Enable the kitty keyboard protocol."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:179
+#: ../../../terminal-compatibility.rst:182
 msgid "``\\e[6n``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:181
+#: ../../../terminal-compatibility.rst:184
 msgid ""
 "Request cursor position report. The response must be of the form ``\\e[ Ps ; "
 "Ps R`` where the first parameter is the row number and the second parameter "
 "is the column number. Both start at 1."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:187
+#: ../../../terminal-compatibility.rst:190
 msgid ""
 "This is used for truncating multiline autosuggestions at the screen's bottom "
 "edge, by the :ref:`scrollback-push <special-input-functions-scrollback-"
@@ -551,109 +560,109 @@ msgid ""
 "133 :ref:`click_events <term-compat-osc-133>` feature."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:190
+#: ../../../terminal-compatibility.rst:193
 msgid "``\\e[ \\x20 q``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:191
+#: ../../../terminal-compatibility.rst:194
 msgid "Se"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:192
+#: ../../../terminal-compatibility.rst:195
 msgid ""
 "Reset cursor style to the terminal's default. This is not used as of today "
 "but may be in future."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:194
+#: ../../../terminal-compatibility.rst:197
 msgid "``\\e[ Ps \\x20 q``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:195
+#: ../../../terminal-compatibility.rst:198
 msgid "Ss"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:196
+#: ../../../terminal-compatibility.rst:199
 msgid ""
 "Set cursor style (DECSCUSR); Ps is 2, 4 or 6 for block, underscore or line "
 "shape."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:199
+#: ../../../terminal-compatibility.rst:202
 msgid "``\\e[ Ps q``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:201
+#: ../../../terminal-compatibility.rst:204
 msgid ""
 "Request terminal name and version (XTVERSION). This is only used for "
 "temporary workarounds for incompatible terminals."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:203
+#: ../../../terminal-compatibility.rst:206
 msgid "``\\e[?25h``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:204
+#: ../../../terminal-compatibility.rst:207
 msgid "cvvis"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:205
+#: ../../../terminal-compatibility.rst:208
 msgid "Enable cursor visibility (DECTCEM)."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:206
+#: ../../../terminal-compatibility.rst:209
 msgid "``\\e[?1004h``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:208
+#: ../../../terminal-compatibility.rst:211
 msgid "Enable focus reporting."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:209
+#: ../../../terminal-compatibility.rst:212
 msgid "``\\e[?1004l``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:211
+#: ../../../terminal-compatibility.rst:214
 msgid "Disable focus reporting."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:212
+#: ../../../terminal-compatibility.rst:215
 msgid "``\\e[?1049h``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:214
+#: ../../../terminal-compatibility.rst:217
 msgid "Enable alternate screen buffer."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:215
+#: ../../../terminal-compatibility.rst:218
 msgid "``\\e[?1049l``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:217
+#: ../../../terminal-compatibility.rst:220
 msgid "Disable alternate screen buffer."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:218
+#: ../../../terminal-compatibility.rst:221
 msgid "``\\e[?2004h``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:220
+#: ../../../terminal-compatibility.rst:223
 msgid "Enable bracketed paste."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:221
+#: ../../../terminal-compatibility.rst:224
 msgid "``\\e[?2004l``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:223
+#: ../../../terminal-compatibility.rst:226
 msgid "Disable bracketed paste."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:224
+#: ../../../terminal-compatibility.rst:227
 msgid "``\\e[?2031h``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:226
+#: ../../../terminal-compatibility.rst:229
 msgid ""
 "Enable unsolicited `color theme reporting <https://contour-terminal.org/vt-"
 "extensions/color-palette-update-notifications/>`_. When enabled, the "
@@ -662,69 +671,69 @@ msgid ""
 "<term-compat-query-background-color>`."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:229
+#: ../../../terminal-compatibility.rst:232
 msgid "``\\e[?2031l``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:231
+#: ../../../terminal-compatibility.rst:234
 msgid "Disable unsolicited color theme reporting."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:234
+#: ../../../terminal-compatibility.rst:237
 msgid "``\\e]0; Pt \\e\\\\``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:235
 #: ../../../terminal-compatibility.rst:238
+#: ../../../terminal-compatibility.rst:241
 msgid "ts"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:236
+#: ../../../terminal-compatibility.rst:239
 msgid ""
 "Set terminal window title (OSC 0). Used in :doc:`fish_title <cmds/"
 "fish_title>`."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:237
+#: ../../../terminal-compatibility.rst:240
 msgid "``\\e]2; Pt \\e\\\\``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:239
+#: ../../../terminal-compatibility.rst:242
 msgid ""
 "Set terminal tab title (OSC 1). Used in :doc:`fish_tab_title <cmds/"
 "fish_tab_title>`."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:240
+#: ../../../terminal-compatibility.rst:243
 msgid "``\\e]7;file:// Pt / Pt \\e\\\\``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:242
+#: ../../../terminal-compatibility.rst:245
 msgid ""
 "Report working directory (OSC 7). Since the terminal may be running on a "
 "different system than a (remote) shell, the hostname (first parameter) will "
 "*not* be ``localhost``."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:247
+#: ../../../terminal-compatibility.rst:250
 msgid "``\\e]8;; Pt \\e\\\\``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:249
+#: ../../../terminal-compatibility.rst:252
 msgid ""
 "Create a `hyperlink (OSC 8) <https://gist.github.com/egmontkob/"
 "eb114294efbcd5adb1944c9f3cb5feda>`_. This is used in fish's man pages."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:253
+#: ../../../terminal-compatibility.rst:256
 msgid "``\\e]11;?\\e\\\\``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:255
+#: ../../../terminal-compatibility.rst:258
 msgid "Query background color."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:257
+#: ../../../terminal-compatibility.rst:260
 msgid ""
 "A valid response would be of the form ``\\e]11;rgb: Pt / Pt / Pt \\e\\\\`` "
 "or ``\\e]11;rgba: Pt / Pt / Pt / Pt\\e\\\\`` where the first three "
@@ -732,28 +741,28 @@ msgid ""
 "and green components."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:260
+#: ../../../terminal-compatibility.rst:263
 msgid ""
 "This is used to populate :envvar:`fish_terminal_color_theme`, which is used "
 "to select a :ref:`theme variant <fish-config-theme-files>` optimized for the "
 "terminal's color theme."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:264
+#: ../../../terminal-compatibility.rst:267
 msgid "``\\e]52;c; Pt \\e\\\\``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:266
+#: ../../../terminal-compatibility.rst:269
 msgid ""
 "Copy to clipboard (OSC 52). Used by :doc:`fish_clipboard_copy <cmds/"
 "fish_clipboard_copy>`."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:269
+#: ../../../terminal-compatibility.rst:272
 msgid "``\\e]133;A; click_events=1\\e\\\\``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:271
+#: ../../../terminal-compatibility.rst:274
 msgid ""
 "Mark prompt start (OSC 133), with kitty's ``click_events`` extension. The "
 "``click_events`` extension enables mouse clicks to move the cursor or select "
@@ -761,76 +770,76 @@ msgid ""
 "cursor-position-report>` is available."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:274
+#: ../../../terminal-compatibility.rst:277
 msgid "``\\e]133;B\\e\\\\``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:276
+#: ../../../terminal-compatibility.rst:279
 msgid "Mark prompt end (OSC 133)."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:277
+#: ../../../terminal-compatibility.rst:280
 msgid "``\\e]133;C; cmdline_url= Pt \\e\\\\``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:279
+#: ../../../terminal-compatibility.rst:282
 msgid ""
 "Mark command start (OSC 133), with kitty's ``cmdline_url`` extension whose "
 "parameter is the URL-encoded command line."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:280
+#: ../../../terminal-compatibility.rst:283
 msgid "``\\e]133;D; Ps \\e\\\\``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:282
+#: ../../../terminal-compatibility.rst:285
 msgid "Mark command end (OSC 133);  Ps is the exit status."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:285
+#: ../../../terminal-compatibility.rst:288
 msgid "``\\eP+q Pt \\e\\\\``"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:287
+#: ../../../terminal-compatibility.rst:290
 msgid ""
 "Request terminfo capability (XTGETTCAP). The parameter is the capability's "
 "hex-encoded terminfo code."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:290
+#: ../../../terminal-compatibility.rst:293
 msgid ""
 "The response must be of the form ``\\eP1+q Pt \\e\\\\`` (\"boolean\") or "
 "``\\eP1+q Pt = Pt \\e\\\\`` (\"string\"). In either variant, the first "
 "parameter must be the same as the request parameter."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:294
+#: ../../../terminal-compatibility.rst:297
 msgid "fish queries the following string capabilities:"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:296
+#: ../../../terminal-compatibility.rst:299
 msgid ":ref:`indn <term-compat-indn>`"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:298
+#: ../../../terminal-compatibility.rst:301
 msgid "The response's second parameter is ignored."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:299
+#: ../../../terminal-compatibility.rst:302
 msgid "``query-os-name`` (for :ref:`status terminal-os <status-terminal-os>`)"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:301
+#: ../../../terminal-compatibility.rst:304
 msgid ""
 "Terminals running on Unix should respond with the hex encoding of ``$(uname -"
 "s)`` as second parameter."
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:306
+#: ../../../terminal-compatibility.rst:309
 msgid "DCS commands and GNU screen"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:308
+#: ../../../terminal-compatibility.rst:311
 msgid ""
 "DCS parsing is optional because fish temporarily switches to the alternate "
 "screen before printing any DCS commands. However, since GNU screen neither "
@@ -841,15 +850,15 @@ msgid ""
 "doesn't work for some reason, you can add this to your ``~/.screenrc``:"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:315
+#: ../../../terminal-compatibility.rst:318
 msgid "altscreen on"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:319
+#: ../../../terminal-compatibility.rst:322
 msgid "Or add this to your ``config.fish``::"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:321
+#: ../../../terminal-compatibility.rst:324
 msgid ""
 "function GNU-screen-workaround --on-event fish_prompt\n"
 "    commandline -f repaint\n"
@@ -857,19 +866,19 @@ msgid ""
 "end"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:329
+#: ../../../terminal-compatibility.rst:332
 msgid "Unicode Codepoints"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:331
+#: ../../../terminal-compatibility.rst:334
 msgid "By default, fish outputs the following non-ASCII characters::"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:333
+#: ../../../terminal-compatibility.rst:336
 msgid "× ► ¶ ⏎ • ● … μ – ’ ‘ “ ” ← → ↑ ↓"
 msgstr ""
 
-#: ../../../terminal-compatibility.rst:335
+#: ../../../terminal-compatibility.rst:338
 msgid ""
 "as well as control pictures (U+2400 through U+241F), and locale-specific "
 "ones in :ref:`translated strings <variables-locale>`."
