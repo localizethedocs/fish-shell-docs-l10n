@@ -330,6 +330,8 @@ msgid ""
 "cargo xtask format --all\n"
 "cargo xtask format somefile.rs some.fish"
 msgstr ""
+"cargo xtask format --all\n"
+"cargo xtask format somefile.rs some.fish"
 
 #: ../../../../CONTRIBUTING.rst:144
 msgid "Fish Script Style Guide"
