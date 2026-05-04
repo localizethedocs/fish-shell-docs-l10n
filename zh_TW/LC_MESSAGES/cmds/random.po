@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/random.rst:4
+msgid "random - generate random number"
+msgstr ""
+
+#: ../../../cmds/random.rst:7
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/random.rst:9
+msgid ""
+"random\n"
+"random SEED\n"
+"random START END\n"
+"random START STEP END\n"
+"random choice [ITEMS ...]"
+msgstr ""
+
+#: ../../../cmds/random.rst:18
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/random.rst:20
+msgid ""
+"``random`` generates a pseudo-random integer from a uniform distribution. "
+"The range (inclusive) depends on the arguments."
+msgstr ""
+
+#: ../../../cmds/random.rst:23
+msgid "No arguments indicate a range of 0 to 32767 (inclusive)."
+msgstr ""
+
+#: ../../../cmds/random.rst:25
+msgid ""
+"If one argument is specified, the internal engine will be seeded with the "
+"argument for future invocations of ``random`` and no output will be produced."
+msgstr ""
+
+#: ../../../cmds/random.rst:28
+msgid ""
+"Two arguments indicate a range from *START* to *END* (both *START* and *END* "
+"included)."
+msgstr ""
+
+#: ../../../cmds/random.rst:30
+msgid ""
+"Three arguments indicate a range from *START* to *END* with a spacing of "
+"*STEP* between possible outputs."
+msgstr ""
+
+#: ../../../cmds/random.rst:33
+msgid ""
+"``random choice`` will select one random item from the succeeding arguments."
+msgstr ""
+
+#: ../../../cmds/random.rst:35
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/random.rst:37
+msgid ""
+"Note that seeding the engine will NOT give the same result across different "
+"systems."
+msgstr ""
+
+#: ../../../cmds/random.rst:40
+msgid ""
+"You should not consider ``random`` cryptographically secure, or even "
+"statistically accurate."
+msgstr ""
+
+#: ../../../cmds/random.rst:44
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/random.rst:46
+msgid ""
+"The following code will count down from a random even number between 10 and "
+"20 to 1:"
+msgstr ""
+
+#: ../../../cmds/random.rst:50
+msgid ""
+"for i in (seq (random 10 2 20) -1 1)\n"
+"    echo $i\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/random.rst:55
+msgid "And this will open a random picture from any of the subdirectories:"
+msgstr ""
+
+#: ../../../cmds/random.rst:59
+msgid "open (random choice **.jpg)"
+msgstr ""
+
+#: ../../../cmds/random.rst:62
+msgid "Or, to only get even numbers from 2 to 20::"
+msgstr ""
+
+#: ../../../cmds/random.rst:64
+msgid "random 2 2 20"
+msgstr ""
+
+#: ../../../cmds/random.rst:66
+msgid "Or odd numbers from 1 to 3::"
+msgstr ""
+
+#: ../../../cmds/random.rst:68
+msgid "random 1 2 3 # or 1 2 4"
+msgstr ""

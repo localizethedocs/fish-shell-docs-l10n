@@ -1,0 +1,522 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/test.rst:4
+msgid "test - perform tests on files and text"
+msgstr ""
+
+#: ../../../cmds/test.rst:7
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/test.rst:9
+msgid ""
+"test [EXPRESSION]\n"
+"[ [EXPRESSION] ]"
+msgstr ""
+
+#: ../../../cmds/test.rst:16
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/test.rst:20
+msgid ""
+"NOTE: This page documents the fish builtin ``test``. To see the "
+"documentation on the ``test`` command you might have, use ``command man "
+"test``."
+msgstr ""
+
+#: ../../../cmds/test.rst:24
+msgid ""
+"Tests the expression given and sets the exit status to 0 if true, and 1 if "
+"false. An expression is made up of one or more operators and their arguments."
+msgstr ""
+
+#: ../../../cmds/test.rst:26
+msgid ""
+"The first form (``test``) is preferred. For compatibility with other shells, "
+"the second form is available: a matching pair of square brackets "
+"(``[ [EXPRESSION] ]``)."
+msgstr ""
+
+#: ../../../cmds/test.rst:28
+msgid "This test is mostly POSIX-compatible."
+msgstr ""
+
+#: ../../../cmds/test.rst:30
+msgid ""
+"When using a variable as an argument for a test operator you should almost "
+"always enclose it in double-quotes. There are only two situations it is safe "
+"to omit the quote marks. The first is when the argument is a literal string "
+"with no whitespace or other characters special to the shell (e.g., "
+"semicolon). For example, ``test -b /my/file``. The second is using a "
+"variable that expands to exactly one element including if that element is "
+"the empty string (e.g., ``set x ''``). If the variable is not set, set but "
+"with no value, or set to more than one value you must enclose it in double-"
+"quotes. For example, ``test \"$x\" = \"$y\"``. Since it is always safe to "
+"enclose variables in double-quotes when used as ``test`` arguments that is "
+"the recommended practice."
+msgstr ""
+
+#: ../../../cmds/test.rst:33
+msgid "Operators for files and directories"
+msgstr ""
+
+#: ../../../cmds/test.rst:35
+msgid "**-b** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:36
+msgid "Returns true if *FILE* is a block device."
+msgstr ""
+
+#: ../../../cmds/test.rst:38
+msgid "**-c** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:39
+msgid "Returns true if *FILE* is a character device."
+msgstr ""
+
+#: ../../../cmds/test.rst:41
+msgid "**-d** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:42
+msgid "Returns true if *FILE* is a directory."
+msgstr ""
+
+#: ../../../cmds/test.rst:44
+msgid "**-e** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:45
+msgid "Returns true if *FILE* exists."
+msgstr ""
+
+#: ../../../cmds/test.rst:47
+msgid "**-f** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:48
+msgid "Returns true if *FILE* is a regular file."
+msgstr ""
+
+#: ../../../cmds/test.rst:50
+msgid "**-g** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:51
+msgid "Returns true if *FILE* has the set-group-ID bit set."
+msgstr ""
+
+#: ../../../cmds/test.rst:53
+msgid "**-G** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:54
+msgid ""
+"Returns true if *FILE* exists and has the same group ID as the current user."
+msgstr ""
+
+#: ../../../cmds/test.rst:56
+msgid "**-k** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:57
+msgid ""
+"Returns true if *FILE* has the sticky bit set. If the OS does not support "
+"the concept it returns false. See https://en.wikipedia.org/wiki/Sticky_bit."
+msgstr ""
+
+#: ../../../cmds/test.rst:59
+msgid "**-L** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:60
+msgid "Returns true if *FILE* is a symbolic link."
+msgstr ""
+
+#: ../../../cmds/test.rst:62
+msgid "**-O** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:63
+msgid "Returns true if *FILE* exists and is owned by the current user."
+msgstr ""
+
+#: ../../../cmds/test.rst:65
+msgid "**-p** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:66
+msgid "Returns true if *FILE* is a named pipe."
+msgstr ""
+
+#: ../../../cmds/test.rst:68
+msgid "**-r** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:69
+msgid "Returns true if *FILE* is marked as readable."
+msgstr ""
+
+#: ../../../cmds/test.rst:71
+msgid "**-s** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:72
+msgid "Returns true if the size of *FILE* is greater than zero."
+msgstr ""
+
+#: ../../../cmds/test.rst:74
+msgid "**-S** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:75
+msgid "Returns true if *FILE* is a socket."
+msgstr ""
+
+#: ../../../cmds/test.rst:77
+msgid "**-t** *FD*"
+msgstr ""
+
+#: ../../../cmds/test.rst:78
+msgid "Returns true if the file descriptor *FD* is a terminal (TTY)."
+msgstr ""
+
+#: ../../../cmds/test.rst:80
+msgid "**-u** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:81
+msgid "Returns true if *FILE* has the set-user-ID bit set."
+msgstr ""
+
+#: ../../../cmds/test.rst:83
+msgid "**-w** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:84
+msgid ""
+"Returns true if *FILE* is marked as writable; note that this does not check "
+"if the filesystem is read-only."
+msgstr ""
+
+#: ../../../cmds/test.rst:86
+msgid "**-x** *FILE*"
+msgstr ""
+
+#: ../../../cmds/test.rst:87
+msgid "Returns true if *FILE* is marked as executable."
+msgstr ""
+
+#: ../../../cmds/test.rst:90
+msgid "Operators to compare files and directories"
+msgstr ""
+
+#: ../../../cmds/test.rst:92
+msgid "*FILE1* **-nt** *FILE2*"
+msgstr ""
+
+#: ../../../cmds/test.rst:93
+msgid ""
+"Returns true if *FILE1* is newer than *FILE2*, or *FILE1* exists and *FILE2* "
+"does not."
+msgstr ""
+
+#: ../../../cmds/test.rst:95
+msgid "*FILE1* **-ot** *FILE2*"
+msgstr ""
+
+#: ../../../cmds/test.rst:96
+msgid ""
+"Returns true if *FILE1* is older than *FILE2*, or *FILE2* exists and *FILE1* "
+"does not."
+msgstr ""
+
+#: ../../../cmds/test.rst:98
+msgid "*FILE1* **-ef** *FILE1*"
+msgstr ""
+
+#: ../../../cmds/test.rst:99
+msgid "Returns true if *FILE1* and *FILE2* refer to the same file."
+msgstr ""
+
+#: ../../../cmds/test.rst:102
+msgid "Operators for text strings"
+msgstr ""
+
+#: ../../../cmds/test.rst:104
+msgid "*STRING1* **=** *STRING2*"
+msgstr ""
+
+#: ../../../cmds/test.rst:105
+msgid "Returns true if the strings *STRING1* and *STRING2* are identical."
+msgstr ""
+
+#: ../../../cmds/test.rst:107
+msgid "*STRING1* **!=** *STRING2*"
+msgstr ""
+
+#: ../../../cmds/test.rst:108
+msgid "Returns true if the strings *STRING1* and *STRING2* are not identical."
+msgstr ""
+
+#: ../../../cmds/test.rst:110
+msgid "**-n** *STRING*"
+msgstr ""
+
+#: ../../../cmds/test.rst:111
+msgid "Returns true if the length of *STRING* is non-zero."
+msgstr ""
+
+#: ../../../cmds/test.rst:113
+msgid "**-z** *STRING*"
+msgstr ""
+
+#: ../../../cmds/test.rst:114
+msgid "Returns true if the length of *STRING* is zero."
+msgstr ""
+
+#: ../../../cmds/test.rst:117
+msgid "Operators to compare and examine numbers"
+msgstr ""
+
+#: ../../../cmds/test.rst:119
+msgid "*NUM1* **-eq** *NUM2*"
+msgstr ""
+
+#: ../../../cmds/test.rst:120
+msgid "Returns true if *NUM1* and *NUM2* are numerically equal."
+msgstr ""
+
+#: ../../../cmds/test.rst:122
+msgid "*NUM1* **-ne** *NUM2*"
+msgstr ""
+
+#: ../../../cmds/test.rst:123
+msgid "Returns true if *NUM1* and *NUM2* are not numerically equal."
+msgstr ""
+
+#: ../../../cmds/test.rst:125
+msgid "*NUM1* **-gt** *NUM2*"
+msgstr ""
+
+#: ../../../cmds/test.rst:126
+msgid "Returns true if *NUM1* is greater than *NUM2*."
+msgstr ""
+
+#: ../../../cmds/test.rst:128
+msgid "*NUM1* **-ge** *NUM2*"
+msgstr ""
+
+#: ../../../cmds/test.rst:129
+msgid "Returns true if *NUM1* is greater than or equal to *NUM2*."
+msgstr ""
+
+#: ../../../cmds/test.rst:131
+msgid "*NUM1* **-lt** *NUM2*"
+msgstr ""
+
+#: ../../../cmds/test.rst:132
+msgid "Returns true if *NUM1* is less than *NUM2*."
+msgstr ""
+
+#: ../../../cmds/test.rst:134
+msgid "*NUM1* **-le** *NUM2*"
+msgstr ""
+
+#: ../../../cmds/test.rst:135
+msgid "Returns true if *NUM1* is less than or equal to *NUM2*."
+msgstr ""
+
+#: ../../../cmds/test.rst:137
+msgid "Both integers and floating point numbers are supported."
+msgstr ""
+
+#: ../../../cmds/test.rst:140
+msgid "Operators to combine expressions"
+msgstr ""
+
+#: ../../../cmds/test.rst:142
+msgid "*COND1* **-a** *COND2*"
+msgstr ""
+
+#: ../../../cmds/test.rst:143
+msgid "Returns true if both *COND1* and *COND2* are true."
+msgstr ""
+
+#: ../../../cmds/test.rst:145
+msgid "*COND1* **-o** *COND2*"
+msgstr ""
+
+#: ../../../cmds/test.rst:146
+msgid "Returns true if either *COND1* or *COND2* are true."
+msgstr ""
+
+#: ../../../cmds/test.rst:148
+msgid "Expressions can be inverted using the **!** operator:"
+msgstr ""
+
+#: ../../../cmds/test.rst:150
+msgid "**!** *EXPRESSION*"
+msgstr ""
+
+#: ../../../cmds/test.rst:151
+msgid ""
+"Returns true if *EXPRESSION* is false, and false if *EXPRESSION* is true."
+msgstr ""
+
+#: ../../../cmds/test.rst:153
+msgid "Expressions can be grouped using parentheses."
+msgstr ""
+
+#: ../../../cmds/test.rst:155
+msgid "**(** *EXPRESSION* **)**"
+msgstr ""
+
+#: ../../../cmds/test.rst:156
+msgid "Returns the value of *EXPRESSION*."
+msgstr ""
+
+#: ../../../cmds/test.rst:158
+msgid ""
+"Note that parentheses will usually require escaping with ``\\(`` to avoid "
+"being interpreted as a command substitution."
+msgstr ""
+
+#: ../../../cmds/test.rst:162
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../cmds/test.rst:164
+msgid "If the ``/tmp`` directory exists, copy the ``/etc/motd`` file to it:"
+msgstr ""
+
+#: ../../../cmds/test.rst:170
+msgid ""
+"if test -d /tmp\n"
+"    cp /etc/motd /tmp/motd\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/test.rst:175
+msgid ""
+"If the variable :envvar:`MANPATH` is defined and not empty, print the "
+"contents. (If :envvar:`MANPATH` is not defined, then it will expand to zero "
+"arguments, unless quoted.)"
+msgstr ""
+
+#: ../../../cmds/test.rst:181
+msgid ""
+"if test -n \"$MANPATH\"\n"
+"    echo $MANPATH\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/test.rst:186
+msgid ""
+"Parentheses and the ``-o`` and ``-a`` operators can be combined to produce "
+"more complicated expressions. In this example, success is printed if there "
+"is a ``/foo`` or ``/bar`` file as well as a ``/baz`` or ``/bat`` file."
+msgstr ""
+
+#: ../../../cmds/test.rst:192
+msgid ""
+"if test \\( -f /foo -o -f /bar \\) -a \\( -f /baz -o -f /bat \\)\n"
+"    echo Success.\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/test.rst:197
+msgid ""
+"Numerical comparisons will simply fail if one of the operands is not a "
+"number:"
+msgstr ""
+
+#: ../../../cmds/test.rst:203
+msgid ""
+"if test 42 -eq \"The answer to life, the universe and everything\"\n"
+"    echo So long and thanks for all the fish # will not be executed\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/test.rst:208
+msgid "A common comparison is with :envvar:`status`:"
+msgstr ""
+
+#: ../../../cmds/test.rst:214
+msgid ""
+"if test $status -eq 0\n"
+"    echo \"Previous command succeeded\"\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/test.rst:219
+msgid "The previous test can likewise be inverted:"
+msgstr ""
+
+#: ../../../cmds/test.rst:225
+msgid ""
+"if test ! $status -eq 0\n"
+"    echo \"Previous command failed\"\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/test.rst:230
+msgid "which is logically equivalent to the following:"
+msgstr ""
+
+#: ../../../cmds/test.rst:236
+msgid ""
+"if test $status -ne 0\n"
+"    echo \"Previous command failed\"\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/test.rst:242
+msgid "Standards"
+msgstr ""
+
+#: ../../../cmds/test.rst:244
+msgid ""
+"``test`` implements a subset of the `IEEE Std 1003.1-2008 (POSIX.1) standard "
+"<https://www.unix.com/man-page/posix/1p/test/>`__. The following exceptions "
+"apply:"
+msgstr ""
+
+#: ../../../cmds/test.rst:246
+msgid ""
+"The ``<`` and ``>`` operators for comparing strings are not implemented."
+msgstr ""
+
+#: ../../../cmds/test.rst:248
+msgid ""
+"Because this test is a shell builtin and not a standalone utility, using the "
+"-c flag on a special file descriptors like standard input and output may not "
+"return the same result when invoked from within a pipe as one would expect "
+"when invoking the ``test`` utility in another shell."
+msgstr ""
+
+#: ../../../cmds/test.rst:250
+msgid ""
+"In cases such as this, one can use ``command`` ``test`` to explicitly use "
+"the system's standalone ``test`` rather than this ``builtin`` ``test``."
+msgstr ""
