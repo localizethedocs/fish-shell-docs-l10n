@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/builtin.rst:2
+msgid "builtin - run a builtin command"
+msgstr ""
+
+#: ../../../cmds/builtin.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/builtin.rst:7
+msgid ""
+"builtin [OPTIONS] BUILTINNAME\n"
+"builtin --query BUILTINNAME ...\n"
+"builtin --names"
+msgstr ""
+
+#: ../../../cmds/builtin.rst:14
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/builtin.rst:16
+msgid ""
+"``builtin`` forces the shell to use a builtin command named *BUILTIN*, "
+"rather than a function or external program."
+msgstr ""
+
+#: ../../../cmds/builtin.rst:18
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/builtin.rst:20
+msgid "**-n** or **--names**"
+msgstr ""
+
+#: ../../../cmds/builtin.rst:21
+msgid "Lists the names of all defined builtins."
+msgstr ""
+
+#: ../../../cmds/builtin.rst:23
+msgid "**-q** or **--query** *BUILTIN*"
+msgstr ""
+
+#: ../../../cmds/builtin.rst:24
+msgid ""
+"Tests if any of the specified builtins exist. If any exist, it returns 0, 1 "
+"otherwise."
+msgstr ""
+
+#: ../../../cmds/builtin.rst:26
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/builtin.rst:27
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/builtin.rst:30
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/builtin.rst:34
+msgid ""
+"builtin jobs\n"
+"# executes the jobs builtin, even if a function named jobs exists"
+msgstr ""

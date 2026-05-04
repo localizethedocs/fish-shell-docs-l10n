@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/exec.rst:2
+msgid "exec - execute command in current process"
+msgstr ""
+
+#: ../../../cmds/exec.rst:5
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/exec.rst:7
+msgid "exec COMMAND"
+msgstr "exec COMMAND"
+
+#: ../../../cmds/exec.rst:12
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/exec.rst:16
+msgid ""
+"NOTE: This page documents the fish builtin ``exec``. To see the "
+"documentation on any non-fish versions, use ``command man exec``."
+msgstr ""
+
+#: ../../../cmds/exec.rst:19
+msgid ""
+"``exec`` replaces the currently running shell with a new command. On "
+"successful completion, ``exec`` never returns. ``exec`` cannot be used "
+"inside a pipeline."
+msgstr ""
+
+#: ../../../cmds/exec.rst:21
+msgid "The **--help** or **-h** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/exec.rst:24
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/exec.rst:26
+msgid ""
+"``exec emacs`` starts up the emacs text editor, and exits ``fish``. When "
+"emacs exits, the session will terminate."
+msgstr ""
