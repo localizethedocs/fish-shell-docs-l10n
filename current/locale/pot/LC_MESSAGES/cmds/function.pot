@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"POT-Creation-Date: 2026-05-04 10:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -208,24 +208,33 @@ msgid ""
 "``time``, and ``while``."
 msgstr ""
 
-#: ../../../cmds/function.rst:64
+#: ../../../cmds/function.rst:63
+msgid ""
+"Care should be taken when creating a function of the same name as an "
+"existing shell builtin or common program. If the function behaves "
+"differently, it is very common for problems to occur within fish or in "
+"scripts written by others. Consider writing an :doc:`abbreviation <abbr>` if "
+"you are wanting to replace one tool with another for interactive use."
+msgstr ""
+
+#: ../../../cmds/function.rst:66
 msgid "Example"
 msgstr ""
 
-#: ../../../cmds/function.rst:68
+#: ../../../cmds/function.rst:70
 msgid ""
 "function ll\n"
 "    ls -l $argv\n"
 "end"
 msgstr ""
 
-#: ../../../cmds/function.rst:73
+#: ../../../cmds/function.rst:75
 msgid ""
 "will run the ``ls`` command, using the ``-l`` option, while passing on any "
 "additional files and switches to ``ls``."
 msgstr ""
 
-#: ../../../cmds/function.rst:79
+#: ../../../cmds/function.rst:81
 msgid ""
 "function debug -a name val\n"
 "    echo [DEBUG] $name: $val >&2\n"
@@ -246,11 +255,11 @@ msgid ""
 "# prints: [DEBUG] foo: bar"
 msgstr ""
 
-#: ../../../cmds/function.rst:98
+#: ../../../cmds/function.rst:100
 msgid "will create a ``debug`` command to print chosen variables to `stderr`."
 msgstr ""
 
-#: ../../../cmds/function.rst:104
+#: ../../../cmds/function.rst:106
 msgid ""
 "function mkdir -d \"Create a directory and set CWD\"\n"
 "    command mkdir $argv\n"
@@ -266,13 +275,13 @@ msgid ""
 "end"
 msgstr ""
 
-#: ../../../cmds/function.rst:118
+#: ../../../cmds/function.rst:120
 msgid ""
 "This will run the ``mkdir`` command, and if it is successful, change the "
 "current working directory to the one just created."
 msgstr ""
 
-#: ../../../cmds/function.rst:124
+#: ../../../cmds/function.rst:126
 msgid ""
 "function notify\n"
 "    set -l job (jobs -l -g)\n"
@@ -285,25 +294,25 @@ msgid ""
 "end"
 msgstr ""
 
-#: ../../../cmds/function.rst:135
+#: ../../../cmds/function.rst:137
 msgid "This will beep when the most recent job completes."
 msgstr ""
 
-#: ../../../cmds/function.rst:139
+#: ../../../cmds/function.rst:141
 msgid "Notes"
 msgstr ""
 
-#: ../../../cmds/function.rst:141
+#: ../../../cmds/function.rst:143
 msgid ""
 "Events are only received from the current fish process as there is no way to "
 "send events from one fish process to another."
 msgstr ""
 
-#: ../../../cmds/function.rst:144
+#: ../../../cmds/function.rst:146
 msgid "See more"
 msgstr ""
 
-#: ../../../cmds/function.rst:146
+#: ../../../cmds/function.rst:148
 msgid ""
 "For more explanation of how functions fit into fish, see :ref:`Functions "
 "<syntax-function>`."
