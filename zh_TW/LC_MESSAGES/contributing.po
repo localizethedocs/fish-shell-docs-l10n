@@ -1,0 +1,792 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../../CONTRIBUTING.rst:3
+msgid "Contributing To Fish"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:5
+msgid "This document tells you how you can contribute to fish."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:7
+msgid ""
+"Fish is free and open source software, distributed under the terms of the "
+"GPLv2."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:9
+msgid "Contributions are welcome, and there are many ways to contribute!"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:11
+msgid ""
+"Whether you want to change some of the core Rust source, enhance or add a "
+"completion script or function, improve the documentation or translate "
+"something, this document will tell you how."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:16
+msgid "Mailing List"
+msgstr "郵件列表"
+
+#: ../../../../CONTRIBUTING.rst:18
+msgid ""
+"Send patches to the public mailing list: mailto:~krobelus/fish-shell@lists."
+"sr.ht. Archives are available at https://lists.sr.ht/~krobelus/fish-shell/."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:22
+msgid "GitHub"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:24
+msgid ""
+"Fish is available on GitHub, at https://github.com/fish-shell/fish-shell."
+msgstr ""
+"Fish 可以在 GitHub 上取得，網址為 https://github.com/fish-shell/fish-shell。"
+
+#: ../../../../CONTRIBUTING.rst:26
+msgid ""
+"First, you'll need an account there, and you'll need a git clone of fish. "
+"Fork it on GitHub and then run::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:29
+msgid "git clone https://github.com/<USERNAME>/fish-shell.git"
+msgstr "git clone https://github.com/<USERNAME>/fish-shell.git"
+
+#: ../../../../CONTRIBUTING.rst:31
+msgid ""
+"This will create a copy of the fish repository in the directory fish-shell "
+"in your current working directory."
+msgstr ""
+"這將在您目前的工作目錄中，於 fish-shell 目錄內建立一份 fish 儲存庫的副本。"
+
+#: ../../../../CONTRIBUTING.rst:33
+msgid ""
+"Also, for most changes you want to run the tests and so you'd get a setup to "
+"compile fish. For that, you'll require:"
+msgstr ""
+"此外，對於大多數變更，您會希望執行測試，因此您需要設定編譯 fish 的環境。為"
+"此，您需要："
+
+#: ../../../../CONTRIBUTING.rst:36
+msgid "Rust - when in doubt, try rustup"
+msgstr "Rust - 當有疑問時，試試 rustup"
+
+#: ../../../../CONTRIBUTING.rst:37
+msgid "CMake"
+msgstr "CMake"
+
+#: ../../../../CONTRIBUTING.rst:38
+msgid ""
+"PCRE2 (headers and libraries) - optional, this will be downloaded if missing"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:39
+msgid "gettext (only the msgfmt tool) - optional, for translation support"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:40
+msgid "Sphinx - optional, to build the documentation"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:42
+msgid ""
+"Of course not everything is required always - if you just want to contribute "
+"something to the documentation you'll just need Sphinx, and if the change is "
+"very simple and obvious you can just send it in. Use your judgement!"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:45
+msgid ""
+"Once you have your changes, open a pull request on https://github.com/fish-"
+"shell/fish-shell/pulls."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:48
+msgid "Guidelines"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:50
+msgid "In short:"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:52
+msgid ""
+"Be conservative in what you need (keep to the agreed minimum supported Rust "
+"version, limit new dependencies)"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:53
+msgid "Use automated tools to help you (``cargo xtask check``)"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:56
+msgid "Commit History"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:58
+msgid ""
+"We use a linear, `recipe-style <https://www.bitsnbites.eu/git-history-work-"
+"log-vs-recipe/>`__ history. Every commit should pass our checks. We do not "
+"want \"fixup\" commits in our history. If you notice an issue with a commit "
+"in a pull request, or get feedback suggesting changes, you should rewrite "
+"the commit history and fix the relevant commits directly, instead of adding "
+"new \"fixup\" commits. When a pull request is ready, we rebase it on top of "
+"the current master branch, so don't be shy about rewriting the history of "
+"commits which are not on master yet. Rebasing (not merging) your pull "
+"request on the latest version of master is also welcome, especially if it "
+"resolves conflicts."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:68
+msgid ""
+"If you're using Git, consider using `jj <https://www.jj-vcs.dev/>`__ to make "
+"this easier."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:70
+msgid ""
+"If a commit should close an issue, add a ``Fixes #<issue-number>`` line at "
+"the end of the commit description."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:73
+msgid "Contributing completions"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:75
+msgid ""
+"Completion scripts are the most common contribution to fish, and they are "
+"very welcome."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:77
+msgid ""
+"In general, we'll take all well-written completion scripts for a command "
+"that is publicly available. This means no private tools or personal scripts, "
+"and we do reserve the right to reject for other reasons."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:80
+msgid ""
+"Before you try to contribute them to fish, consider if the authors of the "
+"tool you are completing want to maintain the script instead. Often that "
+"makes more sense, specifically because they can add new options to the "
+"script immediately once they add them, and don't have to maintain one "
+"completion script for multiple versions. If the authors no longer wish to "
+"maintain the script, they can of course always contact the fish maintainers "
+"to hand it over, preferably by opening a PR. This isn't a requirement - if "
+"the authors don't want to maintain it, or you simply don't want to contact "
+"them, you can contribute your script to fish."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:87
+msgid "Completion scripts should"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:89
+msgid ""
+"Use as few dependencies as possible - try to use fish's builtins like "
+"``string`` instead of ``grep`` and ``awk``, use ``python`` to read json "
+"instead of ``jq`` (because it's already a soft dependency for fish's tools)"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:91
+msgid ""
+"If it uses a common unix tool, use POSIX-compatible invocations - ideally it "
+"would work on GNU/Linux, macOS, the BSDs and other systems"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:92
+msgid ""
+"Option and argument descriptions should be kept short. The shorter the "
+"description, the more likely it is that fish can use more columns."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:94
+msgid ""
+"Function names should start with ``__fish``, and functions should be kept in "
+"the completion file unless they're used elsewhere."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:95
+msgid "Run ``fish_indent`` on your script."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:96
+msgid ""
+"Try not to use minor convenience features right after they are available in "
+"fish - we do try to keep completion scripts backportable. If something has a "
+"real impact on the correctness or performance, feel free to use it, but if "
+"it is just a shortcut, please leave it."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:100
+msgid ""
+"Put your completion script into share/completions/name-of-command.fish. If "
+"you have multiple commands, you need multiple files."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:102
+msgid ""
+"If you want to add tests, you probably want to add a littlecheck test. See "
+"below for details."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:105
+msgid "Contributing documentation"
+msgstr "貢獻文件"
+
+#: ../../../../CONTRIBUTING.rst:107
+msgid ""
+"The documentation is stored in ``doc_src/``, and written in ReStructured "
+"Text and built with Sphinx. The builtins and various functions shipped with "
+"fish are documented in ``doc_src/cmds/``."
+msgstr ""
+"文件儲存在 `doc_src/` 目錄中，採用 ReStructured Text 格式撰寫，並使用 Sphinx "
+"建置。fish 內建的命令與各項功能則記載於 `doc_src/cmds/` 目錄中。"
+
+#: ../../../../CONTRIBUTING.rst:110
+msgid "To build an HTML version of the docs locally, run::"
+msgstr "若要在本機建置 HTML 版本的文件，請執行：\\ ::"
+
+#: ../../../../CONTRIBUTING.rst:112
+msgid "cargo xtask html-docs"
+msgstr "cargo xtask html-docs"
+
+#: ../../../../CONTRIBUTING.rst:114
+msgid "will output to ``target/fish-docs/html`` or, if you use CMake::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:116
+msgid "cmake --build build -t sphinx-docs"
+msgstr "cmake --build build -t sphinx-docs"
+
+#: ../../../../CONTRIBUTING.rst:118
+msgid ""
+"will output to ``build/cargo/fish-docs/html/``. You can also run ``sphinx-"
+"build`` directly, which allows choosing the output directory::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:120
+msgid "sphinx-build -j auto -b html doc_src/ /tmp/fish-doc/"
+msgstr "sphinx-build -j auto -b html doc_src/ /tmp/fish-doc/"
+
+#: ../../../../CONTRIBUTING.rst:122
+msgid "will output HTML docs to ``/tmp/fish-doc``."
+msgstr "會將 HTML 文件輸出至 ``/tmp/fish-doc``。"
+
+#: ../../../../CONTRIBUTING.rst:124
+msgid ""
+"After building them, you can open the HTML docs in a browser and see that it "
+"looks okay."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:128
+msgid "Code Style"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:130
+msgid "For formatting, we use:"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:132
+msgid "``rustfmt`` for Rust"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:133
+msgid "``fish_indent`` (shipped with fish) for fish script"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:134
+msgid "``ruff format`` for Python"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:136
+msgid "To reformat files, there is an xtask"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:140
+msgid ""
+"cargo xtask format --all\n"
+"cargo xtask format somefile.rs some.fish"
+msgstr ""
+"cargo xtask format --all\n"
+"cargo xtask format somefile.rs some.fish"
+
+#: ../../../../CONTRIBUTING.rst:144
+msgid "Fish Script Style Guide"
+msgstr "Fish 腳本風格指南"
+
+#: ../../../../CONTRIBUTING.rst:146
+msgid ""
+"All fish scripts, such as those in the *share/functions* and *tests* "
+"directories, should be formatted using the ``fish_indent`` command."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:149
+msgid ""
+"Function names should be in all lowercase with words separated by "
+"underscores. Private functions should begin with an underscore. The first "
+"word should be ``fish`` if the function is unique to fish."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:153
+msgid ""
+"The first word of global variable names should generally be ``fish`` for "
+"public vars or ``_fish`` for private vars to minimize the possibility of "
+"name clashes with user defined vars."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:158
+msgid "Configuring Your Editor for Fish Scripts"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:160
+msgid ""
+"If you use Vim: Install `vim-fish <https://github.com/dag/vim-fish>`__, make "
+"sure you have syntax and filetype functionality in ``~/.vimrc``:"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:165
+msgid ""
+"syntax enable\n"
+"filetype plugin indent on"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:168
+msgid ""
+"Then turn on some options for nicer display of fish scripts in ``~/.vim/"
+"ftplugin/fish.vim``:"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:173
+msgid ""
+"\" Set up :make to use fish for syntax checking.\n"
+"compiler fish\n"
+"\n"
+"\" Set this to have long lines wrap inside comments.\n"
+"setlocal textwidth=79\n"
+"\n"
+"\" Enable folding of block structures in fish.\n"
+"setlocal foldmethod=expr"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:182
+msgid ""
+"If you use Emacs: Install `fish-mode <https://github.com/wwwjfy/emacs-"
+"fish>`__ (also available in melpa and melpa-stable) and ``(setq-default "
+"indent-tabs-mode nil)`` for it (via a hook or in ``use-package``\\ s “:init” "
+"block). It can also be made to run fish_indent via e.g."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:188
+msgid ""
+"(add-hook 'fish-mode-hook (lambda ()\n"
+"    (add-hook 'before-save-hook 'fish_indent-before-save)))"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:194
+msgid "Minimum Supported Rust Version (MSRV) Policy"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:196
+msgid ""
+"We support at least the version of ``rustc`` available in Debian Stable."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:199
+msgid "Testing"
+msgstr "測試"
+
+#: ../../../../CONTRIBUTING.rst:201
+msgid ""
+"The source code for fish includes a large collection of tests. If you are "
+"making any changes to fish, running these tests is a good way to make sure "
+"the behaviour remains consistent and regressions are not introduced. Even if "
+"you don’t run the tests on your machine, they will still be run via GitHub "
+"Actions."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:207
+msgid ""
+"You are strongly encouraged to add tests when changing the functionality of "
+"fish, especially if you are fixing a bug to help ensure there are no "
+"regressions in the future (i.e., we don’t reintroduce the bug)."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:211
+msgid ""
+"Unit tests live next to the implementation in Rust source files, in inline "
+"submodules (``mod tests {}``)."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:213
+msgid "System tests live in ``tests/``:"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:215
+msgid ""
+"``tests/checks`` are run by `littlecheck <https://github.com/ridiculousfish/"
+"littlecheck>`__ and test noninteractive (script) behavior, except for "
+"``tests/checks/tmux-*`` which test interactive scenarios."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:218
+msgid ""
+"``tests/pexpects`` tests interactive scenarios using `pexpect <https://"
+"pexpect.readthedocs.io/en/stable/>`__"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:220
+msgid ""
+"When in doubt, the bulk of the tests should be added as a littlecheck test "
+"in tests/checks, as they are the easiest to modify and run, and much faster "
+"and more dependable than pexpect tests. The syntax is fairly self-"
+"explanatory. It's a fish script with the expected output in ``# CHECK:`` or "
+"``# CHECKERR:`` (for stderr) comments. If your littlecheck test has a "
+"specific dependency, use ``# REQUIRE: ...`` with a POSIX sh script."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:225
+msgid ""
+"The pexpect tests are written in Python and can simulate input and output to/"
+"from a terminal, so they are needed for anything that needs actual "
+"interactivity. The runner is in tests/pexpect_helper.py, in case you need to "
+"modify something there."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:228
+msgid ""
+"These tests can be run via the tests/test_driver.py Python script, which "
+"will set up the environment. It sets up a temporary $HOME and also uses it "
+"as the current directory, so you do not need to create a temporary directory "
+"in them."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:231
+msgid ""
+"If you need a command to do something weird to test something, maybe add it "
+"to the ``fish_test_helper`` binary (in ``tests/fish_test_helper.c``)."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:234
+msgid "Local testing"
+msgstr "本機測試"
+
+#: ../../../../CONTRIBUTING.rst:236
+msgid "The tests can be run on your local system::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:238
+msgid ""
+"cargo build\n"
+"# Run unit tests\n"
+"cargo test\n"
+"# Run system tests\n"
+"tests/test_driver.py target/debug\n"
+"# Run a specific system test.\n"
+"tests/test_driver.py target/debug tests/checks/abbr.fish"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:246
+msgid ""
+"Here, the first argument to test_driver.py refers to a directory with "
+"``fish``, ``fish_indent`` and ``fish_key_reader`` in it. In this example "
+"we're in the root of the workspace and have run ``cargo build`` without ``--"
+"release``, so it's a debug build."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:249
+msgid "To run all tests and linters, use::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:251
+msgid "cargo xtask check"
+msgstr "cargo xtask check"
+
+#: ../../../../CONTRIBUTING.rst:254
+msgid "Contributing Translations"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:256
+msgid ""
+"Fish uses GNU gettext to translate messages from English to other languages. "
+"We use custom tools for extracting messages from source files and to "
+"localize at runtime. This means that we do not have a runtime dependency on "
+"the gettext library. It also means that some features are not supported, "
+"such as message context and plurals. We also expect all files to be UTF-8-"
+"encoded. In practice, this should not matter much for contributing "
+"translations."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:263
+msgid ""
+"Translation sources are stored in the ``localization/po`` directory and "
+"named ``ll_CC.po``, where ``ll`` is the two (or possibly three) letter ISO "
+"639-1 language code of the target language (e.g. ``pt`` for Portuguese). "
+"``CC`` is an ISO 3166 country/territory code, (e.g. ``BR`` for Brazil). An "
+"example for a valid name is ``pt_BR.po``, indicating Brazilian Portuguese. "
+"These are the files you will interact with when adding translations."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:271
+msgid "Adding translations for a new language"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:273
+msgid ""
+"Creating new translations requires the Gettext tools. More specifically, you "
+"will need ``msguniq`` and ``msgmerge`` for creating translations for a new "
+"language. To create a new translation, run::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:278
+msgid "build_tools/update_translations.fish localization/po/ll_CC.po"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:280
+msgid ""
+"This will create a new PO file containing all messages available for "
+"translation. If the file already exists, it will be updated."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:283
+msgid ""
+"After modifying a PO file, you can recompile fish, and it will integrate the "
+"modifications you made. This requires that the ``msgfmt`` utility is "
+"installed (comes as part of ``gettext``). It is important that the "
+"``localize-messages`` cargo feature is enabled, which it is by default. You "
+"can explicitly enable it using::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:288
+msgid "cargo build --features=localize-messages"
+msgstr "cargo build --features=localize-messages"
+
+#: ../../../../CONTRIBUTING.rst:290
+msgid "Use environment variables to tell fish which language to use, e.g.::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:292
+msgid "LANG=pt_BR.utf8 fish"
+msgstr "LANG=pt_BR.utf8 fish"
+
+#: ../../../../CONTRIBUTING.rst:294
+msgid "or within the running fish shell::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:296
+msgid "set LANG pt_BR.utf8"
+msgstr "set LANG pt_BR.utf8"
+
+#: ../../../../CONTRIBUTING.rst:298
+msgid ""
+"For more options regarding how to choose languages, see `the corresponding "
+"gettext documentation <https://www.gnu.org/software/gettext/manual/html_node/"
+"Locale-Environment-Variables.html>`__. One neat thing you can do is set a "
+"list of languages to check for translations in the order defined using the "
+"``LANGUAGE`` variable, e.g.::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:304
+msgid "set LANGUAGE pt_BR de_DE"
+msgstr "set LANGUAGE pt_BR de_DE"
+
+#: ../../../../CONTRIBUTING.rst:306
+msgid ""
+"to try to translate messages to Portuguese, if that fails try German, and if "
+"that fails too you will see the English version defined in the source code."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:310
+msgid "Modifying existing translations"
+msgstr "修改現有的翻譯"
+
+#: ../../../../CONTRIBUTING.rst:312
+msgid ""
+"If you want to work on translations for a language which already has a "
+"corresponding ``po`` file, it is sufficient to edit this file. No other "
+"changes are necessary."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:315
+msgid ""
+"After recompiling fish, you should be able to see your translations in "
+"action. See the previous section for details."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:319
+msgid "Editing PO files"
+msgstr "編輯 PO 檔案"
+
+#: ../../../../CONTRIBUTING.rst:321
+msgid ""
+"Many tools are available for editing translation files, including command-"
+"line and graphical user interface programs. For simple use, you can use your "
+"text editor."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:324
+msgid ""
+"Open up the PO file, for example ``localization/po/sv.po``, and you'll see "
+"something like::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:326
+msgid ""
+"msgid \"%s: No suitable job\\n\"\n"
+"msgstr \"\""
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:329
+msgid ""
+"The ``msgid`` here is the \"name\" of the string to translate, typically the "
+"English string to translate. The second line (``msgstr``) is where your "
+"translation goes."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:332
+msgid "For example::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:334
+msgid ""
+"msgid \"%s: No suitable job\\n\"\n"
+"msgstr \"%s: Inget passande jobb\\n\""
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:337
+msgid ""
+"Any ``%s`` or ``%d`` are placeholders that fish will use for formatting at "
+"runtime. It is important that they match - the translated string should have "
+"the same placeholders in the same order."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:339
+msgid ""
+"Also any escaped characters, like that ``\\n`` newline at the end, should be "
+"kept so the translation has the same behavior."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:341
+msgid ""
+"Our tests run ``msgfmt --check-format /path/to/file``, so they would catch "
+"mismatched placeholders - otherwise fish would crash at runtime when the "
+"string is about to be used."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:343
+msgid ""
+"Be cautious about blindly updating an existing translation file. ``msgid`` "
+"strings should never be updated manually, only by running the appropriate "
+"script."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:347
+msgid "Modifications to strings in source files"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:349
+msgid ""
+"If a string changes in the sources, the old translations will no longer "
+"work. They will be preserved in the PO files, but commented-out (starting "
+"with ``#~``). If you add/remove/change a translatable strings in a source "
+"file, run ``build_tools/update_translations.fish`` to propagate this to all "
+"translation files (``localization/po/*.po``). This is only relevant for "
+"developers modifying the source files of fish or fish scripts."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:356
+msgid "Setting Code Up For Translations"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:358
+msgid ""
+"All non-debug messages output for user consumption should be marked for "
+"translation. In Rust, this requires the use of the ``wgettext!`` or "
+"``wgettext_fmt!`` macros:"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:364
+msgid ""
+"streams.out.append(wgettext_fmt!(\"%s: There are no jobs\\n\", argv[0]));"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:366
+msgid ""
+"All messages in fish script must be enclosed in single or double quote "
+"characters for our message extraction script to find them. They must also be "
+"translated via a command substitution. This means that the following are "
+"**not** valid:"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:373
+msgid ""
+"echo (_ hello)\n"
+"_ \"goodbye\""
+msgstr ""
+"echo (_ hello)\n"
+"_ \"goodbye\""
+
+#: ../../../../CONTRIBUTING.rst:376
+msgid "Above should be written like this instead:"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:380
+msgid ""
+"echo (_ \"hello\")\n"
+"echo (_ \"goodbye\")"
+msgstr ""
+"echo (_ \"hello\")\n"
+"echo (_ \"goodbye\")"
+
+#: ../../../../CONTRIBUTING.rst:383
+msgid ""
+"You can use either single or double quotes to enclose the message to be "
+"translated. You can also optionally include spaces after the opening "
+"parentheses or before the closing parentheses."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:388
+msgid "Updating Dependencies"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:390
+msgid ""
+"To update dependencies, run ``build_tools/update-dependencies.sh``. This "
+"currently requires `updatecli <https://github.com/updatecli/updatecli>`__ "
+"and a few other tools."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:394
+msgid "Versioning"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:396
+msgid ""
+"The fish version is constructed by the *build_tools/git_version_gen.sh* "
+"script. For developers the version is the branch name plus the output of "
+"``git describe --always --dirty``. Normally the main part of the version "
+"will be the closest annotated tag. Which itself is usually the most recent "
+"release number (e.g., ``2.6.0``)."
+msgstr ""
