@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"POT-Creation-Date: 2026-05-04 10:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -548,21 +548,23 @@ msgstr ""
 #: ../../../../CONTRIBUTING.rst:273
 msgid ""
 "Creating new translations requires the Gettext tools. More specifically, you "
-"will need ``msguniq`` and ``msgmerge`` for creating translations for a new "
-"language. To create a new translation, run::"
+"will need ``msguniq``, ``msgmerge``, and ``msgattrib`` for creating "
+"translations for a new language. To create a PO file for a new language "
+"``ll_CC``, run::"
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:278
-msgid "build_tools/update_translations.fish localization/po/ll_CC.po"
+msgid "cargo xtask gettext new ll_CC"
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:280
 msgid ""
-"This will create a new PO file containing all messages available for "
-"translation. If the file already exists, it will be updated."
+"This will create a new PO file in ``localization/po/`` containing all "
+"messages available for translation. If the file already exists, it will be "
+"updated."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:283
+#: ../../../../CONTRIBUTING.rst:284
 msgid ""
 "After modifying a PO file, you can recompile fish, and it will integrate the "
 "modifications you made. This requires that the ``msgfmt`` utility is "
@@ -571,27 +573,27 @@ msgid ""
 "can explicitly enable it using::"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:288
+#: ../../../../CONTRIBUTING.rst:289
 msgid "cargo build --features=localize-messages"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:290
+#: ../../../../CONTRIBUTING.rst:291
 msgid "Use environment variables to tell fish which language to use, e.g.::"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:292
+#: ../../../../CONTRIBUTING.rst:293
 msgid "LANG=pt_BR.utf8 fish"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:294
+#: ../../../../CONTRIBUTING.rst:295
 msgid "or within the running fish shell::"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:296
+#: ../../../../CONTRIBUTING.rst:297
 msgid "set LANG pt_BR.utf8"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:298
+#: ../../../../CONTRIBUTING.rst:299
 msgid ""
 "For more options regarding how to choose languages, see `the corresponding "
 "gettext documentation <https://www.gnu.org/software/gettext/manual/html_node/"
@@ -600,131 +602,134 @@ msgid ""
 "``LANGUAGE`` variable, e.g.::"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:304
+#: ../../../../CONTRIBUTING.rst:305
 msgid "set LANGUAGE pt_BR de_DE"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:306
+#: ../../../../CONTRIBUTING.rst:307
 msgid ""
 "to try to translate messages to Portuguese, if that fails try German, and if "
 "that fails too you will see the English version defined in the source code."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:310
+#: ../../../../CONTRIBUTING.rst:311
 msgid "Modifying existing translations"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:312
+#: ../../../../CONTRIBUTING.rst:313
 msgid ""
 "If you want to work on translations for a language which already has a "
 "corresponding ``po`` file, it is sufficient to edit this file. No other "
 "changes are necessary."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:315
+#: ../../../../CONTRIBUTING.rst:316
 msgid ""
 "After recompiling fish, you should be able to see your translations in "
 "action. See the previous section for details."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:319
+#: ../../../../CONTRIBUTING.rst:320
 msgid "Editing PO files"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:321
+#: ../../../../CONTRIBUTING.rst:322
 msgid ""
 "Many tools are available for editing translation files, including command-"
 "line and graphical user interface programs. For simple use, you can use your "
 "text editor."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:324
+#: ../../../../CONTRIBUTING.rst:325
 msgid ""
 "Open up the PO file, for example ``localization/po/sv.po``, and you'll see "
 "something like::"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:326
+#: ../../../../CONTRIBUTING.rst:327
 msgid ""
 "msgid \"%s: No suitable job\\n\"\n"
 "msgstr \"\""
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:329
+#: ../../../../CONTRIBUTING.rst:330
 msgid ""
 "The ``msgid`` here is the \"name\" of the string to translate, typically the "
 "English string to translate. The second line (``msgstr``) is where your "
 "translation goes."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:332
+#: ../../../../CONTRIBUTING.rst:333
 msgid "For example::"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:334
+#: ../../../../CONTRIBUTING.rst:335
 msgid ""
 "msgid \"%s: No suitable job\\n\"\n"
 "msgstr \"%s: Inget passande jobb\\n\""
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:337
+#: ../../../../CONTRIBUTING.rst:338
 msgid ""
 "Any ``%s`` or ``%d`` are placeholders that fish will use for formatting at "
 "runtime. It is important that they match - the translated string should have "
 "the same placeholders in the same order."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:339
+#: ../../../../CONTRIBUTING.rst:340
 msgid ""
 "Also any escaped characters, like that ``\\n`` newline at the end, should be "
 "kept so the translation has the same behavior."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:341
+#: ../../../../CONTRIBUTING.rst:342
 msgid ""
 "Our tests run ``msgfmt --check-format /path/to/file``, so they would catch "
 "mismatched placeholders - otherwise fish would crash at runtime when the "
 "string is about to be used."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:343
+#: ../../../../CONTRIBUTING.rst:344
 msgid ""
 "Be cautious about blindly updating an existing translation file. ``msgid`` "
 "strings should never be updated manually, only by running the appropriate "
 "script."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:347
+#: ../../../../CONTRIBUTING.rst:348
 msgid "Modifications to strings in source files"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:349
+#: ../../../../CONTRIBUTING.rst:350
 msgid ""
 "If a string changes in the sources, the old translations will no longer "
-"work. They will be preserved in the PO files, but commented-out (starting "
-"with ``#~``). If you add/remove/change a translatable strings in a source "
-"file, run ``build_tools/update_translations.fish`` to propagate this to all "
-"translation files (``localization/po/*.po``). This is only relevant for "
-"developers modifying the source files of fish or fish scripts."
+"work. If you add/remove/change a translatable strings in a source file, run "
+"``cargo xtask gettext update`` to propagate this to all translation files "
+"(``localization/po/*.po``). This is only relevant for developers modifying "
+"the source files of fish or fish scripts. Note translations for messages "
+"which are no longer present in the sources will be deleted from the PO "
+"files. If the source string changed in a way which should not affect "
+"translations, consider updating the ``msgid`` in the PO files such that "
+"translations are preserved."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:356
+#: ../../../../CONTRIBUTING.rst:359
 msgid "Setting Code Up For Translations"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:358
+#: ../../../../CONTRIBUTING.rst:361
 msgid ""
 "All non-debug messages output for user consumption should be marked for "
 "translation. In Rust, this requires the use of the ``wgettext!`` or "
 "``wgettext_fmt!`` macros:"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:364
+#: ../../../../CONTRIBUTING.rst:367
 msgid ""
 "streams.out.append(wgettext_fmt!(\"%s: There are no jobs\\n\", argv[0]));"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:366
+#: ../../../../CONTRIBUTING.rst:369
 msgid ""
 "All messages in fish script must be enclosed in single or double quote "
 "characters for our message extraction script to find them. They must also be "
@@ -732,45 +737,45 @@ msgid ""
 "**not** valid:"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:373
+#: ../../../../CONTRIBUTING.rst:376
 msgid ""
 "echo (_ hello)\n"
 "_ \"goodbye\""
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:376
+#: ../../../../CONTRIBUTING.rst:379
 msgid "Above should be written like this instead:"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:380
+#: ../../../../CONTRIBUTING.rst:383
 msgid ""
 "echo (_ \"hello\")\n"
 "echo (_ \"goodbye\")"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:383
+#: ../../../../CONTRIBUTING.rst:386
 msgid ""
 "You can use either single or double quotes to enclose the message to be "
 "translated. You can also optionally include spaces after the opening "
 "parentheses or before the closing parentheses."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:388
+#: ../../../../CONTRIBUTING.rst:391
 msgid "Updating Dependencies"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:390
+#: ../../../../CONTRIBUTING.rst:393
 msgid ""
 "To update dependencies, run ``build_tools/update-dependencies.sh``. This "
 "currently requires `updatecli <https://github.com/updatecli/updatecli>`__ "
 "and a few other tools."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:394
+#: ../../../../CONTRIBUTING.rst:397
 msgid "Versioning"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:396
+#: ../../../../CONTRIBUTING.rst:399
 msgid ""
 "The fish version is constructed by the *build_tools/git_version_gen.sh* "
 "script. For developers the version is the branch name plus the output of "

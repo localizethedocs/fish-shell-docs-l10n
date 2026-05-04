@@ -37,9 +37,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2026-04-05 13:15:47 +0800",
-      "hash" : "f3f675b4ccdf72f68d0f539857cf08eb4205244e",
-      "title" : "Standardized error messages: constant names"
+      "date" : "2026-05-03 19:50:26 -0700",
+      "hash" : "b638aa198fac5dbf71ce19d1addb49d1c8539811",
+      "title" : "Make the tmux-history-search2.fish test pass reliably on macOS"
     }
   },
   "type" : "branch",
