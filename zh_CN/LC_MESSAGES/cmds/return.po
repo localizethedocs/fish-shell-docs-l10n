@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/return.rst:2
+msgid "return - stop the current inner function"
+msgstr ""
+
+#: ../../../cmds/return.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/return.rst:7
+msgid "return [N]"
+msgstr ""
+
+#: ../../../cmds/return.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/return.rst:14
+msgid ""
+":program:`return` halts a currently running function. The exit status is set "
+"to *N* if it is given. If :program:`return` is invoked outside of a function "
+"or dot script it is equivalent to exit."
+msgstr ""
+
+#: ../../../cmds/return.rst:18
+msgid ""
+"It is often added inside of a conditional block such as an :doc:`if <if>` "
+"statement or a :doc:`switch <switch>` statement to conditionally stop the "
+"executing function and return to the caller; it can also be used to specify "
+"the exit status of a function."
+msgstr ""
+
+#: ../../../cmds/return.rst:20
+msgid ""
+"If at the top level of a script, it exits with the given status, like :doc:"
+"`exit <exit>`. If at the top level in an interactive session, it will set :"
+"envvar:`status`, but not exit the shell."
+msgstr ""
+
+#: ../../../cmds/return.rst:23
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/return.rst:26
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/return.rst:28
+msgid "An implementation of the false command as a fish function: ::"
+msgstr ""
+
+#: ../../../cmds/return.rst:31
+msgid ""
+"function false\n"
+"    return 1\n"
+"end"
+msgstr ""

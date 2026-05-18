@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_command_not_found.rst:2
+msgid "fish_command_not_found - what to do when a command wasn't found"
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:5
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/fish_command_not_found.rst:7
+msgid ""
+"function fish_command_not_found\n"
+"   ...\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:15
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/fish_command_not_found.rst:17
+msgid ""
+"When fish tries to execute a command and can't find it, it invokes this "
+"function."
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:19
+msgid ""
+"It can print a message to tell you about it, and it often also checks for a "
+"missing package that would include the command."
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:21
+msgid ""
+"Fish ships multiple handlers for various operating systems and chooses from "
+"them when this function is loaded, or you can define your own."
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:24
+msgid ""
+"It receives the full commandline as one argument per token, so $argv[1] "
+"contains the missing command."
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:26
+msgid ""
+"When you leave ``fish_command_not_found`` undefined (e.g. by adding an empty "
+"function file) or explicitly call "
+"``__fish_default_command_not_found_handler``, fish will just print a simple "
+"error."
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:29
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/fish_command_not_found.rst:31
+msgid "A simple handler:"
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:35
+msgid ""
+"function fish_command_not_found\n"
+"    echo Did not find command $argv[1]\n"
+"end\n"
+"\n"
+"> flounder\n"
+"Did not find command flounder"
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:42
+msgid "Or the handler for OpenSUSE's command-not-found::"
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:44
+msgid ""
+"function fish_command_not_found\n"
+"    /usr/bin/command-not-found $argv[1]\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:48
+msgid "Or the simple default handler::"
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:50
+msgid ""
+"function fish_command_not_found\n"
+"    __fish_default_command_not_found_handler $argv\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:55
+msgid "Backwards compatibility"
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:57
+msgid ""
+"This command was introduced in fish 3.2.0. Previous versions of fish used "
+"the \"fish_command_not_found\" :ref:`event <event>` instead."
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:59
+msgid ""
+"To define a handler that works in older versions of fish as well, define it "
+"the old way::"
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:61
+msgid ""
+"function __fish_command_not_found_handler --on-event fish_command_not_found\n"
+"     echo COMMAND WAS NOT FOUND MY FRIEND $argv[1]\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:65
+msgid ""
+"in which case fish will define a ``fish_command_not_found`` that calls it, "
+"or define a wrapper::"
+msgstr ""
+
+#: ../../../cmds/fish_command_not_found.rst:68
+msgid ""
+"function fish_command_not_found\n"
+"     echo \"G'day mate, could not find your command: $argv\"\n"
+"end\n"
+"\n"
+"function __fish_command_not_found_handler --on-event fish_command_not_found\n"
+"     fish_command_not_found $argv\n"
+"end"
+msgstr ""
