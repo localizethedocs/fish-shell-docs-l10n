@@ -37,9 +37,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2026-04-05 13:15:47 +0800",
-      "hash" : "f3f675b4ccdf72f68d0f539857cf08eb4205244e",
-      "title" : "Standardized error messages: constant names"
+      "date" : "2026-05-11 10:41:14 +0800",
+      "hash" : "ef8e62727cc5214a4ddae857deb38f79243f7c24",
+      "title" : "Pass Parser by exclusive reference"
     }
   },
   "type" : "branch",
