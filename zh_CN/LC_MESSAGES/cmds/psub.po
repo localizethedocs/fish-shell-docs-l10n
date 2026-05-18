@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/psub.rst:2
+msgid "psub - perform process substitution"
+msgstr ""
+
+#: ../../../cmds/psub.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/psub.rst:7
+msgid ""
+"COMMAND1 ( COMMAND2 | psub [-F | --fifo] [-f | --file] [(-s | --suffix) "
+"SUFFIX] )"
+msgstr ""
+
+#: ../../../cmds/psub.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/psub.rst:14
+msgid ""
+"Some shells (e.g., ksh, bash) feature a syntax that is a mix between command "
+"substitution and piping, called process substitution. It is used to send the "
+"output of a command into the calling command, much like command "
+"substitution, but with the difference that the output is not sent through "
+"commandline arguments but through a named pipe, with the filename of the "
+"named pipe sent as an argument to the calling program. ``psub`` combined "
+"with a regular command substitution provides the same functionality."
+msgstr ""
+
+#: ../../../cmds/psub.rst:16
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/psub.rst:18
+msgid "**-f** or **--file**"
+msgstr ""
+
+#: ../../../cmds/psub.rst:19
+msgid ""
+"Use a regular file instead of a named pipe to communicate with the calling "
+"process. This will cause ``psub`` to be significantly slower when large "
+"amounts of data are involved, but has the advantage that the reading process "
+"can seek in the stream. This is the default."
+msgstr ""
+
+#: ../../../cmds/psub.rst:21
+msgid "**-F** or **--fifo**"
+msgstr ""
+
+#: ../../../cmds/psub.rst:22
+msgid ""
+"Use a named pipe rather than a file. You should only use this if the command "
+"produces no more than 8 KiB of output. The limit on the amount of data a "
+"FIFO can buffer varies with the OS but is typically 8 KiB, 16 KiB or 64 KiB. "
+"If you use this option and the command on the left of the psub pipeline "
+"produces more output a deadlock is likely to occur."
+msgstr ""
+
+#: ../../../cmds/psub.rst:24
+msgid "**-s** or **--suffix** *SUFFIX*"
+msgstr ""
+
+#: ../../../cmds/psub.rst:25
+msgid "Append SUFFIX to the filename."
+msgstr ""
+
+#: ../../../cmds/psub.rst:27
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/psub.rst:28
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/psub.rst:31
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/psub.rst:35
+msgid ""
+"diff (sort a.txt | psub) (sort b.txt | psub)\n"
+"# shows the difference between the sorted versions of files ``a.txt`` and "
+"``b.txt``.\n"
+"\n"
+"source-highlight -f esc (cpp main.c | psub -f -s .c)\n"
+"# highlights ``main.c`` after preprocessing as a C source."
+msgstr ""
