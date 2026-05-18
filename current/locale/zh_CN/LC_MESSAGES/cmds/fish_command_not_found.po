@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"POT-Creation-Date: 2026-05-11 11:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,45 +105,5 @@ msgstr ""
 msgid ""
 "function fish_command_not_found\n"
 "    __fish_default_command_not_found_handler $argv\n"
-"end"
-msgstr ""
-
-#: ../../../cmds/fish_command_not_found.rst:55
-msgid "Backwards compatibility"
-msgstr ""
-
-#: ../../../cmds/fish_command_not_found.rst:57
-msgid ""
-"This command was introduced in fish 3.2.0. Previous versions of fish used "
-"the \"fish_command_not_found\" :ref:`event <event>` instead."
-msgstr ""
-
-#: ../../../cmds/fish_command_not_found.rst:59
-msgid ""
-"To define a handler that works in older versions of fish as well, define it "
-"the old way::"
-msgstr ""
-
-#: ../../../cmds/fish_command_not_found.rst:61
-msgid ""
-"function __fish_command_not_found_handler --on-event fish_command_not_found\n"
-"     echo COMMAND WAS NOT FOUND MY FRIEND $argv[1]\n"
-"end"
-msgstr ""
-
-#: ../../../cmds/fish_command_not_found.rst:65
-msgid ""
-"in which case fish will define a ``fish_command_not_found`` that calls it, "
-"or define a wrapper::"
-msgstr ""
-
-#: ../../../cmds/fish_command_not_found.rst:68
-msgid ""
-"function fish_command_not_found\n"
-"     echo \"G'day mate, could not find your command: $argv\"\n"
-"end\n"
-"\n"
-"function __fish_command_not_found_handler --on-event fish_command_not_found\n"
-"     fish_command_not_found $argv\n"
 "end"
 msgstr ""
