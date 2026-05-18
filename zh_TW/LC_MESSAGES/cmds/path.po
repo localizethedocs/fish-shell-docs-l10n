@@ -1,0 +1,745 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/path.rst:4
+msgid "path - manipulate and check paths"
+msgstr ""
+
+#: ../../../cmds/path.rst:7
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/path.rst:9
+msgid ""
+"path basename GENERAL_OPTIONS [PATH ...]\n"
+"path dirname GENERAL_OPTIONS  [PATH ...]\n"
+"path extension GENERAL_OPTIONS [PATH ...]\n"
+"path filter GENERAL_OPTIONS [-v | --invert]\n"
+"    [-d] [-f] [-l] [-r] [-w] [-x]\n"
+"    [(-t | --type) TYPE] [(-p | --perm) PERMISSION] [PATH ...]\n"
+"path is GENERAL_OPTIONS [(-v | --invert)] [(-t | --type) TYPE]\n"
+"    [-d] [-f] [-l] [-r] [-w] [-x]\n"
+"    [(-p | --perm) PERMISSION] [PATH ...]\n"
+"path mtime GENERAL_OPTIONS [(-R | --relative)] [PATH ...]\n"
+"path normalize GENERAL_OPTIONS [PATH ...]\n"
+"path resolve GENERAL_OPTIONS [PATH ...]\n"
+"path change-extension GENERAL_OPTIONS EXTENSION [PATH ...]\n"
+"path sort GENERAL_OPTIONS [-r | --reverse]\n"
+"    [-u | --unique] [--key=basename|dirname|path] [PATH ...]\n"
+"\n"
+"GENERAL_OPTIONS\n"
+"    [-z | --null-in] [-Z | --null-out] [-q | --quiet]"
+msgstr ""
+
+#: ../../../cmds/path.rst:31
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/path.rst:33
+msgid "``path`` performs operations on paths."
+msgstr ""
+
+#: ../../../cmds/path.rst:35
+msgid ""
+"PATH arguments are taken from the command line unless standard input is "
+"connected to a pipe or a file, in which case they are read from standard "
+"input, one PATH per line. It is an error to supply PATH arguments on both "
+"the command line and on standard input."
+msgstr ""
+
+#: ../../../cmds/path.rst:37
+msgid ""
+"Arguments starting with ``-`` are normally interpreted as switches; ``--`` "
+"causes the following arguments not to be treated as switches even if they "
+"begin with ``-``. Switches and required arguments are recognized only on the "
+"command line."
+msgstr ""
+
+#: ../../../cmds/path.rst:39
+msgid ""
+"When a path starts with ``-``, ``path filter`` and ``path normalize`` will "
+"prepend ``./`` on output to avoid it being interpreted as an option "
+"otherwise, so it's safe to pass path's output to other commands that can "
+"handle relative paths."
+msgstr ""
+
+#: ../../../cmds/path.rst:41
+msgid ""
+"All subcommands accept a ``-q`` or ``--quiet`` switch, which suppresses the "
+"usual output but exits with the documented status. In this case these "
+"commands will quit early, without reading all of the available input."
+msgstr ""
+
+#: ../../../cmds/path.rst:43
+msgid ""
+"All subcommands also accept a ``-Z`` or ``--null-out`` switch, which makes "
+"them print output separated with NUL instead of newlines. This is for "
+"further processing, e.g. passing to another ``path``, or ``xargs -0``. This "
+"is not recommended when the output goes to the terminal or a command "
+"substitution."
+msgstr ""
+
+#: ../../../cmds/path.rst:45
+msgid ""
+"All subcommands also accept a ``-z`` or ``--null-in`` switch, which makes "
+"them accept arguments from stdin separated with NULL-bytes. Since Unix paths "
+"can't contain NULL, that makes it possible to handle all possible paths and "
+"read input from e.g. ``find -print0``. If arguments are given on the "
+"commandline this has no effect. This should mostly be unnecessary since "
+"``path`` automatically starts splitting on NULL if one appears in the first "
+"PATH_MAX bytes, PATH_MAX being the operating system's maximum length for a "
+"path plus a NULL byte."
+msgstr ""
+
+#: ../../../cmds/path.rst:47
+msgid ""
+"Some subcommands operate on the paths as strings and so work on nonexistent "
+"paths, while others need to access the paths themselves and so filter out "
+"nonexistent paths."
+msgstr ""
+
+#: ../../../cmds/path.rst:49
+msgid "The following subcommands are available."
+msgstr ""
+
+#: ../../../cmds/path.rst:54
+msgid "\"basename\" subcommand"
+msgstr ""
+
+#: ../../../cmds/path.rst:58
+msgid ""
+"path basename [-z | --null-in] [-Z | --null-out] [-q | --quiet] [PATH ...]"
+msgstr ""
+
+#: ../../../cmds/path.rst:60
+msgid ""
+"``path basename`` returns the last path component of the given path, by "
+"removing the directory prefix and removing trailing slashes. In other words, "
+"it is the part that is not the dirname. For files you might call it the "
+"\"filename\"."
+msgstr ""
+
+#: ../../../cmds/path.rst:62
+msgid ""
+"It returns 0 if there was a basename, i.e. if the path wasn't empty or just "
+"slashes."
+msgstr ""
+
+#: ../../../cmds/path.rst:65 ../../../cmds/path.rst:98
+#: ../../../cmds/path.rst:125 ../../../cmds/path.rst:184
+#: ../../../cmds/path.rst:228 ../../../cmds/path.rst:255
+#: ../../../cmds/path.rst:291 ../../../cmds/path.rst:325
+#: ../../../cmds/path.rst:356 ../../../cmds/path.rst:405
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../cmds/path.rst:69
+msgid ""
+">_ path basename ./foo.mp4\n"
+"foo.mp4\n"
+"\n"
+">_ path basename ../banana\n"
+"banana\n"
+"\n"
+">_ path basename /usr/bin/\n"
+"bin\n"
+"\n"
+">_ path basename /usr/bin/*\n"
+"# This prints all files in /usr/bin/\n"
+"# A selection:\n"
+"cp\n"
+"fish\n"
+"grep\n"
+"rm"
+msgstr ""
+
+#: ../../../cmds/path.rst:87
+msgid "\"dirname\" subcommand"
+msgstr ""
+
+#: ../../../cmds/path.rst:91
+msgid ""
+"path dirname [-z | --null-in] [-Z | --null-out] [-q | --quiet] [PATH ...]"
+msgstr ""
+
+#: ../../../cmds/path.rst:93
+msgid ""
+"``path dirname`` returns the dirname for the given path. This is the part "
+"before the last \"/\", discounting trailing slashes. In other words, it is "
+"the part that is not the basename (discounting superfluous slashes)."
+msgstr ""
+
+#: ../../../cmds/path.rst:95
+msgid ""
+"It returns 0 if there was a dirname, i.e. if the path wasn't empty or just "
+"slashes."
+msgstr ""
+
+#: ../../../cmds/path.rst:102
+msgid ""
+">_ path dirname ./foo.mp4\n"
+".\n"
+"\n"
+">_ path dirname ../banana\n"
+"..\n"
+"\n"
+">_ path dirname /usr/bin/\n"
+"/usr"
+msgstr ""
+
+#: ../../../cmds/path.rst:112
+msgid "\"extension\" subcommand"
+msgstr ""
+
+#: ../../../cmds/path.rst:116
+msgid ""
+"path extension [-z | --null-in] [-Z | --null-out] [-q | --quiet] [PATH ...]"
+msgstr ""
+
+#: ../../../cmds/path.rst:118
+msgid ""
+"``path extension`` returns the extension of the given path. This is the part "
+"after (and including) the last \".\", unless that \".\" followed a \"/\" or "
+"the basename is \".\" or \"..\", in which case there is no extension and an "
+"empty line is printed."
+msgstr ""
+
+#: ../../../cmds/path.rst:120
+msgid "If the filename ends in a \".\", only a \".\" is printed."
+msgstr ""
+
+#: ../../../cmds/path.rst:122
+msgid "It returns 0 if there was an extension."
+msgstr ""
+
+#: ../../../cmds/path.rst:129
+msgid ""
+">_ path extension ./foo.mp4\n"
+".mp4\n"
+"\n"
+">_ path extension ../banana\n"
+"# an empty line, status 1\n"
+"\n"
+">_ path extension ~/.config\n"
+"# an empty line, status 1\n"
+"\n"
+">_ path extension ~/.config.d\n"
+".d\n"
+"\n"
+">_ path extension ~/.config.\n"
+".\n"
+"\n"
+">_ set -l path (path change-extension '' ./foo.mp4)\n"
+">_ set -l extension (path extension ./foo.mp4)\n"
+"> echo $path$extension\n"
+"# reconstructs the original path again.\n"
+"./foo.mp4"
+msgstr ""
+
+#: ../../../cmds/path.rst:153
+msgid "\"filter\" subcommand"
+msgstr ""
+
+#: ../../../cmds/path.rst:157
+msgid ""
+"path filter [-z | --null-in] [-Z | --null-out] [-q | --quiet] \\\n"
+"    [-d] [-f] [-l] [-r] [-w] [-x] \\\n"
+"    [-v | --invert] [(-t | --type) TYPE] [(-p | --perm) PERMISSION] "
+"[PATH ...]"
+msgstr ""
+
+#: ../../../cmds/path.rst:161
+msgid ""
+"``path filter`` returns all of the given paths that match the given checks. "
+"In all cases, the paths need to exist, nonexistent paths are always filtered."
+msgstr ""
+
+#: ../../../cmds/path.rst:163
+msgid "The available filters are:"
+msgstr ""
+
+#: ../../../cmds/path.rst:165
+msgid ""
+"``-t`` or ``--type`` with the options: \"dir\", \"file\", \"link\", "
+"\"block\", \"char\", \"fifo\" and \"socket\", in which case the path needs "
+"to be a directory, file, link, block device, character device, named pipe or "
+"socket, respectively."
+msgstr ""
+
+#: ../../../cmds/path.rst:166
+msgid ""
+"``-d``, ``-f`` and ``-l`` are short for ``--type=dir``, ``--type=file`` and "
+"``--type=link``, respectively. There are no shortcuts for the other types."
+msgstr ""
+
+#: ../../../cmds/path.rst:168
+msgid ""
+"``-p`` or ``--perm`` with the options: \"read\", \"write\", and \"exec\", as "
+"well as \"suid\", \"sgid\", \"user\" (referring to the path owner) and "
+"\"group\" (referring to the path's group), in which case the path needs to "
+"have all of the given permissions for the current user."
+msgstr ""
+
+#: ../../../cmds/path.rst:169
+msgid ""
+"``-r``, ``-w`` and ``-x`` are short for ``--perm=read``, ``--perm=write`` "
+"and ``--perm=exec``, respectively. There are no shortcuts for the other "
+"permissions."
+msgstr ""
+
+#: ../../../cmds/path.rst:171
+msgid ""
+"Note that the path needs to be *any* of the given types, but have *all* of "
+"the given permissions. This is because having a path that is both writable "
+"and executable makes sense, but having a path that is both a directory and a "
+"file doesn't. Links will count as the type of the linked-to file, so links "
+"to files count as files, links to directories count as directories."
+msgstr ""
+
+#: ../../../cmds/path.rst:173
+msgid ""
+"The filter options can either be given as multiple options, or comma-"
+"separated - ``path filter -t dir,file`` or ``path filter --type dir --type "
+"file`` are equivalent."
+msgstr ""
+
+#: ../../../cmds/path.rst:175
+msgid ""
+"With ``--invert``, the meaning of the filtering is inverted - any path that "
+"wouldn't pass (including by not existing) passes, and any path that would "
+"pass fails."
+msgstr ""
+
+#: ../../../cmds/path.rst:177
+msgid ""
+"When a path starts with ``-``, ``path filter`` will prepend ``./`` to avoid "
+"it being interpreted as an option otherwise."
+msgstr ""
+
+#: ../../../cmds/path.rst:179
+msgid "It returns 0 if at least one path passed the filter."
+msgstr ""
+
+#: ../../../cmds/path.rst:181
+msgid ""
+"``path is`` is shorthand for ``path filter -q``, i.e. just checking without "
+"producing output, see :ref:`The is subcommand <cmd-path-is>`."
+msgstr ""
+
+#: ../../../cmds/path.rst:188
+msgid ""
+">_ path filter /usr/bin /usr/argagagji\n"
+"# The (hopefully) nonexistent argagagji is filtered implicitly:\n"
+"/usr/bin\n"
+"\n"
+">_ path filter --type file /usr/bin /usr/bin/fish\n"
+"# Only fish is a file\n"
+"/usr/bin/fish\n"
+"\n"
+">_ path filter --type file,dir --perm exec,write /usr/bin/fish /home/me\n"
+"# fish is a file, which passes, and executable, which passes,\n"
+"# but probably not writable, which fails.\n"
+"#\n"
+"# $HOME is a directory and both writable and executable, typically.\n"
+"# So it passes.\n"
+"/home/me\n"
+"\n"
+">_ path filter -fdxw /usr/bin/fish /home/me\n"
+"# This is the same as above: \"-f\" is \"--type=file\", \"-d\" is \"--"
+"type=dir\",\n"
+"# \"-x\" is short for \"--perm=exec\" and \"-w\" short for \"--"
+"perm=write\"!\n"
+"/home/me\n"
+"\n"
+">_ path filter -fx $PATH/*\n"
+"# Prints all possible commands - the first entry of each name is what fish "
+"would execute!"
+msgstr ""
+
+#: ../../../cmds/path.rst:215
+msgid "\"is\" subcommand"
+msgstr ""
+
+#: ../../../cmds/path.rst:219
+msgid ""
+"path is [-z | --null-in] [-Z | --null-out] [-q | --quiet] \\\n"
+"    [-d] [-f] [-l] [-r] [-w] [-x] \\\n"
+"    [-v | --invert] [(-t | --type) TYPE] [(-p | --perm) PERMISSION] "
+"[PATH ...]"
+msgstr ""
+
+#: ../../../cmds/path.rst:223
+msgid ""
+"``path is`` is short for ``path filter -q``. It returns true if any of the "
+"given files passes the filter, but does not produce any output."
+msgstr ""
+
+#: ../../../cmds/path.rst:225
+msgid ""
+"``--quiet`` can still be passed for compatibility but is redundant. The "
+"options are the same as for ``path filter``."
+msgstr ""
+
+#: ../../../cmds/path.rst:232
+msgid ""
+">_ path is /usr/bin /usr/argagagji\n"
+"# /usr/bin exists, so this returns a status of 0 (true). It prints nothing.\n"
+">_ path is /usr/argagagji\n"
+"# /usr/argagagji does not, so this returns a status of 1 (false). It also "
+"prints nothing.\n"
+">_ path is -fx /bin/sh\n"
+"# /bin/sh is usually an executable file, so this returns true."
+msgstr ""
+
+#: ../../../cmds/path.rst:240
+msgid "\"mtime\" subcommand"
+msgstr ""
+
+#: ../../../cmds/path.rst:244
+msgid ""
+"path mtime [-z | --null-in] [-Z | --null-out] [-q | --quiet] [-R | --"
+"relative] [PATH ...]"
+msgstr ""
+
+#: ../../../cmds/path.rst:246
+msgid ""
+"``path mtime`` returns the last modification time (\"mtime\" in unix jargon) "
+"of the given paths, in seconds since the unix epoch (the beginning of the "
+"1st of January 1970)."
+msgstr ""
+
+#: ../../../cmds/path.rst:248
+msgid ""
+"With ``--relative`` (or ``-R``), it prints the number of seconds since the "
+"modification time. It only reads the current time once at start, so in case "
+"multiple paths are given the times are all relative to the *start* of ``path "
+"mtime -R`` running."
+msgstr ""
+
+#: ../../../cmds/path.rst:250
+msgid ""
+"If you want to know if a file is newer or older than another file, consider "
+"using ``test -nt`` instead. See :doc:`the test documentation <test>`."
+msgstr ""
+
+#: ../../../cmds/path.rst:252
+msgid "It returns 0 if reading mtime for any path succeeded."
+msgstr ""
+
+#: ../../../cmds/path.rst:259
+msgid ""
+">_ date +%s\n"
+"# This prints the current time as seconds since the epoch\n"
+"1657217847\n"
+"\n"
+">_ path mtime /etc/\n"
+"1657213796\n"
+"\n"
+">_ path mtime -R /etc/\n"
+"4078\n"
+"# So /etc/ on this system was last modified a little over an hour ago\n"
+"\n"
+"# This is the same as\n"
+">_ math (date +%s) - (path mtime /etc/)"
+msgstr ""
+
+#: ../../../cmds/path.rst:274
+msgid "\"normalize\" subcommand"
+msgstr ""
+
+#: ../../../cmds/path.rst:278
+msgid ""
+"path normalize [-z | --null-in] [-Z | --null-out] [-q | --quiet] [PATH ...]"
+msgstr ""
+
+#: ../../../cmds/path.rst:280
+msgid ""
+"``path normalize`` returns the normalized versions of all paths. That means "
+"it squashes duplicate \"/\" (except for two leading \"//\"), collapses \"../"
+"\" with earlier components and removes \".\" components."
+msgstr ""
+
+#: ../../../cmds/path.rst:282
+msgid ""
+"Unlike ``realpath`` or ``path resolve``, it does not make the paths "
+"absolute. It also does not resolve any symlinks. As such it can operate on "
+"non-existent paths."
+msgstr ""
+
+#: ../../../cmds/path.rst:284
+msgid ""
+"Because it operates on paths as strings and doesn't resolve symlinks, it "
+"works sort of like ``pwd -L`` and ``cd``. E.g. ``path normalize link/..`` "
+"will return ``.``, just like ``cd link; cd ..`` would return to the current "
+"directory. For a physical view of the filesystem, see ``path resolve``."
+msgstr ""
+
+#: ../../../cmds/path.rst:286
+msgid ""
+"Leading \"./\" components are usually removed. But when a path starts with "
+"``-``, ``path normalize`` will add it instead to avoid confusion with "
+"options."
+msgstr ""
+
+#: ../../../cmds/path.rst:288
+msgid ""
+"It returns 0 if any normalization was done, i.e. any given path wasn't in "
+"canonical form."
+msgstr ""
+
+#: ../../../cmds/path.rst:295
+msgid ""
+">_ path normalize /usr/bin//../../etc/fish\n"
+"# The \"//\" is squashed and the \"..\" components neutralize the components "
+"before\n"
+"/etc/fish\n"
+"\n"
+">_ path normalize /bin//bash\n"
+"# The \"//\" is squashed, but /bin isn't resolved even if your system links "
+"it to /usr/bin.\n"
+"/bin/bash\n"
+"\n"
+">_ path normalize ./my/subdirs/../sub2\n"
+"my/sub2\n"
+"\n"
+">_ path normalize -- -/foo\n"
+"./-/foo"
+msgstr ""
+
+#: ../../../cmds/path.rst:310
+msgid "\"resolve\" subcommand"
+msgstr ""
+
+#: ../../../cmds/path.rst:314
+msgid ""
+"path resolve [-z | --null-in] [-Z | --null-out] [-q | --quiet] [PATH ...]"
+msgstr ""
+
+#: ../../../cmds/path.rst:316
+msgid ""
+"``path resolve`` returns the normalized, physical and absolute versions of "
+"all paths. That means it resolves symlinks and does what ``path normalize`` "
+"does: it squashes duplicate \"/\", collapses \"../\" with earlier components "
+"and removes \".\" components. Then it turns that path into the absolute path "
+"starting from the filesystem root \"/\"."
+msgstr ""
+
+#: ../../../cmds/path.rst:318
+msgid ""
+"It is similar to ``realpath``, as it creates the \"real\", canonical version "
+"of the path. However, for paths that can't be resolved, e.g. if they don't "
+"exist or form a symlink loop, it will resolve as far as it can and normalize "
+"the rest."
+msgstr ""
+
+#: ../../../cmds/path.rst:320
+msgid ""
+"Because it resolves symlinks, it works sort of like ``pwd -P``. E.g. ``path "
+"resolve link/..`` will return the parent directory of what the link points "
+"to, just like ``cd link; cd (pwd -P)/..`` would go to it. For a logical view "
+"of the filesystem, see ``path normalize``."
+msgstr ""
+
+#: ../../../cmds/path.rst:322
+msgid ""
+"It returns 0 if any normalization or resolution was done, i.e. any given "
+"path wasn't in canonical form."
+msgstr ""
+
+#: ../../../cmds/path.rst:329
+msgid ""
+">_ path resolve /bin//sh\n"
+"# The \"//\" is squashed, and /bin is resolved if your system links it to /"
+"usr/bin.\n"
+"# sh here is bash (this is common on linux systems)\n"
+"/usr/bin/bash\n"
+"\n"
+">_ path resolve /bin/foo///bar/../baz\n"
+"# Assuming /bin exists and is a symlink to /usr/bin, but /bin/foo doesn't.\n"
+"# This resolves the /bin/ and normalizes the nonexistent rest:\n"
+"/usr/bin/foo/baz"
+msgstr ""
+
+#: ../../../cmds/path.rst:340
+msgid "\"change-extension\" subcommand"
+msgstr ""
+
+#: ../../../cmds/path.rst:344
+msgid ""
+"path change-extension [-z | --null-in] [-Z | --null-out] \\\n"
+"    [-q | --quiet] EXTENSION [PATH ...]"
+msgstr ""
+
+#: ../../../cmds/path.rst:347
+msgid ""
+"``path change-extension`` returns the given paths, with their extension "
+"changed to the given new extension. The extension is the part after (and "
+"including) the last \".\", unless that \".\" followed a \"/\" or the "
+"basename is \".\" or \"..\", in which case there is no previous extension "
+"and the new one is simply added."
+msgstr ""
+
+#: ../../../cmds/path.rst:349
+msgid ""
+"If the extension is empty, any previous extension is stripped, along with "
+"the \".\". This is, of course, the inverse of ``path extension``."
+msgstr ""
+
+#: ../../../cmds/path.rst:351
+msgid ""
+"One leading dot on the extension is ignored, so \".mp3\" and \"mp3\" are "
+"treated the same."
+msgstr ""
+
+#: ../../../cmds/path.rst:353
+msgid "It returns 0 if it was given any paths."
+msgstr ""
+
+#: ../../../cmds/path.rst:360
+msgid ""
+">_ path change-extension mp4 ./foo.wmv\n"
+"./foo.mp4\n"
+"\n"
+">_ path change-extension .mp4 ./foo.wmv\n"
+"./foo.mp4\n"
+"\n"
+">_ path change-extension '' ../banana\n"
+"../banana\n"
+"# but status 1, because there was no extension.\n"
+"\n"
+">_ path change-extension '' ~/.config\n"
+"/home/alfa/.config\n"
+"# status 1\n"
+"\n"
+">_ path change-extension '' ~/.config.d\n"
+"/home/alfa/.config\n"
+"# status 0\n"
+"\n"
+">_ path change-extension '' ~/.config.\n"
+"/home/alfa/.config\n"
+"# status 0"
+msgstr ""
+
+#: ../../../cmds/path.rst:383
+msgid "\"sort\" subcommand"
+msgstr ""
+
+#: ../../../cmds/path.rst:387
+msgid ""
+"path sort [-z | --null-in] [-Z | --null-out] \\\n"
+"    [-q | --quiet] [-r | --reverse] \\\n"
+"    [--key=basename|dirname|path] [PATH ...]"
+msgstr ""
+
+#: ../../../cmds/path.rst:392
+msgid ""
+"``path sort`` returns the given paths in sorted order. They are sorted in "
+"the same order as globs - alphabetically, but with runs of numerical digits "
+"compared numerically."
+msgstr ""
+
+#: ../../../cmds/path.rst:394
+msgid "With ``--reverse`` or ``-r`` the sort is reversed."
+msgstr ""
+
+#: ../../../cmds/path.rst:396
+msgid ""
+"With ``--key=`` only the given part of the path is compared, e.g. ``--"
+"key=dirname`` causes only the dirname to be compared, ``--key=basename`` "
+"only the basename and ``--key=path`` causes the entire path to be compared "
+"(this is the default)."
+msgstr ""
+
+#: ../../../cmds/path.rst:398
+msgid ""
+"With ``--unique`` or ``-u`` the sort is deduplicated, meaning only the first "
+"of a run that have the same key is kept. So if you are sorting by basename, "
+"then only the first of each basename is used."
+msgstr ""
+
+#: ../../../cmds/path.rst:400
+msgid ""
+"The sort used is stable, so sorting first by basename and then by dirname "
+"works and causes the files to be grouped according to directory."
+msgstr ""
+
+#: ../../../cmds/path.rst:402
+msgid "It currently returns 0 if it was given any paths."
+msgstr ""
+
+#: ../../../cmds/path.rst:409
+msgid ""
+">_ path sort 10-foo 2-bar\n"
+"2-bar\n"
+"10-foo\n"
+"\n"
+">_ path sort --reverse 10-foo 2-bar\n"
+"10-foo\n"
+"2-bar\n"
+"\n"
+">_ path sort --unique --key=basename $fish_function_path/*.fish\n"
+"# prints a list of all function files fish would use, sorted by name."
+msgstr ""
+
+#: ../../../cmds/path.rst:422
+msgid "Combining ``path``"
+msgstr ""
+
+#: ../../../cmds/path.rst:424
+msgid ""
+"``path`` is meant to be easy to combine with itself, other tools and fish."
+msgstr ""
+
+#: ../../../cmds/path.rst:426
+msgid "This is why"
+msgstr ""
+
+#: ../../../cmds/path.rst:428
+msgid ""
+"``path``'s output is automatically split by fish if it goes into a command "
+"substitution, so just doing ``(path ...)`` handles all paths, even those "
+"containing newlines, correctly"
+msgstr ""
+
+#: ../../../cmds/path.rst:429
+msgid ""
+"``path`` has ``--null-in`` to handle null-delimited input (typically "
+"automatically detected!), and ``--null-out`` to pass on null-delimited output"
+msgstr ""
+
+#: ../../../cmds/path.rst:431
+msgid "Some examples of combining ``path``::"
+msgstr ""
+
+#: ../../../cmds/path.rst:433
+msgid ""
+"# Expand all paths in the current directory, leave only executable files, "
+"and print their resolved path\n"
+"path filter -zZ -xf -- * | path resolve -z\n"
+"\n"
+"# The same thing, but using find (note -maxdepth needs to come first or find "
+"will scream)\n"
+"# (this also depends on your particular version of find)\n"
+"# Note the `-z` is unnecessary for any sensible version of find - if `path` "
+"sees a NULL,\n"
+"# it will split on NULL automatically.\n"
+"find . -maxdepth 1 -type f -executable -print0 | path resolve -z\n"
+"\n"
+"set -l paths (path filter -p exec $PATH/fish -Z | path resolve)"
+msgstr ""

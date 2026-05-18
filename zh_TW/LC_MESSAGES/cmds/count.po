@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/count.rst:4
+msgid "count - count the number of elements of a list"
+msgstr ""
+
+#: ../../../cmds/count.rst:7
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/count.rst:9
+msgid ""
+"count STRING1 STRING2 ...\n"
+"COMMAND | count\n"
+"count [...] < FILE"
+msgstr ""
+
+#: ../../../cmds/count.rst:16
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/count.rst:18
+msgid ""
+"``count`` prints the number of arguments that were passed to it, plus the "
+"number of newlines passed to it via stdin. This is usually used to find out "
+"how many elements an environment variable list contains, or how many lines "
+"there are in a text file."
+msgstr ""
+
+#: ../../../cmds/count.rst:20
+msgid "``count`` does not accept any options, not even ``-h`` or ``--help``."
+msgstr ""
+
+#: ../../../cmds/count.rst:22
+msgid ""
+"``count`` exits with a non-zero exit status if no arguments were passed to "
+"it, and with zero if at least one argument was passed."
+msgstr ""
+
+#: ../../../cmds/count.rst:24
+msgid ""
+"Note that, like ``wc -l``, reading from stdin counts newlines, so ``echo -n "
+"foo | count`` will print 0."
+msgstr ""
+
+#: ../../../cmds/count.rst:27
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/count.rst:33
+msgid ""
+"count $PATH\n"
+"# Returns the number of directories in the users PATH variable.\n"
+"\n"
+"count *.txt\n"
+"# Returns the number of files in the current working directory\n"
+"# ending with the suffix '.txt'.\n"
+"\n"
+"git ls-files --others --exclude-standard | count\n"
+"# Returns the number of untracked files in a git repository\n"
+"\n"
+"printf '%s\\n' foo bar | count baz\n"
+"# Returns 3 (2 lines from stdin plus 1 argument)\n"
+"\n"
+"count < /etc/hosts\n"
+"# Counts the number of entries in the hosts file"
+msgstr ""

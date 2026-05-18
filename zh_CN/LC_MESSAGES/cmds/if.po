@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/if.rst:4
+msgid "if - conditionally execute a command"
+msgstr ""
+
+#: ../../../cmds/if.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/if.rst:9
+msgid ""
+"if CONDITION; COMMANDS_TRUE ...;\n"
+"[else if CONDITION2; COMMANDS_TRUE2 ...;]\n"
+"[else; COMMANDS_FALSE ...;]\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/if.rst:17
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/if.rst:19
+msgid ""
+"``if`` will execute the command ``CONDITION``. If the condition's exit "
+"status is 0, the commands ``COMMANDS_TRUE`` will execute.  If the exit "
+"status is not 0 and :doc:`else <else>` is given, ``COMMANDS_FALSE`` will be "
+"executed."
+msgstr ""
+
+#: ../../../cmds/if.rst:21
+msgid ""
+"You can use :doc:`and <and>` or :doc:`or <or>` in the condition. See the "
+"second example below."
+msgstr ""
+
+#: ../../../cmds/if.rst:23
+msgid ""
+"The exit status of the last foreground command to exit can always be "
+"accessed using the :ref:`$status <variables-status>` variable."
+msgstr ""
+
+#: ../../../cmds/if.rst:25
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/if.rst:28
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/if.rst:30
+msgid ""
+"The following code will print ``foo.txt exists`` if the file foo.txt exists "
+"and is a regular file, otherwise it will print ``bar.txt exists`` if the "
+"file bar.txt exists and is a regular file, otherwise it will print ``foo.txt "
+"and bar.txt do not exist``."
+msgstr ""
+
+#: ../../../cmds/if.rst:36
+msgid ""
+"if test -f foo.txt\n"
+"    echo foo.txt exists\n"
+"else if test -f bar.txt\n"
+"    echo bar.txt exists\n"
+"else\n"
+"    echo foo.txt and bar.txt do not exist\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/if.rst:45
+msgid ""
+"The following code will print \"foo.txt exists and is readable\" if foo.txt "
+"is a regular file and readable"
+msgstr ""
+
+#: ../../../cmds/if.rst:50
+msgid ""
+"if test -f foo.txt\n"
+"   and test -r foo.txt\n"
+"   echo \"foo.txt exists and is readable\"\n"
+"end"
+msgstr ""

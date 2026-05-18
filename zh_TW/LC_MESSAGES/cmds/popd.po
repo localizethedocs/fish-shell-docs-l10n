@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/popd.rst:4
+msgid "popd - move through directory stack"
+msgstr ""
+
+#: ../../../cmds/popd.rst:7
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/popd.rst:9
+msgid "popd"
+msgstr ""
+
+#: ../../../cmds/popd.rst:14
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/popd.rst:16
+msgid ""
+"``popd`` removes the top directory from the :ref:`directory stack <directory-"
+"stack>` and changes the working directory to the new top directory. Use :doc:"
+"`pushd <pushd>` to add directories to the stack."
+msgstr ""
+
+#: ../../../cmds/popd.rst:18
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/popd.rst:21
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/popd.rst:25
+msgid ""
+"pushd /usr/src\n"
+"# Working directory is now /usr/src\n"
+"# Directory stack contains /usr/src\n"
+"\n"
+"pushd /usr/src/fish-shell\n"
+"# Working directory is now /usr/src/fish-shell\n"
+"# Directory stack contains /usr/src /usr/src/fish-shell\n"
+"\n"
+"popd\n"
+"# Working directory is now /usr/src\n"
+"# Directory stack contains /usr/src"
+msgstr ""
+
+#: ../../../cmds/popd.rst:38
+msgid "See Also"
+msgstr "另請參見"
+
+#: ../../../cmds/popd.rst:40
+msgid "the :doc:`dirs <dirs>` command to print the directory stack"
+msgstr ""
+
+#: ../../../cmds/popd.rst:41
+msgid ""
+"the :doc:`cdh <cdh>` command which provides a more intuitive way to navigate "
+"to recently visited directories."
+msgstr ""
