@@ -30,6 +30,15 @@
       }
     },
     {
+      "name" : "fa_IR",
+      "displayName" : "Persian",
+      "description" : "فارسی",
+      "inherits" : "default",
+      "cacheVariables" : {
+        "LANGUAGE" : "fa_IR"
+      }
+    },
+    {
       "name" : "zh_CN",
       "displayName" : "Simplified Chinese",
       "description" : "简体中文",
