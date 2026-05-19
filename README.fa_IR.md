@@ -2,7 +2,7 @@
 <h1 id="localization-of-fish-shell-documentation">Localization of Fish Shell Documentation</h1>
 </div>
 
-<details><summary><strong>切换语言</strong></summary>
+<details><summary><strong>Switch Languages</strong></summary>
 <p></p>
 <ul>
   <li><a href="./README.md"><code>en_US</code> : English</a></li>
