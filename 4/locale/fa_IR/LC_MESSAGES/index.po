@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../index.rst:5
 msgid "Introduction"
-msgstr ""
+msgstr "معرفی"
 
 #: ../../../index.rst:7
 msgid ""
@@ -289,7 +289,7 @@ msgstr ""
 
 #: ../../../index.rst:115
 msgid "Configuration"
-msgstr ""
+msgstr "پیکربندی"
 
 #: ../../../index.rst:117
 msgid ""
