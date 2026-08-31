@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/begin.rst:2
+msgid "begin - start a new block of code"
+msgstr ""
+
+#: ../../../cmds/begin.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/begin.rst:7
+msgid ""
+"begin; [COMMANDS ...]; end\n"
+"{ [COMMANDS ...] }"
+msgstr ""
+
+#: ../../../cmds/begin.rst:13
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/begin.rst:15
+msgid "``begin`` is used to create a new block of code."
+msgstr ""
+
+#: ../../../cmds/begin.rst:17
+msgid ""
+"A block allows the introduction of a new :ref:`variable scope <variables-"
+"scope>`, redirection of the input or output of a set of commands as a group, "
+"or to specify precedence when using the conditional commands like ``and``."
+msgstr ""
+
+#: ../../../cmds/begin.rst:19
+msgid ""
+"The block is unconditionally executed. ``begin; ...; end`` is equivalent to "
+"``if true; ...; end``."
+msgstr ""
+
+#: ../../../cmds/begin.rst:21
+msgid ""
+"``begin`` does not change the current exit status itself. After the block "
+"has completed, ``$status`` will be set to the status returned by the most "
+"recent command."
+msgstr ""
+
+#: ../../../cmds/begin.rst:23
+msgid "Some other shells only support the ``{ [COMMANDS ...] ; }`` notation."
+msgstr ""
+
+#: ../../../cmds/begin.rst:25
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/begin.rst:28
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/begin.rst:30
+msgid ""
+"The following code sets a number of variables inside of a block scope. Since "
+"the variables are set inside the block and have local scope, they will be "
+"automatically deleted when the block ends."
+msgstr ""
+
+#: ../../../cmds/begin.rst:34
+msgid ""
+"begin\n"
+"    set -l PIRATE Yarrr\n"
+"\n"
+"    ...\n"
+"end\n"
+"\n"
+"echo $PIRATE\n"
+"# This will not output anything, since the PIRATE variable\n"
+"# went out of scope at the end of the block"
+msgstr ""
+
+#: ../../../cmds/begin.rst:45
+msgid "In the following code, all output is redirected to the file out.html."
+msgstr ""
+
+#: ../../../cmds/begin.rst:49
+msgid ""
+"begin\n"
+"    echo $xml_header\n"
+"    echo $html_header\n"
+"    if test -e $file\n"
+"        ...\n"
+"    end\n"
+"    ...\n"
+"end > out.html"
+msgstr ""

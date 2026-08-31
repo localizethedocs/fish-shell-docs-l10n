@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/case.rst:2
+msgid "case - conditionally execute a block of commands"
+msgstr ""
+
+#: ../../../cmds/case.rst:5
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/case.rst:7
+msgid ""
+"switch VALUE\n"
+"   [case [GLOB ...]\n"
+"       [COMMAND ...]]\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/case.rst:15
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/case.rst:17
+msgid ""
+"``switch`` executes one of several blocks of commands, depending on whether "
+"a specified value matches one of several values. ``case`` is used together "
+"with the ``switch`` statement in order to determine which block should be "
+"executed."
+msgstr ""
+
+#: ../../../cmds/case.rst:19
+msgid ""
+"Each ``case`` command is given one or more parameters. The first ``case`` "
+"command with a parameter that matches the string specified in the switch "
+"command will be evaluated. ``case`` parameters may contain wildcards. These "
+"need to be escaped or quoted in order to avoid regular wildcard expansion "
+"using filenames."
+msgstr ""
+
+#: ../../../cmds/case.rst:21
+msgid ""
+"Note that fish does not fall through on case statements. Only the first "
+"matching case is executed."
+msgstr ""
+
+#: ../../../cmds/case.rst:23
+msgid ""
+"Note that command substitutions in a case statement will be evaluated even "
+"if its body is not taken. All substitutions, including command "
+"substitutions, must be performed before the value can be compared against "
+"the parameter."
+msgstr ""
+
+#: ../../../cmds/case.rst:26
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/case.rst:28
+msgid ""
+"Say \\$animal contains the name of an animal. Then this code would classify "
+"it:"
+msgstr ""
+
+#: ../../../cmds/case.rst:32
+msgid ""
+"switch $animal\n"
+"    case cat\n"
+"        echo evil\n"
+"    case wolf dog human moose dolphin whale\n"
+"        echo mammal\n"
+"    case duck goose albatross\n"
+"        echo bird\n"
+"    case shark trout stingray\n"
+"        echo fish\n"
+"    # Note that the next case has a wildcard which is quoted\n"
+"    case '*'\n"
+"        echo I have no idea what a $animal is\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/case.rst:47
+msgid ""
+"If the above code was run with ``$animal`` set to ``whale``, the output "
+"would be ``mammal``."
+msgstr ""
+
+#: ../../../cmds/case.rst:50
+msgid ""
+"If ``$animal`` was set to \"banana\", it would print \"I have no idea what a "
+"banana is\"."
+msgstr ""

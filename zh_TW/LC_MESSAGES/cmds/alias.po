@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/alias.rst:2
+msgid "alias - create a function"
+msgstr ""
+
+#: ../../../cmds/alias.rst:5
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/alias.rst:7
+msgid ""
+"alias\n"
+"alias [--save] NAME DEFINITION\n"
+"alias [--save] NAME=DEFINITION"
+msgstr ""
+
+#: ../../../cmds/alias.rst:15
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/alias.rst:19
+msgid ""
+"NOTE: This page documents the fish builtin ``alias``. To see the "
+"documentation on any non-fish versions, use ``command man alias``."
+msgstr ""
+
+#: ../../../cmds/alias.rst:22
+msgid ""
+"``alias`` is a simple wrapper for the ``function`` builtin, which creates a "
+"function wrapping a command. It has similar syntax to POSIX shell ``alias``. "
+"For other uses, it is recommended to define a :doc:`function <function>`."
+msgstr ""
+
+#: ../../../cmds/alias.rst:24
+msgid ""
+"If you want to ease your interactive use, to save typing, consider using an :"
+"doc:`abbreviation <abbr>` instead."
+msgstr ""
+
+#: ../../../cmds/alias.rst:26
+msgid ""
+"``fish`` marks functions that have been created by ``alias`` by including "
+"the command used to create them in the function description. You can list "
+"``alias``-created functions by running ``alias`` without arguments. They "
+"must be erased using ``functions -e``."
+msgstr ""
+
+#: ../../../cmds/alias.rst:28
+msgid "``NAME`` is the name of the alias"
+msgstr ""
+
+#: ../../../cmds/alias.rst:29
+msgid ""
+"``DEFINITION`` is the actual command to execute. ``alias`` automatically "
+"appends ``$argv``, so that all parameters used with the alias are passed to "
+"the actual command."
+msgstr ""
+
+#: ../../../cmds/alias.rst:31
+msgid ""
+"You cannot create an alias to a function with the same name. Note that "
+"spaces need to be escaped in the call to ``alias`` just like at the command "
+"line, *even inside quoted parts*."
+msgstr ""
+
+#: ../../../cmds/alias.rst:33
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/alias.rst:35
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/alias.rst:36
+msgid "Displays help about using this command."
+msgstr "顯示此指令的幫助資訊。"
+
+#: ../../../cmds/alias.rst:38
+msgid "**-s** or **--save**"
+msgstr ""
+
+#: ../../../cmds/alias.rst:39
+msgid ""
+"Saves the function created by the alias into your fish configuration "
+"directory using :doc:`funcsave <funcsave>`."
+msgstr ""
+
+#: ../../../cmds/alias.rst:42
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/alias.rst:44
+msgid ""
+"The following code will create ``rmi``, which runs ``rm`` with additional "
+"arguments on every invocation."
+msgstr ""
+
+#: ../../../cmds/alias.rst:48
+msgid ""
+"alias rmi=\"rm -i\"\n"
+"\n"
+"# This is equivalent to entering the following function:\n"
+"function rmi --wraps rm --description 'alias rmi=rm -i'\n"
+"    rm -i $argv\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/alias.rst:55
+msgid "``alias`` sometimes requires escaping, as you can see here::"
+msgstr ""
+
+#: ../../../cmds/alias.rst:57
+msgid ""
+"# This needs to have the spaces escaped or \"Chrome.app...\"\n"
+"# will be seen as an argument to \"/Applications/Google\":\n"
+"alias chrome='/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ "
+"Chrome'"
+msgstr ""
+
+#: ../../../cmds/alias.rst:63
+msgid "See more"
+msgstr ""
+
+#: ../../../cmds/alias.rst:65
+msgid "The :doc:`function <function>` command this builds on."
+msgstr ""
+
+#: ../../../cmds/alias.rst:66
+msgid ":ref:`Functions <syntax-function>`."
+msgstr ""
+
+#: ../../../cmds/alias.rst:67
+msgid ":ref:`Defining aliases <syntax-aliases>`."
+msgstr ""
