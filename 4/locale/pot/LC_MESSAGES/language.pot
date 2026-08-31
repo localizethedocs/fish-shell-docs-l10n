@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell 4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"POT-Creation-Date: 2026-08-31 17:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -224,7 +224,7 @@ msgstr ""
 
 #: ../../../language.rst:73
 msgid ""
-"Fish understands two kinds of quotes: Single (``'``) and double (``\"``), "
+"fish understands two kinds of quotes: Single (``'``) and double (``\"``), "
 "and both work slightly differently."
 msgstr ""
 
@@ -605,8 +605,8 @@ msgid ""
 "regular ``<`` one."
 msgstr ""
 
-#: ../../../language.rst:189 ../../../language.rst:1335
-#: ../../../language.rst:1801 ../../../language.rst:2160
+#: ../../../language.rst:189 ../../../language.rst:1337
+#: ../../../language.rst:1803 ../../../language.rst:2162
 msgid "For example::"
 msgstr ""
 
@@ -774,7 +774,7 @@ msgid ""
 "running programs that have a graphical user interface."
 msgstr ""
 
-#: ../../../language.rst:281 ../../../language.rst:1139
+#: ../../../language.rst:281 ../../../language.rst:1141
 msgid "Example::"
 msgstr ""
 
@@ -868,7 +868,7 @@ msgstr ""
 
 #: ../../../language.rst:318
 msgid ""
-"Fish's prompt is also defined in a function, called :doc:`fish_prompt <cmds/"
+"fish's prompt is also defined in a function, called :doc:`fish_prompt <cmds/"
 "fish_prompt>`. It is run when the prompt is about to be displayed and its "
 "output forms the prompt::"
 msgstr ""
@@ -1118,7 +1118,7 @@ msgstr ""
 
 #: ../../../language.rst:416
 msgid ""
-"Fish has some builtins that let you execute commands only if a specific "
+"fish has some builtins that let you execute commands only if a specific "
 "criterion is met: :doc:`if <cmds/if>`, :doc:`switch <cmds/switch>`, :doc:"
 "`and <cmds/and>` and :doc:`or <cmds/or>`, and also the familiar :ref:`&&/|| "
 "<syntax-combiners>` syntax."
@@ -1137,7 +1137,7 @@ msgstr ""
 #: ../../../language.rst:425
 msgid ""
 "Like other shells, but unlike typical programming languages you might know, "
-"the condition here is a *command*. Fish runs it, and if it returns a true :"
+"the condition here is a *command*. fish runs it, and if it returns a true :"
 "ref:`exit status <variables-status>` (that's 0), the if-block is run. For "
 "example::"
 msgstr ""
@@ -1577,27 +1577,33 @@ msgid ""
 msgstr ""
 
 #: ../../../language.rst:623
-msgid "Examples:"
+msgid ""
+"Wildcards never expand to ``.`` (current directory) or ``..`` (parent "
+"directory)."
 msgstr ""
 
 #: ../../../language.rst:625
+msgid "Examples:"
+msgstr ""
+
+#: ../../../language.rst:627
 msgid ""
 "``a*`` matches any files beginning with an 'a' in the current directory."
 msgstr ""
 
-#: ../../../language.rst:627
+#: ../../../language.rst:629
 msgid ""
 "``**`` matches any files and directories in the current directory and all of "
 "its subdirectories."
 msgstr ""
 
-#: ../../../language.rst:629
+#: ../../../language.rst:631
 msgid ""
 "``~/.*`` matches all hidden files (also known as \"dotfiles\") and "
 "directories in your home directory."
 msgstr ""
 
-#: ../../../language.rst:631
+#: ../../../language.rst:633
 msgid ""
 "For most commands, if any wildcard fails to expand, the command is not "
 "executed, :ref:`$status <variables-status>` is set to nonzero, and a warning "
@@ -1609,12 +1615,12 @@ msgid ""
 "``shopt -s nullglob`` in bash."
 msgstr ""
 
-#: ../../../language.rst:633 ../../../language.rst:839
-#: ../../../language.rst:877
+#: ../../../language.rst:635 ../../../language.rst:841
+#: ../../../language.rst:879
 msgid "Examples::"
 msgstr ""
 
-#: ../../../language.rst:635
+#: ../../../language.rst:637
 msgid ""
 "# List the .foo files, or warns if there aren't any.\n"
 "ls *.foo\n"
@@ -1626,43 +1632,43 @@ msgid ""
 "end"
 msgstr ""
 
-#: ../../../language.rst:644
+#: ../../../language.rst:646
 msgid ""
 "Unlike bash (by default), fish will not pass on the literal glob character "
 "if no match was found, so for a command like ``apt install`` that does the "
 "matching itself, you need to add quotes::"
 msgstr ""
 
-#: ../../../language.rst:646
+#: ../../../language.rst:648
 msgid "apt install \"ncurses-*\""
 msgstr ""
 
-#: ../../../language.rst:651
+#: ../../../language.rst:653
 msgid "Variable expansion"
 msgstr ""
 
-#: ../../../language.rst:653
+#: ../../../language.rst:655
 msgid ""
 "One of the most important expansions in fish is the \"variable expansion\". "
 "This is the replacing of a dollar sign (``$``) followed by a variable name "
 "with the _value_ of that variable."
 msgstr ""
 
-#: ../../../language.rst:655
+#: ../../../language.rst:657
 msgid "A simple example::"
 msgstr ""
 
-#: ../../../language.rst:657
+#: ../../../language.rst:659
 msgid "echo $HOME"
 msgstr ""
 
-#: ../../../language.rst:659
+#: ../../../language.rst:661
 msgid ""
 "which will replace ``$HOME`` with the home directory of the current user, "
 "and pass it to :doc:`echo <cmds/echo>`, which will then print it."
 msgstr ""
 
-#: ../../../language.rst:661
+#: ../../../language.rst:663
 msgid ""
 "Some variables like ``$HOME`` are already set because fish sets them by "
 "default or because fish's parent process passed them to fish when it started "
@@ -1670,38 +1676,38 @@ msgid ""
 "set>`::"
 msgstr ""
 
-#: ../../../language.rst:663
+#: ../../../language.rst:665
 msgid ""
 "set my_directory /home/cooluser/mystuff\n"
 "ls $my_directory\n"
 "# shows the contents of /home/cooluser/mystuff"
 msgstr ""
 
-#: ../../../language.rst:667
+#: ../../../language.rst:669
 msgid ""
 "For more on how setting variables works, see :ref:`Shell variables "
 "<variables>` and the following sections."
 msgstr ""
 
-#: ../../../language.rst:669
+#: ../../../language.rst:671
 msgid ""
 "Sometimes a variable has no value because it is undefined or empty, and it "
 "expands to nothing::"
 msgstr ""
 
-#: ../../../language.rst:671
+#: ../../../language.rst:673
 msgid ""
 "echo $nonexistentvariable\n"
 "# Prints no output."
 msgstr ""
 
-#: ../../../language.rst:674
+#: ../../../language.rst:676
 msgid ""
 "To separate a variable name from text you can encase the variable within "
 "double-quotes or braces::"
 msgstr ""
 
-#: ../../../language.rst:676
+#: ../../../language.rst:678
 msgid ""
 "set WORD cat\n"
 "echo The plural of $WORD is \"$WORD\"s\n"
@@ -1710,36 +1716,36 @@ msgid ""
 "# ditto"
 msgstr ""
 
-#: ../../../language.rst:682
+#: ../../../language.rst:684
 msgid ""
 "Without the quotes or braces, fish will try to expand a variable called "
 "``$WORDs``, which may not exist."
 msgstr ""
 
-#: ../../../language.rst:684
+#: ../../../language.rst:686
 msgid ""
 "The latter syntax ``{$WORD}`` is a special case of :ref:`brace expansion "
 "<expand-brace>`."
 msgstr ""
 
-#: ../../../language.rst:686
+#: ../../../language.rst:688
 msgid ""
 "If $WORD here is undefined or an empty list, the \"s\" is not printed. "
 "However, it is printed if $WORD is the empty string (like after ``set WORD "
 "\"\"``)."
 msgstr ""
 
-#: ../../../language.rst:688
+#: ../../../language.rst:690
 msgid ""
 "For more on shell variables, read the :ref:`Shell variables <variables>` "
 "section."
 msgstr ""
 
-#: ../../../language.rst:691
+#: ../../../language.rst:693
 msgid "Quoting variables"
 msgstr ""
 
-#: ../../../language.rst:693
+#: ../../../language.rst:695
 msgid ""
 "Variable expansion also happens in double quoted strings. Inside double "
 "quotes (``\"these\"``), variables will always expand to exactly one "
@@ -1750,14 +1756,14 @@ msgid ""
 "(``:``) instead [#]_."
 msgstr ""
 
-#: ../../../language.rst:695
+#: ../../../language.rst:697
 msgid ""
-"Fish variables are all :ref:`lists <variables-lists>`, and they are split "
+"fish variables are all :ref:`lists <variables-lists>`, and they are split "
 "into elements when they are *set* - that means it is important to decide "
 "whether to use quotes or not with :doc:`set <cmds/set>`::"
 msgstr ""
 
-#: ../../../language.rst:697
+#: ../../../language.rst:699
 msgid ""
 "set foo 1 2 3 # a variable with three elements\n"
 "rm $foo # runs the equivalent of `rm 1 2 3` - trying to delete three files: "
@@ -1773,27 +1779,27 @@ msgid ""
 "rm \"$foo\" # same thing"
 msgstr ""
 
-#: ../../../language.rst:709
+#: ../../../language.rst:711
 msgid ""
 "This is unlike other shells, which do what is known as \"Word Splitting\", "
 "where they split the variable when it is *used* in an expansion. E.g. in "
 "bash:"
 msgstr ""
 
-#: ../../../language.rst:711
+#: ../../../language.rst:713
 msgid ""
 "foo=\"1 2 3\"\n"
 "rm $foo # runs the equivalent of `rm 1 2 3`\n"
 "rm \"$foo\" # runs the equivalent of `rm '1 2 3'`"
 msgstr ""
 
-#: ../../../language.rst:717
+#: ../../../language.rst:719
 msgid ""
 "This is the cause of very common problems with filenames with spaces in bash "
 "scripts."
 msgstr ""
 
-#: ../../../language.rst:719
+#: ../../../language.rst:721
 msgid ""
 "In fish, unquoted variables will expand to as many arguments as they have "
 "elements. That means an empty list will expand to nothing, a variable with "
@@ -1801,14 +1807,14 @@ msgid ""
 "elements will expand to each of those elements separately."
 msgstr ""
 
-#: ../../../language.rst:721
+#: ../../../language.rst:723
 msgid ""
 "If a variable expands to nothing, it will cancel out any other strings "
 "attached to it. See the :ref:`Combining Lists <cartesian-product>` section "
 "for more information."
 msgstr ""
 
-#: ../../../language.rst:723
+#: ../../../language.rst:725
 msgid ""
 "Most of the time, not quoting a variable is correct. The exception is when "
 "you need to ensure that the variable is passed as one element, even if it "
@@ -1816,7 +1822,7 @@ msgid ""
 "<cmds/test>`::"
 msgstr ""
 
-#: ../../../language.rst:725
+#: ../../../language.rst:727
 msgid ""
 "set -l foo one two three\n"
 "test -n $foo\n"
@@ -1829,24 +1835,24 @@ msgid ""
 "test -n \"one two three\""
 msgstr ""
 
-#: ../../../language.rst:734
+#: ../../../language.rst:736
 msgid ""
 "Unlike bash or zsh, which will join with the first character of $IFS (which "
 "usually is space)."
 msgstr ""
 
-#: ../../../language.rst:737
+#: ../../../language.rst:739
 msgid "Dereferencing variables"
 msgstr ""
 
-#: ../../../language.rst:739
+#: ../../../language.rst:741
 msgid ""
 "The ``$`` symbol can also be used multiple times, as a kind of "
 "\"dereference\" operator (the ``*`` in C or C++), like in the following "
 "code::"
 msgstr ""
 
-#: ../../../language.rst:741
+#: ../../../language.rst:743
 msgid ""
 "set foo a b c\n"
 "set a 10; set b 20; set c 30\n"
@@ -1860,15 +1866,15 @@ msgid ""
 "# 30"
 msgstr ""
 
-#: ../../../language.rst:752
+#: ../../../language.rst:754
 msgid "``$$foo[$i]`` is \"the value of the variable named by ``$foo[$i]``\"."
 msgstr ""
 
-#: ../../../language.rst:754
+#: ../../../language.rst:756
 msgid "This can also be used to give a variable name to a function::"
 msgstr ""
 
-#: ../../../language.rst:756
+#: ../../../language.rst:758
 msgid ""
 "function print_var\n"
 "    for arg in $argv\n"
@@ -1883,7 +1889,7 @@ msgid ""
 "# prints \"Variable foo is 1 2 3\" and \"Variable bar is a b c\""
 msgstr ""
 
-#: ../../../language.rst:768
+#: ../../../language.rst:770
 msgid ""
 "Of course the variable will have to be accessible from the function, so it "
 "needs to be :ref:`global/universal <variables-scope>` or :ref:`exported "
@@ -1892,7 +1898,7 @@ msgid ""
 "named it \"arg\" instead, it would not have worked."
 msgstr ""
 
-#: ../../../language.rst:770
+#: ../../../language.rst:772
 msgid ""
 "When using this feature together with :ref:`slices <expand-slices>`, the "
 "slices will be used from the inside out. ``$$foo[5]`` will use the fifth "
@@ -1902,11 +1908,11 @@ msgid ""
 "then give the fifth element of those)."
 msgstr ""
 
-#: ../../../language.rst:772
+#: ../../../language.rst:774
 msgid "Some more examples::"
 msgstr ""
 
-#: ../../../language.rst:774
+#: ../../../language.rst:776
 msgid ""
 "set listone 1 2 3\n"
 "set listtwo 4 5 6\n"
@@ -1925,27 +1931,27 @@ msgid ""
 "# The second element of every variable, so output is 2 5"
 msgstr ""
 
-#: ../../../language.rst:791
+#: ../../../language.rst:793
 msgid "Variables as command"
 msgstr ""
 
-#: ../../../language.rst:793
+#: ../../../language.rst:795
 msgid "Like other shells, you can run the value of a variable as a command."
 msgstr ""
 
-#: ../../../language.rst:797
+#: ../../../language.rst:799
 msgid ""
 "> set -g EDITOR emacs\n"
 "> $EDITOR foo # opens emacs, possibly the GUI version"
 msgstr ""
 
-#: ../../../language.rst:800
+#: ../../../language.rst:802
 msgid ""
 "If you want to give the command an argument inside the variable it needs to "
 "be a separate element::"
 msgstr ""
 
-#: ../../../language.rst:802
+#: ../../../language.rst:804
 msgid ""
 "> set EDITOR emacs -nw\n"
 "> $EDITOR foo # opens emacs in the terminal even if the GUI is installed\n"
@@ -1953,35 +1959,35 @@ msgid ""
 "> $EDITOR foo # tries to find a command called \"emacs -nw\""
 msgstr ""
 
-#: ../../../language.rst:807
+#: ../../../language.rst:809
 msgid ""
 "Also like other shells, this only works with commands, builtins and "
 "functions - it will not work with keywords because they have syntactical "
 "importance."
 msgstr ""
 
-#: ../../../language.rst:809
+#: ../../../language.rst:811
 msgid ""
 "For instance ``set if $if`` won't allow you to make an if-block, and ``set "
 "cmd command`` won't allow you to use the :doc:`command <cmds/command>` "
 "decorator, but only uses like ``$cmd -q foo``."
 msgstr ""
 
-#: ../../../language.rst:815
+#: ../../../language.rst:817
 msgid "Command substitution"
 msgstr ""
 
-#: ../../../language.rst:817
+#: ../../../language.rst:819
 msgid ""
 "A ``command substitution`` is an expansion that uses the *output* of a "
 "command as the arguments to another. For example::"
 msgstr ""
 
-#: ../../../language.rst:819
+#: ../../../language.rst:821
 msgid "echo $(pwd)"
 msgstr ""
 
-#: ../../../language.rst:821
+#: ../../../language.rst:823
 msgid ""
 "This executes the :doc:`pwd <cmds/pwd>` command, takes its output (more "
 "specifically what it wrote to the standard output \"stdout\" stream) and "
@@ -1990,42 +1996,42 @@ msgid ""
 "be started."
 msgstr ""
 
-#: ../../../language.rst:823
+#: ../../../language.rst:825
 msgid ""
 "If the inner command prints multiple lines, fish will use each separate line "
 "as a separate argument to the outer command. Unlike other shells, the value "
 "of ``$IFS`` is not used [#]_, fish splits on newlines."
 msgstr ""
 
-#: ../../../language.rst:825
+#: ../../../language.rst:827
 msgid "Command substitutions can also be double-quoted::"
 msgstr ""
 
-#: ../../../language.rst:827
+#: ../../../language.rst:829
 msgid "echo \"$(pwd)\""
 msgstr ""
 
-#: ../../../language.rst:829
+#: ../../../language.rst:831
 msgid ""
 "When using double quotes, the command output is not split up by lines, but "
 "trailing empty lines are still removed."
 msgstr ""
 
-#: ../../../language.rst:831
+#: ../../../language.rst:833
 msgid ""
 "If the output is piped to :doc:`string split or string split0 <cmds/string-"
 "split>` as the last step, those splits are used as they appear instead of "
 "splitting lines."
 msgstr ""
 
-#: ../../../language.rst:833
+#: ../../../language.rst:835
 msgid ""
-"Fish also allows spelling command substitutions without the dollar, like "
+"fish also allows spelling command substitutions without the dollar, like "
 "``echo (pwd)``. This variant will not be expanded in double-quotes (``echo "
 "\"(pwd)\"`` will print ``(pwd)``)."
 msgstr ""
 
-#: ../../../language.rst:835
+#: ../../../language.rst:837
 msgid ""
 "The exit status of the last run command substitution is available in the :"
 "ref:`status <variables-status>` variable if the substitution happens in the "
@@ -2033,12 +2039,12 @@ msgid ""
 "checks if ``something`` returned true)."
 msgstr ""
 
-#: ../../../language.rst:837
+#: ../../../language.rst:839
 msgid ""
 "To use only some lines of the output, refer to :ref:`slices <expand-slices>`."
 msgstr ""
 
-#: ../../../language.rst:841
+#: ../../../language.rst:843
 msgid ""
 "# Outputs 'image.png'.\n"
 "echo (basename image.jpg .jpg).png\n"
@@ -2055,39 +2061,39 @@ msgid ""
 "set data (cat data | string split0)"
 msgstr ""
 
-#: ../../../language.rst:855
+#: ../../../language.rst:857
 msgid ""
 "Sometimes you want to pass the output of a command to another command that "
 "only accepts files. If it's just one file, you can usually pass it via a "
 "pipe, like::"
 msgstr ""
 
-#: ../../../language.rst:857
+#: ../../../language.rst:859
 msgid "grep fish myanimallist1 | wc -l"
 msgstr ""
 
-#: ../../../language.rst:859
+#: ../../../language.rst:861
 msgid ""
 "but if you need multiple or the command doesn't read from standard input, "
 "\"process substitution\" is useful. Other shells allow this via ``foo <(bar) "
 "<(baz)``, and fish uses the :doc:`psub <cmds/psub>` command::"
 msgstr ""
 
-#: ../../../language.rst:861
+#: ../../../language.rst:863
 msgid ""
 "# Compare only the lines containing \"fish\" in two files:\n"
 "diff -u (grep fish myanimallist1 | psub) (grep fish myanimallist2 | psub)"
 msgstr ""
 
-#: ../../../language.rst:864
+#: ../../../language.rst:866
 msgid ""
 "This creates a temporary file, stores the output of the command in that file "
 "and prints the filename, so it is given to the outer command."
 msgstr ""
 
-#: ../../../language.rst:866
+#: ../../../language.rst:868
 msgid ""
-"Fish has a default limit of 1 GiB on the data it will read in a command "
+"fish has a default limit of 1 GiB on the data it will read in a command "
 "substitution. If that limit is reached the command (all of it, not just the "
 "command substitution - the outer command won't be executed at all) fails and "
 "``$status`` is set to 122. This is so command substitutions can't cause the "
@@ -2098,17 +2104,17 @@ msgid ""
 "command."
 msgstr ""
 
-#: ../../../language.rst:868
+#: ../../../language.rst:870
 msgid ""
 "One exception: Setting ``$IFS`` to empty will disable line splitting. This "
 "is deprecated, use :doc:`string split <cmds/string-split>` instead."
 msgstr ""
 
-#: ../../../language.rst:873
+#: ../../../language.rst:875
 msgid "Brace expansion"
 msgstr ""
 
-#: ../../../language.rst:875
+#: ../../../language.rst:877
 msgid ""
 "Curly braces can be used to write comma-separated lists. They will be "
 "expanded with each element becoming a new parameter, with the surrounding "
@@ -2116,7 +2122,7 @@ msgid ""
 "variable name from surrounding text."
 msgstr ""
 
-#: ../../../language.rst:879
+#: ../../../language.rst:881
 msgid ""
 "> echo input.{c,h,txt}\n"
 "input.c input.h input.txt\n"
@@ -2132,13 +2138,13 @@ msgid ""
 "hotdog cooldog cutedog good dog"
 msgstr ""
 
-#: ../../../language.rst:892
+#: ../../../language.rst:894
 msgid ""
 "If there is no \",\" or variable expansion between the curly braces, they "
 "will not be expanded::"
 msgstr ""
 
-#: ../../../language.rst:894
+#: ../../../language.rst:896
 msgid ""
 "# This {} isn't special\n"
 "> echo foo-{}\n"
@@ -2149,59 +2155,59 @@ msgid ""
 "{a} {b} # because the inner brace pair is expanded, but the outer isn't."
 msgstr ""
 
-#: ../../../language.rst:902
+#: ../../../language.rst:904
 msgid ""
 "If after expansion there is nothing between the braces, the argument will be "
 "removed (see :ref:`the Combining Lists <cartesian-product>` section)::"
 msgstr ""
 
-#: ../../../language.rst:904
+#: ../../../language.rst:906
 msgid ""
 "> echo foo-{$undefinedvar}\n"
 "# Output is an empty line, like a bare `echo`."
 msgstr ""
 
-#: ../../../language.rst:907
+#: ../../../language.rst:909
 msgid ""
 "If there is nothing between a brace and a comma or two commas, it's "
 "interpreted as an empty element::"
 msgstr ""
 
-#: ../../../language.rst:909
+#: ../../../language.rst:911
 msgid ""
 "> echo {,,/usr}/bin\n"
 "/bin /bin /usr/bin"
 msgstr ""
 
-#: ../../../language.rst:912
+#: ../../../language.rst:914
 msgid ""
 "To use a \",\" as an element, :ref:`quote <quotes>` or :ref:`escape "
 "<escapes>` it."
 msgstr ""
 
-#: ../../../language.rst:914
+#: ../../../language.rst:916
 msgid ""
 "The very first character of a command token is never interpreted as "
 "expanding brace, because it's the beginning of a :doc:`compound statement "
 "<cmds/begin>`::"
 msgstr ""
 
-#: ../../../language.rst:916
+#: ../../../language.rst:918
 msgid ""
 "> {echo hello, && echo world}\n"
 "hello,\n"
 "world"
 msgstr ""
 
-#: ../../../language.rst:923
+#: ../../../language.rst:925
 msgid "Combining lists"
 msgstr ""
 
-#: ../../../language.rst:925
-msgid "Fish expands lists like :ref:`brace expansions <expand-brace>`::"
+#: ../../../language.rst:927
+msgid "fish expands lists like :ref:`brace expansions <expand-brace>`::"
 msgstr ""
 
-#: ../../../language.rst:927
+#: ../../../language.rst:929
 msgid ""
 ">_ set -l foo x y z\n"
 ">_ echo 1$foo\n"
@@ -2217,68 +2223,68 @@ msgid ""
 "good x bad x good y bad y good z bad z"
 msgstr ""
 
-#: ../../../language.rst:940
+#: ../../../language.rst:942
 msgid "Any string attached to a list will be concatenated to each element."
 msgstr ""
 
-#: ../../../language.rst:942
+#: ../../../language.rst:944
 msgid ""
 "Two lists will be expanded in all combinations  - every element of the first "
 "with every element of the second::"
 msgstr ""
 
-#: ../../../language.rst:944
+#: ../../../language.rst:946
 msgid ""
 ">_ set -l a x y z; set -l b 1 2 3\n"
 ">_ echo $a$b # same as {x,y,z}{1,2,3}\n"
 "x1 y1 z1 x2 y2 z2 x3 y3 z3"
 msgstr ""
 
-#: ../../../language.rst:948
+#: ../../../language.rst:950
 msgid ""
 "A result of this is that, if a list has no elements, this combines the "
 "string with no elements, which means the entire token is removed!"
 msgstr ""
 
-#: ../../../language.rst:952
+#: ../../../language.rst:954
 msgid ""
 ">_ set -l c # <- this list is empty!\n"
 ">_ echo {$c}word\n"
 "# Output is an empty line - the \"word\" part is gone"
 msgstr ""
 
-#: ../../../language.rst:956
+#: ../../../language.rst:958
 msgid ""
 "This can be quite useful. For example, if you want to go through all the "
 "files in all the directories in :envvar:`PATH`, use ::"
 msgstr ""
 
-#: ../../../language.rst:959
+#: ../../../language.rst:961
 msgid "for file in $PATH/*"
 msgstr ""
 
-#: ../../../language.rst:961
+#: ../../../language.rst:963
 msgid ""
 "Because :envvar:`PATH` is a list, this expands to all the files in all the "
 "directories in it. And if there are no directories in :envvar:`PATH`, the "
 "right answer here is to expand to no files."
 msgstr ""
 
-#: ../../../language.rst:963
+#: ../../../language.rst:965
 msgid ""
 "Sometimes this may be unwanted, especially that tokens can disappear after "
 "expansion. In those cases, you should double-quote variables - ``echo "
 "\"$c\"word``."
 msgstr ""
 
-#: ../../../language.rst:965
+#: ../../../language.rst:967
 msgid ""
 "This also happens after :ref:`command substitution <expand-command-"
 "substitution>`. To avoid tokens disappearing there, make the inner command "
 "return a trailing newline, or double-quote it::"
 msgstr ""
 
-#: ../../../language.rst:967
+#: ../../../language.rst:969
 msgid ""
 ">_ set b 1 2 3\n"
 ">_ echo (echo x)$b\n"
@@ -2295,11 +2301,11 @@ msgid ""
 "# quotes mean this is one argument, the banana stays"
 msgstr ""
 
-#: ../../../language.rst:984
+#: ../../../language.rst:986
 msgid "Slices"
 msgstr ""
 
-#: ../../../language.rst:986
+#: ../../../language.rst:988
 msgid ""
 "Sometimes it's necessary to access only some of the elements of a :ref:`list "
 "<variables-lists>` (all fish variables are lists), or some of the lines a :"
@@ -2307,7 +2313,7 @@ msgid ""
 "possible in fish by writing a set of indices in brackets, like::"
 msgstr ""
 
-#: ../../../language.rst:988
+#: ../../../language.rst:990
 msgid ""
 "# Make $var a list of four elements\n"
 "set var one two three four\n"
@@ -2319,7 +2325,7 @@ msgid ""
 "# prints \"one two three\""
 msgstr ""
 
-#: ../../../language.rst:997
+#: ../../../language.rst:999
 msgid ""
 "In index brackets, fish understands ranges written like ``a..b`` ('a' and "
 "'b' being indices). They are expanded into a sequence of indices from a to b "
@@ -2329,13 +2335,13 @@ msgid ""
 "index doesn't exist the range is clamped to the next possible index."
 msgstr ""
 
-#: ../../../language.rst:999
+#: ../../../language.rst:1001
 msgid ""
 "If a list has 5 elements the indices go from 1 to 5, so a range of ``2..16`` "
 "will only go from element 2 to element 5."
 msgstr ""
 
-#: ../../../language.rst:1001
+#: ../../../language.rst:1003
 msgid ""
 "If the end is negative the range always goes up, so ``2..-2`` will go from "
 "element 2 to 4, and ``2..-16`` won't go anywhere because there is no way to "
@@ -2346,22 +2352,22 @@ msgid ""
 "down."
 msgstr ""
 
-#: ../../../language.rst:1004
+#: ../../../language.rst:1006
 msgid ""
 "A missing starting index in a range defaults to 1. This is allowed if the "
 "range is the first index expression of the sequence. Similarly, a missing "
 "ending index, defaulting to -1 is allowed for the last index in the sequence."
 msgstr ""
 
-#: ../../../language.rst:1006
+#: ../../../language.rst:1008
 msgid "Multiple ranges are also possible, separated with a space."
 msgstr ""
 
-#: ../../../language.rst:1008
+#: ../../../language.rst:1010
 msgid "Some examples::"
 msgstr ""
 
-#: ../../../language.rst:1011
+#: ../../../language.rst:1013
 msgid ""
 "echo (seq 10)[1 2 3]\n"
 "# Prints: 1 2 3\n"
@@ -2391,11 +2397,11 @@ msgid ""
 "echo (echo one)[-3..1]"
 msgstr ""
 
-#: ../../../language.rst:1038
+#: ../../../language.rst:1040
 msgid "The same works when setting or expanding variables::"
 msgstr ""
 
-#: ../../../language.rst:1041
+#: ../../../language.rst:1043
 msgid ""
 "# Reverse path variable\n"
 "set PATH $PATH[-1..1]\n"
@@ -2407,24 +2413,24 @@ msgid ""
 "echo $PATH[$n..-1]"
 msgstr ""
 
-#: ../../../language.rst:1050
+#: ../../../language.rst:1052
 msgid "Variables can be used as indices for expansion of variables, like so::"
 msgstr ""
 
-#: ../../../language.rst:1052
+#: ../../../language.rst:1054
 msgid ""
 "set index 2\n"
 "set letters a b c d\n"
 "echo $letters[$index] # returns 'b'"
 msgstr ""
 
-#: ../../../language.rst:1056
+#: ../../../language.rst:1058
 msgid ""
 "However using variables as indices for command substitution is currently not "
 "supported, so::"
 msgstr ""
 
-#: ../../../language.rst:1058
+#: ../../../language.rst:1060
 msgid ""
 "echo (seq 5)[$index] # This won't work\n"
 "\n"
@@ -2432,13 +2438,13 @@ msgid ""
 "echo $sequence[$index] # returns '2'"
 msgstr ""
 
-#: ../../../language.rst:1063
+#: ../../../language.rst:1065
 msgid ""
 "When using indirect variable expansion with multiple ``$`` (``$$name``), you "
 "have to give all indices up to the variable you want to slice::"
 msgstr ""
 
-#: ../../../language.rst:1065
+#: ../../../language.rst:1067
 msgid ""
 "> set -l list 1 2 3 4 5\n"
 "> set -l name list\n"
@@ -2449,11 +2455,11 @@ msgid ""
 "1 2 3"
 msgstr ""
 
-#: ../../../language.rst:1075
+#: ../../../language.rst:1077
 msgid "Home directory expansion"
 msgstr ""
 
-#: ../../../language.rst:1077
+#: ../../../language.rst:1079
 msgid ""
 "The ``~`` (tilde) character at the beginning of a parameter, followed by a "
 "username, is expanded into the home directory of the specified user. A lone "
@@ -2461,245 +2467,245 @@ msgid ""
 "of the process owner::"
 msgstr ""
 
-#: ../../../language.rst:1079
+#: ../../../language.rst:1081
 msgid ""
 "ls ~/Music # lists my music directory\n"
 "\n"
 "echo ~root # prints root's home directory, probably \"/root\""
 msgstr ""
 
-#: ../../../language.rst:1084
+#: ../../../language.rst:1086
 msgid "Combining different expansions"
 msgstr ""
 
-#: ../../../language.rst:1086
+#: ../../../language.rst:1088
 msgid ""
 "All of the above expansions can be combined. If several expansions result in "
 "more than one parameter, all possible combinations are created."
 msgstr ""
 
-#: ../../../language.rst:1088
+#: ../../../language.rst:1090
 msgid ""
 "When combining multiple parameter expansions, expansions are performed in "
 "the following order:"
 msgstr ""
 
-#: ../../../language.rst:1090
+#: ../../../language.rst:1092
 msgid "Command substitutions"
 msgstr ""
 
-#: ../../../language.rst:1091
+#: ../../../language.rst:1093
 msgid "Variable expansions"
 msgstr ""
 
-#: ../../../language.rst:1092
+#: ../../../language.rst:1094
 msgid "Bracket expansion"
 msgstr ""
 
-#: ../../../language.rst:1093
+#: ../../../language.rst:1095
 msgid "Wildcard expansion"
 msgstr ""
 
-#: ../../../language.rst:1095
+#: ../../../language.rst:1097
 msgid ""
 "Expansions are performed from right to left, nested bracket expansions and "
 "command substitutions are performed from the inside and out."
 msgstr ""
 
-#: ../../../language.rst:1097 ../../../language.rst:1133
-#: ../../../language.rst:1200 ../../../language.rst:2096
+#: ../../../language.rst:1099 ../../../language.rst:1135
+#: ../../../language.rst:1202 ../../../language.rst:2098
 msgid "Example:"
 msgstr ""
 
-#: ../../../language.rst:1099
+#: ../../../language.rst:1101
 msgid ""
 "If the current directory contains the files 'foo' and 'bar', the command "
 "``echo a(ls){1,2,3}`` will output ``abar1 abar2 abar3 afoo1 afoo2 afoo3``."
 msgstr ""
 
-#: ../../../language.rst:1102
+#: ../../../language.rst:1104
 msgid "Table Of Operators"
 msgstr ""
 
-#: ../../../language.rst:1104
+#: ../../../language.rst:1106
 msgid ""
 "Putting it together, here is a quick reference to fish's operators, all of "
 "the special symbols it uses:"
 msgstr ""
 
-#: ../../../language.rst:1107
+#: ../../../language.rst:1109
 msgid "Symbol"
 msgstr ""
 
-#: ../../../language.rst:1107
+#: ../../../language.rst:1109
 msgid "Meaning"
 msgstr ""
 
-#: ../../../language.rst:1107
+#: ../../../language.rst:1109
 msgid "Example"
 msgstr ""
 
-#: ../../../language.rst:1109
+#: ../../../language.rst:1111
 msgid "``$``"
 msgstr ""
 
-#: ../../../language.rst:1109
+#: ../../../language.rst:1111
 msgid ":ref:`Variable expansion <expand-variable>`"
 msgstr ""
 
-#: ../../../language.rst:1109
+#: ../../../language.rst:1111
 msgid "``echo $foo``"
 msgstr ""
 
-#: ../../../language.rst:1110
+#: ../../../language.rst:1112
 msgid "``$()`` and ``()``"
 msgstr ""
 
-#: ../../../language.rst:1110
+#: ../../../language.rst:1112
 msgid ":ref:`Command substitution <expand-command-substitution>`"
 msgstr ""
 
-#: ../../../language.rst:1110
+#: ../../../language.rst:1112
 msgid "``cat (grep foo bar)`` or ``cat $(grep foo bar)``"
 msgstr ""
 
-#: ../../../language.rst:1111
+#: ../../../language.rst:1113
 msgid "``<`` and ``>``"
 msgstr ""
 
-#: ../../../language.rst:1111
+#: ../../../language.rst:1113
 msgid ":ref:`Redirection <redirects>`, like ``command > file``"
 msgstr ""
 
-#: ../../../language.rst:1111
+#: ../../../language.rst:1113
 msgid "``git shortlog -nse . > authors``"
 msgstr ""
 
-#: ../../../language.rst:1112
+#: ../../../language.rst:1114
 msgid "``|``"
 msgstr ""
 
-#: ../../../language.rst:1112
+#: ../../../language.rst:1114
 msgid ":ref:`Pipe <pipes>`, connect two or more commands"
 msgstr ""
 
-#: ../../../language.rst:1112
+#: ../../../language.rst:1114
 msgid "``foo | grep bar | grep baz``"
 msgstr ""
 
-#: ../../../language.rst:1113
+#: ../../../language.rst:1115
 msgid "``;``"
 msgstr ""
 
-#: ../../../language.rst:1113
+#: ../../../language.rst:1115
 msgid "End of the command, instead of a newline"
 msgstr ""
 
-#: ../../../language.rst:1113
+#: ../../../language.rst:1115
 msgid "``command1; command2``"
 msgstr ""
 
-#: ../../../language.rst:1114
+#: ../../../language.rst:1116
 msgid "``&``"
 msgstr ""
 
-#: ../../../language.rst:1114
+#: ../../../language.rst:1116
 msgid ":ref:`Backgrounding <syntax-job-control>`"
 msgstr ""
 
-#: ../../../language.rst:1114
+#: ../../../language.rst:1116
 msgid "``sleep 5m &``"
 msgstr ""
 
-#: ../../../language.rst:1115
+#: ../../../language.rst:1117
 msgid "``{}``"
 msgstr ""
 
-#: ../../../language.rst:1115
+#: ../../../language.rst:1117
 msgid ":ref:`Brace expansion <expand-brace>`"
 msgstr ""
 
-#: ../../../language.rst:1115
+#: ../../../language.rst:1117
 msgid "``ls {/usr,}/bin``"
 msgstr ""
 
-#: ../../../language.rst:1116
+#: ../../../language.rst:1118
 msgid "``&&`` and ``||``"
 msgstr ""
 
-#: ../../../language.rst:1116
+#: ../../../language.rst:1118
 msgid ":ref:`Combiners <syntax-combiners>`"
 msgstr ""
 
-#: ../../../language.rst:1116
+#: ../../../language.rst:1118
 msgid "``mkdir foo && cd foo`` or ``rm foo || exit``"
 msgstr ""
 
-#: ../../../language.rst:1117
+#: ../../../language.rst:1119
 msgid "``*`` and ``**``"
 msgstr ""
 
-#: ../../../language.rst:1117
+#: ../../../language.rst:1119
 msgid ":ref:`Wildcards <expand-wildcard>`"
 msgstr ""
 
-#: ../../../language.rst:1117
+#: ../../../language.rst:1119
 msgid "``cat *.fish`` or ``count **.jpg``"
 msgstr ""
 
-#: ../../../language.rst:1118
+#: ../../../language.rst:1120
 msgid "``\\\\``"
 msgstr ""
 
-#: ../../../language.rst:1118
+#: ../../../language.rst:1120
 msgid ":ref:`Escaping <escapes>`"
 msgstr ""
 
-#: ../../../language.rst:1118
+#: ../../../language.rst:1120
 msgid "``echo foo\\nbar`` or ``echo \\$foo``"
 msgstr ""
 
-#: ../../../language.rst:1119
+#: ../../../language.rst:1121
 msgid "``''`` and ``\"\"``"
 msgstr ""
 
-#: ../../../language.rst:1119
+#: ../../../language.rst:1121
 msgid ":ref:`Quoting <quotes>`"
 msgstr ""
 
-#: ../../../language.rst:1119
+#: ../../../language.rst:1121
 msgid "``rm \"file with spaces\"`` or ``echo '$foo'``"
 msgstr ""
 
-#: ../../../language.rst:1120
+#: ../../../language.rst:1122
 msgid "``~``"
 msgstr ""
 
-#: ../../../language.rst:1120
+#: ../../../language.rst:1122
 msgid ":ref:`Home directory expansion <expand-home>`"
 msgstr ""
 
-#: ../../../language.rst:1120
+#: ../../../language.rst:1122
 msgid "``ls ~/`` or ``ls ~root/``"
 msgstr ""
 
-#: ../../../language.rst:1121
+#: ../../../language.rst:1123
 msgid "``#``"
 msgstr ""
 
-#: ../../../language.rst:1121
+#: ../../../language.rst:1123
 msgid ":ref:`Comments`"
 msgstr ""
 
-#: ../../../language.rst:1121
+#: ../../../language.rst:1123
 msgid "``echo Hello # this isn't printed``"
 msgstr ""
 
-#: ../../../language.rst:1127
+#: ../../../language.rst:1129
 msgid "Shell variables"
 msgstr ""
 
-#: ../../../language.rst:1129
+#: ../../../language.rst:1131
 msgid ""
 "Variables are a way to save data and pass it around. They can be used just "
 "by the shell, or they can be \":ref:`exported <variables-export>`\", so that "
@@ -2707,26 +2713,26 @@ msgid ""
 "starts. An exported variable is referred to as an \"environment variable\"."
 msgstr ""
 
-#: ../../../language.rst:1131
+#: ../../../language.rst:1133
 msgid ""
 "To set a variable value, use the :doc:`set <cmds/set>` command. A variable "
 "name can not be empty and can contain only letters, digits, and underscores. "
 "It may begin and end with any of those characters."
 msgstr ""
 
-#: ../../../language.rst:1135
+#: ../../../language.rst:1137
 msgid ""
 "To set the variable ``smurf_color`` to the value ``blue``, use the command "
 "``set smurf_color blue``."
 msgstr ""
 
-#: ../../../language.rst:1137
+#: ../../../language.rst:1139
 msgid ""
 "After a variable has been set, you can use the value of a variable in the "
 "shell through :ref:`variable expansion <expand-variable>`."
 msgstr ""
 
-#: ../../../language.rst:1141
+#: ../../../language.rst:1143
 msgid ""
 "set smurf_color blue\n"
 "echo Smurfs are usually $smurf_color\n"
@@ -2734,22 +2740,22 @@ msgid ""
 "echo Papa smurf, who is $smurf_color, wears $pants_color pants"
 msgstr ""
 
-#: ../../../language.rst:1146
+#: ../../../language.rst:1148
 msgid ""
 "So you set a variable with ``set``, and use it with a ``$`` and the name."
 msgstr ""
 
-#: ../../../language.rst:1151
+#: ../../../language.rst:1153
 msgid "Variable Scope"
 msgstr ""
 
-#: ../../../language.rst:1153
+#: ../../../language.rst:1155
 msgid ""
 "All variables in fish have a scope. For example they can be global or local "
 "to a function or block::"
 msgstr ""
 
-#: ../../../language.rst:1155
+#: ../../../language.rst:1157
 msgid ""
 "# This variable is global, we can use it everywhere.\n"
 "set --global name Patrick\n"
@@ -2781,32 +2787,32 @@ msgid ""
 "# Patrick, I am at the Krusty Krab and my instrument is"
 msgstr ""
 
-#: ../../../language.rst:1183
+#: ../../../language.rst:1185
 msgid ""
 "There are four kinds of variable scopes in fish: universal, global, function "
 "and local variables."
 msgstr ""
 
-#: ../../../language.rst:1185
+#: ../../../language.rst:1187
 msgid ""
 "Universal variables are shared between all fish sessions a user is running "
 "on one computer. They are stored on disk and persist even after reboot."
 msgstr ""
 
-#: ../../../language.rst:1186
+#: ../../../language.rst:1188
 msgid ""
 "Global variables are specific to the current fish session. They can be "
 "erased by explicitly requesting ``set -e``."
 msgstr ""
 
-#: ../../../language.rst:1187
+#: ../../../language.rst:1189
 msgid ""
 "Function variables are specific to the currently executing function. They "
 "are erased (\"go out of scope\") when the current function ends. Outside of "
 "a function, they don't go out of scope."
 msgstr ""
 
-#: ../../../language.rst:1188
+#: ../../../language.rst:1190
 msgid ""
 "Local variables are specific to the current block of commands, and "
 "automatically erased when a specific block goes out of scope. A block of "
@@ -2816,7 +2822,7 @@ msgid ""
 "function scope."
 msgstr ""
 
-#: ../../../language.rst:1190
+#: ../../../language.rst:1192
 msgid ""
 "Variables can be explicitly set to be universal with the ``-U`` or ``--"
 "universal`` switch, global with ``-g`` or ``--global``, function-scoped with "
@@ -2824,26 +2830,26 @@ msgid ""
 "local``.  The scoping rules when creating or updating a variable are:"
 msgstr ""
 
-#: ../../../language.rst:1192
+#: ../../../language.rst:1194
 msgid ""
 "When a scope is explicitly given, it will be used. If a variable of the same "
 "name exists in a different scope, that variable will not be changed."
 msgstr ""
 
-#: ../../../language.rst:1194
+#: ../../../language.rst:1196
 msgid ""
 "When no scope is given, but a variable of that name exists, the variable of "
 "the smallest scope will be modified. The scope will not be changed."
 msgstr ""
 
-#: ../../../language.rst:1196
+#: ../../../language.rst:1198
 msgid ""
 "When no scope is given and no variable of that name exists, the variable is "
 "created in function scope if inside a function, or global scope if no "
 "function is executing."
 msgstr ""
 
-#: ../../../language.rst:1198
+#: ../../../language.rst:1200
 msgid ""
 "There can be many variables with the same name, but different scopes. When "
 "you :ref:`use a variable <expand-variable>`, the smallest scoped variable of "
@@ -2851,15 +2857,15 @@ msgid ""
 "of the global or universal variable of the same name."
 msgstr ""
 
-#: ../../../language.rst:1202
+#: ../../../language.rst:1204
 msgid "There are a few possible uses for different scopes."
 msgstr ""
 
-#: ../../../language.rst:1204
+#: ../../../language.rst:1206
 msgid "Typically inside functions you should use local scope::"
 msgstr ""
 
-#: ../../../language.rst:1206
+#: ../../../language.rst:1208
 msgid ""
 "function something\n"
 "    set -l file /path/to/my/file\n"
@@ -2879,14 +2885,14 @@ msgid ""
 "end"
 msgstr ""
 
-#: ../../../language.rst:1223
+#: ../../../language.rst:1225
 msgid ""
 "If you want to set something in config.fish, or set something in a function "
 "and have it available for the rest of the session, global scope is a good "
 "choice::"
 msgstr ""
 
-#: ../../../language.rst:1225
+#: ../../../language.rst:1227
 msgid ""
 "# Don't shorten the working directory in the prompt\n"
 "set -g fish_prompt_pwd_dir_length 0\n"
@@ -2902,11 +2908,11 @@ msgid ""
 "set -gx LANG de_DE.UTF-8"
 msgstr ""
 
-#: ../../../language.rst:1238
+#: ../../../language.rst:1240
 msgid "Here is an example of local vs function-scoped variables::"
 msgstr ""
 
-#: ../../../language.rst:1240
+#: ../../../language.rst:1242
 msgid ""
 "function test-scopes\n"
 "    begin\n"
@@ -2927,11 +2933,11 @@ msgid ""
 "end"
 msgstr ""
 
-#: ../../../language.rst:1258
+#: ../../../language.rst:1260
 msgid "When a function calls another, local variables aren't visible::"
 msgstr ""
 
-#: ../../../language.rst:1260
+#: ../../../language.rst:1262
 msgid ""
 "function shiver\n"
 "    set phrase 'Shiver me timbers'\n"
@@ -2950,7 +2956,7 @@ msgid ""
 "# Outputs \"Avast, mateys\""
 msgstr ""
 
-#: ../../../language.rst:1276
+#: ../../../language.rst:1278
 msgid ""
 "When in doubt, use function-scoped variables. When you need to make a "
 "variable accessible everywhere, make it global. When you need to "
@@ -2958,81 +2964,81 @@ msgid ""
 "variable only in a short block, make it local."
 msgstr ""
 
-#: ../../../language.rst:1281
+#: ../../../language.rst:1283
 msgid "Overriding variables for a single command"
 msgstr ""
 
-#: ../../../language.rst:1283
+#: ../../../language.rst:1285
 msgid ""
 "If you want to override a variable for a single command, you can use "
 "\"var=val\" statements before the command::"
 msgstr ""
 
-#: ../../../language.rst:1285
+#: ../../../language.rst:1287
 msgid ""
 "# Call git status on another directory\n"
 "# (can also be done via `git -C somerepo status`)\n"
 "GIT_DIR=somerepo git status"
 msgstr ""
 
-#: ../../../language.rst:1289
+#: ../../../language.rst:1291
 msgid ""
 "Unlike other shells, fish will first set the variable and then perform other "
 "expansions on the line, so::"
 msgstr ""
 
-#: ../../../language.rst:1291
+#: ../../../language.rst:1293
 msgid ""
 "set foo banana\n"
 "foo=gagaga echo $foo\n"
 "# prints gagaga, while in other shells it might print \"banana\""
 msgstr ""
 
-#: ../../../language.rst:1295
+#: ../../../language.rst:1297
 msgid ""
 "Multiple elements can be given in a :ref:`brace expansion<expand-brace>`::"
 msgstr ""
 
-#: ../../../language.rst:1297
+#: ../../../language.rst:1299
 msgid ""
 "# Call bash with a reasonable default path.\n"
 "PATH={/usr,}/{s,}bin bash"
 msgstr ""
 
-#: ../../../language.rst:1300
+#: ../../../language.rst:1302
 msgid "Or with a :ref:`glob <expand-wildcard>`::"
 msgstr ""
 
-#: ../../../language.rst:1302
+#: ../../../language.rst:1304
 msgid ""
 "# Run vlc on all mp3 files in the current directory\n"
 "# If no file exists it will still be run with no arguments\n"
 "mp3s=*.mp3 vlc $mp3s"
 msgstr ""
 
-#: ../../../language.rst:1306
+#: ../../../language.rst:1308
 msgid ""
 "Unlike other shells, this does *not* inhibit any lookup (aliases or "
 "similar). Calling a command after setting a variable override will result in "
 "the exact same command being run."
 msgstr ""
 
-#: ../../../language.rst:1308
+#: ../../../language.rst:1310
 msgid "This syntax is supported since fish 3.1."
 msgstr ""
 
-#: ../../../language.rst:1313
+#: ../../../language.rst:1315
 msgid "Universal Variables"
 msgstr ""
 
-#: ../../../language.rst:1315
+#: ../../../language.rst:1317
 msgid ""
 "Universal variables are variables that are shared between all the user's "
 "fish sessions on the computer. All changes to universal variables are "
 "persistent and instantly propagated across fish sessions."
 msgstr ""
 
-#: ../../../language.rst:1318
+#: ../../../language.rst:1320
 msgid ""
 ":ref:`Universal variables <variables-universal>` are stored in the file ``."
 "config/fish/fish_variables``. Do not edit this file directly, as your edits "
@@ -3040,18 +3046,18 @@ msgid ""
 "interactively instead."
 msgstr ""
 
-#: ../../../language.rst:1320
+#: ../../../language.rst:1322
 msgid ""
 "Do not append to universal variables in :ref:`config.fish <configuration>`, "
 "because these variables will then get longer with each new shell instance. "
 "Instead, set them once at the command line."
 msgstr ""
 
-#: ../../../language.rst:1325
+#: ../../../language.rst:1327
 msgid "Exporting variables"
 msgstr ""
 
-#: ../../../language.rst:1327
+#: ../../../language.rst:1329
 msgid ""
 "Variables in fish can be exported, so they will be inherited by any commands "
 "started by fish. In particular, this is necessary for variables used to "
@@ -3062,7 +3068,7 @@ msgid ""
 "variables\"."
 msgstr ""
 
-#: ../../../language.rst:1329
+#: ../../../language.rst:1331
 msgid ""
 "This also applies to fish - when it starts up, it receives environment "
 "variables from its parent (usually the terminal). These typically include "
@@ -3070,7 +3076,7 @@ msgid ""
 "<variables-locale>`."
 msgstr ""
 
-#: ../../../language.rst:1331
+#: ../../../language.rst:1333
 msgid ""
 "Variables can be explicitly set to be exported with the ``-x`` or ``--"
 "export`` switch, or not exported with the ``-u`` or ``--unexport`` switch.  "
@@ -3080,13 +3086,13 @@ msgid ""
 "didn't exist yet it is not exported."
 msgstr ""
 
-#: ../../../language.rst:1333
+#: ../../../language.rst:1335
 msgid ""
 "As a naming convention, exported variables are in uppercase and unexported "
 "variables are in lowercase."
 msgstr ""
 
-#: ../../../language.rst:1337
+#: ../../../language.rst:1339
 msgid ""
 "set -gx ANDROID_HOME ~/.android # /opt/android-sdk\n"
 "set -gx CDPATH . ~ (test -e ~/Videos; and echo ~/Videos)\n"
@@ -3096,7 +3102,7 @@ msgid ""
 "set -gx LESSHISTFILE \"-\""
 msgstr ""
 
-#: ../../../language.rst:1344
+#: ../../../language.rst:1346
 msgid ""
 "Note: Exporting is not a :ref:`scope <variables-scope>`, but an additional "
 "state. It typically makes sense to make exported variables global as well, "
@@ -3107,17 +3113,17 @@ msgid ""
 "exported or not."
 msgstr ""
 
-#: ../../../language.rst:1349
+#: ../../../language.rst:1351
 msgid "Lists"
 msgstr ""
 
-#: ../../../language.rst:1351
+#: ../../../language.rst:1353
 msgid ""
-"Fish can store a list (or an \"array\" if you wish) of multiple strings "
+"fish can store a list (or an \"array\" if you wish) of multiple strings "
 "inside of a variable::"
 msgstr ""
 
-#: ../../../language.rst:1353
+#: ../../../language.rst:1355
 msgid ""
 "> set mylist first second third\n"
 "> printf '%s\\n' $mylist # prints each element on its own line\n"
@@ -3126,17 +3132,17 @@ msgid ""
 "third"
 msgstr ""
 
-#: ../../../language.rst:1359
+#: ../../../language.rst:1361
 msgid ""
 "To access one element of a list, use the index of the element inside of "
 "square brackets, like this::"
 msgstr ""
 
-#: ../../../language.rst:1361
+#: ../../../language.rst:1363
 msgid "echo $PATH[3]"
 msgstr ""
 
-#: ../../../language.rst:1363
+#: ../../../language.rst:1365
 msgid ""
 "List indices start at 1 in fish, not 0 like in other languages. This is "
 "because it requires less subtracting of 1 and many common Unix tools like "
@@ -3145,41 +3151,41 @@ msgid ""
 "string, no argument at all)."
 msgstr ""
 
-#: ../../../language.rst:1365
+#: ../../../language.rst:1367
 msgid ""
 "If you don't use any brackets, all the elements of the list will be passed "
 "to the command as separate items. This means you can iterate over a list "
 "with ``for``::"
 msgstr ""
 
-#: ../../../language.rst:1367
+#: ../../../language.rst:1369
 msgid ""
 "for i in $PATH\n"
 "    echo $i is in the path\n"
 "end"
 msgstr ""
 
-#: ../../../language.rst:1371
+#: ../../../language.rst:1373
 msgid ""
 "This goes over every directory in :envvar:`PATH` separately and prints a "
 "line saying it is in the path."
 msgstr ""
 
-#: ../../../language.rst:1373
+#: ../../../language.rst:1375
 msgid ""
 "To create a variable ``smurf``, containing the items ``blue`` and ``small``, "
 "write::"
 msgstr ""
 
-#: ../../../language.rst:1375
+#: ../../../language.rst:1377
 msgid "set smurf blue small"
 msgstr ""
 
-#: ../../../language.rst:1377
+#: ../../../language.rst:1379
 msgid "It is also possible to set or erase individual elements of a list::"
 msgstr ""
 
-#: ../../../language.rst:1379
+#: ../../../language.rst:1381
 msgid ""
 "# Set smurf to be a list with the elements 'blue' and 'small'\n"
 "set smurf blue small\n"
@@ -3194,14 +3200,14 @@ msgid ""
 "echo $smurf"
 msgstr ""
 
-#: ../../../language.rst:1391
+#: ../../../language.rst:1393
 msgid ""
 "If you specify a negative index when expanding or assigning to a list "
 "variable, the index will be taken from the *end* of the list. For example, "
 "the index -1 is the last element of the list::"
 msgstr ""
 
-#: ../../../language.rst:1393
+#: ../../../language.rst:1395
 msgid ""
 "> set fruit apple orange banana\n"
 "> echo $fruit[-1]\n"
@@ -3217,27 +3223,27 @@ msgid ""
 "apple"
 msgstr ""
 
-#: ../../../language.rst:1406
+#: ../../../language.rst:1408
 msgid ""
 "As you see, you can use a range of indices, see :ref:`slices <expand-"
 "slices>` for details."
 msgstr ""
 
-#: ../../../language.rst:1408
+#: ../../../language.rst:1410
 msgid ""
 "All lists are one-dimensional and can't contain other lists, although it is "
 "possible to fake nested lists using dereferencing - see :ref:`variable "
 "expansion <expand-variable>`."
 msgstr ""
 
-#: ../../../language.rst:1410
+#: ../../../language.rst:1412
 msgid ""
 "When a list is exported as an environment variable, it is either space or "
 "colon delimited, depending on whether it is a :ref:`path variable <variables-"
 "path>`::"
 msgstr ""
 
-#: ../../../language.rst:1412
+#: ../../../language.rst:1414
 msgid ""
 "> set -x smurf blue small\n"
 "> set -x smurf_PATH forest mushroom\n"
@@ -3246,21 +3252,21 @@ msgid ""
 "smurf_PATH=forest:mushroom"
 msgstr ""
 
-#: ../../../language.rst:1418
+#: ../../../language.rst:1420
 msgid ""
-"Fish automatically creates lists from all environment variables whose name "
+"fish automatically creates lists from all environment variables whose name "
 "ends in ``PATH`` (like :envvar:`PATH`, :envvar:`CDPATH` or :envvar:"
 "`MANPATH`), by splitting them on colons. Other variables are not "
 "automatically split."
 msgstr ""
 
-#: ../../../language.rst:1420
+#: ../../../language.rst:1422
 msgid ""
 "Lists can be inspected with the :doc:`count <cmds/count>` or the :doc:"
 "`contains <cmds/contains>` commands::"
 msgstr ""
 
-#: ../../../language.rst:1422
+#: ../../../language.rst:1424
 msgid ""
 "> count $smurf\n"
 "2\n"
@@ -3276,35 +3282,35 @@ msgid ""
 "1"
 msgstr ""
 
-#: ../../../language.rst:1435
+#: ../../../language.rst:1437
 msgid ""
 "A nice thing about lists is that they are passed to commands one element as "
 "one argument, so once you've set your list, you can pass it::"
 msgstr ""
 
-#: ../../../language.rst:1437
+#: ../../../language.rst:1439
 msgid ""
 "set -l grep_args -r \"my string\"\n"
 "grep $grep_args . # will run the same as `grep -r \"my string\"` ."
 msgstr ""
 
-#: ../../../language.rst:1440
+#: ../../../language.rst:1442
 msgid ""
 "Unlike other shells, fish does not do \"word splitting\" - elements in a "
 "list stay as they are, even if they contain spaces or tabs."
 msgstr ""
 
-#: ../../../language.rst:1445
+#: ../../../language.rst:1447
 msgid "Argument Handling"
 msgstr ""
 
-#: ../../../language.rst:1447
+#: ../../../language.rst:1449
 msgid ""
 "An important list is ``$argv``, which contains the arguments to a function "
 "or script. For example::"
 msgstr ""
 
-#: ../../../language.rst:1449
+#: ../../../language.rst:1451
 msgid ""
 "function myfunction\n"
 "    echo $argv[1]\n"
@@ -3312,13 +3318,13 @@ msgid ""
 "end"
 msgstr ""
 
-#: ../../../language.rst:1454
+#: ../../../language.rst:1456
 msgid ""
 "This function takes whatever arguments it gets and prints the first and "
 "third::"
 msgstr ""
 
-#: ../../../language.rst:1456
+#: ../../../language.rst:1458
 msgid ""
 "> myfunction first second third\n"
 "first\n"
@@ -3329,7 +3335,7 @@ msgid ""
 "banana"
 msgstr ""
 
-#: ../../../language.rst:1464
+#: ../../../language.rst:1466
 msgid ""
 "That covers the positional arguments, but commandline tools often get "
 "various options and flags, and $argv would contain them intermingled with "
@@ -3341,7 +3347,7 @@ msgid ""
 "tricky and error-prone."
 msgstr ""
 
-#: ../../../language.rst:1466
+#: ../../../language.rst:1468
 msgid ""
 "A more robust approach to option handling is :doc:`argparse <cmds/"
 "argparse>`, which checks the defined options and puts them into various "
@@ -3349,7 +3355,7 @@ msgid ""
 "example::"
 msgstr ""
 
-#: ../../../language.rst:1468
+#: ../../../language.rst:1470
 msgid ""
 "function mybetterfunction\n"
 "    # We tell argparse about -h/--help and -s/--second\n"
@@ -3380,29 +3386,29 @@ msgid ""
 "end"
 msgstr ""
 
-#: ../../../language.rst:1496
+#: ../../../language.rst:1498
 msgid ""
 "The options will be *removed* from $argv, so $argv[2] is the second "
 "*positional* argument now::"
 msgstr ""
 
-#: ../../../language.rst:1498
+#: ../../../language.rst:1500
 msgid ""
 "> mybetterfunction first -s second third\n"
 "second"
 msgstr ""
 
-#: ../../../language.rst:1501
+#: ../../../language.rst:1503
 msgid ""
 "For more information on argparse, like how to handle option arguments, see :"
 "doc:`the argparse documentation <cmds/argparse>`."
 msgstr ""
 
-#: ../../../language.rst:1506
+#: ../../../language.rst:1508
 msgid "PATH variables"
 msgstr ""
 
-#: ../../../language.rst:1508
+#: ../../../language.rst:1510
 msgid ""
 "Path variables are a special kind of variable used to support colon-"
 "delimited path lists including :envvar:`PATH`, :envvar:`CDPATH`, :envvar:"
@@ -3411,13 +3417,13 @@ msgid ""
 "PATH variables by default."
 msgstr ""
 
-#: ../../../language.rst:1510
+#: ../../../language.rst:1512
 msgid ""
 "PATH variables act as normal lists, except they are implicitly joined and "
 "split on colons."
 msgstr ""
 
-#: ../../../language.rst:1514
+#: ../../../language.rst:1516
 msgid ""
 "set MYPATH 1 2 3\n"
 "echo \"$MYPATH\"\n"
@@ -3429,55 +3435,55 @@ msgid ""
 "# 1:2:3:4:5"
 msgstr ""
 
-#: ../../../language.rst:1523
+#: ../../../language.rst:1525
 msgid ""
 "Path variables will also be exported in the colon form, so ``set -x MYPATH 1 "
 "2 3`` will have external commands see it as ``1:2:3``."
 msgstr ""
 
-#: ../../../language.rst:1527
+#: ../../../language.rst:1529
 msgid ""
 "> set -gx MYPATH /bin /usr/bin /sbin\n"
 "> env | grep MYPATH\n"
 "MYPATH=/bin:/usr/bin:/sbin"
 msgstr ""
 
-#: ../../../language.rst:1531
+#: ../../../language.rst:1533
 msgid ""
 "This is for compatibility with other tools. Unix doesn't have variables with "
 "multiple elements, the closest thing it has are colon-lists like :envvar:"
 "`PATH`. For obvious reasons this means no element can contain a ``:``."
 msgstr ""
 
-#: ../../../language.rst:1533
+#: ../../../language.rst:1535
 msgid ""
 "Variables can be marked or unmarked as PATH variables via the ``--path`` and "
 "``--unpath`` options to ``set``."
 msgstr ""
 
-#: ../../../language.rst:1538
+#: ../../../language.rst:1540
 msgid "Special variables"
 msgstr ""
 
-#: ../../../language.rst:1540
+#: ../../../language.rst:1542
 msgid ""
 "You can change the settings of fish by changing the values of certain "
 "variables."
 msgstr ""
 
-#: ../../../language.rst:1544
+#: ../../../language.rst:1546
 msgid ""
 "A list of directories in which to search for commands. This is a common unix "
 "variable also used by other tools."
 msgstr ""
 
-#: ../../../language.rst:1548
+#: ../../../language.rst:1550
 msgid ""
 "A list of directories in which the :doc:`cd <cmds/cd>` builtin looks for a "
 "new directory."
 msgstr ""
 
-#: ../../../language.rst:1552
+#: ../../../language.rst:1554
 msgid ""
 "Locale variables such as :envvar:`LANG`, :envvar:`LC_ALL`, :envvar:"
 "`LC_MESSAGES`, :envvar:`LC_NUMERIC` and :envvar:`LC_TIME` set the language "
@@ -3486,14 +3492,14 @@ msgid ""
 "information."
 msgstr ""
 
-#: ../../../language.rst:1557
+#: ../../../language.rst:1559
 msgid ""
 "A number of variable starting with the prefixes ``fish_color`` and "
 "``fish_pager_color``. See :ref:`Variables for changing highlighting colors "
 "<variables-color>` for more information."
 msgstr ""
 
-#: ../../../language.rst:1561
+#: ../../../language.rst:1563
 msgid ""
 "If this is set to 0, fish will not output 24-bit RGB true-color sequences "
 "but the nearest color on the 256 color palette (or the 16 color palette, if :"
@@ -3502,7 +3508,7 @@ msgid ""
 "was 0 on some terminals that are known to not support true-color sequences."
 msgstr ""
 
-#: ../../../language.rst:1567
+#: ../../../language.rst:1569
 msgid ""
 "If this is set to 0 and :envvar:`fish_term24bit` is 0, translate RGB colors "
 "down to the 16 color palette. Also, if this is set to 0, :doc:`set_color "
@@ -3510,14 +3516,14 @@ msgid ""
 "named color."
 msgstr ""
 
-#: ../../../language.rst:1572
+#: ../../../language.rst:1574
 msgid ""
 "controls the computed width of ambiguous-width characters. This should be "
 "set to 1 if your terminal renders these characters as single-width "
 "(typical), or 2 if double-width."
 msgstr ""
 
-#: ../../../language.rst:1576
+#: ../../../language.rst:1578
 msgid ""
 "controls whether fish assumes emoji render as 2 cells or 1 cell wide. This "
 "is necessary because the correct value changed from 1 to 2 in Unicode 9, and "
@@ -3525,13 +3531,13 @@ msgid ""
 "related to emoji (or other \"special\" characters). It defaults to 2."
 msgstr ""
 
-#: ../../../language.rst:1580
+#: ../../../language.rst:1582
 msgid ""
 "controls if :ref:`autosuggestions` are enabled. Set it to 0 to disable, "
 "anything else to enable. By default they are on."
 msgstr ""
 
-#: ../../../language.rst:1584
+#: ../../../language.rst:1586
 msgid ""
 "If this is set to 1, fish will redraw prompts with a ``--final-rendering`` "
 "argument before running a commandline, allowing you to change it before "
@@ -3539,20 +3545,20 @@ msgid ""
 "<transient-prompt>`."
 msgstr ""
 
-#: ../../../language.rst:1588
+#: ../../../language.rst:1590
 msgid ""
 "determines whether fish should try to repaint the commandline when the "
 "terminal resizes. In terminals that reflow text this should be disabled. Set "
 "it to 1 to enable, anything else to disable."
 msgstr ""
 
-#: ../../../language.rst:1592
+#: ../../../language.rst:1594
 msgid ""
 "the name of the function that sets up the keyboard shortcuts for the :ref:"
 "`command-line editor <editor>`."
 msgstr ""
 
-#: ../../../language.rst:1596
+#: ../../../language.rst:1598
 msgid ""
 "sets how long fish waits for another key after seeing an escape, to "
 "distinguish pressing the escape key from the start of an escape sequence. "
@@ -3561,7 +3567,7 @@ msgid ""
 "ref:`the chapter in the bind documentation <cmd-bind-escape>`."
 msgstr ""
 
-#: ../../../language.rst:1600
+#: ../../../language.rst:1602
 msgid ""
 "sets how long fish waits for another key after seeing a key that is part of "
 "a longer sequence, to disambiguate. For instance if you had bound "
@@ -3571,33 +3577,33 @@ msgid ""
 "the clipboard). See also :ref:`Key sequences <interactive-key-sequences>`."
 msgstr ""
 
-#: ../../../language.rst:1604
+#: ../../../language.rst:1606
 msgid ""
 "determines where fish looks for completion. When trying to complete for a "
 "command, fish looks for files in the directories in this variable."
 msgstr ""
 
-#: ../../../language.rst:1608
+#: ../../../language.rst:1610
 msgid ""
 "controls whether the selection is inclusive or exclusive of the character "
 "under the cursor (see :ref:`Copy and Paste <killring>`)."
 msgstr ""
 
-#: ../../../language.rst:1612
+#: ../../../language.rst:1614
 msgid ""
 "determines where fish looks for functions. When fish :ref:`autoloads <syntax-"
 "function-autoloading>` a function, it will look for files in these "
 "directories."
 msgstr ""
 
-#: ../../../language.rst:1616
+#: ../../../language.rst:1618
 msgid ""
 "the greeting message printed on startup. This is printed by a function of "
 "the same name that can be overridden for more complicated changes (see :doc:"
 "`funced <cmds/funced>`)"
 msgstr ""
 
-#: ../../../language.rst:1620
+#: ../../../language.rst:1622
 msgid ""
 "the current history session name. If set, all subsequent commands within an "
 "interactive fish session will be logged to a separate file identified by the "
@@ -3606,7 +3612,7 @@ msgid ""
 "available within the interactive session)."
 msgstr ""
 
-#: ../../../language.rst:1628
+#: ../../../language.rst:1630
 msgid ""
 "if set and not empty, will cause fish to print commands before they execute, "
 "similar to ``set -x`` in bash. The trace is printed to the path given by the "
@@ -3615,88 +3621,88 @@ msgid ""
 "key bindings, event handlers as well as prompt and title functions."
 msgstr ""
 
-#: ../../../language.rst:1635
+#: ../../../language.rst:1637
 msgid ""
 "Controls which debug categories :command:`fish` enables for output, "
 "analogous to the ``--debug`` option."
 msgstr ""
 
-#: ../../../language.rst:1639
+#: ../../../language.rst:1641
 msgid "Specifies a file to direct debug output to."
 msgstr ""
 
-#: ../../../language.rst:1643
+#: ../../../language.rst:1645
 msgid ""
 "a list of directories that are prepended to :envvar:`PATH`. This can be a "
 "universal variable."
 msgstr ""
 
-#: ../../../language.rst:1647
+#: ../../../language.rst:1649
 msgid ""
 "the current file creation mask. The preferred way to change the umask "
 "variable is through the :doc:`umask <cmds/umask>` function. An attempt to "
 "set umask to an invalid value will always fail."
 msgstr ""
 
-#: ../../../language.rst:1651
+#: ../../../language.rst:1653
 msgid ""
 "if set, this string is automatically prepended to the left prompt. This is a "
 "standard environment variable that may be set by tools like systemd's "
 "``run0`` to indicate special shell sessions."
 msgstr ""
 
-#: ../../../language.rst:1655
+#: ../../../language.rst:1657
 msgid ""
 "if set, this string is automatically appended to the left prompt. This is a "
 "standard environment variable that may be set by tools like systemd's "
 "``run0`` to indicate special shell sessions."
 msgstr ""
 
-#: ../../../language.rst:1659
+#: ../../../language.rst:1661
 msgid ""
 "if set, this string is displayed when an interactive shell starts, after the "
 "greeting. This is a standard environment variable that may be set by tools "
 "like systemd's ``run0`` to display session information."
 msgstr ""
 
-#: ../../../language.rst:1663
+#: ../../../language.rst:1665
 msgid ""
 "your preferred web browser. If this variable is set, fish will use the "
 "specified browser instead of the system default browser to display the fish "
 "documentation."
 msgstr ""
 
-#: ../../../language.rst:1665
+#: ../../../language.rst:1667
 msgid ""
-"Fish also provides additional information through the values of certain "
+"fish also provides additional information through the values of certain "
 "environment variables. Most of these variables are read-only and their value "
 "can't be changed with ``set``."
 msgstr ""
 
-#: ../../../language.rst:1669
+#: ../../../language.rst:1671
 msgid ""
 "the name of the currently running command (though this is deprecated, and "
 "the use of ``status current-command`` is preferred)."
 msgstr ""
 
-#: ../../../language.rst:1673
+#: ../../../language.rst:1675
 msgid ""
 "a list of arguments to the shell or function. ``argv`` is only defined when "
 "inside a function call, or if fish was invoked with a list of arguments, "
 "like ``fish myscript.fish foo bar``. This variable can be changed."
 msgstr ""
 
-#: ../../../language.rst:1677
+#: ../../../language.rst:1679
 msgid ""
 ":doc:`argparse <cmds/argparse>` sets this to the list of successfully parsed "
 "options, including option-arguments. This variable can be changed."
 msgstr ""
 
-#: ../../../language.rst:1681
+#: ../../../language.rst:1683
 msgid "the runtime of the last command in milliseconds."
 msgstr ""
 
-#: ../../../language.rst:1685
+#: ../../../language.rst:1687
 msgid ""
 "the current size of the terminal in height and width. These values are only "
 "used by fish if the operating system does not report the size of the "
@@ -3704,27 +3710,27 @@ msgid ""
 "80x24 will be used. They are updated when the window size changes."
 msgstr ""
 
-#: ../../../language.rst:1689
+#: ../../../language.rst:1691
 msgid ""
 "the signal that terminated the last foreground job, or 0 if the job exited "
 "normally."
 msgstr ""
 
-#: ../../../language.rst:1693
+#: ../../../language.rst:1695
 msgid "a list of entries in fish's :ref:`kill ring <killring>` of cut text."
 msgstr ""
 
-#: ../../../language.rst:1697
+#: ../../../language.rst:1699
 msgid ""
 "how many bytes fish will process with :doc:`read <cmds/read>` or in a :ref:"
 "`command substitution <expand-command-substitution>`."
 msgstr ""
 
-#: ../../../language.rst:1701
+#: ../../../language.rst:1703
 msgid "the process ID (PID) of the shell."
 msgstr ""
 
-#: ../../../language.rst:1705
+#: ../../../language.rst:1707
 msgid ""
 "a read-only variable; set to ``light`` or ``dark`` when the terminal uses a "
 "light or dark color theme respectively; set to ``unknown`` if the terminal "
@@ -3737,19 +3743,19 @@ msgid ""
 "``dark`` variants in your theme."
 msgstr ""
 
-#: ../../../language.rst:1714
+#: ../../../language.rst:1716
 msgid "a list containing the last commands that were entered."
 msgstr ""
 
-#: ../../../language.rst:1718
+#: ../../../language.rst:1720
 msgid "the user's home directory. This variable can be changed."
 msgstr ""
 
-#: ../../../language.rst:1722
+#: ../../../language.rst:1724
 msgid "the machine's hostname."
 msgstr ""
 
-#: ../../../language.rst:1726
+#: ../../../language.rst:1728
 msgid ""
 "the internal field separator that is used for word splitting with the :doc:"
 "`read <cmds/read>` builtin. Setting this to the empty string will also "
@@ -3757,57 +3763,57 @@ msgid ""
 "substitution>`. This variable can be changed."
 msgstr ""
 
-#: ../../../language.rst:1730
+#: ../../../language.rst:1732
 msgid "the process ID (PID) of the last background process."
 msgstr ""
 
-#: ../../../language.rst:1734
+#: ../../../language.rst:1736
 msgid "the current working directory."
 msgstr ""
 
-#: ../../../language.rst:1738
+#: ../../../language.rst:1740
 msgid ""
 "a list of exit statuses of all processes that made up the last executed "
 "pipe. See :ref:`exit status <variables-status>`."
 msgstr ""
 
-#: ../../../language.rst:1742
+#: ../../../language.rst:1744
 msgid ""
-"the level of nesting of shells. Fish increments this in interactive shells, "
+"the level of nesting of shells. fish increments this in interactive shells, "
 "otherwise it only passes it along."
 msgstr ""
 
-#: ../../../language.rst:1746
+#: ../../../language.rst:1748
 msgid ""
 "the :ref:`exit status <variables-status>` of the last foreground job to "
 "exit. If the job was terminated through a signal, the exit status will be "
 "128 plus the signal number."
 msgstr ""
 
-#: ../../../language.rst:1750
+#: ../../../language.rst:1752
 msgid ""
 "the \"generation\" count of ``$status``. This will be incremented only when "
 "the previous command produced an explicit status. (For example, background "
 "jobs will not increment this)."
 msgstr ""
 
-#: ../../../language.rst:1754
+#: ../../../language.rst:1756
 msgid "the current username. This variable can be changed."
 msgstr ""
 
-#: ../../../language.rst:1758
+#: ../../../language.rst:1760
 msgid ""
 "the current effective user id, set by fish at startup. This variable can be "
 "changed."
 msgstr ""
 
-#: ../../../language.rst:1762
+#: ../../../language.rst:1764
 msgid ""
 "the version of the currently running fish (also available as "
 "``FISH_VERSION`` for backward compatibility)."
 msgstr ""
 
-#: ../../../language.rst:1764
+#: ../../../language.rst:1766
 msgid ""
 "As a convention, an uppercase name is usually used for exported variables, "
 "while lowercase variables are not exported. (``CMD_DURATION`` is an "
@@ -3816,17 +3822,17 @@ msgid ""
 "unexported variables."
 msgstr ""
 
-#: ../../../language.rst:1766
+#: ../../../language.rst:1768
 msgid ""
-"Fish also uses some variables internally, their name usually starting with "
+"fish also uses some variables internally, their name usually starting with "
 "``__fish``. These are internal and should not typically be modified directly."
 msgstr ""
 
-#: ../../../language.rst:1771
+#: ../../../language.rst:1773
 msgid "The status variable"
 msgstr ""
 
-#: ../../../language.rst:1773
+#: ../../../language.rst:1775
 msgid ""
 "Whenever a process exits, an exit status is returned to the program that "
 "started it (usually the shell). This exit status is an integer number, which "
@@ -3835,93 +3841,93 @@ msgid ""
 "but a non-zero exit status means there was some form of problem."
 msgstr ""
 
-#: ../../../language.rst:1775
+#: ../../../language.rst:1777
 msgid ""
-"Fish stores the exit status of the last process in the last job to exit in "
+"fish stores the exit status of the last process in the last job to exit in "
 "the ``status`` variable."
 msgstr ""
 
-#: ../../../language.rst:1777
+#: ../../../language.rst:1779
 msgid ""
 "If fish encounters a problem while executing a command, the status variable "
 "may also be set to a specific value:"
 msgstr ""
 
-#: ../../../language.rst:1779
+#: ../../../language.rst:1781
 msgid ""
 "0 is generally the exit status of commands if they successfully performed "
 "the requested operation."
 msgstr ""
 
-#: ../../../language.rst:1781
+#: ../../../language.rst:1783
 msgid ""
 "1 is generally the exit status of commands if they failed to perform the "
 "requested operation."
 msgstr ""
 
-#: ../../../language.rst:1783
+#: ../../../language.rst:1785
 msgid ""
 "121 is generally the exit status of commands if they were supplied with "
 "invalid arguments."
 msgstr ""
 
-#: ../../../language.rst:1785
+#: ../../../language.rst:1787
 msgid ""
 "123 means that the command was not executed because the command name "
 "contained invalid characters."
 msgstr ""
 
-#: ../../../language.rst:1787
+#: ../../../language.rst:1789
 msgid ""
 "124 means that the command was not executed because none of the wildcards in "
 "the command produced any matches."
 msgstr ""
 
-#: ../../../language.rst:1789
+#: ../../../language.rst:1791
 msgid ""
 "125 means that while an executable with the specified name was located, the "
 "operating system could not actually execute the command."
 msgstr ""
 
-#: ../../../language.rst:1791
+#: ../../../language.rst:1793
 msgid ""
 "126 means that while a file with the specified name was located, it was not "
 "executable."
 msgstr ""
 
-#: ../../../language.rst:1793
+#: ../../../language.rst:1795
 msgid ""
 "127 means that no function, builtin or command with the given name could be "
 "located."
 msgstr ""
 
-#: ../../../language.rst:1795
+#: ../../../language.rst:1797
 msgid ""
 "If a process exits through a signal, the exit status will be 128 plus the "
 "number of the signal."
 msgstr ""
 
-#: ../../../language.rst:1797
+#: ../../../language.rst:1799
 msgid ""
 "The status can be negated with :doc:`not <cmds/not>` (or ``!``), which is "
 "useful in a :ref:`condition <syntax-conditional>`. This turns a status of 0 "
 "into 1 and any non-zero status into 0."
 msgstr ""
 
-#: ../../../language.rst:1799
+#: ../../../language.rst:1801
 msgid ""
 "There is also ``$pipestatus``, which is a list of all ``status`` values of "
 "processes in a pipe. One difference is that :doc:`not <cmds/not>` applies to "
 "``$status``, but not ``$pipestatus``, because it loses information."
 msgstr ""
 
-#: ../../../language.rst:1803
+#: ../../../language.rst:1805
 msgid ""
 "not cat file | grep -q fish\n"
 "echo status is: $status pipestatus is $pipestatus"
 msgstr ""
 
-#: ../../../language.rst:1806
+#: ../../../language.rst:1808
 msgid ""
 "Here ``$status`` reflects the status of ``grep``, which returns 0 if it "
 "found something, negated with ``not`` (so 1 if it found something, 0 "
@@ -3930,34 +3936,34 @@ msgid ""
 "the negation."
 msgstr ""
 
-#: ../../../language.rst:1808
+#: ../../../language.rst:1810
 msgid ""
 "So if both ``cat`` and ``grep`` succeeded, ``$status`` would be 1 because of "
 "the ``not``, and ``$pipestatus`` would be 0 and 0."
 msgstr ""
 
-#: ../../../language.rst:1810
+#: ../../../language.rst:1812
 msgid ""
 "It's possible for the first command to fail while the second succeeds. One "
 "common example is when the second program quits early."
 msgstr ""
 
-#: ../../../language.rst:1812
+#: ../../../language.rst:1814
 msgid "For example, if you have a pipeline like::"
 msgstr ""
 
-#: ../../../language.rst:1814
+#: ../../../language.rst:1816
 msgid "cat file1 file2 | head -n 50"
 msgstr ""
 
-#: ../../../language.rst:1816
+#: ../../../language.rst:1818
 msgid ""
 "This will tell ``cat`` to print two files, \"file1\" and \"file2\", one "
 "after the other, and the ``head`` will then only print the first 50 lines. "
 "In this case you might often see this constellation::"
 msgstr ""
 
-#: ../../../language.rst:1818
+#: ../../../language.rst:1820
 msgid ""
 "> cat file1 file2 | head -n 50\n"
 "# 50 lines of output\n"
@@ -3965,7 +3971,7 @@ msgid ""
 "141 0"
 msgstr ""
 
-#: ../../../language.rst:1823
+#: ../../../language.rst:1825
 msgid ""
 "Here, the \"141\" signifies that ``cat`` was killed by signal number 13 (128 "
 "+ 13 == 141) - a ``SIGPIPE``. You can also use :envvar:`fish_kill_signal` to "
@@ -3974,7 +3980,7 @@ msgid ""
 "and so it died."
 msgstr ""
 
-#: ../../../language.rst:1825
+#: ../../../language.rst:1827
 msgid ""
 "Whether ``cat`` here will see a SIGPIPE depends on how long the file is and "
 "how much it writes at once, so you might see a pipestatus of \"0 0\", "
@@ -3984,18 +3990,18 @@ msgid ""
 "problem with it."
 msgstr ""
 
-#: ../../../language.rst:1830
+#: ../../../language.rst:1832
 msgid "Locale Variables"
 msgstr ""
 
-#: ../../../language.rst:1832
+#: ../../../language.rst:1834
 msgid ""
 "The \"locale\" of a program is its set of language and regional settings. In "
 "UNIX, these are made up of several categories. The categories used by fish "
 "are:"
 msgstr ""
 
-#: ../../../language.rst:1837
+#: ../../../language.rst:1839
 msgid ""
 "This is the typical environment variable for specifying a locale. A user may "
 "set this variable to express the language they speak, their region, and a "
@@ -4004,21 +4010,21 @@ msgid ""
 "like ``C`` or ``POSIX``."
 msgstr ""
 
-#: ../../../language.rst:1841
+#: ../../../language.rst:1843
 msgid ""
 "The value of ``LANG`` is used for each category unless the variable for that "
 "category was set or ``LC_ALL`` is set. So typically you only need to set "
 "LANG."
 msgstr ""
 
-#: ../../../language.rst:1843
+#: ../../../language.rst:1845
 msgid ""
 "Example values are ``en_US.UTF-8`` for the American English or ``de_AT."
 "UTF-8`` for Austrian German. Your operating system might have a ``locale`` "
 "command that you can call as ``locale -a`` to see a list of defined locales."
 msgstr ""
 
-#: ../../../language.rst:1848
+#: ../../../language.rst:1850
 msgid ""
 "This is treated like :envvar:`LC_MESSAGES` except that it can hold multiple "
 "values, which allows to specify a priority list of languages for "
@@ -4027,7 +4033,7 @@ msgid ""
 "variable.html>`__."
 msgstr ""
 
-#: ../../../language.rst:1852
+#: ../../../language.rst:1854
 msgid ""
 "Language identifiers without a region specified (e.g. ``zh``) result in all "
 "available variants of this language being tried in arbitrary order. In this "
@@ -4041,199 +4047,199 @@ msgid ""
 "messages which are not available in ``zh_TW`` being displayed in English."
 msgstr ""
 
-#: ../../../language.rst:1860
+#: ../../../language.rst:1862
 msgid "See also :doc:`builtin _ (underscore) <cmds/_>`."
 msgstr ""
 
-#: ../../../language.rst:1864
+#: ../../../language.rst:1866
 msgid ""
 "Overrides the :envvar:`LANG` and all other ``LC_*`` variables. Please use "
 "``LC_ALL`` only as a temporary override."
 msgstr ""
 
-#: ../../../language.rst:1869
+#: ../../../language.rst:1871
 msgid ""
 "Determines the language in which messages are displayed, see :doc:`builtin _ "
 "(underscore) <cmds/_>`."
 msgstr ""
 
-#: ../../../language.rst:1873
+#: ../../../language.rst:1875
 msgid "Sets the locale for :doc:`formatting numbers <cmds/printf>`."
 msgstr ""
 
-#: ../../../language.rst:1877
+#: ../../../language.rst:1879
 msgid ""
 "Determines how date and time are displayed. Used in the :ref:`history "
 "<history-show-time>` builtin."
 msgstr ""
 
-#: ../../../language.rst:1883
+#: ../../../language.rst:1885
 msgid "Builtin commands"
 msgstr ""
 
-#: ../../../language.rst:1885
+#: ../../../language.rst:1887
 msgid ""
-"Fish includes a number of commands in the shell directly. We call these "
+"fish includes a number of commands in the shell directly. We call these "
 "\"builtins\". These include:"
 msgstr ""
 
-#: ../../../language.rst:1887
+#: ../../../language.rst:1889
 msgid ""
 "Builtins that manipulate the shell state - :doc:`cd <cmds/cd>` changes "
 "directory, :doc:`set <cmds/set>` sets variables"
 msgstr ""
 
-#: ../../../language.rst:1888
+#: ../../../language.rst:1890
 msgid ""
 "Builtins for dealing with data, like :doc:`string <cmds/string>` for strings "
 "and :doc:`math <cmds/math>` for numbers, :doc:`count <cmds/count>` for "
 "counting lines or arguments, :doc:`path <cmds/path>` for dealing with path"
 msgstr ""
 
-#: ../../../language.rst:1889
+#: ../../../language.rst:1891
 msgid ":doc:`status <cmds/status>` for asking about the shell's status"
 msgstr ""
 
-#: ../../../language.rst:1890
+#: ../../../language.rst:1892
 msgid ""
 ":doc:`printf <cmds/printf>` and :doc:`echo <cmds/echo>` for creating output"
 msgstr ""
 
-#: ../../../language.rst:1891
+#: ../../../language.rst:1893
 msgid ":doc:`test <cmds/test>` for checking conditions"
 msgstr ""
 
-#: ../../../language.rst:1892
+#: ../../../language.rst:1894
 msgid ":doc:`argparse <cmds/argparse>` for parsing function arguments"
 msgstr ""
 
-#: ../../../language.rst:1893
+#: ../../../language.rst:1895
 msgid ""
 ":doc:`source <cmds/source>` to read a script in the current shell (so "
 "changes to variables stay) and :doc:`eval <cmds/eval>` to execute a string "
 "as script"
 msgstr ""
 
-#: ../../../language.rst:1894
+#: ../../../language.rst:1896
 msgid ""
 ":doc:`random <cmds/random>` to get random numbers or pick a random element "
 "from a list"
 msgstr ""
 
-#: ../../../language.rst:1895
+#: ../../../language.rst:1897
 msgid ":doc:`read <cmds/read>` for reading from a pipe or the terminal"
 msgstr ""
 
-#: ../../../language.rst:1897
+#: ../../../language.rst:1899
 msgid "For a list of all builtins, use ``builtin -n``."
 msgstr ""
 
-#: ../../../language.rst:1899
+#: ../../../language.rst:1901
 msgid ""
 "For a list of all builtins, functions and commands shipped with fish, see "
 "the :doc:`list of commands <commands>`. The documentation is also available "
 "by using the ``--help`` switch."
 msgstr ""
 
-#: ../../../language.rst:1902
+#: ../../../language.rst:1904
 msgid "Command lookup"
 msgstr ""
 
-#: ../../../language.rst:1904
+#: ../../../language.rst:1906
 msgid ""
 "When fish is told to run something, it goes through multiple steps to find "
 "it."
 msgstr ""
 
-#: ../../../language.rst:1906
+#: ../../../language.rst:1908
 msgid ""
 "If it contains a ``/``, fish tries to execute the given file, from the "
 "current directory on."
 msgstr ""
 
-#: ../../../language.rst:1908
+#: ../../../language.rst:1910
 msgid ""
 "If it doesn't contain a ``/``, it could be a function, builtin, or external "
 "command, and so fish goes through the full lookup."
 msgstr ""
 
-#: ../../../language.rst:1910
+#: ../../../language.rst:1912
 msgid "In order:"
 msgstr ""
 
-#: ../../../language.rst:1912
+#: ../../../language.rst:1914
 msgid "It tries to resolve it as a :ref:`function <syntax-function>`."
 msgstr ""
 
-#: ../../../language.rst:1914
+#: ../../../language.rst:1916
 msgid "If the function is already known, it uses that"
 msgstr ""
 
-#: ../../../language.rst:1915
+#: ../../../language.rst:1917
 msgid ""
 "If there is a file of the name with a \".fish\" suffix in :envvar:"
 "`fish_function_path`, it :ref:`loads that <syntax-function-autoloading>`. "
 "(If there is more than one file only the first is used)"
 msgstr ""
 
-#: ../../../language.rst:1916
+#: ../../../language.rst:1918
 msgid "If the function is now defined it uses that"
 msgstr ""
 
-#: ../../../language.rst:1918
+#: ../../../language.rst:1920
 msgid "It tries to resolve it as a :ref:`builtin <builtin-overview>`."
 msgstr ""
 
-#: ../../../language.rst:1919
+#: ../../../language.rst:1921
 msgid "It tries to find an executable file in :envvar:`PATH`."
 msgstr ""
 
-#: ../../../language.rst:1921
+#: ../../../language.rst:1923
 msgid "If it finds a file, it tells the kernel to run it."
 msgstr ""
 
-#: ../../../language.rst:1922
+#: ../../../language.rst:1924
 msgid ""
 "If the kernel knows how to run the file (e.g. via a ``#!`` line - ``#!/bin/"
 "sh`` or ``#!/usr/bin/python``), it does it."
 msgstr ""
 
-#: ../../../language.rst:1923
+#: ../../../language.rst:1925
 msgid ""
 "If the kernel reports that it couldn't run it because of a missing "
 "interpreter, and the file passes a rudimentary check, fish tells ``/bin/sh`` "
 "to run it."
 msgstr ""
 
-#: ../../../language.rst:1925
+#: ../../../language.rst:1927
 msgid ""
 "If none of these work, fish runs the function :doc:`fish_command_not_found "
 "<cmds/fish_command_not_found>` and sets :envvar:`status` to 127."
 msgstr ""
 
-#: ../../../language.rst:1927
+#: ../../../language.rst:1929
 msgid ""
 "You can use :doc:`type <cmds/type>` to see how fish resolved something::"
 msgstr ""
 
-#: ../../../language.rst:1929
+#: ../../../language.rst:1931
 msgid ""
 "> type --short --all echo\n"
 "echo is a builtin\n"
 "echo is /usr/bin/echo"
 msgstr ""
 
-#: ../../../language.rst:1936
+#: ../../../language.rst:1938
 msgid "Querying for user input"
 msgstr ""
 
-#: ../../../language.rst:1938
+#: ../../../language.rst:1940
 msgid ""
 "Sometimes, you want to ask the user for input, for instance to confirm "
 "something. This can be done with the :doc:`read <cmds/read>` builtin."
 msgstr ""
 
-#: ../../../language.rst:1940
+#: ../../../language.rst:1942
 msgid ""
 "Let's make up an example. This function will :ref:`glob <expand-wildcard>` "
 "the files in all the directories it gets as :ref:`arguments <variables-"
@@ -4242,7 +4248,7 @@ msgid ""
 "if it is connected to a terminal::"
 msgstr ""
 
-#: ../../../language.rst:1942
+#: ../../../language.rst:1944
 msgid ""
 "function show_files\n"
 "    # This will glob on all arguments. Any non-directories will be ignored.\n"
@@ -4281,7 +4287,7 @@ msgid ""
 "end"
 msgstr ""
 
-#: ../../../language.rst:1977
+#: ../../../language.rst:1979
 msgid ""
 "If you run this as ``show_files /``, it will most likely ask you until you "
 "press Y/y or N/n. If you run this as ``show_files / | cat``, it will print "
@@ -4289,23 +4295,23 @@ msgid ""
 "print something without asking because there are fewer than five files."
 msgstr ""
 
-#: ../../../language.rst:1980
+#: ../../../language.rst:1982
 msgid "Shell variable and function names"
 msgstr ""
 
-#: ../../../language.rst:1982
+#: ../../../language.rst:1984
 msgid ""
 "The names given to variables and functions (so-called \"identifiers\") have "
 "to follow certain rules:"
 msgstr ""
 
-#: ../../../language.rst:1984
+#: ../../../language.rst:1986
 msgid ""
 "A variable name cannot be empty. It can contain only letters, digits, and "
 "underscores. It may begin and end with any of those characters."
 msgstr ""
 
-#: ../../../language.rst:1986
+#: ../../../language.rst:1988
 msgid ""
 "A function name cannot be empty. It may not begin with a hyphen (\"-\") and "
 "may not contain a slash (\"/\"). All other characters, including a space, "
@@ -4313,12 +4319,12 @@ msgid ""
 "essential builtin like ``if`` or ``set``."
 msgstr ""
 
-#: ../../../language.rst:1988
+#: ../../../language.rst:1990
 msgid ""
 "A bind mode name (e.g., ``bind -m abc ...``) must be a valid variable name."
 msgstr ""
 
-#: ../../../language.rst:1990
+#: ../../../language.rst:1992
 msgid ""
 "Other things have other restrictions. For instance what is allowed for file "
 "names depends on your system, but at the very least they cannot contain a \"/"
@@ -4326,71 +4332,71 @@ msgid ""
 "UNIX ends strings)."
 msgstr ""
 
-#: ../../../language.rst:1995
+#: ../../../language.rst:1997
 msgid "Configuration files"
 msgstr ""
 
-#: ../../../language.rst:1997
+#: ../../../language.rst:1999
 msgid ""
 "When fish is started, it reads and runs its configuration files. Where these "
 "are depends on build configuration and environment variables."
 msgstr ""
 
-#: ../../../language.rst:1999
+#: ../../../language.rst:2001
 msgid ""
 "The main file is ``~/.config/fish/config.fish`` (or more precisely "
 "``$XDG_CONFIG_HOME/fish/config.fish``)."
 msgstr ""
 
-#: ../../../language.rst:2001
+#: ../../../language.rst:2003
 msgid "Configuration files are run in the following order:"
 msgstr ""
 
-#: ../../../language.rst:2003
+#: ../../../language.rst:2005
 msgid "Configuration snippets (named ``*.fish``) in the directories:"
 msgstr ""
 
-#: ../../../language.rst:2005
+#: ../../../language.rst:2007
 msgid "``$__fish_config_dir/conf.d`` (by default, ``~/.config/fish/conf.d/``)"
 msgstr ""
 
-#: ../../../language.rst:2006
+#: ../../../language.rst:2008
 msgid "``$__fish_sysconf_dir/conf.d`` (by default, ``/etc/fish/conf.d/``)"
 msgstr ""
 
-#: ../../../language.rst:2007
+#: ../../../language.rst:2009
 msgid ""
 "Directories for others to ship configuration snippets for their software:"
 msgstr ""
 
-#: ../../../language.rst:2009
+#: ../../../language.rst:2011
 msgid ""
 "the directories under ``$__fish_user_data_dir`` (usually ``~/.local/share/"
 "fish``, controlled by the ``XDG_DATA_HOME`` environment variable)"
 msgstr ""
 
-#: ../../../language.rst:2010
+#: ../../../language.rst:2012
 msgid ""
 "a ``fish/vendor_conf.d`` directory in the directories listed in "
 "``$XDG_DATA_DIRS`` (default ``/usr/share/fish/vendor_conf.d`` and ``/usr/"
 "local/share/fish/vendor_conf.d``)"
 msgstr ""
 
-#: ../../../language.rst:2012
+#: ../../../language.rst:2014
 msgid ""
 "These directories are also accessible in ``$__fish_vendor_confdirs``. Note "
 "that changing that in a running fish won't do anything as by that point the "
 "directories have already been read."
 msgstr ""
 
-#: ../../../language.rst:2015
+#: ../../../language.rst:2017
 msgid ""
 "If there are multiple files with the same name in these directories, only "
 "the first will be executed. They are executed in order of their filename, "
 "sorted (like globs) in a natural order (i.e. \"01\" sorts before \"2\")."
 msgstr ""
 
-#: ../../../language.rst:2018
+#: ../../../language.rst:2020
 msgid ""
 "System-wide configuration files, where administrators can include "
 "initialization for all users on the system - similar to ``/etc/profile`` for "
@@ -4398,20 +4404,20 @@ msgid ""
 "fish``)."
 msgstr ""
 
-#: ../../../language.rst:2019
+#: ../../../language.rst:2021
 msgid ""
 "User configuration, usually in ``~/.config/fish/config.fish`` (controlled by "
 "the ``XDG_CONFIG_HOME`` environment variable, and accessible as "
 "``$__fish_config_dir``)."
 msgstr ""
 
-#: ../../../language.rst:2021
+#: ../../../language.rst:2023
 msgid ""
 "``~/.config/fish/config.fish`` is sourced *after* the snippets. This is so "
 "you can copy snippets and override some of their behavior."
 msgstr ""
 
-#: ../../../language.rst:2023
+#: ../../../language.rst:2025
 msgid ""
 "These files are all executed on the startup of every shell. If you want to "
 "run a command only on starting an interactive shell, use the exit status of "
@@ -4421,7 +4427,7 @@ msgid ""
 "interactive or non-login shells."
 msgstr ""
 
-#: ../../../language.rst:2025
+#: ../../../language.rst:2027
 msgid ""
 "If you are developing another program, you may want to add configuration for "
 "all users of fish on a system. This is discouraged; if not carefully "
@@ -4433,29 +4439,29 @@ msgid ""
 "variable confdir fish``."
 msgstr ""
 
-#: ../../../language.rst:2027
+#: ../../../language.rst:2029
 msgid ""
 "For system integration, fish also ships a file called ``__fish_build_paths."
 "fish``. This can be customized during build, for instance because your "
 "system requires special paths to be used."
 msgstr ""
 
-#: ../../../language.rst:2032
+#: ../../../language.rst:2034
 msgid "Future feature flags"
 msgstr ""
 
-#: ../../../language.rst:2034
+#: ../../../language.rst:2036
 msgid ""
 "Feature flags are how fish stages changes that might break scripts. Breaking "
 "changes are introduced as opt-in, in a few releases they become opt-out, and "
 "eventually the old behavior is removed."
 msgstr ""
 
-#: ../../../language.rst:2036
+#: ../../../language.rst:2038
 msgid "You can see the current list of features via ``status features``::"
 msgstr ""
 
-#: ../../../language.rst:2038
+#: ../../../language.rst:2040
 msgid ""
 "> status features\n"
 "stderr-nocaret          on  3.0 ^ no longer redirects stderr\n"
@@ -4472,11 +4478,11 @@ msgid ""
 "omit-term-workarounds   off 4.3 skip workarounds for incompatible terminals"
 msgstr ""
 
-#: ../../../language.rst:2050
+#: ../../../language.rst:2052
 msgid "Here is what they mean:"
 msgstr ""
 
-#: ../../../language.rst:2052
+#: ../../../language.rst:2054
 msgid ""
 "``stderr-nocaret`` was introduced in fish 3.0 and cannot be turned off since "
 "fish 3.5. It can still be tested for compatibility, but a ``no-stderr-"
@@ -4484,7 +4490,7 @@ msgid ""
 "instead of denoting an stderr redirection. Use ``2>`` instead."
 msgstr ""
 
-#: ../../../language.rst:2053
+#: ../../../language.rst:2055
 msgid ""
 "``qmark-noglob`` was also introduced in fish 3.0 (and made the default in "
 "4.0). It makes ``?`` an ordinary character instead of a single-character "
@@ -4492,7 +4498,7 @@ msgid ""
 "other ways to match files like ``find``."
 msgstr ""
 
-#: ../../../language.rst:2054
+#: ../../../language.rst:2056
 msgid ""
 "``regex-easyesc`` was introduced in 3.1 (and made the default in 3.5). It "
 "makes it so the replacement expression in ``string replace -r`` does one "
@@ -4502,7 +4508,7 @@ msgid ""
 "anywhere."
 msgstr ""
 
-#: ../../../language.rst:2055
+#: ../../../language.rst:2057
 msgid ""
 "``ampersand-nobg-in-token`` was introduced in fish 3.4 (and made the default "
 "in 3.5). It makes it so a ``&`` is no longer interpreted as the "
@@ -4512,14 +4518,14 @@ msgid ""
 "already."
 msgstr ""
 
-#: ../../../language.rst:2056
+#: ../../../language.rst:2058
 msgid ""
 "``remove-percent-self`` turns off the special ``%self`` expansion. It was "
 "introduced in 4.0. To get fish's pid, you can use the :envvar:`fish_pid` "
 "variable."
 msgstr ""
 
-#: ../../../language.rst:2057
+#: ../../../language.rst:2059
 msgid ""
 "``test-require-arg`` removes :doc:`builtin test <cmds/test>`'s one-argument "
 "form (``test \"string\"``. It was introduced in 4.0. To test if a string is "
@@ -4529,13 +4535,13 @@ msgid ""
 "can be used to find offending calls."
 msgstr ""
 
-#: ../../../language.rst:2058
+#: ../../../language.rst:2060
 msgid ""
 "``mark-prompt`` makes fish report to the terminal the beginning and end of "
 "both shell prompts and command output."
 msgstr ""
 
-#: ../../../language.rst:2059
+#: ../../../language.rst:2061
 msgid ""
 "``ignore-terminfo`` was introduced in fish 4.1 and cannot be turned off "
 "since fish 4.5. It can still be tested for compatibility, but a ``no-ignore-"
@@ -4543,7 +4549,7 @@ msgid ""
 "terminfo database."
 msgstr ""
 
-#: ../../../language.rst:2060
+#: ../../../language.rst:2062
 msgid ""
 "``query-term`` allows fish to query the terminal by writing escape sequences "
 "and reading the terminal's response. This enables features such as :ref:"
@@ -4552,145 +4558,145 @@ msgid ""
 "``set -Ua fish_features no-query-term``."
 msgstr ""
 
-#: ../../../language.rst:2063
+#: ../../../language.rst:2065
 msgid ""
 "``omit-term-workarounds`` prevents fish from trying to work around "
 "incompatible terminals."
 msgstr ""
 
-#: ../../../language.rst:2066
+#: ../../../language.rst:2068
 msgid ""
 "These changes are introduced off by default. They can be enabled on a per "
 "session basis::"
 msgstr ""
 
-#: ../../../language.rst:2068
+#: ../../../language.rst:2070
 msgid "> fish --features qmark-noglob,regex-easyesc"
 msgstr ""
 
-#: ../../../language.rst:2071
+#: ../../../language.rst:2073
 msgid "or opted into globally for a user::"
 msgstr ""
 
-#: ../../../language.rst:2074
+#: ../../../language.rst:2076
 msgid "> set -U fish_features regex-easyesc qmark-noglob"
 msgstr ""
 
-#: ../../../language.rst:2076
+#: ../../../language.rst:2078
 msgid ""
 "Features will only be set on startup, so this variable will only take effect "
 "if it is universal or exported."
 msgstr ""
 
-#: ../../../language.rst:2078
+#: ../../../language.rst:2080
 msgid ""
 "You can also use the version as a group, so ``3.0`` is equivalent to "
 "\"stderr-nocaret\" and \"qmark-noglob\". Instead of a version, the special "
 "group ``all`` enables all features."
 msgstr ""
 
-#: ../../../language.rst:2080
+#: ../../../language.rst:2082
 msgid ""
 "Prefixing a feature with ``no-`` turns it off instead. E.g. to reenable the "
 "``?`` single-character glob::"
 msgstr ""
 
-#: ../../../language.rst:2082
+#: ../../../language.rst:2084
 msgid "set -Ua fish_features no-qmark-noglob"
 msgstr ""
 
-#: ../../../language.rst:2087
+#: ../../../language.rst:2089
 msgid "Event handlers"
 msgstr ""
 
-#: ../../../language.rst:2089
+#: ../../../language.rst:2091
 msgid ""
 "When defining a new function in fish, it is possible to make it into an "
 "event handler, i.e. a function that is automatically run when a specific "
 "event takes place. Events that can trigger a handler currently are:"
 msgstr ""
 
-#: ../../../language.rst:2091
+#: ../../../language.rst:2093
 msgid "When a signal is delivered"
 msgstr ""
 
-#: ../../../language.rst:2092
+#: ../../../language.rst:2094
 msgid "When a job exits"
 msgstr ""
 
-#: ../../../language.rst:2093
+#: ../../../language.rst:2095
 msgid "When the value of a variable is updated"
 msgstr ""
 
-#: ../../../language.rst:2094
+#: ../../../language.rst:2096
 msgid "When the prompt is about to be shown"
 msgstr ""
 
-#: ../../../language.rst:2098
+#: ../../../language.rst:2100
 msgid "To specify a signal handler for the WINCH signal, write::"
 msgstr ""
 
-#: ../../../language.rst:2100
+#: ../../../language.rst:2102
 msgid ""
 "function my_signal_handler --on-signal WINCH\n"
 "    echo Got WINCH signal!\n"
 "end"
 msgstr ""
 
-#: ../../../language.rst:2104
+#: ../../../language.rst:2106
 msgid ""
-"Fish already has the following named events for the ``--on-event`` switch:"
+"fish already has the following named events for the ``--on-event`` switch:"
 msgstr ""
 
-#: ../../../language.rst:2106
+#: ../../../language.rst:2108
 msgid ""
 "``fish_prompt`` is emitted whenever a new fish prompt is about to be "
 "displayed."
 msgstr ""
 
-#: ../../../language.rst:2108
+#: ../../../language.rst:2110
 msgid ""
 "``fish_preexec`` is emitted right before executing an interactive command. "
 "The commandline is passed as the first parameter. Not emitted if command is "
 "empty."
 msgstr ""
 
-#: ../../../language.rst:2110
+#: ../../../language.rst:2112
 msgid ""
 "``fish_posterror`` is emitted right after executing a command with syntax "
 "errors. The commandline is passed as the first parameter."
 msgstr ""
 
-#: ../../../language.rst:2112
+#: ../../../language.rst:2114
 msgid ""
 "``fish_postexec`` is emitted right after executing an interactive command. "
 "The commandline is passed as the first parameter. Not emitted if command is "
 "empty."
 msgstr ""
 
-#: ../../../language.rst:2114
+#: ../../../language.rst:2116
 msgid "``fish_exit`` is emitted right before fish exits."
 msgstr ""
 
-#: ../../../language.rst:2116
+#: ../../../language.rst:2118
 msgid "``fish_cancel`` is emitted when a commandline is cleared."
 msgstr ""
 
-#: ../../../language.rst:2118
+#: ../../../language.rst:2120
 msgid "``fish_focus_in`` is emitted when fish's terminal gains focus."
 msgstr ""
 
-#: ../../../language.rst:2120
+#: ../../../language.rst:2122
 msgid "``fish_focus_out`` is emitted when fish's terminal loses focus."
 msgstr ""
 
-#: ../../../language.rst:2122
+#: ../../../language.rst:2124
 msgid ""
 "Events can be fired with the :doc:`emit <cmds/emit>` command, and do not "
 "have to be defined before. The names just need to match. For example::"
 msgstr ""
 
-#: ../../../language.rst:2124
+#: ../../../language.rst:2126
 msgid ""
 "function handler --on-event imdone\n"
 "    echo generator is done $argv\n"
@@ -4704,13 +4710,13 @@ msgid ""
 "end"
 msgstr ""
 
-#: ../../../language.rst:2135
+#: ../../../language.rst:2137
 msgid ""
 "If there are multiple handlers for an event, they will all be run, but the "
 "order might change between fish releases, so you should not rely on it."
 msgstr ""
 
-#: ../../../language.rst:2137
+#: ../../../language.rst:2139
 msgid ""
 "Please note that event handlers only become active when a function is "
 "loaded, which means you need to otherwise :doc:`source <cmds/source>` or "
@@ -4719,19 +4725,19 @@ msgid ""
 "<configuration>`."
 msgstr ""
 
-#: ../../../language.rst:2139
+#: ../../../language.rst:2141
 msgid ""
 "For more information on how to define new event handlers, see the "
 "documentation for the :doc:`function <cmds/function>` command."
 msgstr ""
 
-#: ../../../language.rst:2145
+#: ../../../language.rst:2147
 msgid "Debugging fish scripts"
 msgstr ""
 
-#: ../../../language.rst:2147
+#: ../../../language.rst:2149
 msgid ""
-"Fish includes basic built-in debugging facilities that allow you to stop "
+"fish includes basic built-in debugging facilities that allow you to stop "
 "execution of a script at an arbitrary point. When this happens you are "
 "presented with an interactive prompt where you can execute any fish command "
 "to inspect or change state (there are no debug commands as such). For "
@@ -4742,7 +4748,7 @@ msgid ""
 "`exit <cmds/exit>` or :kbd:`ctrl-d`."
 msgstr ""
 
-#: ../../../language.rst:2149
+#: ../../../language.rst:2151
 msgid ""
 "To start a debug session insert the :doc:`builtin command <cmds/breakpoint>` "
 "``breakpoint`` at the point in a function or script where you wish to gain "
@@ -4757,18 +4763,18 @@ msgid ""
 "executed."
 msgstr ""
 
-#: ../../../language.rst:2151
+#: ../../../language.rst:2153
 msgid ""
 "Another way to debug script issues is to set the :envvar:`fish_trace` "
 "variable, e.g. ``fish_trace=1 fish_prompt`` to see which commands fish "
 "executes when running the :doc:`fish_prompt <cmds/fish_prompt>` function."
 msgstr ""
 
-#: ../../../language.rst:2156
+#: ../../../language.rst:2158
 msgid "Profiling fish scripts"
 msgstr ""
 
-#: ../../../language.rst:2158
+#: ../../../language.rst:2160
 msgid ""
 "If you specifically want to debug performance issues, :program:`fish` can be "
 "run with the ``--profile /path/to/profile.log`` option to save a profile to "
@@ -4776,7 +4782,7 @@ msgid ""
 "step in the execution took."
 msgstr ""
 
-#: ../../../language.rst:2162
+#: ../../../language.rst:2164
 msgid ""
 "> fish --profile /tmp/sleep.prof -ic 'sleep 3s'\n"
 "> cat /tmp/sleep.prof\n"
@@ -4784,7 +4790,7 @@ msgid ""
 "3003419 3003419 > sleep 3s"
 msgstr ""
 
-#: ../../../language.rst:2167
+#: ../../../language.rst:2169
 msgid ""
 "This will show the time for each command itself in the first column, the "
 "time for the command and every subcommand (like any commands inside of a :"
@@ -4793,21 +4799,21 @@ msgid ""
 "separated with tabs."
 msgstr ""
 
-#: ../../../language.rst:2169
+#: ../../../language.rst:2171
 msgid "The time is given in microseconds."
 msgstr ""
 
-#: ../../../language.rst:2171
+#: ../../../language.rst:2173
 msgid ""
 "To see the slowest commands last, ``sort -nk2 /path/to/logfile`` is useful."
 msgstr ""
 
-#: ../../../language.rst:2173
+#: ../../../language.rst:2175
 msgid ""
 "For profiling fish's startup there is also ``--profile-startup /path/to/"
 "logfile``."
 msgstr ""
 
-#: ../../../language.rst:2175
+#: ../../../language.rst:2177
 msgid "See :doc:`fish <cmds/fish>` for more information."
 msgstr ""

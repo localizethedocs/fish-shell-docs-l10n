@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell 4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"POT-Creation-Date: 2026-08-31 17:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,7 @@ msgid "**-f** or **--no-functions**"
 msgstr ""
 
 #: ../../../cmds/fish_delta.rst:33
-msgid "Stops checking functions"
+msgid "Skips checking functions"
 msgstr ""
 
 #: ../../../cmds/fish_delta.rst:35
@@ -90,7 +90,7 @@ msgid "**-c** or **--no-completions**"
 msgstr ""
 
 #: ../../../cmds/fish_delta.rst:36
-msgid "Stops checking completions"
+msgid "Skips checking completions"
 msgstr ""
 
 #: ../../../cmds/fish_delta.rst:38
@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../../cmds/fish_delta.rst:39
 msgid ""
-"Stops checking configuration files like config.fish or snippets in the conf."
+"Skips checking configuration files like config.fish or snippets in the conf."
 "d directories."
 msgstr ""
 

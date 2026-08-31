@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell 4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"POT-Creation-Date: 2026-08-31 17:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgstr ""
 
 #: ../../../cmds/fish_vi_key_bindings.rst:30
 msgid ""
-"Fish's vi mode aims to be familiar to vim users, but there are some "
+"fish's vi mode aims to be familiar to vim users, but there are some "
 "differences:"
 msgstr ""
 
@@ -85,37 +85,19 @@ msgid ""
 "``_``, while in vim it would jump past the entire identifier."
 msgstr ""
 
-#: ../../../cmds/fish_vi_key_bindings.rst:35
-msgid "**The** ``cw`` **command**"
-msgstr ""
-
 #: ../../../cmds/fish_vi_key_bindings.rst:36
-msgid ""
-"In vim, ``cw`` has special behavior: when the cursor is on a non-space "
-"character, it behaves like ``ce`` (change to end of word), but when the "
-"cursor is on a space, it behaves like ``dwi`` (delete word then insert)."
-msgstr ""
-
-#: ../../../cmds/fish_vi_key_bindings.rst:38
-msgid ""
-"In fish, ``cw`` always behaves like ``dwi`` - it deletes to the start of the "
-"next word (including trailing whitespace), then enters insert mode. To get "
-"vim's ``cw`` behavior in fish, use ``ce`` instead."
-msgstr ""
-
-#: ../../../cmds/fish_vi_key_bindings.rst:41
 msgid "Examples"
 msgstr ""
 
-#: ../../../cmds/fish_vi_key_bindings.rst:43
+#: ../../../cmds/fish_vi_key_bindings.rst:38
 msgid "To start using vi key bindings::"
 msgstr ""
 
-#: ../../../cmds/fish_vi_key_bindings.rst:45
+#: ../../../cmds/fish_vi_key_bindings.rst:40
 msgid "fish_vi_key_bindings"
 msgstr ""
 
-#: ../../../cmds/fish_vi_key_bindings.rst:47
+#: ../../../cmds/fish_vi_key_bindings.rst:42
 msgid ""
 "or ``set -g fish_key_bindings fish_vi_key_bindings`` in :ref:`config.fish "
 "<configuration>`."
