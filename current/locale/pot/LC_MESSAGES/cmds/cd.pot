@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"POT-Creation-Date: 2026-08-31 16:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../../cmds/cd.rst:7
-msgid "cd [DIRECTORY]"
+msgid "cd [( -L | --no-dereference ) | ( -P | --dereference )] [DIRECTORY]"
 msgstr ""
 
 #: ../../../cmds/cd.rst:12
@@ -45,11 +45,18 @@ msgstr ""
 
 #: ../../../cmds/cd.rst:21
 msgid ""
+"The :envvar:`PWD` environment variable is updated with the new working "
+"directory, and the previous directory is added to the :ref:`directory "
+"history <directory-history>`."
+msgstr ""
+
+#: ../../../cmds/cd.rst:24
+msgid ""
 "If *DIRECTORY* is given, it will become the new directory. If no parameter "
 "is given, the :envvar:`HOME` environment variable will be used."
 msgstr ""
 
-#: ../../../cmds/cd.rst:23
+#: ../../../cmds/cd.rst:26
 msgid ""
 "If *DIRECTORY* is a relative path, all the paths in the :envvar:`CDPATH` "
 "will be tried as prefixes for it, in addition to :envvar:`PWD`. It is "
@@ -57,16 +64,37 @@ msgid ""
 "envvar:`PWD` will be tried last."
 msgstr ""
 
-#: ../../../cmds/cd.rst:26
+#: ../../../cmds/cd.rst:29
 msgid ""
-"Fish will also try to change directory if given a command that looks like a "
+"The new directory name is partially resolved to remove redundant segments "
+"(``.`` or ``..``)."
+msgstr ""
+
+#: ../../../cmds/cd.rst:31
+msgid ""
+"``cd`` defaults to treating symbolic links as real directories, and not "
+"resolving them to their underlying targets. The ``$PWD`` :ref:`special "
+"variable <variables-special>` variable will contain the path that was "
+"supplied. This default behaviour can be enforced with the ``-L`` or ``--no-"
+"dereference`` option."
+msgstr ""
+
+#: ../../../cmds/cd.rst:35
+msgid ""
+"The ``-P`` or ``--dereference`` option resolves all symbolic links first. "
+"This was the default in fish versions before 3.0.0."
+msgstr ""
+
+#: ../../../cmds/cd.rst:37
+msgid ""
+"fish will also try to change directory if given a command that looks like a "
 "directory (starting with **.**, **/** or **~**, or ending with **/**), "
 "without explicitly requiring **cd**."
 msgstr ""
 
-#: ../../../cmds/cd.rst:28
+#: ../../../cmds/cd.rst:39
 msgid ""
-"Fish also ships a wrapper function around the builtin **cd** that "
+"fish also ships a wrapper function around the builtin **cd** that "
 "understands ``cd -`` as changing to the previous directory. See also :doc:"
 "`prevd <prevd>`. This wrapper function maintains a history of the 25 most "
 "recently visited directories in the ``$dirprev`` and ``$dirnext`` global "
@@ -74,37 +102,40 @@ msgid ""
 "shared among all fish instances."
 msgstr ""
 
-#: ../../../cmds/cd.rst:33
+#: ../../../cmds/cd.rst:44
 msgid ""
 "As a special case, ``cd .`` is equivalent to ``cd $PWD``, which is useful in "
 "cases where a mountpoint has been recycled or a directory has been removed "
 "and recreated."
 msgstr ""
 
-#: ../../../cmds/cd.rst:35
+#: ../../../cmds/cd.rst:46
 msgid ""
 "The **--help** or **-h** option displays help about using this command, and "
 "does not change the directory."
 msgstr ""
 
-#: ../../../cmds/cd.rst:38
+#: ../../../cmds/cd.rst:49
 msgid "Examples"
 msgstr ""
 
-#: ../../../cmds/cd.rst:42
+#: ../../../cmds/cd.rst:53
 msgid ""
 "cd\n"
 "# changes the working directory to your home directory.\n"
 "\n"
 "cd /usr/src/fish-shell\n"
-"# changes the working directory to /usr/src/fish-shell"
+"# changes the working directory to /usr/src/fish-shell\n"
+"\n"
+"cd -P /tmp/link\n"
+"# resolves /tmp/link to its target before recording the directory"
 msgstr ""
 
-#: ../../../cmds/cd.rst:49
+#: ../../../cmds/cd.rst:63
 msgid "See Also"
 msgstr ""
 
-#: ../../../cmds/cd.rst:51
+#: ../../../cmds/cd.rst:65
 msgid ""
 "Navigate directories using the :ref:`directory history <directory-history>` "
 "or the :ref:`directory stack <directory-stack>`"

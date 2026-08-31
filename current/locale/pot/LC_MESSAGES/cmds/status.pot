@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"POT-Creation-Date: 2026-08-31 16:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -286,13 +286,7 @@ msgstr ""
 msgid "**get-file** *FILE*"
 msgstr ""
 
-#: ../../../cmds/status.rst:115 ../../../cmds/status.rst:122
-msgid ""
-"NOTE: this subcommand is mainly intended for fish's internal use; let us "
-"know if you want to use it elsewhere."
-msgstr ""
-
-#: ../../../cmds/status.rst:117
+#: ../../../cmds/status.rst:115
 msgid ""
 "This prints a file embedded in the fish binary at compile time. This "
 "includes the default set of functions and completions, as well as the man "
@@ -300,22 +294,22 @@ msgid ""
 "Returns 0 if the file was included, 1 otherwise."
 msgstr ""
 
-#: ../../../cmds/status.rst:121
+#: ../../../cmds/status.rst:119
 msgid "**list-files** *FILE...*"
 msgstr ""
 
-#: ../../../cmds/status.rst:124
+#: ../../../cmds/status.rst:120
 msgid ""
 "This lists the files embedded in the fish binary at compile time. Only files "
 "where the path starts with the optional *FILE* argument are shown. Returns 0 "
 "if something was printed, 1 otherwise."
 msgstr ""
 
-#: ../../../cmds/status.rst:129
+#: ../../../cmds/status.rst:125
 msgid "**terminal**"
 msgstr ""
 
-#: ../../../cmds/status.rst:130
+#: ../../../cmds/status.rst:126
 msgid ""
 "Prints the name and version of the terminal fish is running inside (for "
 "example as reported via :ref:`XTVERSION <term-compat-xtversion>`). This is "
@@ -324,11 +318,11 @@ msgid ""
 "before the first ``fish_prompt`` or ``fish_read`` :ref:`event <event>`."
 msgstr ""
 
-#: ../../../cmds/status.rst:136
+#: ../../../cmds/status.rst:132
 msgid "**terminal-os**"
 msgstr ""
 
-#: ../../../cmds/status.rst:137
+#: ../../../cmds/status.rst:133
 msgid ""
 "Prints the name of the operating system (OS) the terminal is running on, as "
 "reported via :ref:`XTGETTCAP query-os-name <term-compat-xtgettcap>`. Like :"
@@ -336,44 +330,44 @@ msgid ""
 "interactive prompt is shown. Returns 1 if the OS name is not available."
 msgstr ""
 
-#: ../../../cmds/status.rst:143
+#: ../../../cmds/status.rst:139
 msgid "**test-terminal-feature** *FEATURE*"
 msgstr ""
 
-#: ../../../cmds/status.rst:144
+#: ../../../cmds/status.rst:140
 msgid ""
 "Returns 0 when the terminal was :ref:`detected <term-compat-xtgettcap>` to "
 "support the given feature. Like :ref:`status terminal <status-terminal>`, "
 "this only works once the first interactive prompt is shown."
 msgstr ""
 
-#: ../../../cmds/status.rst:147
+#: ../../../cmds/status.rst:143
 msgid ""
 "Currently the only available *FEATURE* is :ref:`scroll-content-up <term-"
 "compat-indn>`. An error will be printed when passed an unrecognized feature."
 msgstr ""
 
-#: ../../../cmds/status.rst:152
+#: ../../../cmds/status.rst:148
 msgid "**language**"
 msgstr ""
 
-#: ../../../cmds/status.rst:153
+#: ../../../cmds/status.rst:149
 msgid ""
 "Show or modify message localization settings. When invoked without "
 "arguments, the current language settings are shown."
 msgstr ""
 
-#: ../../../cmds/status.rst:156
+#: ../../../cmds/status.rst:152
 msgid "Available subcommands:"
 msgstr ""
 
-#: ../../../cmds/status.rst:158
+#: ../../../cmds/status.rst:154
 msgid ""
 "**list-available** prints the language names for which fish has "
 "translations. These names can be used with the **set** subcommand."
 msgstr ""
 
-#: ../../../cmds/status.rst:162
+#: ../../../cmds/status.rst:158
 msgid ""
 "**set** sets the language precedence for fish's messages. Overrides language "
 "settings configured via :ref:`environment variables <variables-locale>`, but "
@@ -390,17 +384,17 @@ msgid ""
 "message will be shown in English."
 msgstr ""
 
-#: ../../../cmds/status.rst:172
+#: ../../../cmds/status.rst:168
 msgid ""
 "**unset** undoes the effects of the **set** subcommand. Language settings "
 "will be taken from environment variables again."
 msgstr ""
 
-#: ../../../cmds/status.rst:177
+#: ../../../cmds/status.rst:173
 msgid "Notes"
 msgstr ""
 
-#: ../../../cmds/status.rst:179
+#: ../../../cmds/status.rst:175
 msgid ""
 "For backwards compatibility most subcommands can also be specified as a long "
 "or short option. For example, rather than ``status is-login`` you can type "
@@ -408,7 +402,7 @@ msgid ""
 "future release."
 msgstr ""
 
-#: ../../../cmds/status.rst:181
+#: ../../../cmds/status.rst:177
 msgid ""
 "You can only specify one subcommand per invocation even if you use the flag "
 "form of the subcommand."
