@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"POT-Creation-Date: 2026-08-31 16:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgid "Synopsis"
 msgstr ""
 
 #: ../../../cmds/contains.rst:7
-msgid "contains [OPTIONS] KEY [VALUES ...]"
+msgid "contains [OPTIONS] [--] KEY [VALUES ...]"
 msgstr ""
 
 #: ../../../cmds/contains.rst:12
@@ -63,38 +63,40 @@ msgstr ""
 
 #: ../../../cmds/contains.rst:25
 msgid ""
-"Note that ``contains`` interprets all arguments starting with a **-** as an "
-"option to ``contains``, until an **--** argument is reached."
+"Options must be passed before *KEY*. All arguments after *KEY* will be "
+"considered a value, regardless if they start with a ``-`` or not, including "
+"``--``. If *KEY* itself starts with a ``-``, use a ``--`` argument to "
+"separate it from the options."
 msgstr ""
 
-#: ../../../cmds/contains.rst:27
+#: ../../../cmds/contains.rst:29
 msgid "See the examples below."
 msgstr ""
 
-#: ../../../cmds/contains.rst:30
+#: ../../../cmds/contains.rst:32
 msgid "Example"
 msgstr ""
 
-#: ../../../cmds/contains.rst:32
+#: ../../../cmds/contains.rst:34
 msgid ""
 "If *animals* is a list of animals, the following will test if *animals* "
 "contains \"cat\":"
 msgstr ""
 
-#: ../../../cmds/contains.rst:36
+#: ../../../cmds/contains.rst:38
 msgid ""
 "if contains cat $animals\n"
 "   echo Your animal list is evil!\n"
 "end"
 msgstr ""
 
-#: ../../../cmds/contains.rst:41
+#: ../../../cmds/contains.rst:43
 msgid ""
 "This code will add some directories to :envvar:`PATH` if they aren't yet "
 "included:"
 msgstr ""
 
-#: ../../../cmds/contains.rst:45
+#: ../../../cmds/contains.rst:47
 msgid ""
 "for i in ~/bin /usr/local/bin\n"
 "    if not contains $i $PATH\n"
@@ -103,13 +105,13 @@ msgid ""
 "end"
 msgstr ""
 
-#: ../../../cmds/contains.rst:52
+#: ../../../cmds/contains.rst:54
 msgid ""
 "While this will check if function ``hasargs`` is being ran with the **-q** "
 "option:"
 msgstr ""
 
-#: ../../../cmds/contains.rst:56
+#: ../../../cmds/contains.rst:58
 msgid ""
 "function hasargs\n"
 "    if contains -- -q $argv\n"
@@ -118,8 +120,17 @@ msgid ""
 "end"
 msgstr ""
 
-#: ../../../cmds/contains.rst:63
+#: ../../../cmds/contains.rst:65
 msgid ""
 "The **--** here stops ``contains`` from treating **-q** to an option to "
 "itself. Instead it treats it as a normal string to check."
+msgstr ""
+
+#: ../../../cmds/contains.rst:70
+msgid "contains -i foo -q -- foo"
+msgstr ""
+
+#: ../../../cmds/contains.rst:73
+msgid ""
+"This returns 3, since all arguments after the key are considered a value."
 msgstr ""

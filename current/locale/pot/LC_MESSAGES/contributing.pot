@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-11 11:27+0000\n"
+"POT-Creation-Date: 2026-08-31 16:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../../../CONTRIBUTING.rst:3
-msgid "Contributing To Fish"
+msgid "Contributing To fish"
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:5
@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:7
 msgid ""
-"Fish is free and open source software, distributed under the terms of the "
+"fish is free and open source software, distributed under the terms of the "
 "GPLv2."
 msgstr ""
 
@@ -58,7 +58,7 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:24
 msgid ""
-"Fish is available on GitHub, at https://github.com/fish-shell/fish-shell."
+"fish is available on GitHub, at https://github.com/fish-shell/fish-shell."
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:26
@@ -326,7 +326,7 @@ msgid ""
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:144
-msgid "Fish Script Style Guide"
+msgid "fish Script Style Guide"
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:146
@@ -350,7 +350,7 @@ msgid ""
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:158
-msgid "Configuring Your Editor for Fish Scripts"
+msgid "Configuring Your Editor for fish Scripts"
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:160
@@ -516,191 +516,407 @@ msgstr ""
 msgid "cargo xtask check"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:254
+#: ../../../../CONTRIBUTING.rst:256
 msgid "Contributing Translations"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:256
+#: ../../../../CONTRIBUTING.rst:258
 msgid ""
-"Fish uses GNU gettext to translate messages from English to other languages. "
-"We use custom tools for extracting messages from source files and to "
-"localize at runtime. This means that we do not have a runtime dependency on "
-"the gettext library. It also means that some features are not supported, "
-"such as message context and plurals. We also expect all files to be UTF-8-"
-"encoded. In practice, this should not matter much for contributing "
-"translations."
+"fish can localize messages present in its Rust source code, as well as "
+"messages in the various fish scripts present in this repository. The latter "
+"include a large amount of automatically identified messages, originating for "
+"example from fish function descriptions. When translating, prioritize the "
+"messages from the Rust source code."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:263
+#: ../../../../CONTRIBUTING.rst:264
 msgid ""
-"Translation sources are stored in the ``localization/po`` directory and "
-"named ``ll_CC.po``, where ``ll`` is the two (or possibly three) letter ISO "
-"639-1 language code of the target language (e.g. ``pt`` for Portuguese). "
-"``CC`` is an ISO 3166 country/territory code, (e.g. ``BR`` for Brazil). An "
-"example for a valid name is ``pt_BR.po``, indicating Brazilian Portuguese. "
-"These are the files you will interact with when adding translations."
+"fish uses two different localization systems: `GNU gettext <https://www.gnu."
+"org/software/gettext/>`__ and `Fluent <https://projectfluent.org/>`__. The "
+"former is used for all messages from fish scripts. For messages from the "
+"Rust source code, we are in the process of replacing gettext with Fluent. At "
+"the moment, both are used side-by-side, with some messages localized with "
+"gettext and the others with Fluent."
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:271
+msgid ""
+"We use custom tools for extracting messages from source files and for "
+"gettext localization at runtime. This means that we do not have a runtime "
+"dependency on the gettext library. It also means that some of gettext's "
+"features are not supported, such as message context and plurals. We expect "
+"all files to be UTF-8-encoded."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:276
+msgid ""
+"Translation sources for gettext are stored in the ``localization/po`` "
+"directory and named ``ll_CC.po``, whereas Fluent uses the ``localization/"
+"fluent`` directory and names of the shape ``ll_CC.ftl``, where ``ll`` is the "
+"two (or possibly three) letter ISO 639-1 language code of the target "
+"language (e.g. ``pt`` for Portuguese). ``CC`` is an ISO 3166 country/"
+"territory code, (e.g. ``BR`` for Brazil). An example for a valid name is "
+"``pt_BR.po`` for gettext and ``pt_BR.ftl`` for Fluent, indicating Brazilian "
+"Portuguese. These are the files you will interact with when adding "
+"translations."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:285
+msgid ""
+"In some cases, we also use language identifiers without a county code, i.e. "
+"``ll.po``/``ll.ftl``. Which variant is chosen involves various trade-offs "
+"for fallback behavior. If you want to add a new language or language "
+"variant, feel free to ask about this. Generally, if people who understand "
+"any variant of the language are expected to understand the version you add "
+"and there are no existing translations for another variant of the language, "
+"it probably makes sense to omit the country code, otherwise to use it for "
+"all variants of the language."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:295
 msgid "Adding translations for a new language"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:273
+#: ../../../../CONTRIBUTING.rst:297
 msgid ""
-"Creating new translations requires the Gettext tools. More specifically, you "
-"will need ``msguniq``, ``msgmerge``, and ``msgattrib`` for creating "
-"translations for a new language. To create a PO file for a new language "
-"``ll_CC``, run::"
+"Creating new translations for gettext requires the gettext tools. More "
+"specifically, you will need ``msguniq``, ``msgmerge``, and ``msgmerge`` for "
+"creating translations for a new language. To create a PO file for a new "
+"language ``ll_CC``, run::"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:278
+#: ../../../../CONTRIBUTING.rst:302
 msgid "cargo xtask gettext new ll_CC"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:280
+#: ../../../../CONTRIBUTING.rst:304
 msgid ""
 "This will create a new PO file in ``localization/po/`` containing all "
 "messages available for translation. If the file already exists, it will be "
 "updated."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:284
+#: ../../../../CONTRIBUTING.rst:308
 msgid ""
-"After modifying a PO file, you can recompile fish, and it will integrate the "
-"modifications you made. This requires that the ``msgfmt`` utility is "
-"installed (comes as part of ``gettext``). It is important that the "
-"``localize-messages`` cargo feature is enabled, which it is by default. You "
-"can explicitly enable it using::"
-msgstr ""
-
-#: ../../../../CONTRIBUTING.rst:289
-msgid "cargo build --features=localize-messages"
-msgstr ""
-
-#: ../../../../CONTRIBUTING.rst:291
-msgid "Use environment variables to tell fish which language to use, e.g.::"
-msgstr ""
-
-#: ../../../../CONTRIBUTING.rst:293
-msgid "LANG=pt_BR.utf8 fish"
-msgstr ""
-
-#: ../../../../CONTRIBUTING.rst:295
-msgid "or within the running fish shell::"
-msgstr ""
-
-#: ../../../../CONTRIBUTING.rst:297
-msgid "set LANG pt_BR.utf8"
-msgstr ""
-
-#: ../../../../CONTRIBUTING.rst:299
-msgid ""
-"For more options regarding how to choose languages, see `the corresponding "
-"gettext documentation <https://www.gnu.org/software/gettext/manual/html_node/"
-"Locale-Environment-Variables.html>`__. One neat thing you can do is set a "
-"list of languages to check for translations in the order defined using the "
-"``LANGUAGE`` variable, e.g.::"
-msgstr ""
-
-#: ../../../../CONTRIBUTING.rst:305
-msgid "set LANGUAGE pt_BR de_DE"
-msgstr ""
-
-#: ../../../../CONTRIBUTING.rst:307
-msgid ""
-"to try to translate messages to Portuguese, if that fails try German, and if "
-"that fails too you will see the English version defined in the source code."
+"For Fluent, it is sufficient to create a new, empty file with the language-"
+"appropriate name in ``localization/fluent``."
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:311
+msgid ""
+"After modifying a translation file, you can recompile fish, and it will "
+"integrate the modifications you made. This requires that the ``msgfmt`` "
+"utility is installed (comes as part of ``gettext``). For messages localized "
+"with Fluent, recompiling fish is not necessary when you use a debug build. "
+"Then, restarting fish is sufficient for seeing updated translations. It is "
+"important that the ``localize-messages`` Cargo feature is enabled, which it "
+"is by default. You can explicitly enable it using::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:319
+msgid "cargo build --features=localize-messages"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:321
+msgid "Use environment variables to tell fish which language to use, e.g.::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:323
+msgid "LANG=pt_BR.utf8 fish"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:325
+msgid "or within the running fish shell::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:327
+msgid "set LANG pt_BR.utf8"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:329
+msgid ""
+"Alternatively, you can also use the built-in ``status language`` command, e."
+"g.::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:331
+msgid "status language set pt_BR"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:333
+msgid "Use"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:337
+msgid "status language list-available"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:339
+msgid ""
+"to see a list of the available language identifiers. This might also be "
+"helpful for checking that your new translations are recognized as expected. "
+"Note that using environment variables enables fallback behavior, e.g. if you "
+"specify ``LANG=de_DE.utf8`` and we do not have a ``de_DE`` catalog but a "
+"``de`` catalog, you will see messages from the latter. With ``status "
+"language``, only exact matches are supported, giving you more control over "
+"the fallback order. If ``status language`` is used, it overrides the "
+"environment variable configuration."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:348
+msgid ""
+"For more options regarding how to choose languages via environment "
+"variables, see `the corresponding gettext documentation <https://www.gnu.org/"
+"software/gettext/manual/html_node/Locale-Environment-Variables.html>`__. One "
+"neat thing you can do is set a list of languages to check for translations "
+"in the order defined using the ``LANGUAGE`` variable, e.g.::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:354
+msgid "set LANGUAGE pt_BR de_DE"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:356
+msgid "or using::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:358
+msgid "status language set pt_BR de"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:360
+msgid ""
+"to try to translate messages to Portuguese, if that fails try German, and if "
+"that fails too you will see the default English version."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:364
 msgid "Modifying existing translations"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:313
+#: ../../../../CONTRIBUTING.rst:366
 msgid ""
-"If you want to work on translations for a language which already has a "
-"corresponding ``po`` file, it is sufficient to edit this file. No other "
-"changes are necessary."
+"If you want to work on translations for a language which already has "
+"translations, it is sufficient to edit the existing files. No other changes "
+"are necessary."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:316
+#: ../../../../CONTRIBUTING.rst:370
 msgid ""
 "After recompiling fish, you should be able to see your translations in "
 "action. See the previous section for details."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:320
+#: ../../../../CONTRIBUTING.rst:374
 msgid "Editing PO files"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:322
+#: ../../../../CONTRIBUTING.rst:376
 msgid ""
 "Many tools are available for editing translation files, including command-"
 "line and graphical user interface programs. For simple use, you can use your "
 "text editor."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:325
+#: ../../../../CONTRIBUTING.rst:379
 msgid ""
 "Open up the PO file, for example ``localization/po/sv.po``, and you'll see "
 "something like::"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:327
+#: ../../../../CONTRIBUTING.rst:381
 msgid ""
 "msgid \"%s: No suitable job\\n\"\n"
 "msgstr \"\""
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:330
+#: ../../../../CONTRIBUTING.rst:384
 msgid ""
 "The ``msgid`` here is the \"name\" of the string to translate, typically the "
 "English string to translate. The second line (``msgstr``) is where your "
 "translation goes."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:333
+#: ../../../../CONTRIBUTING.rst:387
 msgid "For example::"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:335
+#: ../../../../CONTRIBUTING.rst:389
 msgid ""
 "msgid \"%s: No suitable job\\n\"\n"
 "msgstr \"%s: Inget passande jobb\\n\""
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:338
+#: ../../../../CONTRIBUTING.rst:392
 msgid ""
 "Any ``%s`` or ``%d`` are placeholders that fish will use for formatting at "
-"runtime. It is important that they match - the translated string should have "
+"runtime. It is important that they match - the translated string must have "
 "the same placeholders in the same order."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:340
+#: ../../../../CONTRIBUTING.rst:394
 msgid ""
 "Also any escaped characters, like that ``\\n`` newline at the end, should be "
 "kept so the translation has the same behavior."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:342
+#: ../../../../CONTRIBUTING.rst:396
 msgid ""
 "Our tests run ``msgfmt --check-format /path/to/file``, so they would catch "
 "mismatched placeholders - otherwise fish would crash at runtime when the "
 "string is about to be used."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:344
+#: ../../../../CONTRIBUTING.rst:398
 msgid ""
 "Be cautious about blindly updating an existing translation file. ``msgid`` "
 "strings should never be updated manually, only by running the appropriate "
 "script."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:348
-msgid "Modifications to strings in source files"
+#: ../../../../CONTRIBUTING.rst:402
+msgid "Editing FTL files"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:350
+#: ../../../../CONTRIBUTING.rst:404
+msgid ""
+"To get familiar with Fluent's FTL format, you can read `Fluent's guide "
+"<https://projectfluent.org/fluent/guide/>`__."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:407
+msgid ""
+"The core principle is that each message has an ID. This ID is specified in "
+"the source code. At runtime, Fluent checks FTL files according to the user's "
+"language settings to try to map the ID to a localized message. All messages "
+"are localized into English because the source code only contains IDs, not "
+"proper messages. Check ``localization/fluent/en.ftl`` to see which IDs are "
+"in use and what the corresponding messages are."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:414
+msgid ""
+"Some messages receive arguments, called variables in Fluent. In Fluent, each "
+"variable has a name, which allows reordering them, so they can appear in the "
+"order which makes most sense for the language. The general format of a "
+"variable in an FTL file is ``{ $variable_name }``."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:419
+msgid ""
+"The Fluent ecosystem is not as mature as gettext, meaning there is less "
+"available tooling. Therefore, we provide some of our own tools. Running "
+"``cargo xtask fluent`` provides an overview."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:423
+msgid "For translators, the following can be useful::"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:425
+msgid "cargo xtask fluent format"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:427
+msgid "to make FTL files conform to our expected format,"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:431
+msgid "cargo xtask fluent show-missing"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:433
+msgid "to show which message IDs do not have a translation yet, and"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:437
+msgid "cargo xtask fluent check"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:439
+msgid ""
+"to run checks on the FTL files, which can catch some mistakes. Each of these "
+"commands takes optional path arguments, so if you are working on a certain "
+"file like ``pt_BR.ftl``, you might want to use"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:446
+msgid "cargo xtask fluent check localization/fluent/pt_BR.ftl"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:448
+msgid ""
+"from the repository root directory, or, if you are in the ``localization/"
+"fluent`` directory,"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:453
+msgid "cargo xtask fluent check pt_BR.ftl"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:455
+msgid "If you want formatting in your editor,"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:459
+msgid "cargo --quiet xtask fluent format -"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:461
+msgid ""
+"might be useful, which reads FTL text from stdin and writes a formatted "
+"version to stdout, or a copy of stdin if formatting failed. Instead of "
+"invoking Cargo each time, you could also invoke the ``xtask`` binary if it "
+"exists."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:465
+msgid "A simple format-on-write setup in Vim:"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:467
+msgid ""
+"function FormatFTL()\n"
+"    let cursor = getpos('.')\n"
+"    :%!cargo --quiet xtask fluent format -\n"
+"    call setpos('.', cursor)\n"
+"endfunction\n"
+"\n"
+"augroup ftl\n"
+"    autocmd!\n"
+"    autocmd! BufWritePre *.ftl :call FormatFTL()\n"
+"augroup END"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:480
+msgid "or equivalently in Lua for NeoVim:"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:482
+msgid ""
+"local augroup_ftl = vim.api.nvim_create_augroup(\"ftl\", { clear = true })\n"
+"vim.api.nvim_create_autocmd(\"BufWritePre\", {\n"
+"    group = augroup_ftl,\n"
+"    pattern = \"*.ftl\",\n"
+"    callback = function()\n"
+"        local cursor = vim.fn.getpos(\".\")\n"
+"        vim.cmd(\"%!cargo --quiet xtask fluent format -\")\n"
+"        vim.fn.setpos(\".\", cursor)\n"
+"    end,\n"
+"})"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:495
+msgid ""
+"There is also a `Vim plugin <https://github.com/projectfluent/fluent.vim>`__ "
+"for syntax highlighting."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:498
+msgid "Modifications to strings in source files (gettext-only)"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:500
 msgid ""
 "If a string changes in the sources, the old translations will no longer "
 "work. If you add/remove/change a translatable strings in a source file, run "
@@ -713,73 +929,144 @@ msgid ""
 "translations are preserved."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:359
+#: ../../../../CONTRIBUTING.rst:509
 msgid "Setting Code Up For Translations"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:361
+#: ../../../../CONTRIBUTING.rst:511
 msgid ""
 "All non-debug messages output for user consumption should be marked for "
-"translation. In Rust, this requires the use of the ``wgettext!`` or "
-"``wgettext_fmt!`` macros:"
+"translation. In Rust, this requires the use of the ``localize!`` macro for "
+"Fluent localization, e.g.:"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:367
+#: ../../../../CONTRIBUTING.rst:514
 msgid ""
-"streams.out.append(wgettext_fmt!(\"%s: There are no jobs\\n\", argv[0]));"
+"localize!(\n"
+"    \"some-message-id\" = \"English version of the message. Must be a valid "
+"Fluent message definition. Example variables: { $var1 }, { $var2 }\",\n"
+"    var1 = \"some string\",\n"
+"    var2 = 42,\n"
+");"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:369
+#: ../../../../CONTRIBUTING.rst:522
 msgid ""
-"All messages in fish script must be enclosed in single or double quote "
-"characters for our message extraction script to find them. They must also be "
-"translated via a command substitution. This means that the following are "
-"**not** valid:"
+"where the first key-value pair is the message's Fluent ID and the English "
+"version of the message. The remaining key-value pairs specify Fluent "
+"variables and their values. These must match the variables used in the "
+"message definition."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:376
+#: ../../../../CONTRIBUTING.rst:526
+msgid ""
+"For changing message IDs or associated variable names accross all FTL files, "
+"the"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:530
+msgid "cargo xtask fluent rename"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:532
+msgid ""
+"command can be helpful. The definitions in the Rust sources are the source "
+"of truth for the English version of the messages. Our tooling automatically "
+"generates a corresponding ``en.po`` file from these definitions, but that "
+"file is fully auto-generated and manual modifications to it are not "
+"supported. The `en.po` file exists to allow using Fluent tooling which "
+"expects such a file, and to be able to detect changes to the definitions in "
+"the Rust sources. Note that changes to the message definitions have "
+"consequences for translations. Our tooling automatically detects such "
+"changes. In some cases, they can be resolved automatically, e.g. when a "
+"message ID no longer exists, the translations will be deleted. If no "
+"automatic resolution is possible, annotations will be added to the affected "
+"translations, indicating that they need developer attention. As long as such "
+"annotations are present, our checks will not pass. To resolve them, use "
+"``cargo xtask fluent resolve-outdated``, or, for languages into which you "
+"can translate, update the translation and remove the annotation manually."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:549
+msgid ""
+"Legacy gettext localization uses the ``wgettext!`` or ``wgettext_fmt!`` "
+"macros. New code should use Fluent instead."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:552
+msgid ""
+"streams.out.appendln(&wgettext_fmt!(\"%s: There are no jobs\", argv[0]));"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:556
+msgid ""
+"For explicit localization in fish scripts, all messages must be enclosed in "
+"single or double quote characters for our message extraction script to find "
+"them. They must also be translated via a command substitution. This means "
+"that the following are **not** valid:"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:564
 msgid ""
 "echo (_ hello)\n"
 "_ \"goodbye\""
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:379
+#: ../../../../CONTRIBUTING.rst:567
 msgid "Above should be written like this instead:"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:383
+#: ../../../../CONTRIBUTING.rst:571
 msgid ""
 "echo (_ \"hello\")\n"
 "echo (_ \"goodbye\")"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:386
+#: ../../../../CONTRIBUTING.rst:574
 msgid ""
 "You can use either single or double quotes to enclose the message to be "
 "translated. You can also optionally include spaces after the opening "
 "parentheses or before the closing parentheses."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:391
+#: ../../../../CONTRIBUTING.rst:579
 msgid "Updating Dependencies"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:393
+#: ../../../../CONTRIBUTING.rst:581
 msgid ""
 "To update dependencies, run ``build_tools/update-dependencies.sh``. This "
 "currently requires `updatecli <https://github.com/updatecli/updatecli>`__ "
 "and a few other tools."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:397
+#: ../../../../CONTRIBUTING.rst:585
 msgid "Versioning"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:399
+#: ../../../../CONTRIBUTING.rst:587
 msgid ""
 "The fish version is constructed by the *build_tools/git_version_gen.sh* "
 "script. For developers the version is the branch name plus the output of "
 "``git describe --always --dirty``. Normally the main part of the version "
 "will be the closest annotated tag. Which itself is usually the most recent "
 "release number (e.g., ``2.6.0``)."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:594
+msgid "AI Contributions Policy"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:596
+msgid ""
+"We do not accept contributions created with generative artificial "
+"intelligence tools. Do not submit pull requests, GitHub issues or comments, "
+"artwork, where the output has been created by or edited with one of these "
+"tools."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:600
+msgid ""
+"This includes products such as GitHub Copilot, Zed AI, Cursor.dev's AI "
+"features, other coding assistants, and ChatGPT."
 msgstr ""

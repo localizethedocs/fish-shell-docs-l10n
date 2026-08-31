@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-11 11:27+0000\n"
+"POT-Creation-Date: 2026-08-31 16:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../cmds/fish_command_not_found.rst:21
 msgid ""
-"Fish ships multiple handlers for various operating systems and chooses from "
+"fish ships multiple handlers for various operating systems and chooses from "
 "them when this function is loaded, or you can define your own."
 msgstr ""
 

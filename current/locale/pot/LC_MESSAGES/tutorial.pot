@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"POT-Creation-Date: 2026-08-31 16:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../tutorial.rst:9
 msgid ""
-"Fish is a fully-equipped command line shell (like bash or zsh) that is smart "
-"and user-friendly. Fish supports powerful features like syntax highlighting, "
+"fish is a fully-equipped command line shell (like bash or zsh) that is smart "
+"and user-friendly. fish supports powerful features like syntax highlighting, "
 "autosuggestions, and tab completions that just work, with nothing to learn "
 "or configure."
 msgstr ""
@@ -115,7 +115,7 @@ msgstr ""
 
 #: ../../../tutorial.rst:49
 msgid ""
-"Fish runs commands like other shells: you type a command, followed by its "
+"fish runs commands like other shells: you type a command, followed by its "
 "arguments. Spaces are separators::"
 msgstr ""
 
@@ -634,7 +634,7 @@ msgid "Wildcards"
 msgstr ""
 
 #: ../../../tutorial.rst:335
-msgid "Fish supports the familiar wildcard ``*``. To list all JPEG files::"
+msgid "fish supports the familiar wildcard ``*``. To list all JPEG files::"
 msgstr ""
 
 #: ../../../tutorial.rst:337
@@ -1229,7 +1229,7 @@ msgstr ""
 
 #: ../../../tutorial.rst:658
 msgid ""
-"Fish takes care to set ``$PATH`` to a default, but typically it is just "
+"fish takes care to set ``$PATH`` to a default, but typically it is just "
 "inherited from fish's parent process and is set to a value that makes sense "
 "for the system - see :ref:`Exports <tut-exports>`."
 msgstr ""
@@ -1310,7 +1310,7 @@ msgstr ""
 
 #: ../../../tutorial.rst:692
 msgid ""
-"Fish starts by executing commands in ``~/.config/fish/config.fish``. You can "
+"fish starts by executing commands in ``~/.config/fish/config.fish``. You can "
 "create it if it does not exist."
 msgstr ""
 
@@ -1396,7 +1396,7 @@ msgstr ""
 #: ../../../tutorial.rst:741
 msgid ""
 "A universal variable is a variable whose value is shared across all "
-"instances of fish, now and in the future – even after a reboot. You can make "
+"instances of fish, now and in the future - even after a reboot. You can make "
 "a variable universal with ``set -U``::"
 msgstr ""
 
