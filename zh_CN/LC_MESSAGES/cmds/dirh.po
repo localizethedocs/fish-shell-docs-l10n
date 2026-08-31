@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/dirh.rst:2
+msgid "dirh - print directory history"
+msgstr ""
+
+#: ../../../cmds/dirh.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/dirh.rst:7
+msgid "dirh"
+msgstr ""
+
+#: ../../../cmds/dirh.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/dirh.rst:14
+msgid ""
+"``dirh`` prints the current :ref:`directory history <directory-history>`. "
+"The current position in the history is highlighted using the color defined "
+"in the ``fish_color_history_current`` environment variable."
+msgstr ""
+
+#: ../../../cmds/dirh.rst:16
+msgid "``dirh`` does not accept any parameters."
+msgstr ""
+
+#: ../../../cmds/dirh.rst:18
+msgid ""
+"Note that the :doc:`cd <cd>` command limits directory history to the 25 most "
+"recently visited directories. The history is stored in the ``$dirprev`` and "
+"``$dirnext`` variables."
+msgstr ""
+
+#: ../../../cmds/dirh.rst:21
+msgid "See Also"
+msgstr ""
+
+#: ../../../cmds/dirh.rst:23
+msgid ""
+"the :doc:`cdh <cdh>` command to display a prompt to quickly navigate the "
+"history"
+msgstr ""
+
+#: ../../../cmds/dirh.rst:24
+msgid "the :doc:`prevd <prevd>` command to move backward"
+msgstr ""
+
+#: ../../../cmds/dirh.rst:25
+msgid "the :doc:`nextd <nextd>` command to move forward"
+msgstr ""
