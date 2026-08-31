@@ -1,0 +1,1688 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../interactive.rst:4
+msgid "Interactive use"
+msgstr ""
+
+#: ../../../interactive.rst:6
+msgid ""
+"Fish prides itself on being really nice to use interactively. That's down to "
+"a few features we'll explain in the next few sections."
+msgstr ""
+
+#: ../../../interactive.rst:8
+msgid ""
+"Fish is used by giving commands in the fish language, see :ref:`The Fish "
+"Language <language>` for information on that."
+msgstr ""
+
+#: ../../../interactive.rst:11
+msgid "Help"
+msgstr ""
+
+#: ../../../interactive.rst:13
+msgid ""
+"Fish has an extensive help system. Use the :doc:`help <cmds/help>` command "
+"to obtain help on a specific subject or command. For instance, writing "
+"``help syntax`` displays the :ref:`syntax section <syntax>` of this "
+"documentation."
+msgstr ""
+
+#: ../../../interactive.rst:15
+msgid ""
+"Fish also has man pages for its commands, and translates the help pages to "
+"man pages. For example, ``man set`` will show the documentation for ``set`` "
+"as a man page."
+msgstr ""
+
+#: ../../../interactive.rst:17
+msgid ""
+"Help on a specific builtin can also be obtained with the ``-h`` parameter. "
+"For instance, to obtain help on the :doc:`fg <cmds/fg>` builtin, either type "
+"``fg -h`` or ``help fg``."
+msgstr ""
+
+#: ../../../interactive.rst:19
+msgid ""
+"The main page can be viewed via ``help index`` (or just ``help``) or ``man "
+"fish-doc``. The tutorial can be viewed with ``help tutorial`` or ``man fish-"
+"tutorial``."
+msgstr ""
+
+#: ../../../interactive.rst:24
+msgid "Autosuggestions"
+msgstr "自動建議"
+
+#: ../../../interactive.rst:26
+msgid ""
+"fish suggests commands as you type, based on :ref:`command history <history-"
+"search>`, completions, and valid file paths. As you type commands, you will "
+"see a suggestion offered after the cursor, in a muted gray color (which can "
+"be changed with the ``fish_color_autosuggestion`` variable)."
+msgstr ""
+
+#: ../../../interactive.rst:28
+msgid ""
+"To accept the autosuggestion (replacing the command line contents), press :"
+"kbd:`→` or :kbd:`Control`\\ +\\ :kbd:`F`. To accept the first suggested "
+"word, press :kbd:`Alt`\\ +\\ :kbd:`→` or :kbd:`Alt`\\ +\\ :kbd:`F`. If the "
+"autosuggestion is not what you want, just ignore it: it won't execute unless "
+"you accept it."
+msgstr ""
+
+#: ../../../interactive.rst:30
+msgid ""
+"Autosuggestions are a powerful way to quickly summon frequently entered "
+"commands, by typing the first few characters. They are also an efficient "
+"technique for navigating through directory hierarchies."
+msgstr ""
+
+#: ../../../interactive.rst:32
+msgid ""
+"If you don't like autosuggestions, you can disable them by setting "
+"``$fish_autosuggestion_enabled`` to 0::"
+msgstr ""
+
+#: ../../../interactive.rst:34
+msgid "set -g fish_autosuggestion_enabled 0"
+msgstr ""
+
+#: ../../../interactive.rst:39
+msgid "Tab Completion"
+msgstr ""
+
+#: ../../../interactive.rst:41
+msgid ""
+"Tab completion is a time saving feature of any modern shell. When you type :"
+"kbd:`Tab`, fish tries to guess the rest of the word under the cursor. If it "
+"finds just one possibility, it inserts it. If it finds more, it inserts the "
+"longest unambiguous part and then opens a menu (the \"pager\") that you can "
+"navigate to find what you're looking for."
+msgstr ""
+
+#: ../../../interactive.rst:43
+msgid ""
+"The pager can be navigated with the arrow keys, :kbd:`Page Up` / :kbd:`Page "
+"Down`, :kbd:`Tab` or :kbd:`Shift`\\ +\\ :kbd:`Tab`. Pressing :kbd:"
+"`Control`\\ +\\ :kbd:`S` (the ``pager-toggle-search`` binding - :kbd:`/` in "
+"vi-mode) opens up a search menu that you can use to filter the list."
+msgstr ""
+
+#: ../../../interactive.rst:45
+msgid ""
+"Fish provides some general purpose completions, like for commands, variable "
+"names, usernames or files."
+msgstr ""
+
+#: ../../../interactive.rst:47
+msgid ""
+"It also provides a large number of program specific scripted completions. "
+"Most of these completions are simple options like the ``-l`` option for "
+"``ls``, but a lot are more advanced. For example:"
+msgstr ""
+
+#: ../../../interactive.rst:49
+msgid "``man`` and ``whatis`` show the installed manual pages as completions."
+msgstr ""
+
+#: ../../../interactive.rst:51
+msgid ""
+"``make`` uses targets in the Makefile in the current directory as "
+"completions."
+msgstr ""
+
+#: ../../../interactive.rst:53
+msgid "``mount`` uses mount points specified in fstab as completions."
+msgstr ""
+
+#: ../../../interactive.rst:55
+msgid "``apt``, ``rpm`` and ``yum`` show installed or installable packages"
+msgstr ""
+
+#: ../../../interactive.rst:57
+msgid ""
+"You can also write your own completions or install some you got from someone "
+"else. For that, see :ref:`Writing your own completions <completion-own>`."
+msgstr ""
+
+#: ../../../interactive.rst:59
+msgid ""
+"Completion scripts are loaded on demand, just like :ref:`functions are "
+"<syntax-function-autoloading>`. The difference is the "
+"``$fish_complete_path`` :ref:`list <variables-lists>` is used instead of "
+"``$fish_function_path``. Typically you can drop new completions in ~/.config/"
+"fish/completions/name-of-command.fish and fish will find them automatically."
+msgstr ""
+
+#: ../../../interactive.rst:64
+msgid "Syntax highlighting"
+msgstr "語法標明"
+
+#: ../../../interactive.rst:66
+msgid ""
+"Fish interprets the command line as it is typed and uses syntax highlighting "
+"to provide feedback. The most important feedback is the detection of "
+"potential errors. By default, errors are marked red."
+msgstr ""
+
+#: ../../../interactive.rst:68
+msgid "Detected errors include:"
+msgstr "偵測到的錯誤包括："
+
+#: ../../../interactive.rst:70
+msgid "Non-existing commands."
+msgstr "不存在的命令。"
+
+#: ../../../interactive.rst:71
+msgid "Reading from or appending to a non-existing file."
+msgstr ""
+
+#: ../../../interactive.rst:72
+msgid "Incorrect use of output redirects"
+msgstr ""
+
+#: ../../../interactive.rst:73
+msgid "Mismatched parenthesis"
+msgstr ""
+
+#: ../../../interactive.rst:75
+msgid ""
+"To customize the syntax highlighting, you can set the environment variables "
+"listed in the :ref:`Variables for changing highlighting colors <variables-"
+"color>` section."
+msgstr ""
+
+#: ../../../interactive.rst:77
+msgid ""
+"Fish also provides pre-made color themes you can pick with :doc:`fish_config "
+"<cmds/fish_config>`. Running just ``fish_config`` opens a browser interface, "
+"or you can use ``fish_config theme`` in the terminal."
+msgstr ""
+
+#: ../../../interactive.rst:79
+msgid "For example, to disable nearly all coloring::"
+msgstr ""
+
+#: ../../../interactive.rst:81
+msgid "fish_config theme choose none"
+msgstr ""
+
+#: ../../../interactive.rst:83
+msgid "Or, to see all themes, right in your terminal::"
+msgstr ""
+
+#: ../../../interactive.rst:85
+msgid "fish_config theme show"
+msgstr ""
+
+#: ../../../interactive.rst:90
+msgid "Syntax highlighting variables"
+msgstr "語法標明變數"
+
+#: ../../../interactive.rst:92
+msgid ""
+"The colors used by fish for syntax highlighting can be configured by "
+"changing the values of various variables. The value of these variables can "
+"be one of the colors accepted by the :doc:`set_color <cmds/set_color>` "
+"command. The modifier switches accepted by ``set_color`` like ``--bold``, "
+"``--dim``, ``--italics``, ``--reverse`` and ``--underline`` are also "
+"accepted."
+msgstr ""
+
+#: ../../../interactive.rst:95
+msgid "Example: to make errors highlighted and red, use::"
+msgstr ""
+
+#: ../../../interactive.rst:97
+msgid "set fish_color_error red --bold"
+msgstr ""
+
+#: ../../../interactive.rst:100
+msgid ""
+"The following variables are available to change the highlighting colors in "
+"fish:"
+msgstr ""
+
+#: ../../../interactive.rst:103 ../../../interactive.rst:161
+msgid "Variable"
+msgstr "變數"
+
+#: ../../../interactive.rst:103 ../../../interactive.rst:161
+msgid "Meaning"
+msgstr ""
+
+#: ../../../interactive.rst:105
+msgid "default color"
+msgstr ""
+
+#: ../../../interactive.rst:106
+msgid "commands like echo"
+msgstr ""
+
+#: ../../../interactive.rst:107
+msgid "keywords like if - this falls back on the command color if unset"
+msgstr ""
+
+#: ../../../interactive.rst:108
+msgid "quoted text like ``\"abc\"``"
+msgstr ""
+
+#: ../../../interactive.rst:109
+msgid "IO redirections like >/dev/null"
+msgstr ""
+
+#: ../../../interactive.rst:110
+msgid "process separators like ``;`` and ``&``"
+msgstr ""
+
+#: ../../../interactive.rst:111
+msgid "syntax errors"
+msgstr ""
+
+#: ../../../interactive.rst:112
+msgid "ordinary command parameters"
+msgstr ""
+
+#: ../../../interactive.rst:113
+msgid "parameters that are filenames (if the file exists)"
+msgstr ""
+
+#: ../../../interactive.rst:114
+msgid "options starting with \"-\", up to the first \"--\" parameter"
+msgstr ""
+
+#: ../../../interactive.rst:115
+msgid "comments like '# important'"
+msgstr ""
+
+#: ../../../interactive.rst:116
+msgid "selected text in vi visual mode"
+msgstr ""
+
+#: ../../../interactive.rst:117
+msgid "parameter expansion operators like ``*`` and ``~``"
+msgstr ""
+
+#: ../../../interactive.rst:118
+msgid "character escapes like ``\\n`` and ``\\x70``"
+msgstr ""
+
+#: ../../../interactive.rst:119
+msgid "autosuggestions (the proposed rest of a command)"
+msgstr ""
+
+#: ../../../interactive.rst:120
+msgid "the current working directory in the default prompt"
+msgstr ""
+
+#: ../../../interactive.rst:121
+msgid "the current working directory in the default prompt for the root user"
+msgstr ""
+
+#: ../../../interactive.rst:122
+msgid "the username in the default prompt"
+msgstr ""
+
+#: ../../../interactive.rst:123
+msgid "the hostname in the default prompt"
+msgstr ""
+
+#: ../../../interactive.rst:124
+msgid "the hostname in the default prompt for remote sessions (like ssh)"
+msgstr ""
+
+#: ../../../interactive.rst:125
+msgid "the last command's nonzero exit code in the default prompt"
+msgstr ""
+
+#: ../../../interactive.rst:126
+msgid "the '^C' indicator on a canceled command"
+msgstr ""
+
+#: ../../../interactive.rst:127
+msgid "history search matches and selected pager items (background only)"
+msgstr ""
+
+#: ../../../interactive.rst:128
+msgid ""
+"the current position in the history for commands like ``dirh`` and ``cdh``"
+msgstr ""
+
+#: ../../../interactive.rst:132
+msgid ""
+"If a variable isn't set or is empty, fish usually tries "
+"``$fish_color_normal``, except for:"
+msgstr ""
+
+#: ../../../interactive.rst:134
+msgid "``$fish_color_keyword``, where it tries ``$fish_color_command`` first."
+msgstr ""
+
+#: ../../../interactive.rst:135
+msgid "``$fish_color_option``, where it tries ``$fish_color_param`` first."
+msgstr ""
+
+#: ../../../interactive.rst:136
+msgid ""
+"For ``$fish_color_valid_path``, if that doesn't have a color, but only "
+"modifiers, it adds those to the color that would otherwise be used, like "
+"``$fish_color_param``. But if valid paths have a color, it uses that and "
+"adds in modifiers from the other color."
+msgstr ""
+
+#: ../../../interactive.rst:142
+msgid "Pager color variables"
+msgstr ""
+
+#: ../../../interactive.rst:144
+msgid ""
+"fish will sometimes present a list of choices in a table, called the pager."
+msgstr ""
+
+#: ../../../interactive.rst:146
+msgid "Example: to set the background of each pager row, use::"
+msgstr ""
+
+#: ../../../interactive.rst:148
+msgid "set fish_pager_color_background --background=white"
+msgstr ""
+
+#: ../../../interactive.rst:150
+msgid "To have black text on alternating white and gray backgrounds::"
+msgstr ""
+
+#: ../../../interactive.rst:152
+msgid ""
+"set fish_pager_color_prefix black\n"
+"set fish_pager_color_completion black\n"
+"set fish_pager_color_description black\n"
+"set fish_pager_color_background --background=white\n"
+"set fish_pager_color_secondary_background --background=brwhite"
+msgstr ""
+
+#: ../../../interactive.rst:158
+msgid "Variables affecting the pager colors:"
+msgstr ""
+
+#: ../../../interactive.rst:163
+msgid "the progress bar at the bottom left corner"
+msgstr ""
+
+#: ../../../interactive.rst:164
+msgid "the background color of a line"
+msgstr ""
+
+#: ../../../interactive.rst:165
+msgid "the prefix string, i.e. the string that is to be completed"
+msgstr ""
+
+#: ../../../interactive.rst:166
+msgid "the completion itself, i.e. the proposed rest of the string"
+msgstr ""
+
+#: ../../../interactive.rst:167
+msgid "the completion description"
+msgstr ""
+
+#: ../../../interactive.rst:168
+msgid "background of the selected completion"
+msgstr ""
+
+#: ../../../interactive.rst:169
+msgid "prefix of the selected completion"
+msgstr ""
+
+#: ../../../interactive.rst:170
+msgid "suffix of the selected completion"
+msgstr ""
+
+#: ../../../interactive.rst:171
+msgid "description of the selected completion"
+msgstr ""
+
+#: ../../../interactive.rst:172
+msgid "background of every second unselected completion"
+msgstr ""
+
+#: ../../../interactive.rst:173
+msgid "prefix of every second unselected completion"
+msgstr ""
+
+#: ../../../interactive.rst:174
+msgid "suffix of every second unselected completion"
+msgstr ""
+
+#: ../../../interactive.rst:175
+msgid "description of every second unselected completion"
+msgstr ""
+
+#: ../../../interactive.rst:178
+msgid ""
+"When the secondary or selected variables aren't set or are empty, the normal "
+"variables are used, except for ``$fish_pager_color_selected_background``, "
+"where the background of ``$fish_color_search_match`` is tried first."
+msgstr ""
+
+#: ../../../interactive.rst:183
+msgid "Abbreviations"
+msgstr "縮寫"
+
+#: ../../../interactive.rst:185
+msgid ""
+"To avoid needless typing, a frequently-run command like ``git checkout`` can "
+"be abbreviated to ``gco`` using the :doc:`abbr <cmds/abbr>` command."
+msgstr ""
+
+#: ../../../interactive.rst:189
+msgid "abbr -a gco git checkout"
+msgstr "abbr -a gco git checkout"
+
+#: ../../../interactive.rst:191
+msgid ""
+"After entering ``gco`` and pressing :kbd:`Space` or :kbd:`Enter`, a ``gco`` "
+"in command position will turn into ``git checkout`` in the command line. If "
+"you want to use a literal ``gco`` sometimes, use :kbd:`Control`\\ +\\ :kbd:"
+"`Space` [#]_."
+msgstr ""
+
+#: ../../../interactive.rst:193
+msgid ""
+"This is a lot more powerful, for example you can make going up a number of "
+"directories easier with this::"
+msgstr ""
+
+#: ../../../interactive.rst:195
+msgid ""
+"function multicd\n"
+"    echo cd (string repeat -n (math (string length -- $argv[1]) - 1) ../)\n"
+"end\n"
+"abbr --add dotdot --regex '^\\.\\.+$' --function multicd"
+msgstr ""
+
+#: ../../../interactive.rst:200
+msgid ""
+"Now, ``..`` transforms to ``cd ../``, while ``...`` turns into ``cd ../../`` "
+"and ``....`` expands to ``cd ../../../``."
+msgstr ""
+
+#: ../../../interactive.rst:202
+msgid ""
+"The advantage over aliases is that you can see the actual command before "
+"using it, add to it or change it, and the actual command will be stored in "
+"history."
+msgstr ""
+
+#: ../../../interactive.rst:204
+msgid ""
+"Any binding that executes the ``expand-abbr`` or ``execute`` :doc:`bind "
+"function <cmds/bind>` will expand abbreviations. By default :kbd:`Control`\\ "
+"+\\ :kbd:`Space` is bound to just inserting a space."
+msgstr ""
+
+#: ../../../interactive.rst:209
+msgid "Programmable title"
+msgstr ""
+
+#: ../../../interactive.rst:211
+msgid ""
+"When using most virtual terminals, it is possible to set the message "
+"displayed in the titlebar of the terminal window. This can be done "
+"automatically in fish by defining the :doc:`fish_title <cmds/fish_title>` "
+"function. The :doc:`fish_title <cmds/fish_title>` function is executed "
+"before and after a new command is executed or put into the foreground and "
+"the output is used as a titlebar message. The :doc:`status current-command "
+"<cmds/status>` builtin will always return the name of the job to be put into "
+"the foreground (or ``fish`` if control is returning to the shell) when the :"
+"doc:`fish_prompt <cmds/fish_prompt>` function is called. The first argument "
+"to fish_title will contain the most recently executed foreground command as "
+"a string."
+msgstr ""
+
+#: ../../../interactive.rst:213
+msgid ""
+"The default fish title shows the hostname if connected via ssh, the "
+"currently running command (unless it is fish) and the current working "
+"directory. All of this is shortened to not make the tab too wide."
+msgstr ""
+
+#: ../../../interactive.rst:215 ../../../interactive.rst:637
+msgid "Examples:"
+msgstr ""
+
+#: ../../../interactive.rst:217
+msgid "To show the last command and working directory in the title::"
+msgstr ""
+
+#: ../../../interactive.rst:219
+msgid ""
+"function fish_title\n"
+"    # `prompt_pwd` shortens the title. This helps prevent tabs from becoming "
+"very wide.\n"
+"    echo $argv[1] (prompt_pwd)\n"
+"    pwd\n"
+"end"
+msgstr ""
+
+#: ../../../interactive.rst:228
+msgid "Programmable prompt"
+msgstr ""
+
+#: ../../../interactive.rst:230
+msgid ""
+"When it is fish's turn to ask for input (like after it started or the "
+"command ended), it will show a prompt. It does this by running the :doc:"
+"`fish_prompt <cmds/fish_prompt>` and :doc:`fish_right_prompt <cmds/"
+"fish_right_prompt>` functions."
+msgstr ""
+
+#: ../../../interactive.rst:232
+msgid ""
+"The output of the former is displayed on the left and the latter's output on "
+"the right side of the terminal. The output of :doc:`fish_mode_prompt <cmds/"
+"fish_mode_prompt>` will be prepended on the left, though the default "
+"function only does this when in :ref:`vi-mode <vi-mode>`."
+msgstr ""
+
+#: ../../../interactive.rst:237
+msgid "Configurable greeting"
+msgstr ""
+
+#: ../../../interactive.rst:239
+msgid ""
+"When it is started interactively, fish tries to run the :doc:`fish_greeting "
+"<cmds/fish_greeting>` function. The default fish_greeting prints a simple "
+"greeting. You can change its text by changing the ``$fish_greeting`` "
+"variable, for instance using a :ref:`universal variable <variables-"
+"universal>`::"
+msgstr ""
+
+#: ../../../interactive.rst:241
+msgid "set -U fish_greeting"
+msgstr "set -U fish_greeting"
+
+#: ../../../interactive.rst:243
+msgid ""
+"or you can set it :ref:`globally <variables-scope>` in :ref:`config.fish "
+"<configuration>`::"
+msgstr ""
+
+#: ../../../interactive.rst:245
+msgid "set -g fish_greeting 'Hey, stranger!'"
+msgstr ""
+
+#: ../../../interactive.rst:247
+msgid "or you can script it by changing the function::"
+msgstr ""
+
+#: ../../../interactive.rst:249
+msgid ""
+"function fish_greeting\n"
+"    random choice \"Hello!\" \"Hi\" \"G'day\" \"Howdy\"\n"
+"end"
+msgstr ""
+
+#: ../../../interactive.rst:253
+msgid ""
+"save this in config.fish or :ref:`a function file <syntax-function-"
+"autoloading>`. You can also use :doc:`funced <cmds/funced>` and :doc:"
+"`funcsave <cmds/funcsave>` to edit it easily."
+msgstr ""
+
+#: ../../../interactive.rst:258
+msgid "Private mode"
+msgstr ""
+
+#: ../../../interactive.rst:260
+msgid ""
+"If ``$fish_private_mode`` is set to a non-empty value, commands will not be "
+"written to the history file on disk."
+msgstr ""
+
+#: ../../../interactive.rst:262
+msgid ""
+"You can also launch with ``fish --private`` (or ``fish -P`` for short). This "
+"both hides old history and prevents writing history to disk. This is useful "
+"to avoid leaking personal information (e.g. for screencasts) or when dealing "
+"with sensitive information."
+msgstr ""
+
+#: ../../../interactive.rst:264
+msgid ""
+"You can query the variable ``fish_private_mode`` (``if test -n "
+"\"$fish_private_mode\" ...``) if you would like to respect the user's wish "
+"for privacy and alter the behavior of your own fish scripts."
+msgstr ""
+
+#: ../../../interactive.rst:269
+msgid "Command line editor"
+msgstr "命令行編輯器"
+
+#: ../../../interactive.rst:271
+msgid ""
+"The fish editor features copy and paste, a :ref:`searchable history <history-"
+"search>` and many editor functions that can be bound to special keyboard "
+"shortcuts."
+msgstr ""
+
+#: ../../../interactive.rst:273
+msgid ""
+"Like bash and other shells, fish includes two sets of keyboard shortcuts (or "
+"key bindings): one inspired by the Emacs text editor, and one by the Vi text "
+"editor. The default editing mode is Emacs. You can switch to Vi mode by "
+"running :doc:`fish_vi_key_bindings <cmds/fish_vi_key_bindings>` and switch "
+"back with :doc:`fish_default_key_bindings <cmds/fish_default_key_bindings>`. "
+"You can also make your own key bindings by creating a function and setting "
+"the ``fish_key_bindings`` variable to its name. For example::"
+msgstr ""
+
+#: ../../../interactive.rst:276
+msgid ""
+"function fish_hybrid_key_bindings --description \\\n"
+"\"Vi-style bindings that inherit emacs-style bindings in all modes\"\n"
+"    for mode in default insert visual\n"
+"        fish_default_key_bindings -M $mode\n"
+"    end\n"
+"    fish_vi_key_bindings --no-erase\n"
+"end\n"
+"set -g fish_key_bindings fish_hybrid_key_bindings"
+msgstr ""
+"function fish_hybrid_key_bindings --description \\\n"
+"\"Vi-style bindings that inherit emacs-style bindings in all modes\"\n"
+"    for mode in default insert visual\n"
+"        fish_default_key_bindings -M $mode\n"
+"    end\n"
+"    fish_vi_key_bindings --no-erase\n"
+"end\n"
+"set -g fish_key_bindings fish_hybrid_key_bindings"
+
+#: ../../../interactive.rst:285
+msgid ""
+"While the key bindings included with fish include many of the shortcuts "
+"popular from the respective text editors, they are not a complete "
+"implementation. They include a shortcut to open the current command line in "
+"your preferred editor (:kbd:`Alt`\\ +\\ :kbd:`E` by default) if you need the "
+"full power of your editor."
+msgstr ""
+
+#: ../../../interactive.rst:290
+msgid "Shared bindings"
+msgstr ""
+
+#: ../../../interactive.rst:292
+msgid ""
+"Some bindings are common across Emacs and Vi mode, because they aren't text "
+"editing bindings, or because what Vi/Vim does for a particular key doesn't "
+"make sense for a shell."
+msgstr ""
+
+#: ../../../interactive.rst:294
+msgid ""
+":kbd:`Tab` :ref:`completes <tab-completion>` the current token. :kbd:"
+"`Shift`\\ +\\ :kbd:`Tab` completes the current token and starts the pager's "
+"search mode. :kbd:`Tab` is the same as :kbd:`Control`\\ +\\ :kbd:`I`."
+msgstr ""
+
+#: ../../../interactive.rst:296
+msgid ""
+":kbd:`←` (Left) and :kbd:`→` (Right) move the cursor left or right by one "
+"character. If the cursor is already at the end of the line, and an "
+"autosuggestion is available, :kbd:`→` accepts the autosuggestion."
+msgstr ""
+
+#: ../../../interactive.rst:298
+msgid ""
+":kbd:`Enter` executes the current commandline or inserts a newline if it's "
+"not complete yet (e.g. a ``)`` or ``end`` is missing)."
+msgstr ""
+
+#: ../../../interactive.rst:300
+msgid ":kbd:`Alt`\\ +\\ :kbd:`Enter` inserts a newline at the cursor position."
+msgstr ""
+
+#: ../../../interactive.rst:302
+msgid ""
+":kbd:`Alt`\\ +\\ :kbd:`←` and :kbd:`Alt`\\ +\\ :kbd:`→` move the cursor one "
+"word left or right (to the next space or punctuation mark), or moves forward/"
+"backward in the directory history if the command line is empty. If the "
+"cursor is already at the end of the line, and an autosuggestion is "
+"available, :kbd:`Alt`\\ +\\ :kbd:`→` (or :kbd:`Alt`\\ +\\ :kbd:`F`) accepts "
+"the first word in the suggestion."
+msgstr ""
+
+#: ../../../interactive.rst:304
+msgid ""
+":kbd:`Control`\\ +\\ :kbd:`←` and :kbd:`Control`\\ +\\ :kbd:`→` move the "
+"cursor one word left or right. These accept one word of the autosuggestion - "
+"the part they'd move over."
+msgstr ""
+
+#: ../../../interactive.rst:306
+msgid ""
+":kbd:`Shift`\\ +\\ :kbd:`←` and :kbd:`Shift`\\ +\\ :kbd:`→` move the cursor "
+"one word left or right, without stopping on punctuation. These accept one "
+"big word of the autosuggestion."
+msgstr ""
+
+#: ../../../interactive.rst:308
+msgid ""
+":kbd:`↑` (Up) and :kbd:`↓` (Down) (or :kbd:`Control`\\ +\\ :kbd:`P` and :kbd:"
+"`Control`\\ +\\ :kbd:`N` for emacs aficionados) search the command history "
+"for the previous/next command containing the string that was specified on "
+"the commandline before the search was started. If the commandline was empty "
+"when the search started, all commands match. See the :ref:`history <history-"
+"search>` section for more information on history searching."
+msgstr ""
+
+#: ../../../interactive.rst:310
+msgid ""
+":kbd:`Alt`\\ +\\ :kbd:`↑` and :kbd:`Alt`\\ +\\ :kbd:`↓` search the command "
+"history for the previous/next token containing the token under the cursor "
+"before the search was started. If the commandline was not on a token when "
+"the search started, all tokens match. See the :ref:`history <history-"
+"search>` section for more information on history searching."
+msgstr ""
+
+#: ../../../interactive.rst:312
+msgid ""
+":kbd:`Control`\\ +\\ :kbd:`C` interrupt/kill whatever is running (SIGINT)."
+msgstr ""
+
+#: ../../../interactive.rst:314
+msgid ""
+":kbd:`Control`\\ +\\ :kbd:`D` delete one character to the right of the "
+"cursor. If the command line is empty, :kbd:`Control`\\ +\\ :kbd:`D` will "
+"exit fish."
+msgstr ""
+
+#: ../../../interactive.rst:316
+msgid ""
+":kbd:`Control`\\ +\\ :kbd:`U` removes contents from the beginning of line to "
+"the cursor (moving it to the :ref:`killring <killring>`)."
+msgstr ""
+
+#: ../../../interactive.rst:318
+msgid ":kbd:`Control`\\ +\\ :kbd:`L` clears and repaints the screen."
+msgstr ""
+
+#: ../../../interactive.rst:320
+msgid ""
+":kbd:`Control`\\ +\\ :kbd:`W` removes the previous path component "
+"(everything up to the previous \"/\", \":\" or \"@\") (moving it to the :ref:"
+"`killring`)."
+msgstr ""
+
+#: ../../../interactive.rst:322
+msgid ""
+":kbd:`Control`\\ +\\ :kbd:`X` copies the current buffer to the system's "
+"clipboard, :kbd:`Control`\\ +\\ :kbd:`V` inserts the clipboard contents. "
+"(see :doc:`fish_clipboard_copy <cmds/fish_clipboard_copy>` and :doc:"
+"`fish_clipboard_paste <cmds/fish_clipboard_paste>`)"
+msgstr ""
+
+#: ../../../interactive.rst:324
+msgid ":kbd:`Alt`\\ +\\ :kbd:`D` moves the next word to the :ref:`killring`."
+msgstr ""
+
+#: ../../../interactive.rst:326
+msgid ""
+":kbd:`Alt`\\ +\\ :kbd:`H` (or :kbd:`F1`) shows the manual page for the "
+"current command, if one exists."
+msgstr ""
+
+#: ../../../interactive.rst:328
+msgid ""
+":kbd:`Alt`\\ +\\ :kbd:`L` lists the contents of the current directory, "
+"unless the cursor is over a directory argument, in which case the contents "
+"of that directory will be listed."
+msgstr ""
+
+#: ../../../interactive.rst:330
+msgid ":kbd:`Alt`\\ +\\ :kbd:`O` opens the file at the cursor in a pager."
+msgstr ""
+
+#: ../../../interactive.rst:332
+msgid ""
+":kbd:`Alt`\\ +\\ :kbd:`P` adds the string ``&| less;`` to the end of the job "
+"under the cursor. The result is that the output of the command will be paged."
+msgstr ""
+
+#: ../../../interactive.rst:334
+msgid ""
+":kbd:`Alt`\\ +\\ :kbd:`W` prints a short description of the command under "
+"the cursor."
+msgstr ""
+
+#: ../../../interactive.rst:336
+msgid ""
+":kbd:`Alt`\\ +\\ :kbd:`E` edit the current command line in an external "
+"editor. The editor is chosen from the first available of the ``$VISUAL`` or "
+"``$EDITOR`` variables."
+msgstr ""
+
+#: ../../../interactive.rst:338
+msgid ":kbd:`Alt`\\ +\\ :kbd:`V` Same as :kbd:`Alt`\\ +\\ :kbd:`E`."
+msgstr ""
+
+#: ../../../interactive.rst:340
+msgid ""
+":kbd:`Alt`\\ +\\ :kbd:`S` Prepends ``sudo`` to the current commandline. If "
+"the commandline is empty, prepend ``sudo`` to the last commandline."
+msgstr ""
+
+#: ../../../interactive.rst:342
+msgid ""
+":kbd:`Control`\\ +\\ :kbd:`Space` Inserts a space without expanding an :ref:"
+"`abbreviation <abbreviations>`. For vi-mode this only applies to insert-mode."
+msgstr ""
+
+#: ../../../interactive.rst:347
+msgid "Emacs mode commands"
+msgstr ""
+
+#: ../../../interactive.rst:349
+msgid ""
+"To enable emacs mode, use :doc:`fish_default_key_bindings <cmds/"
+"fish_default_key_bindings>`. This is also the default."
+msgstr ""
+
+#: ../../../interactive.rst:351
+msgid ""
+":kbd:`Home` or :kbd:`Control`\\ +\\ :kbd:`A` moves the cursor to the "
+"beginning of the line."
+msgstr ""
+
+#: ../../../interactive.rst:353
+msgid ""
+":kbd:`End` or :kbd:`Control`\\ +\\ :kbd:`E` moves to the end of line. If the "
+"cursor is already at the end of the line, and an autosuggestion is "
+"available, :kbd:`End` or :kbd:`Control`\\ +\\ :kbd:`E` accepts the "
+"autosuggestion."
+msgstr ""
+
+#: ../../../interactive.rst:355
+msgid ""
+":kbd:`Control`\\ +\\ :kbd:`B`, :kbd:`Control`\\ +\\ :kbd:`F` move the cursor "
+"one character left or right or accept the autosuggestion just like the :kbd:"
+"`←` (Left) and :kbd:`→` (Right) shared bindings (which are available as "
+"well)."
+msgstr ""
+
+#: ../../../interactive.rst:357
+msgid ""
+":kbd:`Control`\\ +\\ :kbd:`N`, :kbd:`Control`\\ +\\ :kbd:`P` move the cursor "
+"up/down or through history, like the up and down arrow shared bindings."
+msgstr ""
+
+#: ../../../interactive.rst:359
+msgid ""
+":kbd:`Delete` or :kbd:`Backspace` removes one character forwards or "
+"backwards respectively. This also goes for :kbd:`Control`\\ +\\ :kbd:`H`, "
+"which is indistinguishable from backspace."
+msgstr ""
+
+#: ../../../interactive.rst:361
+msgid ":kbd:`Alt`\\ +\\ :kbd:`Backspace` removes one word backwards."
+msgstr ""
+
+#: ../../../interactive.rst:363
+msgid ""
+":kbd:`Alt`\\ +\\ :kbd:`<` moves to the beginning of the commandline, :kbd:"
+"`Alt`\\ +\\ :kbd:`>` moves to the end."
+msgstr ""
+
+#: ../../../interactive.rst:365
+msgid ""
+":kbd:`Control`\\ +\\ :kbd:`K` deletes from the cursor to the end of line "
+"(moving it to the :ref:`killring`)."
+msgstr ""
+
+#: ../../../interactive.rst:367
+msgid ""
+":kbd:`Escape` and :kbd:`Control`\\ +\\ :kbd:`G` cancel the current "
+"operation. Immediately after an unambiguous completion this undoes it."
+msgstr ""
+
+#: ../../../interactive.rst:369
+msgid ":kbd:`Alt`\\ +\\ :kbd:`C` capitalizes the current word."
+msgstr ""
+
+#: ../../../interactive.rst:371
+msgid ":kbd:`Alt`\\ +\\ :kbd:`U` makes the current word uppercase."
+msgstr ""
+
+#: ../../../interactive.rst:373
+msgid ":kbd:`Control`\\ +\\ :kbd:`T` transposes the last two characters."
+msgstr ""
+
+#: ../../../interactive.rst:375
+msgid ":kbd:`Alt`\\ +\\ :kbd:`T` transposes the last two words."
+msgstr ""
+
+#: ../../../interactive.rst:377
+msgid ""
+":kbd:`Control`\\ +\\ :kbd:`Z`, :kbd:`Control`\\ +\\ :kbd:`_` (:kbd:"
+"`Control`\\ +\\ :kbd:`/` on some terminals) undo the most recent edit of the "
+"line."
+msgstr ""
+
+#: ../../../interactive.rst:379
+msgid ":kbd:`Alt`\\ +\\ :kbd:`/` reverts the most recent undo."
+msgstr ""
+
+#: ../../../interactive.rst:381
+msgid ""
+":kbd:`Control`\\ +\\ :kbd:`R` opens the history in a pager. This will show "
+"history entries matching the search, a few at a time. Pressing :kbd:"
+"`Control`\\ +\\ :kbd:`R` again will search older entries, pressing :kbd:"
+"`Control`\\ +\\ :kbd:`S` (that otherwise toggles pager search) will go to "
+"newer entries. The search bar will always be selected."
+msgstr ""
+
+#: ../../../interactive.rst:384
+msgid ""
+"You can change these key bindings using the :doc:`bind <cmds/bind>` builtin."
+msgstr ""
+
+#: ../../../interactive.rst:390
+msgid "Vi mode commands"
+msgstr ""
+
+#: ../../../interactive.rst:392
+msgid ""
+"Vi mode allows for the use of Vi-like commands at the prompt. Initially, :"
+"ref:`insert mode <vi-mode-insert>` is active. :kbd:`Escape` enters :ref:"
+"`command mode <vi-mode-command>`. The commands available in command, insert "
+"and visual mode are described below. Vi mode shares :ref:`some bindings "
+"<shared-binds>` with :ref:`Emacs mode <emacs-mode>`."
+msgstr ""
+
+#: ../../../interactive.rst:394
+msgid ""
+"To enable vi mode, use :doc:`fish_vi_key_bindings <cmds/"
+"fish_vi_key_bindings>`. It is also possible to add all emacs-mode bindings "
+"to vi-mode by using something like::"
+msgstr ""
+
+#: ../../../interactive.rst:398
+msgid ""
+"function fish_user_key_bindings\n"
+"    # Execute this once per mode that emacs bindings should be used in\n"
+"    fish_default_key_bindings -M insert\n"
+"\n"
+"    # Then execute the vi-bindings so they take precedence when there's a "
+"conflict.\n"
+"    # Without --no-erase fish_vi_key_bindings will default to\n"
+"    # resetting all bindings.\n"
+"    # The argument specifies the initial mode (insert, \"default\" or "
+"visual).\n"
+"    fish_vi_key_bindings --no-erase insert\n"
+"end"
+msgstr ""
+
+#: ../../../interactive.rst:410
+msgid ""
+"When in vi-mode, the :doc:`fish_mode_prompt <cmds/fish_mode_prompt>` "
+"function will display a mode indicator to the left of the prompt. To disable "
+"this feature, override it with an empty function. To display the mode "
+"elsewhere (like in your right prompt), use the output of the "
+"``fish_default_mode_prompt`` function."
+msgstr ""
+
+#: ../../../interactive.rst:412
+msgid ""
+"When a binding switches the mode, it will repaint the mode-prompt if it "
+"exists, and the rest of the prompt only if it doesn't. So if you want a mode-"
+"indicator in your ``fish_prompt``, you need to erase ``fish_mode_prompt`` e."
+"g. by adding an empty file at ``~/.config/fish/functions/fish_mode_prompt."
+"fish``. (Bindings that change the mode are supposed to call the `repaint-"
+"mode` bind function, see :doc:`bind <cmds/bind>`)"
+msgstr ""
+
+#: ../../../interactive.rst:414
+msgid ""
+"The ``fish_vi_cursor`` function will be used to change the cursor's shape "
+"depending on the mode in supported terminals. The following snippet can be "
+"used to manually configure cursors after enabling vi-mode::"
+msgstr ""
+
+#: ../../../interactive.rst:416
+msgid ""
+"# Emulates vim's cursor shape behavior\n"
+"# Set the normal and visual mode cursors to a block\n"
+"set fish_cursor_default block\n"
+"# Set the insert mode cursor to a line\n"
+"set fish_cursor_insert line\n"
+"# Set the replace mode cursors to an underscore\n"
+"set fish_cursor_replace_one underscore\n"
+"set fish_cursor_replace underscore\n"
+"# Set the external cursor to a line. The external cursor appears when a "
+"command is started.\n"
+"# The cursor shape takes the value of fish_cursor_default when "
+"fish_cursor_external is not specified.\n"
+"set fish_cursor_external line\n"
+"# The following variable can be used to configure cursor shape in\n"
+"# visual mode, but due to fish_cursor_default, is redundant here\n"
+"set fish_cursor_visual block"
+msgstr ""
+
+#: ../../../interactive.rst:431
+msgid ""
+"Additionally, ``blink`` can be added after each of the cursor shape "
+"parameters to set a blinking cursor in the specified shape."
+msgstr ""
+
+#: ../../../interactive.rst:433
+msgid ""
+"Fish knows the shapes \"block\", \"line\" and \"underscore\", other values "
+"will be ignored."
+msgstr ""
+
+#: ../../../interactive.rst:435
+msgid ""
+"If the cursor shape does not appear to be changing after setting the above "
+"variables, it's likely your terminal emulator does not support the "
+"capabilities necessary to do this. It may also be the case, however, that "
+"``fish_vi_cursor`` has not detected your terminal's features correctly (for "
+"example, if you are using ``tmux``). If this is the case, you can force "
+"``fish_vi_cursor`` to set the cursor shape by setting "
+"``$fish_vi_force_cursor`` in ``config.fish``. You'll have to restart fish "
+"for any changes to take effect. If cursor shape setting remains broken after "
+"this, it's almost certainly an issue with your terminal emulator, and not "
+"fish."
+msgstr ""
+
+#: ../../../interactive.rst:440
+msgid "Command mode"
+msgstr ""
+
+#: ../../../interactive.rst:442
+msgid "Command mode is also known as normal mode."
+msgstr ""
+
+#: ../../../interactive.rst:444 ../../../interactive.rst:501
+msgid ":kbd:`h` moves the cursor left."
+msgstr ""
+
+#: ../../../interactive.rst:446 ../../../interactive.rst:503
+msgid ":kbd:`l` moves the cursor right."
+msgstr ""
+
+#: ../../../interactive.rst:448
+msgid ""
+":kbd:`k` and :kbd:`j` search the command history for the previous/next "
+"command containing the string that was specified on the commandline before "
+"the search was started. If the commandline was empty when the search "
+"started, all commands match. See the :ref:`history <history-search>` section "
+"for more information on history searching. In multi-line commands, they move "
+"the cursor up and down respectively."
+msgstr ""
+
+#: ../../../interactive.rst:450
+msgid ""
+":kbd:`i` enters :ref:`insert mode <vi-mode-insert>` at the current cursor "
+"position."
+msgstr ""
+
+#: ../../../interactive.rst:452
+msgid ""
+":kbd:`Shift`\\ +\\ :kbd:`I` enters :ref:`insert mode <vi-mode-insert>` at "
+"the beginning of the line."
+msgstr ""
+
+#: ../../../interactive.rst:454
+msgid ""
+":kbd:`v` enters :ref:`visual mode <vi-mode-visual>` at the current cursor "
+"position."
+msgstr ""
+
+#: ../../../interactive.rst:456
+msgid ""
+":kbd:`a` enters :ref:`insert mode <vi-mode-insert>` after the current cursor "
+"position."
+msgstr ""
+
+#: ../../../interactive.rst:458
+msgid ""
+":kbd:`Shift`\\ +\\ :kbd:`A` enters :ref:`insert mode <vi-mode-insert>` at "
+"the end of the line."
+msgstr ""
+
+#: ../../../interactive.rst:460
+msgid ""
+":kbd:`o` inserts a new line under the current one and enters :ref:`insert "
+"mode <vi-mode-insert>`"
+msgstr ""
+
+#: ../../../interactive.rst:462
+msgid ""
+":kbd:`O` (capital-\"o\") inserts a new line above the current one and "
+"enters :ref:`insert mode <vi-mode-insert>`"
+msgstr ""
+
+#: ../../../interactive.rst:464
+msgid ""
+":kbd:`0` (zero) moves the cursor to beginning of line (remaining in command "
+"mode)."
+msgstr ""
+
+#: ../../../interactive.rst:466
+msgid ""
+":kbd:`d`\\ +\\ :kbd:`d` deletes the current line and moves it to the :ref:"
+"`killring`."
+msgstr ""
+
+#: ../../../interactive.rst:468
+msgid ""
+":kbd:`Shift`\\ +\\ :kbd:`D` deletes text after the current cursor position "
+"and moves it to the :ref:`killring`."
+msgstr ""
+
+#: ../../../interactive.rst:470
+msgid ":kbd:`p` pastes text from the :ref:`killring`."
+msgstr ""
+
+#: ../../../interactive.rst:472
+msgid ":kbd:`u` undoes the most recent edit of the command line."
+msgstr ""
+
+#: ../../../interactive.rst:473
+msgid ":kbd:`Control`\\ +\\ :kbd:`R` redoes the most recent edit."
+msgstr ""
+
+#: ../../../interactive.rst:475
+msgid ""
+":kbd:`[` and :kbd:`]` search the command history for the previous/next token "
+"containing the token under the cursor before the search was started. See "
+"the :ref:`history <history-search>` section for more information on history "
+"searching."
+msgstr ""
+
+#: ../../../interactive.rst:477
+msgid ""
+":kbd:`/` opens the history in a pager. This will show history entries "
+"matching the search, a few at a time. Pressing it again will search older "
+"entries, pressing :kbd:`Control`\\ +\\ :kbd:`S` (that otherwise toggles "
+"pager search) will go to newer entries. The search bar will always be "
+"selected."
+msgstr ""
+
+#: ../../../interactive.rst:479
+msgid ":kbd:`Backspace` moves the cursor left."
+msgstr ""
+
+#: ../../../interactive.rst:481
+msgid ""
+":kbd:`g` / :kbd:`G` moves the cursor to the beginning/end of the "
+"commandline, respectively."
+msgstr ""
+
+#: ../../../interactive.rst:483
+msgid ":kbd:`:q` exits fish."
+msgstr ""
+
+#: ../../../interactive.rst:488
+msgid "Insert mode"
+msgstr "插入模式"
+
+#: ../../../interactive.rst:490
+msgid ":kbd:`Escape` enters :ref:`command mode <vi-mode-command>`."
+msgstr ""
+
+#: ../../../interactive.rst:492
+msgid ":kbd:`Backspace` removes one character to the left."
+msgstr ""
+
+#: ../../../interactive.rst:497
+msgid "Visual mode"
+msgstr ""
+
+#: ../../../interactive.rst:499
+msgid ""
+":kbd:`←` (Left) and :kbd:`→` (Right) extend the selection backward/forward "
+"by one character."
+msgstr ""
+
+#: ../../../interactive.rst:505
+msgid ":kbd:`k` moves the cursor up."
+msgstr ""
+
+#: ../../../interactive.rst:507
+msgid ":kbd:`j` moves the cursor down."
+msgstr ""
+
+#: ../../../interactive.rst:509
+msgid ""
+":kbd:`b` and :kbd:`w` extend the selection backward/forward by one word."
+msgstr ""
+
+#: ../../../interactive.rst:511
+msgid ""
+":kbd:`d` and :kbd:`x` move the selection to the :ref:`killring` and enter :"
+"ref:`command mode <vi-mode-command>`."
+msgstr ""
+
+#: ../../../interactive.rst:513
+msgid ""
+":kbd:`Escape` and :kbd:`Control`\\ +\\ :kbd:`C` enter :ref:`command mode <vi-"
+"mode-command>`."
+msgstr ""
+
+#: ../../../interactive.rst:515
+msgid ":kbd:`c` and :kbd:`s` remove the selection and switch to insert mode."
+msgstr ""
+
+#: ../../../interactive.rst:517
+msgid ""
+":kbd:`X` moves the entire line to the :ref:`killring`, and enters :ref:"
+"`command mode <vi-mode-command>`."
+msgstr ""
+
+#: ../../../interactive.rst:519
+msgid ""
+":kbd:`y` copies the selection to the :ref:`killring`, and enters :ref:"
+"`command mode <vi-mode-command>`."
+msgstr ""
+
+#: ../../../interactive.rst:521
+msgid ""
+":kbd:`~` toggles the case (upper/lower) on the selection, and enters :ref:"
+"`command mode <vi-mode-command>`."
+msgstr ""
+
+#: ../../../interactive.rst:523
+msgid ""
+":kbd:`\"*y` copies the selection to the clipboard, and enters :ref:`command "
+"mode <vi-mode-command>`."
+msgstr ""
+
+#: ../../../interactive.rst:528
+msgid "Custom bindings"
+msgstr ""
+
+#: ../../../interactive.rst:530
+msgid ""
+"In addition to the standard bindings listed here, you can also define your "
+"own with :doc:`bind <cmds/bind>`::"
+msgstr ""
+
+#: ../../../interactive.rst:532
+msgid ""
+"# Just clear the commandline on control-c\n"
+"bind \\cc 'commandline -r \"\"'"
+msgstr ""
+
+#: ../../../interactive.rst:535
+msgid ""
+"Put ``bind`` statements into :ref:`config.fish <configuration>` or a "
+"function called ``fish_user_key_bindings``."
+msgstr ""
+
+#: ../../../interactive.rst:537
+msgid ""
+"If you change your mind on a binding and want to go back to fish's default, "
+"you can simply erase it again::"
+msgstr ""
+
+#: ../../../interactive.rst:539
+msgid "bind --erase \\cc"
+msgstr ""
+
+#: ../../../interactive.rst:541
+msgid ""
+"Fish remembers its preset bindings and so it will take effect again. This "
+"saves you from having to remember what it was before and add it again "
+"yourself."
+msgstr ""
+
+#: ../../../interactive.rst:543
+msgid ""
+"If you use :ref:`vi bindings <vi-mode>`, note that ``bind`` will by default "
+"bind keys in :ref:`command mode <vi-mode-command>`. To bind something in :"
+"ref:`insert mode <vi-mode-insert>`::"
+msgstr ""
+
+#: ../../../interactive.rst:545
+msgid "bind --mode insert \\cc 'commandline -r \"\"'"
+msgstr ""
+
+#: ../../../interactive.rst:550
+msgid "Key sequences"
+msgstr ""
+
+#: ../../../interactive.rst:552
+msgid ""
+"The terminal tells fish which keys you pressed by sending some sequences of "
+"bytes to describe that key. For some keys, this is easy - pressing :kbd:`a` "
+"simply means the terminal sends \"a\". In others it's more complicated and "
+"terminals disagree on which they send."
+msgstr ""
+
+#: ../../../interactive.rst:554
+msgid ""
+"In these cases, :doc:`fish_key_reader <cmds/fish_key_reader>` can tell you "
+"how to write the key sequence for your terminal. Just start it and press the "
+"keys you are interested in::"
+msgstr ""
+
+#: ../../../interactive.rst:556
+msgid ""
+"> fish_key_reader # pressing control-c\n"
+"Press a key:\n"
+"Press [ctrl-C] again to exit\n"
+"bind \\cC 'do something'\n"
+"\n"
+"> fish_key_reader # pressing the right-arrow\n"
+"Press a key:\n"
+"bind \\e\\[C 'do something'"
+msgstr ""
+
+#: ../../../interactive.rst:565
+msgid ""
+"Note that some key combinations are indistinguishable or unbindable. For "
+"instance control-i *is the same* as the tab key. This is a terminal "
+"limitation that fish can't do anything about. When ``fish_key_reader`` "
+"prints the same sequence for two different keys, then that is because your "
+"terminal sends the same sequence for them."
+msgstr ""
+
+#: ../../../interactive.rst:567
+msgid ""
+"Also, :kbd:`Escape` is the same thing as :kbd:`Alt` in a terminal. To "
+"distinguish between pressing :kbd:`Escape` and then another key, and "
+"pressing :kbd:`Alt` and that key (or an escape sequence the key sends), fish "
+"waits for a certain time after seeing an escape character. This is "
+"configurable via the :envvar:`fish_escape_delay_ms` variable."
+msgstr ""
+
+#: ../../../interactive.rst:569
+msgid ""
+"If you want to be able to press :kbd:`Escape` and then a character and have "
+"it count as :kbd:`Alt`\\ +\\ that character, set it to a higher value, e.g.::"
+msgstr ""
+
+#: ../../../interactive.rst:571
+msgid "set -g fish_escape_delay_ms 100"
+msgstr ""
+
+#: ../../../interactive.rst:573
+msgid ""
+"Similarly, to disambiguate *other* keypresses where you've bound a "
+"subsequence and a longer sequence, fish has :envvar:"
+"`fish_sequence_key_delay_ms`::"
+msgstr ""
+
+#: ../../../interactive.rst:575
+msgid ""
+"# This binds \"jk\" to switch to normal mode in vi-mode.\n"
+"# If you kept it like that, every time you press \"j\",\n"
+"# fish would wait for a \"k\" or other key to disambiguate\n"
+"bind -M insert -m default jk cancel repaint-mode\n"
+"\n"
+"# After setting this, fish only waits 200ms for the \"k\",\n"
+"# or decides to treat the \"j\" as a separate sequence, inserting it.\n"
+"set -g fish_sequence_key_delay_ms 200"
+msgstr ""
+
+#: ../../../interactive.rst:587
+msgid "Copy and paste (Kill Ring)"
+msgstr ""
+
+#: ../../../interactive.rst:589
+msgid ""
+"Fish uses an Emacs-style kill ring for copy and paste functionality. For "
+"example, use :kbd:`Control`\\ +\\ :kbd:`K` (`kill-line`) to cut from the "
+"current cursor position to the end of the line. The string that is cut (a.k."
+"a. killed in emacs-ese) is inserted into a list of kills, called the kill "
+"ring. To paste the latest value from the kill ring (emacs calls this "
+"\"yanking\") use :kbd:`Control`\\ +\\ :kbd:`Y` (the ``yank`` input "
+"function). After pasting, use :kbd:`Alt`\\ +\\ :kbd:`Y` (``yank-pop``) to "
+"rotate to the previous kill."
+msgstr ""
+
+#: ../../../interactive.rst:591
+msgid ""
+"Copy and paste from outside are also supported, both via the :kbd:"
+"`Control`\\ +\\ :kbd:`X` / :kbd:`Control`\\ +\\ :kbd:`V` bindings (the "
+"``fish_clipboard_copy`` and ``fish_clipboard_paste`` functions [#]_) and via "
+"the terminal's paste function, for which fish enables \"Bracketed Paste "
+"Mode\", so it can tell a paste from manually entered text. In addition, when "
+"pasting inside single quotes, pasted single quotes and backslashes are "
+"automatically escaped so that the result can be used as a single token "
+"simply by closing the quote after. Kill ring entries are stored in "
+"``fish_killring`` variable."
+msgstr ""
+
+#: ../../../interactive.rst:595
+msgid ""
+"The commands ``begin-selection`` and ``end-selection`` (unbound by default; "
+"used for selection in vi visual mode) control text selection together with "
+"cursor movement commands that extend the current selection. The variable :"
+"envvar:`fish_cursor_selection_mode` can be used to configure if that "
+"selection should include the character under the cursor (``inclusive``) or "
+"not (``exclusive``). The default is ``exclusive``, which works well with any "
+"cursor shape. For vi mode, and particularly for the ``block`` or "
+"``underscore`` cursor shapes you may prefer ``inclusive``."
+msgstr ""
+
+#: ../../../interactive.rst:598
+msgid ""
+"These rely on external tools. Currently xsel, xclip, wl-copy/wl-paste and "
+"pbcopy/pbpaste are supported."
+msgstr ""
+
+#: ../../../interactive.rst:603
+msgid "Multiline editing"
+msgstr ""
+
+#: ../../../interactive.rst:605
+msgid ""
+"The fish commandline editor can be used to work on commands that are several "
+"lines long. There are three ways to make a command span more than a single "
+"line:"
+msgstr ""
+
+#: ../../../interactive.rst:607
+msgid ""
+"Pressing the :kbd:`Enter` key while a block of commands is unclosed, such as "
+"when one or more block commands such as ``for``, ``begin`` or ``if`` do not "
+"have a corresponding :doc:`end <cmds/end>` command."
+msgstr ""
+
+#: ../../../interactive.rst:609
+msgid ""
+"Pressing :kbd:`Alt`\\ +\\ :kbd:`Enter` instead of pressing the :kbd:`Enter` "
+"key."
+msgstr ""
+
+#: ../../../interactive.rst:611
+msgid ""
+"By inserting a backslash (``\\``) character before pressing the :kbd:`Enter` "
+"key, escaping the newline."
+msgstr ""
+
+#: ../../../interactive.rst:613
+msgid ""
+"The fish commandline editor works exactly the same in single line mode and "
+"in multiline mode. To move between lines use the left and right arrow keys "
+"and other such keyboard shortcuts."
+msgstr ""
+
+#: ../../../interactive.rst:618
+msgid "Searchable command history"
+msgstr ""
+
+#: ../../../interactive.rst:620
+msgid ""
+"After a command has been executed, it is remembered in the history list. Any "
+"duplicate history items are automatically removed. By pressing the up and "
+"down keys, you can search forwards and backwards in the history. If the "
+"current command line is not empty when starting a history search, only the "
+"commands containing the string entered into the command line are shown."
+msgstr ""
+
+#: ../../../interactive.rst:622
+msgid ""
+"By pressing :kbd:`Alt`\\ +\\ :kbd:`↑` and :kbd:`Alt`\\ +\\ :kbd:`↓`, a "
+"history search is also performed, but instead of searching for a complete "
+"commandline, each commandline is broken into separate elements just like it "
+"would be before execution, and the history is searched for an element "
+"matching that under the cursor."
+msgstr ""
+
+#: ../../../interactive.rst:624
+msgid ""
+"For more complicated searches, you can press :kbd:`Ctrl`\\ +\\ :kbd:`R` to "
+"open a pager that allows you to search the history. It shows a limited "
+"number of entries in one page, press :kbd:`Ctrl`\\ +\\ :kbd:`R` [#]_ again "
+"to move to the next page and :kbd:`Ctrl`\\ +\\ :kbd:`S` [#]_ to move to the "
+"previous page. You can change the text to refine your search."
+msgstr ""
+
+#: ../../../interactive.rst:626
+msgid ""
+"History searches are case-insensitive unless the search string contains an "
+"uppercase character. You can stop a search to edit your search string by "
+"pressing :kbd:`Esc` or :kbd:`Page Down`."
+msgstr ""
+
+#: ../../../interactive.rst:628
+msgid ""
+"Prefixing the commandline with a space will prevent the entire line from "
+"being stored in the history. It will still be available for recall until the "
+"next command is executed, but will not be stored on disk. This is to allow "
+"you to fix misspellings and such."
+msgstr ""
+
+#: ../../../interactive.rst:630
+msgid ""
+"The command history is stored in the file ``~/.local/share/fish/"
+"fish_history`` (or ``$XDG_DATA_HOME/fish/fish_history`` if that variable is "
+"set) by default. However, you can set the ``fish_history`` environment "
+"variable to change the name of the history session (resulting in a "
+"``<session>_history`` file); both before starting the shell and while the "
+"shell is running."
+msgstr ""
+
+#: ../../../interactive.rst:635
+msgid "See the :doc:`history <cmds/history>` command for other manipulations."
+msgstr ""
+
+#: ../../../interactive.rst:639
+msgid ""
+"To search for previous entries containing the word 'make', type ``make`` in "
+"the console and press the up key."
+msgstr ""
+
+#: ../../../interactive.rst:641
+msgid ""
+"If the commandline reads ``cd m``, place the cursor over the ``m`` character "
+"and press :kbd:`Alt`\\ +\\ :kbd:`↑` to search for previously typed words "
+"containing 'm'."
+msgstr ""
+
+#: ../../../interactive.rst:643
+msgid ""
+"Or another binding that triggers the ``history-pager`` input function. See :"
+"doc:`bind <cmds/bind>` for a list."
+msgstr ""
+
+#: ../../../interactive.rst:644
+msgid ""
+"Or another binding that triggers the ``pager-toggle-search`` input function."
+msgstr ""
+
+#: ../../../interactive.rst:647
+msgid "Navigating directories"
+msgstr ""
+
+#: ../../../interactive.rst:651
+msgid ""
+"Navigating directories is usually done with the :doc:`cd <cmds/cd>` command, "
+"but fish offers some advanced features as well."
+msgstr ""
+
+#: ../../../interactive.rst:653
+msgid ""
+"The current working directory can be displayed with the :doc:`pwd <cmds/"
+"pwd>` command, or the ``$PWD`` :ref:`special variable <variables-special>`. "
+"Usually your prompt already does this."
+msgstr ""
+
+#: ../../../interactive.rst:656
+msgid "Directory history"
+msgstr ""
+
+#: ../../../interactive.rst:658
+msgid ""
+"Fish automatically keeps a trail of the recent visited directories with :doc:"
+"`cd <cmds/cd>` by storing this history in the ``dirprev`` and ``dirnext`` "
+"variables."
+msgstr ""
+
+#: ../../../interactive.rst:660
+msgid "Several commands are provided to interact with this directory history:"
+msgstr ""
+
+#: ../../../interactive.rst:662
+msgid ":doc:`dirh <cmds/dirh>` prints the history"
+msgstr ""
+
+#: ../../../interactive.rst:663
+msgid ":doc:`cdh <cmds/cdh>` displays a prompt to quickly navigate the history"
+msgstr ""
+
+#: ../../../interactive.rst:664
+msgid ""
+":doc:`prevd <cmds/prevd>` moves backward through the history. It is bound "
+"to :kbd:`Alt`\\ +\\ :kbd:`←`"
+msgstr ""
+
+#: ../../../interactive.rst:665
+msgid ""
+":doc:`nextd <cmds/nextd>` moves forward through the history. It is bound to :"
+"kbd:`Alt`\\ +\\ :kbd:`→`"
+msgstr ""
+
+#: ../../../interactive.rst:670
+msgid "Directory stack"
+msgstr "目錄堆疊"
+
+#: ../../../interactive.rst:672
+msgid ""
+"Another set of commands, usually also available in other shells like bash, "
+"deal with the directory stack. Stack handling is not automatic and needs "
+"explicit calls of the following commands:"
+msgstr ""
+
+#: ../../../interactive.rst:674
+msgid ":doc:`dirs <cmds/dirs>` prints the stack"
+msgstr ""
+
+#: ../../../interactive.rst:675
+msgid ""
+":doc:`pushd <cmds/pushd>` adds a directory on top of the stack and makes it "
+"the current working directory"
+msgstr ""
+
+#: ../../../interactive.rst:676
+msgid ""
+":doc:`popd <cmds/popd>` removes the directory on top of the stack and "
+"changes the current working directory"
+msgstr ""
