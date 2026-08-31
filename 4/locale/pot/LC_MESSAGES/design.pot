@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell 4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"POT-Creation-Date: 2026-08-31 17:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../design.rst:8
 msgid ""
-"Fish should be user-friendly, but not at the expense of expressiveness. Most "
+"fish should be user-friendly, but not at the expense of expressiveness. Most "
 "tradeoffs between power and ease of use can be avoided with careful design."
 msgstr ""
 
@@ -153,7 +153,7 @@ msgstr ""
 
 #: ../../../design.rst:58
 msgid ""
-"Fish allows the user to set various syntax highlighting colors. This is "
+"fish allows the user to set various syntax highlighting colors. This is "
 "needed because fish does not know what colors the terminal uses by default, "
 "which might make some things unreadable. The proper solution would be for "
 "text color preferences to be defined centrally by the user for all programs, "
@@ -162,7 +162,7 @@ msgstr ""
 
 #: ../../../design.rst:60
 msgid ""
-"Fish does not allow you to set the number of history entries, different "
+"fish does not allow you to set the number of history entries, different "
 "language substyles or any number of other common shell configuration options."
 msgstr ""
 
