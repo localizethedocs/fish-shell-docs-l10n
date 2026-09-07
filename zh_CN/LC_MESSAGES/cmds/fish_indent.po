@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_indent.rst:2
+msgid "fish_indent - indenter and prettifier"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:7
+msgid "fish_indent [OPTIONS] [FILE ...]"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:13
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:15
+msgid ""
+":program:`fish_indent` is used to indent a piece of fish code. :program:"
+"`fish_indent` reads commands from standard input or the given filenames and "
+"outputs them to standard output or a specified file (if ``-w`` is given)."
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:17
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:19
+msgid "**-w** or **--write**"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:20
+msgid "Indents a specified file and immediately writes to that file."
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:22
+msgid "**-i** or **--no-indent**"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:23
+msgid "Do not indent commands; only reformat to one job per line."
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:25
+msgid "**--only-indent**"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:26
+msgid "Do not reformat, only indent each line."
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:28
+msgid "**--only-unindent**"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:29
+msgid "Do not reformat, only unindent each line."
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:31
+msgid "**-c** or **--check**"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:32
+msgid ""
+"Do not indent, only return 0 if the code is already indented as fish_indent "
+"would, the number of failed files otherwise. Also print the failed filenames "
+"if not reading from standard input."
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:34
+msgid "**-v** or **--version**"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:35
+msgid "Displays the current :program:`fish` version and then exits."
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:37
+msgid "**--ansi**"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:38
+msgid ""
+"Colorizes the output using ANSI escape sequences using the colors defined in "
+"the environment (such as :envvar:`fish_color_command`)."
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:40
+msgid "**--html**"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:41
+msgid ""
+"Outputs HTML, which supports syntax highlighting if the appropriate CSS is "
+"defined. The CSS class names are the same as the variable names, such as "
+"``fish_color_command``."
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:43
+msgid "**--dump-parse-tree**"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:44
+msgid ""
+"Dumps information about the parsed statements to standard error. This is "
+"likely to be of interest only to people working on the fish source code."
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:46
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/fish_indent.rst:47
+msgid "Displays help about using this command."
+msgstr ""
