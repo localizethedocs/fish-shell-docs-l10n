@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/time.rst:2
+msgid "time - measure how long a command or block takes"
+msgstr ""
+
+#: ../../../cmds/time.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/time.rst:7
+msgid "time COMMAND"
+msgstr ""
+
+#: ../../../cmds/time.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/time.rst:16
+msgid ""
+"NOTE: This page documents the fish keyword ``time``. To see the "
+"documentation on any non-fish versions, use ``command man time``."
+msgstr ""
+
+#: ../../../cmds/time.rst:19
+msgid ""
+"``time`` causes fish to measure how long a command takes and print the "
+"results afterwards. The command can be a simple fish command or a block. The "
+"results can not currently be redirected."
+msgstr ""
+
+#: ../../../cmds/time.rst:21
+msgid ""
+"For checking timing after a command has completed, check :ref:`$CMD_DURATION "
+"<variables-special>`."
+msgstr ""
+
+#: ../../../cmds/time.rst:23
+msgid ""
+"Your system most likely also has a ``time`` command. To use that use "
+"something like ``command time``, as in ``command time sleep 10``. Because "
+"it's not inside fish, it won't have access to fish functions and won't be "
+"able to time blocks and such."
+msgstr ""
+
+#: ../../../cmds/time.rst:26
+msgid "How to interpret the output"
+msgstr ""
+
+#: ../../../cmds/time.rst:28
+msgid "Time outputs a few different values. Let's look at an example::"
+msgstr ""
+
+#: ../../../cmds/time.rst:30
+msgid ""
+"> time string repeat -n 10000000 y\\n | command grep y >/dev/null\n"
+"________________________________________________________\n"
+"Executed in  805.98 millis    fish           external\n"
+"   usr time  798.88 millis  763.88 millis   34.99 millis\n"
+"   sys time  141.22 millis   40.20 millis  101.02 millis"
+msgstr ""
+
+#: ../../../cmds/time.rst:36
+msgid ""
+"The time after \"Executed in\" is what is known as the \"wall-clock time\". "
+"It is simply a measure of how long it took from the start of the command "
+"until it finished. Typically it is reasonably close to :envvar:"
+"`CMD_DURATION`, except for a slight skew because the two are taken at "
+"slightly different times."
+msgstr ""
+
+#: ../../../cmds/time.rst:38
+msgid ""
+"The other times are all measures of CPU time. That means they measure how "
+"long the CPU was used in this part, and they count multiple cores "
+"separately. So a program with four threads using all CPU for a second will "
+"have a time of 4 seconds."
+msgstr ""
+
+#: ../../../cmds/time.rst:40
+msgid ""
+"The \"usr\" time is how much CPU time was spent inside the program itself, "
+"the \"sys\" time is how long was spent in the kernel on behalf of that "
+"program."
+msgstr ""
+
+#: ../../../cmds/time.rst:42
+msgid ""
+"The \"fish\" time is how much CPU was spent in fish, the \"external\" time "
+"how much was spent in external commands."
+msgstr ""
+
+#: ../../../cmds/time.rst:44
+msgid ""
+"So in this example, since ``string`` is a builtin, everything that ``string "
+"repeat`` did is accounted to fish. Any time it spends doing syscalls like "
+"``write()`` is accounted for in the fish/sys time."
+msgstr ""
+
+#: ../../../cmds/time.rst:46
+msgid ""
+"And ``grep`` here is explicitly invoked as an external command, so its times "
+"will be counted in the \"external\" column."
+msgstr ""
+
+#: ../../../cmds/time.rst:48
+msgid ""
+"Note that, as in this example, the CPU times can add up to more than the "
+"execution time. This is because things can be done in parallel - ``grep`` "
+"can match while ``string repeat`` writes."
+msgstr ""
+
+#: ../../../cmds/time.rst:51
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/time.rst:53
+msgid "(for obvious reasons exact results will vary on your system)"
+msgstr ""
+
+#: ../../../cmds/time.rst:57
+msgid ""
+">_ time sleep 1s\n"
+"\n"
+"________________________________________________________\n"
+"Executed in    1,01 secs   fish           external\n"
+"   usr time    2,32 millis    0,00 micros    2,32 millis\n"
+"   sys time    0,88 millis  877,00 micros    0,00 millis\n"
+"\n"
+">_ time for i in 1 2 3; sleep 1s; end\n"
+"\n"
+"________________________________________________________\n"
+"Executed in    3,01 secs   fish           external\n"
+"   usr time    9,16 millis    2,94 millis    6,23 millis\n"
+"   sys time    0,23 millis    0,00 millis    0,23 millis"
+msgstr ""
+
+#: ../../../cmds/time.rst:71
+msgid "Inline variable assignments need to follow the ``time`` keyword::"
+msgstr ""
+
+#: ../../../cmds/time.rst:73
+msgid ""
+">_ time a_moment=1.5m sleep $a_moment\n"
+"\n"
+"________________________________________________________\n"
+"Executed in   90.00 secs      fish           external\n"
+"   usr time    4.62 millis    4.62 millis    0.00 millis\n"
+"   sys time    2.35 millis    0.41 millis    1.95 millis"
+msgstr ""

@@ -1,0 +1,259 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/functions.rst:2
+msgid "functions - print or erase functions"
+msgstr ""
+
+#: ../../../cmds/functions.rst:5
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/functions.rst:7
+msgid ""
+"functions [-a | --all] [-n | --names] [--color WHEN]\n"
+"functions [-D | --details] [-v] [--color WHEN] FUNCTION\n"
+"functions -c OLDNAME NEWNAME\n"
+"functions -d DESCRIPTION FUNCTION\n"
+"functions [-e | -q] FUNCTION ..."
+msgstr ""
+
+#: ../../../cmds/functions.rst:16
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/functions.rst:18
+msgid "``functions`` prints or erases functions."
+msgstr ""
+
+#: ../../../cmds/functions.rst:20
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/functions.rst:22
+msgid "**-a** or **--all**"
+msgstr ""
+
+#: ../../../cmds/functions.rst:23
+msgid "Lists all functions, even those whose name starts with an underscore."
+msgstr ""
+
+#: ../../../cmds/functions.rst:25
+msgid "**-c** or **--copy** *OLDNAME* *NEWNAME*"
+msgstr ""
+
+#: ../../../cmds/functions.rst:26
+msgid ""
+"Creates a new function named *NEWNAME*, using the definition of the "
+"*OLDNAME* function."
+msgstr ""
+
+#: ../../../cmds/functions.rst:28
+msgid "**-d** or **--description** *DESCRIPTION*"
+msgstr ""
+
+#: ../../../cmds/functions.rst:29
+msgid "Changes the description of this function."
+msgstr ""
+
+#: ../../../cmds/functions.rst:31
+msgid "**-e** or **--erase**"
+msgstr ""
+
+#: ../../../cmds/functions.rst:32
+msgid ""
+"Causes the specified functions to be erased. This also means that it is "
+"prevented from autoloading in the current session. Use :doc:`funcsave "
+"<funcsave>` to remove the saved copy."
+msgstr ""
+
+#: ../../../cmds/functions.rst:34
+msgid "**-D** or **--details**"
+msgstr ""
+
+#: ../../../cmds/functions.rst:35
+msgid ""
+"Reports the path name where the specified function is defined or could be "
+"autoloaded, ``stdin`` if the function was defined interactively or on the "
+"command line or by reading standard input, **-** if the function was created "
+"via :doc:`source <source>`, and ``n/a`` if the function isn't available. "
+"(Functions created via :doc:`alias <alias>` will return **-**, because "
+"``alias`` uses ``source`` internally. Copied functions will return where the "
+"function was copied.) If the **--verbose** option is also specified then "
+"five lines are written:"
+msgstr ""
+
+#: ../../../cmds/functions.rst:37
+msgid "the path name as already described,"
+msgstr ""
+
+#: ../../../cmds/functions.rst:38
+msgid ""
+"if the function was copied, the path name to where the function was "
+"originally defined, otherwise ``autoloaded``, ``not-autoloaded`` or ``n/a``,"
+msgstr ""
+
+#: ../../../cmds/functions.rst:39
+msgid "the line number within the file or zero if not applicable,"
+msgstr ""
+
+#: ../../../cmds/functions.rst:40
+msgid ""
+"``scope-shadowing`` if the function shadows the vars in the calling function "
+"(the normal case if it wasn't defined with **--no-scope-shadowing**), else "
+"``no-scope-shadowing``, or ``n/a`` if the function isn't defined,"
+msgstr ""
+
+#: ../../../cmds/functions.rst:41
+msgid ""
+"the function description minimally escaped so it is a single line, or ``n/"
+"a`` if the function isn't defined or has no description."
+msgstr ""
+
+#: ../../../cmds/functions.rst:43
+msgid ""
+"You should not assume that only five lines will be written since we may add "
+"additional information to the output in the future."
+msgstr ""
+
+#: ../../../cmds/functions.rst:45
+msgid "**--no-details**"
+msgstr ""
+
+#: ../../../cmds/functions.rst:46
+msgid ""
+"Turns off function path reporting, so just the definition will be printed."
+msgstr ""
+
+#: ../../../cmds/functions.rst:48
+msgid "**-n** or **--names**"
+msgstr ""
+
+#: ../../../cmds/functions.rst:49
+msgid "Lists the names of all defined functions."
+msgstr ""
+
+#: ../../../cmds/functions.rst:51
+msgid "**-q** or **--query**"
+msgstr ""
+
+#: ../../../cmds/functions.rst:52
+msgid "Tests if the specified functions exist."
+msgstr ""
+
+#: ../../../cmds/functions.rst:54
+msgid "**-v** or **--verbose**"
+msgstr ""
+
+#: ../../../cmds/functions.rst:55
+msgid "Make some output more verbose."
+msgstr ""
+
+#: ../../../cmds/functions.rst:57
+msgid "**-H** or **--handlers**"
+msgstr ""
+
+#: ../../../cmds/functions.rst:58
+msgid "Show all event handlers."
+msgstr ""
+
+#: ../../../cmds/functions.rst:60
+msgid "**-t** or **--handlers-type** *TYPE*"
+msgstr ""
+
+#: ../../../cmds/functions.rst:61
+msgid "Show all event handlers matching the given *TYPE*."
+msgstr ""
+
+#: ../../../cmds/functions.rst:63
+msgid "**--color** *WHEN*"
+msgstr ""
+
+#: ../../../cmds/functions.rst:64
+msgid ""
+"Controls when to use syntax highlighting colors when printing function "
+"definitions. *WHEN* can be ``auto`` (the default, colorize if the output :"
+"doc:`is a terminal <isatty>`), ``always``, or ``never``."
+msgstr ""
+
+#: ../../../cmds/functions.rst:67
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/functions.rst:68
+msgid "Displays help about using this command."
+msgstr "顯示此指令的幫助資訊。"
+
+#: ../../../cmds/functions.rst:70
+msgid ""
+"The default behavior of ``functions``, when called with no arguments, is to "
+"print the names of all defined functions. Unless the ``-a`` option is given, "
+"no functions starting with underscores are included in the output."
+msgstr ""
+
+#: ../../../cmds/functions.rst:72
+msgid ""
+"If any non-option parameters are given, the definition of the specified "
+"functions are printed."
+msgstr ""
+
+#: ../../../cmds/functions.rst:74
+msgid ""
+"Copying a function using ``-c`` copies only the body of the function, and "
+"does not attach any event notifications from the original function."
+msgstr ""
+
+#: ../../../cmds/functions.rst:76
+msgid ""
+"Only one function's description can be changed in a single invocation of "
+"``functions -d``."
+msgstr ""
+
+#: ../../../cmds/functions.rst:78
+msgid ""
+"The exit status of ``functions`` is the number of functions specified in the "
+"argument list that do not exist, which can be used in concert with the ``-"
+"q`` option."
+msgstr ""
+
+#: ../../../cmds/functions.rst:82
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../cmds/functions.rst:87
+msgid ""
+"functions -n\n"
+"# Displays a list of currently-defined functions\n"
+"\n"
+"functions -c foo bar\n"
+"# Copies the 'foo' function to a new function called 'bar'\n"
+"\n"
+"functions -e bar\n"
+"# Erases the function ``bar``"
+msgstr ""
+
+#: ../../../cmds/functions.rst:97
+msgid "See more"
+msgstr ""
+
+#: ../../../cmds/functions.rst:99
+msgid ""
+"For more explanation of how functions fit into fish, see :ref:`Functions "
+"<syntax-function>`."
+msgstr ""
