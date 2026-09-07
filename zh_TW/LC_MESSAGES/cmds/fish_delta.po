@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_delta.rst:2
+msgid "fish_delta - compare functions and completions to the default"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:5
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/fish_delta.rst:7
+msgid ""
+"fish_delta name ...\n"
+"fish_delta [-f | --no-functions] [-c | --no-completions] [-C | --no-config] "
+"[-d | --no-diff] [-n | --new] [-V | --vendor=]\n"
+"fish_delta [-h | --help]"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:15
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/fish_delta.rst:17
+msgid ""
+"The ``fish_delta`` function tells you, at a glance, which of your functions "
+"and completions differ from the set that fish ships."
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:19
+msgid ""
+"It does this by going through the relevant variables (:envvar:"
+"`fish_function_path` for functions and :envvar:`fish_complete_path` for "
+"completions) and comparing the files against fish's default directories."
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:21
+msgid ""
+"If any names are given, it will only compare files by those names (plus a \"."
+"fish\" extension)."
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:23
+msgid ""
+"By default, it will also use ``diff`` to display the difference between the "
+"files. If ``diff`` is unavailable, it will skip it, but in that case it also "
+"cannot figure out if the files really differ."
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:25
+msgid ""
+"The exit status is 1 if there was a difference and 2 for other errors, "
+"otherwise 0."
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:28
+msgid "Options"
+msgstr "選項"
+
+#: ../../../cmds/fish_delta.rst:30
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:32
+msgid "**-f** or **--no-functions**"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:33
+msgid "Stops checking functions"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:35
+msgid "**-c** or **--no-completions**"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:36
+msgid "Stops checking completions"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:38
+msgid "**-C** or **--no-config**"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:39
+msgid ""
+"Stops checking configuration files like config.fish or snippets in the conf."
+"d directories."
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:41
+msgid "**-d** or **--no-diff**"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:42
+msgid ""
+"Removes the diff display (this happens automatically if ``diff`` can't be "
+"found)"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:44
+msgid "**-n** or **--new**"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:45
+msgid ""
+"Also prints new files (i.e. those that can't be found in fish's default "
+"directories)."
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:47
+msgid "**-Vvalue** or **--vendor=value**"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:48
+msgid "Determines how the vendor directories are counted. Valid values are:"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:50
+msgid ""
+"\"default\" - counts vendor files as belonging to the defaults. Any changes "
+"in other directories will be counted as changes over them. This is the "
+"default."
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:51
+msgid ""
+"\"user\" - counts vendor files as belonging to the user files. Any changes "
+"in them will be counted as new or changed files."
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:52
+msgid ""
+"\"ignore\" - ignores vendor directories. Files of the same name will be "
+"counted as \"new\" if no file of the same name in fish's default directories "
+"exists."
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:54
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:55
+msgid "Prints ``fish_delta``'s help (this)."
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:58
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/fish_delta.rst:60
+msgid "Running just::"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:62
+msgid "fish_delta"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:64
+msgid ""
+"will give you a list of all your changed functions and completions, "
+"including diffs (if you have the ``diff`` command)."
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:66
+msgid "It might look like this::"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:68
+msgid ""
+"> fish_delta\n"
+"New: /home/alfa/.config/fish/functions/battery.fish\n"
+"Changed: /home/alfa/.config/fish/test/completions/cargo.fish\n"
+"--- /home/alfa/.config/fish/test/completions/cargo.fish 2022-09-02 "
+"12:57:55.579229959 +0200\n"
+"+++ /usr/share/fish/completions/cargo.fish      2022-09-25 "
+"17:51:53.000000000 +0200\n"
+"# the output of `diff` follows"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:75
+msgid ""
+"The options are there to select which parts of the output you want. With ``--"
+"no-completions`` you can compare just functions, and with ``--no-diff`` you "
+"can turn off the ``diff`` display."
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:77
+msgid "To only compare your ``fish_git_prompt``, you might use::"
+msgstr ""
+
+#: ../../../cmds/fish_delta.rst:79
+msgid "fish_delta --no-completions fish_git_prompt"
+msgstr "fish_delta --no-completions fish_git_prompt"
+
+#: ../../../cmds/fish_delta.rst:81
+msgid "which will only compare files called \"fish_git_prompt.fish\"."
+msgstr ""
