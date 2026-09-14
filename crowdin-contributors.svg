@@ -1,0 +1,87 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="980"
+  height="210"
+  viewBox="0 0 980 210"
+>
+  <style>
+    .contributor { cursor: pointer; }
+    .name {
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      fill: #6B6B6C;
+      text-anchor: middle;
+    }
+    .username {
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      fill: #6B6B6C;
+      text-anchor: middle;
+    }
+    .words {
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      fill: #6B6B6C;
+      text-anchor: middle;
+    }
+    .languages {
+      font-size: 12px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      fill: #6B6B6C;
+      text-anchor: middle;
+    }
+    .project-link {
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      fill: #3b82f6;
+      text-anchor: middle;
+    }
+    .project-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+  
+    <g class="contributor">
+      <defs>
+        <clipPath id="clip-2">
+          <circle cx="70" cy="70" r="50"/>
+        </clipPath>
+      </defs>
+      <title>Haowei Hsu (hwhsu1231)</title>
+      <image 
+        x="20" 
+        y="20" 
+        width="100" 
+        height="100" 
+        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACv0lEQVR42u2dsU4yQRRGv5lQ0FgQ4vaU0FiRbeAVlMre1poYnsFYk2wsTCyt1MYH0EZKi6XcHrPZwoYEM/NXFmbXQp39QTgnoVmSe2HOztybLDMYSV6wNixDgAAEAAIQAAhAACAAAYAABAACEAAIQAAgAAFQL42QwYwxMsZs9YB57+W93zwBxhhdXV2p1+tttYA0TXVychJMQlABvV5P/X5/65cNY0wwAdQAijACAAG0obUyn8/1+PgYJFYURTo8PJS1n+8d55zu7++1WCyC5BkOh+p2u/+ntQ3xstb62Wzmq0iSxIfKE8exX61WpRyr1crHcRwsT5Ikld9lNpt5a22wPCxB1AAEAALogtZj31q1Wq1SRyNJb29vWi6XQfI0m03t7e2VrjvnVBSFnHO7KaDVaunp6Untdrv03ng81vX1dZA8x8fHuri4KF3P81yDwUB5nu/uDGi329rf36+8a0PRbDYrc3x8BmoARRgQgADYuSL8E7Is0+npaenZs/deWZYhoG4Wi4UuLy9ZggABCAAE0AXVRafTURzHwWIh4JucnZ1pPB6HmebWIuAng7bJA0cNQAAggC6oPpxzwR4VbnI92VgB5+fnur29DRJrNBppMpkg4DtkWabn5+cgsQ4ODqgBgAAEAAIowr8liiIdHR1VPpK8u7sLtj8AAV/Q6XQ0nU7VaHz+6O/v73p5eflzAliCEIAAQABd0Fpwzn350/BQewM+Yr2+vpau53m+1r0BaxdQFIUGg8GXGzRCcXNzo4eHh8oboCgKZkDdLJfLoDOKGkARBgQgAP5MER4Oh0qSJEisKIoquyZrrSaTSdDDOrZGQLfbrf3kEWutRqMRSxAgAAGAgN3rgrz3StN06wcsTdOgJ+caBfwzT44uXrMAoAYgABCAAEAAAgABCAAEIAAQgABAAAIAAQgABGwc/wBRjl+W9J6jBgAAAABJRU5ErkJggg=="
+        clip-path="url(#clip-2)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <text x="70" y="150" class="name">Haowei Hsu</text>
+      <text x="70" y="170" class="username">(hwhsu1231)</text>
+      <text x="70" y="190" class="words">1,301 words</text>
+    </g>
+    <g class="contributor">
+      <defs>
+        <clipPath id="clip-66">
+          <circle cx="210" cy="70" r="50"/>
+        </clipPath>
+      </defs>
+      <title>GoudarzJafari</title>
+      <image 
+        x="160" 
+        y="20" 
+        width="100" 
+        height="100" 
+        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFG0lEQVR42u2d/U9TVxjHv/fcvvLaUkuLFhBGtRMEJ4k6M7M5ZxbN5hbnZsySJcuSZUuW/QH7lzZ/2NwS3AvMyQwjsgzGELRALQIFW6BCS6H3nrsfXJQ7cMDUesXv57f73Jfcns855z7n6W2qnPn8CwPkiSHYBBRAAYQCKIBQAAUQCqAAQgEUQCiAAggFUAChAAogFEABhAIogFAABRAKoABCARRAKIACyKPB9jTetKoKhIIBhAJ+BHwVKC8tgcvpgE1VoUuJ3NIy5jMZJGfTSCRnMDY5hYVslgIeBrvNht11NTjQ3IimcD3cLicURVn3PAOAISUmppPovzGM3sEobk4kIKW0xOdSrP77AFUINO9uwImXDyMU8EOIh5s1NV1HR1cPzn/fwRGwHmUlxXjvxDG0NkbW7O2GYUBKibymIbe0DF1KOOx2uJwOqEKsKUsoCoZG45yC1mNHwI+Pz76NgK9i1b6J6SR6B2/geiyO8anbmM9kYRiGabryecqxI+hHQ00Iu3ZWY3ulH4qiYGI6iWvDoxTwXwS3+fDZ++/CW15qio9P3caFjk78FR1BPq898Py8piGRTCGRTKGnfxB2mw3BbRU4uK8JN8cnoVtk/rekgCK3Cx+dedPU+IZh4HJPL77+8RIyi7lNXzOvaRhLTGOsrZ1Z0HqcOnoE1VUBU6ytswsX2jstk7lsWQH11dtxeH+zKdbdN4BvfrpsmuO5En5MHD98AA77/T6RnE3j/MX2Ldv4lhLgr/BiT0O9KfbDld+QXshs6VKEZQTsi4ThdNjvbc/emcfV/sEtXwuyhABFUbCnoc4UG4iOIpNdpICClBtUgdrtQVNscCSGZwFLCPCWlaLI7TLFYuMJCigUPo9n1cJp7s48BRSK0mK3aXshuwhpyGdCgCUWYg673bS9nM/fLeRvgpZIGEcPtm74+G87OhGN36IAAHgU6yxvWQki9bUbPv7n7t85Ba2c81dit9kABc8ElhgB2Zy5wlnsdkHZpIFsbglTyZkH7veUlcDpcFDAWvw743E6HCguciM9v7Dha3T3DaC7b+CB+z89dxotkTCzoLVIzaWh6bopFgpWMg0tFMt5bdX00VAbooBCIaVE9KY5JWx8ru7uw5gCCsOf16OQK/LRUDCAulAVBRSKoVgcM3Pp+zcmFLx+5BBUVVBAQdYCeQ2/XP3DFHu+ficONjdRQKH4tafX9DAWQuDsydcQrq2mgEKQWczhq4vt0FekpE6HHZ+cO43WxgiEUCjgcdN/YwRtl7tMX8QXu1348J038MFbJ1Hp827opVyWIv4nhmHgu0tXUOR24ZUD++81tk1VcWhfE1qbIhiIjqJvKIrRW5OYSqWg66tL10JR4Ckrhb/Ci1CwEjsCfgrYzLrgy7Z2JGfTOPXqS6Yajt1mQ0skjJZIGFJKaLqO+Uz2n5dzddhUFS6nEyVuN1RVhRCKpUeMZVc6Ukq0d11FND6G08ePoqEmtColFULAIQR8nvJNXVvX5arSx5NCeRr+P0AVArt21uDFF/Zi7656uJzOTfVqwzCQW1pCbDyB67E4hkbjiE8moGk6R8CGeqyUuDYSw7WRGOw2G2qqAqiuCmCb1wNPWQkcdjtUISClgbyWR245j4VsFnN3FpCaSyORTOH2zJwl3y196ooteU3D8Ng4hsfGmYYSCqAAQgEUQCiAAggFUAChAAogFEABhAIogFAABRAKoABCARRAKIACCAVQAKEACiAUQAHkPn8DcwG3bNtzcfcAAAAASUVORK5CYII="
+        clip-path="url(#clip-66)"
+        preserveAspectRatio="xMidYMid slice"
+      />
+      <text x="210" y="150" class="name">GoudarzJafari</text>
+      <text x="210" y="170" class="words">2 words</text>
+    </g>
+</svg>
