@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_add_path.rst:5
+msgid "fish_add_path - add to the path"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:8
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:10
+msgid ""
+"fish_add_path path ...\n"
+"fish_add_path [(-g | --global) | (-U | --universal) | (-P | --path)] [(-m | "
+"--move)] [(-a | --append) | (-p | --prepend)] [(-v | --verbose) | (-n | --"
+"dry-run)] PATHS ..."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:17
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:19
+msgid ""
+":program:`fish_add_path` is a simple way to add more components to fish's :"
+"envvar:`PATH`. It does this by adding the components either to "
+"$fish_user_paths or directly to :envvar:`PATH` (if the ``--path`` switch is "
+"given)."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:21
+msgid ""
+"It is (by default) safe to use :program:`fish_add_path` in config.fish, or "
+"it can be used once, interactively, and the paths will stay in future "
+"because of :ref:`universal variables <variables-universal>`. This is a \"do "
+"what I mean\" style command, if you need more control, consider modifying "
+"the variable yourself."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:23
+msgid ""
+"Components are normalized by :doc:`realpath <realpath>`. Trailing slashes "
+"are ignored and relative paths are made absolute (but symlinks are not "
+"resolved). If a component already exists, it is not added again and stays in "
+"the same place unless the ``--move`` switch is given."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:25
+msgid ""
+"Components are added in the order they are given, and they are prepended to "
+"the path unless ``--append`` is given (if $fish_user_paths is used, that "
+"means they are last in $fish_user_paths, which is itself prepended to :"
+"envvar:`PATH`, so they still stay ahead of the system paths)."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:27
+msgid ""
+"If no component is new, the variable (:envvar:`fish_user_paths` or :envvar:"
+"`PATH`) is not set again or otherwise modified, so variable handlers are not "
+"triggered."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:29
+msgid ""
+"If a component is not an existing directory, ``fish_add_path`` ignores it."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:32
+msgid "Options"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:34
+msgid "**-a** or **--append**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:35
+msgid "Add components to the *end* of the variable."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:37
+msgid "**-p** or **--prepend**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:38
+msgid "Add components to the *front* of the variable (this is the default)."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:40
+msgid "**-g** or **--global**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:41
+msgid "Use a global :envvar:`fish_user_paths`."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:43
+msgid "**-U** or **--universal**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:44
+msgid ""
+"Use a universal :envvar:`fish_user_paths` - this is the default if it "
+"doesn't already exist."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:46
+msgid "**-P** or **--path**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:47
+msgid "Manipulate :envvar:`PATH` directly."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:49
+msgid "**-m** or **--move**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:50
+msgid ""
+"Move already-existing components to the place they would be added - by "
+"default they would be left in place and not added again."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:52
+msgid "**-v** or **--verbose**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:53
+msgid "Print the :doc:`set <set>` command used."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:55
+msgid "**-n** or **--dry-run**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:56
+msgid "Print the ``set`` command that would be used without executing it."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:58
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:59
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:61
+msgid ""
+"If ``--move`` is used, it may of course lead to the path swapping order, so "
+"you should be careful doing that in config.fish."
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:65
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/fish_add_path.rst:70
+msgid ""
+"# I just installed mycoolthing and need to add it to the path to use it.\n"
+"> fish_add_path /opt/mycoolthing/bin\n"
+"\n"
+"# I want my ~/.local/bin to be checked first.\n"
+"> fish_add_path -m ~/.local/bin\n"
+"\n"
+"# I prefer using a global fish_user_paths\n"
+"> fish_add_path -g ~/.local/bin ~/.otherbin /usr/local/sbin\n"
+"\n"
+"# I want to append to the entire $PATH because this directory contains "
+"fallbacks\n"
+"> fish_add_path -aP /opt/fallback/bin\n"
+"\n"
+"# I want to add the bin/ directory of my current $PWD (say /home/nemo/)\n"
+"> fish_add_path -v bin/\n"
+"set fish_user_paths /home/nemo/bin /usr/bin /home/nemo/.local/bin\n"
+"\n"
+"# I have installed ruby via homebrew\n"
+"> fish_add_path /usr/local/opt/ruby/bin"
+msgstr ""

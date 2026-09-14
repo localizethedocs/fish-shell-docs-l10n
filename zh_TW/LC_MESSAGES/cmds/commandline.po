@@ -1,0 +1,369 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/commandline.rst:4
+msgid "commandline - set or get the current command line buffer"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:7
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/commandline.rst:9
+msgid "commandline [OPTIONS] [CMD]"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:14
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/commandline.rst:16
+msgid ""
+"``commandline`` can be used to set or get the current contents of the "
+"command line buffer."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:18
+msgid ""
+"With no parameters, ``commandline`` returns the current value of the command "
+"line."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:20
+msgid ""
+"With **CMD** specified, the command line buffer is erased and replaced with "
+"the contents of **CMD**."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:22
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:24
+msgid "**-C** or **--cursor**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:25
+msgid ""
+"Set or get the current cursor position, not the contents of the buffer. If "
+"no argument is given, the current cursor position is printed, otherwise the "
+"argument is interpreted as the new cursor position. If one of the options **-"
+"j**, **-p** or **-t** is given, the position is relative to the respective "
+"substring instead of the entire command line buffer."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:29
+msgid "**-B** or **--selection-start**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:30
+msgid "Get current position of the selection start in the buffer."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:32
+msgid "**-E** or **--selection-end**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:33
+msgid "Get current position of the selection end in the buffer."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:35
+msgid "**-f** or **--function**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:36
+msgid ""
+"Causes any additional arguments to be interpreted as input functions, and "
+"puts them into the queue, so that they will be read before any additional "
+"actual key presses are. This option cannot be combined with any other "
+"option. See :doc:`bind <bind>` for a list of input functions."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:40
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:41
+msgid "Displays help about using this command."
+msgstr "顯示此指令的幫助資訊。"
+
+#: ../../../cmds/commandline.rst:43
+msgid ""
+"The following options change the way ``commandline`` updates the command "
+"line buffer:"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:45
+msgid "**-a** or **--append**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:46
+msgid ""
+"Do not remove the current commandline, append the specified string at the "
+"end of it."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:48
+msgid "**-i** or **--insert**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:49
+msgid ""
+"Do not remove the current commandline, insert the specified string at the "
+"current cursor position"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:51
+msgid "**-r** or **--replace**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:52
+msgid ""
+"Remove the current commandline and replace it with the specified string "
+"(default)"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:54
+msgid ""
+"The following options change what part of the commandline is printed or "
+"updated:"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:56
+msgid "**-b** or **--current-buffer**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:57
+msgid ""
+"Select the entire commandline, not including any displayed autosuggestion "
+"(default)."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:59
+msgid "**-j** or **--current-job**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:60
+msgid ""
+"Select the current job - a **job** here is one pipeline. Stops at logical "
+"operators or terminators (**;**, **&**, and newlines)."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:63
+msgid "**-p** or **--current-process**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:64
+msgid ""
+"Select the current process - a **process** here is one command. Stops at "
+"logical operators, terminators, and pipes."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:67
+msgid "**-s** or **--current-selection**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:68
+msgid "Selects the current selection"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:70
+msgid "**-t** or **--current-token**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:71
+msgid "Selects the current token"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:73
+msgid ""
+"The following options change the way ``commandline`` prints the current "
+"commandline buffer:"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:75
+msgid "**-c** or **--cut-at-cursor**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:76
+msgid ""
+"Only print selection up until the current cursor position. If combined with "
+"``--tokenize``, this will print up until the last completed token - "
+"excluding the token the cursor is in. This is typically what you would want "
+"for instance in completions. To get both, use both ``commandline --cut-at-"
+"cursor --tokenize; commandline --cut-at-cursor --current-token``, or "
+"``commandline -co; commandline -ct`` for short."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:82
+msgid "**-o** or **--tokenize**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:83
+msgid "Tokenize the selection and print one string-type token per line."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:85
+msgid ""
+"If ``commandline`` is called during a call to complete a given string using "
+"``complete -C STRING``, ``commandline`` will consider the specified string "
+"to be the current contents of the command line."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:87
+msgid "The following options output metadata about the commandline state:"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:89
+msgid "**-L** or **--line**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:90
+msgid ""
+"Print the line that the cursor is on, with the topmost line starting at 1."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:92
+msgid "**-S** or **--search-mode**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:93
+msgid "Evaluates to true if the commandline is performing a history search."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:95
+msgid "**-P** or **--paging-mode**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:96
+msgid ""
+"Evaluates to true if the commandline is showing pager contents, such as tab "
+"completions."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:98
+msgid "**--paging-full-mode**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:99
+msgid ""
+"Evaluates to true if the commandline is showing pager contents, such as tab "
+"completions and all lines are shown (no \"<n> more rows\" message)."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:101
+msgid "**--is-valid**"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:102
+msgid ""
+"Returns true when the commandline is syntactically valid and complete. If it "
+"is, it would be executed when the ``execute`` bind function is called. If "
+"the commandline is incomplete, return 2, if erroneus, return 1."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:107
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/commandline.rst:109
+msgid ""
+"``commandline -j $history[3]`` replaces the job under the cursor with the "
+"third item from the command line history."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:111
+msgid "If the commandline contains"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:116
+msgid ">_ echo $flounder >&2 | less; and echo $catfish"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:119
+msgid "(with the cursor on the \"o\" of \"flounder\")"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:121
+msgid ""
+"The ``echo $flounder >&`` is the first process, ``less`` the second and "
+"``and echo $catfish`` the third."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:123
+msgid ""
+"``echo $flounder >&2 | less`` is the first job, ``and echo $catfish`` the "
+"second."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:125
+msgid "**$flounder** is the current token."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:127
+msgid "The most common use for something like completions is"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:131
+msgid "set -l tokens (commandline -opc)"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:133
+msgid ""
+"which gives the current *process* (what is being completed), tokenized into "
+"separate entries, up to but excluding the currently being completed token"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:135
+msgid "If you are then also interested in the in-progress token, add"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:137
+msgid "::"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:138
+msgid "set -l current (commandline -ct)"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:140
+msgid ""
+"Note that this makes it easy to render fish's infix matching moot - if "
+"possible it's best if the completions just print all possibilities and leave "
+"the matching to the current token up to fish's logic."
+msgstr ""
+
+#: ../../../cmds/commandline.rst:142
+msgid "More examples:"
+msgstr ""
+
+#: ../../../cmds/commandline.rst:146
+msgid ""
+">_ commandline -t\n"
+"$flounder\n"
+">_ commandline -ct\n"
+"$fl\n"
+">_ commandline -b # or just commandline\n"
+"echo $flounder >&2 | less; and echo $catfish\n"
+">_ commandline -p\n"
+"echo $flounder >&2\n"
+">_ commandline -j\n"
+"echo $flounder >&2 | less"
+msgstr ""
