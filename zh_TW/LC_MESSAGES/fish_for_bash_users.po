@@ -1,0 +1,930 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../fish_for_bash_users.rst:2
+msgid "Fish for bash users"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:4
+msgid ""
+"This is to give you a quick overview if you come from bash (or to a lesser "
+"extent other shells like zsh or ksh) and want to know how fish differs. Fish "
+"is intentionally not POSIX-compatible and as such some of the things you are "
+"used to work differently."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:6
+msgid ""
+"Many things are similar - they both fundamentally expand commandlines to "
+"execute commands, have pipes, redirections, variables, globs, use command "
+"output in various ways. This document is there to quickly show you the "
+"differences."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:11
+msgid "Command substitutions"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:13
+msgid ""
+"Fish spells command substitutions as ``$(command)`` or ``(command)``, but "
+"not ```command```."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:15
+msgid ""
+"In addition, it only splits them on newlines instead of $IFS. If you want to "
+"split on something else, use :doc:`string split <cmds/string-split>`, :doc:"
+"`string split0 <cmds/string-split>` or :doc:`string collect <cmds/string-"
+"collect>`. If those are used as the last command in a command substitution "
+"the splits they create are carried over. So::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:17
+msgid "for i in (find . -print0 | string split0)"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:19
+msgid "will correctly handle all possible filenames."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:22
+msgid "Variables"
+msgstr "變數"
+
+#: ../../../fish_for_bash_users.rst:24
+msgid ""
+"Fish sets and erases variables with :doc:`set <cmds/set>` instead of "
+"``VAR=VAL`` and a variety of separate builtins like ``declare`` and "
+"``unset`` and ``export``. ``set`` takes options to determine the scope and "
+"exportedness of a variable::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:26
+msgid ""
+"# Define $PAGER *g*lobal and e*x*ported,\n"
+"# so this is like ``export PAGER=less``\n"
+"set -gx PAGER less\n"
+"\n"
+"# Define $alocalvariable only locally,\n"
+"# like ``local alocalvariable=foo``\n"
+"set -l alocalvariable foo"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:34
+msgid "or to erase variables::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:36
+msgid "set -e PAGER"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:39
+msgid "``VAR=VAL`` statements are available as environment overrides::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:41
+msgid "PAGER=cat git log"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:44
+msgid ""
+"Fish does not perform word splitting. Once a variable has been set to a "
+"value, that value stays as it is, so double-quoting variable expansions "
+"isn't the necessity it is in bash. [#]_"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:46
+msgid "For instance, here's bash"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:48
+msgid ""
+"> foo=\"bar baz\"\n"
+"> printf '\"%s\"\\n' $foo\n"
+"# will print two lines, because we didn't double-quote\n"
+"# this is word splitting\n"
+"\"bar\"\n"
+"\"baz\""
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:57
+msgid "And here is fish::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:59
+msgid ""
+"> set foo \"bar baz\"\n"
+"> printf '\"%s\"\\n' $foo\n"
+"# foo was set as one element,\n"
+"# so it will be passed as one element, so this is one line\n"
+"\"bar baz\""
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:65
+msgid ""
+"All variables are \"arrays\" (we use the term \"lists\"), and expanding a "
+"variable expands to all its elements, with each element as its own argument "
+"(like bash's ``\"${var[@]}\"``::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:67
+msgid ""
+"> set var \"foo bar\" banana\n"
+"> printf %s\\n $var\n"
+"foo bar\n"
+"banana"
+msgstr ""
+"> set var \"foo bar\" banana\n"
+"> printf %s\\n $var\n"
+"foo bar\n"
+"banana"
+
+#: ../../../fish_for_bash_users.rst:72
+msgid "Specific elements of a list can be selected::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:74
+msgid "echo $list[5..7]"
+msgstr "echo $list[5..7]"
+
+#: ../../../fish_for_bash_users.rst:76
+msgid ""
+"The arguments to ``set`` are ordinary, so you can also set a variable to the "
+"output of a command::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:78
+msgid ""
+"# Set lines to all the lines in file, one element per line\n"
+"set lines (cat file)"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:81
+msgid "or a mixture of literal values and output::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:83
+msgid ""
+"> set numbers 1 2 3 (seq 5 8) 9\n"
+"> printf '%s\\n' $numbers\n"
+"1\n"
+"2\n"
+"3\n"
+"5\n"
+"6\n"
+"7\n"
+"8\n"
+"9"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:94
+msgid ""
+"A ``=`` is unnecessary and unhelpful with ``set`` - ``set foo = bar`` will "
+"set the variable \"foo\" to two values: \"=\" and \"bar\". ``set foo=bar`` "
+"will print an error."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:96
+msgid "See :ref:`Shell variables <variables>` for more."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:98
+msgid ""
+"zsh also does not perform word splitting by default (the SH_WORD_SPLIT "
+"option controls this)"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:103
+msgid "Wildcards (globs)"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:105
+msgid ""
+"Fish only supports the ``*`` and ``**`` glob (and the deprecated ``?`` glob) "
+"as syntax. If a glob doesn't match it fails the command (like with bash's "
+"``failglob``) unless the command is ``for``, ``set`` or ``count`` or the "
+"glob is used with an environment override (``VAR=* command``), in which case "
+"it expands to nothing (like with bash's ``nullglob`` option)."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:107
+msgid "Globbing doesn't happen on expanded variables, so::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:109
+msgid ""
+"set foo \"*\"\n"
+"echo $foo"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:112
+msgid "will not match any files."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:114
+msgid ""
+"There are no options to control globbing so it always behaves like that."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:116
+msgid ""
+"The ``**`` glob will match in subdirectories as well. In other shells this "
+"often needs to be turned on with an option, like ``setopt globstar`` in bash."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:118
+msgid ""
+"Unlike bash, fish will also follow symlinks, and will sort the results in a "
+"natural sort, with included numbers compared as numbers. That means it will "
+"sort e.g. music tracks correctly even if they have numbers like ``1`` "
+"instead of ``01``."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:120
+msgid "See :ref:`Wildcards <expand-wildcard>` for more."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:123
+msgid "Quoting"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:125
+msgid ""
+"Fish has two quoting styles: ``\"\"`` and ``''``. Variables are expanded in "
+"double-quotes, nothing is expanded in single-quotes."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:127
+msgid ""
+"There is no ``$''``, instead the sequences that would transform are "
+"transformed *when unquoted*::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:129
+msgid ""
+"> echo a\\nb\n"
+"a\n"
+"b"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:133
+msgid "See :ref:`Quotes <quotes>` for more."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:136
+msgid "String manipulation"
+msgstr "字串操縱"
+
+#: ../../../fish_for_bash_users.rst:138
+msgid ""
+"Fish does not have ``${foo%bar}``, ``${foo#bar}`` and ``${foo/bar/baz}``. "
+"Instead string manipulation is done by the :doc:`string <cmds/string>` "
+"builtin."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:140
+msgid "For example, to replace \"bar\" with \"baz\"::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:142
+msgid ""
+"> string replace bar baz \"bar luhrmann\"\n"
+"baz luhrmann"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:145
+msgid "It can also split strings::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:147
+msgid ""
+"> string split \",\" \"foo,bar\"\n"
+"foo\n"
+"bar"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:151
+msgid "Match regular expressions as a replacement for ``grep``::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:153
+msgid ""
+"> echo bababa | string match -r 'aba$'\n"
+"aba"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:156
+msgid "Pad strings to a given width, with arbitrary characters::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:158
+msgid ""
+"> string pad -c x -w 20 \"foo\"\n"
+"xxxxxxxxxxxxxxxxxfoo"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:161
+msgid "Make strings lower/uppercase::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:163
+msgid ""
+"> string lower Foo\n"
+"foo\n"
+"\n"
+"> string upper Foo\n"
+"FOO"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:169
+msgid ""
+"repeat strings, trim strings, escape strings or print a string's length or "
+"width (in terminal cells)."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:172
+msgid "Special variables"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:174
+msgid "Some bash variables and their closest fish equivalent:"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:176
+msgid "``$*``, ``$@``, ``$1`` and so on: ``$argv``"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:177
+msgid "``$?``: ``$status``"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:178
+msgid "``$$``: ``$fish_pid``"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:179
+msgid "``$#``: No variable, instead use ``count $argv``"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:180
+msgid "``$!``: ``$last_pid``"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:181
+msgid "``$0``: ``status filename``"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:182
+msgid "``$-``: Mostly ``status is-interactive`` and ``status is-login``"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:185
+msgid "Process substitution"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:187
+msgid ""
+"Instead of ``<(command)`` fish uses ``(command | psub)``. There is no "
+"equivalent to ``>(command)``."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:189
+msgid ""
+"Note that both of these are bashisms, and most things can easily be "
+"expressed without. E.g. instead of::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:191
+msgid "source (command | psub)"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:193
+msgid "Use::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:195
+msgid "command | source"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:197
+msgid "as fish's :doc:`source <cmds/source>` can read from stdin."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:200
+msgid "Heredocs"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:202
+msgid "Fish does not have ``<<EOF`` \"heredocs\". Instead of"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:204
+msgid ""
+"cat <<EOF\n"
+"some string\n"
+"some more string\n"
+"EOF"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:211
+msgid "use::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:213
+msgid "printf %s\\n \"some string\" \"some more string\""
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:215
+msgid "or::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:217
+msgid ""
+"echo \"some string\n"
+"some more string\"\n"
+"\n"
+"# or if you want the quotes on separate lines:\n"
+"\n"
+"echo \"\\\n"
+"some string\n"
+"some more string\\\n"
+"\""
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:227
+msgid "Quotes are followed across newlines."
+msgstr "引號可以跨行使用。"
+
+#: ../../../fish_for_bash_users.rst:229
+msgid "What \"heredocs\" do is:"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:231
+msgid ""
+"Read/interpret the string, with special rules, up to the terminator. [#]_"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:232
+msgid "Write the resulting string to a temporary file."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:233
+msgid "Start the command the heredoc is attached to with that file as stdin."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:235
+msgid "This means it is essentially the same as just reading from a pipe, so::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:237
+msgid "echo \"foo\" | cat"
+msgstr "echo \"foo\" | cat"
+
+#: ../../../fish_for_bash_users.rst:239
+msgid "is mostly the same as"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:241
+msgid ""
+"cat <<EOF\n"
+"foo\n"
+"EOF"
+msgstr ""
+"cat <<EOF\n"
+"foo\n"
+"EOF"
+
+#: ../../../fish_for_bash_users.rst:247
+msgid ""
+"Like with heredocs, the command has to be prepared to read from stdin. "
+"Sometimes this requires special options to be used, often giving a filename "
+"of ``-`` turns it on."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:249
+msgid "For example::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:251
+msgid ""
+"echo \"xterm\n"
+"rxvt-unicode\" | pacman --remove -\n"
+"\n"
+"# is the same as (the `-` makes pacman read arguments from stdin)\n"
+"pacman --remove xterm rxvt-unicode"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:257
+msgid "and could be written in other shells as"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:259
+msgid ""
+"# This \"-\" is still necessary - the heredoc is *also* passed over stdin!\n"
+"pacman --remove - << EOF\n"
+"xterm\n"
+"rxvt-unicode\n"
+"EOF"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:267
+msgid ""
+"So heredocs really are minor syntactical sugar that introduces a lot of "
+"special rules, which is why fish doesn't have them. Pipes are a core "
+"concept, and are simpler and compose nicer."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:269
+msgid ""
+"For example, the \"EOF\" is just a convention, the terminator can be an "
+"arbitrary string, something like \"THISISTHEEND\" also works. And using ``<<-"
+"`` trims leading *tab* characters (but not other whitespace), so you can "
+"indent the lines, but only with tabs. Substitutions (variables, commands) "
+"are done on the heredoc by default, but not if the terminator is quoted: "
+"``cat << \"EOF\"``."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:272
+msgid "Test (``test``, ``[``, ``[[``)"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:274
+msgid ""
+"Fish has a POSIX-compatible ``test`` or ``[`` builtin. There is no ``[[`` "
+"and ``test`` does not accept ``==`` as a synonym for ``=``. It can compare "
+"floating point numbers, however."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:276
+msgid ""
+"``set -q`` can be used to determine if a variable exists or has a certain "
+"number of elements (``set -q foo[2]``)."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:279
+msgid "Arithmetic Expansion"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:281
+msgid ""
+"Fish does not have ``$((i+1))`` arithmetic expansion, computation is handled "
+"by :doc:`math <cmds/math>`::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:283
+msgid "math $i + 1"
+msgstr "math $i + 1"
+
+#: ../../../fish_for_bash_users.rst:285
+msgid "Unlike bash's arithmetic, it can handle floating point numbers::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:287
+msgid ""
+"> math 5 / 2\n"
+"2.5"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:290
+msgid "And also has some functions, like for trigonometry::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:292
+msgid ""
+"> math cos 2 x pi\n"
+"1"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:295
+msgid ""
+"You can pass arguments to ``math`` separately like above or in quotes. "
+"Because fish uses ``()`` parentheses for :ref:`command substitutions <bash-"
+"command-substitutions>`, quoting is needed if you want to use them in your "
+"expression::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:297
+msgid "> math '(5 + 2) * 4'"
+msgstr "> math '(5 + 2) * 4'"
+
+#: ../../../fish_for_bash_users.rst:299
+msgid ""
+"Both ``*`` and ``x`` are valid ways to spell multiplication, but ``*`` needs "
+"to be quoted because it looks like a :ref:`glob <bash-globs>`."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:302
+msgid "Prompts"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:304
+msgid ""
+"Fish does not use the ``$PS1``, ``$PS2`` and so on variables. Instead the "
+"prompt is the output of the :doc:`fish_prompt <cmds/fish_prompt>` function, "
+"plus the :doc:`fish_mode_prompt <cmds/fish_mode_prompt>` function if :ref:"
+"`vi mode <vi-mode>` is enabled. The output of the :doc:`fish_right_prompt "
+"<cmds/fish_right_prompt>` function is used for the right-sided prompt."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:306
+msgid "As an example, here's a relatively simple bash prompt:"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:308
+msgid ""
+"# <$HOSTNAME> <$PWD in blue> <Prompt Sign in Yellow> <Rest in default light "
+"white>\n"
+"PS1='\\h\\[\\e[1;34m\\]\\w\\[\\e[m\\] \\[\\e[1;32m\\]\\$\\[\\e[m\\] '"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:313
+msgid "and a rough fish equivalent::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:315
+msgid ""
+"function fish_prompt\n"
+"    set -l prompt_symbol '$'\n"
+"    fish_is_root_user; and set prompt_symbol '#'\n"
+"\n"
+"    echo -s (prompt_hostname) \\\n"
+"    (set_color blue) (prompt_pwd) \\\n"
+"    (set_color yellow) $prompt_symbol (set_color --reset)\n"
+"end"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:324
+msgid "This shows a few differences:"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:326
+msgid ""
+"Fish provides :doc:`set_color <cmds/set_color>` to color text. It can use "
+"the 16 named colors and also RGB sequences (so you could also use "
+"``set_color 5555FF``)"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:327
+msgid ""
+"Instead of introducing specific escapes like ``\\h`` for the hostname, the "
+"prompt is a function. To achieve the effect of ``\\h``, fish provides helper "
+"functions like :doc:`prompt_hostname <cmds/prompt_hostname>`, which prints a "
+"shortened version of the hostname."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:328
+msgid ""
+"Fish offers other helper functions for adding things to the prompt, like :"
+"doc:`fish_vcs_prompt <cmds/fish_vcs_prompt>` for adding a display for common "
+"version control systems (git, mercurial, svn), and :doc:`prompt_pwd <cmds/"
+"prompt_pwd>` for showing a shortened ``$PWD`` (the user's home directory "
+"becomes ``~`` and any path component is shortened)."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:330
+msgid ""
+"The default prompt is reasonably full-featured and its code can be read via "
+"``type fish_prompt``."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:332
+msgid ""
+"Fish does not have ``$PS2`` for continuation lines, instead it leaves the "
+"lines indented to show that the commandline isn't complete yet."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:335
+msgid "Blocks and loops"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:337
+msgid ""
+"Fish's blocking constructs look a little different. They all start with a "
+"word, end in ``end`` and don't have a second starting word::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:339
+msgid ""
+"for i in 1 2 3; do\n"
+"   echo $i\n"
+"done\n"
+"\n"
+"# becomes\n"
+"\n"
+"for i in 1 2 3\n"
+"   echo $i\n"
+"end\n"
+"\n"
+"while true; do\n"
+"   echo Weeee\n"
+"done\n"
+"\n"
+"# becomes\n"
+"\n"
+"while true\n"
+"   echo Weeeeeee\n"
+"end\n"
+"\n"
+"{\n"
+"   echo Hello\n"
+"}\n"
+"\n"
+"# becomes\n"
+"\n"
+"begin\n"
+"   echo Hello\n"
+"end\n"
+"\n"
+"if true; then\n"
+"   echo Yes I am true\n"
+"else\n"
+"   echo \"How is true not true?\"\n"
+"fi\n"
+"\n"
+"# becomes\n"
+"\n"
+"if true\n"
+"   echo Yes I am true\n"
+"else\n"
+"   echo \"How is true not true?\"\n"
+"end\n"
+"\n"
+"foo() {\n"
+"   echo foo\n"
+"}\n"
+"\n"
+"# becomes\n"
+"\n"
+"function foo\n"
+"    echo foo\n"
+"end\n"
+"\n"
+"# (bash allows the word \"function\",\n"
+"#  but this is an extension)"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:396
+msgid "Fish does not have an ``until``. Use ``while not`` or ``while !``."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:399
+msgid "Subshells"
+msgstr "子外殼"
+
+#: ../../../fish_for_bash_users.rst:401
+msgid ""
+"Bash has a feature called \"subshells\", where it will start another shell "
+"process for certain things. That shell will then be independent and e.g. any "
+"changes it makes to variables won't be visible in the main shell."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:403
+msgid "This includes things like:"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:405
+msgid ""
+"# A list of commands in `()` parentheses\n"
+"(foo; bar) | baz\n"
+"\n"
+"# Both sides of a pipe\n"
+"foo | while read -r bar; do\n"
+"    # This will not be visible outside of the loop.\n"
+"    VAR=VAL\n"
+"    # This background process will not be, either\n"
+"    baz &\n"
+"done"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:418
+msgid ""
+"Fish does not currently have subshells. You will have to find a different "
+"solution. The isolation can usually be achieved by scoping variables (with "
+"``set -l``), but if you really do need to run your code in a new shell "
+"environment you can use ``fish -c 'your code here'`` to do so explicitly."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:420
+msgid ""
+"``()`` subshells are often confused with ``{}`` grouping, which does *not* "
+"use a subshell. When you just need to group, you can use ``begin; end`` in "
+"fish::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:422
+msgid ""
+"(foo; bar) | baz\n"
+"# when it should really have been:\n"
+"{ foo; bar; } | baz\n"
+"# becomes\n"
+"begin; foo; bar; end | baz"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:428
+msgid ""
+"The pipe will be run in the same process, so ``while read`` loops can set "
+"variables outside::"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:430
+msgid ""
+"foo | while read bar\n"
+"    set -g VAR VAL\n"
+"    baz &\n"
+"end\n"
+"\n"
+"echo $VAR # will print VAL\n"
+"jobs # will show \"baz\""
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:438
+msgid ""
+"Subshells are also frequently confused with :ref:`command substitutions "
+"<bash-command-substitutions>`, which bash writes as ```command``` or "
+"``$(command)`` and fish writes as ``$(command)`` or ``(command)``. Bash also "
+"*uses* subshells to implement them."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:441
+msgid "Builtins and other commands"
+msgstr "內建與其他命令"
+
+#: ../../../fish_for_bash_users.rst:443
+msgid ""
+"By now it has become apparent that fish puts much more of a focus on its "
+"builtins and external commands rather than its syntax. So here are some "
+"helpful builtins and their rough equivalent in bash:"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:445
+msgid ""
+":doc:`string <cmds/string>` - this replaces most of the string "
+"transformation (``${i%foo}`` et al) and can also be used instead of ``grep`` "
+"and ``sed`` and such."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:446
+msgid ""
+":doc:`math <cmds/math>` - this replaces ``$((i + 1))`` arithmetic and can "
+"also do floats and some simple functions (sine and friends)."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:447
+msgid ""
+":doc:`argparse <cmds/argparse>` - this can handle a script's option parsing, "
+"for which bash would probably use ``getopt`` (zsh provides ``zparseopts``)."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:448
+msgid ""
+":doc:`count <cmds/count>` can be used to count things and therefore replaces "
+"``$#`` and can be used instead of ``wc``."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:449
+msgid ""
+":doc:`status <cmds/status>` provides information about the shell status, e."
+"g. if it's interactive or what the current linenumber is. This replaces ``$-"
+"`` and ``$BASH_LINENO`` and other variables."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:451
+msgid ""
+"``seq(1)`` can be used as a replacement for ``{1..10}`` range expansion. If "
+"your OS doesn't ship a ``seq`` fish includes a replacement function."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:454
+msgid "Other facilities"
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:456
+msgid ""
+"Bash has ``set -x`` or ``set -o xtrace`` to print all commands that are "
+"being executed. In fish, this would be enabled by setting :envvar:"
+"`fish_trace`."
+msgstr ""
+
+#: ../../../fish_for_bash_users.rst:458
+msgid ""
+"Or, if your intention is to *profile* how long each line of a script takes, "
+"you can use ``fish --profile`` - see the :doc:`page for the fish command "
+"<cmds/fish>`."
+msgstr ""
