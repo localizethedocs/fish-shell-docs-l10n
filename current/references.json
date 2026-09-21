@@ -47,9 +47,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2026-09-14 23:09:04 +0800",
-      "hash" : "5bd98b924f90f2f2513ffce33e5b34a558e815a5",
-      "title" : "fish.spec: drop obsolete %clean section"
+      "date" : "2026-09-19 11:07:03 +0200",
+      "hash" : "5adb624513e693c8c4435ed5fc36fe1c80c7e955",
+      "title" : "completions: add upstream completion for hexyl"
     }
   },
   "type" : "branch",
