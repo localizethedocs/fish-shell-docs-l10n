@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/prompt_login.rst:4
+msgid "prompt_login - describe the login suitable for prompt"
+msgstr ""
+
+#: ../../../cmds/prompt_login.rst:7
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/prompt_login.rst:9
+msgid "prompt_login"
+msgstr ""
+
+#: ../../../cmds/prompt_login.rst:14
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/prompt_login.rst:16
+msgid ""
+"``prompt_login`` is a function to describe the current login. It will show "
+"the user, the host and also whether the shell is running in a chroot "
+"(currently Debian's ``debian_chroot`` file is supported)."
+msgstr ""
+
+#: ../../../cmds/prompt_login.rst:19
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../cmds/prompt_login.rst:22
+msgid ""
+"function fish_prompt\n"
+"    echo -n (prompt_login) (prompt_pwd) '$ '\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/prompt_login.rst:28
+msgid ""
+">_ prompt_login\n"
+"root@bananablaster"
+msgstr ""

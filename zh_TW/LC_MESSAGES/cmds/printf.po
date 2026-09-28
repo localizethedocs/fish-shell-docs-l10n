@@ -1,0 +1,272 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/printf.rst:4
+msgid "printf - display text according to a format string"
+msgstr ""
+
+#: ../../../cmds/printf.rst:7
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/printf.rst:9
+msgid "printf FORMAT [ARGUMENT ...]"
+msgstr ""
+
+#: ../../../cmds/printf.rst:14
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/printf.rst:18
+msgid ""
+"NOTE: This page documents the fish builtin ``printf``. To see the "
+"documentation on the ``printf`` command you might have, use ``command man "
+"printf``."
+msgstr ""
+
+#: ../../../cmds/printf.rst:22
+msgid ""
+"``printf`` uses the format string *FORMAT* to print the *ARGUMENT* "
+"arguments. This means that it takes format specifiers in the format string "
+"and replaces each with an argument."
+msgstr ""
+
+#: ../../../cmds/printf.rst:24
+msgid ""
+"The *FORMAT* argument is re-used as many times as necessary to convert all "
+"of the given arguments. So ``printf %s\\n flounder catfish clownfish shark`` "
+"will print four lines."
+msgstr ""
+
+#: ../../../cmds/printf.rst:26
+msgid ""
+"Unlike :doc:`echo <echo>`, ``printf`` does not append a new line unless it "
+"is specified as part of the string."
+msgstr ""
+
+#: ../../../cmds/printf.rst:28
+msgid ""
+"It doesn't support any options, so there is no need for a ``--`` separator, "
+"which makes it easier to use for arbitrary input than ``echo``. [#]_"
+msgstr ""
+
+#: ../../../cmds/printf.rst:31
+msgid "Format Specifiers"
+msgstr ""
+
+#: ../../../cmds/printf.rst:32
+msgid ""
+"Valid format specifiers are taken from the C library function ``printf(3)``:"
+msgstr ""
+
+#: ../../../cmds/printf.rst:34
+msgid ""
+"``%d`` or ``%i``: Argument will be used as decimal integer (signed or "
+"unsigned)"
+msgstr ""
+
+#: ../../../cmds/printf.rst:36
+msgid "``%o``: An octal unsigned integer"
+msgstr ""
+
+#: ../../../cmds/printf.rst:38
+msgid ""
+"``%u``: An unsigned decimal integer - this means negative numbers will wrap "
+"around"
+msgstr ""
+
+#: ../../../cmds/printf.rst:40
+msgid "``%x`` or ``%X``: An unsigned hexadecimal integer"
+msgstr ""
+
+#: ../../../cmds/printf.rst:42
+msgid ""
+"``%f``, ``%g`` or ``%G``: A floating-point number. ``%f`` defaults to 6 "
+"places after the decimal point (which is locale-dependent - e.g. in de_DE it "
+"will be a ``,``). ``%g`` and ``%G`` will trim trailing zeroes and switch to "
+"scientific notation (like ``%e``) if the numbers get small or large enough."
+msgstr ""
+
+#: ../../../cmds/printf.rst:44
+msgid ""
+"``%e`` or ``%E``: A floating-point number in scientific (XXXeYY) notation"
+msgstr ""
+
+#: ../../../cmds/printf.rst:46
+msgid "``%s``: A string"
+msgstr ""
+
+#: ../../../cmds/printf.rst:48
+msgid ""
+"``%b``: As a string, interpreting backslash escapes, except that octal "
+"escapes are of the form \\0 or \\0ooo."
+msgstr ""
+
+#: ../../../cmds/printf.rst:50
+msgid "``%%`` signifies a literal \"%\"."
+msgstr ""
+
+#: ../../../cmds/printf.rst:52
+msgid ""
+"Conversion can fail, e.g. \"102.234\" can't losslessly convert to an "
+"integer, causing printf to print an error. If you are okay with losing "
+"information, silence errors with ``2>/dev/null``."
+msgstr ""
+
+#: ../../../cmds/printf.rst:54
+msgid ""
+"A number between the ``%`` and the format letter specifies the width. The "
+"result will be left-padded with spaces."
+msgstr ""
+
+#: ../../../cmds/printf.rst:57
+msgid "Backslash Escapes"
+msgstr ""
+
+#: ../../../cmds/printf.rst:58
+msgid "printf also knows a number of backslash escapes:"
+msgstr ""
+
+#: ../../../cmds/printf.rst:60
+msgid "``\\\"`` double quote"
+msgstr ""
+
+#: ../../../cmds/printf.rst:61
+msgid "``\\\\`` backslash"
+msgstr ""
+
+#: ../../../cmds/printf.rst:62
+msgid "``\\a`` alert (bell)"
+msgstr ""
+
+#: ../../../cmds/printf.rst:63
+msgid "``\\b`` backspace"
+msgstr ""
+
+#: ../../../cmds/printf.rst:64
+msgid "``\\c`` produce no further output"
+msgstr ""
+
+#: ../../../cmds/printf.rst:65
+msgid "``\\e`` escape"
+msgstr ""
+
+#: ../../../cmds/printf.rst:66
+msgid "``\\f`` form feed"
+msgstr ""
+
+#: ../../../cmds/printf.rst:67
+msgid "``\\n`` new line"
+msgstr ""
+
+#: ../../../cmds/printf.rst:68
+msgid "``\\r`` carriage return"
+msgstr ""
+
+#: ../../../cmds/printf.rst:69
+msgid "``\\t`` horizontal tab"
+msgstr ""
+
+#: ../../../cmds/printf.rst:70
+msgid "``\\v`` vertical tab"
+msgstr ""
+
+#: ../../../cmds/printf.rst:71
+msgid "``\\ooo`` octal number (ooo is 1 to 3 digits)"
+msgstr ""
+
+#: ../../../cmds/printf.rst:72
+msgid "``\\xhh`` hexadecimal number (hhh is 1 to 2 digits)"
+msgstr ""
+
+#: ../../../cmds/printf.rst:73
+msgid "``\\uhhhh`` 16-bit Unicode character (hhhh is 4 digits)"
+msgstr ""
+
+#: ../../../cmds/printf.rst:74
+msgid "``\\Uhhhhhhhh`` 32-bit Unicode character (hhhhhhhh is 8 digits)"
+msgstr ""
+
+#: ../../../cmds/printf.rst:77
+msgid "Errors and Return Status"
+msgstr ""
+
+#: ../../../cmds/printf.rst:78
+msgid ""
+"If the given argument doesn't work for the given format (like when you try "
+"to convert a number like 3.141592 to an integer), printf prints an error, to "
+"stderr. printf will then also return non-zero, but will still try to print "
+"as much as it can."
+msgstr ""
+
+#: ../../../cmds/printf.rst:80
+msgid ""
+"It will also return non-zero if no argument at all was given, in which case "
+"it will print nothing."
+msgstr ""
+
+#: ../../../cmds/printf.rst:82
+msgid ""
+"This printf has been imported from the printf in GNU Coreutils version 6.9. "
+"If you would like to use a newer version of printf, for example the one "
+"shipped with your OS, try ``command printf``."
+msgstr ""
+
+#: ../../../cmds/printf.rst:85
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/printf.rst:89
+msgid "printf '%s\\t%s\\n' flounder fish"
+msgstr ""
+
+#: ../../../cmds/printf.rst:91
+msgid ""
+"Will print \"flounder    fish\" (separated with a tab character), followed "
+"by a newline character. This is useful for writing completions, as fish "
+"expects completion scripts to output the option followed by the description, "
+"separated with a tab character."
+msgstr ""
+
+#: ../../../cmds/printf.rst:95
+msgid "printf '%s: %d' \"Number of bananas in my pocket\" 42"
+msgstr ""
+
+#: ../../../cmds/printf.rst:97
+msgid "Will print \"Number of bananas in my pocket: 42\", `without` a newline."
+msgstr ""
+
+#: ../../../cmds/printf.rst:100
+msgid "See Also"
+msgstr "另請參見"
+
+#: ../../../cmds/printf.rst:102
+msgid "the :doc:`echo <echo>` command, for simpler output"
+msgstr ""
+
+#: ../../../cmds/printf.rst:105
+msgid "Footnotes"
+msgstr ""
+
+#: ../../../cmds/printf.rst:106
+msgid ""
+"In fact, while fish's ``echo`` supports ``--``, POSIX forbids it, so other "
+"implementations can't be used if the input contains anything starting with "
+"``-``."
+msgstr ""
