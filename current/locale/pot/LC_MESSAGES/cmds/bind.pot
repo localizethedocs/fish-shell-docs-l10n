@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"POT-Creation-Date: 2026-09-28 17:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1162,7 +1162,7 @@ msgid "``transpose-chars``"
 msgstr ""
 
 #: ../../../cmds/bind.rst:418
-msgid "transpose two characters to the left of the cursor"
+msgid "swap the current character with the previous one"
 msgstr ""
 
 #: ../../../cmds/bind.rst:420
@@ -1170,7 +1170,7 @@ msgid "``transpose-words``"
 msgstr ""
 
 #: ../../../cmds/bind.rst:421
-msgid "transpose two words to the left of the cursor"
+msgid "swap the current word with the previous one"
 msgstr ""
 
 #: ../../../cmds/bind.rst:423

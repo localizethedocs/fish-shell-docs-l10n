@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 15:22+0000\n"
+"POT-Creation-Date: 2026-09-28 17:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -714,7 +714,7 @@ msgid ""
 "of this is shortened to not make the tab too wide."
 msgstr ""
 
-#: ../../../interactive.rst:287 ../../../interactive.rst:691
+#: ../../../interactive.rst:287 ../../../interactive.rst:695
 msgid "Examples:"
 msgstr ""
 
@@ -1194,11 +1194,11 @@ msgstr ""
 msgid "Command mode is also known as normal mode."
 msgstr ""
 
-#: ../../../interactive.rst:490 ../../../interactive.rst:556
+#: ../../../interactive.rst:490 ../../../interactive.rst:560
 msgid ":kbd:`h` moves the cursor left."
 msgstr ""
 
-#: ../../../interactive.rst:492 ../../../interactive.rst:558
+#: ../../../interactive.rst:492 ../../../interactive.rst:562
 msgid ":kbd:`l` moves the cursor right."
 msgstr ""
 
@@ -1271,18 +1271,30 @@ msgid ""
 msgstr ""
 
 #: ../../../interactive.rst:516
-msgid ":kbd:`p` pastes text from the :ref:`killring`."
+msgid ""
+":kbd:`x` deletes the character under the cursor and moves it to the :ref:"
+"`killring`."
 msgstr ""
 
 #: ../../../interactive.rst:518
-msgid ":kbd:`u` undoes the most recent edit of the command line."
+msgid ""
+":kbd:`s` deletes the character under the cursor, moves it to the :ref:"
+"`killring`, and enters :ref:`insert mode <vi-mode-insert>`."
 msgstr ""
 
 #: ../../../interactive.rst:520
-msgid ":kbd:`ctrl-r` redoes the most recent edit."
+msgid ":kbd:`p` pastes text from the :ref:`killring`."
 msgstr ""
 
 #: ../../../interactive.rst:522
+msgid ":kbd:`u` undoes the most recent edit of the command line."
+msgstr ""
+
+#: ../../../interactive.rst:524
+msgid ":kbd:`ctrl-r` redoes the most recent edit."
+msgstr ""
+
+#: ../../../interactive.rst:526
 msgid ""
 ":kbd:`[` and :kbd:`]` search the command history for the previous/next token "
 "containing the token under the cursor before the search was started. See "
@@ -1290,7 +1302,7 @@ msgid ""
 "searching."
 msgstr ""
 
-#: ../../../interactive.rst:524
+#: ../../../interactive.rst:528
 msgid ""
 ":kbd:`/` opens the history in a pager. This will show history entries "
 "matching the search, a few at a time. Pressing it again will search older "
@@ -1298,192 +1310,192 @@ msgid ""
 "go to newer entries. The search bar will always be selected."
 msgstr ""
 
-#: ../../../interactive.rst:526
+#: ../../../interactive.rst:530
 msgid ":kbd:`backspace` moves the cursor left."
 msgstr ""
 
-#: ../../../interactive.rst:528
+#: ../../../interactive.rst:532
 msgid ""
 ":kbd:`g,g` / :kbd:`G` moves the cursor to the beginning/end of the "
 "commandline, respectively."
 msgstr ""
 
-#: ../../../interactive.rst:530
+#: ../../../interactive.rst:534
 msgid ""
 ":kbd:`~` toggles the case (upper/lower) of the character and moves to the "
 "next character."
 msgstr ""
 
-#: ../../../interactive.rst:532
+#: ../../../interactive.rst:536
 msgid ":kbd:`g,u` lowercases to the end of the word."
 msgstr ""
 
-#: ../../../interactive.rst:534
+#: ../../../interactive.rst:538
 msgid ":kbd:`g,U` uppercases to the end of the word."
 msgstr ""
 
-#: ../../../interactive.rst:536
+#: ../../../interactive.rst:540
 msgid ":kbd:`:,q` exits fish."
 msgstr ""
 
-#: ../../../interactive.rst:541
+#: ../../../interactive.rst:545
 msgid "Insert mode"
 msgstr ""
 
-#: ../../../interactive.rst:543
+#: ../../../interactive.rst:547
 msgid ":kbd:`escape` enters :ref:`command mode <vi-mode-command>`."
 msgstr ""
 
-#: ../../../interactive.rst:545
+#: ../../../interactive.rst:549
 msgid ":kbd:`backspace` removes one character to the left."
 msgstr ""
 
-#: ../../../interactive.rst:547
+#: ../../../interactive.rst:551
 msgid ":kbd:`ctrl-n` accepts the autosuggestion."
 msgstr ""
 
-#: ../../../interactive.rst:552
+#: ../../../interactive.rst:556
 msgid "Visual mode"
 msgstr ""
 
-#: ../../../interactive.rst:554
+#: ../../../interactive.rst:558
 msgid ""
 ":kbd:`left (``←``) and :kbd:`right`(``→``) extend the selection backward/"
 "forward by one character."
 msgstr ""
 
-#: ../../../interactive.rst:560
+#: ../../../interactive.rst:564
 msgid ":kbd:`k` moves the cursor up."
 msgstr ""
 
-#: ../../../interactive.rst:562
+#: ../../../interactive.rst:566
 msgid ":kbd:`j` moves the cursor down."
 msgstr ""
 
-#: ../../../interactive.rst:564
+#: ../../../interactive.rst:568
 msgid ""
 ":kbd:`b` and :kbd:`w` extend the selection backward/forward by one word."
 msgstr ""
 
-#: ../../../interactive.rst:566
+#: ../../../interactive.rst:570
 msgid ""
 ":kbd:`d` and :kbd:`x` move the selection to the :ref:`killring` and enter :"
 "ref:`command mode <vi-mode-command>`."
 msgstr ""
 
-#: ../../../interactive.rst:568
+#: ../../../interactive.rst:572
 msgid ""
 ":kbd:`escape` and :kbd:`ctrl-c` enter :ref:`command mode <vi-mode-command>`."
 msgstr ""
 
-#: ../../../interactive.rst:570
+#: ../../../interactive.rst:574
 msgid ":kbd:`c` and :kbd:`s` remove the selection and switch to insert mode."
 msgstr ""
 
-#: ../../../interactive.rst:572
+#: ../../../interactive.rst:576
 msgid ""
 ":kbd:`X` moves the entire line to the :ref:`killring`, and enters :ref:"
 "`command mode <vi-mode-command>`."
 msgstr ""
 
-#: ../../../interactive.rst:574
+#: ../../../interactive.rst:578
 msgid ""
 ":kbd:`y` copies the selection to the :ref:`killring`, and enters :ref:"
 "`command mode <vi-mode-command>`."
 msgstr ""
 
-#: ../../../interactive.rst:576
+#: ../../../interactive.rst:580
 msgid ""
 ":kbd:`~` toggles the case (upper/lower) on the selection, and enters :ref:"
 "`command mode <vi-mode-command>`."
 msgstr ""
 
-#: ../../../interactive.rst:578
+#: ../../../interactive.rst:582
 msgid ""
 ":kbd:`g,u` lowercases the selection, and enters :ref:`command mode <vi-mode-"
 "command>`."
 msgstr ""
 
-#: ../../../interactive.rst:580
+#: ../../../interactive.rst:584
 msgid ""
 ":kbd:`g,U` uppercases the selection, and enters :ref:`command mode <vi-mode-"
 "command>`."
 msgstr ""
 
-#: ../../../interactive.rst:582
+#: ../../../interactive.rst:586
 msgid ""
 ":kbd:`\",*,y` copies the selection to the clipboard, and enters :ref:"
 "`command mode <vi-mode-command>`."
 msgstr ""
 
-#: ../../../interactive.rst:585
+#: ../../../interactive.rst:589
 msgid "Custom bindings"
 msgstr ""
 
-#: ../../../interactive.rst:587
+#: ../../../interactive.rst:591
 msgid ""
 "In addition to the standard bindings listed here, you can also define your "
 "own with :doc:`bind <cmds/bind>`::"
 msgstr ""
 
-#: ../../../interactive.rst:589
+#: ../../../interactive.rst:593
 msgid ""
 "# Prints ``^C`` and a new prompt\n"
 "bind ctrl-c cancel-commandline"
 msgstr ""
 
-#: ../../../interactive.rst:592
+#: ../../../interactive.rst:596
 msgid ""
 "Put ``bind`` statements into :ref:`config.fish <configuration>` or a "
 "function called ``fish_user_key_bindings``."
 msgstr ""
 
-#: ../../../interactive.rst:594
+#: ../../../interactive.rst:598
 msgid ""
 "If you change your mind on a binding and want to go back to fish's default, "
 "you can erase it again::"
 msgstr ""
 
-#: ../../../interactive.rst:596
+#: ../../../interactive.rst:600
 msgid "bind --erase ctrl-c"
 msgstr ""
 
-#: ../../../interactive.rst:598
+#: ../../../interactive.rst:602
 msgid ""
 "fish remembers its preset bindings and so it will take effect again. This "
 "saves you from having to remember what it was before and add it again "
 "yourself."
 msgstr ""
 
-#: ../../../interactive.rst:600
+#: ../../../interactive.rst:604
 msgid ""
 "If you use :ref:`vi bindings <vi-mode>`, note that ``bind`` will by default "
 "bind keys in :ref:`command mode <vi-mode-command>`. To bind something in :"
 "ref:`insert mode <vi-mode-insert>`::"
 msgstr ""
 
-#: ../../../interactive.rst:602
+#: ../../../interactive.rst:606
 msgid "bind --mode insert ctrl-c 'commandline -r \"\"'"
 msgstr ""
 
-#: ../../../interactive.rst:607
+#: ../../../interactive.rst:611
 msgid "Key sequences"
 msgstr ""
 
-#: ../../../interactive.rst:609
+#: ../../../interactive.rst:613
 msgid ""
 "To find out the name of a key, you can use :doc:`fish_key_reader <cmds/"
 "fish_key_reader>`."
 msgstr ""
 
-#: ../../../interactive.rst:613
+#: ../../../interactive.rst:617
 msgid ""
 "> fish_key_reader # Press Alt + right-arrow\n"
 "Press a key:\n"
 "bind alt-right 'do something'"
 msgstr ""
 
-#: ../../../interactive.rst:617
+#: ../../../interactive.rst:621
 msgid ""
 "Note that the historical way the terminal encodes keys and sends them to the "
 "application (fish, in this case) makes a lot of combinations "
@@ -1492,7 +1504,7 @@ msgid ""
 "pressed."
 msgstr ""
 
-#: ../../../interactive.rst:619
+#: ../../../interactive.rst:623
 msgid ""
 "There are more powerful encoding schemes, and fish tries to tell the "
 "terminal to turn them on, but there are still many terminals that do not "
@@ -1502,7 +1514,7 @@ msgid ""
 "these schemes will become more widespread, making input more flexible."
 msgstr ""
 
-#: ../../../interactive.rst:621
+#: ../../../interactive.rst:625
 msgid ""
 "In the historical scheme, :kbd:`escape` is the same thing as :kbd:`alt` in a "
 "terminal. To distinguish between pressing :kbd:`escape` and then another "
@@ -1511,24 +1523,24 @@ msgid ""
 "is configurable via the :envvar:`fish_escape_delay_ms` variable."
 msgstr ""
 
-#: ../../../interactive.rst:623
+#: ../../../interactive.rst:627
 msgid ""
 "If you want to be able to press :kbd:`escape` and then a character and have "
 "it count as :kbd:`alt`\\ +\\ that character, set it to a higher value, e.g.::"
 msgstr ""
 
-#: ../../../interactive.rst:625
+#: ../../../interactive.rst:629
 msgid "set -g fish_escape_delay_ms 100"
 msgstr ""
 
-#: ../../../interactive.rst:627
+#: ../../../interactive.rst:631
 msgid ""
 "Similarly, to disambiguate *other* keypresses where you've bound a "
 "subsequence and a longer sequence, fish has :envvar:"
 "`fish_sequence_key_delay_ms`::"
 msgstr ""
 
-#: ../../../interactive.rst:629
+#: ../../../interactive.rst:633
 msgid ""
 "# This binds the sequence j,k to switch to normal mode in vi mode.\n"
 "# If you kept it like that, every time you press \"j\",\n"
@@ -1540,11 +1552,11 @@ msgid ""
 "set -g fish_sequence_key_delay_ms 200"
 msgstr ""
 
-#: ../../../interactive.rst:641
+#: ../../../interactive.rst:645
 msgid "Copy and paste (Kill Ring)"
 msgstr ""
 
-#: ../../../interactive.rst:643
+#: ../../../interactive.rst:647
 msgid ""
 "fish uses an Emacs-style kill ring for copy and paste functionality. For "
 "example, use :kbd:`ctrl-k` (`kill-line`) to cut from the current cursor "
@@ -1555,7 +1567,7 @@ msgid ""
 "(``yank-pop``) to rotate to the previous kill."
 msgstr ""
 
-#: ../../../interactive.rst:645
+#: ../../../interactive.rst:649
 msgid ""
 "Copy and paste from outside are also supported, both via the :kbd:`ctrl-"
 "x` / :kbd:`ctrl-v` bindings (the ``fish_clipboard_copy`` and "
@@ -1567,7 +1579,7 @@ msgid ""
 "Kill ring entries are stored in ``fish_killring`` variable."
 msgstr ""
 
-#: ../../../interactive.rst:649
+#: ../../../interactive.rst:653
 msgid ""
 "The commands ``begin-selection`` and ``end-selection`` (unbound by default; "
 "used for selection in vi visual mode) control text selection together with "
@@ -1579,52 +1591,52 @@ msgid ""
 "``underscore`` cursor shapes you may prefer ``inclusive``."
 msgstr ""
 
-#: ../../../interactive.rst:652
+#: ../../../interactive.rst:656
 msgid ""
 "These rely on external tools. Currently xsel, xclip, wl-copy/wl-paste and "
 "pbcopy/pbpaste are supported."
 msgstr ""
 
-#: ../../../interactive.rst:657
+#: ../../../interactive.rst:661
 msgid "Multiline editing"
 msgstr ""
 
-#: ../../../interactive.rst:659
+#: ../../../interactive.rst:663
 msgid ""
 "The fish commandline editor can be used to work on commands that are several "
 "lines long. There are three ways to make a command span more than a single "
 "line:"
 msgstr ""
 
-#: ../../../interactive.rst:661
+#: ../../../interactive.rst:665
 msgid ""
 "Pressing the :kbd:`enter` key while a block of commands is unclosed, such as "
 "when one or more block commands such as ``for``, ``begin`` or ``if`` do not "
 "have a corresponding :doc:`end <cmds/end>` command."
 msgstr ""
 
-#: ../../../interactive.rst:663
+#: ../../../interactive.rst:667
 msgid "Pressing :kbd:`alt-enter` instead of pressing the :kbd:`enter` key."
 msgstr ""
 
-#: ../../../interactive.rst:665
+#: ../../../interactive.rst:669
 msgid ""
 "By inserting a backslash (``\\``) character before pressing the :kbd:`enter` "
 "key, escaping the newline."
 msgstr ""
 
-#: ../../../interactive.rst:667
+#: ../../../interactive.rst:671
 msgid ""
 "The fish commandline editor works exactly the same in single line mode and "
 "in multiline mode. To move between lines use the left and right arrow keys "
 "and other such keyboard shortcuts."
 msgstr ""
 
-#: ../../../interactive.rst:672
+#: ../../../interactive.rst:676
 msgid "Searchable command history"
 msgstr ""
 
-#: ../../../interactive.rst:674
+#: ../../../interactive.rst:678
 msgid ""
 "After a command has been executed, it is remembered in the history list. Any "
 "duplicate history items are automatically removed. By pressing the up and "
@@ -1633,7 +1645,7 @@ msgid ""
 "commands containing the string entered into the command line are shown."
 msgstr ""
 
-#: ../../../interactive.rst:676
+#: ../../../interactive.rst:680
 msgid ""
 "By pressing :kbd:`alt-up` (``↑``) and :kbd:`alt-down` (``↓``), a history "
 "search is also performed, but instead of searching for a complete "
@@ -1642,7 +1654,7 @@ msgid ""
 "that under the cursor."
 msgstr ""
 
-#: ../../../interactive.rst:678
+#: ../../../interactive.rst:682
 msgid ""
 "For more complicated searches, you can press :kbd:`ctrl-r` to open a pager "
 "that allows you to search the history. It shows a limited number of entries "
@@ -1651,14 +1663,14 @@ msgid ""
 "refine your search."
 msgstr ""
 
-#: ../../../interactive.rst:680
+#: ../../../interactive.rst:684
 msgid ""
 "History searches are case-insensitive unless the search string contains an "
 "uppercase character. You can stop a search to edit your search string by "
 "pressing :kbd:`escape` or :kbd:`pagedown`."
 msgstr ""
 
-#: ../../../interactive.rst:682
+#: ../../../interactive.rst:686
 msgid ""
 "Prefixing the commandline with a space will prevent the entire line from "
 "being stored in the history. It will still be available for recall until the "
@@ -1666,7 +1678,7 @@ msgid ""
 "you to fix misspellings and such."
 msgstr ""
 
-#: ../../../interactive.rst:684
+#: ../../../interactive.rst:688
 msgid ""
 "The command history is stored in the file ``~/.local/share/fish/"
 "fish_history`` (or ``$XDG_DATA_HOME/fish/fish_history`` if that variable is "
@@ -1676,39 +1688,39 @@ msgid ""
 "shell is running."
 msgstr ""
 
-#: ../../../interactive.rst:689
+#: ../../../interactive.rst:693
 msgid "See the :doc:`history <cmds/history>` command for other manipulations."
 msgstr ""
 
-#: ../../../interactive.rst:693
+#: ../../../interactive.rst:697
 msgid ""
 "To search for previous entries containing the word 'make', type ``make`` in "
 "the console and press the up key."
 msgstr ""
 
-#: ../../../interactive.rst:695
+#: ../../../interactive.rst:699
 msgid ""
 "If the commandline reads ``cd m``, place the cursor over the ``m`` character "
 "and press :kbd:`alt-up` (``↑``) to search for previously typed words "
 "containing 'm'."
 msgstr ""
 
-#: ../../../interactive.rst:697
+#: ../../../interactive.rst:701
 msgid ""
 "Or another binding that triggers the ``history-pager`` input function. See :"
 "doc:`bind <cmds/bind>` for a list."
 msgstr ""
 
-#: ../../../interactive.rst:698
+#: ../../../interactive.rst:702
 msgid ""
 "Or another binding that triggers the ``pager-toggle-search`` input function."
 msgstr ""
 
-#: ../../../interactive.rst:703
+#: ../../../interactive.rst:707
 msgid "Private mode"
 msgstr ""
 
-#: ../../../interactive.rst:705
+#: ../../../interactive.rst:709
 msgid ""
 "fish has a private mode, in which command history will not be written to the "
 "history file on disk. To enable it, either set ``$fish_private_mode`` to a "
@@ -1716,7 +1728,7 @@ msgid ""
 "short)."
 msgstr ""
 
-#: ../../../interactive.rst:707
+#: ../../../interactive.rst:711
 msgid ""
 "If you launch fish with ``-P``, it both hides old history and prevents "
 "writing history to disk. This is useful to avoid leaking personal "
@@ -1724,87 +1736,87 @@ msgid ""
 "information."
 msgstr ""
 
-#: ../../../interactive.rst:709
+#: ../../../interactive.rst:713
 msgid ""
 "You can query the variable ``fish_private_mode`` (``if test -n "
 "\"$fish_private_mode\" ...``) if you would like to respect the user's wish "
 "for privacy and alter the behavior of your own fish scripts."
 msgstr ""
 
-#: ../../../interactive.rst:712
+#: ../../../interactive.rst:716
 msgid "Navigating directories"
 msgstr ""
 
-#: ../../../interactive.rst:716
+#: ../../../interactive.rst:720
 msgid ""
 "Navigating directories is usually done with the :doc:`cd <cmds/cd>` command, "
 "but fish offers some advanced features as well."
 msgstr ""
 
-#: ../../../interactive.rst:718
+#: ../../../interactive.rst:722
 msgid ""
 "The current working directory can be displayed with the :doc:`pwd <cmds/"
 "pwd>` command, or the ``$PWD`` :ref:`special variable <variables-special>`. "
 "Usually your prompt already does this."
 msgstr ""
 
-#: ../../../interactive.rst:721
+#: ../../../interactive.rst:725
 msgid "Directory history"
 msgstr ""
 
-#: ../../../interactive.rst:723
+#: ../../../interactive.rst:727
 msgid ""
 "fish automatically keeps a trail of the recent visited directories with :doc:"
 "`cd <cmds/cd>` by storing this history in the ``dirprev`` and ``dirnext`` "
 "variables."
 msgstr ""
 
-#: ../../../interactive.rst:725
+#: ../../../interactive.rst:729
 msgid "Several commands are provided to interact with this directory history:"
 msgstr ""
 
-#: ../../../interactive.rst:727
+#: ../../../interactive.rst:731
 msgid ":doc:`dirh <cmds/dirh>` prints the history"
 msgstr ""
 
-#: ../../../interactive.rst:728
+#: ../../../interactive.rst:732
 msgid ":doc:`cdh <cmds/cdh>` displays a prompt to quickly navigate the history"
 msgstr ""
 
-#: ../../../interactive.rst:729
+#: ../../../interactive.rst:733
 msgid ""
 ":doc:`prevd <cmds/prevd>` moves backward through the history. It is bound "
 "to :kbd:`alt-left` (``←``)"
 msgstr ""
 
-#: ../../../interactive.rst:730
+#: ../../../interactive.rst:734
 msgid ""
 ":doc:`nextd <cmds/nextd>` moves forward through the history. It is bound to :"
 "kbd:`alt-right` (``→``)"
 msgstr ""
 
-#: ../../../interactive.rst:735
+#: ../../../interactive.rst:739
 msgid "Directory stack"
 msgstr ""
 
-#: ../../../interactive.rst:737
+#: ../../../interactive.rst:741
 msgid ""
 "Another set of commands, usually also available in other shells like bash, "
 "deal with the directory stack. Stack handling is not automatic and needs "
 "explicit calls of the following commands:"
 msgstr ""
 
-#: ../../../interactive.rst:739
+#: ../../../interactive.rst:743
 msgid ":doc:`dirs <cmds/dirs>` prints the stack"
 msgstr ""
 
-#: ../../../interactive.rst:740
+#: ../../../interactive.rst:744
 msgid ""
 ":doc:`pushd <cmds/pushd>` adds a directory on top of the stack and makes it "
 "the current working directory"
 msgstr ""
 
-#: ../../../interactive.rst:741
+#: ../../../interactive.rst:745
 msgid ""
 ":doc:`popd <cmds/popd>` removes the directory on top of the stack and "
 "changes the current working directory"

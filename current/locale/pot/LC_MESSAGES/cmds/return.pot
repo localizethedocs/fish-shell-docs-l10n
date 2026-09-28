@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"POT-Creation-Date: 2026-09-28 17:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,13 +34,10 @@ msgid "Description"
 msgstr ""
 
 #: ../../../cmds/return.rst:14
-msgid ""
-":program:`return` halts a currently running function. The exit status is set "
-"to *N* if it is given. If :program:`return` is invoked outside of a function "
-"or dot script it is equivalent to exit."
+msgid ":program:`return` halts a currently running function."
 msgstr ""
 
-#: ../../../cmds/return.rst:18
+#: ../../../cmds/return.rst:16
 msgid ""
 "It is often added inside of a conditional block such as an :doc:`if <if>` "
 "statement or a :doc:`switch <switch>` statement to conditionally stop the "
@@ -48,26 +45,40 @@ msgid ""
 "the exit status of a function."
 msgstr ""
 
-#: ../../../cmds/return.rst:20
+#: ../../../cmds/return.rst:18
 msgid ""
-"If at the top level of a script, it exits with the given status, like :doc:"
-"`exit <exit>`. If at the top level in an interactive session, it will set :"
-"envvar:`status`, but not exit the shell."
+"If invoked outside of a function by a non-interactive shell, or inside :doc:"
+"`source <source>`, it is equivalent to :doc:`exit <exit>`, meaning it it "
+"will stop execution of the current script."
 msgstr ""
 
-#: ../../../cmds/return.rst:23
+#: ../../../cmds/return.rst:20
+msgid ""
+"If invoked outside of a function by an interactive shell shell, execution "
+"will continue as normal."
+msgstr ""
+
+#: ../../../cmds/return.rst:22
 msgid "The **-h** or **--help** option displays help about using this command."
 msgstr ""
 
-#: ../../../cmds/return.rst:26
+#: ../../../cmds/return.rst:25
+msgid "Exit status"
+msgstr ""
+
+#: ../../../cmds/return.rst:27
+msgid "*N* if given, the previous exit status (:envvar:`status`) otherwise."
+msgstr ""
+
+#: ../../../cmds/return.rst:30
 msgid "Example"
 msgstr ""
 
-#: ../../../cmds/return.rst:28
+#: ../../../cmds/return.rst:32
 msgid "An implementation of the false command as a fish function: ::"
 msgstr ""
 
-#: ../../../cmds/return.rst:31
+#: ../../../cmds/return.rst:35
 msgid ""
 "function false\n"
 "    return 1\n"
