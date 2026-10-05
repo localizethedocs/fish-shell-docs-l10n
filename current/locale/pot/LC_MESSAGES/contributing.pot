@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 15:22+0000\n"
+"POT-Creation-Date: 2026-10-05 17:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,78 +43,79 @@ msgid ""
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:16
-msgid "Mailing List"
+msgid "GitHub"
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:18
 msgid ""
-"Send patches to the public mailing list: mailto:~krobelus/fish-shell@lists."
-"sr.ht. Archives are available at https://lists.sr.ht/~krobelus/fish-shell/."
-msgstr ""
-
-#: ../../../../CONTRIBUTING.rst:22
-msgid "GitHub"
-msgstr ""
-
-#: ../../../../CONTRIBUTING.rst:24
-msgid ""
 "fish is available on GitHub, at https://github.com/fish-shell/fish-shell."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:26
+#: ../../../../CONTRIBUTING.rst:20
 msgid ""
 "First, you'll need an account there, and you'll need a git clone of fish. "
 "Fork it on GitHub and then run::"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:29
+#: ../../../../CONTRIBUTING.rst:23
 msgid "git clone https://github.com/<USERNAME>/fish-shell.git"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:31
+#: ../../../../CONTRIBUTING.rst:25
 msgid ""
 "This will create a copy of the fish repository in the directory fish-shell "
 "in your current working directory."
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:33
+#: ../../../../CONTRIBUTING.rst:27
 msgid ""
 "Also, for most changes you want to run the tests and so you'd get a setup to "
 "compile fish. For that, you'll require:"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:36
+#: ../../../../CONTRIBUTING.rst:30
 msgid "Rust - when in doubt, try rustup"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:37
+#: ../../../../CONTRIBUTING.rst:31
 msgid "CMake"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:38
+#: ../../../../CONTRIBUTING.rst:32
 msgid ""
 "PCRE2 (headers and libraries) - optional, this will be downloaded if missing"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:39
+#: ../../../../CONTRIBUTING.rst:33
 msgid "gettext (only the msgfmt tool) - optional, for translation support"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:40
+#: ../../../../CONTRIBUTING.rst:34
 msgid "Sphinx - optional, to build the documentation"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:42
+#: ../../../../CONTRIBUTING.rst:36
 msgid ""
 "Of course not everything is required always - if you just want to contribute "
 "something to the documentation you'll just need Sphinx, and if the change is "
 "very simple and obvious you can just send it in. Use your judgement!"
 msgstr ""
 
-#: ../../../../CONTRIBUTING.rst:45
+#: ../../../../CONTRIBUTING.rst:39
 msgid ""
 "Once you have your changes, open a pull request on https://github.com/fish-"
 "shell/fish-shell/pulls."
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:42
+msgid "Mailing List"
+msgstr ""
+
+#: ../../../../CONTRIBUTING.rst:44
+msgid ""
+"As an alternative to GitHub, send patches to the public mailing list: mailto:"
+"~krobelus/fish-shell@lists.sr.ht. Archives are available at https://lists.sr."
+"ht/~krobelus/fish-shell/."
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:48
