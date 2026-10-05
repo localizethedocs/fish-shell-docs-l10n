@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_greeting.rst:2
+msgid "fish_greeting - display a welcome message in interactive shells"
+msgstr ""
+
+#: ../../../cmds/fish_greeting.rst:5
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/fish_greeting.rst:7
+msgid "fish_greeting"
+msgstr ""
+
+#: ../../../cmds/fish_greeting.rst:13
+msgid ""
+"function fish_greeting\n"
+"    ...\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/fish_greeting.rst:19
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/fish_greeting.rst:21
+msgid ""
+"When an interactive fish starts, it executes fish_greeting and displays its "
+"output."
+msgstr ""
+
+#: ../../../cmds/fish_greeting.rst:23
+msgid ""
+"The default fish_greeting is a function that prints a variable of the same "
+"name (``$fish_greeting``), so you can also just change that if you just want "
+"to change the text."
+msgstr ""
+
+#: ../../../cmds/fish_greeting.rst:25
+msgid ""
+"If :envvar:`SHELL_WELCOME` is set, it is displayed after the greeting. This "
+"is a standard environment variable that may be set by tools like systemd's "
+"``run0`` to display session information."
+msgstr ""
+
+#: ../../../cmds/fish_greeting.rst:27
+msgid ""
+"While you could also just put ``echo`` calls into config.fish, fish_greeting "
+"takes care of only being used in interactive shells, so it won't be used e."
+"g. with ``scp`` (which executes a shell), which prevents some errors."
+msgstr ""
+
+#: ../../../cmds/fish_greeting.rst:30
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/fish_greeting.rst:32
+msgid "To just empty the text, with the default greeting function::"
+msgstr ""
+
+#: ../../../cmds/fish_greeting.rst:34
+msgid "set -U fish_greeting"
+msgstr "set -U fish_greeting"
+
+#: ../../../cmds/fish_greeting.rst:36
+msgid "or ``set -g fish_greeting`` in :ref:`config.fish <configuration>`."
+msgstr ""
+
+#: ../../../cmds/fish_greeting.rst:38
+msgid "A simple greeting:"
+msgstr ""
+
+#: ../../../cmds/fish_greeting.rst:42
+msgid ""
+"function fish_greeting\n"
+"    echo Hello friend!\n"
+"    echo The time is (set_color yellow)(date +%T)(set_color --reset) and "
+"this machine is called $hostname\n"
+"end"
+msgstr ""

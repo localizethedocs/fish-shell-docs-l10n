@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/string-shorten.rst:2
+msgid "string-shorten - shorten strings to a width, with an ellipsis"
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:9
+msgid ""
+"string shorten [(-c | --char) CHARS] [(-m | --max) INTEGER]\n"
+"               [-N | --no-newline] [-l | --left] [-q | --quiet] [STRING ...]"
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:17
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:21
+msgid ""
+"``string shorten`` truncates each *STRING* to the given visible width and "
+"adds an ellipsis to indicate it. \"Visible width\" means the width of all "
+"visible characters added together, excluding escape sequences and accounting "
+"for :envvar:`fish_emoji_width` and :envvar:`fish_ambiguous_width`. It is the "
+"amount of columns in a terminal the *STRING* occupies."
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:23
+msgid ""
+"The escape sequences reflect what fish knows about, and how it computes its "
+"output. Your terminal might support more escapes, or not support escape "
+"sequences that fish knows about."
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:25
+msgid ""
+"If **-m** or **--max** is given, truncate at the given width. Otherwise, the "
+"lowest non-zero width of all input strings is used. A max of 0 means no "
+"shortening takes place, all STRINGs are printed as-is."
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:27
+msgid ""
+"If **-N** or **--no-newline** is given, only the first line (or last line "
+"with **--left**) of each STRING is used, and an ellipsis is added if it was "
+"multiline. This only works for STRINGs being given as arguments, multiple "
+"lines given on stdin will be interpreted as separate STRINGs instead."
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:29
+msgid ""
+"If **-c** or **--char** is given, add *CHAR* instead of an ellipsis. This "
+"can also be empty or more than one character."
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:31
+msgid ""
+"If **-l** or **--left** is given, remove text from the left on instead, so "
+"this prints the longest *suffix* of the string that fits. With **--no-"
+"newline**, this will take from the last line instead of the first."
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:33
+msgid ""
+"If **-q** or **--quiet** is given, ``string shorten`` only runs for the "
+"return value - if anything would be shortened, it returns 0, else 1."
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:35
+msgid ""
+"The default ellipsis is ``…``. If fish thinks your system is incapable "
+"because of your locale, it will use ``...`` instead."
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:37
+msgid "The return value is 0 if any shortening occurred, 1 otherwise."
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:42
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:48
+msgid ""
+">_ string shorten foo foobar\n"
+"# No width was given, we infer, and \"foo\" is the shortest.\n"
+"foo\n"
+"fo…\n"
+"\n"
+">_ string shorten --char=\"...\" foo foobar\n"
+"# The target width is 3 because of \"foo\",\n"
+"# and our ellipsis is 3 too, so we can't really show anything.\n"
+"# This is the default ellipsis if your locale doesn't allow \"…\".\n"
+"foo\n"
+"...\n"
+"\n"
+">_ string shorten --char=\"\" --max 4 abcdef 123456\n"
+"# Leaving the char empty makes us not add an ellipsis\n"
+"# So this truncates at 4 columns:\n"
+"abcd\n"
+"1234\n"
+"\n"
+">_ touch \"a multiline\"\\n\"file\"\n"
+">_ for file in *; string shorten -N -- $file; end\n"
+"# Shorten the multiline file so we only show one line per file:\n"
+"a multiline…\n"
+"\n"
+">_ ss -p | string shorten -m$COLUMNS -c \"\"\n"
+"# `ss` from Linux' iproute2 shows socket information, but prints extremely "
+"long lines.\n"
+"# This shortens input so it fits on the screen without overflowing lines.\n"
+"\n"
+">_ git branch | string match -rg '^\\* (.*)' | string shorten -m20\n"
+"# Take the current git branch and shorten it at 20 columns.\n"
+"# Here the branch is \"builtin-path-with-expand\"\n"
+"builtin-path-with-e…\n"
+"\n"
+">_ git branch | string match -rg '^\\* (.*)' | string shorten -m20 --left\n"
+"# Taking 20 columns from the right instead:\n"
+"…in-path-with-expand"
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:87
+msgid "See Also"
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:91
+msgid ""
+":doc:`string pad <string-pad>` does the inverse of this command, adding "
+"padding to a specific width instead."
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:93
+msgid ""
+"The :doc:`printf <printf>` command can do simple padding, for example "
+"``printf %10s\\n`` works like ``string pad -w10``."
+msgstr ""
+
+#: ../../../cmds/string-shorten.rst:95
+msgid ""
+":doc:`string length <string-length>` with the ``--visible`` option can be "
+"used to show what fish thinks the width is."
+msgstr ""
