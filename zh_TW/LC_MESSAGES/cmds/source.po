@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/source.rst:4
+msgid "source - evaluate contents of file"
+msgstr ""
+
+#: ../../../cmds/source.rst:7
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/source.rst:9
+msgid ""
+"source FILE [ARGUMENTS ...]\n"
+"SOMECOMMAND | source"
+msgstr ""
+
+#: ../../../cmds/source.rst:16
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/source.rst:18
+msgid ""
+"``source`` evaluates the commands of the specified *FILE* in the current "
+"shell as a new block of code. This is different from starting a new process "
+"to perform the commands (i.e. ``fish < FILE``) since the commands will be "
+"evaluated by the current shell, which means that changes in shell variables "
+"will affect the current shell. If additional arguments are specified after "
+"the file name, they will be inserted into the :envvar:`argv` variable. The :"
+"envvar:`argv` variable will not include the name of the sourced file."
+msgstr ""
+
+#: ../../../cmds/source.rst:20
+msgid ""
+"fish will search the working directory to resolve relative paths but will "
+"not search :envvar:`PATH` ."
+msgstr ""
+
+#: ../../../cmds/source.rst:22
+msgid ""
+"If no file is specified and stdin is not the terminal, or if the file name "
+"``-`` is used, stdin will be read."
+msgstr ""
+
+#: ../../../cmds/source.rst:24
+msgid ""
+"The exit status of ``source`` is the exit status of the last job to execute. "
+"If something goes wrong while opening or reading the file, ``source`` exits "
+"with a non-zero status."
+msgstr ""
+
+#: ../../../cmds/source.rst:26
+msgid ""
+"**.** (a single period) is an alias for the ``source`` command. The use of "
+"**.** is deprecated in favour of ``source``, and **.** will be removed in a "
+"future version of fish."
+msgstr ""
+
+#: ../../../cmds/source.rst:28
+msgid ""
+"``source`` creates a new :ref:`local scope<variables-scope>`; ``set --"
+"local`` within a sourced block will not affect variables in the enclosing "
+"scope."
+msgstr ""
+
+#: ../../../cmds/source.rst:30
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/source.rst:33
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/source.rst:39
+msgid ""
+"source ~/.config/fish/config.fish\n"
+"# Causes fish to re-read its initialization file."
+msgstr ""
+
+#: ../../../cmds/source.rst:44
+msgid "Caveats"
+msgstr ""
+
+#: ../../../cmds/source.rst:46
+msgid ""
+"In fish versions prior to 2.3.0, the :envvar:`argv` variable would have a "
+"single element (the name of the sourced file) if no arguments are present. "
+"Otherwise, it would contain arguments without the name of the sourced file. "
+"That behavior was very confusing and unlike other shells such as bash and "
+"zsh."
+msgstr ""

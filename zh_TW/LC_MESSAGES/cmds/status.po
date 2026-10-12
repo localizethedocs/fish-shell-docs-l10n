@@ -1,0 +1,274 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/status.rst:4
+msgid "status - query fish runtime information"
+msgstr ""
+
+#: ../../../cmds/status.rst:7
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/status.rst:9
+msgid ""
+"status\n"
+"status is-login\n"
+"status is-interactive\n"
+"status is-block\n"
+"status is-breakpoint\n"
+"status is-command-substitution\n"
+"status is-no-job-control\n"
+"status is-full-job-control\n"
+"status is-interactive-job-control\n"
+"status current-command\n"
+"status current-commandline\n"
+"status filename\n"
+"status basename\n"
+"status dirname\n"
+"status fish-path\n"
+"status function\n"
+"status line-number\n"
+"status stack-trace\n"
+"status job-control CONTROL_TYPE\n"
+"status features\n"
+"status test-feature FEATURE"
+msgstr ""
+
+#: ../../../cmds/status.rst:34
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/status.rst:36
+msgid ""
+"With no arguments, ``status`` displays a summary of the current login and "
+"job control status of the shell."
+msgstr ""
+
+#: ../../../cmds/status.rst:38
+msgid "The following operations (subcommands) are available:"
+msgstr ""
+
+#: ../../../cmds/status.rst:40
+msgid "**is-command-substitution**, **-c** or **--is-command-substitution**"
+msgstr ""
+
+#: ../../../cmds/status.rst:41
+msgid "Returns 0 if fish is currently executing a command substitution."
+msgstr ""
+
+#: ../../../cmds/status.rst:43
+msgid "**is-block**, **-b** or **--is-block**"
+msgstr ""
+
+#: ../../../cmds/status.rst:44
+msgid "Returns 0 if fish is currently executing a block of code."
+msgstr ""
+
+#: ../../../cmds/status.rst:46
+msgid "**is-breakpoint**"
+msgstr ""
+
+#: ../../../cmds/status.rst:47
+msgid ""
+"Returns 0 if fish is currently showing a prompt in the context of a :doc:"
+"`breakpoint <breakpoint>` command. See also the :doc:`fish_breakpoint_prompt "
+"<fish_breakpoint_prompt>` function."
+msgstr ""
+
+#: ../../../cmds/status.rst:49
+msgid "**is-interactive**, **-i** or **--is-interactive**"
+msgstr ""
+
+#: ../../../cmds/status.rst:50
+msgid "Returns 0 if fish is interactive - that is, connected to a keyboard."
+msgstr ""
+
+#: ../../../cmds/status.rst:52
+msgid "**is-login**, **-l** or **--is-login**"
+msgstr ""
+
+#: ../../../cmds/status.rst:53
+msgid ""
+"Returns 0 if fish is a login shell - that is, if fish should perform login "
+"tasks such as setting up :envvar:`PATH`."
+msgstr ""
+
+#: ../../../cmds/status.rst:55
+msgid "**is-full-job-control** or **--is-full-job-control**"
+msgstr ""
+
+#: ../../../cmds/status.rst:56
+msgid "Returns 0 if full job control is enabled."
+msgstr ""
+
+#: ../../../cmds/status.rst:58
+msgid "**is-interactive-job-control** or **--is-interactive-job-control**"
+msgstr ""
+
+#: ../../../cmds/status.rst:59
+msgid "Returns 0 if interactive job control is enabled."
+msgstr ""
+
+#: ../../../cmds/status.rst:61
+msgid "**is-no-job-control** or **--is-no-job-control**"
+msgstr ""
+
+#: ../../../cmds/status.rst:62
+msgid "Returns 0 if no job control is enabled."
+msgstr ""
+
+#: ../../../cmds/status.rst:64
+msgid "**current-command**"
+msgstr ""
+
+#: ../../../cmds/status.rst:65
+msgid ""
+"Prints the name of the currently-running function or command, like the "
+"deprecated :envvar:`_` variable."
+msgstr ""
+
+#: ../../../cmds/status.rst:67
+msgid "**current-commandline**"
+msgstr ""
+
+#: ../../../cmds/status.rst:68
+msgid ""
+"Prints the entirety of the currently-running commandline, inclusive of all "
+"jobs and operators."
+msgstr ""
+
+#: ../../../cmds/status.rst:70
+msgid "**filename**, **current-filename**, **-f** or **--current-filename**"
+msgstr ""
+
+#: ../../../cmds/status.rst:71
+msgid ""
+"Prints the filename of the currently-running script. If the current script "
+"was called via a symlink, this will return the symlink. If the current "
+"script was received by piping into :doc:`source <source>`, then this will "
+"return ``-``."
+msgstr ""
+
+#: ../../../cmds/status.rst:73
+msgid "**basename**"
+msgstr ""
+
+#: ../../../cmds/status.rst:74
+msgid ""
+"Prints just the filename of the running script, without any path components "
+"before."
+msgstr ""
+
+#: ../../../cmds/status.rst:76
+msgid "**dirname**"
+msgstr ""
+
+#: ../../../cmds/status.rst:77
+msgid ""
+"Prints just the path to the running script, without the actual filename "
+"itself. This can be relative to :envvar:`PWD` (including just \".\"), "
+"depending on how the script was called. This is the same as passing the "
+"filename to ``dirname(3)``. It's useful if you want to use other files in "
+"the current script's directory or similar."
+msgstr ""
+
+#: ../../../cmds/status.rst:79
+msgid "**fish-path**"
+msgstr ""
+
+#: ../../../cmds/status.rst:80
+msgid ""
+"Prints the absolute path to the currently executing instance of fish. This "
+"is a best-effort attempt and the exact output is down to what the platform "
+"gives fish. In some cases you might only get \"fish\"."
+msgstr ""
+
+#: ../../../cmds/status.rst:82
+msgid "**function** or **current-function**"
+msgstr ""
+
+#: ../../../cmds/status.rst:83
+msgid ""
+"Prints the name of the currently called function if able, when missing "
+"displays \"Not a function\" (or equivalent translated string)."
+msgstr ""
+
+#: ../../../cmds/status.rst:85
+msgid ""
+"**line-number**, **current-line-number**, **-n** or **--current-line-number**"
+msgstr ""
+
+#: ../../../cmds/status.rst:86
+msgid "Prints the line number of the currently running script."
+msgstr ""
+
+#: ../../../cmds/status.rst:88
+msgid ""
+"**stack-trace**, **print-stack-trace**, **-t** or **--print-stack-trace**"
+msgstr ""
+
+#: ../../../cmds/status.rst:89
+msgid "Prints a stack trace of all function calls on the call stack."
+msgstr ""
+
+#: ../../../cmds/status.rst:91
+msgid "**job-control**, **-j** or **--job-control** *CONTROL_TYPE*"
+msgstr ""
+
+#: ../../../cmds/status.rst:92
+msgid ""
+"Sets the job control type to *CONTROL_TYPE*, which can be **none**, "
+"**full**, or **interactive**."
+msgstr ""
+
+#: ../../../cmds/status.rst:94
+msgid "**features**"
+msgstr ""
+
+#: ../../../cmds/status.rst:95
+msgid "Lists all available feature flags."
+msgstr ""
+
+#: ../../../cmds/status.rst:97
+msgid "**test-feature** *FEATURE*"
+msgstr ""
+
+#: ../../../cmds/status.rst:98
+msgid ""
+"Returns 0 when FEATURE is enabled, 1 if it is disabled, and 2 if it is not "
+"recognized."
+msgstr ""
+
+#: ../../../cmds/status.rst:101
+msgid "Notes"
+msgstr ""
+
+#: ../../../cmds/status.rst:103
+msgid ""
+"For backwards compatibility most subcommands can also be specified as a long "
+"or short option. For example, rather than ``status is-login`` you can type "
+"``status --is-login``. The flag forms are deprecated and may be removed in a "
+"future release (but not before fish 4.0)."
+msgstr ""
+
+#: ../../../cmds/status.rst:105
+msgid ""
+"You can only specify one subcommand per invocation even if you use the flag "
+"form of the subcommand."
+msgstr ""
