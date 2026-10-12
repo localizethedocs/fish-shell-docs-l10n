@@ -1,0 +1,117 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_key_reader.rst:2
+msgid "fish_key_reader - explore what characters keyboard keys send"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:7
+msgid "fish_key_reader [OPTIONS]"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:14
+msgid ""
+":program:`fish_key_reader` is used to explain how you would bind a certain "
+"key sequence. By default, it prints the :doc:`bind <bind>` command for one "
+"key sequence read interactively over standard input."
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:16
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:18
+msgid "**-c** or **--continuous**"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:19
+msgid ""
+"Begins a session where multiple key sequences can be inspected. By default "
+"the program exits after capturing a single key sequence."
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:21
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:22
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:24
+msgid "**-V** or **--verbose**"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:25
+msgid "Explain what sequence was received in addition to the decoded key."
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:27
+msgid "**-v** or **--version**"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:28
+msgid "Displays the current :program:`fish` version and then exits."
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:31
+msgid "Usage Notes"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:33
+msgid ""
+"``fish_key_reader`` intentionally disables handling of many signals. To "
+"terminate ``fish_key_reader`` in ``--continuous`` mode do:"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:35
+msgid "press :kbd:`ctrl-c` twice, or"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:36
+msgid "press :kbd:`ctrl-d` twice, or"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:37
+msgid "type ``exit``, or"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:38
+msgid "type ``quit``"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:41
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/fish_key_reader.rst:45
+msgid ""
+"> fish_key_reader\n"
+"Press a key:\n"
+"# press up-arrow\n"
+"bind up 'do something'"
+msgstr ""
