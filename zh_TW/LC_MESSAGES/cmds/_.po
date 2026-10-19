@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/_.rst:4
+msgid "_ - call fish's translations"
+msgstr ""
+
+#: ../../../cmds/_.rst:7
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/_.rst:9
+msgid "_ STRING"
+msgstr ""
+
+#: ../../../cmds/_.rst:14
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/_.rst:16
+msgid "``_`` translates its arguments into the current language, if possible."
+msgstr ""
+
+#: ../../../cmds/_.rst:18
+msgid ""
+"It is equivalent to ``gettext fish STRING``, meaning it can only be used to "
+"look up fish's own translations."
+msgstr ""
+
+#: ../../../cmds/_.rst:20
+msgid ""
+"It requires fish to be built with gettext support. If that support is "
+"disabled, or there is no translation it will simply echo the argument back."
+msgstr ""
+
+#: ../../../cmds/_.rst:22
+msgid ""
+"The language depends on the current locale, set with :envvar:`LANG` and :"
+"envvar:`LC_MESSAGES`."
+msgstr ""
+
+#: ../../../cmds/_.rst:26
+msgid "Options"
+msgstr "選項"
+
+#: ../../../cmds/_.rst:28
+msgid "``_`` takes no options."
+msgstr ""
+
+#: ../../../cmds/_.rst:31
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../cmds/_.rst:35
+msgid ""
+"> _ File\n"
+"Datei"
+msgstr ""
