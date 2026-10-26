@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/block.rst:4
+msgid "block - temporarily block delivery of events"
+msgstr ""
+
+#: ../../../cmds/block.rst:7
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/block.rst:9
+msgid ""
+"block [(--local | --global)]\n"
+"block --erase"
+msgstr ""
+
+#: ../../../cmds/block.rst:15
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/block.rst:17
+msgid ""
+"``block`` prevents events triggered by ``fish`` or the :doc:`emit <emit>` "
+"command from being delivered and acted upon while the block is in place."
+msgstr ""
+
+#: ../../../cmds/block.rst:19
+msgid ""
+"In functions, ``block`` can be useful while performing work that should not "
+"be interrupted by the shell."
+msgstr ""
+
+#: ../../../cmds/block.rst:21
+msgid ""
+"The block can be removed. Any events which triggered while the block was in "
+"place will then be delivered."
+msgstr ""
+
+#: ../../../cmds/block.rst:23
+msgid ""
+"Event blocks should not be confused with code blocks, which are created with "
+"``begin``, ``if``, ``while`` or ``for``"
+msgstr ""
+
+#: ../../../cmds/block.rst:25
+msgid "Without options, the ``block`` command acts with function scope."
+msgstr ""
+
+#: ../../../cmds/block.rst:27
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/block.rst:29
+msgid "**-l** or **--local**"
+msgstr ""
+
+#: ../../../cmds/block.rst:30
+msgid ""
+"Release the block automatically at the end of the current innermost code "
+"block scope."
+msgstr ""
+
+#: ../../../cmds/block.rst:32
+msgid "**-g** or **--global**"
+msgstr ""
+
+#: ../../../cmds/block.rst:33
+msgid "Never automatically release the lock."
+msgstr ""
+
+#: ../../../cmds/block.rst:35
+msgid "**-e** or **--erase**"
+msgstr ""
+
+#: ../../../cmds/block.rst:36
+msgid "Release global block."
+msgstr ""
+
+#: ../../../cmds/block.rst:38
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/block.rst:39
+msgid "Displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/block.rst:42
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/block.rst:45
+msgid ""
+"# Create a function that listens for events\n"
+"function --on-event foo foo; echo 'foo fired'; end\n"
+"\n"
+"# Block the delivery of events\n"
+"block -g\n"
+"\n"
+"emit foo\n"
+"# No output will be produced\n"
+"\n"
+"block -e\n"
+"# 'foo fired' will now be printed"
+msgstr ""
+
+#: ../../../cmds/block.rst:58
+msgid "Notes"
+msgstr ""
+
+#: ../../../cmds/block.rst:60
+msgid ""
+"Events are only received from the current fish process as there is no way to "
+"send events from one fish process to another (yet)."
+msgstr ""
