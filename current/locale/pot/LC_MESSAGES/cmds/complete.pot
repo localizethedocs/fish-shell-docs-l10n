@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 15:22+0000\n"
+"POT-Creation-Date: 2026-10-26 15:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -266,23 +266,29 @@ msgstr ""
 
 #: ../../../cmds/complete.rst:92
 msgid ""
+"A ``--`` argument stops suggesting option completions. But completions "
+"without an option still take effect (e.g. ``-a``, ``-f``, ``-F``)."
+msgstr ""
+
+#: ../../../cmds/complete.rst:94
+msgid ""
 "Multiple commands and paths can be given in one call to define the same "
 "completions for multiple commands."
 msgstr ""
 
-#: ../../../cmds/complete.rst:94
+#: ../../../cmds/complete.rst:96
 msgid ""
 "Multiple command switches and wrapped commands can also be given to define "
 "multiple completions in one call."
 msgstr ""
 
-#: ../../../cmds/complete.rst:96
+#: ../../../cmds/complete.rst:98
 msgid ""
 "Invoking ``complete`` multiple times for the same command adds the new "
 "definitions on top of any existing completions defined for the command."
 msgstr ""
 
-#: ../../../cmds/complete.rst:98
+#: ../../../cmds/complete.rst:100
 msgid ""
 "When ``-a`` or ``--arguments`` is specified in conjunction with long, short, "
 "or old-style options, the specified arguments are only completed as "
@@ -293,7 +299,7 @@ msgid ""
 "``--require-parameter``)."
 msgstr ""
 
-#: ../../../cmds/complete.rst:100
+#: ../../../cmds/complete.rst:102
 msgid ""
 "Command substitutions found in ``ARGUMENTS`` should return a newline-"
 "separated list of arguments, and each argument may optionally have a tab "
@@ -301,7 +307,7 @@ msgid ""
 "override a description given with ``-d`` or ``--description``."
 msgstr ""
 
-#: ../../../cmds/complete.rst:102
+#: ../../../cmds/complete.rst:104
 msgid ""
 "Descriptions given with ``--description`` are also used to group options "
 "given with ``-s``, ``-o`` or ``-l``. Options with the same (non-empty) "
@@ -309,7 +315,7 @@ msgid ""
 "If the description is empty or no description was given this is skipped."
 msgstr ""
 
-#: ../../../cmds/complete.rst:104
+#: ../../../cmds/complete.rst:106
 msgid ""
 "The ``-w`` or ``--wraps`` options causes the specified command to inherit "
 "completions from another command, \"wrapping\" the other command. The "
@@ -321,14 +327,14 @@ msgid ""
 "specifying completions with ``-p`` or ``--path``."
 msgstr ""
 
-#: ../../../cmds/complete.rst:106
+#: ../../../cmds/complete.rst:108
 msgid ""
 "When erasing completions, it is possible to either erase all completions for "
 "a specific command by specifying ``complete -c COMMAND -e``, or by "
 "specifying a specific completion option to delete."
 msgstr ""
 
-#: ../../../cmds/complete.rst:108
+#: ../../../cmds/complete.rst:110
 msgid ""
 "When ``complete`` is called without anything that would define or erase "
 "completions (options, arguments, wrapping, ...), it shows matching "
@@ -338,11 +344,11 @@ msgid ""
 "will have to trigger them first."
 msgstr ""
 
-#: ../../../cmds/complete.rst:113
+#: ../../../cmds/complete.rst:115
 msgid "Cygwin / MSYS2 / Windows"
 msgstr ""
 
-#: ../../../cmds/complete.rst:115
+#: ../../../cmds/complete.rst:117
 msgid ""
 "On Windows, binary executables have a ``.exe`` extension, but this extension "
 "is not required when calling an application (and if the name is not "
@@ -350,74 +356,74 @@ msgid ""
 "directory as ``myprog.exe``)."
 msgstr ""
 
-#: ../../../cmds/complete.rst:117
+#: ../../../cmds/complete.rst:119
 msgid ""
 "To unify completions between Windows and other OSes, on Cygwin/MSYS2/"
 "Windows, *COMMAND* does not require the ``.exe`` extension. Completions for "
 "``myprog`` will also be used for ``myprog.exe`` if there are no ambiguities, "
 "i.e. if there are no completions for ``myprog.exe`` specifically. However, "
-"completions for ``myprog.exe`` will only be used when also using the ``."
-"exe`` extension on the command line."
+"completions for ``myprog.exe`` will only be used when also using the "
+"``.exe`` extension on the command line."
 msgstr ""
 
-#: ../../../cmds/complete.rst:121
+#: ../../../cmds/complete.rst:123
 msgid "In other words:"
 msgstr ""
 
-#: ../../../cmds/complete.rst:125
+#: ../../../cmds/complete.rst:127
 msgid "complete -c myprog.exe ...  #1"
 msgstr ""
 
-#: ../../../cmds/complete.rst:127
+#: ../../../cmds/complete.rst:129
 msgid "will only work for ``myprog.exe``"
 msgstr ""
 
-#: ../../../cmds/complete.rst:131
+#: ../../../cmds/complete.rst:133
 msgid "complete -c myprog ...  #2"
 msgstr ""
 
-#: ../../../cmds/complete.rst:133
+#: ../../../cmds/complete.rst:135
 msgid ""
 "can work for both ``myprog`` and ``myprog.exe``. But if both completions "
 "exist, #2 will only be used for ``myprog`` while ``myprog.exe`` will use #1."
 msgstr ""
 
-#: ../../../cmds/complete.rst:136
+#: ../../../cmds/complete.rst:138
 msgid "Examples"
 msgstr ""
 
-#: ../../../cmds/complete.rst:138
+#: ../../../cmds/complete.rst:140
 msgid ""
 "The short-style option ``-o`` for the ``gcc`` command needs a file argument:"
 msgstr ""
 
-#: ../../../cmds/complete.rst:142
+#: ../../../cmds/complete.rst:144
 msgid "complete -c gcc -s o -r"
 msgstr ""
 
-#: ../../../cmds/complete.rst:145
+#: ../../../cmds/complete.rst:147
 msgid ""
 "The short-style option ``-d`` for the ``grep`` command requires one of "
 "``read``, ``skip`` or ``recurse``:"
 msgstr ""
 
-#: ../../../cmds/complete.rst:149
+#: ../../../cmds/complete.rst:151
 msgid "complete -c grep -s d -x -a \"read skip recurse\""
 msgstr ""
 
-#: ../../../cmds/complete.rst:152
+#: ../../../cmds/complete.rst:154
 msgid ""
 "The ``su`` command takes any username as an argument. Usernames are given as "
 "the first colon-separated field in the file /etc/passwd. This can be "
 "specified as:"
 msgstr ""
 
-#: ../../../cmds/complete.rst:156
+#: ../../../cmds/complete.rst:158
 msgid ""
 "complete -x -c su -d \"Username\" -a \"(cat /etc/passwd | cut -d : -f 1)\""
 msgstr ""
 
-#: ../../../cmds/complete.rst:159
+#: ../../../cmds/complete.rst:161
 msgid ""
 "The ``rpm`` command has several different modes. If the ``-e`` or ``--"
 "erase`` flag has been specified, ``rpm`` should delete one or more packages, "
@@ -425,45 +431,45 @@ msgid ""
 "the ``nodeps`` switch."
 msgstr ""
 
-#: ../../../cmds/complete.rst:161
+#: ../../../cmds/complete.rst:163
 msgid "This can be written as:"
 msgstr ""
 
-#: ../../../cmds/complete.rst:165
+#: ../../../cmds/complete.rst:167
 msgid ""
 "complete -c rpm -n \"__fish_contains_opt -s e erase\" -l nodeps -d \"Don't "
 "check dependencies\""
 msgstr ""
 
-#: ../../../cmds/complete.rst:168
+#: ../../../cmds/complete.rst:170
 msgid ""
 "where ``__fish_contains_opt`` is a function that checks the command line "
 "buffer for the presence of a specified set of options."
 msgstr ""
 
-#: ../../../cmds/complete.rst:170
+#: ../../../cmds/complete.rst:172
 msgid "To implement an alias, use the ``-w`` or ``--wraps`` option:"
 msgstr ""
 
-#: ../../../cmds/complete.rst:176
+#: ../../../cmds/complete.rst:178
 msgid "complete -c hub -w git"
 msgstr ""
 
-#: ../../../cmds/complete.rst:179
+#: ../../../cmds/complete.rst:181
 msgid ""
 "Now hub inherits all of the completions from git. Note this can also be "
 "specified in a function declaration (``function thing -w otherthing``)."
 msgstr ""
 
-#: ../../../cmds/complete.rst:183
+#: ../../../cmds/complete.rst:185
 msgid "complete -c git"
 msgstr ""
 
-#: ../../../cmds/complete.rst:185
+#: ../../../cmds/complete.rst:187
 msgid "Shows all completions for ``git``."
 msgstr ""
 
-#: ../../../cmds/complete.rst:187
+#: ../../../cmds/complete.rst:189
 msgid ""
 "Any command ``foo`` that doesn't support grouping multiple short options in "
 "one string (not supporting ``-xf`` as short for ``-x -f``) or a short option "

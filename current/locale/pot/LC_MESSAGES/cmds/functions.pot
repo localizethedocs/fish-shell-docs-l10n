@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"POT-Creation-Date: 2026-10-26 15:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,9 +104,7 @@ msgid "the path name as already described,"
 msgstr ""
 
 #: ../../../cmds/functions.rst:38
-msgid ""
-"if the function was copied, the path name to where the function was "
-"originally defined, otherwise ``autoloaded``, ``not-autoloaded`` or ``n/a``,"
+msgid "some unspecified text. Exists for backwards compatibility"
 msgstr ""
 
 #: ../../../cmds/functions.rst:39
@@ -154,7 +152,9 @@ msgid "**-q** or **--query**"
 msgstr ""
 
 #: ../../../cmds/functions.rst:52
-msgid "Tests if the specified functions exist."
+msgid ""
+"Tests if any of the specified functions exist. If any exist, it returns 0, 1 "
+"otherwise."
 msgstr ""
 
 #: ../../../cmds/functions.rst:54
@@ -188,8 +188,8 @@ msgstr ""
 #: ../../../cmds/functions.rst:64
 msgid ""
 "Controls when to use syntax highlighting colors when printing function "
-"definitions. *WHEN* can be ``auto`` (the default, colorize if the output :"
-"doc:`is a terminal <isatty>`), ``always``, or ``never``."
+"definitions. *WHEN* can be ``auto`` (the default, colorize if the "
+"output :doc:`is a terminal <isatty>`), ``always``, or ``never``."
 msgstr ""
 
 #: ../../../cmds/functions.rst:67
@@ -227,9 +227,10 @@ msgstr ""
 
 #: ../../../cmds/functions.rst:78
 msgid ""
-"The exit status of ``functions`` is the number of functions specified in the "
-"argument list that do not exist, which can be used in concert with the ``-"
-"q`` option."
+"With **-q** or **--query**, ``functions`` returns 0 if any of the named "
+"functions exist, matching :doc:`type <type>`, :doc:`command <command>` "
+"and :doc:`builtin <builtin>`. Without **-q**, the exit status is the number "
+"of functions specified in the argument list that do not exist."
 msgstr ""
 
 #: ../../../cmds/functions.rst:82

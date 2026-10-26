@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"POT-Creation-Date: 2026-10-26 15:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -187,9 +187,10 @@ msgstr ""
 
 #: ../../../cmds/bind.rst:65
 msgid ""
-"To save custom key bindings, put the ``bind`` statements into :ref:`config."
-"fish <configuration>`. Alternatively, fish also automatically executes a "
-"function called ``fish_user_key_bindings`` if it exists."
+"To save custom key bindings, put the ``bind`` statements "
+"into :ref:`config.fish <configuration>`. Alternatively, fish also "
+"automatically executes a function called ``fish_user_key_bindings`` if it "
+"exists."
 msgstr ""
 
 #: ../../../cmds/bind.rst:68
@@ -1162,7 +1163,7 @@ msgid "``transpose-chars``"
 msgstr ""
 
 #: ../../../cmds/bind.rst:418
-msgid "transpose two characters to the left of the cursor"
+msgid "swap the current character with the previous one"
 msgstr ""
 
 #: ../../../cmds/bind.rst:420
@@ -1170,7 +1171,7 @@ msgid "``transpose-words``"
 msgstr ""
 
 #: ../../../cmds/bind.rst:421
-msgid "transpose two words to the left of the cursor"
+msgid "swap the current word with the previous one"
 msgstr ""
 
 #: ../../../cmds/bind.rst:423
@@ -1271,8 +1272,9 @@ msgstr ""
 
 #: ../../../cmds/bind.rst:458
 msgid ""
-"open the visual editor (controlled by the :envvar:`VISUAL` or :envvar:"
-"`EDITOR` environment variables) with the current command-line contents"
+"open the visual editor (controlled by the :envvar:`VISUAL` "
+"or :envvar:`EDITOR` environment variables) with the current command-line "
+"contents"
 msgstr ""
 
 #: ../../../cmds/bind.rst:460
@@ -1405,8 +1407,8 @@ msgstr ""
 
 #: ../../../cmds/bind.rst:520
 msgid ""
-"Control and shift don't work simultaneously - :kbd:`ctrl-X` is the same as :"
-"kbd:`ctrl-x`."
+"Control and shift don't work simultaneously - :kbd:`ctrl-X` is the same "
+"as :kbd:`ctrl-x`."
 msgstr ""
 
 #: ../../../cmds/bind.rst:522
@@ -1424,9 +1426,9 @@ msgstr ""
 
 #: ../../../cmds/bind.rst:526
 msgid ""
-"When in doubt, run :doc:`fish_key_reader`. If that tells you that pressing :"
-"kbd:`ctrl-i` sends tab, your terminal does not support these better "
-"encodings, and so fish is limited to what it sends."
+"When in doubt, run :doc:`fish_key_reader`. If that tells you that "
+"pressing :kbd:`ctrl-i` sends tab, your terminal does not support these "
+"better encodings, and so fish is limited to what it sends."
 msgstr ""
 
 #: ../../../cmds/bind.rst:531
@@ -1453,16 +1455,17 @@ msgstr ""
 #: ../../../cmds/bind.rst:540
 msgid ""
 "will bind the sequence ``jk`` to insert \"foo\" into the commandline. When "
-"you've only pressed \"j\", fish doesn't know if it should insert the "
-"\"j\" (because of the default self-insert), or wait for the \"k\"."
+"you've only pressed \"j\", fish doesn't know if it should insert the \"j\" "
+"(because of the default self-insert), or wait for the \"k\"."
 msgstr ""
 
 #: ../../../cmds/bind.rst:542
 msgid ""
-"You can enable a timeout for this, by setting the :envvar:"
-"`fish_sequence_key_delay_ms` variable to the timeout in milliseconds. If the "
-"timeout elapses, fish will no longer wait for the sequence to be completed, "
-"and do what it can with the characters it already has."
+"You can enable a timeout for this, by setting "
+"the :envvar:`fish_sequence_key_delay_ms` variable to the timeout in "
+"milliseconds. If the timeout elapses, fish will no longer wait for the "
+"sequence to be completed, and do what it can with the characters it already "
+"has."
 msgstr ""
 
 #: ../../../cmds/bind.rst:544
@@ -1471,8 +1474,8 @@ msgid ""
 "real key or as part of a longer escape sequence, like function or arrow "
 "keys. Holding alt and something else also typically sends escape, for "
 "example holding alt+a will send an escape character and then an \"a\". So "
-"the escape character has its own timeout configured with :envvar:"
-"`fish_escape_delay_ms`."
+"the escape character has its own timeout configured "
+"with :envvar:`fish_escape_delay_ms`."
 msgstr ""
 
 #: ../../../cmds/bind.rst:546

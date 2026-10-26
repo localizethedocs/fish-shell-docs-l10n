@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"POT-Creation-Date: 2026-10-26 15:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,8 +81,8 @@ msgstr ""
 
 #: ../../../cmds/type.rst:33
 msgid ""
-"Prints ``function``, ``builtin``, or ``file`` if *NAME* is a shell function, "
-"builtin, or disk file, respectively."
+"Prints ``function``, ``builtin``, ``implicit-cd`` or ``file`` if *NAME* is a "
+"shell function, builtin, implicit cd command or disk file, respectively."
 msgstr ""
 
 #: ../../../cmds/type.rst:35
@@ -91,8 +91,8 @@ msgstr ""
 
 #: ../../../cmds/type.rst:36
 msgid ""
-"Prints the path to *NAME* if *NAME* resolves to an executable file in :"
-"envvar:`PATH`, the path to the script containing the definition of the "
+"Prints the path to *NAME* if *NAME* resolves to an executable file "
+"in :envvar:`PATH`, the path to the script containing the definition of the "
 "function *NAME* if *NAME* resolves to a function loaded from a file on disk "
 "(i.e. not interactively defined at the prompt), or nothing otherwise."
 msgstr ""
@@ -105,9 +105,9 @@ msgstr ""
 msgid ""
 "Returns the path to the executable file *NAME*, presuming *NAME* is found in "
 "the :envvar:`PATH` environment variable, or nothing otherwise. **--force-"
-"path** explicitly resolves only the path to executable files in  :envvar:"
-"`PATH`, regardless of whether *NAME* is shadowed by a function or builtin "
-"with the same name."
+"path** explicitly resolves only the path to executable files "
+"in  :envvar:`PATH`, regardless of whether *NAME* is shadowed by a function "
+"or builtin with the same name."
 msgstr ""
 
 #: ../../../cmds/type.rst:41
@@ -127,8 +127,8 @@ msgstr ""
 #: ../../../cmds/type.rst:45
 msgid ""
 "Controls when to use syntax highlighting colors when printing function "
-"definitions. *WHEN* can be ``auto`` (the default, colorize if the output :"
-"doc:`is a terminal <isatty>`), ``always``, or ``never``."
+"definitions. *WHEN* can be ``auto`` (the default, colorize if the "
+"output :doc:`is a terminal <isatty>`), ``always``, or ``never``."
 msgstr ""
 
 #: ../../../cmds/type.rst:48

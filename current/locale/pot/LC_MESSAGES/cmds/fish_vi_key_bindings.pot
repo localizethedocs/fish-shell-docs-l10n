@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 15:22+0000\n"
+"POT-Creation-Date: 2026-10-26 15:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgid "Description"
 msgstr ""
 
 #: ../../../cmds/fish_vi_key_bindings.rst:15
-msgid "``fish_vi_key_bindings`` sets the vi key bindings for ``fish`` shell."
+msgid "``fish_vi_key_bindings`` enables vi-style key bindings."
 msgstr ""
 
 #: ../../../cmds/fish_vi_key_bindings.rst:17
@@ -59,7 +59,9 @@ msgid "Does not clear previous set bindings"
 msgstr ""
 
 #: ../../../cmds/fish_vi_key_bindings.rst:25
-msgid "Further information on how to use :ref:`vi mode <vi-mode>`."
+msgid ""
+"See also :ref:`vi mode <vi-mode>` and :doc:`fish_hybrid_key_bindings "
+"<fish_hybrid_key_bindings>`."
 msgstr ""
 
 #: ../../../cmds/fish_vi_key_bindings.rst:28
