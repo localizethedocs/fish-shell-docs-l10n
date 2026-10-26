@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/string-pad.rst:2
+msgid "string-pad - pad strings to a fixed width"
+msgstr ""
+
+#: ../../../cmds/string-pad.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/string-pad.rst:9
+msgid ""
+"string pad [-r | --right] [-C | --center] [(-c | --char) CHAR] [(-w | --"
+"width) INTEGER]\n"
+"           [STRING ...]"
+msgstr ""
+
+#: ../../../cmds/string-pad.rst:17
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/string-pad.rst:21
+msgid ""
+"``string pad`` extends each *STRING* to the given visible width by adding "
+"*CHAR* to the left. That means the width of all visible characters added "
+"together, excluding escape sequences and accounting for :envvar:"
+"`fish_emoji_width` and :envvar:`fish_ambiguous_width`. It is the amount of "
+"columns in a terminal the *STRING* occupies."
+msgstr ""
+
+#: ../../../cmds/string-pad.rst:23
+msgid ""
+"The escape sequences reflect what fish knows about, and how it computes its "
+"output. Your terminal might support more escapes, or not support escape "
+"sequences that fish knows about."
+msgstr ""
+
+#: ../../../cmds/string-pad.rst:25
+msgid ""
+"If **-C** or **--center** is given, add the padding to before and after the "
+"string. If it is impossible to perfectly center the result (because the "
+"required amount of padding is an odd number), extra padding will be added to "
+"the left, unless **--right** is also given."
+msgstr ""
+
+#: ../../../cmds/string-pad.rst:27
+msgid "If **-r** or **--right** is given, add the padding after a string."
+msgstr ""
+
+#: ../../../cmds/string-pad.rst:29
+msgid ""
+"If **-c** or **--char** is given, pad with *CHAR* instead of whitespace."
+msgstr ""
+
+#: ../../../cmds/string-pad.rst:31
+msgid ""
+"The output is padded to the maximum width of all input strings. If **-w** or "
+"**--width** is given, use at least that."
+msgstr ""
+
+#: ../../../cmds/string-pad.rst:36
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/string-pad.rst:42
+msgid ""
+">_ string pad -w 10 abc abcdef\n"
+"       abc\n"
+"    abcdef\n"
+"\n"
+">_ string pad --right --char=🐟 \"fish are pretty\" \"rich. \"\n"
+"fish are pretty\n"
+"rich.  🐟🐟🐟🐟\n"
+"\n"
+">_ string pad -w$COLUMNS (date)\n"
+"# Prints the current time on the right edge of the screen."
+msgstr ""
+
+#: ../../../cmds/string-pad.rst:56
+msgid "See Also"
+msgstr ""
+
+#: ../../../cmds/string-pad.rst:60
+msgid ""
+"The :doc:`printf <printf>` command can do simple padding, for example "
+"``printf %10s\\n`` works like ``string pad -w10``."
+msgstr ""
+
+#: ../../../cmds/string-pad.rst:62
+msgid ""
+":doc:`string length <string-length>` with the ``--visible`` option can be "
+"used to show what fish thinks the width is."
+msgstr ""
