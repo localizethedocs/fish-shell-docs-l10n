@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-26 15:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_user_key_bindings.rst:2
+msgid "fish_user_key_bindings - add user-defined key bindings"
+msgstr ""
+
+#: ../../../cmds/fish_user_key_bindings.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_user_key_bindings.rst:7
+msgid "fish_user_key_bindings"
+msgstr ""
+
+#: ../../../cmds/fish_user_key_bindings.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_user_key_bindings.rst:14
+msgid ""
+"``fish_user_key_bindings`` is called automatically whenever fish sets up "
+"the :ref:`key bindings <custom-bindings>`."
+msgstr ""
+
+#: ../../../cmds/fish_user_key_bindings.rst:16
+msgid "That allows you to use it as a simple customization point."
+msgstr ""
+
+#: ../../../cmds/fish_user_key_bindings.rst:18
+msgid ""
+"Historically, fish could not remember which bindings were defined by a "
+"preset like :doc:`fish_default_key_bindings <fish_default_key_bindings>` or "
+"by custom configuration, so ``fish_user_key_bindings`` was the only way to "
+"add custom bindings."
+msgstr ""
+
+#: ../../../cmds/fish_user_key_bindings.rst:20
+msgid ""
+"That hasn't been necessary for a while but it stays around because it makes "
+"for easy organization - just keep all bindings here to have them in one spot."
+msgstr ""
+
+#: ../../../cmds/fish_user_key_bindings.rst:22
+msgid ""
+"Adding :doc:`bind <bind>` invocations anywhere in :ref:`config.fish "
+"<configuration>` works too, so which you use is a question of taste."
+msgstr ""
+
+#: ../../../cmds/fish_user_key_bindings.rst:25
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/fish_user_key_bindings.rst:29
+msgid ""
+"function fish_user_key_bindings\n"
+"    # I like the old feature of leaving a ^C marker on ctrl-c\n"
+"    bind ctrl-c cancel-commandline\n"
+"end"
+msgstr ""
