@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_clipboard_paste.rst:2
+msgid "fish_clipboard_paste - get text from the system's clipboard"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:7
+msgid ""
+"fish_clipboard_paste\n"
+"\n"
+"fish_clipboard_paste | foo"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:14
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:16
+msgid ""
+"The ``fish_clipboard_paste`` function copies text from the system clipboard."
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:18
+msgid ""
+"If its stdout is not a terminal (see :doc:`isatty <isatty>`), it will output "
+"everything there, as-is, without any additional newlines. If it is, it will "
+"put the text in the commandline instead."
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:20
+msgid ""
+"If it outputs to the commandline, it will automatically escape the output if "
+"the cursor is currently inside single-quotes so it is suitable for single-"
+"quotes (meaning it escapes ``'`` and ``\\\\``)."
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:22
+msgid "It is bound to :kbd:`ctrl-v` by default."
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:24
+msgid ""
+"``fish_clipboard_paste`` works by calling a system-specific backend. If it "
+"doesn't appear to work you may need to install yours."
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:26
+msgid "Currently supported are:"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:28
+msgid "``pbpaste``"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:29
+msgid "``wl-paste`` using wayland"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:30
+msgid "``xsel`` and ``xclip`` for X11"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:31
+msgid ""
+"``powershell.exe`` on Windows (this backend has encoding limitations and "
+"uses windows line endings that ``fish_clipboard_paste`` undoes)"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:34
+msgid "See also"
+msgstr ""
+
+#: ../../../cmds/fish_clipboard_paste.rst:36
+msgid ":doc:`fish_clipboard_copy` which does the inverse."
+msgstr ""
