@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/isatty.rst:2
+msgid "isatty - test if a file descriptor is a terminal"
+msgstr ""
+
+#: ../../../cmds/isatty.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/isatty.rst:7
+msgid "isatty [FILE_DESCRIPTOR]"
+msgstr ""
+
+#: ../../../cmds/isatty.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/isatty.rst:14
+msgid ""
+"``isatty`` tests if a file descriptor is a terminal (as opposed to a file). "
+"The name is derived from the system call of the same name, which for "
+"historical reasons refers to a teletypewriter (TTY)."
+msgstr ""
+
+#: ../../../cmds/isatty.rst:16
+msgid ""
+"``FILE DESCRIPTOR`` may be either the number of a file descriptor, or one of "
+"the strings ``stdin``, ``stdout``, or ``stderr``. If not specified, zero is "
+"assumed."
+msgstr ""
+
+#: ../../../cmds/isatty.rst:18
+msgid ""
+"If the specified file descriptor is a terminal device, the exit status of "
+"the command is zero. Otherwise, the exit status is non-zero. No messages are "
+"printed to standard error."
+msgstr ""
+
+#: ../../../cmds/isatty.rst:20
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/isatty.rst:23
+msgid "Examples"
+msgstr ""
+
+#: ../../../cmds/isatty.rst:25
+msgid ""
+"From an interactive shell, the commands below exit with a return value of "
+"zero::"
+msgstr ""
+
+#: ../../../cmds/isatty.rst:27
+msgid ""
+"isatty\n"
+"isatty stdout\n"
+"isatty 2\n"
+"echo | isatty 1"
+msgstr ""
+
+#: ../../../cmds/isatty.rst:33
+msgid "And these will exit non-zero::"
+msgstr ""
+
+#: ../../../cmds/isatty.rst:35
+msgid ""
+"echo | isatty\n"
+"isatty 9\n"
+"isatty stdout > file\n"
+"isatty 2 2> file"
+msgstr ""
