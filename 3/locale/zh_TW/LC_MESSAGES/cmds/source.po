@@ -42,8 +42,8 @@ msgid ""
 "to perform the commands (i.e. ``fish < FILE``) since the commands will be "
 "evaluated by the current shell, which means that changes in shell variables "
 "will affect the current shell. If additional arguments are specified after "
-"the file name, they will be inserted into the :envvar:`argv` variable. The :"
-"envvar:`argv` variable will not include the name of the sourced file."
+"the file name, they will be inserted into the :envvar:`argv` variable. "
+"The :envvar:`argv` variable will not include the name of the sourced file."
 msgstr ""
 
 #: ../../../cmds/source.rst:20

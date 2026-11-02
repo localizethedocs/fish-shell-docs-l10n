@@ -86,9 +86,9 @@ msgstr ""
 
 #: ../../../cmds/status.rst:47
 msgid ""
-"Returns 0 if fish is currently showing a prompt in the context of a :doc:"
-"`breakpoint <breakpoint>` command. See also the :doc:`fish_breakpoint_prompt "
-"<fish_breakpoint_prompt>` function."
+"Returns 0 if fish is currently showing a prompt in the context of "
+"a :doc:`breakpoint <breakpoint>` command. See also "
+"the :doc:`fish_breakpoint_prompt <fish_breakpoint_prompt>` function."
 msgstr ""
 
 #: ../../../cmds/status.rst:49

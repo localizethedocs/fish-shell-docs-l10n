@@ -49,8 +49,8 @@ msgstr ""
 #: ../../../cmds/while.rst:20
 msgid ""
 "You can use :doc:`and <and>` or :doc:`or <or>` for complex conditions. Even "
-"more complex control can be achieved with ``while true`` containing a :doc:"
-"`break <break>`."
+"more complex control can be achieved with ``while true`` containing "
+"a :doc:`break <break>`."
 msgstr ""
 
 #: ../../../cmds/while.rst:22

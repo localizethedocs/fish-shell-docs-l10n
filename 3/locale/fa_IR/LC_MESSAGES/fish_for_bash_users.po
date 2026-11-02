@@ -50,10 +50,10 @@ msgstr ""
 #: ../../../fish_for_bash_users.rst:17
 msgid ""
 "In addition, it only splits them on newlines instead of $IFS. If you want to "
-"split on something else, use :doc:`string split <cmds/string-split>`, :doc:"
-"`string split0 <cmds/string-split>` or :doc:`string collect <cmds/string-"
-"collect>`. If those are used as the last command in a command substitution "
-"the splits they create are carried over. So::"
+"split on something else, use :doc:`string split <cmds/string-"
+"split>`, :doc:`string split0 <cmds/string-split>` or :doc:`string collect "
+"<cmds/string-collect>`. If those are used as the last command in a command "
+"substitution the splits they create are carried over. So::"
 msgstr ""
 
 #: ../../../fish_for_bash_users.rst:19
@@ -670,11 +670,11 @@ msgstr ""
 
 #: ../../../fish_for_bash_users.rst:325
 msgid ""
-"Fish offers other helper functions for adding things to the prompt, like :"
-"doc:`fish_vcs_prompt <cmds/fish_vcs_prompt>` for adding a display for common "
-"version control systems (git, mercurial, svn), and :doc:`prompt_pwd <cmds/"
-"prompt_pwd>` for showing a shortened ``$PWD`` (the user's home directory "
-"becomes ``~`` and any path component is shortened)."
+"Fish offers other helper functions for adding things to the prompt, "
+"like :doc:`fish_vcs_prompt <cmds/fish_vcs_prompt>` for adding a display for "
+"common version control systems (git, mercurial, svn), and :doc:`prompt_pwd "
+"<cmds/prompt_pwd>` for showing a shortened ``$PWD`` (the user's home "
+"directory becomes ``~`` and any path component is shortened)."
 msgstr ""
 
 #: ../../../fish_for_bash_users.rst:327
@@ -828,15 +828,15 @@ msgstr ""
 #: ../../../fish_for_bash_users.rst:433
 msgid ""
 "Subshells are also frequently confused with :ref:`command substitutions "
-"<bash-command-substitutions>`, which bash writes as ```command``` or "
-"``$(command)`` and fish writes as ``$(command)`` or ``(command)``. Bash also "
+"<bash-command-substitutions>`, which bash writes as ```command``` or ``$"
+"(command)`` and fish writes as ``$(command)`` or ``(command)``. Bash also "
 "*uses* subshells to implement them."
 msgstr ""
 
 #: ../../../fish_for_bash_users.rst:435
 msgid ""
-"The isolation can usually be achieved by just scoping variables (with ``set -"
-"l``), but if you really do need to run your code in a new shell environment "
+"The isolation can usually be achieved by just scoping variables (with ``set "
+"-l``), but if you really do need to run your code in a new shell environment "
 "you can always use ``fish -c 'your code here'`` to do so explicitly."
 msgstr ""
 
@@ -878,9 +878,9 @@ msgstr ""
 
 #: ../../../fish_for_bash_users.rst:446
 msgid ""
-":doc:`status <cmds/status>` provides information about the shell status, e."
-"g. if it's interactive or what the current linenumber is. This replaces ``$-"
-"`` and ``$BASH_LINENO`` and other variables."
+":doc:`status <cmds/status>` provides information about the shell status, "
+"e.g. if it's interactive or what the current linenumber is. This replaces "
+"``$-`` and ``$BASH_LINENO`` and other variables."
 msgstr ""
 
 #: ../../../fish_for_bash_users.rst:448
@@ -896,8 +896,8 @@ msgstr ""
 #: ../../../fish_for_bash_users.rst:453
 msgid ""
 "Bash has ``set -x`` or ``set -o xtrace`` to print all commands that are "
-"being executed. In fish, this would be enabled by setting :envvar:"
-"`fish_trace`."
+"being executed. In fish, this would be enabled by "
+"setting :envvar:`fish_trace`."
 msgstr ""
 
 #: ../../../fish_for_bash_users.rst:455

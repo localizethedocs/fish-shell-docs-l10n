@@ -72,8 +72,8 @@ msgstr ""
 #: ../../../cmds/fish_vcs_prompt.rst:32
 msgid ""
 "The Subversion prompt is disabled by default, because it's slow on large "
-"repositories. To enable it, modify ``fish_vcs_prompt`` to uncomment it. See :"
-"doc:`funced <funced>`."
+"repositories. To enable it, modify ``fish_vcs_prompt`` to uncomment it. "
+"See :doc:`funced <funced>`."
 msgstr ""
 
 #: ../../../cmds/fish_vcs_prompt.rst:34

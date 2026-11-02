@@ -51,8 +51,8 @@ msgstr ""
 
 #: ../../../cmds/_.rst:22
 msgid ""
-"The language depends on the current locale, set with :envvar:`LANG` and :"
-"envvar:`LC_MESSAGES`."
+"The language depends on the current locale, set with :envvar:`LANG` "
+"and :envvar:`LC_MESSAGES`."
 msgstr ""
 
 #: ../../../cmds/_.rst:26

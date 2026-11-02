@@ -39,8 +39,8 @@ msgstr ""
 
 #: ../../../cmds/fish_add_path.rst:19
 msgid ""
-":program:`fish_add_path` is a simple way to add more components to fish's :"
-"envvar:`PATH`. It does this by adding the components either to "
+":program:`fish_add_path` is a simple way to add more components to "
+"fish's :envvar:`PATH`. It does this by adding the components either to "
 "$fish_user_paths or directly to :envvar:`PATH` (if the ``--path`` switch is "
 "given)."
 msgstr ""
@@ -66,15 +66,15 @@ msgstr ""
 msgid ""
 "Components are added in the order they are given, and they are prepended to "
 "the path unless ``--append`` is given (if $fish_user_paths is used, that "
-"means they are last in $fish_user_paths, which is itself prepended to :"
-"envvar:`PATH`, so they still stay ahead of the system paths)."
+"means they are last in $fish_user_paths, which is itself prepended "
+"to :envvar:`PATH`, so they still stay ahead of the system paths)."
 msgstr ""
 
 #: ../../../cmds/fish_add_path.rst:27
 msgid ""
-"If no component is new, the variable (:envvar:`fish_user_paths` or :envvar:"
-"`PATH`) is not set again or otherwise modified, so variable handlers are not "
-"triggered."
+"If no component is new, the variable (:envvar:`fish_user_paths` "
+"or :envvar:`PATH`) is not set again or otherwise modified, so variable "
+"handlers are not triggered."
 msgstr ""
 
 #: ../../../cmds/fish_add_path.rst:29

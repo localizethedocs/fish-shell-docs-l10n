@@ -45,8 +45,8 @@ msgstr ""
 
 #: ../../../cmds/alias.rst:21
 msgid ""
-"If you want to ease your interactive use, to save typing, consider using an :"
-"doc:`abbreviation <abbr>` instead."
+"If you want to ease your interactive use, to save typing, consider using "
+"an :doc:`abbreviation <abbr>` instead."
 msgstr ""
 
 #: ../../../cmds/alias.rst:23

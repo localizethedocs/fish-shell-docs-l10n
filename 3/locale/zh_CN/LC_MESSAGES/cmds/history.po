@@ -45,8 +45,8 @@ msgstr ""
 
 #: ../../../cmds/history.rst:24
 msgid ""
-"``history`` is used to search, delete, and otherwise manipulate the :ref:"
-"`history of interactive commands <history-search>`."
+"``history`` is used to search, delete, and otherwise manipulate "
+"the :ref:`history of interactive commands <history-search>`."
 msgstr ""
 
 #: ../../../cmds/history.rst:26

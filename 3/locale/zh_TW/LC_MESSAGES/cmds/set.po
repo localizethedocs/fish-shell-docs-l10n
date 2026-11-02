@@ -59,9 +59,9 @@ msgstr ""
 #: ../../../cmds/set.rst:30
 msgid ""
 "If ``set`` is ran without arguments, it prints the names and values of all "
-"shell variables in sorted order. Passing :ref:`scope <variables-scope>` or :"
-"ref:`export <variables-export>` flags allows filtering this to only matching "
-"variables, so ``set --local`` would only show local variables."
+"shell variables in sorted order. Passing :ref:`scope <variables-scope>` "
+"or :ref:`export <variables-export>` flags allows filtering this to only "
+"matching variables, so ``set --local`` would only show local variables."
 msgstr ""
 
 #: ../../../cmds/set.rst:33

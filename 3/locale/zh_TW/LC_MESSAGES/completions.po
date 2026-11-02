@@ -341,9 +341,9 @@ msgstr ""
 
 #: ../../../completions.rst:152
 msgid ""
-"A user-specified directory for third-party vendor completions, usually ``~/."
-"local/share/fish/vendor_completions.d`` (controlled by the ``XDG_DATA_HOME`` "
-"environment variable);"
+"A user-specified directory for third-party vendor completions, usually "
+"``~/.local/share/fish/vendor_completions.d`` (controlled by the "
+"``XDG_DATA_HOME`` environment variable);"
 msgstr ""
 
 #: ../../../completions.rst:153
@@ -379,8 +379,8 @@ msgstr ""
 #: ../../../completions.rst:161
 msgid ""
 "If you have written new completions for a common Unix command, please "
-"consider sharing your work by submitting it via the instructions in :ref:"
-"`Further help and development <more-help>`."
+"consider sharing your work by submitting it via the instructions "
+"in :ref:`Further help and development <more-help>`."
 msgstr ""
 
 #: ../../../completions.rst:163

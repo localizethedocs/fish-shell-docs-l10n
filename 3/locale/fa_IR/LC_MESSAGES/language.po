@@ -231,12 +231,12 @@ msgstr ""
 #: ../../../language.rst:80
 msgid ""
 "Between single quotes, fish performs no expansions. Between double quotes, "
-"fish only performs :ref:`variable expansion <expand-variable>` and :ref:"
-"`command substitution <expand-command-substitution>` in the ``$(command)``. "
-"No other kind of expansion (including :ref:`brace expansion <expand-brace>` "
-"or parameter expansion) is performed, and escape sequences (for example, "
-"``\\n``) are ignored. Within quotes, whitespace is not used to separate "
-"arguments, allowing quoted arguments to contain spaces."
+"fish only performs :ref:`variable expansion <expand-variable>` "
+"and :ref:`command substitution <expand-command-substitution>` in the ``$"
+"(command)``. No other kind of expansion (including :ref:`brace expansion "
+"<expand-brace>` or parameter expansion) is performed, and escape sequences "
+"(for example, ``\\n``) are ignored. Within quotes, whitespace is not used to "
+"separate arguments, allowing quoted arguments to contain spaces."
 msgstr ""
 
 #: ../../../language.rst:82
@@ -568,9 +568,10 @@ msgstr ""
 #: ../../../language.rst:183
 msgid ""
 "As a convenience, the redirection ``&>`` can be used to direct both stdout "
-"and stderr to the same destination. For example, ``echo hello &> all_output."
-"txt`` redirects both stdout and stderr to the file ``all_output.txt``. This "
-"is equivalent to ``echo hello > all_output.txt 2>&1``."
+"and stderr to the same destination. For example, ``echo hello &> "
+"all_output.txt`` redirects both stdout and stderr to the file "
+"``all_output.txt``. This is equivalent to ``echo hello > all_output.txt "
+"2>&1``."
 msgstr ""
 
 #: ../../../language.rst:185
@@ -781,8 +782,8 @@ msgstr ""
 
 #: ../../../language.rst:288
 msgid ""
-"If you instead want to put a suspended job into the background, use the :doc:"
-"`bg <cmds/bg>` command."
+"If you instead want to put a suspended job into the background, use "
+"the :doc:`bg <cmds/bg>` command."
 msgstr ""
 
 #: ../../../language.rst:290
@@ -886,8 +887,8 @@ msgstr ""
 
 #: ../../../language.rst:334
 msgid ""
-"For more information on functions, see the documentation for the :doc:"
-"`function <cmds/function>` builtin."
+"For more information on functions, see the documentation for "
+"the :doc:`function <cmds/function>` builtin."
 msgstr ""
 
 #: ../../../language.rst:339
@@ -978,8 +979,8 @@ msgstr ""
 msgid ""
 "When fish needs to load a function, it searches through any directories in "
 "the :ref:`list variable <variables-lists>` ``$fish_function_path`` for a "
-"file with a name consisting of the name of the function plus the suffix ``."
-"fish`` and loads the first it finds."
+"file with a name consisting of the name of the function plus the suffix "
+"``.fish`` and loads the first it finds."
 msgstr ""
 
 #: ../../../language.rst:370
@@ -1107,9 +1108,9 @@ msgstr ""
 #: ../../../language.rst:413
 msgid ""
 "Fish has some builtins that let you execute commands only if a specific "
-"criterion is met: :doc:`if <cmds/if>`, :doc:`switch <cmds/switch>`, :doc:"
-"`and <cmds/and>` and :doc:`or <cmds/or>`, and also the familiar :ref:`&&/|| "
-"<syntax-combiners>` syntax."
+"criterion is met: :doc:`if <cmds/if>`, :doc:`switch <cmds/"
+"switch>`, :doc:`and <cmds/and>` and :doc:`or <cmds/or>`, and also the "
+"familiar :ref:`&&/|| <syntax-combiners>` syntax."
 msgstr ""
 
 #: ../../../language.rst:418
@@ -1125,9 +1126,9 @@ msgstr ""
 #: ../../../language.rst:422
 msgid ""
 "Like other shells, but unlike typical programming languages you might know, "
-"the condition here is a *command*. Fish runs it, and if it returns a true :"
-"ref:`exit status <variables-status>` (that's 0), the if-block is run. For "
-"example::"
+"the condition here is a *command*. Fish runs it, and if it returns a "
+"true :ref:`exit status <variables-status>` (that's 0), the if-block is run. "
+"For example::"
 msgstr ""
 
 #: ../../../language.rst:424
@@ -1165,8 +1166,8 @@ msgstr ""
 
 #: ../../../language.rst:438
 msgid ""
-"``if`` can also take ``else if`` clauses with additional conditions and an  :"
-"doc:`else <cmds/else>` clause that is executed when everything else was "
+"``if`` can also take ``else if`` clauses with additional conditions and "
+"an  :doc:`else <cmds/else>` clause that is executed when everything else was "
 "false::"
 msgstr ""
 
@@ -1408,8 +1409,8 @@ msgstr ""
 
 #: ../../../language.rst:565
 msgid ""
-":doc:`break <cmds/break>` is available to break out of a loop, and :doc:"
-"`continue <cmds/continue>` to jump to the next iteration."
+":doc:`break <cmds/break>` is available to break out of a loop, "
+"and :doc:`continue <cmds/continue>` to jump to the next iteration."
 msgstr ""
 
 #: ../../../language.rst:567
@@ -1451,8 +1452,8 @@ msgstr ""
 
 #: ../../../language.rst:586
 msgid ""
-":ref:`Wildcards <expand-wildcard>`, to create filenames from patterns - ``*."
-"jpg``"
+":ref:`Wildcards <expand-wildcard>`, to create filenames from patterns - "
+"``*.jpg``"
 msgstr ""
 
 #: ../../../language.rst:587
@@ -1558,10 +1559,10 @@ msgid ""
 "executed, :ref:`$status <variables-status>` is set to nonzero, and a warning "
 "is printed. This behavior is like what bash does with ``shopt -s failglob``. "
 "There are exceptions, namely :doc:`set <cmds/set>` and :doc:`path <cmds/"
-"path>`, overriding variables in :ref:`overrides <variables-override>`, :doc:"
-"`count <cmds/count>` and :doc:`for <cmds/for>`. Their globs will instead "
-"expand to zero arguments (so the command won't see them at all), like with "
-"``shopt -s nullglob`` in bash."
+"path>`, overriding variables in :ref:`overrides <variables-"
+"override>`, :doc:`count <cmds/count>` and :doc:`for <cmds/for>`. Their globs "
+"will instead expand to zero arguments (so the command won't see them at "
+"all), like with ``shopt -s nullglob`` in bash."
 msgstr ""
 
 #: ../../../language.rst:621 ../../../language.rst:752
@@ -1852,9 +1853,9 @@ msgstr ""
 
 #: ../../../language.rst:748
 msgid ""
-"The exit status of the last run command substitution is available in the :"
-"ref:`status <variables-status>` variable if the substitution happens in the "
-"context of a :doc:`set <cmds/set>` command (so ``if set -l (something)`` "
+"The exit status of the last run command substitution is available in "
+"the :ref:`status <variables-status>` variable if the substitution happens in "
+"the context of a :doc:`set <cmds/set>` command (so ``if set -l (something)`` "
 "checks if ``something`` returned true)."
 msgstr ""
 
@@ -2013,8 +2014,8 @@ msgid ""
 "When lists are expanded with other parts attached, they are expanded with "
 "these parts still attached. Even if two lists are attached to each other, "
 "they are expanded in all combinations. This is referred to as the "
-"\"cartesian product\" (like in mathematics), and works basically like :ref:"
-"`brace expansion <expand-brace>`."
+"\"cartesian product\" (like in mathematics), and works basically "
+"like :ref:`brace expansion <expand-brace>`."
 msgstr ""
 
 #: ../../../language.rst:836
@@ -2108,9 +2109,9 @@ msgstr ""
 #: ../../../language.rst:897
 msgid ""
 "Sometimes it's necessary to access only some of the elements of a :ref:`list "
-"<variables-lists>` (all fish variables are lists), or some of the lines a :"
-"ref:`command substitution <expand-command-substitution>` outputs. Both are "
-"possible in fish by writing a set of indices in brackets, like::"
+"<variables-lists>` (all fish variables are lists), or some of the lines "
+"a :ref:`command substitution <expand-command-substitution>` outputs. Both "
+"are possible in fish by writing a set of indices in brackets, like::"
 msgstr ""
 
 #: ../../../language.rst:899
@@ -2648,10 +2649,10 @@ msgstr ""
 
 #: ../../../language.rst:1182
 msgid ""
-":ref:`Universal variables <variables-universal>` are stored in the file ``."
-"config/fish/fish_variables``. Do not edit this file directly, as your edits "
-"may be overwritten. Edit the variables through fish scripts or by using fish "
-"interactively instead."
+":ref:`Universal variables <variables-universal>` are stored in the file "
+"``.config/fish/fish_variables``. Do not edit this file directly, as your "
+"edits may be overwritten. Edit the variables through fish scripts or by "
+"using fish interactively instead."
 msgstr ""
 
 #: ../../../language.rst:1184
@@ -2863,15 +2864,15 @@ msgstr ""
 #: ../../../language.rst:1282
 msgid ""
 "Fish automatically creates lists from all environment variables whose name "
-"ends in ``PATH`` (like :envvar:`PATH`, :envvar:`CDPATH` or :envvar:"
-"`MANPATH`), by splitting them on colons. Other variables are not "
+"ends in ``PATH`` (like :envvar:`PATH`, :envvar:`CDPATH` "
+"or :envvar:`MANPATH`), by splitting them on colons. Other variables are not "
 "automatically split."
 msgstr ""
 
 #: ../../../language.rst:1284
 msgid ""
-"Lists can be inspected with the :doc:`count <cmds/count>` or the :doc:"
-"`contains <cmds/contains>` commands::"
+"Lists can be inspected with the :doc:`count <cmds/count>` or "
+"the :doc:`contains <cmds/contains>` commands::"
 msgstr ""
 
 #: ../../../language.rst:1286
@@ -3007,8 +3008,8 @@ msgstr ""
 
 #: ../../../language.rst:1361
 msgid ""
-"For more information on argparse, like how to handle option arguments, see :"
-"doc:`the argparse documentation <cmds/argparse>`."
+"For more information on argparse, like how to handle option arguments, "
+"see :doc:`the argparse documentation <cmds/argparse>`."
 msgstr ""
 
 #: ../../../language.rst:1366
@@ -3018,9 +3019,10 @@ msgstr ""
 #: ../../../language.rst:1368
 msgid ""
 "Path variables are a special kind of variable used to support colon-"
-"delimited path lists including :envvar:`PATH`, :envvar:`CDPATH`, :envvar:"
-"`MANPATH`, :envvar:`PYTHONPATH`, etc. All variables that end in "
-"\"PATH\" (case-sensitive) become PATH variables by default."
+"delimited path lists "
+"including :envvar:`PATH`, :envvar:`CDPATH`, :envvar:`MANPATH`, :envvar:`PYTHONPATH`, "
+"etc. All variables that end in \"PATH\" (case-sensitive) become PATH "
+"variables by default."
 msgstr ""
 
 #: ../../../language.rst:1370
@@ -3057,8 +3059,9 @@ msgstr ""
 #: ../../../language.rst:1391
 msgid ""
 "This is for compatibility with other tools. Unix doesn't have variables with "
-"multiple elements, the closest thing it has are colon-lists like :envvar:"
-"`PATH`. For obvious reasons this means no element can contain a ``:``."
+"multiple elements, the closest thing it has are colon-lists "
+"like :envvar:`PATH`. For obvious reasons this means no element can contain a "
+"``:``."
 msgstr ""
 
 #: ../../../language.rst:1393
@@ -3091,11 +3094,11 @@ msgstr ""
 
 #: ../../../language.rst:1412
 msgid ""
-"The locale variables :envvar:`LANG`, :envvar:`LC_ALL`, :envvar:"
-"`LC_COLLATE`, :envvar:`LC_CTYPE`, :envvar:`LC_MESSAGES`, :envvar:"
-"`LC_MONETARY`, :envvar:`LC_NUMERIC`, and :envvar:`LANG` set the language "
-"option for the shell and subprograms. See the section :ref:`Locale variables "
-"<variables-locale>` for more information."
+"The locale "
+"variables :envvar:`LANG`, :envvar:`LC_ALL`, :envvar:`LC_COLLATE`, :envvar:`LC_CTYPE`, :envvar:`LC_MESSAGES`, :envvar:`LC_MONETARY`, :envvar:`LC_NUMERIC`, "
+"and :envvar:`LANG` set the language option for the shell and subprograms. "
+"See the section :ref:`Locale variables <variables-locale>` for more "
+"information."
 msgstr ""
 
 #: ../../../language.rst:1416
@@ -3150,8 +3153,8 @@ msgstr ""
 
 #: ../../../language.rst:1446
 msgid ""
-"the name of the function that sets up the keyboard shortcuts for the :ref:"
-"`command-line editor <editor>`."
+"the name of the function that sets up the keyboard shortcuts for "
+"the :ref:`command-line editor <editor>`."
 msgstr ""
 
 #: ../../../language.rst:1450
@@ -3159,8 +3162,8 @@ msgid ""
 "sets how long fish waits for another key after seeing an escape, to "
 "distinguish pressing the escape key from the start of an escape sequence. "
 "The default is 30ms. Increasing it increases the latency but allows pressing "
-"escape instead of alt for alt+character bindings. For more information, see :"
-"ref:`the chapter in the bind documentation <cmd-bind-escape>`."
+"escape instead of alt for alt+character bindings. For more information, "
+"see :ref:`the chapter in the bind documentation <cmd-bind-escape>`."
 msgstr ""
 
 #: ../../../language.rst:1454
@@ -3195,8 +3198,8 @@ msgstr ""
 #: ../../../language.rst:1470
 msgid ""
 "the greeting message printed on startup. This is printed by a function of "
-"the same name that can be overridden for more complicated changes (see :doc:"
-"`funced <cmds/funced>`)"
+"the same name that can be overridden for more complicated changes "
+"(see :doc:`funced <cmds/funced>`)"
 msgstr ""
 
 #: ../../../language.rst:1474
@@ -3290,8 +3293,8 @@ msgstr ""
 
 #: ../../../language.rst:1533
 msgid ""
-"how many bytes fish will process with :doc:`read <cmds/read>` or in a :ref:"
-"`command substitution <expand-command-substitution>`."
+"how many bytes fish will process with :doc:`read <cmds/read>` or in "
+"a :ref:`command substitution <expand-command-substitution>`."
 msgstr ""
 
 #: ../../../language.rst:1537
@@ -3312,9 +3315,9 @@ msgstr ""
 
 #: ../../../language.rst:1553
 msgid ""
-"the internal field separator that is used for word splitting with the :doc:"
-"`read <cmds/read>` builtin. Setting this to the empty string will also "
-"disable line splitting in :ref:`command substitution <expand-command-"
+"the internal field separator that is used for word splitting with "
+"the :doc:`read <cmds/read>` builtin. Setting this to the empty string will "
+"also disable line splitting in :ref:`command substitution <expand-command-"
 "substitution>`. This variable can be changed."
 msgstr ""
 
@@ -3745,9 +3748,9 @@ msgstr ""
 
 #: ../../../language.rst:1746
 msgid ""
-"If there is a file of the name with a \".fish\" suffix in :envvar:"
-"`fish_function_path`, it :ref:`loads that <syntax-function-autoloading>`. "
-"(If there is more than one file only the first is used)"
+"If there is a file of the name with a \".fish\" suffix "
+"in :envvar:`fish_function_path`, it :ref:`loads that <syntax-function-"
+"autoloading>`. (If there is more than one file only the first is used)"
 msgstr ""
 
 #: ../../../language.rst:1747
@@ -3830,8 +3833,8 @@ msgid ""
 "        and isatty stdin\n"
 "        and isatty stdout\n"
 "        # Keep asking until we get a valid response\n"
-"        while read --nchars 1 -l response --prompt-str=\"Are you sure? (y/"
-"n)\"\n"
+"        while read --nchars 1 -l response --prompt-str=\"Are you sure? (y/n)"
+"\"\n"
 "              or return 1 # if the read was aborted with ctrl-c/ctrl-d\n"
 "            switch $response\n"
 "                case y Y\n"
@@ -3968,8 +3971,8 @@ msgstr ""
 msgid ""
 "System-wide configuration files, where administrators can include "
 "initialization for all users on the system - similar to ``/etc/profile`` for "
-"POSIX-style shells - in ``$__fish_sysconf_dir`` (usually ``/etc/fish/config."
-"fish``)."
+"POSIX-style shells - in ``$__fish_sysconf_dir`` (usually ``/etc/fish/"
+"config.fish``)."
 msgstr ""
 
 #: ../../../language.rst:1851
@@ -4009,9 +4012,9 @@ msgstr ""
 
 #: ../../../language.rst:1859
 msgid ""
-"For system integration, fish also ships a file called ``__fish_build_paths."
-"fish``. This can be customized during build, for instance because your "
-"system requires special paths to be used."
+"For system integration, fish also ships a file called "
+"``__fish_build_paths.fish``. This can be customized during build, for "
+"instance because your system requires special paths to be used."
 msgstr ""
 
 #: ../../../language.rst:1864
@@ -4270,11 +4273,11 @@ msgid ""
 "execution of a script at an arbitrary point. When this happens you are "
 "presented with an interactive prompt where you can execute any fish command "
 "to inspect or change state (there are no debug commands as such). For "
-"example, you can check or change the value of any variables using :doc:"
-"`printf <cmds/printf>` and :doc:`set <cmds/set>`. As another example, you "
-"can run :doc:`status print-stack-trace <cmds/status>` to see how the current "
-"breakpoint was reached. To resume normal execution of the script, simply "
-"type :doc:`exit <cmds/exit>` or :kbd:`Control`\\ +\\ :kbd:`D`."
+"example, you can check or change the value of any variables "
+"using :doc:`printf <cmds/printf>` and :doc:`set <cmds/set>`. As another "
+"example, you can run :doc:`status print-stack-trace <cmds/status>` to see "
+"how the current breakpoint was reached. To resume normal execution of the "
+"script, simply type :doc:`exit <cmds/exit>` or :kbd:`Control`\\ +\\ :kbd:`D`."
 msgstr ""
 
 #: ../../../language.rst:1969

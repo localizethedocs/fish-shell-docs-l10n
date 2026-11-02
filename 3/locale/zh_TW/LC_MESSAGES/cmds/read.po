@@ -305,8 +305,9 @@ msgid ""
 "In order to protect the shell from consuming too many system resources, "
 "``read`` will only consume a maximum of 100 MiB (104857600 bytes); if the "
 "terminator is not reached before this limit then *VARIABLE* is set to empty "
-"and the exit status is set to 122. This limit can be altered with the :"
-"envvar:`fish_read_limit` variable. If set to 0 (zero), the limit is removed."
+"and the exit status is set to 122. This limit can be altered with "
+"the :envvar:`fish_read_limit` variable. If set to 0 (zero), the limit is "
+"removed."
 msgstr ""
 
 #: ../../../cmds/read.rst:99
@@ -319,8 +320,8 @@ msgstr ""
 
 #: ../../../cmds/read.rst:103
 msgid ""
-"The following code stores the value 'hello' in the shell variable :envvar:"
-"`foo`."
+"The following code stores the value 'hello' in the shell "
+"variable :envvar:`foo`."
 msgstr ""
 
 #: ../../../cmds/read.rst:107

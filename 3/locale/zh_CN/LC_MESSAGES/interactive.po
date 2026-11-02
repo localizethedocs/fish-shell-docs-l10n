@@ -80,11 +80,11 @@ msgstr ""
 
 #: ../../../interactive.rst:28
 msgid ""
-"To accept the autosuggestion (replacing the command line contents), press :"
-"kbd:`→` or :kbd:`Control`\\ +\\ :kbd:`F`. To accept the first suggested "
-"word, press :kbd:`Alt`\\ +\\ :kbd:`→` or :kbd:`Alt`\\ +\\ :kbd:`F`. If the "
-"autosuggestion is not what you want, just ignore it: it won't execute unless "
-"you accept it."
+"To accept the autosuggestion (replacing the command line contents), "
+"press :kbd:`→` or :kbd:`Control`\\ +\\ :kbd:`F`. To accept the first "
+"suggested word, press :kbd:`Alt`\\ +\\ :kbd:`→` or :kbd:`Alt`\\ +"
+"\\ :kbd:`F`. If the autosuggestion is not what you want, just ignore it: it "
+"won't execute unless you accept it."
 msgstr ""
 
 #: ../../../interactive.rst:30
@@ -110,19 +110,20 @@ msgstr ""
 
 #: ../../../interactive.rst:41
 msgid ""
-"Tab completion is a time saving feature of any modern shell. When you type :"
-"kbd:`Tab`, fish tries to guess the rest of the word under the cursor. If it "
-"finds just one possibility, it inserts it. If it finds more, it inserts the "
-"longest unambiguous part and then opens a menu (the \"pager\") that you can "
-"navigate to find what you're looking for."
+"Tab completion is a time saving feature of any modern shell. When you "
+"type :kbd:`Tab`, fish tries to guess the rest of the word under the cursor. "
+"If it finds just one possibility, it inserts it. If it finds more, it "
+"inserts the longest unambiguous part and then opens a menu (the \"pager\") "
+"that you can navigate to find what you're looking for."
 msgstr ""
 
 #: ../../../interactive.rst:43
 msgid ""
 "The pager can be navigated with the arrow keys, :kbd:`Page Up` / :kbd:`Page "
-"Down`, :kbd:`Tab` or :kbd:`Shift`\\ +\\ :kbd:`Tab`. Pressing :kbd:"
-"`Control`\\ +\\ :kbd:`S` (the ``pager-toggle-search`` binding - :kbd:`/` in "
-"vi-mode) opens up a search menu that you can use to filter the list."
+"Down`, :kbd:`Tab` or :kbd:`Shift`\\ +\\ :kbd:`Tab`. "
+"Pressing :kbd:`Control`\\ +\\ :kbd:`S` (the ``pager-toggle-search`` binding "
+"- :kbd:`/` in vi-mode) opens up a search menu that you can use to filter the "
+"list."
 msgstr ""
 
 #: ../../../interactive.rst:45
@@ -498,8 +499,8 @@ msgstr ""
 msgid ""
 "After entering ``gco`` and pressing :kbd:`Space` or :kbd:`Enter`, a ``gco`` "
 "in command position will turn into ``git checkout`` in the command line. If "
-"you want to use a literal ``gco`` sometimes, use :kbd:`Control`\\ +\\ :kbd:"
-"`Space` [#]_."
+"you want to use a literal ``gco`` sometimes, use :kbd:`Control`\\ +"
+"\\ :kbd:`Space` [#]_."
 msgstr ""
 
 #: ../../../interactive.rst:193
@@ -549,10 +550,10 @@ msgid ""
 "before and after a new command is executed or put into the foreground and "
 "the output is used as a titlebar message. The :doc:`status current-command "
 "<cmds/status>` builtin will always return the name of the job to be put into "
-"the foreground (or ``fish`` if control is returning to the shell) when the :"
-"doc:`fish_prompt <cmds/fish_prompt>` function is called. The first argument "
-"to fish_title will contain the most recently executed foreground command as "
-"a string."
+"the foreground (or ``fish`` if control is returning to the shell) when "
+"the :doc:`fish_prompt <cmds/fish_prompt>` function is called. The first "
+"argument to fish_title will contain the most recently executed foreground "
+"command as a string."
 msgstr ""
 
 #: ../../../interactive.rst:213
@@ -587,8 +588,8 @@ msgstr ""
 #: ../../../interactive.rst:230
 msgid ""
 "When it is fish's turn to ask for input (like after it started or the "
-"command ended), it will show a prompt. It does this by running the :doc:"
-"`fish_prompt <cmds/fish_prompt>` and :doc:`fish_right_prompt <cmds/"
+"command ended), it will show a prompt. It does this by running "
+"the :doc:`fish_prompt <cmds/fish_prompt>` and :doc:`fish_right_prompt <cmds/"
 "fish_right_prompt>` functions."
 msgstr ""
 
@@ -641,8 +642,8 @@ msgstr ""
 #: ../../../interactive.rst:253
 msgid ""
 "save this in config.fish or :ref:`a function file <syntax-function-"
-"autoloading>`. You can also use :doc:`funced <cmds/funced>` and :doc:"
-"`funcsave <cmds/funcsave>` to edit it easily."
+"autoloading>`. You can also use :doc:`funced <cmds/funced>` "
+"and :doc:`funcsave <cmds/funcsave>` to edit it easily."
 msgstr ""
 
 #: ../../../interactive.rst:258
@@ -726,9 +727,10 @@ msgstr ""
 
 #: ../../../interactive.rst:294
 msgid ""
-":kbd:`Tab` :ref:`completes <tab-completion>` the current token. :kbd:"
-"`Shift`\\ +\\ :kbd:`Tab` completes the current token and starts the pager's "
-"search mode. :kbd:`Tab` is the same as :kbd:`Control`\\ +\\ :kbd:`I`."
+":kbd:`Tab` :ref:`completes <tab-completion>` the current "
+"token. :kbd:`Shift`\\ +\\ :kbd:`Tab` completes the current token and starts "
+"the pager's search mode. :kbd:`Tab` is the same as :kbd:`Control`\\ +"
+"\\ :kbd:`I`."
 msgstr ""
 
 #: ../../../interactive.rst:296
@@ -774,12 +776,13 @@ msgstr ""
 
 #: ../../../interactive.rst:308
 msgid ""
-":kbd:`↑` (Up) and :kbd:`↓` (Down) (or :kbd:`Control`\\ +\\ :kbd:`P` and :kbd:"
-"`Control`\\ +\\ :kbd:`N` for emacs aficionados) search the command history "
-"for the previous/next command containing the string that was specified on "
-"the commandline before the search was started. If the commandline was empty "
-"when the search started, all commands match. See the :ref:`history <history-"
-"search>` section for more information on history searching."
+":kbd:`↑` (Up) and :kbd:`↓` (Down) (or :kbd:`Control`\\ +\\ :kbd:`P` "
+"and :kbd:`Control`\\ +\\ :kbd:`N` for emacs aficionados) search the command "
+"history for the previous/next command containing the string that was "
+"specified on the commandline before the search was started. If the "
+"commandline was empty when the search started, all commands match. See "
+"the :ref:`history <history-search>` section for more information on history "
+"searching."
 msgstr ""
 
 #: ../../../interactive.rst:310
@@ -816,16 +819,16 @@ msgstr ""
 #: ../../../interactive.rst:320
 msgid ""
 ":kbd:`Control`\\ +\\ :kbd:`W` removes the previous path component "
-"(everything up to the previous \"/\", \":\" or \"@\") (moving it to the :ref:"
-"`killring`)."
+"(everything up to the previous \"/\", \":\" or \"@\") (moving it to "
+"the :ref:`killring`)."
 msgstr ""
 
 #: ../../../interactive.rst:322
 msgid ""
 ":kbd:`Control`\\ +\\ :kbd:`X` copies the current buffer to the system's "
 "clipboard, :kbd:`Control`\\ +\\ :kbd:`V` inserts the clipboard contents. "
-"(see :doc:`fish_clipboard_copy <cmds/fish_clipboard_copy>` and :doc:"
-"`fish_clipboard_paste <cmds/fish_clipboard_paste>`)"
+"(see :doc:`fish_clipboard_copy <cmds/fish_clipboard_copy>` "
+"and :doc:`fish_clipboard_paste <cmds/fish_clipboard_paste>`)"
 msgstr ""
 
 #: ../../../interactive.rst:324
@@ -880,8 +883,9 @@ msgstr ""
 
 #: ../../../interactive.rst:342
 msgid ""
-":kbd:`Control`\\ +\\ :kbd:`Space` Inserts a space without expanding an :ref:"
-"`abbreviation <abbreviations>`. For vi-mode this only applies to insert-mode."
+":kbd:`Control`\\ +\\ :kbd:`Space` Inserts a space without expanding "
+"an :ref:`abbreviation <abbreviations>`. For vi-mode this only applies to "
+"insert-mode."
 msgstr ""
 
 #: ../../../interactive.rst:347
@@ -911,9 +915,9 @@ msgstr ""
 #: ../../../interactive.rst:355
 msgid ""
 ":kbd:`Control`\\ +\\ :kbd:`B`, :kbd:`Control`\\ +\\ :kbd:`F` move the cursor "
-"one character left or right or accept the autosuggestion just like the :kbd:"
-"`←` (Left) and :kbd:`→` (Right) shared bindings (which are available as "
-"well)."
+"one character left or right or accept the autosuggestion just like "
+"the :kbd:`←` (Left) and :kbd:`→` (Right) shared bindings (which are "
+"available as well)."
 msgstr ""
 
 #: ../../../interactive.rst:357
@@ -935,8 +939,8 @@ msgstr ""
 
 #: ../../../interactive.rst:363
 msgid ""
-":kbd:`Alt`\\ +\\ :kbd:`<` moves to the beginning of the commandline, :kbd:"
-"`Alt`\\ +\\ :kbd:`>` moves to the end."
+":kbd:`Alt`\\ +\\ :kbd:`<` moves to the beginning of the "
+"commandline, :kbd:`Alt`\\ +\\ :kbd:`>` moves to the end."
 msgstr ""
 
 #: ../../../interactive.rst:365
@@ -969,9 +973,9 @@ msgstr ""
 
 #: ../../../interactive.rst:377
 msgid ""
-":kbd:`Control`\\ +\\ :kbd:`Z`, :kbd:`Control`\\ +\\ :kbd:`_` (:kbd:"
-"`Control`\\ +\\ :kbd:`/` on some terminals) undo the most recent edit of the "
-"line."
+":kbd:`Control`\\ +\\ :kbd:`Z`, :kbd:`Control`\\ +\\ :kbd:`_` "
+"(:kbd:`Control`\\ +\\ :kbd:`/` on some terminals) undo the most recent edit "
+"of the line."
 msgstr ""
 
 #: ../../../interactive.rst:379
@@ -981,10 +985,10 @@ msgstr ""
 #: ../../../interactive.rst:381
 msgid ""
 ":kbd:`Control`\\ +\\ :kbd:`R` opens the history in a pager. This will show "
-"history entries matching the search, a few at a time. Pressing :kbd:"
-"`Control`\\ +\\ :kbd:`R` again will search older entries, pressing :kbd:"
-"`Control`\\ +\\ :kbd:`S` (that otherwise toggles pager search) will go to "
-"newer entries. The search bar will always be selected."
+"history entries matching the search, a few at a time. "
+"Pressing :kbd:`Control`\\ +\\ :kbd:`R` again will search older entries, "
+"pressing :kbd:`Control`\\ +\\ :kbd:`S` (that otherwise toggles pager search) "
+"will go to newer entries. The search bar will always be selected."
 msgstr ""
 
 #: ../../../interactive.rst:384
@@ -998,11 +1002,12 @@ msgstr ""
 
 #: ../../../interactive.rst:392
 msgid ""
-"Vi mode allows for the use of Vi-like commands at the prompt. Initially, :"
-"ref:`insert mode <vi-mode-insert>` is active. :kbd:`Escape` enters :ref:"
-"`command mode <vi-mode-command>`. The commands available in command, insert "
-"and visual mode are described below. Vi mode shares :ref:`some bindings "
-"<shared-binds>` with :ref:`Emacs mode <emacs-mode>`."
+"Vi mode allows for the use of Vi-like commands at the prompt. "
+"Initially, :ref:`insert mode <vi-mode-insert>` is active. :kbd:`Escape` "
+"enters :ref:`command mode <vi-mode-command>`. The commands available in "
+"command, insert and visual mode are described below. Vi mode "
+"shares :ref:`some bindings <shared-binds>` with :ref:`Emacs mode <emacs-"
+"mode>`."
 msgstr ""
 
 #: ../../../interactive.rst:394
@@ -1041,10 +1046,10 @@ msgstr ""
 msgid ""
 "When a binding switches the mode, it will repaint the mode-prompt if it "
 "exists, and the rest of the prompt only if it doesn't. So if you want a mode-"
-"indicator in your ``fish_prompt``, you need to erase ``fish_mode_prompt`` e."
-"g. by adding an empty file at ``~/.config/fish/functions/fish_mode_prompt."
-"fish``. (Bindings that change the mode are supposed to call the `repaint-"
-"mode` bind function, see :doc:`bind <cmds/bind>`)"
+"indicator in your ``fish_prompt``, you need to erase ``fish_mode_prompt`` "
+"e.g. by adding an empty file at ``~/.config/fish/functions/"
+"fish_mode_prompt.fish``. (Bindings that change the mode are supposed to call "
+"the `repaint-mode` bind function, see :doc:`bind <cmds/bind>`)"
 msgstr ""
 
 #: ../../../interactive.rst:414
@@ -1176,8 +1181,8 @@ msgstr ""
 
 #: ../../../interactive.rst:466
 msgid ""
-":kbd:`d`\\ +\\ :kbd:`d` deletes the current line and moves it to the :ref:"
-"`killring`."
+":kbd:`d`\\ +\\ :kbd:`d` deletes the current line and moves it to "
+"the :ref:`killring`."
 msgstr ""
 
 #: ../../../interactive.rst:468
@@ -1266,8 +1271,8 @@ msgstr ""
 
 #: ../../../interactive.rst:511
 msgid ""
-":kbd:`d` and :kbd:`x` move the selection to the :ref:`killring` and enter :"
-"ref:`command mode <vi-mode-command>`."
+":kbd:`d` and :kbd:`x` move the selection to the :ref:`killring` and "
+"enter :ref:`command mode <vi-mode-command>`."
 msgstr ""
 
 #: ../../../interactive.rst:513
@@ -1282,20 +1287,20 @@ msgstr ""
 
 #: ../../../interactive.rst:517
 msgid ""
-":kbd:`X` moves the entire line to the :ref:`killring`, and enters :ref:"
-"`command mode <vi-mode-command>`."
+":kbd:`X` moves the entire line to the :ref:`killring`, and "
+"enters :ref:`command mode <vi-mode-command>`."
 msgstr ""
 
 #: ../../../interactive.rst:519
 msgid ""
-":kbd:`y` copies the selection to the :ref:`killring`, and enters :ref:"
-"`command mode <vi-mode-command>`."
+":kbd:`y` copies the selection to the :ref:`killring`, and "
+"enters :ref:`command mode <vi-mode-command>`."
 msgstr ""
 
 #: ../../../interactive.rst:521
 msgid ""
-":kbd:`~` toggles the case (upper/lower) on the selection, and enters :ref:"
-"`command mode <vi-mode-command>`."
+":kbd:`~` toggles the case (upper/lower) on the selection, and "
+"enters :ref:`command mode <vi-mode-command>`."
 msgstr ""
 
 #: ../../../interactive.rst:523
@@ -1346,8 +1351,8 @@ msgstr ""
 #: ../../../interactive.rst:543
 msgid ""
 "If you use :ref:`vi bindings <vi-mode>`, note that ``bind`` will by default "
-"bind keys in :ref:`command mode <vi-mode-command>`. To bind something in :"
-"ref:`insert mode <vi-mode-insert>`::"
+"bind keys in :ref:`command mode <vi-mode-command>`. To bind something "
+"in :ref:`insert mode <vi-mode-insert>`::"
 msgstr ""
 
 #: ../../../interactive.rst:545
@@ -1416,8 +1421,8 @@ msgstr ""
 #: ../../../interactive.rst:573
 msgid ""
 "Similarly, to disambiguate *other* keypresses where you've bound a "
-"subsequence and a longer sequence, fish has :envvar:"
-"`fish_sequence_key_delay_ms`::"
+"subsequence and a longer sequence, fish "
+"has :envvar:`fish_sequence_key_delay_ms`::"
 msgstr ""
 
 #: ../../../interactive.rst:575
@@ -1440,9 +1445,9 @@ msgstr ""
 msgid ""
 "Fish uses an Emacs-style kill ring for copy and paste functionality. For "
 "example, use :kbd:`Control`\\ +\\ :kbd:`K` (`kill-line`) to cut from the "
-"current cursor position to the end of the line. The string that is cut (a.k."
-"a. killed in emacs-ese) is inserted into a list of kills, called the kill "
-"ring. To paste the latest value from the kill ring (emacs calls this "
+"current cursor position to the end of the line. The string that is cut "
+"(a.k.a. killed in emacs-ese) is inserted into a list of kills, called the "
+"kill ring. To paste the latest value from the kill ring (emacs calls this "
 "\"yanking\") use :kbd:`Control`\\ +\\ :kbd:`Y` (the ``yank`` input "
 "function). After pasting, use :kbd:`Alt`\\ +\\ :kbd:`Y` (``yank-pop``) to "
 "rotate to the previous kill."
@@ -1450,26 +1455,26 @@ msgstr ""
 
 #: ../../../interactive.rst:591
 msgid ""
-"Copy and paste from outside are also supported, both via the :kbd:"
-"`Control`\\ +\\ :kbd:`X` / :kbd:`Control`\\ +\\ :kbd:`V` bindings (the "
-"``fish_clipboard_copy`` and ``fish_clipboard_paste`` functions [#]_) and via "
-"the terminal's paste function, for which fish enables \"Bracketed Paste "
-"Mode\", so it can tell a paste from manually entered text. In addition, when "
-"pasting inside single quotes, pasted single quotes and backslashes are "
-"automatically escaped so that the result can be used as a single token "
-"simply by closing the quote after. Kill ring entries are stored in "
-"``fish_killring`` variable."
+"Copy and paste from outside are also supported, both via "
+"the :kbd:`Control`\\ +\\ :kbd:`X` / :kbd:`Control`\\ +\\ :kbd:`V` bindings "
+"(the ``fish_clipboard_copy`` and ``fish_clipboard_paste`` functions [#]_) "
+"and via the terminal's paste function, for which fish enables \"Bracketed "
+"Paste Mode\", so it can tell a paste from manually entered text. In "
+"addition, when pasting inside single quotes, pasted single quotes and "
+"backslashes are automatically escaped so that the result can be used as a "
+"single token simply by closing the quote after. Kill ring entries are stored "
+"in ``fish_killring`` variable."
 msgstr ""
 
 #: ../../../interactive.rst:595
 msgid ""
 "The commands ``begin-selection`` and ``end-selection`` (unbound by default; "
 "used for selection in vi visual mode) control text selection together with "
-"cursor movement commands that extend the current selection. The variable :"
-"envvar:`fish_cursor_selection_mode` can be used to configure if that "
-"selection should include the character under the cursor (``inclusive``) or "
-"not (``exclusive``). The default is ``exclusive``, which works well with any "
-"cursor shape. For vi mode, and particularly for the ``block`` or "
+"cursor movement commands that extend the current selection. The "
+"variable :envvar:`fish_cursor_selection_mode` can be used to configure if "
+"that selection should include the character under the cursor (``inclusive``) "
+"or not (``exclusive``). The default is ``exclusive``, which works well with "
+"any cursor shape. For vi mode, and particularly for the ``block`` or "
 "``underscore`` cursor shapes you may prefer ``inclusive``."
 msgstr ""
 
@@ -1591,8 +1596,8 @@ msgstr ""
 
 #: ../../../interactive.rst:643
 msgid ""
-"Or another binding that triggers the ``history-pager`` input function. See :"
-"doc:`bind <cmds/bind>` for a list."
+"Or another binding that triggers the ``history-pager`` input function. "
+"See :doc:`bind <cmds/bind>` for a list."
 msgstr ""
 
 #: ../../../interactive.rst:644
@@ -1623,9 +1628,9 @@ msgstr ""
 
 #: ../../../interactive.rst:658
 msgid ""
-"Fish automatically keeps a trail of the recent visited directories with :doc:"
-"`cd <cmds/cd>` by storing this history in the ``dirprev`` and ``dirnext`` "
-"variables."
+"Fish automatically keeps a trail of the recent visited directories "
+"with :doc:`cd <cmds/cd>` by storing this history in the ``dirprev`` and "
+"``dirnext`` variables."
 msgstr ""
 
 #: ../../../interactive.rst:660
@@ -1648,8 +1653,8 @@ msgstr ""
 
 #: ../../../interactive.rst:665
 msgid ""
-":doc:`nextd <cmds/nextd>` moves forward through the history. It is bound to :"
-"kbd:`Alt`\\ +\\ :kbd:`→`"
+":doc:`nextd <cmds/nextd>` moves forward through the history. It is bound "
+"to :kbd:`Alt`\\ +\\ :kbd:`→`"
 msgstr ""
 
 #: ../../../interactive.rst:670

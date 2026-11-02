@@ -39,9 +39,9 @@ msgstr "描述"
 msgid ""
 "``string pad`` extends each *STRING* to the given visible width by adding "
 "*CHAR* to the left. That means the width of all visible characters added "
-"together, excluding escape sequences and accounting for :envvar:"
-"`fish_emoji_width` and :envvar:`fish_ambiguous_width`. It is the amount of "
-"columns in a terminal the *STRING* occupies."
+"together, excluding escape sequences and accounting "
+"for :envvar:`fish_emoji_width` and :envvar:`fish_ambiguous_width`. It is the "
+"amount of columns in a terminal the *STRING* occupies."
 msgstr ""
 
 #: ../../../cmds/string-pad.rst:23

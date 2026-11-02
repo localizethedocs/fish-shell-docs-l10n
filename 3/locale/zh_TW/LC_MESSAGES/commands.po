@@ -314,8 +314,8 @@ msgstr ""
 
 #: ../../../commands.rst:85
 msgid ""
-"This includes :doc:`fish_indent <cmds/fish_indent>` to format fish code and :"
-"doc:`fish_key_reader <cmds/fish_key_reader>` to show you what escape "
+"This includes :doc:`fish_indent <cmds/fish_indent>` to format fish code "
+"and :doc:`fish_key_reader <cmds/fish_key_reader>` to show you what escape "
 "sequence a keypress produces."
 msgstr ""
 

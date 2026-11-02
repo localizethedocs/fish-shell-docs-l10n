@@ -52,10 +52,10 @@ msgstr ""
 
 #: ../../../cmds/funcsave.rst:22
 msgid ""
-"Because fish loads functions on-demand, saved functions cannot serve as :ref:"
-"`event handlers <event>` until they are run or otherwise sourced. To "
-"activate an event handler for every new shell, add the function to the :ref:"
-"`configuration file <configuration>` instead of using ``funcsave``."
+"Because fish loads functions on-demand, saved functions cannot serve "
+"as :ref:`event handlers <event>` until they are run or otherwise sourced. To "
+"activate an event handler for every new shell, add the function to "
+"the :ref:`configuration file <configuration>` instead of using ``funcsave``."
 msgstr ""
 
 #: ../../../cmds/funcsave.rst:24

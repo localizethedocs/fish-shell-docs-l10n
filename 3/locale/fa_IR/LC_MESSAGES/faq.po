@@ -164,8 +164,8 @@ msgstr ""
 
 #: ../../../faq.rst:73
 msgid ""
-"How do I run a command every login? What's fish's equivalent to .bashrc or ."
-"profile?"
+"How do I run a command every login? What's fish's equivalent to .bashrc "
+"or .profile?"
 msgstr ""
 
 #: ../../../faq.rst:74
@@ -206,8 +206,9 @@ msgstr ""
 
 #: ../../../faq.rst:89
 msgid ""
-"The prompt is the output of the ``fish_prompt`` function. Put it in ``~/."
-"config/fish/functions/fish_prompt.fish``. For example, a simple prompt is::"
+"The prompt is the output of the ``fish_prompt`` function. Put it in "
+"``~/.config/fish/functions/fish_prompt.fish``. For example, a simple prompt "
+"is::"
 msgstr ""
 
 #: ../../../faq.rst:91
@@ -258,8 +259,8 @@ msgstr ""
 
 #: ../../../faq.rst:119
 msgid ""
-"This also applies to :doc:`fish_right_prompt <cmds/fish_right_prompt>` and :"
-"doc:`fish_mode_prompt <cmds/fish_mode_prompt>`."
+"This also applies to :doc:`fish_right_prompt <cmds/fish_right_prompt>` "
+"and :doc:`fish_mode_prompt <cmds/fish_mode_prompt>`."
 msgstr ""
 
 #: ../../../faq.rst:122
@@ -315,9 +316,9 @@ msgstr ""
 
 #: ../../../faq.rst:145
 msgid ""
-"Change the value of the variable ``fish_greeting`` or create a :doc:"
-"`fish_greeting <cmds/fish_greeting>` function. For example, to remove the "
-"greeting use::"
+"Change the value of the variable ``fish_greeting`` or create "
+"a :doc:`fish_greeting <cmds/fish_greeting>` function. For example, to remove "
+"the greeting use::"
 msgstr ""
 
 #: ../../../faq.rst:147
@@ -343,10 +344,11 @@ msgstr ""
 #: ../../../faq.rst:157
 msgid ""
 "Type some part of the command, and then hit the :kbd:`↑` (up) or :kbd:`↓` "
-"(down) arrow keys to navigate through history matches, or press :kbd:"
-"`Control`\\ +\\ :kbd:`R` to open the history in a searchable pager. In this "
-"pager you can press :kbd:`Control`\\ +\\ :kbd:`R` or :kbd:`Control`\\ +\\ :"
-"kbd:`S` to move to older or younger history respectively."
+"(down) arrow keys to navigate through history matches, or "
+"press :kbd:`Control`\\ +\\ :kbd:`R` to open the history in a searchable "
+"pager. In this pager you can press :kbd:`Control`\\ +\\ :kbd:`R` "
+"or :kbd:`Control`\\ +\\ :kbd:`S` to move to older or younger history "
+"respectively."
 msgstr ""
 
 #: ../../../faq.rst:159
@@ -400,23 +402,23 @@ msgstr ""
 msgid ""
 ":kbd:`Alt`\\ +\\ :kbd:`↑` recalls individual arguments, starting from the "
 "last argument in the last executed line.  A single press replaces \"!$\", "
-"later presses replace \"!!:4\" and such. As an alternate key binding, :kbd:"
-"`Alt`\\ +\\ :kbd:`.` can be used."
+"later presses replace \"!!:4\" and such. As an alternate key "
+"binding, :kbd:`Alt`\\ +\\ :kbd:`.` can be used."
 msgstr ""
 
 #: ../../../faq.rst:175
 msgid ""
 "If the argument you want is far back in history (e.g. 2 lines back - that's "
-"a lot of words!), type any part of it and then press :kbd:`Alt`\\ +\\ :kbd:"
-"`↑`.  This will show only arguments containing that part and you will get "
-"what you want much faster.  Try it out, this is very convenient!"
+"a lot of words!), type any part of it and then press :kbd:`Alt`\\ +"
+"\\ :kbd:`↑`.  This will show only arguments containing that part and you "
+"will get what you want much faster.  Try it out, this is very convenient!"
 msgstr ""
 
 #: ../../../faq.rst:177
 msgid ""
 "If you want to reuse several arguments from the same line (\"!!:3*\" and the "
-"like), consider recalling the whole line and removing what you don't need (:"
-"kbd:`Alt`\\ +\\ :kbd:`D` and :kbd:`Alt`\\ +\\ :kbd:`Backspace` are your "
+"like), consider recalling the whole line and removing what you don't need "
+"(:kbd:`Alt`\\ +\\ :kbd:`D` and :kbd:`Alt`\\ +\\ :kbd:`Backspace` are your "
 "friends)."
 msgstr ""
 
@@ -556,8 +558,8 @@ msgstr ""
 
 #: ../../../faq.rst:246
 msgid ""
-"See the :ref:`Conditions <syntax-conditional>` and the documentation for :"
-"doc:`test <cmds/test>` and :doc:`if <cmds/if>` for more information."
+"See the :ref:`Conditions <syntax-conditional>` and the documentation "
+"for :doc:`test <cmds/test>` and :doc:`if <cmds/if>` for more information."
 msgstr ""
 
 #: ../../../faq.rst:249

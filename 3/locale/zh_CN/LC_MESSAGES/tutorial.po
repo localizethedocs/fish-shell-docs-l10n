@@ -66,9 +66,9 @@ msgstr ""
 #: ../../../tutorial.rst:30
 msgid ""
 "This prompt that you see above is the fish default prompt: it shows your "
-"username, hostname, and working directory. - to change this prompt see :ref:"
-"`how to change your prompt <prompt>` - to switch to fish permanently see :"
-"ref:`Default Shell <default-shell>`."
+"username, hostname, and working directory. - to change this prompt "
+"see :ref:`how to change your prompt <prompt>` - to switch to fish "
+"permanently see :ref:`Default Shell <default-shell>`."
 msgstr ""
 
 #: ../../../tutorial.rst:34
@@ -100,8 +100,8 @@ msgstr ""
 
 #: ../../../tutorial.rst:46
 msgid ""
-"For the full, detailed description of how to use fish interactively, see :"
-"ref:`Interactive Use <interactive>`."
+"For the full, detailed description of how to use fish interactively, "
+"see :ref:`Interactive Use <interactive>`."
 msgstr ""
 
 #: ../../../tutorial.rst:48
@@ -325,8 +325,8 @@ msgstr ""
 
 #: ../../../tutorial.rst:175
 msgid ""
-"For more, see :ref:`Input and output redirections <redirects>` and :ref:"
-"`Pipes <pipes>`."
+"For more, see :ref:`Input and output redirections <redirects>` "
+"and :ref:`Pipes <pipes>`."
 msgstr ""
 
 #: ../../../tutorial.rst:178
@@ -422,8 +422,8 @@ msgstr ""
 
 #: ../../../tutorial.rst:239
 msgid ""
-":prompt:`>` :command:`git` :param:`merge pr`:kbd:`Tab` => :command:`git` :"
-"param:`merge prompt_designer`\n"
+":prompt:`>` :command:`git` :param:`merge pr`:kbd:`Tab` "
+"=> :command:`git` :param:`merge prompt_designer`\n"
 ":prompt:`>` :command:`git` :param:`checkout b`:kbd:`Tab`\n"
 "builtin_list_io_merge :gray:`(Branch)`  builtin_set_color :gray:`(Branch)` "
 "busted_events :gray:`(Tag)`"
@@ -562,8 +562,8 @@ msgstr ""
 #: ../../../tutorial.rst:308
 msgid ""
 "Exported variables can be local or global or universal - \"exported\" is not "
-"a :ref:`scope <variables-scope>`! Usually you'd make them global via ``set -"
-"gx MyVariable SomeValue``."
+"a :ref:`scope <variables-scope>`! Usually you'd make them global via ``set "
+"-gx MyVariable SomeValue``."
 msgstr ""
 
 #: ../../../tutorial.rst:310
@@ -983,8 +983,8 @@ msgstr ""
 
 #: ../../../tutorial.rst:539
 msgid ""
-"For even more complex conditions, use :doc:`begin <cmds/begin>` and :doc:"
-"`end <cmds/end>` to group parts of them."
+"For even more complex conditions, use :doc:`begin <cmds/begin>` "
+"and :doc:`end <cmds/end>` to group parts of them."
 msgstr ""
 
 #: ../../../tutorial.rst:541
@@ -1240,9 +1240,9 @@ msgstr ""
 
 #: ../../../tutorial.rst:672
 msgid ""
-"For compatibility with other shells and external commands, $PATH is a :ref:"
-"`path variable<variables-path>`, and so will be joined with colons (not "
-"spaces) when you quote it::"
+"For compatibility with other shells and external commands, $PATH is "
+"a :ref:`path variable<variables-path>`, and so will be joined with colons "
+"(not spaces) when you quote it::"
 msgstr ""
 
 #: ../../../tutorial.rst:674
@@ -1327,8 +1327,8 @@ msgstr ""
 
 #: ../../../tutorial.rst:714
 msgid ""
-"If you want to organize your configuration, fish also reads commands in ."
-"fish files in ``~/.config/fish/conf.d/``. See :ref:`Configuration Files "
+"If you want to organize your configuration, fish also reads commands "
+"in .fish files in ``~/.config/fish/conf.d/``. See :ref:`Configuration Files "
 "<configuration>` for the details."
 msgstr ""
 
@@ -1372,9 +1372,9 @@ msgstr ""
 #: ../../../tutorial.rst:737
 msgid ""
 "See the documentation for :doc:`funced <cmds/funced>` and :doc:`funcsave "
-"<cmds/funcsave>` for ways to create these files automatically, and :ref:"
-"`$fish_function_path <syntax-function-autoloading>` to control their "
-"location."
+"<cmds/funcsave>` for ways to create these files automatically, "
+"and :ref:`$fish_function_path <syntax-function-autoloading>` to control "
+"their location."
 msgstr ""
 
 #: ../../../tutorial.rst:742
@@ -1410,7 +1410,7 @@ msgstr ""
 msgid ""
 "If you want to learn more about fish, there is :ref:`lots of detailed "
 "documentation <intro>`, the `official gitter channel <https://gitter.im/fish-"
-"shell/fish-shell>`__, an `official mailing list <https://lists.sourceforge."
-"net/lists/listinfo/fish-users>`__, and the `github page <https://github.com/"
-"fish-shell/fish-shell/>`__."
+"shell/fish-shell>`__, an `official mailing list <https://"
+"lists.sourceforge.net/lists/listinfo/fish-users>`__, and the `github page "
+"<https://github.com/fish-shell/fish-shell/>`__."
 msgstr ""

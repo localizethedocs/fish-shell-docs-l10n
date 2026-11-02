@@ -82,9 +82,9 @@ msgstr ""
 msgid ""
 "The time after \"Executed in\" is what is known as the \"wall-clock time\". "
 "It is simply a measure of how long it took from the start of the command "
-"until it finished. Typically it is reasonably close to :envvar:"
-"`CMD_DURATION`, except for a slight skew because the two are taken at "
-"slightly different times."
+"until it finished. Typically it is reasonably close "
+"to :envvar:`CMD_DURATION`, except for a slight skew because the two are "
+"taken at slightly different times."
 msgstr ""
 
 #: ../../../cmds/time.rst:41
