@@ -42,10 +42,10 @@ msgid ""
 "A function call now captures it's functions's definition before the pipeline "
 "is started, so it is no longer affected by other commands in the pipeline "
 "erasing or redefining the function. For example, ``function sus; functions --"
-"erase sus; end; sus | sus`` now runs the same function twice (:issue:"
-"`12991`). This change also prevents modifications to ``$fish_function_path`` "
-"in an earlier pipeline element from invalidating later calls to autoloaded "
-"functions (:issue:`12996`)."
+"erase sus; end; sus | sus`` now runs the same function twice "
+"(:issue:`12991`). This change also prevents modifications to "
+"``$fish_function_path`` in an earlier pipeline element from invalidating "
+"later calls to autoloaded functions (:issue:`12996`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:11 ../../../../CHANGELOG.rst:47
@@ -150,8 +150,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:41
 msgid ""
-"On macOS terminals, keys like :kbd:`option-l` would execute bindings for :"
-"kbd:`alt-l` instead of the historical behavior of inserting a character "
+"On macOS terminals, keys like :kbd:`option-l` would execute bindings "
+"for :kbd:`alt-l` instead of the historical behavior of inserting a character "
 "(like ``@`` on a German layout) (:issue:`12973`)."
 msgstr ""
 
@@ -164,8 +164,8 @@ msgid ""
 "To mitigate issues in Konsole version v26.07.80's implementation of the "
 "kitty keyboard protocol, fish no longer requests that protocol on Konsole. "
 "The ``omit-term-workarounds`` :ref:`feature flag <featureflags>` can be "
-"turned on to enable the kitty keyboard protocol on Konsole again (:issue:"
-"`12948`)."
+"turned on to enable the kitty keyboard protocol on Konsole again "
+"(:issue:`12948`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:50
@@ -211,8 +211,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:60
 msgid ""
-"Builtin help pages now respect an override of the ``man`` function (:issue:"
-"`12886`)."
+"Builtin help pages now respect an override of the ``man`` function "
+"(:issue:`12886`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:61
@@ -244,15 +244,15 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:74
 msgid ""
 "On non-macOS platforms, :kbd:`alt-backspace`, :kbd:`alt-delete`, :kbd:`alt-"
-"left` and :kbd:`alt-right` operate on words again instead of tokens (:issue:"
-"`12122`) eliminating cross-platform differences in input handling."
+"left` and :kbd:`alt-right` operate on words again instead of tokens "
+"(:issue:`12122`) eliminating cross-platform differences in input handling."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:75
 msgid ""
 "Builtin and function commands can now be colored separately via new "
-"variables :envvar:`fish_color_builtin` and :envvar:`fish_color_function` (:"
-"issue:`12837`)."
+"variables :envvar:`fish_color_builtin` and :envvar:`fish_color_function` "
+"(:issue:`12837`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:76
@@ -279,8 +279,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:83
 msgid ""
 "(From 4.8.0) ``abbr --position=anywhere`` completions are no longer offered "
-"in argument position, to avoid cluttering the completion pager (:issue:"
-"`12838`)."
+"in argument position, to avoid cluttering the completion pager "
+"(:issue:`12838`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:84
@@ -348,8 +348,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:107
 msgid ""
-"Fixed an issue where :kbd:`ctrl-c` might fail to cancel certain functions (:"
-"issue:`12802`)."
+"Fixed an issue where :kbd:`ctrl-c` might fail to cancel certain functions "
+"(:issue:`12802`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:108
@@ -383,8 +383,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:117
 msgid ""
-":doc:`bind <cmds/bind>` shows the files where bindings were defined (:issue:"
-"`12504`)."
+":doc:`bind <cmds/bind>` shows the files where bindings were defined "
+"(:issue:`12504`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:120 ../../../../CHANGELOG.rst:169
@@ -429,14 +429,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:141
 msgid ""
-"(from 4.4.0) Vi mode ``c,W`` key binding wrongly deleted trailing spaces (:"
-"issue:`12790`)."
+"(from 4.4.0) Vi mode ``c,W`` key binding wrongly deleted trailing spaces "
+"(:issue:`12790`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:142
 msgid ""
-"(from 4.4.0) Vi mode ``x`` in :doc:`builtin read <cmds/read>` (:issue:"
-"`12724`)."
+"(from 4.4.0) Vi mode ``x`` in :doc:`builtin read <cmds/read>` "
+"(:issue:`12724`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:143
@@ -496,8 +496,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:164
 msgid ""
-"Fixed a case where directory completions were sorted in a surprising order (:"
-"issue:`12695`)."
+"Fixed a case where directory completions were sorted in a surprising order "
+"(:issue:`12695`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:165
@@ -609,8 +609,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:204
 msgid ""
-"The tab completion pager now left-justifies the description of each column (:"
-"issue:`12546`)."
+"The tab completion pager now left-justifies the description of each column "
+"(:issue:`12546`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:205
@@ -657,8 +657,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:217
 msgid ""
 "For compatibility with Bash, fish now accepts ``|&`` as alternate spelling "
-"of ``&|``, for piping both standard output and standard error (:issue:"
-"`11516`)."
+"of ``&|``, for piping both standard output and standard error "
+"(:issue:`11516`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:218
@@ -679,14 +679,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:227
 msgid ""
-"(from 4.5.0) Intermediate ``⏎`` artifact when redrawing prompt (:issue:"
-"`12476`)."
+"(from 4.5.0) Intermediate ``⏎`` artifact when redrawing prompt "
+"(:issue:`12476`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:228
 msgid ""
-"(from 4.4.0) ``history`` honors explicitly specified ``--color=`` again (:"
-"issue:`12512`)."
+"(from 4.4.0) ``history`` honors explicitly specified ``--color=`` again "
+"(:issue:`12512`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:229
@@ -695,8 +695,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:230
 msgid ""
-"(from 4.3.0) Error completing of commands starting with ``-`` (:issue:"
-"`12522`)."
+"(from 4.3.0) Error completing of commands starting with ``-`` "
+"(:issue:`12522`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:233
@@ -721,8 +721,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:244
 msgid ""
-"fish no longer reads the terminfo database to alter behaviour based on the :"
-"envvar:`TERM` environment variable, and does not depend on ncurses or "
+"fish no longer reads the terminfo database to alter behaviour based on "
+"the :envvar:`TERM` environment variable, and does not depend on ncurses or "
 "terminfo. The ``ignore-terminfo`` feature flag, introduced and enabled by "
 "default in fish 4.1, is now permanently enabled. fish may no longer work "
 "correctly on Data General Dasher D220 and Wyse WY-350 terminals, but should "
@@ -736,14 +736,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:249
 msgid ""
-"(from 4.4.0) Vi mode ``c,w`` key binding wrongly deleted trailing spaces (:"
-"issue:`12443`)."
+"(from 4.4.0) Vi mode ``c,w`` key binding wrongly deleted trailing spaces "
+"(:issue:`12443`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:250
 msgid ""
-"(from 4.4.0) Vi mode crash on ``c,i,w`` after accepting autosuggestion (:"
-"issue:`12430`)."
+"(from 4.4.0) Vi mode crash on ``c,i,w`` after accepting autosuggestion "
+"(:issue:`12430`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:251
@@ -785,8 +785,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:266
 msgid ""
 "fish now clears the terminal's ``FLUSHO`` flag when acquiring control of the "
-"terminal, to fix an issue caused by pressing :kbd:`ctrl-o` on macOS (:issue:"
-"`12304`)."
+"terminal, to fix an issue caused by pressing :kbd:`ctrl-o` on macOS "
+"(:issue:`12304`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:269 ../../../../CHANGELOG.rst:363
@@ -890,8 +890,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:300
 msgid ""
-"Last line of command output could be hidden when missing newline (:issue:"
-"`12246`)."
+"Last line of command output could be hidden when missing newline "
+"(:issue:`12246`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:302
@@ -909,8 +909,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:305
 msgid ""
 "Existing file paths in redirection targets such as ``> file.txt`` are now "
-"highlighted using :envvar:`fish_color_valid_path`, indicating that ``file."
-"txt`` will be clobbered (:issue:`12260`)."
+"highlighted using :envvar:`fish_color_valid_path`, indicating that "
+"``file.txt`` will be clobbered (:issue:`12260`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:308
@@ -990,8 +990,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:339
 msgid ""
-"You can still configure fish to propagate theme changes instantly; see :ref:"
-"`here <syntax-highlighting-instant-update>` for an example."
+"You can still configure fish to propagate theme changes instantly; "
+"see :ref:`here <syntax-highlighting-instant-update>` for an example."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:340
@@ -1020,8 +1020,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:350
 msgid ""
 "When using a noninteractive fish instance to compute completions, "
-"``commandline --cursor`` works as expected instead of throwing an error (:"
-"issue:`11993`)."
+"``commandline --cursor`` works as expected instead of throwing an error "
+"(:issue:`11993`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:351
@@ -1038,8 +1038,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:356
 msgid ""
-"Completion accuracy was improved for file paths containing ``=`` or ``:`` (:"
-"issue:`5363`)."
+"Completion accuracy was improved for file paths containing ``=`` or ``:`` "
+"(:issue:`5363`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:357
@@ -1100,8 +1100,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:373
 msgid ""
-"Operating-system-specific key bindings are now decided based on the :ref:"
-"`terminal's host OS <status-terminal-os>`."
+"Operating-system-specific key bindings are now decided based on "
+"the :ref:`terminal's host OS <status-terminal-os>`."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:374
@@ -1215,8 +1215,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:422
 msgid ""
 "The title of the terminal tab can now be set separately from the window "
-"title by defining the :doc:`fish_tab_title <cmds/fish_tab_title>` function (:"
-"issue:`2692`)."
+"title by defining the :doc:`fish_tab_title <cmds/fish_tab_title>` function "
+"(:issue:`2692`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:423
@@ -1230,8 +1230,8 @@ msgstr ""
 msgid ""
 ":doc:`fish_config prompt <cmds/fish_config>`'s ``choose`` and ``save`` "
 "subcommands have been taught to reset :doc:`fish_mode_prompt <cmds/"
-"fish_mode_prompt>` in addition to the other prompt functions (:issue:"
-"`11937`)."
+"fish_mode_prompt>` in addition to the other prompt functions "
+"(:issue:`11937`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:425
@@ -1250,8 +1250,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:429
 msgid ""
 "When run as a login shell on macOS, fish now sets :envvar:`MANPATH` "
-"correctly when that variable was already present in the environment (:issue:"
-"`10684`)."
+"correctly when that variable was already present in the environment "
+"(:issue:`10684`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:430
@@ -1263,8 +1263,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:431
 msgid ""
 "A MSYS2-specific workaround for Konsole and WezTerm has been added, to "
-"prevent them from using the wrong working directory when opening new tabs (:"
-"issue:`11981`)."
+"prevent them from using the wrong working directory when opening new tabs "
+"(:issue:`11981`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:436
@@ -1297,8 +1297,8 @@ msgid ""
 "except for HTML docs. As a result, future upgrades will no longer break "
 "running shells if one of fish's internal helper functions has been changed "
 "in the updated version. For now, the data files are still installed "
-"redundantly, to prevent upgrades from breaking already-running shells (:"
-"issue:`11921`). To reverse this change (which should not be necessary), "
+"redundantly, to prevent upgrades from breaking already-running shells "
+"(:issue:`11921`). To reverse this change (which should not be necessary), "
 "patch out the ``embed-data`` feature from ``cmake/Rust.cmake``. This option "
 "will be removed in future."
 msgstr ""
@@ -1317,8 +1317,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:456
 msgid ""
-"(from 4.1.0) Correct wrong terminal modes set by ``fish -c 'read; cat`` (:"
-"issue:`12024`)."
+"(from 4.1.0) Correct wrong terminal modes set by ``fish -c 'read; cat`` "
+"(:issue:`12024`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:457
@@ -1329,8 +1329,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:458
 msgid ""
-"(from 4.1.0) On MSYS2, fix saving/loading of universal variables (:issue:"
-"`11948`)."
+"(from 4.1.0) On MSYS2, fix saving/loading of universal variables "
+"(:issue:`11948`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:459
@@ -1345,8 +1345,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:461
 msgid ""
-"(from 4.1.0) Fix crash on invalid :doc:`function <cmds/function>` command (:"
-"issue:`11912`)."
+"(from 4.1.0) Fix crash on invalid :doc:`function <cmds/function>` command "
+"(:issue:`11912`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:462
@@ -1376,8 +1376,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:471
 msgid ""
-"Fixed spurious error output when completing remote file paths for ``scp`` (:"
-"issue:`11860`)."
+"Fixed spurious error output when completing remote file paths for ``scp`` "
+"(:issue:`11860`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:472
@@ -1441,11 +1441,11 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:490
 msgid ""
-"Note that you can work around this type of issue by configuring fish's :doc:"
-"`message localization <cmds/_>`: if your environment contains something like "
-"``LANG=zh_CN.UTF-8``, you can use ``set -g LC_MESSAGES en`` to use English "
-"messages inside fish. This will not affect fish's child processes unless "
-"``LC_MESSAGES`` was already exported."
+"Note that you can work around this type of issue by configuring "
+"fish's :doc:`message localization <cmds/_>`: if your environment contains "
+"something like ``LANG=zh_CN.UTF-8``, you can use ``set -g LC_MESSAGES en`` "
+"to use English messages inside fish. This will not affect fish's child "
+"processes unless ``LC_MESSAGES`` was already exported."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:495
@@ -1497,8 +1497,8 @@ msgid ""
 "Tab completion results are truncated up to the common directory path, "
 "instead of somewhere inside that path. E.g. if you complete \"share/"
 "functions\", and it includes the files \"foo.fish\" and \"bar.fish\", the "
-"completion pager will now show \"…/foo.fish\" and \"…/bar.fish\" (:issue:"
-"`11250`)."
+"completion pager will now show \"…/foo.fish\" and \"…/bar.fish\" "
+"(:issue:`11250`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:509
@@ -1532,17 +1532,17 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:520
 msgid ""
 "Terminfo-style key names (``bind -k nul``) are no longer supported. They had "
-"been superseded by fish's :doc:`own key names <cmds/bind>` since 4.0 (:issue:"
-"`11342`)."
+"been superseded by fish's :doc:`own key names <cmds/bind>` since 4.0 "
+"(:issue:`11342`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:521
 msgid ""
 "fish no longer reads the terminfo database, so its behavior is generally no "
 "longer affected by the :envvar:`TERM` environment variable (:issue:`11344`). "
-"For the time being, this change can be reversed via the ``ignore-terminfo`` :"
-"ref:`feature flag <featureflags>`. To do so, run the following once and "
-"restart fish::"
+"For the time being, this change can be reversed via the ``ignore-"
+"terminfo`` :ref:`feature flag <featureflags>`. To do so, run the following "
+"once and restart fish::"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:525
@@ -1557,9 +1557,9 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:528
 msgid ""
-"``set_color ff0000`` now outputs 24-bit RGB true-color even if :envvar:"
-"`COLORTERM` is unset. One can override this by setting :envvar:"
-"`fish_term24bit` to 0 (:issue:`11372`)."
+"``set_color ff0000`` now outputs 24-bit RGB true-color even "
+"if :envvar:`COLORTERM` is unset. One can override this by "
+"setting :envvar:`fish_term24bit` to 0 (:issue:`11372`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:530
@@ -1578,8 +1578,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:537
 msgid ""
-"The :doc:`argparse <cmds/argparse>` builtin has seen many improvements, see :"
-"ref:`below <changelog-4.1-argparse>`."
+"The :doc:`argparse <cmds/argparse>` builtin has seen many improvements, "
+"see :ref:`below <changelog-4.1-argparse>`."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:538
@@ -1602,8 +1602,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:544
 msgid ""
-"Autosuggestions are now also provided in multi-line command lines. Like :kbd:"
-"`ctrl-r`, these operate only on the current line."
+"Autosuggestions are now also provided in multi-line command lines. "
+"Like :kbd:`ctrl-r`, these operate only on the current line."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:545
@@ -1622,9 +1622,9 @@ msgstr ""
 msgid ""
 "Instead of highlighting events by flashing *all text to the left of the "
 "cursor*, failing history token search (:kbd:`alt-.`) flashes the associated "
-"token, failing tab-completion flashes the to-be-completed token (:issue:"
-"`11050`), deleting an autosuggestion (:kbd:`shift-delete`) flashes the "
-"suggestion, and all other scenarios flash the full command line."
+"token, failing tab-completion flashes the to-be-completed token "
+"(:issue:`11050`), deleting an autosuggestion (:kbd:`shift-delete`) flashes "
+"the suggestion, and all other scenarios flash the full command line."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:552
@@ -1636,8 +1636,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:553
 msgid ""
 "Builtin help options (e.g. ``abbr --help``) now use ``man`` directly, "
-"meaning that variables like :envvar:`MANWIDTH` are respected (:issue:"
-"`11786`)."
+"meaning that variables like :envvar:`MANWIDTH` are respected "
+"(:issue:`11786`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:554
@@ -1677,8 +1677,8 @@ msgstr ""
 msgid ""
 "Some mouse support has been added: the OSC 133 prompt marking feature has "
 "learned about kitty's ``click_events=1`` flag, which allows moving fish's "
-"cursor by clicking in the command line, and selecting pager items (:issue:"
-"`10932`)."
+"cursor by clicking in the command line, and selecting pager items "
+"(:issue:`10932`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:566
@@ -1686,10 +1686,10 @@ msgid ""
 "Before clearing the screen and redrawing, :kbd:`ctrl-l` now pushes all text "
 "located above the prompt to the terminal's scrollback, via a new special "
 "input function :ref:`scrollback-push <special-input-functions-scrollback-"
-"push>`. For compatibility with terminals that do not implement ECMA-48's :"
-"ref:`SCROLL UP <term-compat-indn>` command, this function is only used if "
-"the terminal advertises support for that via :ref:`XTGETTCAP <term-compat-"
-"xtgettcap>`."
+"push>`. For compatibility with terminals that do not implement "
+"ECMA-48's :ref:`SCROLL UP <term-compat-indn>` command, this function is only "
+"used if the terminal advertises support for that via :ref:`XTGETTCAP <term-"
+"compat-xtgettcap>`."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:570
@@ -1791,8 +1791,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:601
 msgid ""
 "The CMake build configuration has been simplified and no longer second-"
-"guesses rustup. It will run rustc and cargo via :envvar:`PATH` or in ~/."
-"cargo/bin/. If that doesn't match your setup, set the Rust_COMPILER and "
+"guesses rustup. It will run rustc and cargo via :envvar:`PATH` or in "
+"~/.cargo/bin/. If that doesn't match your setup, set the Rust_COMPILER and "
 "Rust_CARGO CMake variables (:issue:`11328`)."
 msgstr ""
 
@@ -1812,8 +1812,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:612
 msgid ""
-"The self-installing build type introduced in fish 4.0 has been changed (:"
-"issue:`11143`). Now fish built with embedded data will just read the data "
+"The self-installing build type introduced in fish 4.0 has been changed "
+"(:issue:`11143`). Now fish built with embedded data will just read the data "
 "straight from its own binary or write it out to temporary files when "
 "necessary, instead of requiring an installation step on start. That means it "
 "is now possible to build fish as a single file and copy it to any system "
@@ -1847,9 +1847,9 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:626
 msgid ""
-"a local copy of the HTML documentation, typically accessed via the :doc:"
-"`help <cmds/help>` function. In builds with embedded data, ``help`` will "
-"redirect to e.g. `<https://fishshell.com/docs/current/>`__"
+"a local copy of the HTML documentation, typically accessed via "
+"the :doc:`help <cmds/help>` function. In builds with embedded data, ``help`` "
+"will redirect to e.g. `<https://fishshell.com/docs/current/>`__"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:628
@@ -1909,17 +1909,17 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:656
 msgid ""
-"``argparse`` now saves recognised options, including option-arguments in :"
-"envvar:`argv_opts`, allowing them to be forwarded to other commands (:issue:"
-"`6466`)."
+"``argparse`` now saves recognised options, including option-arguments "
+"in :envvar:`argv_opts`, allowing them to be forwarded to other commands "
+"(:issue:`6466`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:657
 msgid ""
-"``argparse`` options can now be marked to be deleted from :envvar:"
-"`argv_opts` (by adding a ``&`` at the end of the option spec, before a ``!`` "
-"if present). There is now also a corresponding ``-d`` / ``--delete`` option "
-"to ``fish_opt``."
+"``argparse`` options can now be marked to be deleted "
+"from :envvar:`argv_opts` (by adding a ``&`` at the end of the option spec, "
+"before a ``!`` if present). There is now also a corresponding ``-d`` / ``--"
+"delete`` option to ``fish_opt``."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:658
@@ -2072,8 +2072,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:704
 msgid ""
-"A crash displaying multi-line quoted command substitutions has been fixed (:"
-"issue:`11444`)."
+"A crash displaying multi-line quoted command substitutions has been fixed "
+"(:issue:`11444`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:705
@@ -2090,8 +2090,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:707
 msgid ""
-"Git completions no longer print an error when no `git-foo` executable is in :"
-"envvar:`PATH`."
+"Git completions no longer print an error when no `git-foo` executable is "
+"in :envvar:`PATH`."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:708
@@ -2116,8 +2116,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:712
 msgid ""
-":doc:`bind <cmds/bind>` has been taught about the :kbd:`printscreen` and :"
-"kbd:`menu` keys."
+":doc:`bind <cmds/bind>` has been taught about the :kbd:`printscreen` "
+"and :kbd:`menu` keys."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:713
@@ -2131,8 +2131,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:715
 msgid ""
 ":kbd:`alt-left` :kbd:`alt-right` were misinterpreted because they send "
-"unexpected sequences on some terminals; a workaround has been added.  (:"
-"issue:`11479`)."
+"unexpected sequences on some terminals; a workaround has been added.  "
+"(:issue:`11479`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:716
@@ -2192,8 +2192,8 @@ msgstr ""
 msgid ""
 "The warning when the terminfo database can't be found has been downgraded to "
 "a log message. fish will act as if the terminal behaves like xterm-256color, "
-"which is correct for the vast majority of cases (:issue:`11277`, :issue:"
-"`11290`)."
+"which is correct for the vast majority of cases "
+"(:issue:`11277`, :issue:`11290`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:733
@@ -2212,20 +2212,20 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:735
 msgid ""
 "Using parentheses in the :doc:`test <cmds/test>` builtin works correctly, "
-"following a regression in 4.0.0 where they were not recognized (:issue:"
-"`11387`)."
+"following a regression in 4.0.0 where they were not recognized "
+"(:issue:`11387`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:736
 msgid ""
-":kbd:`delete` in Vi mode when Num Lock is active will work correctly (:issue:"
-"`11303`)."
+":kbd:`delete` in Vi mode when Num Lock is active will work correctly "
+"(:issue:`11303`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:737
 msgid ""
-"Abbreviations cannot alter the command-line contents, preventing a crash (:"
-"issue:`11324`)."
+"Abbreviations cannot alter the command-line contents, preventing a crash "
+"(:issue:`11324`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:738
@@ -2233,9 +2233,9 @@ msgid ""
 "Improvements to various completions, including new completions for ``wl-"
 "randr`` (:issue:`11301`), performance improvements for ``cargo`` completions "
 "by avoiding network requests (:issue:`11347`), and other improvements for  "
-"``btrfs`` (:issue:`11320`), ``cryptsetup`` (:issue:`11315`), ``git`` (:issue:"
-"`11319`, :issue:`11322`, :issue:`11323`), ``jj`` (:issue:`11046`), and "
-"``systemd-analyze`` (:issue:`11314`)."
+"``btrfs`` (:issue:`11320`), ``cryptsetup`` (:issue:`11315`), ``git`` "
+"(:issue:`11319`, :issue:`11322`, :issue:`11323`), ``jj`` (:issue:`11046`), "
+"and ``systemd-analyze`` (:issue:`11314`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:739
@@ -2247,9 +2247,9 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:740
 msgid ""
 "A number of crashes have been fixed. Triggers include prompts containing "
-"backspace characters (:issue:`11280`), history pager search (:issue:"
-"`11355`), invalid UTF-8 in :doc:`read <cmds/read>` (:issue:`11383`), and the "
-"``kill-selection`` binding (:issue:`11367`)."
+"backspace characters (:issue:`11280`), history pager search "
+"(:issue:`11355`), invalid UTF-8 in :doc:`read <cmds/read>` (:issue:`11383`), "
+"and the ``kill-selection`` binding (:issue:`11367`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:741
@@ -2261,8 +2261,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:742
 msgid ""
-"Small improvements to the documentation (:issue:`11264`, :issue:`11329`, :"
-"issue:`11361`)."
+"Small improvements to the documentation "
+"(:issue:`11264`, :issue:`11329`, :issue:`11361`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:747
@@ -2327,8 +2327,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:760
 msgid ""
-"Cancelling the command-line in Vi mode displays correctly again (:issue:"
-"`11261`)."
+"Cancelling the command-line in Vi mode displays correctly again "
+"(:issue:`11261`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:761
@@ -2370,8 +2370,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:767
 msgid ""
 "fish now sends the commandline along with the OSC 133 semantic prompt "
-"command start sequence. This fixes a test in the kitty terminal (:issue:"
-"`11203`)."
+"command start sequence. This fixes a test in the kitty terminal "
+"(:issue:`11203`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:768
@@ -2419,8 +2419,8 @@ msgstr ""
 msgid ""
 "As part of a larger binding rework, ``bind`` gained a new key notation. In "
 "most cases the old notation should keep working, but in rare cases you may "
-"have to change a ``bind`` invocation to use the new notation. See :ref:"
-"`below <changelog-4.0-new-bindings>` for details."
+"have to change a ``bind`` invocation to use the new notation. "
+"See :ref:`below <changelog-4.0-new-bindings>` for details."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:786
@@ -2457,8 +2457,8 @@ msgstr ""
 msgid ""
 "The ``qmark-noglob`` feature, introduced in fish 3.0, is enabled by default. "
 "That means ``?`` will no longer act as a single-character glob. You can, for "
-"the time being, turn it back on by adding ``no-qmark-noglob`` to :envvar:"
-"`fish_features` and restarting fish::"
+"the time being, turn it back on by adding ``no-qmark-noglob`` "
+"to :envvar:`fish_features` and restarting fish::"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:798
@@ -2510,8 +2510,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:812
 msgid ""
 "Additionally, ``bind`` now supports a human-readable syntax in addition to "
-"byte sequences. This includes modifier names, and names for keys like :kbd:"
-"`enter` and :kbd:`backspace`. For example"
+"byte sequences. This includes modifier names, and names for keys "
+"like :kbd:`enter` and :kbd:`backspace`. For example"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:816
@@ -2559,8 +2559,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:831
 msgid ""
 "cargo install --path . # in a clone of the fish repository\n"
-"# or `cargo build --release` and copy target/release/fish{,_indent,"
-"_key_reader} wherever you want"
+"# or `cargo build --release` and copy target/release/"
+"fish{,_indent,_key_reader} wherever you want"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:834
@@ -2586,15 +2586,15 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:838
 msgid ""
 "Bindings can now mix special input functions and shell commands, so ``bind "
-"ctrl-g expand-abbr \"commandline -i \\n\"`` works as expected (:issue:"
-"`8186`)."
+"ctrl-g expand-abbr \"commandline -i \\n\"`` works as expected "
+"(:issue:`8186`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:839
 msgid ""
 "Special input functions run from bindings via ``commandline -f`` are now "
-"applied immediately, instead of after the currently executing binding (:"
-"issue:`3031`, :issue:`10126`). For example, ``commandline -i foo; "
+"applied immediately, instead of after the currently executing binding "
+"(:issue:`3031`, :issue:`10126`). For example, ``commandline -i foo; "
 "commandline | grep foo`` succeeds now."
 msgstr ""
 
@@ -2611,8 +2611,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:843
 msgid ""
 "The :kbd:`ctrl-r` history search now operates only on the line or command "
-"substitution at cursor, making it easier to combine commands from history (:"
-"issue:`9751`)."
+"substitution at cursor, making it easier to combine commands from history "
+"(:issue:`9751`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:844
@@ -2634,8 +2634,8 @@ msgstr ""
 msgid ""
 "``commandline --tokenize`` (short option ``-o``) has been deprecated in "
 "favor of ``commandline --tokens-expanded`` (short option ``-x``) which "
-"expands variables and other shell syntax, removing the need to use :doc:"
-"`eval <cmds/eval>` in completion scripts (:issue:`10212`)."
+"expands variables and other shell syntax, removing the need to "
+"use :doc:`eval <cmds/eval>` in completion scripts (:issue:`10212`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:854
@@ -2712,8 +2712,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:873
 msgid ""
-"``source`` returns an error if used without a filename or pipe/redirection (:"
-"issue:`10774`)."
+"``source`` returns an error if used without a filename or pipe/redirection "
+"(:issue:`10774`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:877
@@ -2789,8 +2789,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:890
 msgid ""
-"``string pad`` no longer allows non-printable characters as padding (:issue:"
-"`9854`)."
+"``string pad`` no longer allows non-printable characters as padding "
+"(:issue:`9854`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:891
@@ -2823,14 +2823,14 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:895
 msgid ""
 "Commas in command substitution output are no longer used as separators in "
-"brace expansion, preventing a surprising expansion in some cases (:issue:"
-"`5048`)."
+"brace expansion, preventing a surprising expansion in some cases "
+"(:issue:`5048`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:896
 msgid ""
-"Universal variables can now store strings containing invalid UTF-8 (:issue:"
-"`10313`)."
+"Universal variables can now store strings containing invalid UTF-8 "
+"(:issue:`10313`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:897
@@ -2844,8 +2844,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:898
 msgid ""
 "A new ``math --scale-mode`` option to select ``truncate``, ``round``, "
-"``floor``, ``ceiling`` as you wish; the default value is ``truncate``. (:"
-"issue:`9117`)."
+"``floor``, ``ceiling`` as you wish; the default value is ``truncate``. "
+"(:issue:`9117`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:899
@@ -2862,8 +2862,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:901
 msgid ""
-"Tilde expansion in braces (that is, ``{~,}``) works correctly (:issue:"
-"`10610`)."
+"Tilde expansion in braces (that is, ``{~,}``) works correctly "
+"(:issue:`10610`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:905
@@ -2882,8 +2882,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:907
 msgid ""
 "Command abbreviations (those with ``--position command`` or without a ``--"
-"position``) now also expand after decorators like ``command`` (:issue:"
-"`10396`)."
+"position``) now also expand after decorators like ``command`` "
+"(:issue:`10396`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:908
@@ -2908,8 +2908,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:911
 msgid ""
 ":kbd:`ctrl-v` (``fish_clipboard_paste``) now strips ASCII control characters "
-"from the pasted text. This is consistent with normal keyboard input (:issue:"
-"`5274`)."
+"from the pasted text. This is consistent with normal keyboard input "
+"(:issue:`5274`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:913
@@ -2920,8 +2920,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:914
 msgid ""
-"Redirection in command position like ``>echo`` is now highlighted as error (:"
-"issue:`8877`)."
+"Redirection in command position like ``>echo`` is now highlighted as error "
+"(:issue:`8877`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:915
@@ -2961,16 +2961,17 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:921
 msgid ""
-"``complete -e cmd`` now prevents autoloading completions for ``cmd`` (:issue:"
-"`6716`)."
+"``complete -e cmd`` now prevents autoloading completions for ``cmd`` "
+"(:issue:`6716`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:922
 msgid ""
 "fish's default color scheme no longer uses the color \"blue\", as it has bad "
-"contrast against the background in a few terminal's default palettes (:issue:"
-"`10758`, :issue:`10786`) The color scheme will not be upgraded for existing "
-"installs. If you want, you should select it again via ``fish_config``."
+"contrast against the background in a few terminal's default palettes "
+"(:issue:`10758`, :issue:`10786`) The color scheme will not be upgraded for "
+"existing installs. If you want, you should select it again via "
+"``fish_config``."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:924
@@ -3035,8 +3036,9 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:937
 msgid ""
-"When the cursor is on a command that resolves to an executable script, :kbd:"
-"`alt-o` will now open that script in your editor (:issue:`10266`)."
+"When the cursor is on a command that resolves to an executable "
+"script, :kbd:`alt-o` will now open that script in your editor "
+"(:issue:`10266`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:938
@@ -3103,8 +3105,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:949
 msgid ""
 "``history-prefix-search-backward`` and ``-forward`` now maintain the cursor "
-"position, instead of moving the cursor to the end of the command line (:"
-"issue:`10430`)."
+"position, instead of moving the cursor to the end of the command line "
+"(:issue:`10430`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:950
@@ -3150,8 +3152,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:959
 msgid ""
 "``clear-commandline``, which merely clears the command line, as an "
-"alternative to ``cancel-commandline`` which prints ``^C`` and a new prompt (:"
-"issue:`10213`)."
+"alternative to ``cancel-commandline`` which prints ``^C`` and a new prompt "
+"(:issue:`10213`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:960
@@ -3204,14 +3206,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:970
 msgid ""
-"Added bindings for clipboard interaction, like :kbd:`\",+,p` and :kbd:`\",+,"
-"y,y`."
+"Added bindings for clipboard interaction, like :kbd:`\",+,p` and :kbd:`\","
+"+,y,y`."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:971
 msgid ""
-"Deleting in visual mode now moves the cursor back, matching vi (:issue:"
-"`10394`)."
+"Deleting in visual mode now moves the cursor back, matching vi "
+"(:issue:`10394`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:972
@@ -3286,8 +3288,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:992
 msgid ""
-"Generated completions are now stored in ``$XDG_CACHE_HOME/fish`` or ``~/."
-"cache/fish`` by default (:issue:`10369`)"
+"Generated completions are now stored in ``$XDG_CACHE_HOME/fish`` or "
+"``~/.cache/fish`` by default (:issue:`10369`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:993
@@ -3322,8 +3324,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1002
 msgid ""
-"Focus reporting is now disabled during commands run inside key bindings (:"
-"issue:`6942`)."
+"Focus reporting is now disabled during commands run inside key bindings "
+"(:issue:`6942`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1003
@@ -3355,8 +3357,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1010
 msgid ""
-"``fish_indent`` will now collapse multiple empty lines into one (:issue:"
-"`10325`)."
+"``fish_indent`` will now collapse multiple empty lines into one "
+"(:issue:`10325`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1011
@@ -3409,8 +3411,8 @@ msgid ""
 "CMake remains the recommended build system, because of cargo's limited "
 "support for installing support files. Version 3.5 remains the minimum "
 "supported version. The Xcode generator for CMake is not supported any longer "
-"(:issue:`9924`). CMake builds default to optimized release builds (:issue:"
-"`10799`)."
+"(:issue:`9924`). CMake builds default to optimized release builds "
+"(:issue:`10799`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1027
@@ -3429,8 +3431,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1031
 msgid ""
-"The Web-based configuration has been rewritten to use Alpine.js (:issue:"
-"`9554`)."
+"The Web-based configuration has been rewritten to use Alpine.js "
+"(:issue:`9554`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1036
@@ -3462,8 +3464,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1049
 msgid ""
-"Deleting the last history entry via ``history delete`` works again (:issue:"
-"`10190`)."
+"Deleting the last history entry via ``history delete`` works again "
+"(:issue:`10190`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1050
@@ -3581,22 +3583,22 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1088
 msgid ""
-"``LS_COLORS`` is no longer set automatically by the ``ls`` function (:issue:"
-"`10080`). Users that set ``.dircolors`` should manually import it using "
-"other means. Typically this would be ``set -gx LS_COLORS (dircolors -c ."
-"dircolors | string split ' ')[3]``"
+"``LS_COLORS`` is no longer set automatically by the ``ls`` function "
+"(:issue:`10080`). Users that set ``.dircolors`` should manually import it "
+"using other means. Typically this would be ``set -gx LS_COLORS (dircolors "
+"-c .dircolors | string split ' ')[3]``"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1093
 msgid ""
-"Running ``exit`` with a negative number no longer crashes fish (:issue:"
-"`9659`)."
+"Running ``exit`` with a negative number no longer crashes fish "
+"(:issue:`9659`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1094
 msgid ""
-"``fish --command`` will now return a non-zero status if parsing failed (:"
-"issue:`9888`)."
+"``fish --command`` will now return a non-zero status if parsing failed "
+"(:issue:`9888`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1095
@@ -3630,14 +3632,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1100
 msgid ""
-"``umask`` will now handle empty symbolic modes correctly, like ``umask u=,"
-"g=rwx,o=`` (:issue:`10177`)."
+"``umask`` will now handle empty symbolic modes correctly, like ``umask "
+"u=,g=rwx,o=`` (:issue:`10177`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1101
 msgid ""
-"Improved error messages for errors occurring in command substitutions (:"
-"issue:`10054`)."
+"Improved error messages for errors occurring in command substitutions "
+"(:issue:`10054`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1105
@@ -3654,8 +3656,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1107
 msgid ""
-"Opening the history search in vi mode switches to insert mode correctly (:"
-"issue:`10141`)."
+"Opening the history search in vi mode switches to insert mode correctly "
+"(:issue:`10141`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1108
@@ -3690,8 +3692,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1113
 msgid ""
 "Command completion will now call the stock ``manpath`` on macOS, instead of "
-"a potential Homebrew version. This prevents awkward error messages (:issue:"
-"`9817`)."
+"a potential Homebrew version. This prevents awkward error messages "
+"(:issue:`9817`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1114
@@ -3747,8 +3749,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1123
 msgid ""
 "The :kbd:`alt-l` binding, which lists the directory of the token under the "
-"cursor, correctly expands tilde (``~``) to the home directory (:issue:"
-"`9954`)."
+"cursor, correctly expands tilde (``~``) to the home directory "
+"(:issue:`9954`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1124
@@ -3785,8 +3787,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1132
 msgid ""
 "Prompts which display the working directory using the ``prompt_pwd`` "
-"function correctly display directories beginning with dashes (:issue:"
-"`10169`)."
+"function correctly display directories beginning with dashes "
+"(:issue:`10169`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1136 ../../../../CHANGELOG.rst:1266
@@ -3920,8 +3922,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1168
 msgid ""
-"``git`` completions now support aliases that reference other aliases (:issue:"
-"`9992`)."
+"``git`` completions now support aliases that reference other aliases "
+"(:issue:`9992`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1169
@@ -3935,8 +3937,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1171
 msgid ""
-"Improvements to the manual page completion generator (:issue:`9787`, :issue:"
-"`9814`, :issue:`9961`)."
+"Improvements to the manual page completion generator "
+"(:issue:`9787`, :issue:`9814`, :issue:`9961`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1175 ../../../../CHANGELOG.rst:1286
@@ -3955,8 +3957,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1178
 msgid ""
-"The colors of the Nord theme better match their official style (:issue:"
-"`10168`)."
+"The colors of the Nord theme better match their official style "
+"(:issue:`10168`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1182
@@ -4049,15 +4051,15 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1231
 msgid ""
 "``abbr --add --universal`` now warns about ``--universal`` being non-"
-"functional, to make it easier to detect old-style ``abbr`` calls (:issue:"
-"`9475`)."
+"functional, to make it easier to detect old-style ``abbr`` calls "
+"(:issue:`9475`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1235
 msgid ""
 "The Web-based configuration for abbreviations has been removed, as it was "
-"not functional with the changes abbreviations introduced in 3.6.0 (:issue:"
-"`9460`)."
+"not functional with the changes abbreviations introduced in 3.6.0 "
+"(:issue:`9460`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1239
@@ -4084,15 +4086,15 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1246
 msgid ""
-"The history pager now uses more screen space, usually half the screen (:"
-"issue:`9458`)"
+"The history pager now uses more screen space, usually half the screen "
+"(:issue:`9458`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1247
 msgid ""
 "Variables that were set while the locale was C (the default ASCII-only "
-"locale) will now properly be encoded if the locale is switched (:issue:"
-"`2613`, :issue:`9473`)."
+"locale) will now properly be encoded if the locale is switched "
+"(:issue:`2613`, :issue:`9473`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1248
@@ -4126,8 +4128,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1253
 msgid ""
-"The :kbd:`alt-s` binding will now also use ``please`` if available (:issue:"
-"`9635`)."
+"The :kbd:`alt-s` binding will now also use ``please`` if available "
+"(:issue:`9635`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1254
@@ -4244,16 +4246,16 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1299
 msgid ""
-"By default, :kbd:`ctrl-r` now opens the command history in the pager (:issue:"
-"`602`). This is fully searchable and syntax-highlighted, as an alternative "
-"to the incremental search seen in other shells. The new special input "
-"function ``history-pager`` has been added for custom bindings."
+"By default, :kbd:`ctrl-r` now opens the command history in the pager "
+"(:issue:`602`). This is fully searchable and syntax-highlighted, as an "
+"alternative to the incremental search seen in other shells. The new special "
+"input function ``history-pager`` has been added for custom bindings."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1300
 msgid ""
-"Abbreviations are more flexible (:issue:`9313`, :issue:`5003`, :issue:"
-"`2287`):"
+"Abbreviations are more flexible "
+"(:issue:`9313`, :issue:`5003`, :issue:`2287`):"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1302
@@ -4321,8 +4323,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1325
 msgid ""
 "``path`` gained a new ``mtime`` subcommand to print the modification time "
-"stamp for files. For example, this can be used to handle cache file ages (:"
-"issue:`9057`)::"
+"stamp for files. For example, this can be used to handle cache file ages "
+"(:issue:`9057`)::"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1327
@@ -4374,16 +4376,16 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1344
 msgid ""
-"``set --erase`` can now be used with multiple scopes at once, like ``set -"
-"efglU foo`` (:issue:`7711`, :issue:`9280`)."
+"``set --erase`` can now be used with multiple scopes at once, like ``set "
+"-efglU foo`` (:issue:`7711`, :issue:`9280`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1345
 msgid ""
 "``status`` gained a new subcommand, ``current-commandline``, which retrieves "
 "the entirety of the currently-executing command line when called from a "
-"function during execution. This allows easier job introspection (:issue:"
-"`8905`, :issue:`9296`)."
+"function during execution. This allows easier job introspection "
+"(:issue:`8905`, :issue:`9296`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1349
@@ -4401,8 +4403,8 @@ msgid ""
 "instead of just checking if it is defined. This allows specifically turning "
 "features *off* without having to erase variables, such as via universal "
 "variables. If you have defined a variable to a different value and expect it "
-"to count as true, you need to change it (:issue:`9274`). For example, ``set -"
-"g __fish_git_prompt_show_informative_status 0`` previously would have "
+"to count as true, you need to change it (:issue:`9274`). For example, ``set "
+"-g __fish_git_prompt_show_informative_status 0`` previously would have "
 "enabled informative status (because any value would have done so), but now "
 "it turns it off."
 msgstr ""
@@ -4565,22 +4567,22 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1401
 msgid ""
-"When running fish on a remote system (such as inside SSH or a container), :"
-"kbd:`ctrl-x` now copies to the local client system's clipboard if the "
-"terminal supports OSC 52."
+"When running fish on a remote system (such as inside SSH or a "
+"container), :kbd:`ctrl-x` now copies to the local client system's clipboard "
+"if the terminal supports OSC 52."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1402
 msgid ""
 "``commandline`` gained two new options, ``--selection-start`` and ``--"
-"selection-end``, to set the start/end of the current selection (:issue:"
-"`9197`, :issue:`9215`)."
+"selection-end``, to set the start/end of the current selection "
+"(:issue:`9197`, :issue:`9215`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1403
 msgid ""
-"fish's builtins now handle keyboard interrupts (:kbd:`ctrl-c`) correctly (:"
-"issue:`9266`)."
+"fish's builtins now handle keyboard interrupts (:kbd:`ctrl-c`) correctly "
+"(:issue:`9266`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1409
@@ -4761,8 +4763,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1458
 msgid ""
-"The Web-based configuration tool now works on systems with IPv6 disabled (:"
-"issue:`3857`)."
+"The Web-based configuration tool now works on systems with IPv6 disabled "
+"(:issue:`3857`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1459
@@ -4771,8 +4773,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1460
 msgid ""
-"``string`` is now faster when reading large strings from stdin (:issue:"
-"`9139`)."
+"``string`` is now faster when reading large strings from stdin "
+"(:issue:`9139`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1461
@@ -4809,8 +4811,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1469
 msgid ""
 "``process-exit`` and ``job-exit`` events are now generated for all "
-"background jobs, including those launched from event handlers (:issue:"
-"`9096`)."
+"background jobs, including those launched from event handlers "
+"(:issue:`9096`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1470
@@ -4849,8 +4851,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1475
 msgid ""
-"``printf`` no longer tries to interpret the first argument as an option (:"
-"issue:`9132`)."
+"``printf`` no longer tries to interpret the first argument as an option "
+"(:issue:`9132`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1476
@@ -4883,8 +4885,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1481
 msgid ""
-"``fish_config theme save`` now works as documented instead of erroring out (:"
-"issue:`9088`, :issue:`9273`)."
+"``fish_config theme save`` now works as documented instead of erroring out "
+"(:issue:`9088`, :issue:`9273`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1482
@@ -4980,16 +4982,16 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1514
 msgid ""
-"``status fish-path`` on Linux-based platforms could print the path with a "
-"\" (deleted)\" suffix (such as ``/usr/bin/fish (deleted)``), which is now "
+"``status fish-path`` on Linux-based platforms could print the path with a \" "
+"(deleted)\" suffix (such as ``/usr/bin/fish (deleted)``), which is now "
 "removed (:issue:`9019`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1515
 msgid ""
-"Cancelling an initial command (from fish's ``--init-command`` option) with :"
-"kbd:`ctrl-c` no longer prevents configuration scripts from running (:issue:"
-"`9024`)."
+"Cancelling an initial command (from fish's ``--init-command`` option) "
+"with :kbd:`ctrl-c` no longer prevents configuration scripts from running "
+"(:issue:`9024`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1516
@@ -5010,10 +5012,10 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1526
 msgid ""
-"A new ``path`` builtin command to filter and transform paths (:issue:"
-"`7659`, :issue:`8958`). For example, to list all the separate extensions "
-"used on files in /usr/share/man (after removing one extension, commonly a \"."
-"gz\")::"
+"A new ``path`` builtin command to filter and transform paths "
+"(:issue:`7659`, :issue:`8958`). For example, to list all the separate "
+"extensions used on files in /usr/share/man (after removing one extension, "
+"commonly a \".gz\")::"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1528
@@ -5189,13 +5191,13 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1580
 msgid ""
 "The git prompt in informative mode now defaults to skipping counting "
-"untracked files, as this was extremely slow. To turn it on, set :envvar:"
-"`__fish_git_prompt_showuntrackedfiles` or set the git config value \"bash."
-"showuntrackedfiles\" to ``true`` explicitly (which can be done for "
-"individual repositories). The \"informative+vcs\" sample prompt already "
+"untracked files, as this was extremely slow. To turn it on, "
+"set :envvar:`__fish_git_prompt_showuntrackedfiles` or set the git config "
+"value \"bash.showuntrackedfiles\" to ``true`` explicitly (which can be done "
+"for individual repositories). The \"informative+vcs\" sample prompt already "
 "skipped display of untracked files, but didn't do so in a way that skipped "
-"the computation, so it should be quite a bit faster in many cases (:issue:"
-"`8980`)."
+"the computation, so it should be quite a bit faster in many cases "
+"(:issue:`8980`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1581
@@ -5204,15 +5206,15 @@ msgid ""
 "has been rebuilt as a configuration of the normal ``fish_git_prompt`` to "
 "ease maintenance, improve performance and add features (like reading per-"
 "repo git configuration). Some slight changes remain; users who absolutely "
-"must have the same behavior are encouraged to copy the old function (:issue:"
-"`9011`, :issue:`7918`, :issue:`8979`)."
+"must have the same behavior are encouraged to copy the old function "
+"(:issue:`9011`, :issue:`7918`, :issue:`8979`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1585
 msgid ""
 "Quoted command substitution that directly follow a variable expansion (like "
-"``echo \"$var$(echo x)\"``) no longer affect the variable expansion (:issue:"
-"`8849`)."
+"``echo \"$var$(echo x)\"``) no longer affect the variable expansion "
+"(:issue:`8849`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1586
@@ -5250,8 +5252,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1597
 msgid ""
-"``string join`` gained a new ``--no-empty`` flag to skip empty arguments (:"
-"issue:`8774`, :issue:`8351`)."
+"``string join`` gained a new ``--no-empty`` flag to skip empty arguments "
+"(:issue:`8774`, :issue:`8351`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1598
@@ -5264,8 +5266,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1599
 msgid ""
 "The TTY modes are no longer restored when non-interactive shells exit. This "
-"fixes wrong tty modes in pipelines with interactive commands. (:issue:"
-"`8705`)."
+"fixes wrong tty modes in pipelines with interactive commands. "
+"(:issue:`8705`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1600
@@ -5308,8 +5310,8 @@ msgstr ""
 msgid ""
 "``ulimit`` learned a number of new options for the resource limits available "
 "on Linux, FreeBSD ande NetBSD, and returns a specific warning if the limit "
-"specified is not available on the active operating system (:issue:`8823`, :"
-"issue:`8786`)."
+"specified is not available on the active operating system "
+"(:issue:`8823`, :issue:`8786`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1610
@@ -5320,8 +5322,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1611
 msgid ""
-"``time`` now emits an error if used after the first command in a pipeline (:"
-"issue:`8841`)."
+"``time`` now emits an error if used after the first command in a pipeline "
+"(:issue:`8841`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1612
@@ -5333,8 +5335,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1613
 msgid ""
 "Since fish 3.2.0, pressing :kbd:`ctrl-d` while a command is running would "
-"end up inserting a space into the next commandline, which has been fixed (:"
-"issue:`8871`)."
+"end up inserting a space into the next commandline, which has been fixed "
+"(:issue:`8871`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1614
@@ -5351,8 +5353,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1616
 msgid ""
-"fish started with ``--no-config`` will now use the default keybindings (:"
-"issue:`8493`)"
+"fish started with ``--no-config`` will now use the default keybindings "
+"(:issue:`8493`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1617
@@ -5370,8 +5372,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1619
 msgid ""
-"``history search`` no longer interprets the search term as an option (:issue:"
-"`8853`)"
+"``history search`` no longer interprets the search term as an option "
+"(:issue:`8853`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1620
@@ -5403,8 +5405,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1627
 msgid ""
 "On terminals that emit special sequences for these combinations, :kbd:`shift-"
-"space` is bound like :kbd:`space`, and :kbd:`ctrl-enter` is bound like :kbd:"
-"`return` (:issue:`8874`)."
+"space` is bound like :kbd:`space`, and :kbd:`ctrl-enter` is bound "
+"like :kbd:`return` (:issue:`8874`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1631
@@ -5460,8 +5462,8 @@ msgid ""
 "completion be made available (as if they were connected with ``&&``). This "
 "helps with caching - fish's complete system stores the return value of each "
 "condition as long as the commandline doesn't change, so this can reduce the "
-"number of conditions that need to be evaluated (:issue:`8536`, :issue:"
-"`8967`)."
+"number of conditions that need to be evaluated "
+"(:issue:`8536`, :issue:`8967`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1652
@@ -5470,14 +5472,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1653
 msgid ""
-"Changing the cursor shape is now enabled by default in iTerm2 (:issue:"
-"`3696`)."
+"Changing the cursor shape is now enabled by default in iTerm2 "
+"(:issue:`3696`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1657
 msgid ""
-"libatomic is now correctly detected as necessary when building on RISC-V (:"
-"issue:`8850`, :issue:`8851`)."
+"libatomic is now correctly detected as necessary when building on RISC-V "
+"(:issue:`8850`, :issue:`8851`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1658
@@ -5490,8 +5492,8 @@ msgstr ""
 msgid ""
 "The paths for completions, functions, and configuration snippets now include "
 "subdirectories ``fish/vendor_completions.d``, ``fish/vendor_functions.d``, "
-"and ``fish/vendor_conf.d`` (respectively) within ``XDG_DATA_HOME`` (or ``~/."
-"local/share`` if not defined) (:issue:`8887`, :issue:`7816`)."
+"and ``fish/vendor_conf.d`` (respectively) within ``XDG_DATA_HOME`` (or "
+"``~/.local/share`` if not defined) (:issue:`8887`, :issue:`7816`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1667
@@ -5511,8 +5513,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1672
 msgid ""
-"fish builds correctly on NetBSD (:issue:`8788`) and OpenIndiana (:issue:"
-"`8780`)."
+"fish builds correctly on NetBSD (:issue:`8788`) and OpenIndiana "
+"(:issue:`8780`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1673
@@ -5598,8 +5600,8 @@ msgid ""
 "``string pad`` now excludes escape sequences like colors that fish knows "
 "about, and a new ``--visible`` flag to ``string length`` makes it use that "
 "kind of visible width. This is useful to get the number of terminal cells an "
-"already colored string would occupy, like in a prompt. (:issue:`8182`, :"
-"issue:`7784`, :issue:`4012`)::"
+"already colored string would occupy, like in a prompt. "
+"(:issue:`8182`, :issue:`7784`, :issue:`4012`)::"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1713
@@ -5684,8 +5686,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1736
 msgid ""
 "The special input functions ``delete-or-exit``, ``nextd-or-forward-word`` "
-"and ``prevd-or-backward-word`` replace fish functions of the same names (:"
-"issue:`8538`)."
+"and ``prevd-or-backward-word`` replace fish functions of the same names "
+"(:issue:`8538`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1737
@@ -5697,10 +5699,10 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1741
 msgid ""
 "``string collect`` supports a new ``--allow-empty`` option, which will "
-"output one empty argument in a command substitution that has no output (:"
-"issue:`8054`). This allows commands like ``test -n (echo -n | string collect "
-"--allow-empty)`` to work more reliably. Note this can also be written as "
-"``test -n \"$(echo -n)\"`` (see above)."
+"output one empty argument in a command substitution that has no output "
+"(:issue:`8054`). This allows commands like ``test -n (echo -n | string "
+"collect --allow-empty)`` to work more reliably. Note this can also be "
+"written as ``test -n \"$(echo -n)\"`` (see above)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1742
@@ -5722,16 +5724,16 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1749
 msgid ""
 "``$fish_user_paths`` is now automatically deduplicated to fix a common user "
-"error of appending to it in config.fish when it is universal (:issue:"
-"`8117`). :doc:`fish_add_path <cmds/fish_add_path>` remains the recommended "
-"way to add to $PATH."
+"error of appending to it in config.fish when it is universal "
+"(:issue:`8117`). :doc:`fish_add_path <cmds/fish_add_path>` remains the "
+"recommended way to add to $PATH."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1750
 msgid ""
 "``return`` can now be used outside functions. In scripts, it does the same "
-"thing as ``exit``. In interactive mode,it sets ``$status`` without exiting (:"
-"issue:`8148`)."
+"thing as ``exit``. In interactive mode,it sets ``$status`` without exiting "
+"(:issue:`8148`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1751
@@ -5758,14 +5760,14 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1754
 msgid ""
 "``commandline`` gained a ``--paging-full-mode`` option to check if the pager "
-"is showing all the possible lines (no \"7 more rows\" message) (:issue:"
-"`8485`)."
+"is showing all the possible lines (no \"7 more rows\" message) "
+"(:issue:`8485`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1755
 msgid ""
-"List expansion correctly reports an error when used with all zero indexes (:"
-"issue:`8213`)."
+"List expansion correctly reports an error when used with all zero indexes "
+"(:issue:`8213`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1756
@@ -5875,8 +5877,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1773
 msgid ""
 "Comments inside command substitutions or brackets now correctly ignore "
-"parentheses, quotes, and brackets (:issue:`7866`, :issue:`8022`, :issue:"
-"`8695`)."
+"parentheses, quotes, and brackets "
+"(:issue:`7866`, :issue:`8022`, :issue:`8695`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1774
@@ -5930,8 +5932,8 @@ msgstr ""
 msgid ""
 "fish's highlighter will now color options (starting with ``-`` or ``--``) "
 "with the color given in the new $fish_color_option, up to the first ``--``. "
-"It falls back on $fish_color_param, so nothing changes for existing setups (:"
-"issue:`8292`)."
+"It falls back on $fish_color_param, so nothing changes for existing setups "
+"(:issue:`8292`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1786
@@ -5957,14 +5959,14 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1789
 msgid ""
 "Command lines spanning multiple lines will not be overwritten by the "
-"completion pager when it fills the entire terminal (:issue:`8509`, :issue:"
-"`8405`)."
+"completion pager when it fills the entire terminal "
+"(:issue:`8509`, :issue:`8405`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1790
 msgid ""
-"When redrawing a multiline prompt, the old prompt is now properly cleared (:"
-"issue:`8163`)."
+"When redrawing a multiline prompt, the old prompt is now properly cleared "
+"(:issue:`8163`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1791
@@ -6055,8 +6057,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1808
 msgid ""
-":kbd:`escape` can now bound without breaking arrow key bindings (:issue:"
-"`8428`)."
+":kbd:`escape` can now bound without breaking arrow key bindings "
+"(:issue:`8428`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1809
@@ -6242,8 +6244,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1861
 msgid ""
-"Improvements to many completions, especially for ``git`` aliases (:issue:"
-"`8129`), subcommands (:issue:`8134`) and submodules (:issue:`8716`)."
+"Improvements to many completions, especially for ``git`` aliases "
+"(:issue:`8129`), subcommands (:issue:`8134`) and submodules (:issue:`8716`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1862
@@ -6290,14 +6292,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1873
 msgid ""
-"Vi cursor shaping and $PWD reporting is now also enabled on foot (:issue:"
-"`8422`)."
+"Vi cursor shaping and $PWD reporting is now also enabled on foot "
+"(:issue:`8422`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1874
 msgid ""
-"``ls`` will use colors also on newer versions of Apple Terminal.app (:issue:"
-"`8309`)."
+"``ls`` will use colors also on newer versions of Apple Terminal.app "
+"(:issue:`8309`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1875
@@ -6310,8 +6312,8 @@ msgstr ""
 msgid ""
 "fish's test suite now uses ``ctest``, and has become much faster to run. It "
 "is now also possible to run only specific tests with targets named "
-"``test_$filename`` - ``make test_set.fish`` only runs the set.fish test. (:"
-"issue:`7851`)"
+"``test_$filename`` - ``make test_set.fish`` only runs the set.fish test. "
+"(:issue:`7851`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1880
@@ -6425,8 +6427,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1918
 msgid ""
-"The documentation has been reorganized to be easier to understand (:issue:"
-"`7773`)."
+"The documentation has been reorganized to be easier to understand "
+"(:issue:`7773`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1922
@@ -6446,8 +6448,8 @@ msgstr ""
 msgid ""
 "Specifying an initial tab to ``fish_config`` now only works with "
 "``fish_config browse`` (eg ``fish_config browse variables``), otherwise it "
-"would interfere with the new ``prompt`` subcommand (see below) (:issue:"
-"`7958`)."
+"would interfere with the new ``prompt`` subcommand (see below) "
+"(:issue:`7958`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1928
@@ -6487,8 +6489,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1933
 msgid ""
-"Builtins now properly report a ``$status`` of 1 upon unsuccessful writes (:"
-"issue:`7857`)."
+"Builtins now properly report a ``$status`` of 1 upon unsuccessful writes "
+"(:issue:`7857`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1934
@@ -6518,8 +6520,8 @@ msgid ""
 "applies to user-specific and the systemwide ``config.fish`` (typically in ``/"
 "etc/fish/config.fish``), and configuration snippets (typically in ``conf.d`` "
 "directories). It also disables universal variables, history, and loading of "
-"functions from system or user configuration directories (:issue:`7921`, :"
-"issue:`1256`)."
+"functions from system or user configuration directories "
+"(:issue:`7921`, :issue:`1256`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1938
@@ -6531,9 +6533,10 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1939
 msgid ""
 "``$last_pid`` now contains the process ID of the last process in the "
-"pipeline, allowing it to be used in scripts (:issue:`5036`, :issue:`5832`, :"
-"issue:`7721`). Previously, this value contained the process group ID, but in "
-"scripts this was the same as the running fish's process ID."
+"pipeline, allowing it to be used in scripts "
+"(:issue:`5036`, :issue:`5832`, :issue:`7721`). Previously, this value "
+"contained the process group ID, but in scripts this was the same as the "
+"running fish's process ID."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1940
@@ -6590,14 +6593,14 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1951
 msgid ""
 "fish no longer rings the bell when flashing the command line. The flashing "
-"should already be enough notification and the bell can be annoying (:issue:"
-"`7875`)."
+"should already be enough notification and the bell can be annoying "
+"(:issue:`7875`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1952
 msgid ""
-"``fish --help`` is more helpful if the documentation isn't installed (:issue:"
-"`7824`)."
+"``fish --help`` is more helpful if the documentation isn't installed "
+"(:issue:`7824`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1953
@@ -6647,14 +6650,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1960
 msgid ""
-"``ls`` output is colorized on OpenBSD if colorls utility is installed (:"
-"issue:`8035`)"
+"``ls`` output is colorized on OpenBSD if colorls utility is installed "
+"(:issue:`8035`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1961
 msgid ""
-"The default pager color looks better in terminals with light backgrounds (:"
-"issue:`3412`)."
+"The default pager color looks better in terminals with light backgrounds "
+"(:issue:`3412`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1962
@@ -6695,22 +6698,22 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1971
 msgid ""
-"Pasting in Vi mode puts text in the right place in normal mode (:issue:"
-"`7847`)."
+"Pasting in Vi mode puts text in the right place in normal mode "
+"(:issue:`7847`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1972
 msgid ""
 "Vi mode's :kbd:`u` is bound to ``undo`` instead of ``history-search-"
 "backward``, following GNU readline's behavior. Similarly, :kbd:`ctrl-r` is "
-"bound to ``redo`` instead of ``history-search-backward``, following Vim (:"
-"issue:`7908`)."
+"bound to ``redo`` instead of ``history-search-backward``, following Vim "
+"(:issue:`7908`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1973
 msgid ""
-":kbd:`s` in Vi visual mode now does the same thing as :kbd:`c` (:issue:"
-"`8039`)."
+":kbd:`s` in Vi visual mode now does the same thing as :kbd:`c` "
+"(:issue:`8039`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1974
@@ -6751,8 +6754,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1980
 msgid ""
 "``backward-kill-path-component`` :kbd:`ctrl-w`) no longer erases parts of "
-"two tokens when the cursor is positioned immediately after ``/``. (:issue:"
-"`6258`)."
+"two tokens when the cursor is positioned immediately after ``/``. "
+"(:issue:`6258`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1984
@@ -6763,10 +6766,10 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:1985
 msgid ""
-"Performance of the \"informative\" git prompt is improved somewhat (:issue:"
-"`7871`). This is still slower than the non-informative version by its very "
-"nature. In particular it is IO-bound, so it will be very slow on slow disks "
-"or network mounts."
+"Performance of the \"informative\" git prompt is improved somewhat "
+"(:issue:`7871`). This is still slower than the non-informative version by "
+"its very nature. In particular it is IO-bound, so it will be very slow on "
+"slow disks or network mounts."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1986
@@ -6774,17 +6777,18 @@ msgid ""
 "The sample prompts were updated. Some duplicated prompts, like the various "
 "classic variants, or less useful ones, like the \"justadollar\" prompt were "
 "removed, some prompts were cleaned up, and in some cases renamed. A new "
-"\"simple\" and \"disco\" prompt were added (:issue:`7884`, :issue:`7897`, :"
-"issue:`7930`). The new prompts will only take effect when selected and "
-"existing installed prompts will remain unchanged."
+"\"simple\" and \"disco\" prompt were added "
+"(:issue:`7884`, :issue:`7897`, :issue:`7930`). The new prompts will only "
+"take effect when selected and existing installed prompts will remain "
+"unchanged."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1987
 msgid ""
-"A new ``prompt_login`` helper function to describe the kind of "
-"\"login\" (user, host and chroot status) for use in prompts. This replaces "
-"the old \"debian chroot\" prompt and has been added to the default and "
-"terlar prompts (:issue:`7932`)."
+"A new ``prompt_login`` helper function to describe the kind of \"login\" "
+"(user, host and chroot status) for use in prompts. This replaces the old "
+"\"debian chroot\" prompt and has been added to the default and terlar "
+"prompts (:issue:`7932`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1988
@@ -6796,8 +6800,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:1989
 msgid ""
 "The git prompt now has the same symbol order in normal and \"informative\" "
-"mode, and it's customizable via ``$__fish_git_prompt_status_order`` (:issue:"
-"`7926`)."
+"mode, and it's customizable via ``$__fish_git_prompt_status_order`` "
+"(:issue:`7926`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:1995
@@ -6870,8 +6874,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2011
 msgid ""
-"fish's reflow handling has been disabled by default for kitty (:issue:"
-"`7961`)."
+"fish's reflow handling has been disabled by default for kitty "
+"(:issue:`7961`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2012
@@ -6942,8 +6946,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2032
 msgid ""
-"fish builds correctly on macOS when using new versions of Xcode (:issue:"
-"`7838`)."
+"fish builds correctly on macOS when using new versions of Xcode "
+"(:issue:`7838`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2033
@@ -6991,8 +6995,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2047
 msgid ""
 "Redirections to internal file descriptors is allowed again, reversing the "
-"changes in 3.2.0. This fixes a problem with Midnight Commander (:issue:"
-"`7769`)."
+"changes in 3.2.0. This fixes a problem with Midnight Commander "
+"(:issue:`7769`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2048
@@ -7021,8 +7025,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2052
 msgid ""
-"``psub`` inside event handlers cleans up temporary files properly (:issue:"
-"`7792`)."
+"``psub`` inside event handlers cleans up temporary files properly "
+"(:issue:`7792`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2053
@@ -7038,14 +7042,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2055
 msgid ""
-"``set_color --print-colors`` no longer prints all colors in bold (:issue:"
-"`7805`)"
+"``set_color --print-colors`` no longer prints all colors in bold "
+"(:issue:`7805`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2056
 msgid ""
-"Completing commands starting with a ``-`` no longer prints an error (:issue:"
-"`7809`)."
+"Completing commands starting with a ``-`` no longer prints an error "
+"(:issue:`7809`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2057
@@ -7072,8 +7076,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2063
 msgid ""
-"The history file can be made a symbolic link without it being overwritten (:"
-"issue:`7754`), matching a similar improvement for the universal variable "
+"The history file can be made a symbolic link without it being overwritten "
+"(:issue:`7754`), matching a similar improvement for the universal variable "
 "file in 3.2.0."
 msgstr ""
 
@@ -7086,8 +7090,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2065
 msgid ""
 "Improvements to the ``rsync`` completions (:issue:`7763`), some completion "
-"descriptions (:issue:`7788`), and completions that use IP address (:issue:"
-"`7787`)."
+"descriptions (:issue:`7788`), and completions that use IP address "
+"(:issue:`7787`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2066
@@ -7106,8 +7110,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2079
 msgid ""
-"**Undo and redo support** for the command-line editor and pager search (:"
-"issue:`1367`). By default, undo is bound to Control+Z, and redo to Alt+/."
+"**Undo and redo support** for the command-line editor and pager search "
+"(:issue:`1367`). By default, undo is bound to Control+Z, and redo to Alt+/."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2080
@@ -7159,15 +7163,15 @@ msgstr ""
 msgid ""
 "fish is less aggressive about resetting terminal modes, such as flow "
 "control, after every command. Although flow control remains off by default, "
-"enterprising users can now enable it with ``stty`` (:issue:`2315`, :issue:"
-"`7704`)."
+"enterprising users can now enable it with ``stty`` "
+"(:issue:`2315`, :issue:`7704`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2102
 msgid ""
 "A new **\"fish_add_path\" helper function to add paths to $PATH** without "
-"producing duplicates, to be used interactively or in ``config.fish`` (:issue:"
-"`6960`, :issue:`7028`). For example::"
+"producing duplicates, to be used interactively or in ``config.fish`` "
+"(:issue:`6960`, :issue:`7028`). For example::"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2106
@@ -7199,8 +7203,9 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2118
 msgid ""
-"**A new theme for the documentation and Web-based configuration** (:issue:"
-"`6500`, :issue:`7371`, :issue:`7523`), matching the design on fishshell.com."
+"**A new theme for the documentation and Web-based configuration** "
+"(:issue:`6500`, :issue:`7371`, :issue:`7523`), matching the design on "
+"fishshell.com."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2119
@@ -7214,15 +7219,15 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2122
 msgid ""
 "``string match --regex`` now integrates **named PCRE2 capture groups as fish "
-"variables**, allowing variables to be set directly from ``string match`` (:"
-"issue:`7459`). To support this functionality, ``string`` is now a reserved "
+"variables**, allowing variables to be set directly from ``string match`` "
+"(:issue:`7459`). To support this functionality, ``string`` is now a reserved "
 "word and can no longer be wrapped in a function."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2123
 msgid ""
-"Globs and other **expansions are limited to 512,288 results** (:issue:"
-"`7226`). Because operating systems limit the number of arguments to "
+"Globs and other **expansions are limited to 512,288 results** "
+"(:issue:`7226`). Because operating systems limit the number of arguments to "
 "commands, larger values are unlikely to work anyway, and this helps to avoid "
 "hangs."
 msgstr ""
@@ -7231,8 +7236,8 @@ msgstr ""
 msgid ""
 "A new **\"fish for bash users\" documentation page** gives a quick overview "
 "of the scripting differences between bash and fish (:issue:`2382`), and the "
-"completion tutorial has also been moved out into its own document (:issue:"
-"`6709`)."
+"completion tutorial has also been moved out into its own document "
+"(:issue:`6709`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2127 ../../../../CHANGELOG.rst:2663
@@ -7268,14 +7273,14 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2141
 msgid ""
 "The ``type``, ``_`` (gettext), ``.`` (source) and ``:`` (no-op) functions "
-"are now implemented builtins for performance purposes (:issue:`7342`, :issue:"
-"`7036`, :issue:`6854`)."
+"are now implemented builtins for performance purposes "
+"(:issue:`7342`, :issue:`7036`, :issue:`6854`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2143
 msgid ""
-"``set`` and backgrounded jobs no longer overwrite ``$pipestatus`` (:issue:"
-"`6820`), improving its use in command substitutions (:issue:`6998`)."
+"``set`` and backgrounded jobs no longer overwrite ``$pipestatus`` "
+"(:issue:`6820`), improving its use in command substitutions (:issue:`6998`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2144
@@ -7294,8 +7299,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2147
 msgid ""
 "A new variable, ``fish_kill_signal``, is set to the signal that terminated "
-"the last foreground job, or ``0`` if the job exited normally (:issue:"
-"`6824`, :issue:`6822`)."
+"the last foreground job, or ``0`` if the job exited normally "
+"(:issue:`6824`, :issue:`6822`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2148
@@ -7329,14 +7334,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2155
 msgid ""
-"``string`` subcommands now quit early when used with ``--quiet`` (:issue:"
-"`7495`)."
+"``string`` subcommands now quit early when used with ``--quiet`` "
+"(:issue:`7495`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2156
 msgid ""
-"``string repeat`` now handles multiple arguments, repeating each one (:issue:"
-"`5988`)."
+"``string repeat`` now handles multiple arguments, repeating each one "
+"(:issue:`5988`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2157
@@ -7353,9 +7358,9 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2160
 msgid ""
-"``fish_indent`` now removes unnecessary quotes in simple cases (:issue:"
-"`6722`) and gained a ``--check`` option to just check if a file is indented "
-"correctly (:issue:`7251`)."
+"``fish_indent`` now removes unnecessary quotes in simple cases "
+"(:issue:`6722`) and gained a ``--check`` option to just check if a file is "
+"indented correctly (:issue:`7251`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2162
@@ -7373,17 +7378,17 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2164
 msgid ""
 "A new ``fish_job_summary`` function is called whenever a background job "
-"stops or ends, or any job terminates from a signal (:issue:`6959`, :issue:"
-"`2727`, :issue:`4319`). The default behaviour can now be customized by "
-"redefining it."
+"stops or ends, or any job terminates from a signal "
+"(:issue:`6959`, :issue:`2727`, :issue:`4319`). The default behaviour can now "
+"be customized by redefining it."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2167
 msgid ""
 "``status`` gained new ``dirname`` and ``basename`` convenience subcommands "
 "to get just the directory to the running script or the name of it, to "
-"simplify common tasks such as running ``(dirname (status filename))`` (:"
-"issue:`7076`, :issue:`1818`)."
+"simplify common tasks such as running ``(dirname (status filename))`` "
+"(:issue:`7076`, :issue:`1818`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2170
@@ -7391,8 +7396,8 @@ msgid ""
 "Broken pipelines are now handled more smoothly; in particular, bad "
 "redirection mid-pipeline results in the job continuing to run but with the "
 "broken file descriptor replaced with a closed file descriptor. This allows "
-"better error recovery and is more in line with other shells' behaviour (:"
-"issue:`7038`)."
+"better error recovery and is more in line with other shells' behaviour "
+"(:issue:`7038`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2174
@@ -7420,8 +7425,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2179
 msgid ""
-"``argparse`` no longer requires a short flag letter for long-only options (:"
-"issue:`7585`) and only prints a backtrace with invalid options to argparse "
+"``argparse`` no longer requires a short flag letter for long-only options "
+"(:issue:`7585`) and only prints a backtrace with invalid options to argparse "
 "itself (:issue:`6703`)."
 msgstr ""
 
@@ -7492,8 +7497,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2195
 msgid ""
 "``math`` now has a ``--base`` option to output the result in hexadecimal or "
-"octal (:issue:`7496`) and produces more specific error messages (:issue:"
-"`7508`)."
+"octal (:issue:`7496`) and produces more specific error messages "
+"(:issue:`7508`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2196
@@ -7519,8 +7524,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2200
 msgid ""
 "Using ``read --silent`` while fish is in private mode was adding these "
-"potentially-sensitive entries to the history; this has been fixed (:issue:"
-"`7230`)."
+"potentially-sensitive entries to the history; this has been fixed "
+"(:issue:`7230`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2201
@@ -7587,8 +7592,8 @@ msgstr ""
 msgid ""
 "``fish --profile`` now only starts profiling after fish is ready to execute "
 "commands (all configuration is completed). There is a new ``--profile-"
-"startup`` option that only profiles the startup and configuration process (:"
-"issue:`7648`)."
+"startup`` option that only profiles the startup and configuration process "
+"(:issue:`7648`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2212
@@ -7730,8 +7735,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2244
 msgid ""
-"The enabled debug categories are now printed on shell startup (:issue:"
-"`7007`)."
+"The enabled debug categories are now printed on shell startup "
+"(:issue:`7007`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2245
@@ -7764,8 +7769,9 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2255
 msgid ""
-"The output of ``time`` is now properly aligned in all cases (:issue:`6726`, :"
-"issue:`6714`) and no longer depends on locale (:issue:`6757`)."
+"The output of ``time`` is now properly aligned in all cases "
+"(:issue:`6726`, :issue:`6714`) and no longer depends on locale "
+"(:issue:`6757`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2256
@@ -7781,8 +7787,8 @@ msgstr ""
 msgid ""
 ":kbd:`ctrl-c` handling has been reimplemented in C++ and is therefore "
 "quicker (:issue:`5259`), no longer occasionally prints an \"unknown "
-"command\" error (:issue:`7145`) or overwrites multiline prompts (:issue:"
-"`3537`)."
+"command\" error (:issue:`7145`) or overwrites multiline prompts "
+"(:issue:`3537`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2261
@@ -7806,8 +7812,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2265
 msgid ""
 "``fish_update_completions`` gained a new ``--keep`` option, which improves "
-"speed by skipping completions that already exist (:issue:`6775`, :issue:"
-"`6796`)."
+"speed by skipping completions that already exist "
+"(:issue:`6775`, :issue:`6796`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2266
@@ -7824,8 +7830,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2268
 msgid ""
-"Long command lines no longer add a blank line after execution (:issue:"
-"`6826`) and behave better with :kbd:`backspace` (:issue:`6951`)."
+"Long command lines no longer add a blank line after execution "
+"(:issue:`6826`) and behave better with :kbd:`backspace` (:issue:`6951`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2269
@@ -7848,8 +7854,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2272
 msgid ""
 "``set_color --print-colors`` now also respects the bold, dim, underline, "
-"reverse, italic and background modifiers, to better show their effect (:"
-"issue:`7314`)."
+"reverse, italic and background modifiers, to better show their effect "
+"(:issue:`7314`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2273
@@ -7878,9 +7884,9 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2276
 msgid ""
-"Resuming a piped job by its number, like ``fg %1``, works correctly (:issue:"
-"`7406`). Resumed jobs show the correct title in the terminal emulator (:"
-"issue:`7444`)."
+"Resuming a piped job by its number, like ``fg %1``, works correctly "
+"(:issue:`7406`). Resumed jobs show the correct title in the terminal "
+"emulator (:issue:`7444`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2277
@@ -7912,8 +7918,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2282
 msgid ""
-"Resizing the terminal window no longer produces a corrupted prompt (:issue:"
-"`6532`, :issue:`7404`)."
+"Resizing the terminal window no longer produces a corrupted prompt "
+"(:issue:`6532`, :issue:`7404`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2283
@@ -7930,16 +7936,16 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2285
 msgid ""
-"``fish_private_mode`` may now be changed dynamically using ``set`` (:issue:"
-"`7589`), and history is kept in memory in private mode (but not stored "
-"permanently) (:issue:`7590`)."
+"``fish_private_mode`` may now be changed dynamically using ``set`` "
+"(:issue:`7589`), and history is kept in memory in private mode (but not "
+"stored permanently) (:issue:`7590`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2286
 msgid ""
 "Commands with leading spaces may be retrieved from history with up-arrow "
-"until a new command is run, matching zsh's ``HIST_IGNORE_SPACE`` (:issue:"
-"`1383`)."
+"until a new command is run, matching zsh's ``HIST_IGNORE_SPACE`` "
+"(:issue:`1383`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2287
@@ -7969,14 +7975,14 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2291
 msgid ""
 "Redirection targets are no longer highlighted as error if they contain "
-"variables which will likely be defined by the current commandline (:issue:"
-"`6654`)."
+"variables which will likely be defined by the current commandline "
+"(:issue:`6654`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2292
 msgid ""
-"fish is now more resilient against broken terminal modes (:issue:`7133`, :"
-"issue:`4873`)."
+"fish is now more resilient against broken terminal modes "
+"(:issue:`7133`, :issue:`4873`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2293
@@ -7995,14 +8001,14 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2295
 msgid ""
 "Just like ``fish_indent``, the interactive reader will indent continuation "
-"lines that follow a line ending in a backslash, ``|``, ``&&`` or ``||`` (:"
-"issue:`7694`)."
+"lines that follow a line ending in a backslash, ``|``, ``&&`` or ``||`` "
+"(:issue:`7694`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2296
 msgid ""
-"Commands with a trailing escaped space are saved in history correctly (:"
-"issue:`7661`)."
+"Commands with a trailing escaped space are saved in history correctly "
+"(:issue:`7661`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2297
@@ -8023,9 +8029,9 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2305
 msgid ""
-"As mentioned above, new special input functions ``undo`` (:kbd:`ctrl-_` or :"
-"kbd:`ctrl-z`) and ``redo`` (:kbd:`alt-/`) can be used to revert changes to "
-"the command line or the pager search field (:issue:`6570`)."
+"As mentioned above, new special input functions ``undo`` (:kbd:`ctrl-_` "
+"or :kbd:`ctrl-z`) and ``redo`` (:kbd:`alt-/`) can be used to revert changes "
+"to the command line or the pager search field (:issue:`6570`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2306
@@ -8034,9 +8040,9 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2307
 msgid ""
-"Additionally, using the ``cancel`` special input function (bound to :kbd:"
-"`escape` by default) right after fish picked an unambiguous completion will "
-"undo that (:issue:`7433`)."
+"Additionally, using the ``cancel`` special input function (bound "
+"to :kbd:`escape` by default) right after fish picked an unambiguous "
+"completion will undo that (:issue:`7433`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2308
@@ -8050,8 +8056,8 @@ msgid ""
 "Vi mode bindings now support ``dh``, ``dl``, ``c0``, ``cf``, ``ct``, ``cF``, "
 "``cT``, ``ch``, ``cl``, ``y0``, ``ci``, ``ca``, ``yi``, ``ya``, ``di``, "
 "``da``, ``d;``, ``d,``, ``o``, ``O`` and Control+left/right keys to navigate "
-"by word (:issue:`6648`, :issue:`6755`, :issue:`6769`, :issue:`7442`, :issue:"
-"`7516`)."
+"by word "
+"(:issue:`6648`, :issue:`6755`, :issue:`6769`, :issue:`7442`, :issue:`7516`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2310
@@ -8062,10 +8068,10 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2311
 msgid ""
-"Functions ``up-or-search`` and ``down-or-search`` (:kbd:`up` and :kbd:"
-"`down`) can cross empty lines, and don't activate search mode if the search "
-"fails, which makes them easier to use to move between lines in some "
-"situations."
+"Functions ``up-or-search`` and ``down-or-search`` (:kbd:`up` "
+"and :kbd:`down`) can cross empty lines, and don't activate search mode if "
+"the search fails, which makes them easier to use to move between lines in "
+"some situations."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2312
@@ -8106,14 +8112,14 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2318
 msgid ""
 "``edit_command_buffer`` (:kbd:`alt-e` and :kbd:`alt-v`) passes the cursor "
-"position to the external editor if the editor is recognized (:issue:`6138`, :"
-"issue:`6954`)."
+"position to the external editor if the editor is recognized "
+"(:issue:`6138`, :issue:`6954`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2320
 msgid ""
-"``__fish_prepend_sudo`` (:kbd:`alt-s`) now toggles a ``sudo`` prefix (:issue:"
-"`7012`) and avoids shifting the cursor (:issue:`6542`)."
+"``__fish_prepend_sudo`` (:kbd:`alt-s`) now toggles a ``sudo`` prefix "
+"(:issue:`7012`) and avoids shifting the cursor (:issue:`6542`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2321
@@ -8126,8 +8132,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2323
 msgid ""
 "``__fish_toggle_comment_commandline`` (:kbd:`alt-#`) now uncomments and "
-"presents the last comment from history if the commandline is empty (:issue:"
-"`7137`)."
+"presents the last comment from history if the commandline is empty "
+"(:issue:`7137`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2325
@@ -8141,8 +8147,8 @@ msgid ""
 "The definition of \"word\" and \"bigword\" for movements was refined, fixing "
 "(eg) vi mode's behavior with :kbd:`e` on the second-to-last char, and "
 "bigword's behavior with single-character words and non-blank non-graphical "
-"characters (:issue:`7353`, :issue:`7354`, :issue:`4025`, :issue:`7328`, :"
-"issue:`7325`)"
+"characters "
+"(:issue:`7353`, :issue:`7354`, :issue:`4025`, :issue:`7328`, :issue:`7325`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2327
@@ -8161,8 +8167,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2329
 msgid ""
 "Completing variable overrides (``foo=bar``) could replace the entire thing "
-"with just the completion in some circumstances. This has been fixed (:issue:"
-"`7398`)."
+"with just the completion in some circumstances. This has been fixed "
+"(:issue:`7398`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2334
@@ -8211,8 +8217,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2344
 msgid ""
-"New colorschemes - ``ayu Light``, ``ayu Dark`` and ``ayu Mirage`` (:issue:"
-"`7596`)."
+"New colorschemes - ``ayu Light``, ``ayu Dark`` and ``ayu Mirage`` "
+"(:issue:`7596`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2345
@@ -8240,14 +8246,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2354
 msgid ""
-"Autosuggestions appear when the cursor passes the right prompt (:issue:"
-"`6948`) or wraps to the next line (:issue:`7213`)."
+"Autosuggestions appear when the cursor passes the right prompt "
+"(:issue:`6948`) or wraps to the next line (:issue:`7213`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2355
 msgid ""
-"The cursor shape in Vi mode changes properly in Windows Terminal (:issue:"
-"`6999`, :issue:`6478`)."
+"The cursor shape in Vi mode changes properly in Windows Terminal "
+"(:issue:`6999`, :issue:`6478`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2356
@@ -8282,8 +8288,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2361
 msgid ""
-"The pager is properly rendered with long command lines selected (:issue:"
-"`2557`)."
+"The pager is properly rendered with long command lines selected "
+"(:issue:`2557`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2362
@@ -8574,8 +8580,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2438
 msgid ""
-"Improvements to the manual page completion generator (:issue:`7086`, :issue:"
-"`6879`, :issue:`7187`)."
+"Improvements to the manual page completion generator "
+"(:issue:`7086`, :issue:`6879`, :issue:`7187`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2439
@@ -8608,9 +8614,9 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2447
 msgid ""
-"fish handles ncurses installed in a non-standard prefix better (:issue:"
-"`6600`, :issue:`7219`), and uses variadic tparm on NetBSD curses (:issue:"
-"`6626`)."
+"fish handles ncurses installed in a non-standard prefix better "
+"(:issue:`6600`, :issue:`7219`), and uses variadic tparm on NetBSD curses "
+"(:issue:`6626`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2448
@@ -8621,8 +8627,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2449
 msgid ""
-"The fish project has adopted the Contributor Covenant code of conduct (:"
-"issue:`7151`)."
+"The fish project has adopted the Contributor Covenant code of conduct "
+"(:issue:`7151`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2454
@@ -8668,8 +8674,8 @@ msgstr ""
 msgid ""
 "To disable the greeting message permanently it is no longer enough to just "
 "run ``set fish_greeting`` interactively as it is no longer implicitly a "
-"universal variable. Use ``set -U fish_greeting`` or disable it in config."
-"fish with ``set -g fish_greeting``."
+"universal variable. Use ``set -U fish_greeting`` or disable it in "
+"config.fish with ``set -g fish_greeting``."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2467
@@ -8687,8 +8693,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2473
 msgid ""
-"fish source tarballs are now distributed using the XZ compression method (:"
-"issue:`5460`)."
+"fish source tarballs are now distributed using the XZ compression method "
+"(:issue:`5460`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2475
@@ -8724,8 +8730,8 @@ msgstr ""
 msgid ""
 "A new CMake variable ``FISH_USE_SYSTEM_PCRE2`` controls whether fish builds "
 "with the system-installed PCRE2, or the version it bundles. By default it "
-"prefers the system library if available, unless Mac codesigning is enabled (:"
-"issue:`6952`)."
+"prefers the system library if available, unless Mac codesigning is enabled "
+"(:issue:`6952`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2485
@@ -8743,8 +8749,9 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2487
 msgid ""
-"The Web-based configuration tool is compatible with Python 3.10  (:issue:"
-"`7600`) and no longer requires Python's distutils package (:issue:`7514`)."
+"The Web-based configuration tool is compatible with Python 3.10  "
+"(:issue:`7600`) and no longer requires Python's distutils package "
+"(:issue:`7514`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2488
@@ -8764,8 +8771,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2497
 msgid ""
 "Commands such as ``fzf`` and ``enhancd``, when used with ``eval``, would "
-"hang. ``eval`` buffered output too aggressively, which has been fixed (:"
-"issue:`6955`)."
+"hang. ``eval`` buffered output too aggressively, which has been fixed "
+"(:issue:`6955`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2501
@@ -8821,8 +8828,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2524
 msgid ""
-"Building fish on macOS (:issue:`6602`) or with new versions of GCC (:issue:"
-"`6604`, :issue:`6609`) is now successful."
+"Building fish on macOS (:issue:`6602`) or with new versions of GCC "
+"(:issue:`6604`, :issue:`6609`) is now successful."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2526
@@ -8850,15 +8857,15 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2534
 msgid ""
-"Copying from the end of the command line no longer crashes fish (:issue:"
-"`6680`)."
+"Copying from the end of the command line no longer crashes fish "
+"(:issue:`6680`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2536
 msgid ""
 "``read`` no longer removes multiple separators when splitting a variable "
-"into a list, restoring the previous behaviour from fish 3.0 and before (:"
-"issue:`6650`)."
+"into a list, restoring the previous behaviour from fish 3.0 and before "
+"(:issue:`6650`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2539
@@ -8900,8 +8907,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2556
 msgid ""
 "The VCS prompt, ``fish_vcs_prompt``, no longer displays Subversion (``svn``) "
-"status by default, due to the potential slowness of this operation (:issue:"
-"`6681`)."
+"status by default, due to the potential slowness of this operation "
+"(:issue:`6681`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2559
@@ -8993,9 +9000,10 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2602
 msgid ""
-"Fixes a number of problems in compiling and testing on Cygwin (:issue:"
-"`6549`) and Solaris-derived systems such as Illumos (:issue:`6553`, :issue:"
-"`6554`, :issue:`6555`, :issue:`6556`, and :issue:`6558`)."
+"Fixes a number of problems in compiling and testing on Cygwin "
+"(:issue:`6549`) and Solaris-derived systems such as Illumos "
+"(:issue:`6553`, :issue:`6554`, :issue:`6555`, :issue:`6556`, "
+"and :issue:`6558`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2605
@@ -9027,8 +9035,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2625
 msgid ""
 "A new ``$pipestatus`` variable contains a list of exit statuses of the "
-"previous job, for each of the separate commands in a pipeline (:issue:"
-"`5632`)."
+"previous job, for each of the separate commands in a pipeline "
+"(:issue:`5632`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2628
@@ -9040,8 +9048,9 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2630
 msgid ""
 "An overhaul of error messages for builtin commands, including a removal of "
-"the overwhelming usage summary, more readable stack traces (:issue:`3404`, :"
-"issue:`5434`), and stack traces for ``test`` (aka ``[``) (:issue:`5771`)."
+"the overwhelming usage summary, more readable stack traces "
+"(:issue:`3404`, :issue:`5434`), and stack traces for ``test`` (aka ``[``) "
+"(:issue:`5771`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2633
@@ -9063,8 +9072,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2641
 msgid ""
 "The fish manual, tutorial and FAQ are now available in ``man`` format as "
-"``fish-doc``, ``fish-tutorial`` and ``fish-faq`` respectively (:issue:"
-"`5521`)."
+"``fish-doc``, ``fish-tutorial`` and ``fish-faq`` respectively "
+"(:issue:`5521`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2644
@@ -9076,8 +9085,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2647
 msgid ""
-"fish now correctly handles ``CDPATH`` entries that start with ``..`` (:issue:"
-"`6220`) or contain ``./`` (:issue:`5887`)."
+"fish now correctly handles ``CDPATH`` entries that start with ``..`` "
+"(:issue:`6220`) or contain ``./`` (:issue:`5887`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2649
@@ -9147,8 +9156,8 @@ msgid ""
 "``math``\\ ‘s exponent operator,’\\ ``^``\\ ‘, was previously left-"
 "associative, but now uses the more commonly-used right-associative behaviour "
 "(:issue:`6280`). This means that ``math '3^0.5^2'`` was previously "
-"calculated as’(3\\ :sup:`0.5)`\\ 2’, but is now calculated as ‘3\\ :sup:"
-"`(0.5`\\ 2)’."
+"calculated as’(3\\ :sup:`0.5)`\\ 2’, but is now calculated as "
+"‘3\\ :sup:`(0.5`\\ 2)’."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2683
@@ -9213,8 +9222,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2708
 msgid ""
-"``complete -C foo`` now works as expected, rather than requiring ``complete -"
-"Cfoo``."
+"``complete -C foo`` now works as expected, rather than requiring ``complete "
+"-Cfoo``."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2710
@@ -9227,8 +9236,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2713
 msgid ""
 "``argparse`` now defaults to showing the current function name (instead of "
-"``argparse``) in its errors, making ``--name`` often superfluous (:issue:"
-"`5835`)."
+"``argparse``) in its errors, making ``--name`` often superfluous "
+"(:issue:`5835`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2716
@@ -9245,15 +9254,15 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2721
 msgid ""
-"``read -S`` (short option of ``--shell``) is recognised correctly (:issue:"
-"`5660`)."
+"``read -S`` (short option of ``--shell``) is recognised correctly "
+"(:issue:`5660`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2723
 msgid ""
 "``read`` understands ``--list``, which acts like ``--array`` in reading all "
-"arguments into a list inside a single variable, but is better named (:issue:"
-"`5846`)."
+"arguments into a list inside a single variable, but is better named "
+"(:issue:`5846`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2726
@@ -9273,8 +9282,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2732
 msgid ""
 "``fish_indent`` now handles semicolons better, including leaving them in "
-"place for ``; and`` and ``; or`` instead of breaking the line (:issue:"
-"`5859`)."
+"place for ``; and`` and ``; or`` instead of breaking the line "
+"(:issue:`5859`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2735
@@ -9308,8 +9317,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2745
 msgid ""
-"``jobs --last`` returns 0 to indicate success when a job is found (:issue:"
-"`6104`)."
+"``jobs --last`` returns 0 to indicate success when a job is found "
+"(:issue:`6104`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2747
@@ -9345,8 +9354,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2758
 msgid ""
-"Syntax error reports now display a marker in the correct position (:issue:"
-"`5812`)."
+"Syntax error reports now display a marker in the correct position "
+"(:issue:`5812`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2760
@@ -9363,8 +9372,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2765
 msgid ""
-"A bug where ``for`` could use invalid variable names has been fixed (:issue:"
-"`5800`)."
+"A bug where ``for`` could use invalid variable names has been fixed "
+"(:issue:`5800`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2767
@@ -9406,8 +9415,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2780
 msgid ""
-"The ``$hostname`` variable is no longer truncated to 32 characters (:issue:"
-"`5758`)."
+"The ``$hostname`` variable is no longer truncated to 32 characters "
+"(:issue:`5758`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2782
@@ -9423,8 +9432,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2791
 msgid ""
-"New Base16 color options are available through the Web-based configuration (:"
-"issue:`6504`)."
+"New Base16 color options are available through the Web-based configuration "
+"(:issue:`6504`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2793
@@ -9437,8 +9446,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2797
 msgid ""
-"The locale is now reloaded when the ``LOCPATH`` variable is changed (:issue:"
-"`5815`)."
+"The locale is now reloaded when the ``LOCPATH`` variable is changed "
+"(:issue:`5815`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2799
@@ -9450,8 +9459,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2801
 msgid ""
 "``dirh`` outputs its stack in the correct order (:issue:`5477`), and behaves "
-"as documented when universal variables are used for its stack (:issue:"
-"`5797`)."
+"as documented when universal variables are used for its stack "
+"(:issue:`5797`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2804
@@ -9474,8 +9483,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2810
 msgid ""
-"fish now underlines every valid entered path instead of just the last one (:"
-"issue:`5872`)."
+"fish now underlines every valid entered path instead of just the last one "
+"(:issue:`5872`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2812
@@ -9486,14 +9495,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2815
 msgid ""
-"Syntax highlighting works correctly with variables as commands (:issue:"
-"`5658`) and redirections to close file descriptors (:issue:`6092`)."
+"Syntax highlighting works correctly with variables as commands "
+"(:issue:`5658`) and redirections to close file descriptors (:issue:`6092`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2817
 msgid ""
-"``help`` works properly on Windows Subsystem for Linux (:issue:`5759`, :"
-"issue:`6338`)."
+"``help`` works properly on Windows Subsystem for Linux "
+"(:issue:`5759`, :issue:`6338`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2818
@@ -9532,16 +9541,16 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2828
 msgid ""
 "The Web-based configuration handles aliases that include single quotes "
-"correctly (:issue:`6120`), and launches correctly under Termux (:issue:"
-"`6248`) and OpenBSD (:issue:`6522`)."
+"correctly (:issue:`6120`), and launches correctly under Termux "
+"(:issue:`6248`) and OpenBSD (:issue:`6522`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2831
 msgid ""
 "``function`` now correctly validates parameters for ``--argument-names`` as "
 "valid variable names (:issue:`6147`) and correctly parses options following "
-"``--argument-names``, as in “``--argument-names foo --description bar``” (:"
-"issue:`6186`)."
+"``--argument-names``, as in “``--argument-names foo --description bar``” "
+"(:issue:`6186`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2835
@@ -9641,8 +9650,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2877
 msgid ""
 "The path-component bindings (like Ctrl-w) now also stop at “:” and “@”, "
-"because those are used to denote user and host in commands such as ``ssh`` (:"
-"issue:`5841`)."
+"because those are used to denote user and host in commands such as ``ssh`` "
+"(:issue:`5841`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2880
@@ -9701,14 +9710,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2899
 msgid ""
-"In Vi mode, hitting Enter in replace-one mode no longer erases the prompt (:"
-"issue:`6298`)."
+"In Vi mode, hitting Enter in replace-one mode no longer erases the prompt "
+"(:issue:`6298`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2901
 msgid ""
-"Selections in Vi mode are inclusive, matching the actual behaviour of Vi (:"
-"issue:`5770`)."
+"Selections in Vi mode are inclusive, matching the actual behaviour of Vi "
+"(:issue:`5770`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2909
@@ -9761,8 +9770,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:2931
 msgid ""
 "fish now tries to guess if the system supports Unicode 9 (and displays emoji "
-"as wide), eliminating the need to set ``$fish_emoji_width`` in most cases (:"
-"issue:`5722`)."
+"as wide), eliminating the need to set ``$fish_emoji_width`` in most cases "
+"(:issue:`5722`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2934
@@ -9977,8 +9986,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:2996
 msgid ""
-"``zstd``, ``zstdcat``, ``zstdgrep``, ``zstdless`` and ``zstdmt`` (:issue:"
-"`6364`)"
+"``zstd``, ``zstdcat``, ``zstdgrep``, ``zstdless`` and ``zstdmt`` "
+"(:issue:`6364`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:2999 ../../../../CHANGELOG.rst:3627
@@ -9993,8 +10002,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3002
 msgid ""
-"Tab completion will no longer add trailing spaces if they already exist (:"
-"issue:`6107`)."
+"Tab completion will no longer add trailing spaces if they already exist "
+"(:issue:`6107`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3004
@@ -10031,8 +10040,8 @@ msgid ""
 "underscore, so \\__fish_git_prompt is now fish_git_prompt, "
 "\\__fish_vcs_prompt is now fish_vcs_prompt, \\__fish_hg_prompt is now "
 "fish_hg_prompt and \\__fish_svn_prompt is now fish_svn_prompt. Shims at the "
-"old names have been added, and the variables have kept their old names (:"
-"issue:`5586`)."
+"old names have been added, and the variables have kept their old names "
+"(:issue:`5586`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3025
@@ -10041,10 +10050,10 @@ msgid ""
 "expression, so escaping backslashes requires many escapes (eg ``string "
 "replace -ra '([ab])' '\\\\\\\\\\\\\\$1' a``). The new feature flag ``regex-"
 "easyesc`` can be used to disable this, so that the same effect can be "
-"achieved with ``string replace -ra '([ab])' '\\\\\\\\$1' a`` (:issue:"
-"`5556`). As a reminder, the intention behind feature flags is that this will "
-"eventually become the default and then only option, so scripts should be "
-"updated."
+"achieved with ``string replace -ra '([ab])' '\\\\\\\\$1' a`` "
+"(:issue:`5556`). As a reminder, the intention behind feature flags is that "
+"this will eventually become the default and then only option, so scripts "
+"should be updated."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3034
@@ -10106,9 +10115,9 @@ msgid ""
 "The paths for completions, functions and configuration snippets have been "
 "extended. On systems that define ``XDG_DATA_DIRS``, each of the directories "
 "in this variable are searched in the subdirectories ``fish/"
-"vendor_completions.d``, ``fish/vendor_functions.d``, and ``fish/vendor_conf."
-"d`` respectively. On systems that do not define this variable in the "
-"environment, the vendor directories are searched for in both the "
+"vendor_completions.d``, ``fish/vendor_functions.d``, and ``fish/"
+"vendor_conf.d`` respectively. On systems that do not define this variable in "
+"the environment, the vendor directories are searched for in both the "
 "installation prefix and the default “extra” directory, which now defaults to "
 "``/usr/local`` (:issue:`5029`)."
 msgstr ""
@@ -10149,8 +10158,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3101
 msgid ""
-"``exec`` does not complain about running foreground jobs when called (:issue:"
-"`5449`)."
+"``exec`` does not complain about running foreground jobs when called "
+"(:issue:`5449`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3103
@@ -10192,10 +10201,10 @@ msgstr ""
 msgid ""
 "Fixes and improvements to the git completions, including printing correct "
 "paths with older git versions, fuzzy matching again, reducing unnecessary "
-"offers of root paths (starting with ``:/``) (:issue:`5578`, :issue:`5574`, :"
-"issue:`5476`), and ignoring shell aliases, so enterprising users can set up "
-"the wrapping command (via ``set -g __fish_git_alias_$command $whatitwraps``) "
-"(:issue:`5412`)."
+"offers of root paths (starting with ``:/``) "
+"(:issue:`5578`, :issue:`5574`, :issue:`5476`), and ignoring shell aliases, "
+"so enterprising users can set up the wrapping command (via ``set -g "
+"__fish_git_alias_$command $whatitwraps``) (:issue:`5412`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3123
@@ -10206,14 +10215,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3125
 msgid ""
-"Starting in symbolically-linked working directories works correctly (:issue:"
-"`5525`)."
+"Starting in symbolically-linked working directories works correctly "
+"(:issue:`5525`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3127
 msgid ""
-"The default ``fish_title`` function no longer contains extra spaces (:issue:"
-"`5517`)."
+"The default ``fish_title`` function no longer contains extra spaces "
+"(:issue:`5517`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3129
@@ -10235,8 +10244,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3134
 msgid ""
-"A number of crashes have been fixed (:issue:`5550`, :issue:`5548`, :issue:"
-"`5479`, :issue:`5453`)."
+"A number of crashes have been fixed "
+"(:issue:`5550`, :issue:`5548`, :issue:`5479`, :issue:`5453`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3135
@@ -10305,8 +10314,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3170
 msgid ""
-"fish 3.0.0 builds on Cygwin (:issue:`5423`), but does not run correctly (:"
-"issue:`5426`) and will result in a hanging terminal when started. Cygwin "
+"fish 3.0.0 builds on Cygwin (:issue:`5423`), but does not run correctly "
+"(:issue:`5426`) and will result in a hanging terminal when started. Cygwin "
 "users are encouraged to continue using 2.7.1 until a release which corrects "
 "this is available."
 msgstr ""
@@ -10337,8 +10346,8 @@ msgid ""
 "Process and job expansion has largely been removed. ``%`` will no longer "
 "perform these expansions, except for ``%self`` for the PID of the current "
 "shell. Additionally, job management commands (``disown``, ``wait``, ``bg``, "
-"``fg`` and ``kill``) will expand job specifiers starting with ``%`` (:issue:"
-"`4230`, :issue:`1202`)."
+"``fg`` and ``kill``) will expand job specifiers starting with ``%`` "
+"(:issue:`4230`, :issue:`1202`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3195
@@ -10368,8 +10377,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3205
 msgid ""
-"``for`` loop control variables are no longer local to the ``for`` block (:"
-"issue:`1935`)."
+"``for`` loop control variables are no longer local to the ``for`` block "
+"(:issue:`1935`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3207
@@ -10380,8 +10389,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3209
 msgid ""
-"Local exported (``set -lx``) vars are now visible to functions (:issue:"
-"`1091`)."
+"Local exported (``set -lx``) vars are now visible to functions "
+"(:issue:`1091`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3211
@@ -10401,8 +10410,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:3217
 msgid ""
 "``read`` now uses ``-s`` as short for ``--silent`` (à la ``bash``); ``--"
-"shell``\\ ’s abbreviation (formerly ``-s``) is now ``-S`` instead (:issue:"
-"`4490`)."
+"shell``\\ ’s abbreviation (formerly ``-s``) is now ``-S`` instead "
+"(:issue:`4490`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3220
@@ -10436,16 +10445,16 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3232
 msgid ""
-"The ``FISH_READ_BYTE_LIMIT`` variable is now called ``fish_byte_limit`` (:"
-"issue:`4414`)."
+"The ``FISH_READ_BYTE_LIMIT`` variable is now called ``fish_byte_limit`` "
+"(:issue:`4414`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3234
 msgid ""
 "Environment variables are no longer split into arrays based on the record "
 "separator character on startup. Instead, variables are not split, unless "
-"their name ends in PATH, in which case they are split on colons (:issue:"
-"`436`)."
+"their name ends in PATH, in which case they are split on colons "
+"(:issue:`436`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3238
@@ -10475,8 +10484,9 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:3254
 msgid ""
 "A new feature flags mechanism is added for staging deprecations and breaking "
-"changes. Feature flags may be specified at launch with ``fish --features ..."
-"`` or by setting the universal ``fish_features`` variable. (:issue:`4940`)"
+"changes. Feature flags may be specified at launch with ``fish --"
+"features ...`` or by setting the universal ``fish_features`` variable. "
+"(:issue:`4940`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3259
@@ -10488,8 +10498,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3262
 msgid ""
-"The ``function --on-process-exit`` switch will be removed in future (:issue:"
-"`4700`). Use the ``fish_exit`` event instead: ``function --on-event "
+"The ``function --on-process-exit`` switch will be removed in future "
+"(:issue:`4700`). Use the ``fish_exit`` event instead: ``function --on-event "
 "fish_exit``."
 msgstr ""
 
@@ -10501,15 +10511,15 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3267
 msgid ""
-"``^`` as a redirection deprecated and will be removed in the future. (:issue:"
-"`4394`). Use ``2>`` to redirect stderr. This is controlled by the ``stderr-"
-"nocaret`` feature flag."
+"``^`` as a redirection deprecated and will be removed in the future. "
+"(:issue:`4394`). Use ``2>`` to redirect stderr. This is controlled by the "
+"``stderr-nocaret`` feature flag."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3270
 msgid ""
-"``?`` as a glob (wildcard) is deprecated and will be removed in the future (:"
-"issue:`4520`). This is controlled by the ``qmark-noglob`` feature flag."
+"``?`` as a glob (wildcard) is deprecated and will be removed in the future "
+"(:issue:`4520`). This is controlled by the ``qmark-noglob`` feature flag."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3275 ../../../../CHANGELOG.rst:3691
@@ -10522,8 +10532,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:3282
 msgid ""
 "fish now supports ``&&`` (like ``and``), ``||`` (like ``or``), and ``!`` "
-"(like ``not``), for better migration from POSIX-compliant shells (:issue:"
-"`4620`)."
+"(like ``not``), for better migration from POSIX-compliant shells "
+"(:issue:`4620`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3285
@@ -10547,22 +10557,22 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3293
 msgid ""
-"``math`` is now a builtin rather than a wrapper around ``bc`` (:issue:"
-"`3157`). Floating point computations is now used by default, and can be "
-"controlled with the new ``--scale`` option (:issue:`4478`)."
+"``math`` is now a builtin rather than a wrapper around ``bc`` "
+"(:issue:`3157`). Floating point computations is now used by default, and can "
+"be controlled with the new ``--scale`` option (:issue:`4478`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3296
 msgid ""
 "Setting ``$PATH`` no longer warns on non-existent directories, allowing for "
-"a single $PATH to be shared across machines (eg via dotfiles) (:issue:"
-"`2969`)."
+"a single $PATH to be shared across machines (eg via dotfiles) "
+"(:issue:`2969`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3299
 msgid ""
-"``while`` sets ``$status`` to a non-zero value if the loop is not executed (:"
-"issue:`4982`)."
+"``while`` sets ``$status`` to a non-zero value if the loop is not executed "
+"(:issue:`4982`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3301
@@ -10635,8 +10645,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:3330
 msgid ""
 "``history search`` supports globs for wildcard searching (:issue:`3136`) and "
-"has a new ``--reverse`` option to show entries from oldest to newest (:issue:"
-"`4375`)."
+"has a new ``--reverse`` option to show entries from oldest to newest "
+"(:issue:`4375`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3333
@@ -10645,14 +10655,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3334
 msgid ""
-"``read`` has a new ``--delimiter`` option for splitting input into arrays (:"
-"issue:`4256`)."
+"``read`` has a new ``--delimiter`` option for splitting input into arrays "
+"(:issue:`4256`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3336
 msgid ""
-"``read`` writes directly to stdout if called without arguments (:issue:"
-"`4407`)."
+"``read`` writes directly to stdout if called without arguments "
+"(:issue:`4407`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3338
@@ -10685,8 +10695,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3348
 msgid ""
-"``string`` no longer stops processing text after NUL characters (:issue:"
-"`4605`)"
+"``string`` no longer stops processing text after NUL characters "
+"(:issue:`4605`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3350
@@ -10707,22 +10717,22 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3361
 msgid ""
-"Italics and dim support out of the box on macOS for Terminal.app and iTerm (:"
-"issue:`4436`)."
+"Italics and dim support out of the box on macOS for Terminal.app and iTerm "
+"(:issue:`4436`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3363
 msgid ""
-"``cd`` tab completions no longer descend into the deepest unambiguous path (:"
-"issue:`4649`)."
+"``cd`` tab completions no longer descend into the deepest unambiguous path "
+"(:issue:`4649`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3365
 msgid ""
 "Pager navigation has been improved. Most notably, moving down now wraps "
 "around, moving up from the commandline now jumps to the last element and "
-"moving right and left now reverse each other even when wrapping around (:"
-"issue:`4680`)."
+"moving right and left now reverse each other even when wrapping around "
+"(:issue:`4680`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3369
@@ -10786,15 +10796,15 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3392
 msgid ""
-"The screen is no longer reset after a BEL, fixing graphical glitches (:issue:"
-"`3693`)."
+"The screen is no longer reset after a BEL, fixing graphical glitches "
+"(:issue:`3693`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3394
 msgid ""
-"vi-mode now supports ‘;’ and ‘,’ motions. This introduces new {forward,"
-"backward}-jump-till and repeat-jump{,-reverse} bind functions (:issue:"
-"`5140`)."
+"vi-mode now supports ‘;’ and ‘,’ motions. This introduces new "
+"{forward,backward}-jump-till and repeat-jump{,-reverse} bind functions "
+"(:issue:`5140`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3397
@@ -10813,14 +10823,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3402
 msgid ""
-"Multi-line prompts no longer repeat when the terminal is resized (:issue:"
-"`2320`)."
+"Multi-line prompts no longer repeat when the terminal is resized "
+"(:issue:`2320`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3404
 msgid ""
-"``xclip`` support has been added to the clipboard integration (:issue:"
-"`5020`)."
+"``xclip`` support has been added to the clipboard integration "
+"(:issue:`5020`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3406
@@ -10830,14 +10840,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3408
 msgid ""
-"``$cmd_duration`` is no longer reset when no command is executed (:issue:"
-"`5011`)."
+"``$cmd_duration`` is no longer reset when no command is executed "
+"(:issue:`5011`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3410
 msgid ""
-"Deleting a one-character word no longer erases the next word as well (:issue:"
-"`4747`)."
+"Deleting a one-character word no longer erases the next word as well "
+"(:issue:`4747`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3412
@@ -11054,18 +11064,20 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:3474
 msgid ""
 "Significant performance improvements to ``abbr`` (:issue:`4048`), setting "
-"variables (:issue:`4200`, :issue:`4341`), executing functions, globs (:issue:"
-"`4579`), ``string`` reading from standard input (:issue:`4610`), and slicing "
-"history (in particular, ``$history[1]`` for the last executed command)."
+"variables (:issue:`4200`, :issue:`4341`), executing functions, globs "
+"(:issue:`4579`), ``string`` reading from standard input (:issue:`4610`), and "
+"slicing history (in particular, ``$history[1]`` for the last executed "
+"command)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3478
 msgid ""
 "fish’s internal wcwidth function has been updated to deal with newer "
 "Unicode, and the width of some characters can be configured via the "
-"``fish_ambiguous_width`` (:issue:`5149`) and ``fish_emoji_width`` (:issue:"
-"`2652`) variables. Alternatively, a new build-time option INTERNAL_WCWIDTH "
-"can be used to use the system’s wcwidth instead (:issue:`4816`)."
+"``fish_ambiguous_width`` (:issue:`5149`) and ``fish_emoji_width`` "
+"(:issue:`2652`) variables. Alternatively, a new build-time option "
+"INTERNAL_WCWIDTH can be used to use the system’s wcwidth instead "
+"(:issue:`4816`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3483
@@ -11089,8 +11101,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:3489
 msgid ""
 "The universal variables filename no longer contains the hostname or MAC "
-"address. It is now at the fixed location ``.config/fish/fish_variables`` (:"
-"issue:`1912`)."
+"address. It is now at the fixed location ``.config/fish/fish_variables`` "
+"(:issue:`1912`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3492
@@ -11101,15 +11113,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3494
 msgid ""
-"Major rework of terminal and job handling to eliminate bugs (:issue:`3805`, :"
-"issue:`3952`, :issue:`4178`, :issue:`4235`, :issue:`4238`, :issue:`4540`, :"
-"issue:`4929`, :issue:`5210`)."
+"Major rework of terminal and job handling to eliminate bugs "
+"(:issue:`3805`, :issue:`3952`, :issue:`4178`, :issue:`4235`, :issue:`4238`, :issue:`4540`, :issue:`4929`, :issue:`5210`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3496
 msgid ""
-"Improvements to the manual page completion generator (:issue:`2937`, :issue:"
-"`4313`)."
+"Improvements to the manual page completion generator "
+"(:issue:`2937`, :issue:`4313`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3497
@@ -11118,8 +11129,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3498
 msgid ""
-"Pressing Ctrl-C while running a script now reliably terminates fish (:issue:"
-"`5253`)."
+"Pressing Ctrl-C while running a script now reliably terminates fish "
+"(:issue:`5253`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3506
@@ -11265,8 +11276,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3582
 msgid ""
-"``echo -h`` now correctly echoes ``-h`` in line with other shells (:issue:"
-"`4120`)."
+"``echo -h`` now correctly echoes ``-h`` in line with other shells "
+"(:issue:`4120`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3585
@@ -11308,8 +11319,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:3603
 msgid ""
 "A regression in fish 2.6.0 involving universal variables with side-effects "
-"at startup such as ``set -U fish_escape_delay_ms 10`` has been fixed (:issue:"
-"`4196`)."
+"at startup such as ``set -U fish_escape_delay_ms 10`` has been fixed "
+"(:issue:`4196`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3609
@@ -11484,8 +11495,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:3696
 msgid ""
 "Command substitutions now have access to the terminal, like in other shells. "
-"This allows tools like ``fzf`` to work properly (:issue:`1362`, :issue:"
-"`3922`)."
+"This allows tools like ``fzf`` to work properly "
+"(:issue:`1362`, :issue:`3922`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3699
@@ -11497,8 +11508,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3702
 msgid ""
-"New French (:issue:`3772` & :issue:`3788`) and improved German (:issue:"
-"`3834`) translations."
+"New French (:issue:`3772` & :issue:`3788`) and improved German "
+"(:issue:`3834`) translations."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3703
@@ -11510,14 +11521,14 @@ msgid ""
 "Performance improvements in launching processes, including major reductions "
 "in signal blocking. Although this has been heavily tested, it may cause "
 "problems in some circumstances; set the ``FISH_NO_SIGNAL_BLOCK`` variable to "
-"0 in your fish configuration file to return to the old behaviour (:issue:"
-"`2007`)."
+"0 in your fish configuration file to return to the old behaviour "
+"(:issue:`2007`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3715
 msgid ""
-"Performance improvements in prompts and functions that set lots of colours (:"
-"issue:`3793`)."
+"Performance improvements in prompts and functions that set lots of colours "
+"(:issue:`3793`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3717
@@ -11540,8 +11551,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3726
 msgid ""
-"``read`` supports a new ``--silent`` option to hide the characters typed (:"
-"issue:`838`), for when reading sensitive data from the terminal. ``read`` "
+"``read`` supports a new ``--silent`` option to hide the characters typed "
+"(:issue:`838`), for when reading sensitive data from the terminal. ``read`` "
 "also now accepts simple strings for the prompt (rather than scripts) with "
 "the new ``-P`` and ``--prompt-str`` options (:issue:`802`)."
 msgstr ""
@@ -11571,8 +11582,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3739
 msgid ""
-"``funced`` warns if the function being edited has not been modified (:issue:"
-"`3961`)."
+"``funced`` warns if the function being edited has not been modified "
+"(:issue:`3961`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3741
@@ -11735,12 +11746,12 @@ msgid ""
 "Improved completions for ``adb`` (:issue:`3853`), ``apt`` (:issue:`3771`), "
 "``bzr`` (:issue:`3769`), ``dconf``, ``git`` (including :issue:`3743`), "
 "``grep`` (:issue:`3789`), ``go`` (:issue:`3789`), ``help`` (:issue:`3789`), "
-"``hg`` (:issue:`3975`), ``htop`` (:issue:`3789`), ``killall`` (:issue:"
-"`3996`), ``lua``, ``man`` (:issue:`3762`), ``mount`` (:issue:`3764` & :issue:"
-"`3841`), ``obnam`` (:issue:`3924`), ``perl`` (:issue:`3856`), ``portmaster`` "
-"(:issue:`3950`), ``python`` (:issue:`3840`), ``ssh`` (:issue:`3781`), "
-"``scp`` (:issue:`3781`), ``systemctl`` (:issue:`3757`) and ``udisks`` (:"
-"issue:`3764`)."
+"``hg`` (:issue:`3975`), ``htop`` (:issue:`3789`), ``killall`` "
+"(:issue:`3996`), ``lua``, ``man`` (:issue:`3762`), ``mount`` (:issue:`3764` "
+"& :issue:`3841`), ``obnam`` (:issue:`3924`), ``perl`` (:issue:`3856`), "
+"``portmaster`` (:issue:`3950`), ``python`` (:issue:`3840`), ``ssh`` "
+"(:issue:`3781`), ``scp`` (:issue:`3781`), ``systemctl`` (:issue:`3757`) and "
+"``udisks`` (:issue:`3764`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3804
@@ -11853,8 +11864,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:3876
 msgid ""
 "``random`` can now have start, stop and step values specified, or the new "
-"``choice`` subcommand can be used to pick an argument from a list (:issue:"
-"`3619`)."
+"``choice`` subcommand can be used to pick an argument from a list "
+"(:issue:`3619`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3879
@@ -11880,8 +11891,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3888
 msgid ""
-"Improved compatibility with Android (:issue:`3585`), MSYS/mingw (:issue:"
-"`2360`), and Solaris (:issue:`3456`, :issue:`3340`)."
+"Improved compatibility with Android (:issue:`3585`), MSYS/mingw "
+"(:issue:`2360`), and Solaris (:issue:`3456`, :issue:`3340`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3890
@@ -11936,15 +11947,15 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3915
 msgid ""
-"``command`` accepts ``-q``/``--quiet`` in combination with ``--search`` (:"
-"issue:`3591`), providing a simple way of checking whether a command exists "
+"``command`` accepts ``-q``/``--quiet`` in combination with ``--search`` "
+"(:issue:`3591`), providing a simple way of checking whether a command exists "
 "in scripts."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3918
 msgid ""
-"Abbreviations can now be renamed with ``abbr --rename OLD_KEY NEW_KEY`` (:"
-"issue:`3610`)."
+"Abbreviations can now be renamed with ``abbr --rename OLD_KEY NEW_KEY`` "
+"(:issue:`3610`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3920
@@ -11993,8 +12004,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:3935
 msgid ""
 "A new function ``edit_command_buffer`` (bound to Alt-e & Alt-v by default) "
-"to edit the command buffer in an external editor (:issue:`1215`, :issue:"
-"`3627`)."
+"to edit the command buffer in an external editor "
+"(:issue:`1215`, :issue:`3627`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3938
@@ -12011,10 +12022,10 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:3942
 msgid ""
-"Improved completions for ``apt`` (:issue:`3695`), ``fusermount`` (:issue:"
-"`3642`), ``make`` (:issue:`3628`), ``netctl-auto`` (:issue:`3378`), "
-"``nmcli`` (:issue:`3648`), ``pygmentize`` (:issue:`3378`), and ``tar`` (:"
-"issue:`3719`)."
+"Improved completions for ``apt`` (:issue:`3695`), ``fusermount`` "
+"(:issue:`3642`), ``make`` (:issue:`3628`), ``netctl-auto`` (:issue:`3378`), "
+"``nmcli`` (:issue:`3648`), ``pygmentize`` (:issue:`3378`), and ``tar`` "
+"(:issue:`3719`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3946
@@ -12115,8 +12126,8 @@ msgstr ""
 msgid ""
 "Automatic cursor changes are now only enabled on the subset of XTerm "
 "versions known to support them, resolving a problem where older versions "
-"printed garbage to the terminal before and after every prompt (:issue:"
-"`3499`)."
+"printed garbage to the terminal before and after every prompt "
+"(:issue:`3499`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:3985
@@ -12143,8 +12154,8 @@ msgid ""
 "The clipboard integration has been revamped with explicit bindings. The "
 "killring commands no longer copy from, or paste to, the X11 clipboard - use "
 "the new copy (``C-x``) and paste (``C-v``) bindings instead. The clipboard "
-"is now available on OS X as well as systems using X11 (e.g. Linux). (:issue:"
-"`3061`)"
+"is now available on OS X as well as systems using X11 (e.g. Linux). "
+"(:issue:`3061`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4002
@@ -12158,9 +12169,9 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:4006
 msgid ""
 "New ``history`` options have been added, including ``--max=n`` to limit the "
-"number of history entries, ``--show-time`` option to show timestamps (:issue:"
-"`3175`, :issue:`3244`), and ``--null`` to null terminate history entries in "
-"the search output."
+"number of history entries, ``--show-time`` option to show timestamps "
+"(:issue:`3175`, :issue:`3244`), and ``--null`` to null terminate history "
+"entries in the search output."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4010
@@ -12221,8 +12232,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4036
 msgid ""
-"Fuzzy tab completions behave in a less surprising manner (:issue:`3090`, :"
-"issue:`3211`)."
+"Fuzzy tab completions behave in a less surprising manner "
+"(:issue:`3090`, :issue:`3211`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4038
@@ -12236,14 +12247,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4040
 msgid ""
-"Suggestions will be offered more often, like after removing characters (:"
-"issue:`3069`)."
+"Suggestions will be offered more often, like after removing characters "
+"(:issue:`3069`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4042
 msgid ""
-"``history --merge`` now correctly interleaves items in chronological order (:"
-"issue:`2312`)."
+"``history --merge`` now correctly interleaves items in chronological order "
+"(:issue:`2312`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4044
@@ -12274,8 +12285,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:4053
 msgid ""
 "Prompts which show git repository information (via ``__fish_git_prompt``) "
-"are faster in large repositories (:issue:`3294`) and slow filesystems (:"
-"issue:`3083`)."
+"are faster in large repositories (:issue:`3294`) and slow filesystems "
+"(:issue:`3083`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4056
@@ -12331,10 +12342,10 @@ msgstr ""
 msgid ""
 "Improved completions for ``aura`` (:issue:`3297`), ``abbr`` (:issue:`3267`), "
 "``brew`` (:issue:`3309`), ``chown`` (:issue:`3380`, :issue:`3383`),\\ "
-"``cygport`` (:issue:`3392`), ``git`` (:issue:`3274`, :issue:`3226`, :issue:"
-"`3225`, :issue:`3094`, :issue:`3087`, :issue:`3035`, :issue:`3021`, :issue:"
-"`2982`, :issue:`3230`), ``kill`` & ``pkill`` (:issue:`3200`), ``screen`` (:"
-"issue:`3271`), ``wget`` (:issue:`3470`), and ``xz`` (:issue:`3378`)."
+"``cygport`` (:issue:`3392`), ``git`` "
+"(:issue:`3274`, :issue:`3226`, :issue:`3225`, :issue:`3094`, :issue:`3087`, :issue:`3035`, :issue:`3021`, :issue:`2982`, :issue:`3230`), "
+"``kill`` & ``pkill`` (:issue:`3200`), ``screen`` (:issue:`3271`), ``wget`` "
+"(:issue:`3470`), and ``xz`` (:issue:`3378`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4077
@@ -12347,8 +12358,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:4080
 msgid ""
 "Improved compatibility with minor platforms including musl (:issue:`2988`), "
-"Cygwin (:issue:`2993`), Android (:issue:`3441`, :issue:`3442`), Haiku (:"
-"issue:`3322`) and Solaris ."
+"Cygwin (:issue:`2993`), Android (:issue:`3441`, :issue:`3442`), Haiku "
+"(:issue:`3322`) and Solaris ."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4086
@@ -12365,8 +12376,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4098
 msgid ""
-"A new ``fish_key_reader`` binary for decoding interactive keypresses (:issue:"
-"`2991`)."
+"A new ``fish_key_reader`` binary for decoding interactive keypresses "
+"(:issue:`2991`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4100
@@ -12377,8 +12388,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4102
 msgid ""
-"``fish_config`` can now properly be launched from the OS X app bundle (:"
-"issue:`3140`)."
+"``fish_config`` can now properly be launched from the OS X app bundle "
+"(:issue:`3140`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4110
@@ -12397,8 +12408,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:4115
 msgid ""
 "Improvements to TTY special character handling (:issue:`3064`), locale "
-"handling (:issue:`3124`) and terminal environment variable handling (:issue:"
-"`3060`)."
+"handling (:issue:`3124`) and terminal environment variable handling "
+"(:issue:`3060`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4117
@@ -12509,8 +12520,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4183
 msgid ""
-"Improved completions for busctl, git (:issue:`2585`, :issue:`2879`, :issue:"
-"`2984`), and netctl."
+"Improved completions for busctl, git "
+"(:issue:`2585`, :issue:`2879`, :issue:`2984`), and netctl."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4189
@@ -12542,8 +12553,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4206
 msgid ""
-"Add new directories for vendor functions and configuration snippets (:issue:"
-"`2500`)"
+"Add new directories for vendor functions and configuration snippets "
+"(:issue:`2500`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4208
@@ -12590,8 +12601,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:4225
 msgid ""
 "History files are stored under the ``XDG_DATA_HOME`` hierarchy (by default, "
-"in ``~/.local/share``), and existing history will be moved on first use (:"
-"issue:`744`)"
+"in ``~/.local/share``), and existing history will be moved on first use "
+"(:issue:`744`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4234
@@ -12610,8 +12621,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4238
 msgid ""
-"Allow Ctrl-J (``\\cj``) to be bound separately from Ctrl-M (``\\cm``) (:"
-"issue:`217`)"
+"Allow Ctrl-J (``\\cj``) to be bound separately from Ctrl-M (``\\cm``) "
+"(:issue:`217`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4240
@@ -12700,8 +12711,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4266
 msgid ""
-"A rewrite of the completions for cd, fixing a few bugs (:issue:`2299`, :"
-"issue:`2300`, :issue:`562`)"
+"A rewrite of the completions for cd, fixing a few bugs "
+"(:issue:`2299`, :issue:`2300`, :issue:`562`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4268
@@ -12748,8 +12759,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:4281
 msgid ""
 "fish no longer requires ``/etc/fish/config.fish`` to correctly start, and "
-"now ships a skeleton file that only contains some documentation (:issue:"
-"`2799`)"
+"now ships a skeleton file that only contains some documentation "
+"(:issue:`2799`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4288
@@ -12759,8 +12770,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:4295
 msgid ""
 "Abbreviations: the new ``abbr`` command allows for interactively-expanded "
-"abbreviations, allowing quick access to frequently-used commands (:issue:"
-"`731`)."
+"abbreviations, allowing quick access to frequently-used commands "
+"(:issue:`731`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4298
@@ -12771,8 +12782,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4300
 msgid ""
-"New inline and interactive pager, which will be familiar to users of zsh (:"
-"issue:`291`)."
+"New inline and interactive pager, which will be familiar to users of zsh "
+"(:issue:`291`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4302
@@ -12823,8 +12834,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:4328
 msgid ""
 "A new “top-level” local scope has been added, allowing local variables "
-"declared on the commandline to be visible to subsequent commands. (:issue:"
-"`1908`)"
+"declared on the commandline to be visible to subsequent commands. "
+"(:issue:`1908`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4337
@@ -12861,8 +12872,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4351
 msgid ""
-"The ``.`` command is deprecated and the ``source`` command is preferred (:"
-"issue:`310`)."
+"The ``.`` command is deprecated and the ``source`` command is preferred "
+"(:issue:`310`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4353
@@ -12932,8 +12943,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4375
 msgid ""
-"``--null`` to break lines on NUL characters rather than newlines (:issue:"
-"`1694`)"
+"``--null`` to break lines on NUL characters rather than newlines "
+"(:issue:`1694`)"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4377
@@ -12949,14 +12960,14 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:4380
 msgid ""
 "``type`` has a new ``-q`` option to suppress output (:issue:`1540` and, like "
-"other shells, ``type -a`` now prints all matches for a command (:issue:"
-"`261`)."
+"other shells, ``type -a`` now prints all matches for a command "
+"(:issue:`261`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4383
 msgid ""
-"Pressing :kbd:`f1` now shows the manual page for the current command (:issue:"
-"`1063`)."
+"Pressing :kbd:`f1` now shows the manual page for the current command "
+"(:issue:`1063`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4385
@@ -12986,26 +12997,27 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4394
 msgid ""
-"Added completions for ``adb`` (:issue:`1165` & :issue:`1211`), ``apt`` (:"
-"issue:`2018`), ``aura`` (:issue:`1292`), ``composer`` (:issue:`1607`), "
-"``cygport`` (:issue:`1841`), ``dropbox`` (:issue:`1533`), ``elixir`` (:issue:"
-"`1167`), ``fossil``, ``heroku`` (:issue:`1790`), ``iex`` (:issue:`1167`), "
-"``kitchen`` (:issue:`2000`), ``nix`` (:issue:`1167`), ``node``/``npm`` (:"
-"issue:`1566`), ``opam`` (:issue:`1615`), ``setfacl`` (:issue:`1752`), "
-"``tmuxinator`` (:issue:`1863`), and ``yast2`` (:issue:`1739`)."
+"Added completions for ``adb`` (:issue:`1165` & :issue:`1211`), ``apt`` "
+"(:issue:`2018`), ``aura`` (:issue:`1292`), ``composer`` (:issue:`1607`), "
+"``cygport`` (:issue:`1841`), ``dropbox`` (:issue:`1533`), ``elixir`` "
+"(:issue:`1167`), ``fossil``, ``heroku`` (:issue:`1790`), ``iex`` "
+"(:issue:`1167`), ``kitchen`` (:issue:`2000`), ``nix`` (:issue:`1167`), "
+"``node``/``npm`` (:issue:`1566`), ``opam`` (:issue:`1615`), ``setfacl`` "
+"(:issue:`1752`), ``tmuxinator`` (:issue:`1863`), and ``yast2`` "
+"(:issue:`1739`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4400
 msgid ""
 "Improved completions for ``brew`` (:issue:`1090` & :issue:`1810`), "
-"``bundler`` (:issue:`1779`), ``cd`` (:issue:`1135`), ``emerge`` (:issue:"
-"`1840`),\\ ``git`` (:issue:`1680`, :issue:`1834` & :issue:`1951`), ``man`` (:"
-"issue:`960`), ``modprobe`` (:issue:`1124`), ``pacman`` (:issue:`1292`), "
-"``rpm`` (:issue:`1236`), ``rsync`` (:issue:`1872`), ``scp`` (:issue:`1145`), "
-"``ssh`` (:issue:`1234`), ``sshfs`` (:issue:`1268`), ``systemctl`` (:issue:"
-"`1462`, :issue:`1950` & :issue:`1972`), ``tmux`` (:issue:`1853`), "
-"``vagrant`` (:issue:`1748`), ``yum`` (:issue:`1269`), and ``zypper`` (:issue:"
-"`1787`)."
+"``bundler`` (:issue:`1779`), ``cd`` (:issue:`1135`), ``emerge`` "
+"(:issue:`1840`),\\ ``git`` (:issue:`1680`, :issue:`1834` & :issue:`1951`), "
+"``man`` (:issue:`960`), ``modprobe`` (:issue:`1124`), ``pacman`` "
+"(:issue:`1292`), ``rpm`` (:issue:`1236`), ``rsync`` (:issue:`1872`), ``scp`` "
+"(:issue:`1145`), ``ssh`` (:issue:`1234`), ``sshfs`` (:issue:`1268`), "
+"``systemctl`` (:issue:`1462`, :issue:`1950` & :issue:`1972`), ``tmux`` "
+"(:issue:`1853`), ``vagrant`` (:issue:`1748`), ``yum`` (:issue:`1269`), and "
+"``zypper`` (:issue:`1787`)."
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4411
@@ -13014,8 +13026,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4413
 msgid ""
-"fish 2.1.2 contains a workaround for a filesystem bug in Mac OS X Yosemite. :"
-"issue:`1859`"
+"fish 2.1.2 contains a workaround for a filesystem bug in Mac OS X "
+"Yosemite. :issue:`1859`"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4416
@@ -13061,8 +13073,8 @@ msgstr ""
 msgid ""
 "The fish_config web interface now uses an authentication token to protect "
 "requests and only responds to requests from the local machine with this "
-"token, preventing a remote code execution attack. (closing CVE-2014-2914). :"
-"issue:`1438`"
+"token, preventing a remote code execution attack. (closing "
+"CVE-2014-2914). :issue:`1438`"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4449
@@ -13092,8 +13104,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:4461
 msgid ""
 "``fishd`` now ignores SIGPIPE, fixing crashes using tools like GNU Parallel "
-"and which occurred more often as a result of the other ``fishd`` changes. :"
-"issue:`1084` & :issue:`1690`"
+"and which occurred more often as a result of the other ``fishd`` "
+"changes. :issue:`1084` & :issue:`1690`"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4468
@@ -13150,8 +13162,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4505
 msgid ""
-"alt-U and alt+C now uppercase and capitalize words, respectively. :issue:"
-"`995`"
+"alt-U and alt+C now uppercase and capitalize words, "
+"respectively. :issue:`995`"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4508
@@ -13194,8 +13206,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4526
 msgid ""
-"``$fish_user_paths`` is now prepended to $PATH instead of appended. :issue:"
-"`888`"
+"``$fish_user_paths`` is now prepended to $PATH instead of "
+"appended. :issue:`888`"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4529
@@ -13221,14 +13233,14 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4541
 msgid ""
-"History token substitution (alt-up) now works correctly inside subshells. :"
-"issue:`833`"
+"History token substitution (alt-up) now works correctly inside "
+"subshells. :issue:`833`"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4544
 msgid ""
-"Flow control is now disabled, freeing up ctrl-S and ctrl-Q for other uses. :"
-"issue:`814`"
+"Flow control is now disabled, freeing up ctrl-S and ctrl-Q for other "
+"uses. :issue:`814`"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4547
@@ -13300,8 +13312,8 @@ msgstr ""
 #: ../../../../CHANGELOG.rst:4591
 msgid ""
 "Improvements to PATH handling. There is a new variable, fish_user_paths, "
-"which can be set universally, and whose contents are appended to $PATH :"
-"issue:`527`"
+"which can be set universally, and whose contents are appended to "
+"$PATH :issue:`527`"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4595
@@ -13333,8 +13345,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4608
 msgid ""
-"**fish is now relocatable**, and no longer depends on compiled-in paths :"
-"issue:`125`"
+"**fish is now relocatable**, and no longer depends on compiled-in "
+"paths :issue:`125`"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4611
@@ -13392,8 +13404,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4633
 msgid ""
-"A leading space now prevents writing to history, as is done in bash and zsh :"
-"issue:`615`"
+"A leading space now prevents writing to history, as is done in bash and "
+"zsh :issue:`615`"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4635
@@ -13468,8 +13480,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4654
 msgid ""
-"Backslashes now join lines, instead of creating multiple commands :issue:"
-"`347`"
+"Backslashes now join lines, instead of creating multiple "
+"commands :issue:`347`"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4656
@@ -13498,8 +13510,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4663
 msgid ""
-"You can now delete history items from the fish_config web interface :issue:"
-"`250`"
+"You can now delete history items from the fish_config web "
+"interface :issue:`250`"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4665
@@ -13567,8 +13579,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4683
 msgid ""
-"Backslashed-newlines inside quoted strings now behave more intuitively :"
-"issue:`52`"
+"Backslashed-newlines inside quoted strings now behave more "
+"intuitively :issue:`52`"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4685
@@ -13591,8 +13603,8 @@ msgstr ""
 
 #: ../../../../CHANGELOG.rst:4690
 msgid ""
-"All Python scripts now run correctly under both Python 2 and Python 3 :issue:"
-"`14`"
+"All Python scripts now run correctly under both Python 2 and Python "
+"3 :issue:`14`"
 msgstr ""
 
 #: ../../../../CHANGELOG.rst:4692

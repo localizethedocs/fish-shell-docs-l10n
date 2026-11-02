@@ -54,10 +54,10 @@ msgstr ""
 #: ../../../cmds/function.rst:22
 msgid ""
 "Assigns the value of successive command-line arguments to the names given in "
-"*NAMES* (separated by spaces). These are the same arguments given in :envvar:"
-"`argv`, and are still available there (unless ``--inherit-variable argv`` "
-"was used or one of the given *NAMES* is ``argv``). See also :ref:`Argument "
-"Handling <variables-argv>`."
+"*NAMES* (separated by spaces). These are the same arguments given "
+"in :envvar:`argv`, and are still available there (unless ``--inherit-"
+"variable argv`` was used or one of the given *NAMES* is ``argv``). See "
+"also :ref:`Argument Handling <variables-argv>`."
 msgstr ""
 
 #: ../../../cmds/function.rst:24
@@ -193,8 +193,8 @@ msgid ""
 "The event handler switches (``on-event``, ``on-variable``, ``on-job-exit``, "
 "``on-process-exit`` and ``on-signal``) cause a function to run automatically "
 "at specific events. New named events for ``--on-event`` can be fired using "
-"the :doc:`emit <emit>` builtin. fish already generates a few events, see :"
-"ref:`event` for more."
+"the :doc:`emit <emit>` builtin. fish already generates a few events, "
+"see :ref:`event` for more."
 msgstr ""
 
 #: ../../../cmds/function.rst:61

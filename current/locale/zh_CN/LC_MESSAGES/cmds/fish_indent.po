@@ -35,9 +35,10 @@ msgstr ""
 
 #: ../../../cmds/fish_indent.rst:15
 msgid ""
-":program:`fish_indent` is used to indent a piece of fish code. :program:"
-"`fish_indent` reads commands from standard input or the given filenames and "
-"outputs them to standard output or a specified file (if ``-w`` is given)."
+":program:`fish_indent` is used to indent a piece of fish "
+"code. :program:`fish_indent` reads commands from standard input or the given "
+"filenames and outputs them to standard output or a specified file (if ``-w`` "
+"is given)."
 msgstr ""
 
 #: ../../../cmds/fish_indent.rst:17

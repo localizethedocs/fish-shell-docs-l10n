@@ -40,9 +40,9 @@ msgstr ""
 
 #: ../../../index.rst:13
 msgid ""
-"**Extensive UI**: :ref:`Syntax highlighting <syntax-highlighting>`, :ref:"
-"`autosuggestions`, :ref:`tab completion <tab-completion>` and selection "
-"lists that can be navigated and filtered."
+"**Extensive UI**: :ref:`Syntax highlighting <syntax-"
+"highlighting>`, :ref:`autosuggestions`, :ref:`tab completion <tab-"
+"completion>` and selection lists that can be navigated and filtered."
 msgstr ""
 
 #: ../../../index.rst:15
@@ -103,8 +103,8 @@ msgstr ""
 
 #: ../../../index.rst:37
 msgid ""
-"This section describes how to install, uninstall, start, and exit :command:"
-"`fish`. It also explains how to make fish the default shell."
+"This section describes how to install, uninstall, start, and "
+"exit :command:`fish`. It also explains how to make fish the default shell."
 msgstr ""
 
 #: ../../../index.rst:40
@@ -175,11 +175,11 @@ msgstr ""
 
 #: ../../../index.rst:70
 msgid ""
-"Setting fish as your login shell may cause issues, such as an incorrect :"
-"envvar:`PATH`. Some operating systems, including a number of Linux "
-"distributions, require the login shell to be Bourne-compatible and to read "
-"configuration from ``/etc/profile``. fish may not be suitable as a login "
-"shell on these systems."
+"Setting fish as your login shell may cause issues, such as an "
+"incorrect :envvar:`PATH`. Some operating systems, including a number of "
+"Linux distributions, require the login shell to be Bourne-compatible and to "
+"read configuration from ``/etc/profile``. fish may not be suitable as a "
+"login shell on these systems."
 msgstr ""
 
 #: ../../../index.rst:72
@@ -254,9 +254,9 @@ msgstr ""
 
 #: ../../../index.rst:103
 msgid ""
-"If you want to share your script with others, you might want to use :command:"
-"`env` to allow for the interpreter to be installed in other locations. For "
-"example::"
+"If you want to share your script with others, you might want to "
+"use :command:`env` to allow for the interpreter to be installed in other "
+"locations. For example::"
 msgstr ""
 
 #: ../../../index.rst:105
@@ -293,8 +293,8 @@ msgstr ""
 
 #: ../../../index.rst:117
 msgid ""
-"To store configuration write it to a file called ``~/.config/fish/config."
-"fish``."
+"To store configuration write it to a file called ``~/.config/fish/"
+"config.fish``."
 msgstr ""
 
 #: ../../../index.rst:119
@@ -319,8 +319,8 @@ msgstr ""
 
 #: ../../../index.rst:125
 msgid ""
-"If you want to see what you changed over fish's defaults, see :doc:"
-"`fish_delta <cmds/fish_delta>`."
+"If you want to see what you changed over fish's defaults, "
+"see :doc:`fish_delta <cmds/fish_delta>`."
 msgstr ""
 
 #: ../../../index.rst:128
@@ -342,8 +342,8 @@ msgstr ""
 
 #: ../../../index.rst:136
 msgid ""
-"This is just an example; using :doc:`fish_add_path <cmds/fish_add_path>` e."
-"g. ``fish_add_path ~/linux/bin`` which only adds the path if it isn't "
+"This is just an example; using :doc:`fish_add_path <cmds/fish_add_path>` "
+"e.g. ``fish_add_path ~/linux/bin`` which only adds the path if it isn't "
 "included yet is easier."
 msgstr ""
 

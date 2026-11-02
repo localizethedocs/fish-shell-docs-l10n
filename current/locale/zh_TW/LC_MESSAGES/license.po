@@ -544,8 +544,8 @@ msgstr ""
 
 #: ../../../license.rst:169
 msgid ""
-"``fish`` contains code derived from  `musl-libc <https://www.musl-libc."
-"org>`_, which is copyright 2006-2020 Rich Felker, et al., to implement "
+"``fish`` contains code derived from  `musl-libc <https://www.musl-"
+"libc.org>`_, which is copyright 2006-2020 Rich Felker, et al., to implement "
 "printf. This code is used under the terms of the MIT license."
 msgstr ""
 

@@ -50,9 +50,9 @@ msgstr ""
 
 #: ../../../cmds/return.rst:20
 msgid ""
-"If at the top level of a script, it exits with the given status, like :doc:"
-"`exit <exit>`. If at the top level in an interactive session, it will set :"
-"envvar:`status`, but not exit the shell."
+"If at the top level of a script, it exits with the given status, "
+"like :doc:`exit <exit>`. If at the top level in an interactive session, it "
+"will set :envvar:`status`, but not exit the shell."
 msgstr ""
 
 #: ../../../cmds/return.rst:23

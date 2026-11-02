@@ -348,8 +348,8 @@ msgstr ""
 #: ../../../cmds/path.rst:181
 msgid ""
 "With ``--all``, return status 0 (true) if all paths pass the filter, and "
-"status 1 (false) if any path fails. This is equivalent to ``not path filter -"
-"v``. It produces no output, only a status."
+"status 1 (false) if any path fails. This is equivalent to ``not path filter "
+"-v``. It produces no output, only a status."
 msgstr ""
 
 #: ../../../cmds/path.rst:183

@@ -128,8 +128,8 @@ msgstr ""
 #: ../../../cmds/argparse.rst:42
 msgid ""
 "Allow unknown options, and move them from ``$argv`` to ``$argv_opts``. By "
-"default, Unknown options are treated as if they take optional arguments (i."
-"e. have option spec ``=?``)."
+"default, Unknown options are treated as if they take optional arguments "
+"(i.e. have option spec ``=?``)."
 msgstr ""
 
 #: ../../../cmds/argparse.rst:44
@@ -217,8 +217,8 @@ msgstr ""
 msgid ""
 "**optional** (the default), allows each unknown option to take an optional "
 "argument (i.e. as if it had ``=?`` or ``=*`` in its option specification). "
-"For example, ``argparse --ignore-unknown --unknown-arguments=optional ab -- -"
-"u -a -ub`` will set ``_flag_a`` but *not* ``_flag_b``, as the ``b`` is "
+"For example, ``argparse --ignore-unknown --unknown-arguments=optional ab -- "
+"-u -a -ub`` will set ``_flag_a`` but *not* ``_flag_b``, as the ``b`` is "
 "treated as an argument to the second use of ``-u``."
 msgstr ""
 

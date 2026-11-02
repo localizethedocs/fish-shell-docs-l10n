@@ -48,8 +48,9 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:18
 msgid ""
-"Send patches to the public mailing list: mailto:~krobelus/fish-shell@lists."
-"sr.ht. Archives are available at https://lists.sr.ht/~krobelus/fish-shell/."
+"Send patches to the public mailing list: mailto:~krobelus/fish-"
+"shell@lists.sr.ht. Archives are available at https://lists.sr.ht/~krobelus/"
+"fish-shell/."
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:22
@@ -531,12 +532,12 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:264
 msgid ""
-"fish uses two different localization systems: `GNU gettext <https://www.gnu."
-"org/software/gettext/>`__ and `Fluent <https://projectfluent.org/>`__. The "
-"former is used for all messages from fish scripts. For messages from the "
-"Rust source code, we are in the process of replacing gettext with Fluent. At "
-"the moment, both are used side-by-side, with some messages localized with "
-"gettext and the others with Fluent."
+"fish uses two different localization systems: `GNU gettext <https://"
+"www.gnu.org/software/gettext/>`__ and `Fluent <https://projectfluent.org/"
+">`__. The former is used for all messages from fish scripts. For messages "
+"from the Rust source code, we are in the process of replacing gettext with "
+"Fluent. At the moment, both are used side-by-side, with some messages "
+"localized with gettext and the others with Fluent."
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:271
@@ -635,8 +636,8 @@ msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:329
 msgid ""
-"Alternatively, you can also use the built-in ``status language`` command, e."
-"g.::"
+"Alternatively, you can also use the built-in ``status language`` command, "
+"e.g.::"
 msgstr ""
 
 #: ../../../../CONTRIBUTING.rst:331

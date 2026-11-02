@@ -80,10 +80,10 @@ msgstr ""
 
 #: ../../../interactive.rst:26
 msgid ""
-"To accept the autosuggestion (replacing the command line contents), press :"
-"kbd:`right` (``→``) or :kbd:`ctrl-f`. To accept the first suggested word, "
-"press :kbd:`alt-right` (``→``) or :kbd:`alt-f`. If the autosuggestion is not "
-"what you want, ignore it: it won't execute unless you accept it."
+"To accept the autosuggestion (replacing the command line contents), "
+"press :kbd:`right` (``→``) or :kbd:`ctrl-f`. To accept the first suggested "
+"word, press :kbd:`alt-right` (``→``) or :kbd:`alt-f`. If the autosuggestion "
+"is not what you want, ignore it: it won't execute unless you accept it."
 msgstr ""
 
 #: ../../../interactive.rst:28
@@ -109,19 +109,19 @@ msgstr ""
 
 #: ../../../interactive.rst:39
 msgid ""
-"Tab completion is a time saving feature of any modern shell. When you type :"
-"kbd:`tab`, fish tries to guess the rest of the word under the cursor. If it "
-"finds exactly one possibility, it inserts it. If it finds more, it inserts "
-"the longest unambiguous part and then opens a menu (the \"pager\") that you "
-"can navigate to find what you're looking for."
+"Tab completion is a time saving feature of any modern shell. When you "
+"type :kbd:`tab`, fish tries to guess the rest of the word under the cursor. "
+"If it finds exactly one possibility, it inserts it. If it finds more, it "
+"inserts the longest unambiguous part and then opens a menu (the \"pager\") "
+"that you can navigate to find what you're looking for."
 msgstr ""
 
 #: ../../../interactive.rst:41
 msgid ""
-"The pager can be navigated with the arrow keys, :kbd:`pageup` / :kbd:"
-"`pagedown`, :kbd:`tab` or :kbd:`shift-tab`. Pressing :kbd:`ctrl-s` (the "
-"``pager-toggle-search`` binding - :kbd:`/` in vi mode) opens up a search "
-"menu that you can use to filter the list."
+"The pager can be navigated with the arrow "
+"keys, :kbd:`pageup` / :kbd:`pagedown`, :kbd:`tab` or :kbd:`shift-tab`. "
+"Pressing :kbd:`ctrl-s` (the ``pager-toggle-search`` binding - :kbd:`/` in vi "
+"mode) opens up a search menu that you can use to filter the list."
 msgstr ""
 
 #: ../../../interactive.rst:43
@@ -164,10 +164,11 @@ msgstr ""
 #: ../../../interactive.rst:57
 msgid ""
 "Completion scripts are loaded on demand, like :ref:`functions are <syntax-"
-"function-autoloading>`. The difference is the ``$fish_complete_path`` :ref:"
-"`list <variables-lists>` is used instead of ``$fish_function_path``. "
-"Typically you can drop new completions in ``~/.config/fish/completions/<name-"
-"of-command>.fish`` and fish will find them automatically."
+"function-autoloading>`. The difference is the "
+"``$fish_complete_path`` :ref:`list <variables-lists>` is used instead of "
+"``$fish_function_path``. Typically you can drop new completions in "
+"``~/.config/fish/completions/<name-of-command>.fish`` and fish will find "
+"them automatically."
 msgstr ""
 
 #: ../../../interactive.rst:62
@@ -605,8 +606,9 @@ msgstr ""
 #: ../../../interactive.rst:244
 msgid ""
 "The output of the former is displayed on the left and the latter's output on "
-"the right side of the terminal. For :ref:`vi mode <vi-mode>`, the output of :"
-"doc:`fish_mode_prompt <cmds/fish_mode_prompt>` will be prepended on the left."
+"the right side of the terminal. For :ref:`vi mode <vi-mode>`, the output "
+"of :doc:`fish_mode_prompt <cmds/fish_mode_prompt>` will be prepended on the "
+"left."
 msgstr ""
 
 #: ../../../interactive.rst:247
@@ -685,8 +687,8 @@ msgstr ""
 #: ../../../interactive.rst:274
 msgid ""
 "save this in config.fish or :ref:`a function file <syntax-function-"
-"autoloading>`. You can also use :doc:`funced <cmds/funced>` and :doc:"
-"`funcsave <cmds/funcsave>` to edit it easily."
+"autoloading>`. You can also use :doc:`funced <cmds/funced>` "
+"and :doc:`funcsave <cmds/funcsave>` to edit it easily."
 msgstr ""
 
 #: ../../../interactive.rst:277
@@ -800,8 +802,8 @@ msgstr ""
 #: ../../../interactive.rst:325
 msgid ""
 ":kbd:`tab` :ref:`completes <tab-completion>` the current token. :kbd:`shift-"
-"tab` completes the current token and starts the pager's search mode. :kbd:"
-"`tab` is the same as :kbd:`ctrl-i`."
+"tab` completes the current token and starts the pager's search "
+"mode. :kbd:`tab` is the same as :kbd:`ctrl-i`."
 msgstr ""
 
 #: ../../../interactive.rst:327
@@ -895,10 +897,10 @@ msgstr ""
 
 #: ../../../interactive.rst:356
 msgid ""
-":kbd:`ctrl-x` copies the current buffer to the system's clipboard, :kbd:"
-"`ctrl-v` inserts the clipboard contents. (see :doc:`fish_clipboard_copy "
-"<cmds/fish_clipboard_copy>` and :doc:`fish_clipboard_paste <cmds/"
-"fish_clipboard_paste>`)"
+":kbd:`ctrl-x` copies the current buffer to the system's "
+"clipboard, :kbd:`ctrl-v` inserts the clipboard contents. "
+"(see :doc:`fish_clipboard_copy <cmds/fish_clipboard_copy>` "
+"and :doc:`fish_clipboard_paste <cmds/fish_clipboard_paste>`)"
 msgstr ""
 
 #: ../../../interactive.rst:358
@@ -907,8 +909,8 @@ msgstr ""
 
 #: ../../../interactive.rst:360
 msgid ""
-":kbd:`ctrl-delete` moves the next word (or next argument on macOS) to the :"
-"ref:`killring`."
+":kbd:`ctrl-delete` moves the next word (or next argument on macOS) to "
+"the :ref:`killring`."
 msgstr ""
 
 #: ../../../interactive.rst:362
@@ -917,8 +919,8 @@ msgstr ""
 
 #: ../../../interactive.rst:364
 msgid ""
-":kbd:`alt-delete` moves the next argument (or word on macOS) to the :ref:"
-"`killring`."
+":kbd:`alt-delete` moves the next argument (or word on macOS) to "
+"the :ref:`killring`."
 msgstr ""
 
 #: ../../../interactive.rst:366
@@ -1003,8 +1005,8 @@ msgstr ""
 #: ../../../interactive.rst:397
 msgid ""
 ":kbd:`end` or :kbd:`ctrl-e` moves to the end of line. If the cursor is "
-"already at the end of the line, and an autosuggestion is available, :kbd:"
-"`end` or :kbd:`ctrl-e` accepts the autosuggestion."
+"already at the end of the line, and an autosuggestion is "
+"available, :kbd:`end` or :kbd:`ctrl-e` accepts the autosuggestion."
 msgstr ""
 
 #: ../../../interactive.rst:399
@@ -1047,8 +1049,8 @@ msgstr ""
 
 #: ../../../interactive.rst:411
 msgid ""
-":kbd:`ctrl-k` deletes from the cursor to the end of line (moving it to the :"
-"ref:`killring`)."
+":kbd:`ctrl-k` deletes from the cursor to the end of line (moving it to "
+"the :ref:`killring`)."
 msgstr ""
 
 #: ../../../interactive.rst:413
@@ -1102,11 +1104,12 @@ msgstr ""
 
 #: ../../../interactive.rst:438
 msgid ""
-"Vi mode allows for the use of vi-like commands at the prompt. Initially, :"
-"ref:`insert mode <vi-mode-insert>` is active. :kbd:`escape` enters :ref:"
-"`command mode <vi-mode-command>`. The commands available in command, insert "
-"and visual mode are described below. Vi mode shares :ref:`some bindings "
-"<shared-binds>` with :ref:`Emacs mode <emacs-mode>`."
+"Vi mode allows for the use of vi-like commands at the prompt. "
+"Initially, :ref:`insert mode <vi-mode-insert>` is active. :kbd:`escape` "
+"enters :ref:`command mode <vi-mode-command>`. The commands available in "
+"command, insert and visual mode are described below. Vi mode "
+"shares :ref:`some bindings <shared-binds>` with :ref:`Emacs mode <emacs-"
+"mode>`."
 msgstr ""
 
 #: ../../../interactive.rst:440
@@ -1145,10 +1148,10 @@ msgstr ""
 msgid ""
 "When a binding switches the mode, it will repaint the mode-prompt if it "
 "exists, and the rest of the prompt only if it doesn't. So if you want a mode-"
-"indicator in your ``fish_prompt``, you need to erase ``fish_mode_prompt`` e."
-"g. by adding an empty file at ``~/.config/fish/functions/fish_mode_prompt."
-"fish``. (Bindings that change the mode are supposed to call the `repaint-"
-"mode` bind function, see :doc:`bind <cmds/bind>`)"
+"indicator in your ``fish_prompt``, you need to erase ``fish_mode_prompt`` "
+"e.g. by adding an empty file at ``~/.config/fish/functions/"
+"fish_mode_prompt.fish``. (Bindings that change the mode are supposed to call "
+"the `repaint-mode` bind function, see :doc:`bind <cmds/bind>`)"
 msgstr ""
 
 #: ../../../interactive.rst:460
@@ -1277,8 +1280,8 @@ msgstr ""
 
 #: ../../../interactive.rst:514
 msgid ""
-":kbd:`D` deletes text after the current cursor position and moves it to the :"
-"ref:`killring`."
+":kbd:`D` deletes text after the current cursor position and moves it to "
+"the :ref:`killring`."
 msgstr ""
 
 #: ../../../interactive.rst:516
@@ -1378,8 +1381,8 @@ msgstr ""
 
 #: ../../../interactive.rst:566
 msgid ""
-":kbd:`d` and :kbd:`x` move the selection to the :ref:`killring` and enter :"
-"ref:`command mode <vi-mode-command>`."
+":kbd:`d` and :kbd:`x` move the selection to the :ref:`killring` and "
+"enter :ref:`command mode <vi-mode-command>`."
 msgstr ""
 
 #: ../../../interactive.rst:568
@@ -1393,20 +1396,20 @@ msgstr ""
 
 #: ../../../interactive.rst:572
 msgid ""
-":kbd:`X` moves the entire line to the :ref:`killring`, and enters :ref:"
-"`command mode <vi-mode-command>`."
+":kbd:`X` moves the entire line to the :ref:`killring`, and "
+"enters :ref:`command mode <vi-mode-command>`."
 msgstr ""
 
 #: ../../../interactive.rst:574
 msgid ""
-":kbd:`y` copies the selection to the :ref:`killring`, and enters :ref:"
-"`command mode <vi-mode-command>`."
+":kbd:`y` copies the selection to the :ref:`killring`, and "
+"enters :ref:`command mode <vi-mode-command>`."
 msgstr ""
 
 #: ../../../interactive.rst:576
 msgid ""
-":kbd:`~` toggles the case (upper/lower) on the selection, and enters :ref:"
-"`command mode <vi-mode-command>`."
+":kbd:`~` toggles the case (upper/lower) on the selection, and "
+"enters :ref:`command mode <vi-mode-command>`."
 msgstr ""
 
 #: ../../../interactive.rst:578
@@ -1423,8 +1426,8 @@ msgstr ""
 
 #: ../../../interactive.rst:582
 msgid ""
-":kbd:`\",*,y` copies the selection to the clipboard, and enters :ref:"
-"`command mode <vi-mode-command>`."
+":kbd:`\",*,y` copies the selection to the clipboard, and "
+"enters :ref:`command mode <vi-mode-command>`."
 msgstr ""
 
 #: ../../../interactive.rst:585
@@ -1469,8 +1472,8 @@ msgstr ""
 #: ../../../interactive.rst:600
 msgid ""
 "If you use :ref:`vi bindings <vi-mode>`, note that ``bind`` will by default "
-"bind keys in :ref:`command mode <vi-mode-command>`. To bind something in :"
-"ref:`insert mode <vi-mode-insert>`::"
+"bind keys in :ref:`command mode <vi-mode-command>`. To bind something "
+"in :ref:`insert mode <vi-mode-insert>`::"
 msgstr ""
 
 #: ../../../interactive.rst:602
@@ -1535,8 +1538,8 @@ msgstr ""
 #: ../../../interactive.rst:627
 msgid ""
 "Similarly, to disambiguate *other* keypresses where you've bound a "
-"subsequence and a longer sequence, fish has :envvar:"
-"`fish_sequence_key_delay_ms`::"
+"subsequence and a longer sequence, fish "
+"has :envvar:`fish_sequence_key_delay_ms`::"
 msgstr ""
 
 #: ../../../interactive.rst:629
@@ -1561,9 +1564,9 @@ msgid ""
 "example, use :kbd:`ctrl-k` (`kill-line`) to cut from the current cursor "
 "position to the end of the line. The string that is cut (a.k.a. killed in "
 "emacs-ese) is inserted into a list of kills, called the kill ring. To paste "
-"the latest value from the kill ring (emacs calls this \"yanking\") use :kbd:"
-"`ctrl-y` (the ``yank`` input function). After pasting, use :kbd:`alt-y` "
-"(``yank-pop``) to rotate to the previous kill."
+"the latest value from the kill ring (emacs calls this \"yanking\") "
+"use :kbd:`ctrl-y` (the ``yank`` input function). After pasting, "
+"use :kbd:`alt-y` (``yank-pop``) to rotate to the previous kill."
 msgstr ""
 
 #: ../../../interactive.rst:645
@@ -1582,11 +1585,11 @@ msgstr ""
 msgid ""
 "The commands ``begin-selection`` and ``end-selection`` (unbound by default; "
 "used for selection in vi visual mode) control text selection together with "
-"cursor movement commands that extend the current selection. The variable :"
-"envvar:`fish_cursor_selection_mode` can be used to configure if that "
-"selection should include the character under the cursor (``inclusive``) or "
-"not (``exclusive``). The default is ``exclusive``, which works well with any "
-"cursor shape. For vi mode, and particularly for the ``block`` or "
+"cursor movement commands that extend the current selection. The "
+"variable :envvar:`fish_cursor_selection_mode` can be used to configure if "
+"that selection should include the character under the cursor (``inclusive``) "
+"or not (``exclusive``). The default is ``exclusive``, which works well with "
+"any cursor shape. For vi mode, and particularly for the ``block`` or "
 "``underscore`` cursor shapes you may prefer ``inclusive``."
 msgstr ""
 
@@ -1657,9 +1660,9 @@ msgstr ""
 msgid ""
 "For more complicated searches, you can press :kbd:`ctrl-r` to open a pager "
 "that allows you to search the history. It shows a limited number of entries "
-"in one page, press :kbd:`ctrl-r` [#]_ again to move to the next page and :"
-"kbd:`ctrl-s` [#]_ to move to the previous page. You can change the text to "
-"refine your search."
+"in one page, press :kbd:`ctrl-r` [#]_ again to move to the next page "
+"and :kbd:`ctrl-s` [#]_ to move to the previous page. You can change the text "
+"to refine your search."
 msgstr ""
 
 #: ../../../interactive.rst:680
@@ -1706,8 +1709,8 @@ msgstr ""
 
 #: ../../../interactive.rst:697
 msgid ""
-"Or another binding that triggers the ``history-pager`` input function. See :"
-"doc:`bind <cmds/bind>` for a list."
+"Or another binding that triggers the ``history-pager`` input function. "
+"See :doc:`bind <cmds/bind>` for a list."
 msgstr ""
 
 #: ../../../interactive.rst:698
@@ -1765,9 +1768,9 @@ msgstr ""
 
 #: ../../../interactive.rst:723
 msgid ""
-"fish automatically keeps a trail of the recent visited directories with :doc:"
-"`cd <cmds/cd>` by storing this history in the ``dirprev`` and ``dirnext`` "
-"variables."
+"fish automatically keeps a trail of the recent visited directories "
+"with :doc:`cd <cmds/cd>` by storing this history in the ``dirprev`` and "
+"``dirnext`` variables."
 msgstr ""
 
 #: ../../../interactive.rst:725
@@ -1790,8 +1793,8 @@ msgstr ""
 
 #: ../../../interactive.rst:730
 msgid ""
-":doc:`nextd <cmds/nextd>` moves forward through the history. It is bound to :"
-"kbd:`alt-right` (``→``)"
+":doc:`nextd <cmds/nextd>` moves forward through the history. It is bound "
+"to :kbd:`alt-right` (``→``)"
 msgstr ""
 
 #: ../../../interactive.rst:735

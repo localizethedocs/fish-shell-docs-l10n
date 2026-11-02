@@ -101,10 +101,10 @@ msgstr ""
 #: ../../../cmds/fish_config.rst:40
 msgid ""
 "``choose`` loads a theme in the current session. If the theme has light and "
-"dark variants (see below), the one matching :envvar:"
-"`fish_terminal_color_theme` will be applied (also whenever that variable "
-"changes). To override :envvar:`fish_terminal_color_theme`, pass the ``--"
-"color-theme`` argument."
+"dark variants (see below), the one "
+"matching :envvar:`fish_terminal_color_theme` will be applied (also whenever "
+"that variable changes). To override :envvar:`fish_terminal_color_theme`, "
+"pass the ``--color-theme`` argument."
 msgstr ""
 
 #: ../../../cmds/fish_config.rst:43
@@ -126,8 +126,8 @@ msgstr ""
 #: ../../../cmds/fish_config.rst:47
 msgid ""
 "*(not recommended)* ``save`` saves the given theme to :ref:`universal "
-"variables <variables-universal>`. A theme set this way will not update as :"
-"envvar:`fish_terminal_color_theme` changes."
+"variables <variables-universal>`. A theme set this way will not update "
+"as :envvar:`fish_terminal_color_theme` changes."
 msgstr ""
 
 #: ../../../cmds/fish_config.rst:50

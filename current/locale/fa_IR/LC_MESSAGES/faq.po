@@ -164,8 +164,8 @@ msgstr ""
 
 #: ../../../faq.rst:73
 msgid ""
-"How do I run a command every login? What's fish's equivalent to .bashrc or ."
-"profile?"
+"How do I run a command every login? What's fish's equivalent to .bashrc "
+"or .profile?"
 msgstr ""
 
 #: ../../../faq.rst:74
@@ -206,8 +206,9 @@ msgstr ""
 
 #: ../../../faq.rst:89
 msgid ""
-"The prompt is the output of the ``fish_prompt`` function. Put it in ``~/."
-"config/fish/functions/fish_prompt.fish``. For example, a simple prompt is::"
+"The prompt is the output of the ``fish_prompt`` function. Put it in "
+"``~/.config/fish/functions/fish_prompt.fish``. For example, a simple prompt "
+"is::"
 msgstr ""
 
 #: ../../../faq.rst:91
@@ -258,8 +259,8 @@ msgstr ""
 
 #: ../../../faq.rst:119
 msgid ""
-"This also applies to :doc:`fish_right_prompt <cmds/fish_right_prompt>` and :"
-"doc:`fish_mode_prompt <cmds/fish_mode_prompt>`."
+"This also applies to :doc:`fish_right_prompt <cmds/fish_right_prompt>` "
+"and :doc:`fish_mode_prompt <cmds/fish_mode_prompt>`."
 msgstr ""
 
 #: ../../../faq.rst:122
@@ -310,9 +311,9 @@ msgstr ""
 
 #: ../../../faq.rst:143
 msgid ""
-"Change the value of the variable ``fish_greeting`` or create a :doc:"
-"`fish_greeting <cmds/fish_greeting>` function. For example, to remove the "
-"greeting use::"
+"Change the value of the variable ``fish_greeting`` or create "
+"a :doc:`fish_greeting <cmds/fish_greeting>` function. For example, to remove "
+"the greeting use::"
 msgstr ""
 
 #: ../../../faq.rst:145
@@ -337,11 +338,11 @@ msgstr ""
 
 #: ../../../faq.rst:155
 msgid ""
-"Type some part of the command, and then hit the :kbd:`up` (``↑``) or :kbd:"
-"`down` (``↓``) arrow keys to navigate through history matches, or press :kbd:"
-"`ctrl-r` to open the history in a searchable pager. In this pager you can "
-"press :kbd:`ctrl-r` or :kbd:`ctrl-s` to move to older or younger history "
-"respectively."
+"Type some part of the command, and then hit the :kbd:`up` (``↑``) "
+"or :kbd:`down` (``↓``) arrow keys to navigate through history matches, or "
+"press :kbd:`ctrl-r` to open the history in a searchable pager. In this pager "
+"you can press :kbd:`ctrl-r` or :kbd:`ctrl-s` to move to older or younger "
+"history respectively."
 msgstr ""
 
 #: ../../../faq.rst:157
@@ -553,8 +554,8 @@ msgstr ""
 
 #: ../../../faq.rst:247
 msgid ""
-"See the :ref:`Conditions <syntax-conditional>` and the documentation for :"
-"doc:`test <cmds/test>` and :doc:`if <cmds/if>` for more information."
+"See the :ref:`Conditions <syntax-conditional>` and the documentation "
+"for :doc:`test <cmds/test>` and :doc:`if <cmds/if>` for more information."
 msgstr ""
 
 #: ../../../faq.rst:250

@@ -43,8 +43,9 @@ msgstr ""
 
 #: ../../../prompt.rst:14
 msgid ""
-"Unlike other shells, fish's prompt is built by running a function - :doc:"
-"`fish_prompt <cmds/fish_prompt>`. Or, more specifically, three functions:"
+"Unlike other shells, fish's prompt is built by running a function "
+"- :doc:`fish_prompt <cmds/fish_prompt>`. Or, more specifically, three "
+"functions:"
 msgstr ""
 
 #: ../../../prompt.rst:16
@@ -138,8 +139,8 @@ msgstr ""
 
 #: ../../../prompt.rst:56
 msgid ""
-"There are other ways to remove the space, including ``echo -s`` and :doc:"
-"`printf <cmds/printf>`."
+"There are other ways to remove the space, including ``echo -s`` "
+"and :doc:`printf <cmds/printf>`."
 msgstr ""
 
 #: ../../../prompt.rst:59
@@ -206,8 +207,8 @@ msgstr ""
 #: ../../../prompt.rst:88
 msgid ""
 "This is fine, but our :envvar:`PWD` can be a bit long, and we are typically "
-"only interested in the last few directories. We can shorten this with the :"
-"doc:`prompt_pwd <cmds/prompt_pwd>` helper that will give us a shortened "
+"only interested in the last few directories. We can shorten this with "
+"the :doc:`prompt_pwd <cmds/prompt_pwd>` helper that will give us a shortened "
 "working directory::"
 msgstr ""
 
@@ -250,9 +251,9 @@ msgstr ""
 
 #: ../../../prompt.rst:111
 msgid ""
-"One important bit of information that every command returns is the :ref:"
-"`status <variables-status>`. This is a whole number from 0 to 255, and "
-"usually it is used as an error code - 0 if the command returned "
+"One important bit of information that every command returns is "
+"the :ref:`status <variables-status>`. This is a whole number from 0 to 255, "
+"and usually it is used as an error code - 0 if the command returned "
 "successfully, or a number from 1 to 255 if not."
 msgstr ""
 
@@ -342,8 +343,8 @@ msgstr ""
 
 #: ../../../prompt.rst:163
 msgid ""
-"To enable transient prompt functionality, set the :envvar:"
-"`fish_transient_prompt` variable to 1::"
+"To enable transient prompt functionality, set "
+"the :envvar:`fish_transient_prompt` variable to 1::"
 msgstr ""
 
 #: ../../../prompt.rst:165
@@ -463,8 +464,8 @@ msgstr ""
 
 #: ../../../prompt.rst:220
 msgid ""
-"You can look at fish's sample prompts for inspiration. Open up :doc:"
-"`fish_config <cmds/fish_config>`, find one you like and pick it. For "
+"You can look at fish's sample prompts for inspiration. Open "
+"up :doc:`fish_config <cmds/fish_config>`, find one you like and pick it. For "
 "example::"
 msgstr ""
 

@@ -40,11 +40,11 @@ msgstr "描述"
 #: ../../../cmds/fish.rst:15
 msgid ""
 ":command:`fish` is a command-line shell written mainly with interactive use "
-"in mind. This page briefly describes the options for invoking :command:"
-"`fish`. The :ref:`full manual <intro>` is available in HTML by using the :"
-"command:`help` command from inside fish, and in the `fish-doc(1)` man page. "
-"The :doc:`tutorial <../tutorial>` is available as HTML via ``help tutorial`` "
-"or in `man fish-tutorial`."
+"in mind. This page briefly describes the options for "
+"invoking :command:`fish`. The :ref:`full manual <intro>` is available in "
+"HTML by using the :command:`help` command from inside fish, and in the `fish-"
+"doc(1)` man page. The :doc:`tutorial <../tutorial>` is available as HTML via "
+"``help tutorial`` or in `man fish-tutorial`."
 msgstr ""
 
 #: ../../../cmds/fish.rst:21
@@ -87,8 +87,8 @@ msgstr "**-o** 或 **--debug-output=DEBUG_FILE**"
 
 #: ../../../cmds/fish.rst:35
 msgid ""
-"Specifies a file path to receive the debug output, including categories and :"
-"envvar:`fish_trace`. The default is standard error."
+"Specifies a file path to receive the debug output, including categories "
+"and :envvar:`fish_trace`. The default is standard error."
 msgstr ""
 
 #: ../../../cmds/fish.rst:38
@@ -224,9 +224,9 @@ msgstr "> fish --debug='complete,*history*'"
 
 #: ../../../cmds/fish.rst:92
 msgid ""
-"Debug messages output to stderr by default. Note that if :envvar:"
-"`fish_trace` is set, execution tracing also outputs to stderr by default. "
-"You can output to a file using the **--debug-output** option: ::"
+"Debug messages output to stderr by default. Note that "
+"if :envvar:`fish_trace` is set, execution tracing also outputs to stderr by "
+"default. You can output to a file using the **--debug-output** option: ::"
 msgstr ""
 
 #: ../../../cmds/fish.rst:95
@@ -237,17 +237,17 @@ msgstr ""
 
 #: ../../../cmds/fish.rst:97
 msgid ""
-"These options can also be changed via the :envvar:`FISH_DEBUG` and :envvar:"
-"`FISH_DEBUG_OUTPUT` variables. The categories enabled via **--debug** are "
-"*added* to the ones enabled by $FISH_DEBUG, so they can be disabled by "
-"prefixing them with **-** (**reader-*,-ast*** enables reader debugging and "
-"disables ast debugging)."
+"These options can also be changed via the :envvar:`FISH_DEBUG` "
+"and :envvar:`FISH_DEBUG_OUTPUT` variables. The categories enabled via **--"
+"debug** are *added* to the ones enabled by $FISH_DEBUG, so they can be "
+"disabled by prefixing them with **-** (**reader-*,-ast*** enables reader "
+"debugging and disables ast debugging)."
 msgstr ""
 
 #: ../../../cmds/fish.rst:100
 msgid ""
-"The file given in **--debug-output** takes precedence over the file in :"
-"envvar:`FISH_DEBUG_OUTPUT`."
+"The file given in **--debug-output** takes precedence over the file "
+"in :envvar:`FISH_DEBUG_OUTPUT`."
 msgstr ""
 
 #: ../../../cmds/fish.rst:103

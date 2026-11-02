@@ -51,10 +51,10 @@ msgstr ""
 
 #: ../../../cmds/disown.rst:19
 msgid ""
-"If no process is specified, the most recently-used job is removed (like :doc:"
-"`bg <bg>` and :doc:`fg <fg>`).  If one or more PIDs are specified, jobs with "
-"the specified process IDs are removed from the job list. Invalid jobs are "
-"ignored and a warning is printed."
+"If no process is specified, the most recently-used job is removed "
+"(like :doc:`bg <bg>` and :doc:`fg <fg>`).  If one or more PIDs are "
+"specified, jobs with the specified process IDs are removed from the job "
+"list. Invalid jobs are ignored and a warning is printed."
 msgstr ""
 
 #: ../../../cmds/disown.rst:21

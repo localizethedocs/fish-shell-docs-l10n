@@ -41,17 +41,17 @@ msgstr ""
 
 #: ../../../cmds/realpath.rst:19
 msgid ""
-":program:`realpath` follows all symbolic links encountered for the provided :"
-"envvar:`PATH`, printing the absolute path resolved. :doc:`fish <fish>` "
-"provides a :command:`realpath`-alike builtin intended to enrich systems "
-"where no such command is installed by default."
+":program:`realpath` follows all symbolic links encountered for the "
+"provided :envvar:`PATH`, printing the absolute path resolved. :doc:`fish "
+"<fish>` provides a :command:`realpath`-alike builtin intended to enrich "
+"systems where no such command is installed by default."
 msgstr ""
 
 #: ../../../cmds/realpath.rst:21
 msgid ""
 "If a :command:`realpath` command exists, that will be preferred. ``builtin "
-"realpath`` will explicitly use the fish implementation of :command:"
-"`realpath`."
+"realpath`` will explicitly use the fish implementation "
+"of :command:`realpath`."
 msgstr ""
 
 #: ../../../cmds/realpath.rst:24
