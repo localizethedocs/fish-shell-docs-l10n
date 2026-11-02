@@ -356,8 +356,8 @@ msgid ""
 "Windows, *COMMAND* does not require the ``.exe`` extension. Completions for "
 "``myprog`` will also be used for ``myprog.exe`` if there are no ambiguities, "
 "i.e. if there are no completions for ``myprog.exe`` specifically. However, "
-"completions for ``myprog.exe`` will only be used when also using the ``."
-"exe`` extension on the command line."
+"completions for ``myprog.exe`` will only be used when also using the "
+"``.exe`` extension on the command line."
 msgstr ""
 
 #: ../../../cmds/complete.rst:121

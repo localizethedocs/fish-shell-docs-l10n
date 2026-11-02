@@ -50,8 +50,8 @@ msgstr ""
 
 #: ../../../cmds/prompt_pwd.rst:18
 msgid ""
-"To keep some components unshortened, pass ``--full-length-dirs=`` or set :"
-"envvar:`fish_prompt_pwd_full_dirs` to the number of components. This "
+"To keep some components unshortened, pass ``--full-length-dirs=`` or "
+"set :envvar:`fish_prompt_pwd_full_dirs` to the number of components. This "
 "defaults to 1, keeping the last component."
 msgstr ""
 

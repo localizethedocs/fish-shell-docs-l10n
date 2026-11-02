@@ -74,8 +74,8 @@ msgstr ""
 #: ../../../cmds/set_color.rst:28
 msgid ""
 "An RGB value with three or six hex digits, such as A0FF33 or f2f can be "
-"used. A three digit value is equivalent to specifying each digit twice; e."
-"g., ``set_color 2BC`` is the same as ``set_color 22BBCC``. Hexadecimal RGB "
+"used. A three digit value is equivalent to specifying each digit twice; "
+"e.g., ``set_color 2BC`` is the same as ``set_color 22BBCC``. Hexadecimal RGB "
 "values can be in lower or uppercase."
 msgstr ""
 

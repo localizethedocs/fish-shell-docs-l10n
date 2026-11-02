@@ -63,8 +63,8 @@ msgstr ""
 #: ../../../cmds/fish_greeting.rst:27
 msgid ""
 "While you could also just put ``echo`` calls into config.fish, fish_greeting "
-"takes care of only being used in interactive shells, so it won't be used e."
-"g. with ``scp`` (which executes a shell), which prevents some errors."
+"takes care of only being used in interactive shells, so it won't be used "
+"e.g. with ``scp`` (which executes a shell), which prevents some errors."
 msgstr ""
 
 #: ../../../cmds/fish_greeting.rst:30

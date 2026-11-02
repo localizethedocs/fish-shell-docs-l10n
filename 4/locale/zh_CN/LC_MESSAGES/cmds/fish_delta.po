@@ -45,15 +45,15 @@ msgstr ""
 
 #: ../../../cmds/fish_delta.rst:19
 msgid ""
-"It does this by going through the relevant variables (:envvar:"
-"`fish_function_path` for functions and :envvar:`fish_complete_path` for "
-"completions) and comparing the files against fish's default directories."
+"It does this by going through the relevant variables "
+"(:envvar:`fish_function_path` for functions and :envvar:`fish_complete_path` "
+"for completions) and comparing the files against fish's default directories."
 msgstr ""
 
 #: ../../../cmds/fish_delta.rst:21
 msgid ""
-"If any names are given, it will only compare files by those names (plus a \"."
-"fish\" extension)."
+"If any names are given, it will only compare files by those names (plus a "
+"\".fish\" extension)."
 msgstr ""
 
 #: ../../../cmds/fish_delta.rst:23
@@ -99,8 +99,8 @@ msgstr ""
 
 #: ../../../cmds/fish_delta.rst:39
 msgid ""
-"Skips checking configuration files like config.fish or snippets in the conf."
-"d directories."
+"Skips checking configuration files like config.fish or snippets in the "
+"conf.d directories."
 msgstr ""
 
 #: ../../../cmds/fish_delta.rst:41

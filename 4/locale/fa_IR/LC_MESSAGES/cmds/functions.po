@@ -188,8 +188,8 @@ msgstr ""
 #: ../../../cmds/functions.rst:64
 msgid ""
 "Controls when to use syntax highlighting colors when printing function "
-"definitions. *WHEN* can be ``auto`` (the default, colorize if the output :"
-"doc:`is a terminal <isatty>`), ``always``, or ``never``."
+"definitions. *WHEN* can be ``auto`` (the default, colorize if the "
+"output :doc:`is a terminal <isatty>`), ``always``, or ``never``."
 msgstr ""
 
 #: ../../../cmds/functions.rst:67

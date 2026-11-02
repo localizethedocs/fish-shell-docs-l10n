@@ -527,9 +527,9 @@ msgid ""
 "Scroll up the content (not the viewport) Ps lines (called ``SCROLL UP`` / "
 "``SU`` by ECMA-48 and \"scroll forward\" by terminfo). When fish detects "
 "support for this feature, :ref:`status test-terminal-features scroll-content-"
-"up <status-test-terminal-features>` will return 0, which enables the :kbd:"
-"`ctrl-l` binding to use the :ref:`scrollback-push <special-input-functions-"
-"scrollback-push>` special input function."
+"up <status-test-terminal-features>` will return 0, which enables "
+"the :kbd:`ctrl-l` binding to use the :ref:`scrollback-push <special-input-"
+"functions-scrollback-push>` special input function."
 msgstr ""
 
 #: ../../../terminal-compatibility.rst:176
@@ -830,8 +830,8 @@ msgstr ""
 
 #: ../../../terminal-compatibility.rst:303
 msgid ""
-"Terminals running on Unix should respond with the hex encoding of ``$(uname -"
-"s)`` as second parameter."
+"Terminals running on Unix should respond with the hex encoding of ``$(uname "
+"-s)`` as second parameter."
 msgstr ""
 
 #: ../../../terminal-compatibility.rst:308

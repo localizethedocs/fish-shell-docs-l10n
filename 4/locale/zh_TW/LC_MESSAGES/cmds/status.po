@@ -93,9 +93,9 @@ msgstr ""
 
 #: ../../../cmds/status.rst:52
 msgid ""
-"Returns 0 if fish is currently showing a prompt in the context of a :doc:"
-"`breakpoint <breakpoint>` command. See also the :doc:`fish_breakpoint_prompt "
-"<fish_breakpoint_prompt>` function."
+"Returns 0 if fish is currently showing a prompt in the context of "
+"a :doc:`breakpoint <breakpoint>` command. See also "
+"the :doc:`fish_breakpoint_prompt <fish_breakpoint_prompt>` function."
 msgstr ""
 
 #: ../../../cmds/status.rst:54
@@ -325,9 +325,9 @@ msgstr ""
 #: ../../../cmds/status.rst:133
 msgid ""
 "Prints the name of the operating system (OS) the terminal is running on, as "
-"reported via :ref:`XTGETTCAP query-os-name <term-compat-xtgettcap>`. Like :"
-"ref:`status terminal <status-terminal>`, this only works once the first "
-"interactive prompt is shown. Returns 1 if the OS name is not available."
+"reported via :ref:`XTGETTCAP query-os-name <term-compat-xtgettcap>`. "
+"Like :ref:`status terminal <status-terminal>`, this only works once the "
+"first interactive prompt is shown. Returns 1 if the OS name is not available."
 msgstr ""
 
 #: ../../../cmds/status.rst:139

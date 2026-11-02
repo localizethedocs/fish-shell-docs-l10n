@@ -53,11 +53,12 @@ msgstr ""
 
 #: ../../../cmds/_.rst:20
 msgid ""
-"The language depends on the current locale, set with :envvar:`LANG`, :envvar:"
-"`LC_MESSAGES`, :envvar:`LC_ALL`, and :envvar:`LANGUAGE`. These variables do "
-"not have to be exported for fish to use them, and fish's variable scopes are "
-"supported. If other programs launched via fish should respect these locale "
-"variables they have to be exported to make them available outside of fish."
+"The language depends on the current locale, set "
+"with :envvar:`LANG`, :envvar:`LC_MESSAGES`, :envvar:`LC_ALL`, "
+"and :envvar:`LANGUAGE`. These variables do not have to be exported for fish "
+"to use them, and fish's variable scopes are supported. If other programs "
+"launched via fish should respect these locale variables they have to be "
+"exported to make them available outside of fish."
 msgstr ""
 
 #: ../../../cmds/_.rst:24

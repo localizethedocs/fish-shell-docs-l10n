@@ -37,10 +37,10 @@ msgstr "描述"
 
 #: ../../../cmds/block.rst:15
 msgid ""
-"``block`` delays delivery of all events triggered by ``fish`` or the :doc:"
-"`emit <emit>`, thus delaying the execution of any function registered ``--on-"
-"event``, ``--on-process-exit``, ``--on-job-exit``, ``--on-variable`` and ``--"
-"on-signal`` until after the block is removed."
+"``block`` delays delivery of all events triggered by ``fish`` or "
+"the :doc:`emit <emit>`, thus delaying the execution of any function "
+"registered ``--on-event``, ``--on-process-exit``, ``--on-job-exit``, ``--on-"
+"variable`` and ``--on-signal`` until after the block is removed."
 msgstr ""
 
 #: ../../../cmds/block.rst:17

@@ -534,9 +534,8 @@ msgstr ""
 #: ../../../cmds/test.rst:241
 msgid ""
 "Unlike many things in fish, ``test`` implements a subset of the `IEEE Std "
-"1003.1-2008 (POSIX.1) standard <https://pubs.opengroup.org/"
-"onlinepubs/9699919799/utilities/test.html>`__. The following exceptions "
-"apply:"
+"1003.1-2008 (POSIX.1) standard <https://pubs.opengroup.org/onlinepubs/"
+"9699919799/utilities/test.html>`__. The following exceptions apply:"
 msgstr ""
 
 #: ../../../cmds/test.rst:243

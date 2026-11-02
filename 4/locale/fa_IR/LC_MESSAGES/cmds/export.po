@@ -74,8 +74,8 @@ msgstr ""
 
 #: ../../../cmds/export.rst:37
 msgid ""
-"Note: If you want to add to e.g. ``$PATH``, you need to be careful to :ref:"
-"`combine the list <cartesian-product>`. Quote it, like so::"
+"Note: If you want to add to e.g. ``$PATH``, you need to be careful "
+"to :ref:`combine the list <cartesian-product>`. Quote it, like so::"
 msgstr ""
 
 #: ../../../cmds/export.rst:39

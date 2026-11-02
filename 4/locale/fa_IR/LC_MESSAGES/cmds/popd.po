@@ -36,8 +36,8 @@ msgstr ""
 #: ../../../cmds/popd.rst:14
 msgid ""
 "``popd`` removes the top directory from the :ref:`directory stack <directory-"
-"stack>` and changes the working directory to the new top directory. Use :doc:"
-"`pushd <pushd>` to add directories to the stack."
+"stack>` and changes the working directory to the new top directory. "
+"Use :doc:`pushd <pushd>` to add directories to the stack."
 msgstr ""
 
 #: ../../../cmds/popd.rst:16
