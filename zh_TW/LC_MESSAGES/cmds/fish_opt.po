@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fish_opt.rst:4
+msgid "fish_opt - create an option specification for the argparse command"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:7
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/fish_opt.rst:9
+msgid ""
+"fish_opt [(-slor | --multiple-vals=) OPTNAME]\n"
+"fish_opt --help"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:15
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/fish_opt.rst:17
+msgid ""
+"This command provides a way to produce option specifications suitable for "
+"use with the :doc:`argparse <argparse>` command. You can, of course, write "
+"the option specifications by hand without using this command. But you might "
+"prefer to use this for the clarity it provides."
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:19
+msgid "The following ``argparse`` options are available:"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:21
+msgid "**-s** or **--short**"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:22
+msgid ""
+"Takes a single letter that is used as the short flag in the option being "
+"defined. This option is mandatory."
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:24
+msgid "**-l** or **--long**"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:25
+msgid ""
+"Takes a string that is used as the long flag in the option being defined. "
+"This option is optional and has no default. If no long flag is defined then "
+"only the short flag will be allowed when parsing arguments using the option "
+"specification."
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:27
+msgid "**--long-only**"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:28
+msgid ""
+"The option being defined will only allow the long flag name to be used. The "
+"short flag name must still be defined (i.e., **--short** must be specified) "
+"but it cannot be used when parsing arguments using this option specification."
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:30
+msgid "**-o** or **--optional-val**"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:31
+msgid ""
+"Tthe option being defined can take a value, but it is optional rather than "
+"required. If the option is seen more than once when parsing arguments, only "
+"the last value seen is saved. This means the resulting flag variable created "
+"by ``argparse`` will zero elements if no value was given with the option "
+"else it will have exactly one element."
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:33
+msgid "**-r** or **--required-val**"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:34
+msgid ""
+"The option being defined requires a value. If the option is seen more than "
+"once when parsing arguments, only the last value seen is saved. This means "
+"the resulting flag variable created by ``argparse`` will have exactly one "
+"element."
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:36
+msgid "**--multiple-vals**"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:37
+msgid ""
+"The option being defined requires a value each time it is seen. Each "
+"instance is stored. This means the resulting flag variable created by "
+"``argparse`` will have one element for each instance of this option in the "
+"arguments."
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:39
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:40
+msgid "Displays help about using this command."
+msgstr "顯示此指令的幫助資訊。"
+
+#: ../../../cmds/fish_opt.rst:43
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../cmds/fish_opt.rst:45
+msgid "Define a single option specification for the boolean help flag:"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:51
+msgid ""
+"set -l options (fish_opt -s h -l help)\n"
+"argparse $options -- $argv"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:55
+msgid "Same as above but with a second flag that requires a value:"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:61
+msgid ""
+"set -l options (fish_opt -s h -l help)\n"
+"set options $options (fish_opt -s m -l max --required-val)\n"
+"argparse $options -- $argv"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:66
+msgid ""
+"Same as above but with a third flag that can be given multiple times saving "
+"the value of each instance seen and only the long flag name (``--token``) "
+"can be used:"
+msgstr ""
+
+#: ../../../cmds/fish_opt.rst:72
+msgid ""
+"set -l options (fish_opt --short=h --long=help)\n"
+"set options $options (fish_opt --short=m --long=max --required-val)\n"
+"set options $options (fish_opt --short=t --long=token --multiple-vals --long-"
+"only)\n"
+"argparse $options -- $argv"
+msgstr ""

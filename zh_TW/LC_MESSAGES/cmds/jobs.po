@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/jobs.rst:4
+msgid "jobs - print currently running jobs"
+msgstr ""
+
+#: ../../../cmds/jobs.rst:7
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/jobs.rst:9
+msgid "jobs [OPTIONS] [PID | %JOBID]"
+msgstr ""
+
+#: ../../../cmds/jobs.rst:15
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/jobs.rst:17
+msgid ""
+"``jobs`` prints a list of the currently running :ref:`jobs <syntax-job-"
+"control>` and their status."
+msgstr ""
+
+#: ../../../cmds/jobs.rst:19
+msgid "``jobs`` accepts the following options:"
+msgstr ""
+
+#: ../../../cmds/jobs.rst:21
+msgid "**-c** or **--command**"
+msgstr ""
+
+#: ../../../cmds/jobs.rst:22
+msgid "Prints the command name for each process in jobs."
+msgstr ""
+
+#: ../../../cmds/jobs.rst:24
+msgid "**-g** or **--group**"
+msgstr ""
+
+#: ../../../cmds/jobs.rst:25
+msgid "Only prints the group ID of each job."
+msgstr ""
+
+#: ../../../cmds/jobs.rst:27
+msgid "**-l** or **--last**"
+msgstr ""
+
+#: ../../../cmds/jobs.rst:28
+msgid "Prints only the last job to be started."
+msgstr ""
+
+#: ../../../cmds/jobs.rst:30
+msgid "**-p** or **--pid**"
+msgstr ""
+
+#: ../../../cmds/jobs.rst:31
+msgid "Prints the process ID for each process in all jobs."
+msgstr ""
+
+#: ../../../cmds/jobs.rst:33
+msgid "**-q** or **--query**"
+msgstr ""
+
+#: ../../../cmds/jobs.rst:34
+msgid ""
+"Prints no output for evaluation of jobs by exit status only. For "
+"compatibility with old fish versions this is also **--quiet** (but this is "
+"deprecated)."
+msgstr ""
+
+#: ../../../cmds/jobs.rst:36
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/jobs.rst:37
+msgid "Displays help about using this command."
+msgstr "顯示此指令的幫助資訊。"
+
+#: ../../../cmds/jobs.rst:39
+msgid ""
+"On systems that support this feature, jobs will print the CPU usage of each "
+"job since the last command was executed. The CPU usage is expressed as a "
+"percentage of full CPU activity. Note that on multiprocessor systems, the "
+"total activity may be more than 100\\%."
+msgstr ""
+
+#: ../../../cmds/jobs.rst:41
+msgid ""
+"Arguments of the form *PID* or *%JOBID* restrict the output to jobs with the "
+"selected process identifiers or job numbers respectively."
+msgstr ""
+
+#: ../../../cmds/jobs.rst:43
+msgid ""
+"If the output of ``jobs`` is redirected or if it is part of a command "
+"substitution, the column header that is usually printed is omitted, making "
+"it easier to parse."
+msgstr ""
+
+#: ../../../cmds/jobs.rst:45
+msgid ""
+"The exit status of ``jobs`` is ``0`` if there are running background jobs "
+"and ``1`` otherwise."
+msgstr ""
+
+#: ../../../cmds/jobs.rst:48
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/jobs.rst:50
+msgid ""
+"``jobs`` outputs a summary of the current jobs, such as two long-running "
+"tasks in this example:"
+msgstr ""
+
+#: ../../../cmds/jobs.rst:52
+msgid ""
+"Job Group   State   Command\n"
+"2   26012   running nc -l 55232 < /dev/random &\n"
+"1   26011   running python tests/test_11.py &"
+msgstr ""
