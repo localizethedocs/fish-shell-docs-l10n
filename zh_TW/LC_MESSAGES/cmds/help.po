@@ -1,0 +1,73 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/help.rst:2
+msgid "help - display fish documentation"
+msgstr ""
+
+#: ../../../cmds/help.rst:5
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/help.rst:7
+msgid "help [SECTION]"
+msgstr ""
+
+#: ../../../cmds/help.rst:12
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/help.rst:14
+msgid "``help`` displays the fish help documentation."
+msgstr ""
+
+#: ../../../cmds/help.rst:16
+msgid "If a *SECTION* is specified, the help for that command is shown."
+msgstr ""
+
+#: ../../../cmds/help.rst:18
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/help.rst:20
+msgid ""
+"If the :envvar:`BROWSER` environment variable is set, it will be used to "
+"display the documentation. Otherwise, fish will search for a suitable "
+"browser. To use a different browser than as described above, you can set "
+"``$fish_help_browser`` This variable may be set as a list, where the first "
+"element is the browser command and the rest are browser options."
+msgstr ""
+
+#: ../../../cmds/help.rst:26
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/help.rst:28
+msgid "``help fg`` shows the documentation for the :doc:`fg <fg>` builtin."
+msgstr ""
+
+#: ../../../cmds/help.rst:31
+msgid "Notes"
+msgstr ""
+
+#: ../../../cmds/help.rst:33
+msgid ""
+"Most builtin commands, including this one, display their help in the "
+"terminal when given the **--help** option."
+msgstr ""
