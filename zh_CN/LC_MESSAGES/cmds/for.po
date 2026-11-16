@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell current\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/for.rst:2
+msgid "for - perform a set of commands multiple times"
+msgstr ""
+
+#: ../../../cmds/for.rst:5
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/for.rst:7
+msgid "for VARNAME in [VALUES ...]; COMMANDS ...; end"
+msgstr ""
+
+#: ../../../cmds/for.rst:12
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/for.rst:14
+msgid ""
+"**for** is a loop construct. It will perform the commands specified by "
+"*COMMANDS* multiple times. On each iteration, the local variable specified "
+"by *VARNAME* is assigned a new value from *VALUES*. If *VALUES* is empty, "
+"*COMMANDS* will not be executed at all. The *VARNAME* is visible when the "
+"loop terminates and will contain the last value assigned to it. If *VARNAME* "
+"does not already exist it will be set in the local scope. For our purposes "
+"if the **for** block is inside a function there must be a local variable "
+"with the same name. If the **for** block is not nested inside a function "
+"then global and universal variables of the same name will be used if they "
+"exist."
+msgstr ""
+
+#: ../../../cmds/for.rst:16
+msgid ""
+"Much like :doc:`set <set>`, **for** does not modify $status, but the "
+"evaluation of its subordinate commands can."
+msgstr ""
+
+#: ../../../cmds/for.rst:18
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/for.rst:21
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/for.rst:25
+msgid ""
+"for i in foo bar baz; echo $i; end\n"
+"\n"
+"# would output:\n"
+"foo\n"
+"bar\n"
+"baz"
+msgstr ""
+
+#: ../../../cmds/for.rst:34
+msgid "Notes"
+msgstr ""
+
+#: ../../../cmds/for.rst:36
+msgid ""
+"The ``VARNAME`` was local to the for block in releases prior to 3.0.0. This "
+"means that if you did something like this:"
+msgstr ""
+
+#: ../../../cmds/for.rst:40
+msgid ""
+"for var in a b c\n"
+"    if break_from_loop\n"
+"        break\n"
+"    end\n"
+"end\n"
+"echo $var"
+msgstr ""
+
+#: ../../../cmds/for.rst:48
+msgid ""
+"The last value assigned to ``var`` when the loop terminated would not be "
+"available outside the loop. What ``echo $var`` would write depended on what "
+"it was set to before the loop was run. Likely nothing."
+msgstr ""
