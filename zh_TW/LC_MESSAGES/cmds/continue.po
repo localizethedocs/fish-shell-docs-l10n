@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/continue.rst:2
+msgid ""
+"continue - skip the remainder of the current iteration of the current inner "
+"loop"
+msgstr ""
+
+#: ../../../cmds/continue.rst:5
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/continue.rst:7
+msgid "LOOP_CONSTRUCT; [COMMANDS ...;] continue; [COMMANDS ...;] end"
+msgstr ""
+
+#: ../../../cmds/continue.rst:12
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/continue.rst:14
+msgid ""
+"``continue`` skips the remainder of the current iteration of the current "
+"inner loop, such as a :doc:`for <for>` loop or a :doc:`while <while>` loop. "
+"It is usually added inside of a conditional block such as an :doc:`if <if>` "
+"statement or a :doc:`switch <switch>` statement."
+msgstr ""
+
+#: ../../../cmds/continue.rst:16
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/continue.rst:19
+msgid "Example"
+msgstr "範例"
+
+#: ../../../cmds/continue.rst:21
+msgid ""
+"The following code removes all tmp files that do not contain the word smurf."
+msgstr ""
+
+#: ../../../cmds/continue.rst:25
+msgid ""
+"for i in *.tmp\n"
+"    if grep smurf $i\n"
+"        continue\n"
+"    end\n"
+"    # This \"rm\" is skipped over if \"continue\" is executed.\n"
+"    rm $i\n"
+"    # As is this \"echo\"\n"
+"    echo $i\n"
+"end"
+msgstr ""
+
+#: ../../../cmds/continue.rst:36
+msgid "See Also"
+msgstr "另請參見"
+
+#: ../../../cmds/continue.rst:38
+msgid "the :doc:`break <break>` command, to stop the current inner loop"
+msgstr ""

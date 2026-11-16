@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-06 09:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/command.rst:2
+msgid "command - run a program"
+msgstr "command - run a program"
+
+#: ../../../cmds/command.rst:5
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/command.rst:7
+msgid "command [OPTIONS] [COMMANDNAME [ARG ...]]"
+msgstr ""
+
+#: ../../../cmds/command.rst:12
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/command.rst:16
+msgid ""
+"NOTE: This page documents the fish builtin ``command``. To see the "
+"documentation on any non-fish versions, use ``command man command``."
+msgstr ""
+
+#: ../../../cmds/command.rst:19
+msgid ""
+"**command** forces the shell to execute the program *COMMANDNAME* and ignore "
+"any functions or builtins with the same name."
+msgstr ""
+
+#: ../../../cmds/command.rst:21
+msgid "In ``command foo``, ``command`` is a keyword."
+msgstr ""
+
+#: ../../../cmds/command.rst:23
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../../cmds/command.rst:25
+msgid "**-a** or **--all**"
+msgstr ""
+
+#: ../../../cmds/command.rst:26
+msgid "Prints all *COMMAND* found in :envvar:`PATH`, in the order found."
+msgstr ""
+
+#: ../../../cmds/command.rst:28
+msgid "**-q** or **--query**"
+msgstr ""
+
+#: ../../../cmds/command.rst:29
+msgid ""
+"Return 0 if any of the given commands could be found, 127 otherwise. Don't "
+"print anything. For compatibility, this is also **--quiet** (deprecated)."
+msgstr ""
+
+#: ../../../cmds/command.rst:33
+msgid "**-s** or **--search** (or **-v**)"
+msgstr ""
+
+#: ../../../cmds/command.rst:34
+msgid ""
+"Prints the external command that would be executed, or prints nothing if no "
+"file with the specified name could be found in :envvar:`PATH`."
+msgstr ""
+
+#: ../../../cmds/command.rst:36
+msgid "**-h** or **--help**"
+msgstr ""
+
+#: ../../../cmds/command.rst:37
+msgid "Displays help about using this command."
+msgstr "顯示此指令的幫助資訊。"
+
+#: ../../../cmds/command.rst:40
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../cmds/command.rst:42
+msgid ""
+"``command ls`` executes the ``ls`` program, even if an ``ls`` function also "
+"exists."
+msgstr "``command ls`` 為執行 ``ls`` 程式，即使同時存在名為 ``ls`` 的函式。"
+
+#: ../../../cmds/command.rst:43
+msgid "``command -s ls`` prints the path to the ``ls`` program."
+msgstr "``command -s ls`` 會印出 ``ls`` 程式的路徑。"
+
+#: ../../../cmds/command.rst:44
+msgid ""
+"``command -q git; and command git log`` runs ``git log`` only if ``git`` "
+"exists."
+msgstr ""
+"``command -q git; and command git log`` 只有在 ``git`` 存在時才會執行 ``git "
+"log``。"
+
+#: ../../../cmds/command.rst:45
+msgid ""
+"``command -sq git`` and ``command -q git`` and ``command -vq git`` return "
+"true (0) if a git command could be found and don't print anything."
+msgstr ""
