@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/string-collect.rst:2
+msgid "string-collect - join strings into one"
+msgstr ""
+
+#: ../../../cmds/string-collect.rst:5
+msgid "Synopsis"
+msgstr "概要"
+
+#: ../../../cmds/string-collect.rst:9
+msgid ""
+"string collect [-a | --allow-empty] [-N | --no-trim-newlines] [STRING ...]"
+msgstr ""
+
+#: ../../../cmds/string-collect.rst:16
+msgid "Description"
+msgstr "描述"
+
+#: ../../../cmds/string-collect.rst:20
+msgid ""
+"``string collect`` collects its input into a single output argument, without "
+"splitting the output when used in a command substitution. This is useful "
+"when trying to collect multiline output from another command into a "
+"variable. Exit status: 0 if any output argument is non-empty, or 1 otherwise."
+msgstr ""
+
+#: ../../../cmds/string-collect.rst:22
+msgid ""
+"A command like ``echo (cmd | string collect)`` is mostly equivalent to a "
+"quoted command substitution (``echo \"$(cmd)\"``). The main difference is "
+"that the former evaluates to zero or one elements whereas the quoted command "
+"substitution always evaluates to one element due to string interpolation."
+msgstr ""
+
+#: ../../../cmds/string-collect.rst:24
+msgid ""
+"If invoked with multiple arguments instead of input, ``string collect`` "
+"preserves each argument separately, where the number of output arguments is "
+"equal to the number of arguments given to ``string collect``."
+msgstr ""
+
+#: ../../../cmds/string-collect.rst:26
+msgid ""
+"Any trailing newlines on the input are trimmed, just as with ``\"$(cmd)\"`` "
+"substitution. Use **--no-trim-newlines** to disable this behavior, which may "
+"be useful when running a command such as ``set contents (cat filename | "
+"string collect -N)``."
+msgstr ""
+
+#: ../../../cmds/string-collect.rst:28
+msgid ""
+"With **--allow-empty**, ``string collect`` always prints one (empty) "
+"argument. This can be used to prevent an argument from disappearing."
+msgstr ""
+
+#: ../../../cmds/string-collect.rst:33
+msgid "Examples"
+msgstr "範例"
+
+#: ../../../cmds/string-collect.rst:39
+msgid ""
+">_ echo \"zero $(echo one\\ntwo\\nthree) four\"\n"
+"zero one\n"
+"two\n"
+"three four\n"
+"\n"
+">_ echo \\\"(echo one\\ntwo\\nthree | string collect)\\\"\n"
+"\"one\n"
+"two\n"
+"three\"\n"
+"\n"
+">_ echo \\\"(echo one\\ntwo\\nthree | string collect -N)\\\"\n"
+"\"one\n"
+"two\n"
+"three\n"
+"\"\n"
+"\n"
+">_ echo foo(true | string collect --allow-empty)bar\n"
+"foobar"
+msgstr ""

@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/fg.rst:4
+msgid "fg - bring job to foreground"
+msgstr ""
+
+#: ../../../cmds/fg.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/fg.rst:9
+msgid "fg [PID]"
+msgstr ""
+
+#: ../../../cmds/fg.rst:14
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/fg.rst:16
+msgid ""
+"The **fg** builtin brings the specified :ref:`job <syntax-job-control>` to "
+"the foreground, resuming it if it is stopped. While a foreground job is "
+"executed, fish is suspended. If no job is specified, the last job to be used "
+"is put in the foreground. If ``PID`` is specified, the job containing a "
+"process with the specified process ID is put in the foreground."
+msgstr ""
+
+#: ../../../cmds/fg.rst:21
+msgid ""
+"For compatibility with other shells, job expansion syntax is supported for "
+"``fg``. A *PID* of the format **%1** will foreground job 1. Job numbers can "
+"be seen in the output of :doc:`jobs <jobs>`."
+msgstr ""
+
+#: ../../../cmds/fg.rst:24
+msgid "The **--help** or **-h** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/fg.rst:27
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/fg.rst:29
+msgid "``fg`` will put the last job in the foreground."
+msgstr ""
+
+#: ../../../cmds/fg.rst:31
+msgid "``fg %3`` will put job 3 into the foreground."
+msgstr ""
