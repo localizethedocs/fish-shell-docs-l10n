@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, fish-shell developers
+# This file is distributed under the same license as the fish-shell package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: fish-shell 3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-11 04:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../cmds/not.rst:4
+msgid "not - negate the exit status of a job"
+msgstr ""
+
+#: ../../../cmds/not.rst:7
+msgid "Synopsis"
+msgstr ""
+
+#: ../../../cmds/not.rst:9
+msgid "not COMMAND [OPTIONS ...]"
+msgstr ""
+
+#: ../../../cmds/not.rst:15
+msgid "Description"
+msgstr ""
+
+#: ../../../cmds/not.rst:17
+msgid ""
+"``not`` negates the exit status of another command. If the exit status is "
+"zero, ``not`` returns 1. Otherwise, ``not`` returns 0."
+msgstr ""
+
+#: ../../../cmds/not.rst:19
+msgid "The **-h** or **--help** option displays help about using this command."
+msgstr ""
+
+#: ../../../cmds/not.rst:22
+msgid "Example"
+msgstr ""
+
+#: ../../../cmds/not.rst:24
+msgid ""
+"The following code reports an error and exits if no file named spoon can be "
+"found."
+msgstr ""
+
+#: ../../../cmds/not.rst:30
+msgid ""
+"if not test -f spoon\n"
+"    echo There is no spoon\n"
+"    exit 1\n"
+"end"
+msgstr ""
