@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fish-shell current\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 09:29+0000\n"
+"POT-Creation-Date: 2026-11-23 20:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,8 +81,8 @@ msgstr ""
 
 #: ../../../cmds/type.rst:33
 msgid ""
-"Prints ``function``, ``builtin``, or ``file`` if *NAME* is a shell function, "
-"builtin, or disk file, respectively."
+"Prints ``function``, ``builtin``, ``implicit-cd`` or ``file`` if *NAME* is a "
+"shell function, builtin, implicit cd command or disk file, respectively."
 msgstr ""
 
 #: ../../../cmds/type.rst:35

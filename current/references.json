@@ -16,9 +16,9 @@
       "branch" : "master",
       "commit" : 
       {
-        "date" : "2026-09-14 23:09:04 +0800",
-        "hash" : "5bd98b924f90f2f2513ffce33e5b34a558e815a5",
-        "title" : "fish.spec: drop obsolete %clean section"
+        "date" : "2026-11-21 13:17:40 +0800",
+        "hash" : "bc93a5b80e72b02c9b33237e55e29a82077d3372",
+        "title" : "Cargo.toml: remove unused crate"
       }
     },
     "zh_CN" : 
@@ -26,9 +26,9 @@
       "branch" : "master",
       "commit" : 
       {
-        "date" : "2026-09-14 23:09:04 +0800",
-        "hash" : "5bd98b924f90f2f2513ffce33e5b34a558e815a5",
-        "title" : "fish.spec: drop obsolete %clean section"
+        "date" : "2026-11-21 13:17:40 +0800",
+        "hash" : "bc93a5b80e72b02c9b33237e55e29a82077d3372",
+        "title" : "Cargo.toml: remove unused crate"
       }
     },
     "zh_TW" : 
@@ -36,9 +36,9 @@
       "branch" : "master",
       "commit" : 
       {
-        "date" : "2026-09-14 23:09:04 +0800",
-        "hash" : "5bd98b924f90f2f2513ffce33e5b34a558e815a5",
-        "title" : "fish.spec: drop obsolete %clean section"
+        "date" : "2026-11-21 13:17:40 +0800",
+        "hash" : "bc93a5b80e72b02c9b33237e55e29a82077d3372",
+        "title" : "Cargo.toml: remove unused crate"
       }
     }
   },
